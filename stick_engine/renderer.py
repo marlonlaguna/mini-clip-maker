@@ -7,6 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 from .assets import AssetLibrary
 from .animation import sample_action
 from .utils import parse_color, clamp, smoothstep
+from .shots import normalize_shot, parts_for_target
 
 
 # ============================================================
@@ -221,6 +222,11 @@ class StickRenderer:
                 }
             )
 
+        shot = normalize_shot(scene.get("shot"))
+        shot_character = shot["character"]
+        if shot["target"] != "full_body" and not shot_character and prepared_characters:
+            shot_character = prepared_characters[0]["spec"].get("id")
+
         # --------------------------------------------------------
         # OUTPUT
         # --------------------------------------------------------
@@ -314,6 +320,7 @@ class StickRenderer:
                 )
 
                 frame = background.copy()
+                camera_focus = None
 
                 # -----------------------------------------------
                 # PERSONAJES
@@ -344,6 +351,21 @@ class StickRenderer:
                         "color"
                     ]
 
+                    detail_shot = (
+                        shot["target"] != "full_body"
+                        and prepared["spec"].get("id") == shot_character
+                    )
+
+                    focus_parts = None
+                    if detail_shot:
+                        rig = self.assets.rig(char_type)
+                        focus_parts = parts_for_target(
+                            shot["target"],
+                            [part["name"] for part in rig.get("parts", [])],
+                        )
+                        if focus_parts is None:
+                            detail_shot = False
+
                     # Se calcula una sola vez y se reutiliza para
                     # root_x/root_y y para el render del personaje.
                     pose = sample_action(
@@ -351,57 +373,51 @@ class StickRenderer:
                         t
                     )
 
-                    actor = self._render_character(
+                    actor_result = self._render_character(
                         char_type=char_type,
                         action_name=action_name,
                         color=color,
                         t=t,
                         scale=scale,
                         action=action,
-                        pose=pose
+                        pose=pose,
+                        focus_parts=focus_parts,
+                        return_focus_bounds=detail_shot,
                     )
+
+                    if detail_shot:
+                        actor, focus_bounds = actor_result
+                    else:
+                        actor = actor_result
 
                     movement_x = self._movement_x(
-                        movement=spec.get(
-                            "movement"
-                        ),
+                        movement=spec.get("movement"),
                         t=t,
                         width=width,
-                        scene_duration=duration
+                        scene_duration=duration,
                     )
+                    root_x = float(pose.get("root_x", 0.0)) * scale
+                    root_y = float(pose.get("root_y", 0.0)) * scale
+                    x = int(slots[index] + movement_x + root_x - actor.width / 2)
+                    y = int(ground_y + root_y - actor.height)
 
-                    root_x = (
-                        float(
-                            pose.get(
-                                "root_x",
-                                0.0
-                            )
+                    if detail_shot and focus_bounds:
+                        focus_left, focus_top, focus_right, focus_bottom = focus_bounds
+                        focus_width = max(1.0, focus_right - focus_left)
+                        focus_height = max(1.0, focus_bottom - focus_top)
+                        zoom = clamp(
+                            min(
+                                (width * 0.78) / focus_width,
+                                (height * 0.58) / focus_height,
+                            ),
+                            1.0,
+                            5.0,
                         )
-                        * scale
-                    )
-
-                    root_y = (
-                        float(
-                            pose.get(
-                                "root_y",
-                                0.0
-                            )
+                        camera_focus = (
+                            x + (focus_left + focus_right) / 2.0,
+                            y + (focus_top + focus_bottom) / 2.0,
+                            zoom,
                         )
-                        * scale
-                    )
-
-                    x = int(
-                        slots[index]
-                        + movement_x
-                        + root_x
-                        - actor.width / 2
-                    )
-
-                    y = int(
-                        ground_y
-                        + root_y
-                        - actor.height
-                    )
 
                     frame.alpha_composite(
                         actor,
@@ -456,6 +472,30 @@ class StickRenderer:
                             height=height,
                             scene_duration=duration
                         )
+
+                if camera_focus:
+                    center_x, center_y, zoom = camera_focus
+                    crop_width = width / zoom
+                    crop_height = height / zoom
+                    center_x = clamp(
+                        center_x,
+                        crop_width / 2.0,
+                        width - crop_width / 2.0,
+                    )
+                    center_y = clamp(
+                        center_y,
+                        crop_height / 2.0,
+                        height - crop_height / 2.0,
+                    )
+                    frame = frame.crop((
+                        center_x - crop_width / 2.0,
+                        center_y - crop_height / 2.0,
+                        center_x + crop_width / 2.0,
+                        center_y + crop_height / 2.0,
+                    )).resize(
+                        (width, height),
+                        Image.Resampling.LANCZOS,
+                    )
 
                 proc.stdin.write(
                     frame.tobytes()
@@ -1172,7 +1212,9 @@ class StickRenderer:
         t,
         scale,
         action=None,
-        pose=None
+        pose=None,
+        focus_parts=None,
+        return_focus_bounds=False,
     ):
         rig, parts, children = (
             self._rig_structure(
@@ -1213,6 +1255,7 @@ class StickRenderer:
                 0
             )
         )
+        focus_points = []
 
         def render_node(
             name,
@@ -1330,12 +1373,6 @@ class StickRenderer:
                 part["sprite"]
             )
 
-            if not part.get("embedded_color", False):
-                sprite = self._tint(
-                    sprite,
-                    color
-                )
-
             pivot = part.get(
                 "pivot",
                 [
@@ -1343,6 +1380,27 @@ class StickRenderer:
                     sprite.height / 2
                 ]
             )
+
+            if focus_parts and name in focus_parts:
+                radians = math.radians(world_angle)
+                cos_a = math.cos(radians)
+                sin_a = math.sin(radians)
+                for corner_x, corner_y in (
+                    (-pivot[0], -pivot[1]),
+                    (sprite.width - pivot[0], -pivot[1]),
+                    (sprite.width - pivot[0], sprite.height - pivot[1]),
+                    (-pivot[0], sprite.height - pivot[1]),
+                ):
+                    focus_points.append((
+                        world_x + corner_x * cos_a - corner_y * sin_a,
+                        world_y + corner_x * sin_a + corner_y * cos_a,
+                    ))
+
+            if not part.get("embedded_color", False):
+                sprite = self._tint(
+                    sprite,
+                    color
+                )
 
             self._paste_at_joint(
                 canvas=canvas,
@@ -1380,11 +1438,19 @@ class StickRenderer:
             )
 
         bbox = canvas.getbbox()
+        focus_bounds = None
 
         if bbox:
             canvas = canvas.crop(
                 bbox
             )
+            if focus_points:
+                focus_bounds = (
+                    min(point[0] for point in focus_points) - bbox[0],
+                    min(point[1] for point in focus_points) - bbox[1],
+                    max(point[0] for point in focus_points) - bbox[0],
+                    max(point[1] for point in focus_points) - bbox[1],
+                )
 
         if scale != 1.0:
             canvas = canvas.resize(
@@ -1406,6 +1472,11 @@ class StickRenderer:
                 ),
                 Image.Resampling.LANCZOS
             )
+
+        if return_focus_bounds:
+            if focus_bounds is not None and scale != 1.0:
+                focus_bounds = tuple(value * scale for value in focus_bounds)
+            return canvas, focus_bounds
 
         return canvas
 

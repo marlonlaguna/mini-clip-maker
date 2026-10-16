@@ -285,15 +285,22 @@ class AssetLibrary:
             return self._catalog_cache
 
         characters = {}
+        character_parts = {}
 
         for character_type in self.character_types():
             characters[character_type] = self.actions_for(
                 character_type
             )
+            character_parts[character_type] = [
+                part.get("name", "")
+                for part in self.rig(character_type).get("parts", [])
+                if part.get("name")
+            ]
 
         self._catalog_cache = {
             "backgrounds": self.backgrounds(),
             "characters": characters,
+            "character_parts": character_parts,
             "emotions": self.emotions(),
         }
 

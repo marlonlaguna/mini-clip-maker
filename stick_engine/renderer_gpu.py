@@ -9,6 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 from .assets import AssetLibrary
 from .animation import sample_action
 from .utils import clamp, parse_color, smoothstep
+from .shots import normalize_shot, parts_for_target
 
 
 # 1.0 = resolución nativa.
@@ -43,17 +44,24 @@ class StickRendererGPU:
                 in vec2 in_uv;
 
                 uniform vec2 u_resolution;
+                uniform vec2 u_camera_center;
+                uniform float u_camera_zoom;
 
                 out vec2 v_uv;
 
                 void main() {
 
+                    vec2 camera_pos =
+                        (in_pos - u_camera_center)
+                        * u_camera_zoom
+                        + (u_resolution * 0.5);
+
                     float x =
-                        (in_pos.x / u_resolution.x)
+                        (camera_pos.x / u_resolution.x)
                         * 2.0 - 1.0;
 
                     float y =
-                        (in_pos.y / u_resolution.y)
+                        (camera_pos.y / u_resolution.y)
                         * 2.0 - 1.0;
 
                     gl_Position =
@@ -351,6 +359,12 @@ class StickRendererGPU:
                 }
             )
 
+        shot = normalize_shot(scene.get("shot"))
+        shot_character = shot["character"]
+        if shot["target"] != "full_body" and not shot_character and prepared_characters:
+            shot_character = prepared_characters[0]["spec"].get("id")
+        base_actor_scale = actor_scale
+
         # --------------------------------------------------------
         # GPU FRAMEBUFFER
         # --------------------------------------------------------
@@ -528,6 +542,89 @@ class StickRendererGPU:
                     fps
                 )
 
+                camera_center = (
+                    width / 2.0,
+                    height / 2.0,
+                )
+                camera_zoom = 1.0
+
+                if shot["target"] != "full_body":
+                    target_prepared = next(
+                        (
+                            item for item in prepared_characters
+                            if item["spec"].get("id") == shot_character
+                        ),
+                        None,
+                    )
+                    if target_prepared:
+                        target_pose = sample_action(
+                            target_prepared["action"],
+                            t,
+                        )
+                        target_parts, target_bbox = self._character_geometry(
+                            target_prepared["char_type"],
+                            target_pose,
+                        )
+                        target_names = parts_for_target(
+                            shot["target"],
+                            [part["name"] for part in target_parts],
+                        )
+                        if target_names:
+                            target_points = [
+                                point
+                                for part in target_parts
+                                if part["name"] in target_names
+                                for point in part["corners"]
+                            ]
+                            focus_min_x = min(point[0] for point in target_points)
+                            focus_min_y = min(point[1] for point in target_points)
+                            focus_max_x = max(point[0] for point in target_points)
+                            focus_max_y = max(point[1] for point in target_points)
+                            focus_width = max(1.0, focus_max_x - focus_min_x)
+                            focus_height = max(1.0, focus_max_y - focus_min_y)
+                            camera_zoom = clamp(
+                                min(
+                                    width * 0.78 / (focus_width * base_actor_scale),
+                                    height * 0.58 / (focus_height * base_actor_scale),
+                                ),
+                                1.0,
+                                5.0,
+                            )
+
+                            target_index = target_prepared["index"]
+                            target_spec = target_prepared["spec"]
+                            target_movement = self._movement_x(
+                                movement=target_spec.get("movement"),
+                                t=t,
+                                width=width,
+                                scene_duration=duration,
+                            )
+                            target_root_x = float(target_pose.get("root_x", 0.0)) * base_actor_scale
+                            target_root_y = float(target_pose.get("root_y", 0.0)) * base_actor_scale
+                            full_min_x, _, full_max_x, full_max_y = target_bbox
+                            full_center_x = (full_min_x + full_max_x) / 2.0 * base_actor_scale
+                            full_bottom_y = full_max_y * base_actor_scale
+                            target_offset_x = (
+                                slots[target_index]
+                                + target_movement
+                                + target_root_x
+                                - full_center_x
+                            )
+                            target_offset_y = (
+                                ground_y
+                                + target_root_y
+                                - full_bottom_y
+                            )
+                            camera_center = (
+                                (focus_min_x + focus_max_x) / 2.0 * base_actor_scale
+                                + target_offset_x,
+                                (focus_min_y + focus_max_y) / 2.0 * base_actor_scale
+                                + target_offset_y,
+                            )
+
+                self.program["u_camera_center"].value = camera_center
+                self.program["u_camera_zoom"].value = camera_zoom
+
                 fbo.use()
 
                 fbo.clear(
@@ -599,6 +696,8 @@ class StickRendererGPU:
                             "color"
                         ]
                     )
+
+                    actor_scale = base_actor_scale
 
                     pose = (
                         sample_action(
@@ -684,28 +783,15 @@ class StickRendererGPU:
                     )
 
                     offset_x = (
-
                         slots[index]
-
-                        +
-                        movement_x
-
-                        +
-                        root_x
-
-                        -
-                        actor_center_x
+                        + movement_x
+                        + root_x
+                        - actor_center_x
                     )
-
                     offset_y = (
-
                         ground_y
-
-                        +
-                        root_y
-
-                        -
-                        actor_bottom_y
+                        + root_y
+                        - actor_bottom_y
                     )
 
                     # --------------------------------------------

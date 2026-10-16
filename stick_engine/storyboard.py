@@ -6,6 +6,7 @@ from difflib import SequenceMatcher
 
 from ollama_client import OLLAMA_MODEL, ollama_chat
 from .assets import AssetLibrary
+from .shots import normalize_shot, parts_for_target
 
 
 SEGUNDOS_POR_ESCENA = 6
@@ -1352,6 +1353,8 @@ def _validar_storyboard(
                 "objects"
             ] = []
 
+            escena["shot"] = normalize_shot("full_body")
+
             continue
 
         # ====================================================
@@ -1599,6 +1602,42 @@ def _validar_storyboard(
             :5
         ]
 
+        shot = normalize_shot(escena.get("shot"))
+        if shot["target"] != "full_body":
+            character_ids = {
+                str(personaje.get("id", "")).strip()
+                for personaje in escena["characters"]
+                if isinstance(personaje, dict)
+            }
+            if not character_ids:
+                shot = normalize_shot("full_body")
+            elif shot["character"] not in character_ids:
+                shot["character"] = next(
+                    personaje["id"]
+                    for personaje in escena["characters"]
+                    if isinstance(personaje, dict)
+                    and personaje.get("id")
+                )
+            selected_character = next(
+                (
+                    personaje
+                    for personaje in escena["characters"]
+                    if isinstance(personaje, dict)
+                    and str(personaje.get("id", "")).strip() == shot["character"]
+                ),
+                None,
+            )
+            if selected_character:
+                parts_by_type = catalogo.get("character_parts", {})
+                character_type = selected_character.get("type")
+                available_parts = parts_by_type.get(character_type)
+                if (
+                    available_parts is not None
+                    and parts_for_target(shot["target"], available_parts) is None
+                ):
+                    shot = normalize_shot("full_body")
+        escena["shot"] = shot
+
         objects = escena.get(
             "objects",
             [],
@@ -1843,6 +1882,10 @@ def _escena_signature(
         scene_type,
         _texto_normalizado(
             background
+        ),
+        (
+            normalize_shot(escena.get("shot"))["target"],
+            normalize_shot(escena.get("shot"))["character"],
         ),
         characters,
         objects,
@@ -2340,6 +2383,10 @@ def _resumen_previas(
             "scene_type": escena.get(
                 "scene_type",
                 "stick",
+            ),
+
+            "shot": normalize_shot(
+                escena.get("shot")
             ),
 
             "background": escena.get(
@@ -2880,8 +2927,29 @@ in at least TWO visual dimensions whenever possible:
 - emotion
 - scene type
 - object position
+- camera shot
 
 Do not randomly change physical location merely for variety.
+
+==================================================
+CAMERA SHOTS
+==================================================
+
+Every stick scene must include a "shot" object.
+Choose a target that supports the narration and varies the framing.
+Use close detail shots selectively, about one in every three scenes at most.
+
+Allowed shot targets:
+- full_body: show the full character(s)
+- face, head: close-up framed around the character's head/face
+- torso: close-up framed around the torso/body
+- left_arm, right_arm, arms: close-up framed around the selected arm(s)
+- left_leg, right_leg, legs: close-up framed around the selected leg(s)
+
+For a detail shot, set "character" to the id of one character in that scene.
+For a full_body shot, set "character" to null.
+The close-up keeps the character assembled and zooms toward the requested area.
+Do not request body parts absent from the selected character rig. If unsure, use full_body.
 
 If the story remains in one place, vary:
 - staging
@@ -2915,6 +2983,7 @@ Return:
     {{
       "scene": 1,
       "scene_type": "stick",
+      "shot": {{"target": "full_body", "character": null}},
       "background_mode": "asset",
       "background": "street",
       "fallback_background": "street",
