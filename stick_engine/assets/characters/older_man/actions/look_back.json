@@ -1,0 +1,30 @@
+{
+  "duration": 1.2,
+  "loop": true,
+  "keyframes": [
+    {
+      "time": 0.0,
+      "torso": 0,
+      "head": 0
+    },
+    {
+      "time": 0.35,
+      "torso": 7,
+      "head": 22,
+      "left_upper_arm": 8,
+      "right_upper_arm": -8
+    },
+    {
+      "time": 0.85,
+      "torso": 7,
+      "head": 22,
+      "left_upper_arm": 8,
+      "right_upper_arm": -8
+    },
+    {
+      "time": 1.2,
+      "torso": 0,
+      "head": 0
+    }
+  ]
+}

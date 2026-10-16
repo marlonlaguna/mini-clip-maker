@@ -1,0 +1,42 @@
+{
+  "duration": 1.0,
+  "loop": true,
+  "keyframes": [
+    {
+      "time": 0.0,
+      "right_upper_arm": -58,
+      "right_forearm": 120,
+      "torso": -2
+    },
+    {
+      "time": 0.18,
+      "right_upper_arm": -66,
+      "right_forearm": 105,
+      "torso": -4
+    },
+    {
+      "time": 0.34,
+      "right_upper_arm": -56,
+      "right_forearm": 126,
+      "torso": -2
+    },
+    {
+      "time": 0.5,
+      "right_upper_arm": -66,
+      "right_forearm": 105,
+      "torso": -4
+    },
+    {
+      "time": 0.66,
+      "right_upper_arm": -56,
+      "right_forearm": 126,
+      "torso": -2
+    },
+    {
+      "time": 1.0,
+      "right_upper_arm": -58,
+      "right_forearm": 120,
+      "torso": -2
+    }
+  ]
+}

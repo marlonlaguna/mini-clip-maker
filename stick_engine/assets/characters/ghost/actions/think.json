@@ -1,0 +1,31 @@
+{
+  "duration": 1.4,
+  "loop": true,
+  "keyframes": [
+    {
+      "time": 0.0,
+      "head": -7,
+      "right_upper_arm": -30,
+      "right_forearm": 150,
+      "left_upper_arm": 8,
+      "left_forearm": -15
+    },
+    {
+      "time": 0.7,
+      "head": -12,
+      "torso": -2,
+      "right_upper_arm": -34,
+      "right_forearm": 154,
+      "left_upper_arm": 10,
+      "left_forearm": -18
+    },
+    {
+      "time": 1.4,
+      "head": -7,
+      "right_upper_arm": -30,
+      "right_forearm": 150,
+      "left_upper_arm": 8,
+      "left_forearm": -15
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+[TITULO]
+El caso de Enoc Pérez: el niño que desapareció en Honduras
+
+[MODO_VIDEO]
+mixed
+
+[PORCENTAJE_MINIMO_STICK]
+70
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+si
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+sad.mp3
+
+[VOLUMEN_MUSICA]
+0.08
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.30
+
+[MAX_EFECTOS_SONIDO]
+15
+
+[ESTILO_VISUAL]
+dark cinematic true crime illustration, Honduras, mysterious documentary atmosphere, realistic rural environments, dramatic shadows, emotional investigative tone, serious news documentary style, no gore, vertical composition
+
+[NEGATIVE_PROMPT]
+gore, blood splatter, graphic violence, dismemberment, text, watermark, logo, distorted anatomy, blurry
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+4
+
+[GUION]
+Bienvenidos a Voces del Más Allá.
+
+El día de hoy veremos un caso que durante años ha conmovido a miles de personas en Honduras.
+
+Un caso lleno de preguntas, dolor y una ausencia que, hasta hoy, sigue pesando sobre una familia.
+
+Esta es la historia de Enoc Misael Pérez Chinchilla.
+
+Enoc tenía apenas 12 años.
+
+Vivía en España junto a su madre, Karina Chinchilla, pero a finales de 2019 viajó a Honduras para pasar las fiestas de Navidad y Año Nuevo junto a su familia.
+
+Su destino era Tela, en el departamento de Atlántida.
+
+Todo parecía ser un viaje familiar normal.
+
+Vacaciones, reuniones, comida, Navidad.
+
+Pero el 2 de diciembre de 2019 todo cambió.
+
+Ese día, Enoc fue reportado como desaparecido.
+
+Y muy pronto las autoridades descubrirían que no se trataba simplemente de un niño que se había extraviado.
+
+En el lugar también habían sido asesinadas tres personas cercanas a él.
+
+Su abuelo, Rubilio Arturo Pérez Cubas.
+
+Su tío, Israel Humberto Ramos Moscoso.
+
+Y Cindy Xiomara Castro Torres, quien cuidaba al pequeño.
+
+Tres personas muertas.
+
+Y Enoc había desaparecido.
+
+Las autoridades comenzaron una investigación que se extendería durante meses y después durante años.
+
+Se realizaron allanamientos.
+
+Se tomaron declaraciones.
+
+Equipos especializados recorrieron zonas montañosas de Tela.
+
+Participaron fiscales, investigadores, policías, unidades antisecuestro y hasta equipos de búsqueda especializados.
+
+Pero Enoc no aparecía.
+
+Meses después, el Ministerio Público informó que había encontrado evidencia relacionada con el crimen.
+
+Entre los objetos decomisados apareció un arma que, según las investigaciones forenses, había sido utilizada en la muerte de las tres víctimas.
+
+Las autoridades comenzaron entonces a identificar a posibles responsables.
+
+En diciembre de 2020 fueron detenidos varios hombres vinculados con la desaparición de Enoc y con los asesinatos.
+
+Con el paso de los años, el caso llegó a los tribunales.
+
+En 2023, dos hermanos fueron declarados culpables por su participación en los hechos.
+
+Posteriormente recibieron condenas de más de 80 años de prisión por los asesinatos, el robo y la privación de libertad de Enoc.
+
+Otro implicado también sería condenado años después.
+
+Pero existía un problema enorme.
+
+Aunque había personas condenadas...
+
+Enoc seguía sin aparecer.
+
+Ni las sentencias, ni los allanamientos, ni las búsquedas lograron responder la pregunta más importante:
+
+¿Dónde está Enoc?
+
+Su madre ha continuado durante años pidiendo respuestas y manteniendo viva la esperanza de encontrar a su hijo.
+
+Y esa es quizá la parte más inquietante de este caso.
+
+Hay responsables que han sido llevados ante la justicia.
+
+Hay una investigación.
+
+Hay condenas.
+
+Pero todavía falta la pieza más importante.
+
+Enoc.
+
+Un niño que llegó a Honduras para pasar la Navidad con su familia...
+
+y que nunca regresó a casa.
+
+¿Qué crees que ocurrió aquella noche en Tela?
+
+¿Crees que algún día se conocerá toda la verdad?
+
+Déjanos tu opinión en los comentarios.
+
+Y no olvides suscribirte a Voces del Más Allá para conocer más casos, misterios y noticias que han dejado preguntas sin respuesta.
+
+Nos vemos en la próxima historia.

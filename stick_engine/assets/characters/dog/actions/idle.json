@@ -1,0 +1,26 @@
+{
+  "duration": 1.2,
+  "loop": true,
+  "keyframes": [
+    {
+      "time": 0.0,
+      "tail": 15
+    },
+    {
+      "time": 0.3,
+      "tail": -20
+    },
+    {
+      "time": 0.6,
+      "tail": 20
+    },
+    {
+      "time": 0.9,
+      "tail": -15
+    },
+    {
+      "time": 1.2,
+      "tail": 15
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+# Mini Clip Maker
+# Ignora la carpeta de efectos de sonido del proyecto.
+# En tu PC corresponde a: C:\Users\mlagu\OneDrive\Documentos\GitHub\mini-clip-maker\sound_efects
+/sound_efects/
+
+# Archivos temporales y resultados generados
+/output/
+/outputs/
+/renders/
+/temp/
+/tmp/
+*.mp4
+*.wav
+*.mp3
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Entornos virtuales y variables locales
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Logs y archivos del sistema
+*.log
+.DS_Store
+Thumbs.db

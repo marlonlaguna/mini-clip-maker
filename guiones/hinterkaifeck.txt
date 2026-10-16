@@ -1,0 +1,142 @@
+[TITULO]
+Hinterkaifeck: la granja donde alguien pudo esconderse antes de los asesinatos
+
+[MODO_VIDEO]
+mixed
+
+[PORCENTAJE_MINIMO_STICK]
+95
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+si
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.35
+
+[MAX_EFECTOS_SONIDO]
+20
+
+[ESTILO_VISUAL]
+Realistic cinematic illustration, faceless silhouettes, no facial details, true crime investigation style, restrained suspense, realistic environments, documentary-like framing, moody natural lighting, believable anatomy, simple but dramatic composition, serious and intriguing tone, no gore, no text.
+
+[NEGATIVE_PROMPT]
+visible face, detailed face, eyes, nose, mouth, facial features, portrait close-up, cartoon, anime, chibi, childish, exaggerated expressions, fantasy, horror gore, blood splatter, monster, ghost, demon, text, letters, watermark, logo, blurry, distorted, deformed anatomy
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+4
+
+[GUION]
+Una familia encontró huellas en la nieve alrededor de su casa.
+
+Pero había algo extraño.
+
+Las huellas parecían venir desde el bosque hasta la granja.
+
+Y no había ninguna regresando.
+
+Días después, todos los habitantes de aquella propiedad estaban muertos.
+
+Este es el misterio de Hinterkaifeck.
+
+En 1922, la familia Gruber vivía en una granja aislada en Baviera, Alemania.
+
+Andreas Gruber compartía la propiedad con su esposa, su hija Viktoria, sus dos nietos y una empleada doméstica.
+
+Era un lugar tranquilo.
+
+Pero poco antes del crimen comenzaron a ocurrir cosas difíciles de explicar.
+
+Andreas contó que había encontrado huellas en la nieve que llegaban desde el bosque hasta la granja.
+
+Según su relato, no encontró huellas que regresaran.
+
+Después aparecieron otros detalles inquietantes.
+
+Se escucharon pasos en el ático.
+
+Objetos desaparecieron.
+
+Y apareció un periódico que nadie de la familia recordaba haber comprado.
+
+La antigua empleada doméstica había abandonado la granja meses antes.
+
+Decía que el lugar estaba embrujado.
+
+El 31 de marzo de 1922, algo ocurrió en Hinterkaifeck.
+
+Cuatro miembros de la familia fueron encontrados posteriormente en el granero.
+
+Las otras dos víctimas estaban dentro de la casa.
+
+Pero quizá lo más extraño ocurrió después.
+
+Durante varios días, nadie supo que la familia había muerto.
+
+Mientras tanto, alguien aparentemente continuó cuidando la granja.
+
+Los animales fueron alimentados.
+
+La chimenea produjo humo.
+
+Y algunos vecinos dijeron haber visto señales de actividad en la propiedad.
+
+Esto llevó a una posibilidad escalofriante.
+
+¿El responsable permaneció en la casa después de los asesinatos?
+
+La policía investigó a numerosas personas.
+
+Vecinos.
+
+Conocidos.
+
+Antiguos trabajadores.
+
+Incluso personas relacionadas sentimentalmente con Viktoria.
+
+Pero nunca se encontró una respuesta definitiva.
+
+La granja terminó siendo demolida.
+
+El arma utilizada en los asesinatos fue encontrada posteriormente dentro de la propiedad.
+
+Pero el asesino nunca fue identificado.
+
+Y las preguntas continúan.
+
+¿Quién dejó aquellas huellas en la nieve?
+
+¿Quién caminaba por el ático?
+
+¿Alguien llevaba días escondido dentro de la casa antes de atacar?
+
+O quizá todos aquellos detalles tuvieron una explicación más sencilla.
+
+Más de cien años después, Hinterkaifeck sigue siendo uno de los casos sin resolver más inquietantes de Alemania.
+
+No porque sepamos qué ocurrió.
+
+Sino porque existe la posibilidad de que la familia no estuviera sola en aquella granja mucho antes de darse cuenta.
+
+¿Qué crees que ocurrió en Hinterkaifeck?
+
+¿El responsable ya estaba escondido dentro de la propiedad?
+
+Déjame tu teoría en los comentarios.
+
+Y si te gustan las historias reales, desapariciones y misterios sin resolver, suscríbete a Voces del Más Allá.

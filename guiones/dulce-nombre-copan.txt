@@ -1,0 +1,70 @@
+[TITULO]
+Persiguió a los hombres que atacaron a su esposa
+
+[MODO_VIDEO]
+mixed
+
+[PORCENTAJE_MINIMO_STICK]
+70
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+si
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.35
+
+[MAX_EFECTOS_SONIDO]
+20
+
+[ESTILO_VISUAL]
+dark cinematic true crime illustration, rural Honduras, dramatic nighttime atmosphere, realistic environments, tense documentary style, dramatic shadows, serious news tone, no gore, vertical composition
+
+[NEGATIVE_PROMPT]
+gore, visible wounds, blood splatter, dismemberment, graphic violence, text, watermark, logo, distorted anatomy, blurry
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+4
+
+[GUION]
+Una persecución terminó de una manera que nadie esperaba en Dulce Nombre, Copán.
+
+Según reportes, dos supuestos sicarios llegaron en motocicleta hasta una vivienda en la aldea Las Caleras.
+
+Uno de ellos, con el rostro cubierto, entró a la casa y disparó varias veces contra una mujer.
+
+Después del ataque, ambos hombres escaparon rápidamente en la motocicleta.
+
+Pero alguien dentro de la vivienda reaccionó.
+
+Un hombre encendió una pick-up roja y salió detrás de ellos.
+
+Minutos después, una cámara de seguridad captó el momento en que la camioneta alcanzó la motocicleta y la embistió.
+
+Los dos hombres fueron arrastrados varios metros y terminaron impactando contra un muro.
+
+Ambos murieron tras el violento impacto.
+
+La mujer herida fue trasladada a un centro médico en Santa Rosa de Copán.
+
+Las autoridades iniciaron investigaciones para determinar qué provocó el ataque y esclarecer todo lo ocurrido.
+
+Una historia que parece sacada de una película… pero ocurrió en Honduras.
+
+¿Qué opinas de lo sucedido?
+
+Suscríbete a Voces del Más Allá para conocer más historias y noticias que parecen imposibles… pero son reales.

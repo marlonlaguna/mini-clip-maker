@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:05.79,TikTok,,0,0,0,,Déjame darte un truco social práctico, uno de esos pequeños secretos que pueden cambiar
+Dialogue: 0,0:00:05.79,0:00:11.24,TikTok,,0,0,0,,cómo termina una conversación. Cuando estás conociendo a alguien y la charlaba muy bien,
+Dialogue: 0,0:00:11.24,0:00:15.88,TikTok,,0,0,0,,quizá pienses que debes quedarte todo el tiempo posible, pero hay algo que mucha gente
+Dialogue: 0,0:00:15.88,0:00:20.60,TikTok,,0,0,0,,pasa por alto. Una conversación agradable no necesita durar horas para dejar una
+Dialogue: 0,0:00:20.60,0:00:25.80,TikTok,,0,0,0,,buena impresión. A veces, despedirte en el momento adecuado permite que ambos se
+Dialogue: 0,0:00:25.80,0:00:31.23,TikTok,,0,0,0,,queden con ganas de seguir hablando. Imagina que estás en una reunión, descubres que tienen
+Dialogue: 0,0:00:31.23,0:00:36.64,TikTok,,0,0,0,,gustos en común, se ríen y la conversación fluye, entonces recuerdas que ya debes irte.
+Dialogue: 0,0:00:36.64,0:00:42.03,TikTok,,0,0,0,,En vez de inventar una excusa o desaparecer, puedes decir, me cayó muy bien hablar contigo,
+Dialogue: 0,0:00:42.03,0:00:47.35,TikTok,,0,0,0,,ya me tengo que ir, pero me gustaría seguir platicando otro día. Te animas a tomar un
+Dialogue: 0,0:00:47.35,0:00:52.07,TikTok,,0,0,0,,café esta semana. Ese es el detalle. El tiempo limitado puede hacer que un buen
+Dialogue: 0,0:00:52.07,0:00:56.67,TikTok,,0,0,0,,encuentro se sienta más especial, pero sólo funciona de forma honesta cuando el
+Dialogue: 0,0:00:56.67,0:01:01.67,TikTok,,0,0,0,,límite es real. No se trata de hacer que alguien se preocupe por perderte, sino de
+Dialogue: 0,0:01:01.67,0:01:06.48,TikTok,,0,0,0,,expresar tu interés con claridad y dejar una invitación abierta, sin presión.
+Dialogue: 0,0:01:06.48,0:01:10.20,TikTok,,0,0,0,,Para más secretos, suscríbete a Voces del Más Allá.

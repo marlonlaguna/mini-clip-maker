@@ -1,0 +1,763 @@
+{
+  "storyboard": [
+    {
+      "scene": 1,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "narrator_house",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "narrator",
+          "type": "narrator",
+          "action": "talk",
+          "position": 3,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💡",
+          "x": 0.76,
+          "y": 0.32,
+          "size": 110
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "question-mark",
+          "time": 1.2,
+          "volume": 0.6
+        }
+      ],
+      "start": 0.0,
+      "end": 5.8,
+      "timeline_duration": 5.8,
+      "duration": 5.8,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Déjame darte un truco social práctico, uno de esos pequeños secretos que pueden cambiar"
+    },
+    {
+      "scene": 2,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "talk",
+          "position": 2,
+          "emotion": "happy"
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "talk",
+          "position": 4,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💬",
+          "x": 0.52,
+          "y": 0.29,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "audience-sorpresa-woow",
+          "time": 2.4,
+          "volume": 0.5
+        }
+      ],
+      "start": 5.8,
+      "end": 11.24,
+      "timeline_duration": 5.44,
+      "duration": 5.433333333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "cómo termina una conversación. Cuando estás conociendo a alguien y la charlaba muy bien,"
+    },
+    {
+      "scene": 3,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "think",
+          "position": 1,
+          "emotion": "doubt"
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "talk",
+          "position": 4,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🕐",
+          "x": 0.78,
+          "y": 0.38,
+          "size": 115
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "question-mark",
+          "time": 1.5,
+          "volume": 0.55
+        }
+      ],
+      "start": 11.24,
+      "end": 15.88,
+      "timeline_duration": 4.640000000000001,
+      "duration": 4.633333333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "quizá pienses que debes quedarte todo el tiempo posible, pero hay algo que mucha gente"
+    },
+    {
+      "scene": 4,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "point",
+          "position": 2,
+          "emotion": "talk"
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "look_back",
+          "position": 4,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "⏳",
+          "x": 0.5,
+          "y": 0.32,
+          "size": 110
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "sonido-de-grillo",
+          "time": 3.1,
+          "volume": 0.45
+        }
+      ],
+      "start": 15.88,
+      "end": 20.6,
+      "timeline_duration": 4.720000000000001,
+      "duration": 4.733333333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "pasa por alto. Una conversación agradable no necesita durar horas para dejar una"
+    },
+    {
+      "scene": 5,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "street",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "wave",
+          "position": 2,
+          "emotion": "happy"
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "wave",
+          "position": 4,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "👋",
+          "x": 0.52,
+          "y": 0.35,
+          "size": 115
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "footsteps-on-heels-on-the-pavement",
+          "time": 3.3,
+          "volume": 0.6
+        }
+      ],
+      "start": 20.6,
+      "end": 25.8,
+      "timeline_duration": 5.199999999999999,
+      "duration": 5.2,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "buena impresión. A veces, despedirte en el momento adecuado permite que ambos se"
+    },
+    {
+      "scene": 6,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "talk",
+          "position": 2,
+          "emotion": "happy"
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "talk",
+          "position": 4,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🥂",
+          "x": 0.76,
+          "y": 0.38,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "nature_enviroment",
+          "time": 1.8,
+          "volume": 0.5
+        }
+      ],
+      "start": 25.8,
+      "end": 31.24,
+      "timeline_duration": 5.439999999999998,
+      "duration": 5.433333333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "queden con ganas de seguir hablando. Imagina que estás en una reunión, descubres que tienen"
+    },
+    {
+      "scene": 7,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "talk",
+          "position": 2,
+          "emotion": "happy"
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "talk",
+          "position": 4,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "😂",
+          "x": 0.5,
+          "y": 0.3,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🕐",
+          "x": 0.82,
+          "y": 0.2,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "happy-child-laughing",
+          "time": 1.4,
+          "volume": 0.65
+        }
+      ],
+      "start": 31.24,
+      "end": 36.64,
+      "timeline_duration": 5.400000000000002,
+      "duration": 5.4,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "gustos en común, se ríen y la conversación fluye, entonces recuerdas que ya debes irte."
+    },
+    {
+      "scene": 8,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "talk",
+          "position": 2,
+          "emotion": "happy"
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "look_back",
+          "position": 4,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💬",
+          "x": 0.52,
+          "y": 0.26,
+          "size": 125
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "shoe-steps",
+          "time": 3.2,
+          "volume": 0.55
+        }
+      ],
+      "start": 36.64,
+      "end": 42.04,
+      "timeline_duration": 5.399999999999999,
+      "duration": 5.4,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "En vez de inventar una excusa o desaparecer, puedes decir, me cayó muy bien hablar contigo,"
+    },
+    {
+      "scene": 9,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "street",
+      "fallback_background": "street",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "point",
+          "position": 2,
+          "emotion": "talk"
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "look_back",
+          "position": 4,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "☕",
+          "x": 0.5,
+          "y": 0.3,
+          "size": 135
+        },
+        {
+          "type": "emoji",
+          "value": "🗓️",
+          "x": 0.79,
+          "y": 0.22,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "footsteps-on-heels-on-the-pavement",
+          "time": 2.8,
+          "volume": 0.55
+        }
+      ],
+      "start": 42.04,
+      "end": 47.36,
+      "timeline_duration": 5.32,
+      "duration": 5.333333333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "ya me tengo que ir, pero me gustaría seguir platicando otro día. Te animas a tomar un"
+    },
+    {
+      "scene": 10,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "street",
+      "fallback_background": "street",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "think",
+          "position": 2,
+          "emotion": "happy"
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "talk",
+          "position": 4,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "☕",
+          "x": 0.55,
+          "y": 0.33,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "⏳",
+          "x": 0.83,
+          "y": 0.19,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "shoe-steps",
+          "time": 1.8,
+          "volume": 0.5
+        }
+      ],
+      "start": 47.36,
+      "end": 52.08,
+      "timeline_duration": 4.719999999999999,
+      "duration": 4.7,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "café esta semana. Ese es el detalle. El tiempo limitado puede hacer que un buen"
+    },
+    {
+      "scene": 11,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "street",
+      "fallback_background": "street",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "talk",
+          "position": 2,
+          "emotion": "talk"
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "look_back",
+          "position": 4,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "✨",
+          "x": 0.52,
+          "y": 0.25,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "⏳",
+          "x": 0.8,
+          "y": 0.2,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "nature_enviroment",
+          "time": 2.1,
+          "volume": 0.5
+        }
+      ],
+      "start": 52.08,
+      "end": 56.68,
+      "timeline_duration": 4.600000000000001,
+      "duration": 4.6,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "encuentro se sienta más especial, pero sólo funciona de forma honesta cuando el"
+    },
+    {
+      "scene": 12,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "street",
+      "fallback_background": "street",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "walk",
+          "position": 2,
+          "emotion": null
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "look_back",
+          "position": 4
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "👣",
+          "x": 0.3,
+          "y": 0.72,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "🤝",
+          "x": 0.73,
+          "y": 0.28,
+          "size": 115
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "crunchy-footsteps-loop",
+          "time": 1.2,
+          "volume": 0.6
+        }
+      ],
+      "start": 56.68,
+      "end": 61.68,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "límite es real. No se trata de hacer que alguien se preocupe por perderte, sino de"
+    },
+    {
+      "scene": 13,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "street",
+      "fallback_background": "street",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "conversation-speaker",
+          "type": "young_man",
+          "action": "talk",
+          "position": 3,
+          "emotion": "happy"
+        },
+        {
+          "id": "conversation-partner",
+          "type": "young_woman",
+          "action": "think",
+          "position": 5,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💬",
+          "x": 0.43,
+          "y": 0.34,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "🤝",
+          "x": 0.72,
+          "y": 0.57,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "whatsapp-notificacion",
+          "time": 2.1,
+          "volume": 0.6
+        }
+      ],
+      "start": 61.68,
+      "end": 66.48,
+      "timeline_duration": 4.800000000000004,
+      "duration": 4.8,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "expresar tu interés con claridad y dejar una invitación abierta, sin presión."
+    },
+    {
+      "scene": 14,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "narrator_house",
+      "fallback_background": "narrator_house",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "narrator",
+          "type": "narrator",
+          "action": "point",
+          "position": 3,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📺",
+          "x": 0.72,
+          "y": 0.39,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "🔔",
+          "x": 0.78,
+          "y": 0.63,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "computer_click",
+          "time": 2.4,
+          "volume": 0.65
+        }
+      ],
+      "start": 66.48,
+      "end": 70.525,
+      "timeline_duration": 4.045000000000002,
+      "duration": 4.066666666666666,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Para más secretos, suscríbete a Voces del Más Allá."
+    }
+  ],
+  "cast": [
+    {
+      "id": "narrator",
+      "name": "Narrator",
+      "description": "official presenter of Voces del Más Allá",
+      "type": "narrator"
+    },
+    {
+      "id": "conversation-partner",
+      "name": "Conversation Partner",
+      "description": "Person the speaker meets and enjoys talking with",
+      "type": "young_woman"
+    },
+    {
+      "id": "conversation-speaker",
+      "name": "conversation-speaker",
+      "description": "Character introduced during storyboard generation.",
+      "type": "young_man"
+    }
+  ],
+  "sync_mode": "whisper",
+  "audio_duration": 70.525,
+  "llm_provider": "openai",
+  "llm_model": "gpt-6-luna",
+  "batch_size": 6
+}

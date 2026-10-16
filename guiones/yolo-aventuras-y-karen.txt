@@ -1,0 +1,62 @@
+[TITULO]
+yolo aventuras y karen
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[ESTILO_VISUAL]
+Terror sencillo y sobrenatural. Usa únicamente los personajes y fondos existentes; no generes fondos nuevos. Karen debe ser una niña stick y Yolo una criatura fantasmal, manteniendo su apariencia constante. Incluye la cámara de patio y una tablet vieja como objetos. Muestra a narrator al menos una vez. Añade un efecto de sonido disponible y un emoji visual en el storyboard; no leas el emoji en voz alta.
+
+[NEGATIVE_PROMPT]
+No generar fondos nuevos, no sangre, no gore, no personajes adicionales, no cambiar los nombres Karen y Yolo.
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+4
+
+[MAX_EFECTOS_SONIDO]
+10
+
+[GUION]
+Bienvenidos a Voces del Más Allá, donde compartimos historias para que te bañes con miedo de parpadear.
+
+La cámara de mi patio captó a Yolo frente a mi ventana. Pero lo más aterrador era que cada noche aparecía un poco más cerca.
+
+Estás en Voces del Más Allá, donde los susurros de la noche esconden historias inquietantes.
+
+Yo era una niña y vivía en una casa junto al bosque. Todas las noches, a las tres y catorce, escuchaba un clic afuera. Era la cámara de seguridad activándose.
+
+Una madrugada revisé las grabaciones en una tablet vieja. En la primera imagen solo se veía una sombra entre los árboles. En la siguiente, estaba junto a la cerca. Y en la última, aparecía frente a mi ventana.
+
+Entonces la pantalla de la tablet se puso negra. Después se iluminó de rojo y apareció un mensaje: “Yolo está detrás de ti”.
+
+Sentí que alguien se acercaba. Una voz me susurró al oído:
+
+—Esta noche comienza nuestra aventura.
+
+Me di vuelta, pero no había nadie. Sin embargo, desde entonces Yolo aparecía cada noche. Siempre se acercaba y me repetía lo mismo.
+
+Hasta que una noche lo vi junto a mi cama. Yolo inclinó la cabeza y me susurró:
+
+—Soy un espectro. Tengo aventuras cada noche… y quiero que vengas conmigo.
+
+Grité y corrí a buscar a mis padres. Desde entonces, nunca volví a dormir sola. Todavía me asusta escuchar el clic de una cámara en la oscuridad.
+
+¿Tú habrías revisado las grabaciones? Déjame tu teoría en los comentarios. Y si te gustan las historias de terror, suscríbete a Voces del Más Allá.

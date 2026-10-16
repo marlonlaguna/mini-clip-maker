@@ -1,0 +1,17 @@
+{
+  "duration": 1.2,
+  "loop": true,
+  "keyframes": [
+    {
+      "time": 0.0
+    },
+    {
+      "time": 0.6,
+      "torso": 1.5,
+      "head": -1.0
+    },
+    {
+      "time": 1.2
+    }
+  ]
+}

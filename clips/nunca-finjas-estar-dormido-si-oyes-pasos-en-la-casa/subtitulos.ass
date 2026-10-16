@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:03.27,TikTok,,0,0,0,,Acompáñame a escuchar esta historia de Reddit.
+Dialogue: 0,0:00:03.27,0:00:09.19,TikTok,,0,0,0,,Esto es Voces del Más allá, donde te contamos historias para que no duermas esta noche.
+Dialogue: 0,0:00:09.19,0:00:13.03,TikTok,,0,0,0,,A los 10 años me quedaba despierto jugando con mi celular.
+Dialogue: 0,0:00:13.03,0:00:16.35,TikTok,,0,0,0,,Al oír pasos, lo escondía y fingía dormir.
+Dialogue: 0,0:00:16.35,0:00:19.71,TikTok,,0,0,0,,Después escuché golpes en el cuarto de mis padres.
+Dialogue: 0,0:00:19.71,0:00:22.71,TikTok,,0,0,0,,Al asomarme, vi a un desconocido atacándolos.
+Dialogue: 0,0:00:22.71,0:00:25.51,TikTok,,0,0,0,,Aterrorizado, volví a mi cama y seguí,
+Dialogue: 0,0:00:25.55,0:00:30.03,TikTok,,0,0,0,,fingiendo dormir mientras el intruso entraba varias veces a vigilarme.
+Dialogue: 0,0:00:30.03,0:00:32.84,TikTok,,0,0,0,,Al amanecer, descubrí algo aterrador.
+Dialogue: 0,0:00:32.84,0:00:37.28,TikTok,,0,0,0,,Si quieres saber que encontré después, busca el vídeo relacionado.
+Dialogue: 0,0:00:37.28,0:00:40.88,TikTok,,0,0,0,,Y suscríbete para más historias de terror digo de terror.
+Dialogue: 0,0:00:40.88,0:00:44.35,TikTok,,0,0,0,,Ustedes me entienden, solo trato de hacer buenos vídeos.
+Dialogue: 0,0:00:44.35,0:00:45.35,TikTok,,0,0,0,,Suscríbete.

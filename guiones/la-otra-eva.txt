@@ -1,0 +1,86 @@
+[TITULO]
+La otra Eva
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+70
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.35
+
+[MAX_EFECTOS_SONIDO]
+30
+
+[ESTILO_VISUAL]
+Terror cinematográfico vertical, al menos 70 por ciento de personajes stick. Mostrar a narrator como presentador detective al inicio. Mantener iguales a Eva y su doble. Usar sombras, susurros, pasos y truenos. Incluir emojis visuales apropiados, como 🌙 y ⚠️. Sin gore.
+
+[NEGATIVE_PROMPT]
+Sangre, gore, violencia gráfica, personajes deformes, extremidades adicionales, texto en las imágenes, marcas de agua.
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+4
+
+[GUION]
+Bienvenidos, májes, a Voces de el Más Allá. Esta noche conocerán el caso de Eva…
+
+Estoy sacando estas historias de Reddit porque quiero hacer contenido. así que espero que me apoyen en vez de las cagadas de contenido que ve la mayoría. Aquí vamos:
+
+el padre de eva siempre creyó que los monstruos y las sombras eran parte de la imaginación infantil. Eva tenía seis años, amaba los libros y los insectos, pero le temía a la oscuridad.
+
+Una noche, su padre la encontró hablando sola. Cuando le preguntó con quién hablaba, Eva respondió que con nadie. Lo observó sin miedo, como si estuviera estudiándolo.
+
+Después, comenzaron los pasos en el pasillo. Sonaban como los de una niña, pero corrían demasiado rápido. También apareció en la casa un olor a tierra mojada y podredumbre.
+
+A las tres de la mañana, Eva despertó llorando.
+
+—No la escuches, papá. Ella miente. Hay alguien debajo de mi cama fingiendo ser yo.
+
+Su padre revisó, pero no encontró nada. A la mañana siguiente, Eva no recordaba nada. Pensó que quizá había caminado dormida.
+
+Entonces instaló una cámara. Una noche vio a Eva sentada en la cama, con los ojos cerrados, susurrando. Otra voz le respondió desde la oscuridad. Era grave y trataba de imitarla.
+
+Durante una tormenta, Eva llevó a su padre a la habitación. En la cama había una niña dormida. Junto a él estaba otra Eva, sujetándole la mano.
+
+—Esa no soy yo —dijo la niña.
+
+La figura de la cama abrió los ojos y sonrió demasiado. Una voz apareció dentro de la cabeza del padre: «Ahora puedes verme». Él escapó con la Eva que lo acompañaba.
+
+Pero la cámara mostró algo imposible: el padre aparecía sonriendo con la misma sonrisa de la criatura.
+
+En casa de su tía, Eva dibujó una y otra vez a su doble saliendo de debajo de la cama. Dijo que aquella criatura aseguraba que debía haber nacido en su lugar y que Eva era un error.
+
+El padre buscó respuestas y encontró un mensaje: «Hay alguien debajo de mi cama fingiendo ser yo». Los comentarios advertían: «Aprenden observándote» y «Nunca confíes en la que sonríe».
+
+Al regresar, encontró a su hija desaparecida y a su hermana fría en el pasillo. Unas huellas mojadas conducían al bosque.
+
+Allí vio dos Evas. La que sonreía afirmó ser la verdadera. El padre le preguntó cuál era su cuento favorito. Respondió mal. Él corrió hacia la Eva cubierta de barro. Las raíces se abrieron y devoraron a la criatura.
+
+Se fueron esa noche y quemaron la casa.
+
+Semanas después, Eva volvió a despertar gritando. Decía que alguien la observaba desde una esquina y que todavía estaba aprendiendo.
+
+Esa noche, su padre oyó susurros en la habitación.
+
+Eva estaba sonriendo.
+
+Suscríbete a Voces de el Más Allá para escuchar más historias de terror.

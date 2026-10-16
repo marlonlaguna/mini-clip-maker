@@ -1,0 +1,52 @@
+[TITULO]
+No revises las cámaras a las 3 AM
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.35
+
+[MAX_EFECTOS_SONIDO]
+8
+
+[ESTILO_VISUAL]
+Usa los fondos existentes del borde del bosque y la sala rural; no generes fondos nuevos. Mantén la criatura igual en todas las escenas y muestra a narrator al menos una vez. Incluye un efecto de sonido disponible y un emoji como marcador visual en el storyboard; no leas el emoji en la narración.
+
+[NEGATIVE_PROMPT]
+No gore, sangre explícita, personajes inconsistentes, fondos nuevos, texto ilegible ni criaturas distintas.
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+4
+
+[GUION]
+Las cámaras trampa de mi abuelo llevaban semanas vigilando el borde del bosque.
+
+Después de su muerte, encontré unas fotos tomadas a las 3:14 de la madrugada. Al principio solo aparecían árboles y animales… hasta que vi una silueta entre la vegetación.
+
+En cada foto estaba más cerca.
+
+La última imagen mostraba algo junto a la ventana de la casa. Y esa misma noche, mientras yo seguía allí, la cámara volvió a activarse en el patio…
+
+¿Qué había captado? Mira la historia completa en el otro video de Voces del Más Allá. Y suscríbete para no perderte más relatos de terror.

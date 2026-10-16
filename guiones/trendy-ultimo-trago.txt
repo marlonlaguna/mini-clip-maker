@@ -1,0 +1,60 @@
+[TITULO]
+El último trago de Trendy
+
+[MODO_VIDEO]
+mixed
+
+[PORCENTAJE_MINIMO_STICK]
+70
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+si
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.35
+
+[MAX_EFECTOS_SONIDO]
+8
+
+[ESTILO_VISUAL]
+dark cinematic horror illustration, mysterious nightlife atmosphere, psychological horror, dramatic shadows, eerie empty spaces, subtle supernatural feeling, no gore, vertical composition
+
+[NEGATIVE_PROMPT]
+gore, blood, dismemberment, text, watermark, logo, distorted anatomy, bad hands, blurry
+
+[GUION]
+Trendy era poeta… y también era el último en abandonar una botella.
+
+Pero un día juró que nunca volvería a beber.
+
+Sus amigos siguieron reuniéndose cada noche.
+
+Reían, brindaban… bebían y bebían frente a él.
+
+Trendy solo escribía poemas mientras observaba en silencio.
+
+Hasta que una madrugada escuchó una voz dentro de un vaso vacío.
+
+“Solo uno más…”
+
+Trendy se levantó aterrorizado.
+
+Desde aquella noche dejó de visitar a sus amigos.
+
+Dicen que se está reformando.
+
+Pero cada poema que escribe termina exactamente con la misma frase:
+
+“Todavía tengo sed.”

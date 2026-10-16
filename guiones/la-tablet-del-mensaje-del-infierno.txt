@@ -1,0 +1,49 @@
+[TITULO]
+La tablet que mostró un mensaje del infierno
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[ESTILO_VISUAL]
+Terror sobrenatural sutil. Usa únicamente los fondos y recursos existentes, sin generar fondos nuevos. Muestra al protagonista como un adolescente y destaca la tablet: pantalla negra, una ruedita de carga y luego un destello rojo con el mensaje. Mantén visible al personaje narrator al menos una vez. Incluye un efecto de sonido disponible y un emoji visual en el storyboard; no leas el emoji en voz alta.
+
+[NEGATIVE_PROMPT]
+No generar fondos nuevos, no sangre, no gore, no monstruos ni personajes adicionales, no cambiar el texto del mensaje de la tablet.
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+4
+
+[GUION]
+Bienvenidos a Voces del Más Allá, donde compartimos historias que te harán mirar dos veces a tu alrededor. Hoy quiero contarles algo que me pasó cuando tenía catorce años.
+
+Mi papá me regaló una tablet barata. Yo solo la usaba para jugar, hasta que un día se quedó completamente trabada. No podía apagarla, así que la reinicié con una aguja, usando el pequeño orificio que tenía.
+
+Al encenderla, no apareció el logo de siempre. Solo vi una ruedita girando y una palabra en la pantalla: “maldito”.
+
+Cuando terminó de cargar, mi fondo había desaparecido. Todo estaba negro.
+
+Le conté a mi primo y me explicó cómo restablecerla. Pero, a mitad del proceso, la pantalla se volvió de un rojo intenso. En el centro apareció un mensaje: “Te vas a quemar en el infierno”.
+
+Entonces la tablet se apagó. Nunca volvió a encender.
+
+Le dije a mi papá que se había malogrado y que no quería que la mandara a reparar. Todavía recuerdo lo que vi. ¿Qué creen que ocurrió con mi tablet?
+
+Déjenme su teoría en los comentarios. Y si les gustan las historias de terror, suscríbanse a Voces del Más Allá.

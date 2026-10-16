@@ -1,0 +1,56 @@
+{
+  "duration": 0.9,
+  "loop": true,
+  "keyframes": [
+    {
+      "time": 0.0,
+      "torso": -4,
+      "head": -4,
+      "left_upper_arm": 18,
+      "left_forearm": -50,
+      "right_upper_arm": -18,
+      "right_forearm": 50,
+      "left_thigh": 5,
+      "right_thigh": -5
+    },
+    {
+      "time": 0.22,
+      "torso": -8,
+      "head": -8,
+      "left_upper_arm": 28,
+      "left_forearm": -65,
+      "right_upper_arm": -28,
+      "right_forearm": 65,
+      "root_y": -5
+    },
+    {
+      "time": 0.45,
+      "torso": -5,
+      "head": -5,
+      "left_upper_arm": 20,
+      "left_forearm": -55,
+      "right_upper_arm": -20,
+      "right_forearm": 55,
+      "root_y": 0
+    },
+    {
+      "time": 0.68,
+      "torso": -8,
+      "head": -8,
+      "left_upper_arm": 28,
+      "left_forearm": -65,
+      "right_upper_arm": -28,
+      "right_forearm": 65,
+      "root_y": -5
+    },
+    {
+      "time": 0.9,
+      "torso": -4,
+      "head": -4,
+      "left_upper_arm": 18,
+      "left_forearm": -50,
+      "right_upper_arm": -18,
+      "right_forearm": 50
+    }
+  ]
+}

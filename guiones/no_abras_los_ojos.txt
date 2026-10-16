@@ -1,0 +1,92 @@
+[TITULO]
+no abras los ojos
+
+[MODO_VIDEO]
+mixed
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+si
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[ESTILO_VISUAL]
+Ilustración cinematográfica de suspenso, siluetas sin rasgos faciales, casa familiar de noche, iluminación tenue y realista, tensión contenida, composición sencilla, sin gore ni texto.
+
+[NEGATIVE_PROMPT]
+rostros detallados, ojos, nariz, boca, caricatura, anime, estilo infantil, gore explícito, monstruos, texto, letras, marcas de agua, anatomía deformada
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+4
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.35
+
+[MAX_EFECTOS_SONIDO]
+26
+
+[GUION]
+Acompáñame a escuchar esta historia de Reddit…
+
+esto es voces de el mas alla donde te contamos historias para que no duermas esta noche...
+
+Esto pasó hace casi una década, cuando tenía diez años. Ahora tengo diecinueve, pero lo recuerdo como si hubiera ocurrido ayer.
+
+En mi familia todos se acostaban temprano. A mí me daba vergüenza, así que les decía a mis amigos que me dormía más tarde. En realidad, cuando mis padres me acostaban, me quedaba despierto una o dos horas con el teléfono: hablaba con mis amigos por WhatsApp o jugaba.
+
+A veces mis padres se levantaban para ir al baño o buscar agua. Entonces yo apagaba rápido el teléfono, lo escondía bajo la manta y fingía estar dormido.
+
+Aquella noche de invierno, en 2013, llevaba varias horas jugando a King of Thieves. De pronto, oí pasos que subían por la escalera.
+
+Me pareció extraño. No recordaba haber oído a mis padres bajar, pero supuse que mi padre había ido por agua. Reconocí sus pasos: eran pesados, aunque intentaba caminar en silencio.
+
+Apagué el teléfono, lo escondí y me hice el dormido. Unos segundos después, los pasos se detuvieron. Entreabrí los ojos y vi la silueta de mi padre asomándose a mi habitación, como hacía siempre. Se quedó allí unos segundos y luego se marchó.
+
+Oí que abría la puerta de su habitación. Yo quería volver a jugar, así que conté hasta cinco, como hacía para asegurarme de que no se viera la luz del teléfono.
+
+Entonces escuché golpes secos y fuertes desde el cuarto de mis padres.
+
+Pensé que quizá estaban haciendo algo de adultos. Mis amigos hablaban de esas cosas y yo tenía curiosidad. Como la puerta estaba abierta, salí de la cama y me acerqué en silencio para mirar.
+
+Lo que vi fue una sombra de un hombre grande. Llevaba algo que parecía un machete y golpeaba dos formas sobre la cama.
+
+En ese instante entendí que no eran almohadas. Eran mis padres.
+
+Me quedé paralizado. No lloré ni hice ruido. Mi corazón latía con tanta fuerza que parecía retumbar en mi cabeza. Algo dentro de mí me dijo que volviera a mi habitación, y le hice caso.
+
+Regresé a la cama con cuidado. Cuando los golpes cesaron, volví a fingir que dormía. Oí los pasos acercarse a mi habitación. No abrí los ojos, pero sentí que el hombre estaba en la puerta, mirándome.
+
+Después lo oí bajar las escaleras. Pensé que se había ido, pero al cabo de un rato volvió a subir. Esta vez entró en mi habitación. Lo sentí detrás de mí, muy cerca. Luego salió y fue al cuarto de mis padres.
+
+El hombre volvió a entrar varias veces. Yo seguía inmóvil, tratando de entender dónde estaba por el sonido de sus pasos y de su respiración.
+
+En un momento, lo oí tocar o acariciar la pared de mi habitación. Era de gotelé, una textura muy común en España. El sonido áspero duró un rato. Después, salió y bajó las escaleras. No volví a oír nada.
+
+Permanecí quieto durante mucho tiempo, sin saber si seguía en la casa. Cuando abrí los ojos, ya era de día, aunque el sol todavía no brillaba.
+
+A esa hora, mis padres normalmente ya estarían hablando mientras desayunaban. Me armé de valor y me di la vuelta.
+
+Los encontré muertos. La imagen me persigue hasta hoy.
+
+Grité y empecé a llorar. Entonces noté algo duro bajo la manta: mi teléfono seguía allí, donde lo había escondido.
+
+Al intentar salir de la cama, vi un mensaje escrito en la pared azul de gotelé con la sangre de mis padres:
+
+“Sé que estabas despierto”.
+
+…Suscríbete y dale me gusta para más historias terroríficas.
