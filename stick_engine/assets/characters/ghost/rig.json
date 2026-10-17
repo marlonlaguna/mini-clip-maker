@@ -38,20 +38,20 @@
         14,
         10
       ],
-      "angle": 8,
+      "angle": 2,
       "embedded_color": true
     },
     {
       "name": "left_forearm",
       "parent": "left_upper_arm",
       "sprite": "forearm.png",
-      "x": 0,
-      "y": 92,
+      "x": -7,
+      "y": 82,
       "pivot": [
         13,
         10
       ],
-      "angle": 2,
+      "angle": -2,
       "embedded_color": true
     },
     {
@@ -64,20 +64,20 @@
         14,
         10
       ],
-      "angle": -8,
+      "angle": -2,
       "embedded_color": true
     },
     {
       "name": "right_forearm",
       "parent": "right_upper_arm",
       "sprite": "forearm.png",
-      "x": 0,
-      "y": 92,
+      "x": 7,
+      "y": 82,
       "pivot": [
         13,
         10
       ],
-      "angle": -2,
+      "angle": 2,
       "embedded_color": true
     },
     {
@@ -90,20 +90,20 @@
         16,
         10
       ],
-      "angle": 6,
+      "angle": 1,
       "embedded_color": true
     },
     {
       "name": "left_shin",
       "parent": "left_thigh",
       "sprite": "shin.png",
-      "x": 0,
+      "x": -10,
       "y": 112,
       "pivot": [
         15,
         10
       ],
-      "angle": 2,
+      "angle": -1,
       "embedded_color": true
     },
     {
@@ -116,20 +116,20 @@
         16,
         10
       ],
-      "angle": -6,
+      "angle": -1,
       "embedded_color": true
     },
     {
       "name": "right_shin",
       "parent": "right_thigh",
       "sprite": "shin.png",
-      "x": 0,
+      "x": 10,
       "y": 112,
       "pivot": [
         15,
         10
       ],
-      "angle": -2,
+      "angle": 1,
       "embedded_color": true
     }
   ]

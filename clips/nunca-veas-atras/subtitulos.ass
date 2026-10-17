@@ -1,0 +1,163 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:06.04,TikTok,,0,0,0,,Hola, buenas noches, espero que hoy no puedas dormir. Hoy te contaré una historia sacada
+Dialogue: 0,0:00:06.04,0:00:12.51,TikTok,,0,0,0,,de Reddit. Escuchemos la terrorífica historia de esta madre. Mi hija tenía siete años,
+Dialogue: 0,0:00:12.51,0:00:17.55,TikTok,,0,0,0,,cuando empezó a quejarse del niño, pequeño que vivía en nuestro sótano. Al principio
+Dialogue: 0,0:00:17.55,0:00:22.60,TikTok,,0,0,0,,supuse que se lo había inventado. Siempre había tenido mucha imaginación y por esa
+Dialogue: 0,0:00:22.60,0:00:28.55,TikTok,,0,0,0,,época se había interesado en las historias de fantasmas. Le eché la culpa a mi esposo,
+Dialogue: 0,0:00:28.55,0:00:33.43,TikTok,,0,0,0,,que encontraba muy gracioso contarle sobre la casa supuestamente embrujada en la que había
+Dialogue: 0,0:00:33.43,0:00:40.56,TikTok,,0,0,0,,crecido. Ella decía que el niño no tenía cara. Le pregunté qué quería decir. Me explicó con la
+Dialogue: 0,0:00:40.56,0:00:46.60,TikTok,,0,0,0,,paciencia que los niños reservan para los adultos especialmente tontos, que tenía cabeza y cabello,
+Dialogue: 0,0:00:46.60,0:00:52.56,TikTok,,0,0,0,,pero nada en el lugar donde debería estar su rostro, solo piel. Le dije que probablemente
+Dialogue: 0,0:00:52.56,0:00:59.20,TikTok,,0,0,0,,había tenido una pesadilla. Pareció quedarse satisfecha con esa explicación, aunque unos días
+Dialogue: 0,0:00:59.20,0:01:05.35,TikTok,,0,0,0,,después mencionó que el niño había empezado a usar su ropa. Me reí y le pregunté si creía
+Dialogue: 0,0:01:05.35,0:01:12.12,TikTok,,0,0,0,,que se la estaba robando. No dijo, está haciendo la suya. Recuerdo esa conversación porque parecía
+Dialogue: 0,0:01:12.12,0:01:17.71,TikTok,,0,0,0,,genuinamente molesta por mis preguntas, como si yo estuviera fingiendo no entender algo
+Dialogue: 0,0:01:17.71,0:01:23.59,TikTok,,0,0,0,,perfectamente obvio. Una semana después la encontré sentada en lo alto de las escaleras
+Dialogue: 0,0:01:23.59,0:01:30.20,TikTok,,0,0,0,,del sótano, mirando la oscuridad por la puerta abierta. Le pregunté qué hacía. Ya casi le
+Dialogue: 0,0:01:30.20,0:01:36.31,TikTok,,0,0,0,,queda bien mi cabello, me dijo. Encendí la luz del sótano, esperando encontrar algo que ella
+Dialogue: 0,0:01:36.31,0:01:42.00,TikTok,,0,0,0,,hubiera confundido con una persona. Quizás un abrigo viejo colgado de una tubería o un
+Dialogue: 0,0:01:42.00,0:01:48.40,TikTok,,0,0,0,,montón de ropa. Mi hija gritó, me agarró la muñeca e intentó apartarme del interruptor.
+Dialogue: 0,0:01:48.40,0:01:54.48,TikTok,,0,0,0,,Mamá apaga la, a él no le gusta que lo veas. Cerré la puerta y la cargué hasta arriba.
+Dialogue: 0,0:01:54.48,0:02:00.20,TikTok,,0,0,0,,Temblaba tanto que terminé dejándola dormir en nuestra cama. A la mañana siguiente estaba
+Dialogue: 0,0:02:00.20,0:02:06.00,TikTok,,0,0,0,,perfectamente alegre. Desayunó cereal, vio dibujos animados y no mencionó el sótano
+Dialogue: 0,0:02:06.00,0:02:11.59,TikTok,,0,0,0,,ni una sola vez. Me sentí aliviada, aunque le pedía a mi esposo que revisara si había
+Dialogue: 0,0:02:11.59,0:02:17.80,TikTok,,0,0,0,,moho o algo que pudiera estar afectándola. No encontró nada. Durante el mes siguiente
+Dialogue: 0,0:02:17.80,0:02:23.71,TikTok,,0,0,0,,sus dibujos empezaron a cambiar. Siempre le había gustado dibujar animales y flores,
+Dialogue: 0,0:02:23.71,0:02:30.00,TikTok,,0,0,0,,pero de repente todos sus dibujos estaban llenos de niños. La mayoría no tenía rostro,
+Dialogue: 0,0:02:30.00,0:02:34.87,TikTok,,0,0,0,,algunos tenían ojos o bocas en lugares equivocados y uno parecía tener una segunda
+Dialogue: 0,0:02:34.87,0:02:41.08,TikTok,,0,0,0,,fila de dientes debajo de la barbilla. En todos los dibujos había una niña pequeña en algún lugar.
+Dialogue: 0,0:02:41.08,0:02:46.63,TikTok,,0,0,0,,La reconocí de inmediato. Mi hija solía dibujarse con el mismo vestido amarillo,
+Dialogue: 0,0:02:46.63,0:02:52.69,TikTok,,0,0,0,,incluso cuando no lo llevaba puesto. En los primeros dibujos los niños sin rostro estaban
+Dialogue: 0,0:02:52.69,0:02:58.63,TikTok,,0,0,0,,lejos de ella. Al final del mes estaban lo bastante cerca como para tocarla. Encontré
+Dialogue: 0,0:02:58.63,0:03:04.24,TikTok,,0,0,0,,un dibujo particularmente inquietante pegado dentro de su armario. Mostraba a nuestra
+Dialogue: 0,0:03:04.24,0:03:10.56,TikTok,,0,0,0,,familia sentada alrededor de la mesa, excepto que había dos niñas pequeñas. Una sonreía,
+Dialogue: 0,0:03:10.56,0:03:17.24,TikTok,,0,0,0,,la otra no tenía boca. Cuando le pregunté por el dibujo se alteró y rompió el papel por la
+Dialogue: 0,0:03:17.24,0:03:23.36,TikTok,,0,0,0,,mitad. Eso todavía no debía pasar, dijo. A la mañana siguiente pedí una cita con una
+Dialogue: 0,0:03:23.36,0:03:29.00,TikTok,,0,0,0,,psicóloga infantil. La psicóloga fue muy amable. Sugirió que nuestra hija quizá estaba
+Dialogue: 0,0:03:29.00,0:03:34.96,TikTok,,0,0,0,,sintiendo ansiedad y usaba sus dibujos para expresar cosas que no sabía explicar. Recomendó
+Dialogue: 0,0:03:34.96,0:03:40.47,TikTok,,0,0,0,,limitar el contenido aterrador y evitar preguntas que pudieran animar a su amiga imaginaria.
+Dialogue: 0,0:03:40.47,0:03:46.84,TikTok,,0,0,0,,Seguimos sus consejos. Por un tiempo pareció funcionar. Nuestra hija dejó de mencionar
+Dialogue: 0,0:03:46.84,0:03:53.03,TikTok,,0,0,0,,el sótano. Dejó de dibujar a los niños, volvió a dormir toda la noche y poco a poco recuperó
+Dialogue: 0,0:03:53.03,0:03:58.96,TikTok,,0,0,0,,su comportamiento habitual. Sólo hubo una cosa que me pareció extraña. Había adquirido
+Dialogue: 0,0:03:58.96,0:04:04.52,TikTok,,0,0,0,,la costumbre de observarnos. A veces la encontraba de pie en las puertas mientras mi esposo y yo
+Dialogue: 0,0:04:04.52,0:04:10.28,TikTok,,0,0,0,,conversábamos o sentada completamente quieta a la mesa de la cocina mientras yo preparaba
+Dialogue: 0,0:04:10.28,0:04:16.31,TikTok,,0,0,0,,la comida. Cuando le preguntaba qué hacía se encogía de hombros y decía que nada.
+Dialogue: 0,0:04:16.31,0:04:21.92,TikTok,,0,0,0,,Una vez mientras doblaba la ropa la vi parada frente al espejo del pasillo. Se estaba
+Dialogue: 0,0:04:22.04,0:04:29.24,TikTok,,0,0,0,,sonriendo. Luego dejó de sonreír. Su reflejo no. Parpadeé y todo volvió a la normalidad.
+Dialogue: 0,0:04:29.24,0:04:36.07,TikTok,,0,0,0,,Me dije que me lo había imaginado. Unos dos meses después del incidente del sótano desperté
+Dialogue: 0,0:04:36.07,0:04:41.75,TikTok,,0,0,0,,y vi a alguien de pie junto a mi cama. Era mi hija. Llevaba su camisón amarillo,
+Dialogue: 0,0:04:41.75,0:04:47.95,TikTok,,0,0,0,,el que tenía flores bordadas alrededor del cuello. Le pregunté si había tenido una pesadilla.
+Dialogue: 0,0:04:48.12,0:04:55.51,TikTok,,0,0,0,,No contestó. Estiré la mano y encendí la lámpara. En el lugar donde debería estar su cara no había
+Dialogue: 0,0:04:55.51,0:05:01.12,TikTok,,0,0,0,,nada. No quiero decir que sus facciones estuvieran deformadas o fueran difíciles de distinguir.
+Dialogue: 0,0:05:01.12,0:05:07.56,TikTok,,0,0,0,,No tenía ojos, ni nariz, ni boca. La piel era completamente lisa y cubría la forma de su
+Dialogue: 0,0:05:07.56,0:05:14.27,TikTok,,0,0,0,,cráneo. Griteo. Ella se sobresaltó y extendió los brazos hacia mí mientras emitía un sonido
+Dialogue: 0,0:05:14.27,0:05:20.75,TikTok,,0,0,0,,horrible y amortiguado. Retrocedí de golpe y tiré la lámpara de la mesita. Ella se dio la vuelta
+Dialogue: 0,0:05:20.75,0:05:27.19,TikTok,,0,0,0,,y salió corriendo al pasillo. Un momento después escuché cerrarse de golpe la puerta del sótano.
+Dialogue: 0,0:05:27.19,0:05:33.80,TikTok,,0,0,0,,Mi esposo bajó antes de que yo pudiera explicarle lo sucedido. Lo oí llamar a nuestra hija y luego
+Dialogue: 0,0:05:33.80,0:05:40.19,TikTok,,0,0,0,,abrir la puerta del sótano. Unos minutos más tarde regresó cargándola. Ella sollozaba
+Dialogue: 0,0:05:40.19,0:05:46.56,TikTok,,0,0,0,,con la cara hundida en su hombro. La revisé desesperadamente. Sus ojos, su nariz, su boca,
+Dialogue: 0,0:05:46.56,0:05:52.36,TikTok,,0,0,0,,todo estaba en su sitio. Cuando por fin se calmó lo suficiente para hablar, nos dijo que
+Dialogue: 0,0:05:52.36,0:05:58.95,TikTok,,0,0,0,,alguien había estado junto a su cama. Se parecía a mí susurró, pero no tenía mi cara. Mi esposo
+Dialogue: 0,0:05:58.95,0:06:05.12,TikTok,,0,0,0,,le abrazó con más fuerza. Yo quería creerle. Todavía no entiendo por qué no lo hice.
+Dialogue: 0,0:06:05.27,0:06:11.72,TikTok,,0,0,0,,Nos mudamos tres semanas después. Sé que mudarnos parece una exageración, pero después de esa noche
+Dialogue: 0,0:06:11.72,0:06:18.72,TikTok,,0,0,0,,no soportaba estar en esa casa. Seguía oyendo cosas abajo. A veces parecían pasos. Otras veces
+Dialogue: 0,0:06:18.72,0:06:23.87,TikTok,,0,0,0,,escuchaba una especie de ruido húmedo y arrastrado que venía de detrás de la puerta del sótano.
+Dialogue: 0,0:06:23.87,0:06:29.68,TikTok,,0,0,0,,Mi esposo pensó que me estaba costando superar lo ocurrido. Probablemente tenía razón.
+Dialogue: 0,0:06:30.16,0:06:36.19,TikTok,,0,0,0,,Alquilamos una casita al otro lado de la ciudad e intentamos dejar atrás toda esa experiencia.
+Dialogue: 0,0:06:36.19,0:06:42.92,TikTok,,0,0,0,,Por un tiempo las cosas mejoraron. Nuestra hija parecía feliz. Hizo amigos en la escuela,
+Dialogue: 0,0:06:42.92,0:06:48.60,TikTok,,0,0,0,,empezó a tomar clases de baile y no volvió a mencionar al niño sin rostro. Aún así,
+Dialogue: 0,0:06:48.60,0:06:54.16,TikTok,,0,0,0,,había pequeños detalles que me inquietaban. Siempre había sido una niña cariñosa de
+Dialogue: 0,0:06:54.16,0:06:59.19,TikTok,,0,0,0,,las que querían sentarse en mis piernas mucho después de haber crecido demasiado para hacerlo.
+Dialogue: 0,0:06:59.19,0:07:05.60,TikTok,,0,0,0,,Ahora casi nunca me abrazaba, a menos que yo la abrazara primero. A veces me llamaba madre,
+Dialogue: 0,0:07:05.60,0:07:11.27,TikTok,,0,0,0,,lo cual era extraño porque siempre me había dicho mamá. También había empezado a hacer
+Dialogue: 0,0:07:11.27,0:07:17.48,TikTok,,0,0,0,,preguntas raras sobre cosas que debería recordar. ¿Qué se sentía cuando se había roto el brazo
+Dialogue: 0,0:07:17.48,0:07:23.31,TikTok,,0,0,0,,a los cinco años? ¿Por qué yo lloraba cada vez que veía cierta película? Si recordaba cómo
+Dialogue: 0,0:07:23.31,0:07:30.39,TikTok,,0,0,0,,se veía cuando era bebé. Supuse que era curiosidad normal de niña. Entonces me llamó su maestra.
+Dialogue: 0,0:07:30.39,0:07:36.39,TikTok,,0,0,0,,Nuestra hija había pasado toda la tarde dibujando en lugar de completar sus tareas. Cuando la
+Dialogue: 0,0:07:36.39,0:07:42.87,TikTok,,0,0,0,,maestra intentó quitarle el papel, se alteró de una manera inusual. Todos los dibujos eran iguales.
+Dialogue: 0,0:07:42.87,0:07:47.75,TikTok,,0,0,0,,Una niña pequeña estaba parada frente a un espejo. En cada dibujo,
+Dialogue: 0,0:07:47.75,0:07:53.63,TikTok,,0,0,0,,su reflejo miraba en la dirección equivocada. Le pregunté por ellos cuando llegó a casa.
+Dialogue: 0,0:07:53.63,0:08:01.04,TikTok,,0,0,0,,Me miró durante un largo rato antes de responder. Ya no está en el sótano. Me sentí enferma.
+Dialogue: 0,0:08:01.04,0:08:08.43,TikTok,,0,0,0,,¿Dónde está? Señaló el espejo del pasillo. Ahora está ahí. Desde entonces empecé a
+Dialogue: 0,0:08:08.43,0:08:14.48,TikTok,,0,0,0,,cubrir los espejos. A mi esposo le pareció ridículo, pero no podía quitarme la sensación de
+Dialogue: 0,0:08:14.48,0:08:21.16,TikTok,,0,0,0,,que algo estaba mal. También empecé a notar cosas en las fotos familiares. En todas las fotografías
+Dialogue: 0,0:08:21.16,0:08:27.19,TikTok,,0,0,0,,tomadas desde que nos mudamos, nuestra hija tenía los ojos cerrados. No solo en unas cuantas,
+Dialogue: 0,0:08:27.19,0:08:33.32,TikTok,,0,0,0,,en todas. En las fiestas de cumpleaños, la mañana de Navidad, las senas familiares. Había
+Dialogue: 0,0:08:33.32,0:08:38.75,TikTok,,0,0,0,,de senas de fotos y en cada una parecía haber parpadeado justo en el momento equivocado.
+Dialogue: 0,0:08:38.91,0:08:46.20,TikTok,,0,0,0,,Revisé las fotografías de nuestra casa anterior. En esas tenía los ojos abiertos. Se las enseñé
+Dialogue: 0,0:08:46.20,0:08:53.20,TikTok,,0,0,0,,a mi esposo, esperando que me dijera que estaba siendo paranoica. No lo hizo. Se sentó a mi lado
+Dialogue: 0,0:08:53.20,0:08:59.55,TikTok,,0,0,0,,y revisó las fotos el mismo. Al final, se detuvo en una tomada el día de la mudanza. Nuestra
+Dialogue: 0,0:08:59.55,0:09:04.84,TikTok,,0,0,0,,hija estaba de pie en el porche, sonriendo a la cámara. Detrás de ella, en la ventana de
+Dialogue: 0,0:09:04.96,0:09:11.12,TikTok,,0,0,0,,la sala, había otra niña pequeña. Tenía el mismo cabello y llevaba el mismo vestido amarillo.
+Dialogue: 0,0:09:11.12,0:09:18.32,TikTok,,0,0,0,,Su rostro estaba vuelto hacia otro lado. Mi esposo se quedó mirando la fotografía durante un largo
+Dialogue: 0,0:09:18.32,0:09:24.48,TikTok,,0,0,0,,rato. Luego me hizo una pregunta que no he podido olvidar. ¿Estás segura de que la niña que
+Dialogue: 0,0:09:24.48,0:09:31.08,TikTok,,0,0,0,,subí esa noche era nuestra hija? Eso ocurrió hace seis días. Desde entonces he intentado
+Dialogue: 0,0:09:31.08,0:09:37.36,TikTok,,0,0,0,,recordar todo lo que pasó esa noche. Sé lo que vi junto a la cama. Sé que corrió hacia el sótano
+Dialogue: 0,0:09:37.36,0:09:43.32,TikTok,,0,0,0,,y que mi esposo volvió a subir con nuestra hija. Lo que no puedo recordar es si realmente lo vi
+Dialogue: 0,0:09:43.32,0:09:50.46,TikTok,,0,0,0,,sacarla del sótano. Recuerdo haber oído abrirse la puerta. Recuerdo que él la llamó. Y después
+Dialogue: 0,0:09:50.46,0:09:56.00,TikTok,,0,0,0,,recuerdo que apareció en el pasillo con una niña llorando en brazos. Sigo pensando en la
+Dialogue: 0,0:09:56.00,0:10:03.00,TikTok,,0,0,0,,forma en que la niña sin rostro extendió los brazos hacia mí. No intentó hacerme daño. Sólo se
+Dialogue: 0,0:10:03.00,0:10:09.08,TikTok,,0,0,0,,quedó allí haciendo esos horribles sonidos amortiguados y con los brazos extendidos. Cuando mi
+Dialogue: 0,0:10:09.08,0:10:15.24,TikTok,,0,0,0,,hija era pequeña, hacía lo mismo. Siempre que tenía miedo, levantaba los brazos y esperaba
+Dialogue: 0,0:10:15.24,0:10:21.20,TikTok,,0,0,0,,a que yo la cargara. No la he visto hacerlo desde que nos mudamos. A noche decidí destapar
+Dialogue: 0,0:10:21.27,0:10:28.24,TikTok,,0,0,0,,el espejo del pasillo. Esperé a que todos estuvieran dormidos y luego quité la sábana. Al principio
+Dialogue: 0,0:10:28.24,0:10:34.65,TikTok,,0,0,0,,no había nada extraño. Sólo el pasillo, la puerta del baño y mi propio reflejo. Entonces
+Dialogue: 0,0:10:34.65,0:10:41.03,TikTok,,0,0,0,,noté a alguien detrás de mí. Una niña pequeña con un camisón amarillo. Era mucho más
+Dialogue: 0,0:10:41.03,0:10:46.39,TikTok,,0,0,0,,pequeña de lo que recordaba a mi hija. Tenía el cabello enredado y los pies descalzos
+Dialogue: 0,0:10:46.39,0:10:53.91,TikTok,,0,0,0,,llenos de tierra. No tenía rostro. Me di la vuelta. El pasillo estaba vacío. Cuando miré
+Dialogue: 0,0:10:53.91,0:11:00.84,TikTok,,0,0,0,,de nuevo el espejo, ella seguía allí. Levantó una mano y la apoyó contra el vidrio. No podía
+Dialogue: 0,0:11:00.84,0:11:07.24,TikTok,,0,0,0,,moverme. Entonces empezó a escribir algo en el interior del espejo. Su dedo se deslizó
+Dialogue: 0,0:11:07.24,0:11:13.84,TikTok,,0,0,0,,lentamente por el vapor y formó letras torcidas. Mamá, empecé a llorar. No sé
+Dialogue: 0,0:11:13.84,0:11:20.12,TikTok,,0,0,0,,por qué eso fue lo que finalmente me convenció. Ni las fotografías, ni los dibujos, ni todas las
+Dialogue: 0,0:11:20.12,0:11:26.32,TikTok,,0,0,0,,cosas que nuestra hija había olvidado. Fue la forma en que había escrito la palabra. Mi hija
+Dialogue: 0,0:11:26.32,0:11:32.67,TikTok,,0,0,0,,siempre escribía la M al revés. Pasé todo un verano intentando ayudarla a corregirla antes de
+Dialogue: 0,0:11:32.67,0:11:38.48,TikTok,,0,0,0,,que empezara segundo grado. Se frustraba tanto que lanzaba el lápiz por la mesa de la cocina.
+Dialogue: 0,0:11:38.60,0:11:45.15,TikTok,,0,0,0,,La niña del espejo había cometido el mismo error. Extendí la mano hacia el vidrio. Ella
+Dialogue: 0,0:11:45.15,0:11:51.39,TikTok,,0,0,0,,levantó los dos brazos y comprendí lo que había intentado hacer esa noche junto a mi cama.
+Dialogue: 0,0:11:51.39,0:11:59.03,TikTok,,0,0,0,,Quería que la cargara. Hoy un ruido detrás de mí. Mamá, mi hija estaba al final del pasillo,
+Dialogue: 0,0:11:59.03,0:12:05.00,TikTok,,0,0,0,,la que habíamos traído a casa desde la otra casa. Miró hacia mí y luego hacia el espejo.
+Dialogue: 0,0:12:05.12,0:12:11.67,TikTok,,0,0,0,,Por primera vez en meses vi algo claramente extraño en su expresión. Tenía miedo. No de
+Dialogue: 0,0:12:11.67,0:12:18.60,TikTok,,0,0,0,,la cosa que estaba en el espejo. De mí. No la mires dijo, está tratando de engañarte. No me
+Dialogue: 0,0:12:18.60,0:12:24.72,TikTok,,0,0,0,,movís. La niña detrás del vidrio lloraba, aunque no tenía rostro del que pudieran salir lágrimas.
+Dialogue: 0,0:12:24.72,0:12:30.60,TikTok,,0,0,0,,Presionó las dos manos contra el espejo y negó con la cabeza. Mi hija dio un paso hacia
+Dialogue: 0,0:12:31.00,0:12:37.32,TikTok,,0,0,0,,mí. Mamá, por favor. Era la primera vez en meses que me llamaba mamá sin que nadie se lo pidiera.
+Dialogue: 0,0:12:37.32,0:12:44.24,TikTok,,0,0,0,,Miré su reflejo. Tenía los ojos cerrados. Ella estaba parada en el pasillo observándome,
+Dialogue: 0,0:12:44.24,0:12:49.63,TikTok,,0,0,0,,pero en el espejo tenía los ojos apretados con tanta fuerza que la piel a su alrededor
+Dialogue: 0,0:12:49.63,0:12:56.67,TikTok,,0,0,0,,empezaba a arrugarse. Entonces me fijé en su boca. Su reflejo estaba sonriendo. No
+Dialogue: 0,0:12:56.67,0:13:03.48,TikTok,,0,0,0,,la niña detrás del vidrio, la que estaba detrás de mí. Su reflejo abrió la boca y vi cómo
+Dialogue: 0,0:13:03.48,0:13:10.75,TikTok,,0,0,0,,las comisuras se estiraban más de lo que deberían. Me di la vuelta. Mi hija estaba llorando. Lágrimas
+Dialogue: 0,0:13:10.75,0:13:16.67,TikTok,,0,0,0,,reales le mojaban las mejillas y le temblaba el labio inferior. Por favor, no me obligues a
+Dialogue: 0,0:13:16.67,0:13:23.75,TikTok,,0,0,0,,volver su surro. Casi fui hacia ella. Eso es lo que no puedo dejar de pensar. Después de todo
+Dialogue: 0,0:13:23.75,0:13:28.67,TikTok,,0,0,0,,lo que había visto, después de entender por fin lo que habíamos llevado a nuestra casa,
+Dialogue: 0,0:13:28.67,0:13:35.75,TikTok,,0,0,0,,casi extendí los brazos hacia ella. Porque se parecía exactamente a mi niña. Y porque en algún
+Dialogue: 0,0:13:35.75,0:13:41.91,TikTok,,0,0,0,,momento también había empezado a quererla. Entonces la cosa del espejo comenzó a golpear
+Dialogue: 0,0:13:41.91,0:13:49.39,TikTok,,0,0,0,,el vidrio. Volvís a mirar. Tenía algo pegado al cristal. Un pequeño trozo de tela amarilla.
+Dialogue: 0,0:13:49.44,0:13:56.08,TikTok,,0,0,0,,El camisón que mi hija llevaba puesto cuando desapareció. Había manchas oscuras alrededor del
+Dialogue: 0,0:13:56.08,0:14:02.44,TikTok,,0,0,0,,cuello. Y de pronto recordé algo más de aquella noche. Cuando mi esposo subió con nuestra hija,
+Dialogue: 0,0:14:02.44,0:14:09.03,TikTok,,0,0,0,,ella ya no llevaba el camisón. Tenía puesta una pijama. Me había sentido tan aliviada de
+Dialogue: 0,0:14:09.03,0:14:15.32,TikTok,,0,0,0,,ver su cara que ni siquiera me di cuenta. A mis espaldas, el llanto se detuvo. El pasillo
+Dialogue: 0,0:14:15.32,0:14:20.60,TikTok,,0,0,0,,quedó completamente en silencio. Entonces la niña, que habíamos estado criando,
+Dialogue: 0,0:14:20.60,0:14:27.12,TikTok,,0,0,0,,habló con una voz casi igual a la de mi hija, pero no del todo. Se suponía que debías dejarla ahí.
+Dialogue: 0,0:14:27.12,0:14:34.00,TikTok,,0,0,0,,No me he dado la vuelta. Ella todavía está detrás de mí. Puedo oírla respirar y cada
+Dialogue: 0,0:14:34.00,0:14:39.63,TikTok,,0,0,0,,pocos segundos escucho el suave chasquido de sus dientes mientras mueve la mandíbula. La
+Dialogue: 0,0:14:39.63,0:14:46.20,TikTok,,0,0,0,,niña del espejo no deja de señalar hacia el baño. Creo que quiere que corra, pero hay algo que
+Dialogue: 0,0:14:46.20,0:14:52.60,TikTok,,0,0,0,,no les he contado. La niña que está detrás de mí empezó a llorar otra vez. Solo que ahora está
+Dialogue: 0,0:14:52.60,0:14:59.44,TikTok,,0,0,0,,usando mi voz. Está llamando a mi esposo y desde el dormitorio puedo oír cómo se despierta.
+Dialogue: 0,0:14:59.44,0:15:06.08,TikTok,,0,0,0,,Creé que me pasó algo. Quiero advertirle, pero cada vez que intento hablar, la cosa detrás de
+Dialogue: 0,0:15:06.08,0:15:13.36,TikTok,,0,0,0,,mí dice exactamente lo que estoy a punto de decir. Cada vez lo hace mejor. Hace un momento oí a mi
+Dialogue: 0,0:15:13.36,0:15:19.79,TikTok,,0,0,0,,esposo preguntar qué pasaba. Abrí la boca para decirle que no saliera. Pero antes de que pudiera
+Dialogue: 0,0:15:19.79,0:15:26.00,TikTok,,0,0,0,,emitir un sonido, me oí responder desde el pasillo. No pasa nada, cariño, vuelve a dormir.
+Dialogue: 0,0:15:26.00,0:15:32.87,TikTok,,0,0,0,,Y entonces, con una voz mucho más pequeña, la cosa añadió. Está aprendiendo. Gracias por
+Dialogue: 0,0:15:32.87,0:15:36.72,TikTok,,0,0,0,,ver este vídeo. Suscríbete para más historias de terror.

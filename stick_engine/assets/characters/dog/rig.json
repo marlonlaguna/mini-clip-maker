@@ -13,7 +13,8 @@
       "pivot": [
         115,
         60
-      ]
+      ],
+      "embedded_color": true
     },
     {
       "name": "head",
@@ -24,7 +25,8 @@
       "pivot": [
         55,
         55
-      ]
+      ],
+      "embedded_color": true
     },
     {
       "name": "tail",
@@ -36,7 +38,8 @@
         12,
         68
       ],
-      "angle": 20
+      "angle": 20,
+      "embedded_color": true
     },
     {
       "name": "front_left_leg",
@@ -48,7 +51,8 @@
         14,
         8
       ],
-      "angle": 4
+      "angle": 4,
+      "embedded_color": true
     },
     {
       "name": "front_right_leg",
@@ -60,7 +64,8 @@
         14,
         8
       ],
-      "angle": -3
+      "angle": -3,
+      "embedded_color": true
     },
     {
       "name": "back_left_leg",
@@ -72,7 +77,8 @@
         14,
         8
       ],
-      "angle": 5
+      "angle": 5,
+      "embedded_color": true
     },
     {
       "name": "back_right_leg",
@@ -84,7 +90,8 @@
         14,
         8
       ],
-      "angle": -4
+      "angle": -4,
+      "embedded_color": true
     }
   ]
 }

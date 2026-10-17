@@ -1,0 +1,313 @@
+{
+  "storyboard": [
+    {
+      "scene": 1,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "rural_house",
+      "fallback_background": "rural_house",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "narrator",
+          "type": "narrator",
+          "action": "talk",
+          "position": 3,
+          "emotion": null
+        },
+        {
+          "id": "girl",
+          "type": "girl",
+          "action": "look_back",
+          "position": 1,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🏠",
+          "x": 0.78,
+          "y": 0.36,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "👀",
+          "x": 0.25,
+          "y": 0.24,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "misterius_wind",
+          "time": 1.2,
+          "volume": 0.62
+        }
+      ],
+      "start": 0.0,
+      "end": 6.16,
+      "timeline_duration": 6.16,
+      "duration": 6.166666666666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Cada vez que visitaba la granja de mis abuelos, me sentía observada, yo solo era una niña."
+    },
+    {
+      "scene": 2,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "rural_house_interior",
+      "fallback_background": "rural_house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "girl",
+          "type": "girl",
+          "action": "look_back",
+          "position": 2,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "👣",
+          "x": 0.72,
+          "y": 0.72,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "🌙",
+          "x": 0.83,
+          "y": 0.2,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "crunchy-footsteps-loop",
+          "time": 1.1,
+          "volume": 0.7
+        }
+      ],
+      "start": 6.16,
+      "end": 12.04,
+      "timeline_duration": 5.879999999999999,
+      "duration": 5.866666666666666,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Sabía que alguien desconocido me miraba, podía escuchar sus pasos, pero no veía a nadie."
+    },
+    {
+      "scene": 3,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "pasillo_escaleras_casa",
+      "fallback_background": "pasillo_escaleras_casa",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "girl",
+          "type": "girl",
+          "action": "hands_up",
+          "position": 2,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚪",
+          "x": 0.75,
+          "y": 0.46,
+          "size": 140
+        },
+        {
+          "type": "emoji",
+          "value": "🌙",
+          "x": 0.2,
+          "y": 0.2,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "scarywind",
+          "time": 0.8,
+          "volume": 0.68
+        }
+      ],
+      "start": 12.04,
+      "end": 16.88,
+      "timeline_duration": 4.84,
+      "duration": 4.833333333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Nunca me atrevía a abrir aquella puerta las noches en que me sentía observada."
+    },
+    {
+      "scene": 4,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "rural_house_interior",
+      "fallback_background": "rural_house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "girl",
+          "type": "girl",
+          "action": "open_door",
+          "position": 2,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚪",
+          "x": 0.7,
+          "y": 0.48,
+          "size": 145
+        },
+        {
+          "type": "emoji",
+          "value": "🔦",
+          "x": 0.32,
+          "y": 0.64,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "door_open",
+          "time": 1.0,
+          "volume": 0.75
+        }
+      ],
+      "start": 16.88,
+      "end": 19.84,
+      "timeline_duration": 2.960000000000001,
+      "duration": 2.966666666666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Un día me armé de valor y me atrevía a mirar."
+    },
+    {
+      "scene": 5,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "rural_house_interior",
+      "fallback_background": "rural_house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "girl",
+          "type": "girl",
+          "action": "fall",
+          "position": 1,
+          "emotion": "scared"
+        },
+        {
+          "id": "ghost",
+          "type": "brown_ghost",
+          "action": "hands_up",
+          "position": 4,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "👻",
+          "x": 0.72,
+          "y": 0.28,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "💀",
+          "x": 0.88,
+          "y": 0.66,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "ghost-horror-sound",
+          "time": 0.7,
+          "volume": 0.82
+        }
+      ],
+      "start": 19.84,
+      "end": 26.575,
+      "timeline_duration": 6.734999999999999,
+      "duration": 6.733333333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Era un fantasma horrendo, de color café, luego no recuerdo nada. Suscríbete para más horror."
+    }
+  ],
+  "cast": [
+    {
+      "id": "girl",
+      "name": "La niña",
+      "description": "Niña protagonista que visita la granja de sus abuelos",
+      "type": "girl"
+    },
+    {
+      "id": "ghost",
+      "name": "El fantasma",
+      "description": "Fantasma que observa a la niña en la granja",
+      "type": "brown_ghost"
+    },
+    {
+      "id": "narrator",
+      "name": "Narrator",
+      "description": "official presenter of Voces del Más Allá",
+      "type": "narrator"
+    }
+  ],
+  "sync_mode": "whisper",
+  "audio_duration": 26.575,
+  "llm_provider": "openai",
+  "llm_model": "gpt-6-luna",
+  "batch_size": 6
+}

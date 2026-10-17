@@ -1,0 +1,19 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:06.16,TikTok,,0,0,0,,Cada vez que visitaba la granja de mis abuelos, me sentía observada, yo solo era una niña.
+Dialogue: 0,0:00:06.16,0:00:12.03,TikTok,,0,0,0,,Sabía que alguien desconocido me miraba, podía escuchar sus pasos, pero no veía a nadie.
+Dialogue: 0,0:00:12.03,0:00:16.87,TikTok,,0,0,0,,Nunca me atrevía a abrir aquella puerta las noches en que me sentía observada.
+Dialogue: 0,0:00:16.87,0:00:19.83,TikTok,,0,0,0,,Un día me armé de valor y me atrevía a mirar.
+Dialogue: 0,0:00:19.83,0:00:24.32,TikTok,,0,0,0,,Era un fantasma horrendo, de color café, luego no recuerdo nada.
+Dialogue: 0,0:00:24.32,0:00:26.48,TikTok,,0,0,0,,Suscríbete para más horror.

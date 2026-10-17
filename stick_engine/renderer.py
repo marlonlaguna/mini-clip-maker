@@ -1402,6 +1402,30 @@ class StickRenderer:
                     color
                 )
 
+            # Cutout rigs often need hips to sit behind the torso. Drawing those
+            # complete child subtrees first lets the torso cover the waist seam,
+            # which prevents visible gaps and underwear-like cut lines.
+            child_world = (
+                world_x,
+                world_y,
+                world_angle
+            )
+
+            children_of_part = children.get(name, [])
+            behind_children = [
+                child_name
+                for child_name in children_of_part
+                if parts[child_name].get("draw_behind_parent", False)
+            ]
+            front_children = [
+                child_name
+                for child_name in children_of_part
+                if child_name not in behind_children
+            ]
+
+            for child_name in behind_children:
+                render_node(child_name, child_world)
+
             self._paste_at_joint(
                 canvas=canvas,
                 sprite=sprite,
@@ -1416,17 +1440,10 @@ class StickRenderer:
                 )
             )
 
-            for child_name in children.get(
-                name,
-                []
-            ):
+            for child_name in front_children:
                 render_node(
                     child_name,
-                    (
-                        world_x,
-                        world_y,
-                        world_angle
-                    )
+                    child_world
                 )
 
         for root_name in children.get(

@@ -1,0 +1,388 @@
+{
+  "storyboard": [
+    {
+      "scene": 1,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "room_child_nigth",
+      "fallback_background": "room_child_nigth",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "narrator",
+          "type": "narrator",
+          "action": "talk",
+          "position": 3,
+          "emotion": null
+        },
+        {
+          "id": "child-narrator",
+          "type": "boy",
+          "action": "idle",
+          "position": 1,
+          "emotion": "sleep"
+        },
+        {
+          "id": "ghost",
+          "type": "ghost",
+          "action": "open_door",
+          "position": 5,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🛏️",
+          "x": 0.28,
+          "y": 0.73,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🚪",
+          "x": 0.77,
+          "y": 0.43,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "door_open",
+          "time": 3.2,
+          "volume": 0.68
+        }
+      ],
+      "start": 0.0,
+      "end": 5.0,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Era un niño y recuerdo que, cada vez que dormía, él entraba en mi habitación."
+    },
+    {
+      "scene": 2,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "pasillo_escaleras_casa",
+      "fallback_background": "pasillo_escaleras_casa",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "child-narrator",
+          "type": "boy",
+          "action": "idle",
+          "position": 1,
+          "emotion": "scared"
+        },
+        {
+          "id": "ghost",
+          "type": "ghost",
+          "action": "walk",
+          "position": 5,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "👣",
+          "x": 0.64,
+          "y": 0.76,
+          "size": 105
+        },
+        {
+          "type": "emoji",
+          "value": "🚪",
+          "x": 0.16,
+          "y": 0.43,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "crunchy-footsteps-loop",
+          "time": 1.1,
+          "volume": 0.72
+        }
+      ],
+      "start": 5.0,
+      "end": 10.5,
+      "timeline_duration": 5.5,
+      "duration": 5.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Recuerdo escuchar sus pasos a lo lejos y esconderme cuando sentía su presencia."
+    },
+    {
+      "scene": 3,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "child-narrator"
+      },
+      "background_mode": "asset",
+      "background": "room_child_nigth",
+      "fallback_background": "room_child_nigth",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "child-narrator",
+          "type": "boy",
+          "action": "look_back",
+          "position": 2,
+          "emotion": "scared"
+        },
+        {
+          "id": "ghost",
+          "type": "ghost",
+          "action": "walk",
+          "position": 5,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💧",
+          "x": 0.73,
+          "y": 0.33,
+          "size": 95
+        },
+        {
+          "type": "emoji",
+          "value": "🌙",
+          "x": 0.16,
+          "y": 0.2,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "shoe-steps",
+          "time": 1.6,
+          "volume": 0.7
+        }
+      ],
+      "start": 10.5,
+      "end": 16.5,
+      "timeline_duration": 6.0,
+      "duration": 6.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Cada noche, un sudor frío recorría mi piel cuando lo escuchaba acercarse a mi habitación."
+    },
+    {
+      "scene": 4,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "bedroom_house",
+      "fallback_background": "bedroom_house",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "child-narrator",
+          "type": "boy",
+          "action": "investigate",
+          "position": 2,
+          "emotion": "doubt"
+        },
+        {
+          "id": "ghost",
+          "type": "ghost",
+          "action": "hands_up",
+          "position": 5,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🔦",
+          "x": 0.33,
+          "y": 0.48,
+          "size": 100
+        },
+        {
+          "type": "emoji",
+          "value": "👻",
+          "x": 0.8,
+          "y": 0.3,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "ghost-horror-sound",
+          "time": 3.1,
+          "volume": 0.78
+        }
+      ],
+      "start": 16.5,
+      "end": 22.0,
+      "timeline_duration": 5.5,
+      "duration": 5.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "No tenía el valor de verlo hasta que una noche me atreví. Era una criatura fantasmal."
+    },
+    {
+      "scene": 5,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "child_room_day",
+      "fallback_background": "child_room_day",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "child-narrator",
+          "type": "boy",
+          "action": "fall",
+          "position": 2,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💫",
+          "x": 0.45,
+          "y": 0.39,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "☀️",
+          "x": 0.82,
+          "y": 0.2,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "bodyfall",
+          "time": 1.7,
+          "volume": 0.75
+        }
+      ],
+      "start": 22.0,
+      "end": 28.0,
+      "timeline_duration": 6.0,
+      "duration": 6.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Sólo recuerdo que me desmayé y desperté al día siguiente. Nunca volvía a saber de él."
+    },
+    {
+      "scene": 6,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "narrator_house",
+      "fallback_background": "narrator_house",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "narrator",
+          "type": "narrator",
+          "action": "point",
+          "position": 3,
+          "emotion": "talk"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📢",
+          "x": 0.72,
+          "y": 0.41,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "👻",
+          "x": 0.2,
+          "y": 0.36,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "ghost-whisper",
+          "time": 1.2,
+          "volume": 0.58
+        }
+      ],
+      "start": 28.0,
+      "end": 32.575,
+      "timeline_duration": 4.575000000000003,
+      "duration": 4.566666666666666,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Suscríbete a Voces del más allá para escuchar más historias de terror."
+    }
+  ],
+  "cast": [
+    {
+      "id": "child-narrator",
+      "name": "Child Narrator",
+      "description": "The boy recalling the events",
+      "type": "boy"
+    },
+    {
+      "id": "ghost",
+      "name": "Ghost",
+      "description": "The ghostly creature that repeatedly enters the boy’s room",
+      "type": "ghost"
+    },
+    {
+      "id": "narrator",
+      "name": "Narrator",
+      "description": "official presenter of Voces del Más Allá",
+      "type": "narrator"
+    }
+  ],
+  "sync_mode": "whisper",
+  "audio_duration": 32.575,
+  "llm_provider": "openai",
+  "llm_model": "gpt-6-luna",
+  "batch_size": 6
+}

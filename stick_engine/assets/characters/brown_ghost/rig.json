@@ -1,0 +1,136 @@
+{
+  "canvas": [
+    360,
+    620
+  ],
+  "parts": [
+    {
+      "name": "torso",
+      "parent": null,
+      "sprite": "torso.png",
+      "x": 180,
+      "y": 245,
+      "pivot": [
+        45,
+        90
+      ],
+      "embedded_color": true
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "sprite": "head.png",
+      "x": 0,
+      "y": -120,
+      "pivot": [
+        60,
+        60
+      ],
+      "embedded_color": true
+    },
+    {
+      "name": "left_upper_arm",
+      "parent": "torso",
+      "sprite": "upper_arm.png",
+      "x": -38,
+      "y": -60,
+      "pivot": [
+        14,
+        10
+      ],
+      "angle": 2,
+      "embedded_color": true
+    },
+    {
+      "name": "left_forearm",
+      "parent": "left_upper_arm",
+      "sprite": "forearm.png",
+      "x": -7,
+      "y": 82,
+      "pivot": [
+        13,
+        10
+      ],
+      "angle": -2,
+      "embedded_color": true
+    },
+    {
+      "name": "right_upper_arm",
+      "parent": "torso",
+      "sprite": "upper_arm.png",
+      "x": 38,
+      "y": -60,
+      "pivot": [
+        14,
+        10
+      ],
+      "angle": -2,
+      "embedded_color": true
+    },
+    {
+      "name": "right_forearm",
+      "parent": "right_upper_arm",
+      "sprite": "forearm.png",
+      "x": 7,
+      "y": 82,
+      "pivot": [
+        13,
+        10
+      ],
+      "angle": 2,
+      "embedded_color": true
+    },
+    {
+      "name": "left_thigh",
+      "parent": "torso",
+      "sprite": "thigh.png",
+      "x": -18,
+      "y": 82,
+      "pivot": [
+        16,
+        10
+      ],
+      "angle": 1,
+      "embedded_color": true
+    },
+    {
+      "name": "left_shin",
+      "parent": "left_thigh",
+      "sprite": "shin.png",
+      "x": -10,
+      "y": 112,
+      "pivot": [
+        15,
+        10
+      ],
+      "angle": -1,
+      "embedded_color": true
+    },
+    {
+      "name": "right_thigh",
+      "parent": "torso",
+      "sprite": "thigh.png",
+      "x": 18,
+      "y": 82,
+      "pivot": [
+        16,
+        10
+      ],
+      "angle": -1,
+      "embedded_color": true
+    },
+    {
+      "name": "right_shin",
+      "parent": "right_thigh",
+      "sprite": "shin.png",
+      "x": 10,
+      "y": 112,
+      "pivot": [
+        15,
+        10
+      ],
+      "angle": 1,
+      "embedded_color": true
+    }
+  ]
+}

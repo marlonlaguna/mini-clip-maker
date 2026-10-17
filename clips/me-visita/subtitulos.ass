@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:05.00,TikTok,,0,0,0,,Era un niño y recuerdo que, cada vez que dormía, él entraba en mi habitación.
+Dialogue: 0,0:00:05.00,0:00:10.50,TikTok,,0,0,0,,Recuerdo escuchar sus pasos a lo lejos y esconderme cuando sentía su presencia.
+Dialogue: 0,0:00:10.50,0:00:16.50,TikTok,,0,0,0,,Cada noche, un sudor frío recorría mi piel cuando lo escuchaba acercarse a mi habitación.
+Dialogue: 0,0:00:16.50,0:00:20.00,TikTok,,0,0,0,,No tenía el valor de verlo hasta que una noche me atreví.
+Dialogue: 0,0:00:20.00,0:00:22.00,TikTok,,0,0,0,,Era una criatura fantasmal.
+Dialogue: 0,0:00:22.00,0:00:25.50,TikTok,,0,0,0,,Sólo recuerdo que me desmayé y desperté al día siguiente.
+Dialogue: 0,0:00:25.50,0:00:28.00,TikTok,,0,0,0,,Nunca volvía a saber de él.
+Dialogue: 0,0:00:28.00,0:00:32.50,TikTok,,0,0,0,,Suscríbete a Voces del más allá para escuchar más historias de terror.

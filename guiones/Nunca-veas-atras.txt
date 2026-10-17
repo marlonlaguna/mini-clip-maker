@@ -1,0 +1,263 @@
+[TITULO]
+no abras los ojos short
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[ESTILO_VISUAL]
+Ilustración cinematográfica de suspenso, siluetas sin rasgos faciales, casa familiar de noche, iluminación tenue y realista, tensión contenida, composición sencilla, sin gore ni texto.
+
+[NEGATIVE_PROMPT]
+rostros detallados, ojos, nariz, boca, caricatura, anime, estilo infantil, gore explícito, monstruos, texto, letras, marcas de agua, anatomía deformada
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+6
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.35
+
+[MAX_EFECTOS_SONIDO]
+26
+
+[GUION]
+
+Hola, buenas noches. Espero que hoy no puedas dormir…
+Hoy te contaré una historia sacada de Reddit.
+Escuchemos la terrorífica historia de esta madre:
+
+Mi hija tenía siete años cuando empezó a quejarse del niño pequeño que vivía en nuestro sótano.
+Al principio, supuse que se lo había inventado. Siempre había tenido mucha imaginación y, por esa época, se había interesado en las historias de fantasmas. Le eché la culpa a mi esposo, que encontraba muy gracioso contarle sobre la casa supuestamente embrujada en la que había crecido.
+Ella decía que el niño no tenía cara.
+Le pregunté qué quería decir. Me explicó, con la paciencia que los niños reservan para los adultos especialmente tontos, que tenía cabeza y cabello, pero nada en el lugar donde debería estar su rostro. Solo piel.
+Le dije que probablemente había tenido una pesadilla.
+Pareció quedarse satisfecha con esa explicación, aunque unos días después mencionó que el niño había empezado a usar su ropa.
+Me reí y le pregunté si creía que se la estaba robando.
+—No —dijo—. Está haciendo la suya.
+Recuerdo esa conversación porque parecía genuinamente molesta por mis preguntas. Como si yo estuviera fingiendo no entender algo perfectamente obvio.
+Una semana después, la encontré sentada en lo alto de las escaleras del sótano, mirando la oscuridad por la puerta abierta.
+Le pregunté qué hacía.
+—Ya casi le queda bien mi cabello —me dijo.
+Encendí la luz del sótano, esperando encontrar algo que ella hubiera confundido con una persona. Quizás un abrigo viejo colgado de una tubería o un montón de ropa.
+Mi hija gritó.
+Me agarró la muñeca e intentó apartarme del interruptor.
+—¡Mamá, apágala! ¡A él no le gusta que lo veas!
+Cerré la puerta y la cargué hasta arriba. Temblaba tanto que terminé dejándola dormir en nuestra cama.
+A la mañana siguiente estaba perfectamente alegre. Desayunó cereal, vio dibujos animados y no mencionó el sótano ni una sola vez.
+Me sentí aliviada, aunque le pedí a mi esposo que revisara si había moho o algo que pudiera estar afectándola.
+No encontró nada.
+Durante el mes siguiente, sus dibujos empezaron a cambiar.
+Siempre le había gustado dibujar animales y flores, pero de repente todos sus dibujos estaban llenos de niños. La mayoría no tenía rostro. Algunos tenían ojos o bocas en lugares equivocados, y uno parecía tener una segunda fila de dientes debajo de la barbilla.
+En todos los dibujos había una niña pequeña en algún lugar.
+La reconocí de inmediato. Mi hija solía dibujarse con el mismo vestido amarillo, incluso cuando no lo llevaba puesto.
+En los primeros dibujos, los niños sin rostro estaban lejos de ella. Al final del mes, estaban lo bastante cerca como para tocarla.
+Encontré un dibujo particularmente inquietante pegado dentro de su armario.
+Mostraba a nuestra familia sentada alrededor de la mesa, excepto que había dos niñas pequeñas.
+Una sonreía.
+La otra no tenía boca.
+Cuando le pregunté por el dibujo, se alteró y rompió el papel por la mitad.
+—Eso todavía no debía pasar —dijo.
+A la mañana siguiente, pedí una cita con una psicóloga infantil.
+La psicóloga fue muy amable. Sugirió que nuestra hija quizá estaba sintiendo ansiedad y usaba sus dibujos para expresar cosas que no sabía explicar. Recomendó limitar el contenido aterrador y evitar preguntas que pudieran animar a su amiga imaginaria.
+Seguimos sus consejos.
+Por un tiempo, pareció funcionar.
+Nuestra hija dejó de mencionar el sótano. Dejó de dibujar a los niños, volvió a dormir toda la noche y poco a poco recuperó su comportamiento habitual.
+Solo hubo una cosa que me pareció extraña.
+Había adquirido la costumbre de observarnos.
+A veces la encontraba de pie en las puertas mientras mi esposo y yo conversábamos, o sentada completamente quieta a la mesa de la cocina mientras yo preparaba la comida. Cuando le preguntaba qué hacía, se encogía de hombros y decía que nada.
+Una vez, mientras doblaba la ropa, la vi parada frente al espejo del pasillo.
+Se estaba sonriendo.
+Luego dejó de sonreír.
+Su reflejo no.
+Parpadeé y todo volvió a la normalidad.
+Me dije que me lo había imaginado.
+Unos dos meses después del incidente del sótano, desperté y vi a alguien de pie junto a mi cama.
+Era mi hija.
+Llevaba su camisón amarillo, el que tenía flores bordadas alrededor del cuello.
+Le pregunté si había tenido una pesadilla.
+No contestó.
+Estiré la mano y encendí la lámpara.
+En el lugar donde debería estar su cara no había nada.
+No quiero decir que sus facciones estuvieran deformadas o fueran difíciles de distinguir. No tenía ojos, ni nariz, ni boca. La piel era completamente lisa y cubría la forma de su cráneo.
+Grité.
+Ella se sobresaltó y extendió los brazos hacia mí, mientras emitía un sonido horrible y amortiguado.
+Retrocedí de golpe y tiré la lámpara de la mesita. Ella se dio la vuelta y salió corriendo al pasillo.
+Un momento después, escuché cerrarse de golpe la puerta del sótano.
+Mi esposo bajó antes de que yo pudiera explicarle lo sucedido. Lo oí llamar a nuestra hija y luego abrir la puerta del sótano.
+Unos minutos más tarde regresó cargándola.
+Ella sollozaba con la cara hundida en su hombro.
+La revisé desesperadamente.
+Sus ojos, su nariz, su boca. Todo estaba en su sitio.
+Cuando por fin se calmó lo suficiente para hablar, nos dijo que alguien había estado junto a su cama.
+—Se parecía a mí —susurró—, pero no tenía mi cara.
+Mi esposo la abrazó con más fuerza.
+Yo quería creerle.
+Todavía no entiendo por qué no lo hice.
+Nos mudamos tres semanas después.
+Sé que mudarnos parece una exageración, pero después de esa noche no soportaba estar en esa casa. Seguía oyendo cosas abajo. A veces parecían pasos. Otras veces, escuchaba una especie de ruido húmedo y arrastrado que venía de detrás de la puerta del sótano.
+Mi esposo pensó que me estaba costando superar lo ocurrido. Probablemente tenía razón.
+Alquilamos una casita al otro lado de la ciudad e intentamos dejar atrás toda esa experiencia.
+Por un tiempo, las cosas mejoraron.
+Nuestra hija parecía feliz. Hizo amigos en la escuela, empezó a tomar clases de baile y no volvió a mencionar al niño sin rostro.
+Aun así, había pequeños detalles que me inquietaban.
+Siempre había sido una niña cariñosa, de las que querían sentarse en mis piernas mucho después de haber crecido demasiado para hacerlo. Ahora casi nunca me abrazaba, a menos que yo la abrazara primero.
+A veces me llamaba «madre», lo cual era extraño porque siempre me había dicho «mamá».
+También había empezado a hacer preguntas raras sobre cosas que debería recordar.
+Qué se sentía cuando se había roto el brazo a los cinco años. Por qué yo lloraba cada vez que veía cierta película. Si recordaba cómo se veía cuando era bebé.
+Supuse que era curiosidad normal de niña.
+Entonces me llamó su maestra.
+Nuestra hija había pasado toda la tarde dibujando en lugar de completar sus tareas. Cuando la maestra intentó quitarle el papel, se alteró de una manera inusual.
+Todos los dibujos eran iguales.
+Una niña pequeña estaba parada frente a un espejo.
+En cada dibujo, su reflejo miraba en la dirección equivocada.
+Le pregunté por ellos cuando llegó a casa.
+Me miró durante un largo rato antes de responder.
+—Ya no está en el sótano.
+Me sentí enferma.
+—¿Dónde está?
+Señaló el espejo del pasillo.
+—Ahora está ahí.
+Desde entonces, empecé a cubrir los espejos.
+A mi esposo le pareció ridículo, pero no podía quitarme la sensación de que algo estaba mal.
+También empecé a notar cosas en las fotos familiares.
+En todas las fotografías tomadas desde que nos mudamos, nuestra hija tenía los ojos cerrados.
+No solo en unas cuantas. En todas.
+En las fiestas de cumpleaños, la mañana de Navidad, las cenas familiares. Había decenas de fotos y, en cada una, parecía haber parpadeado justo en el momento equivocado.
+Revisé las fotografías de nuestra casa anterior.
+En esas tenía los ojos abiertos.
+Se las enseñé a mi esposo, esperando que me dijera que estaba siendo paranoica.
+No lo hizo.
+Se sentó a mi lado y revisó las fotos él mismo.
+Al final, se detuvo en una tomada el día de la mudanza.
+Nuestra hija estaba de pie en el porche, sonriendo a la cámara.
+Detrás de ella, en la ventana de la sala, había otra niña pequeña.
+Tenía el mismo cabello y llevaba el mismo vestido amarillo.
+Su rostro estaba vuelto hacia otro lado.
+Mi esposo se quedó mirando la fotografía durante un largo rato.
+Luego me hizo una pregunta que no he podido olvidar.
+—¿Estás segura de que la niña que subí esa noche era nuestra hija?
+Eso ocurrió hace seis días.
+Desde entonces, he intentado recordar todo lo que pasó esa noche. Sé lo que vi junto a la cama. Sé que corrió hacia el sótano y que mi esposo volvió a subir con nuestra hija.
+Lo que no puedo recordar es si realmente lo vi sacarla del sótano.
+Recuerdo haber oído abrirse la puerta.
+Recuerdo que él la llamó.
+Y después recuerdo que apareció en el pasillo con una niña llorando en brazos.
+Sigo pensando en la forma en que la niña sin rostro extendió los brazos hacia mí.
+No intentó hacerme daño.
+Solo se quedó allí, haciendo esos horribles sonidos amortiguados y con los brazos extendidos.
+Cuando mi hija era pequeña, hacía lo mismo. Siempre que tenía miedo, levantaba los brazos y esperaba a que yo la cargara.
+No la he visto hacerlo desde que nos mudamos.
+Anoche decidí destapar el espejo del pasillo.
+Esperé a que todos estuvieran dormidos y luego quité la sábana.
+Al principio, no había nada extraño.
+Solo el pasillo, la puerta del baño y mi propio reflejo.
+Entonces noté a alguien detrás de mí.
+Una niña pequeña con un camisón amarillo.
+Era mucho más pequeña de lo que recordaba a mi hija. Tenía el cabello enredado y los pies descalzos llenos de tierra.
+No tenía rostro.
+Me di la vuelta.
+El pasillo estaba vacío.
+Cuando miré de nuevo el espejo, ella seguía allí.
+Levantó una mano y la apoyó contra el vidrio.
+No podía moverme.
+Entonces empezó a escribir algo en el interior del espejo.
+Su dedo se deslizó lentamente por el vapor y formó letras torcidas.
+MAMÁ.
+Empecé a llorar.
+No sé por qué eso fue lo que finalmente me convenció. Ni las fotografías, ni los dibujos, ni todas las cosas que nuestra hija había olvidado.
+Fue la forma en que había escrito la palabra.
+Mi hija siempre escribía la M al revés.
+Pasé todo un verano intentando ayudarla a corregirla antes de que empezara segundo grado. Se frustraba tanto que lanzaba el lápiz por la mesa de la cocina.
+La niña del espejo había cometido el mismo error.
+Extendí la mano hacia el vidrio.
+Ella levantó los dos brazos.
+Y comprendí lo que había intentado hacer esa noche junto a mi cama.
+Quería que la cargara.
+Oí un ruido detrás de mí.
+—¿Mamá?
+Mi hija estaba al final del pasillo.
+La que habíamos traído a casa desde la otra casa.
+Miró hacia mí y luego hacia el espejo. Por primera vez en meses, vi algo claramente extraño en su expresión.
+Tenía miedo.
+No de la cosa que estaba en el espejo.
+De mí.
+—No la mires —dijo—. Está tratando de engañarte.
+No me moví.
+La niña detrás del vidrio lloraba, aunque no tenía rostro del que pudieran salir lágrimas. Presionó las dos manos contra el espejo y negó con la cabeza.
+Mi hija dio un paso hacia mí.
+—Mamá, por favor.
+Era la primera vez en meses que me llamaba «mamá» sin que nadie se lo pidiera.
+Miré su reflejo.
+Tenía los ojos cerrados.
+Ella estaba parada en el pasillo observándome, pero en el espejo tenía los ojos apretados con tanta fuerza que la piel a su alrededor empezaba a arrugarse.
+Entonces me fijé en su boca.
+Su reflejo estaba sonriendo.
+No la niña detrás del vidrio.
+La que estaba detrás de mí.
+Su reflejo abrió la boca y vi cómo las comisuras se estiraban más de lo que deberían.
+Me di la vuelta.
+Mi hija estaba llorando. Lágrimas reales le mojaban las mejillas y le temblaba el labio inferior.
+—Por favor, no me obligues a volver —susurró.
+Casi fui hacia ella.
+Eso es lo que no puedo dejar de pensar.
+Después de todo lo que había visto, después de entender por fin lo que habíamos llevado a nuestra casa, casi extendí los brazos hacia ella.
+Porque se parecía exactamente a mi niña.
+Y porque, en algún momento, también había empezado a quererla.
+Entonces la cosa del espejo comenzó a golpear el vidrio.
+Volví a mirar.
+Tenía algo pegado al cristal.
+Un pequeño trozo de tela amarilla.
+El camisón que mi hija llevaba puesto cuando desapareció.
+Había manchas oscuras alrededor del cuello.
+Y de pronto recordé algo más de aquella noche.
+Cuando mi esposo subió con nuestra hija, ella ya no llevaba el camisón.
+Tenía puesta una pijama.
+Me había sentido tan aliviada de ver su cara que ni siquiera me di cuenta.
+A mis espaldas, el llanto se detuvo.
+El pasillo quedó completamente en silencio.
+Entonces la niña que habíamos estado criando habló con una voz casi igual a la de mi hija, pero no del todo.
+—Se suponía que debías dejarla ahí.
+No me he dado la vuelta.
+Ella todavía está detrás de mí.
+Puedo oírla respirar y, cada pocos segundos, escucho el suave chasquido de sus dientes mientras mueve la mandíbula.
+La niña del espejo no deja de señalar hacia el baño.
+Creo que quiere que corra.
+Pero hay algo que no les he contado.
+La niña que está detrás de mí empezó a llorar otra vez.
+Solo que ahora está usando mi voz.
+Está llamando a mi esposo.
+Y desde el dormitorio puedo oír cómo se despierta.
+Cree que me pasó algo.
+Quiero advertirle, pero cada vez que intento hablar, la cosa detrás de mí dice exactamente lo que estoy a punto de decir.
+Cada vez lo hace mejor.
+Hace un momento, oí a mi esposo preguntar qué pasaba.
+Abrí la boca para decirle que no saliera.
+Pero antes de que pudiera emitir un sonido, me oí responder desde el pasillo:
+—No pasa nada, cariño. Vuelve a dormir.
+Y entonces, con una voz mucho más pequeña, la cosa añadió:
+—Está aprendiendo.
+
+
+Gracias por ver este video.
+
+suscríbete para más historias de terror
