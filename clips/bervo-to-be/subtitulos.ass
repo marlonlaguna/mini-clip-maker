@@ -1,0 +1,16 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.14,0:00:07.13,TikTok,,0,0,0,,Hola, hoy vamos a ver el pasado simple siempre que hables en pasado simple en inglés.
+Dialogue: 0,0:00:07.13,0:00:18.78,TikTok,,0,0,0,,Debes usar al final también recuerda usar de y blab, le e esta, es una prueba de video
+Dialogue: 0,0:00:18.78,0:00:28.78,TikTok,,0,0,0,,Anitta subió las manos y le te encanta la berenjena.

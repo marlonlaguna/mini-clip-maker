@@ -227,6 +227,12 @@ def parsear_guion_configurado(
         MODO_VIDEO_DEFAULT
     ).lower()
 
+    voz_qwen = _valor_simple(
+        secciones,
+        "VOZ_QWEN",
+        "Ryan"
+    ) or "Ryan"
+
     if modo_video not in {
         "image",
         "stick",
@@ -389,6 +395,7 @@ def parsear_guion_configurado(
         "negative_prompt": negative_prompt,
         "personajes": personajes,
         "modo_video": modo_video,
+        "voz_qwen": voz_qwen,
         "porcentaje_minimo_stick": porcentaje_minimo_stick,
         "permitir_fondos_automaticos": permitir_fondos_automaticos,
         "usar_efectos_sonido": usar_efectos_sonido,
@@ -457,6 +464,11 @@ def guardar_config(
             MODO_VIDEO_DEFAULT
         ),
 
+        "voz_qwen": config.get(
+            "voz_qwen",
+            "Ryan"
+        ),
+
         "porcentaje_minimo_stick": config.get(
             "porcentaje_minimo_stick",
             70.0
@@ -505,35 +517,15 @@ def guardar_config(
 
 def _llamar_generar_audio(
     ruta_guion: Path,
-    ruta_audio: Path
+    ruta_audio: Path,
+    voz_qwen: str = "Ryan",
 ):
-
-    try:
-
-        firma = inspect.signature(
-            generar_audio
-        )
-
-        params = firma.parameters
-
-        if (
-            "ruta_guion" in params
-            and
-            "ruta_audio" in params
-        ):
-
-            return generar_audio(
-                ruta_guion=ruta_guion,
-                ruta_audio=ruta_audio
-            )
-
-    except Exception:
-        pass
-
     return generar_audio(
-        ruta_guion,
-        ruta_audio
+        ruta_guion=ruta_guion,
+        ruta_audio=ruta_audio,
+        voz=voz_qwen,
     )
+
 
 
 def _llamar_generar_subtitulos(
@@ -781,6 +773,9 @@ def crear_clip(
             "modo_video":
                 MODO_VIDEO_DEFAULT,
 
+            "voz_qwen":
+                "Ryan",
+
             "porcentaje_minimo_stick":
                 70.0,
 
@@ -888,7 +883,8 @@ def crear_clip(
 
     _llamar_generar_audio(
         ruta_guion=ruta_guion,
-        ruta_audio=ruta_audio
+        ruta_audio=ruta_audio,
+        voz_qwen=config.get("voz_qwen", "Ryan"),
     )
 
     duracion_real = (

@@ -1,0 +1,1217 @@
+{
+  "storyboard": [
+    {
+      "scene": 1,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "street",
+      "fallback_background": "street",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "narrator",
+          "type": "narrator",
+          "action": "talk",
+          "position": 3,
+          "emotion": null
+        },
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "open_door",
+          "position": 1,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🏪",
+          "x": 0.78,
+          "y": 0.45,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "☀️",
+          "x": 0.2,
+          "y": 0.2,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "door_open",
+          "time": 1.2,
+          "volume": 0.7
+        }
+      ],
+      "start": 0.0,
+      "end": 6.65,
+      "timeline_duration": 6.65,
+      "duration": 6.666666666666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Tom Julian tenía una pequeña tienda de barrio. Cada mañana abría temprano, acomodaba los"
+    },
+    {
+      "scene": 2,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "talk",
+          "position": 2,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📦",
+          "x": 0.25,
+          "y": 0.55,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "🛒",
+          "x": 0.75,
+          "y": 0.55,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "shoe-steps",
+          "time": 2.0,
+          "volume": 0.55
+        }
+      ],
+      "start": 6.65,
+      "end": 13.85,
+      "timeline_duration": 7.199999999999999,
+      "duration": 7.2,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "productos y atendía a sus clientes. Al terminar el mes, revisó su cuaderno y sonrió. Había"
+    },
+    {
+      "scene": 3,
+      "scene_type": "stick",
+      "shot": {
+        "target": "arms",
+        "character": "julian"
+      },
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "think",
+          "position": 2,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📖",
+          "x": 0.68,
+          "y": 0.52,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "💵",
+          "x": 0.3,
+          "y": 0.65,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "computer_click",
+          "time": 1.0,
+          "volume": 0.55
+        }
+      ],
+      "start": 13.85,
+      "end": 19.37,
+      "timeline_duration": 5.520000000000001,
+      "duration": 5.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "vendido bastante. Sobre el papel, parecía que el negocio iba muy bien."
+    },
+    {
+      "scene": 4,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "look_back",
+          "position": 2,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "⚡",
+          "x": 0.72,
+          "y": 0.28,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "🧾",
+          "x": 0.25,
+          "y": 0.66,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "electricidad",
+          "time": 2.1,
+          "volume": 0.7
+        }
+      ],
+      "start": 19.37,
+      "end": 24.89,
+      "timeline_duration": 5.52,
+      "duration": 5.533333333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Pero había un problema. Cuando llegó el día de pagar la electricidad y a sus"
+    },
+    {
+      "scene": 5,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "investigate",
+          "position": 3,
+          "emotion": "sad"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💵",
+          "x": 0.68,
+          "y": 0.64,
+          "size": 115
+        },
+        {
+          "type": "emoji",
+          "value": "📦",
+          "x": 0.22,
+          "y": 0.53,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "error-glitch",
+          "time": 1.4,
+          "volume": 0.65
+        }
+      ],
+      "start": 24.89,
+      "end": 29.33,
+      "timeline_duration": 4.439999999999998,
+      "duration": 4.433333333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "proveedores, Julian descubrió que no tenía suficiente dinero en la caja."
+    },
+    {
+      "scene": 6,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "julian"
+      },
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "surprised",
+          "position": 2,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "❓",
+          "x": 0.75,
+          "y": 0.3,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "📈",
+          "x": 0.24,
+          "y": 0.63,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "question-mark",
+          "time": 1.0,
+          "volume": 0.7
+        }
+      ],
+      "start": 29.33,
+      "end": 34.33,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "¿Cómo podía ser? Había vendido más que el mes anterior."
+    },
+    {
+      "scene": 7,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "investigate",
+          "position": 2
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📖",
+          "x": 0.68,
+          "y": 0.57,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🪙",
+          "x": 0.78,
+          "y": 0.43,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "keyboard-click",
+          "time": 1.1,
+          "volume": 0.55
+        }
+      ],
+      "start": 34.33,
+      "end": 42.25,
+      "timeline_duration": 7.920000000000002,
+      "duration": 7.933333333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Al revisar sus cuentas, encontró la respuesta. Muchos clientes le habían comprado fiado."
+    },
+    {
+      "scene": 8,
+      "scene_type": "stick",
+      "shot": {
+        "target": "right_arm",
+        "character": "julian"
+      },
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "point",
+          "position": 3,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🧾",
+          "x": 0.34,
+          "y": 0.48,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "💵",
+          "x": 0.72,
+          "y": 0.64,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "computer_click",
+          "time": 2.0,
+          "volume": 0.55
+        }
+      ],
+      "start": 42.25,
+      "end": 50.85,
+      "timeline_duration": 8.600000000000001,
+      "duration": 8.6,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Las ventas estaban anotadas, pero varios todavía no le habían pagado. Julian contaba ese dinero"
+    },
+    {
+      "scene": 9,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "think",
+          "position": 4,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💵",
+          "x": 0.28,
+          "y": 0.43,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "🔒",
+          "x": 0.73,
+          "y": 0.59,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "question-mark",
+          "time": 1.3,
+          "volume": 0.6
+        }
+      ],
+      "start": 50.85,
+      "end": 55.77,
+      "timeline_duration": 4.920000000000002,
+      "duration": 4.9,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "como parte de lo que esperaba recibir, aunque aún no podía usarlo."
+    },
+    {
+      "scene": 10,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "look_back",
+          "position": 1,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📦",
+          "x": 0.73,
+          "y": 0.48,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🕐",
+          "x": 0.84,
+          "y": 0.31,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "efeito-sonoro-alerta",
+          "time": 2.1,
+          "volume": 0.62
+        }
+      ],
+      "start": 55.77,
+      "end": 63.69,
+      "timeline_duration": 7.919999999999995,
+      "duration": 7.933333333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Mientras tanto, los gastos sí tenían fecha. El proveedor esperaba su pago esa semana y la"
+    },
+    {
+      "scene": 11,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "julian"
+      },
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "surprised",
+          "position": 3,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🧾",
+          "x": 0.26,
+          "y": 0.58,
+          "size": 115
+        },
+        {
+          "type": "emoji",
+          "value": "⚡",
+          "x": 0.79,
+          "y": 0.42,
+          "size": 110
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "electricidad",
+          "time": 1.8,
+          "volume": 0.65
+        }
+      ],
+      "start": 63.69,
+      "end": 70.61,
+      "timeline_duration": 6.920000000000002,
+      "duration": 6.9,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "factura de electricidad no podía esperar. Julian comprendió que vender mucho no siempre"
+    },
+    {
+      "scene": 12,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "facepalm",
+          "position": 2,
+          "emotion": "sad"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📈",
+          "x": 0.28,
+          "y": 0.36,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "👛",
+          "x": 0.7,
+          "y": 0.6,
+          "size": 110
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "vine-dramatic-boom-sound-effect",
+          "time": 2.0,
+          "volume": 0.68
+        }
+      ],
+      "start": 70.61,
+      "end": 77.85,
+      "timeline_duration": 7.239999999999995,
+      "duration": 7.266666666666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "significa tener dinero disponible. Una tienda puede tener buenas ventas y aún así quedarse"
+    },
+    {
+      "scene": 13,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "think",
+          "position": 1,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💵",
+          "x": 0.72,
+          "y": 0.42,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🧾",
+          "x": 0.3,
+          "y": 0.68,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "question-mark",
+          "time": 2.1,
+          "volume": 0.65
+        }
+      ],
+      "start": 77.85,
+      "end": 86.37,
+      "timeline_duration": 8.52000000000001,
+      "duration": 8.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "sin efectivo si cobra tarde. Paga pronto o no separa dinero para sus compromisos."
+    },
+    {
+      "scene": 14,
+      "scene_type": "stick",
+      "shot": {
+        "target": "right_arm",
+        "character": "julian"
+      },
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "point",
+          "position": 2,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📖",
+          "x": 0.72,
+          "y": 0.56,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "💵",
+          "x": 0.3,
+          "y": 0.39,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "keyboard-click",
+          "time": 1.4,
+          "volume": 0.55
+        }
+      ],
+      "start": 86.37,
+      "end": 94.29,
+      "timeline_duration": 7.920000000000002,
+      "duration": 7.933333333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Entonces hizo algunos cambios. Anotó por separado el dinero que ya había cobrado y el que todavía"
+    },
+    {
+      "scene": 15,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "investigate",
+          "position": 3,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🧾",
+          "x": 0.38,
+          "y": 0.47,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "🕐",
+          "x": 0.75,
+          "y": 0.36,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "computer_click",
+          "time": 2.0,
+          "volume": 0.6
+        }
+      ],
+      "start": 94.29,
+      "end": 101.49,
+      "timeline_duration": 7.199999999999989,
+      "duration": 7.2,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "le debían. También apuntó cuánto debía pagar y en qué fecha. A los clientes que"
+    },
+    {
+      "scene": 16,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "julian"
+      },
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "talk",
+          "position": 1,
+          "emotion": "talk"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📅",
+          "x": 0.72,
+          "y": 0.38,
+          "size": 115
+        },
+        {
+          "type": "emoji",
+          "value": "💸",
+          "x": 0.3,
+          "y": 0.65,
+          "size": 110
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "keyboard-click",
+          "time": 3.0,
+          "volume": 0.58
+        }
+      ],
+      "start": 101.49,
+      "end": 110.13,
+      "timeline_duration": 8.64,
+      "duration": 8.633333333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "compraban fiado, les dio plazos claros, y cada semana revisó cuánto dinero entraba y cuánto salía."
+    },
+    {
+      "scene": 17,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "point",
+          "position": 2,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💵",
+          "x": 0.72,
+          "y": 0.43,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "🏦",
+          "x": 0.31,
+          "y": 0.58,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "computer_click",
+          "time": 1.8,
+          "volume": 0.55
+        }
+      ],
+      "start": 110.13,
+      "end": 116.89,
+      "timeline_duration": 6.760000000000005,
+      "duration": 6.766666666666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Además, reservó una parte de sus cobros para pagar gastos importantes."
+    },
+    {
+      "scene": 18,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "rural_house_interior",
+      "fallback_background": "rural_house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "think",
+          "position": 3,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🗓️",
+          "x": 0.32,
+          "y": 0.38,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "💵",
+          "x": 0.73,
+          "y": 0.6,
+          "size": 110
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "sonido-de-grillo",
+          "time": 2.4,
+          "volume": 0.5
+        }
+      ],
+      "start": 116.89,
+      "end": 124.53,
+      "timeline_duration": 7.640000000000001,
+      "duration": 7.633333333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Poco a poco, dejó de llevarse sorpresas al final del mes. No necesariamente vendía más,"
+    },
+    {
+      "scene": 19,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "point",
+          "position": 1,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💵",
+          "x": 0.72,
+          "y": 0.42,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "🕐",
+          "x": 0.82,
+          "y": 0.64,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "computer_click",
+          "time": 1.1,
+          "volume": 0.58
+        }
+      ],
+      "start": 124.53,
+      "end": 128.53,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "simplemente entendía mejor cuándo tendría el dinero en sus manos."
+    },
+    {
+      "scene": 20,
+      "scene_type": "stick",
+      "shot": {
+        "target": "torso",
+        "character": "julian"
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "talk",
+          "position": 2,
+          "emotion": "talk"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📅",
+          "x": 0.28,
+          "y": 0.38,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "💸",
+          "x": 0.72,
+          "y": 0.61,
+          "size": 125
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "keyboard-click",
+          "time": 2.4,
+          "volume": 0.62
+        }
+      ],
+      "start": 128.53,
+      "end": 136.85,
+      "timeline_duration": 8.319999999999993,
+      "duration": 8.333333333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Eso es el flujo de caja. Registrar y planificar las entradas y salidas de dinero durante un periodo."
+    },
+    {
+      "scene": 21,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "think",
+          "position": 3,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🏪",
+          "x": 0.22,
+          "y": 0.52,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "🧾",
+          "x": 0.76,
+          "y": 0.4,
+          "size": 110
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "question-mark",
+          "time": 3.0,
+          "volume": 0.55
+        }
+      ],
+      "start": 136.85,
+      "end": 143.65,
+      "timeline_duration": 6.800000000000011,
+      "duration": 6.8,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Sirve para saber si un negocio podrá pagar sus gastos a tiempo, porque una venta puede"
+    },
+    {
+      "scene": 22,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "rural_house_interior",
+      "fallback_background": "rural_house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "julian",
+          "type": "older_man",
+          "action": "investigate",
+          "position": 1,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📖",
+          "x": 0.27,
+          "y": 0.39,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "💵",
+          "x": 0.73,
+          "y": 0.58,
+          "size": 130
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "sonido-de-golpeee",
+          "time": 4.3,
+          "volume": 0.58
+        }
+      ],
+      "start": 143.65,
+      "end": 149.94,
+      "timeline_duration": 6.289999999999992,
+      "duration": 6.266666666666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "verse bien en el cuaderno, pero las cuentas se pagan con dinero disponible."
+    }
+  ],
+  "cast": [
+    {
+      "id": "julian",
+      "name": "Julián",
+      "description": "recurring neighborhood shopkeeper",
+      "type": "older_man"
+    },
+    {
+      "id": "narrator",
+      "name": "Narrator",
+      "description": "official presenter of Voces del Más Allá",
+      "type": "narrator"
+    }
+  ],
+  "sync_mode": "whisper",
+  "audio_duration": 149.94,
+  "llm_provider": "openai",
+  "llm_model": "gpt-6-luna",
+  "batch_size": 6
+}

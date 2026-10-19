@@ -1,0 +1,2828 @@
+{
+  "storyboard": [
+    {
+      "scene": 1,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "narrator",
+          "type": "narrator",
+          "action": "talk",
+          "position": 3,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🌙",
+          "x": 0.8,
+          "y": 0.2,
+          "size": 100
+        },
+        {
+          "type": "emoji",
+          "value": "🏜️",
+          "x": 0.18,
+          "y": 0.75,
+          "size": 115
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "misterius_wind",
+          "time": 0.5,
+          "volume": 0.65
+        }
+      ],
+      "start": 0.0,
+      "end": 5.05,
+      "timeline_duration": 5.05,
+      "duration": 5.066666666666666,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "El desierto de Afganistán, 02-17 de la madrugada."
+    },
+    {
+      "scene": 2,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "road",
+      "fallback_background": "road",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "point",
+          "position": 2,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚙",
+          "x": 0.35,
+          "y": 0.72,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🚙",
+          "x": 0.65,
+          "y": 0.72,
+          "size": 120
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "fast-car-drive-by",
+          "time": 1.4,
+          "volume": 0.75
+        }
+      ],
+      "start": 5.05,
+      "end": 12.05,
+      "timeline_duration": 7.000000000000001,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Un convoy de cuatro vehículos militares estadounidenses avanzaba por una carretera abandonada."
+    },
+    {
+      "scene": 3,
+      "scene_type": "stick",
+      "shot": {
+        "target": "torso",
+        "character": "miller"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 3,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🌬️",
+          "x": 0.18,
+          "y": 0.28,
+          "size": 105
+        },
+        {
+          "type": "emoji",
+          "value": "🚙",
+          "x": 0.82,
+          "y": 0.72,
+          "size": 120
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "horror-sci-fi-wind-tunnel",
+          "time": 2.0,
+          "volume": 0.7
+        }
+      ],
+      "start": 12.05,
+      "end": 21.05,
+      "timeline_duration": 9.0,
+      "duration": 9.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "No había luna. Sólo el rugido de los motores y el viento golpeando las ventanas blindadas."
+    },
+    {
+      "scene": 4,
+      "scene_type": "stick",
+      "shot": {
+        "target": "right_arm",
+        "character": "miller"
+      },
+      "background_mode": "asset",
+      "background": "road",
+      "fallback_background": "road",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 3,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.7,
+          "y": 0.55,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "⚡",
+          "x": 0.82,
+          "y": 0.34,
+          "size": 85
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "terror-radio-frequency",
+          "time": 0.6,
+          "volume": 0.8
+        }
+      ],
+      "start": 21.05,
+      "end": 25.05,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "De pronto la radio comenzó a emitir estática."
+    },
+    {
+      "scene": 5,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "base-operator",
+          "type": "young_man",
+          "action": "talk",
+          "position": 3,
+          "emotion": "talk"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.68,
+          "y": 0.54,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "⚠️",
+          "x": 0.22,
+          "y": 0.3,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "police-radio-beep",
+          "time": 0.8,
+          "volume": 0.7
+        }
+      ],
+      "start": 25.05,
+      "end": 33.26,
+      "timeline_duration": 8.209999999999997,
+      "duration": 8.2,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Bravo, uno. Aquí veis. Detectamos movimiento detrás de ustedes."
+    },
+    {
+      "scene": 6,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "miller"
+      },
+      "background_mode": "asset",
+      "background": "road",
+      "fallback_background": "road",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 3,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🪞",
+          "x": 0.77,
+          "y": 0.38,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "👁️",
+          "x": 0.82,
+          "y": 0.5,
+          "size": 85
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "scary-violin",
+          "time": 1.2,
+          "volume": 0.75
+        }
+      ],
+      "start": 33.26,
+      "end": 39.26,
+      "timeline_duration": 6.0,
+      "duration": 6.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Confirman contacto visual? El sargento Miller miró por el retrovisor."
+    },
+    {
+      "scene": 7,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🌙",
+          "x": 0.8,
+          "y": 0.2,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "👣",
+          "x": 0.22,
+          "y": 0.75,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "misterius_wind",
+          "time": 0.5,
+          "volume": 0.65
+        }
+      ],
+      "start": 39.26,
+      "end": 43.26,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Nada. Sólo kilómetros de arena negra."
+    },
+    {
+      "scene": 8,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "road",
+      "fallback_background": "road",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "hands_up",
+          "position": 3,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚗",
+          "x": 0.72,
+          "y": 0.72,
+          "size": 140
+        },
+        {
+          "type": "emoji",
+          "value": "⚠️",
+          "x": 0.28,
+          "y": 0.33,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "fast-car-drive-by",
+          "time": 1.1,
+          "volume": 0.8
+        }
+      ],
+      "start": 43.26,
+      "end": 48.26,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Entonces, el último vehículo frenó bruscamente."
+    },
+    {
+      "scene": 9,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "point",
+          "position": 2,
+          "emotion": "scared"
+        },
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "investigate",
+          "position": 4,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🔦",
+          "x": 0.75,
+          "y": 0.32,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "🔫",
+          "x": 0.25,
+          "y": 0.68,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "reload_gun",
+          "time": 1.4,
+          "volume": 0.7
+        }
+      ],
+      "start": 48.26,
+      "end": 52.26,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Los soldados bajaron con sus rifles apuntando hacia la oscuridad."
+    },
+    {
+      "scene": 10,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "driver"
+      },
+      "background_mode": "asset",
+      "background": "road",
+      "fallback_background": "road",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "driver",
+          "type": "young_man",
+          "action": "fall",
+          "position": 3,
+          "emotion": "sad"
+        },
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "investigate",
+          "position": 5,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💀",
+          "x": 0.75,
+          "y": 0.25,
+          "size": 105
+        },
+        {
+          "type": "emoji",
+          "value": "砂",
+          "x": 0.25,
+          "y": 0.72,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "horror-sci-fi-wind-tunnel",
+          "time": 2.1,
+          "volume": 0.7
+        }
+      ],
+      "start": 52.26,
+      "end": 58.26,
+      "timeline_duration": 6.0,
+      "duration": 6.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "El conductor estaba muerto. Tenía los ojos abiertos y la boca llena de arena húmeda."
+    },
+    {
+      "scene": 11,
+      "scene_type": "stick",
+      "shot": {
+        "target": "torso",
+        "character": "driver"
+      },
+      "background_mode": "asset",
+      "background": "road",
+      "fallback_background": "road",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "driver",
+          "type": "young_man",
+          "action": "fall",
+          "position": 3,
+          "emotion": "sad"
+        },
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "look_back",
+          "position": 5,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🩸",
+          "x": 0.72,
+          "y": 0.34,
+          "size": 115
+        },
+        {
+          "type": "emoji",
+          "value": "⚠️",
+          "x": 0.22,
+          "y": 0.25,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "scary-violin",
+          "time": 2.5,
+          "volume": 0.75
+        }
+      ],
+      "start": 58.26,
+      "end": 65.26,
+      "timeline_duration": 7.000000000000007,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "En su pecho había cuatro profundas marcas, como si algo hubiera intentado abrirlo desde dentro."
+    },
+    {
+      "scene": 12,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "scared",
+          "position": 2,
+          "emotion": "scared"
+        },
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "hands_up",
+          "position": 4,
+          "emotion": "scared"
+        },
+        {
+          "id": "soldier-3",
+          "type": "young_man_3",
+          "action": "run",
+          "position": 5,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "😱",
+          "x": 0.77,
+          "y": 0.25,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "🔦",
+          "x": 0.26,
+          "y": 0.7,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "man-screaming-aaaah",
+          "time": 1.0,
+          "volume": 0.85
+        }
+      ],
+      "start": 65.26,
+      "end": 78.42,
+      "timeline_duration": 13.159999999999997,
+      "duration": 13.166666666666666,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Los soldados gritó."
+    },
+    {
+      "scene": 13,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 2,
+          "emotion": "doubt"
+        },
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "idle",
+          "position": 5,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🏜️",
+          "x": 0.52,
+          "y": 0.35,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "⚠️",
+          "x": 0.8,
+          "y": 0.3,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "misterius_wind",
+          "time": 1.2,
+          "volume": 0.65
+        }
+      ],
+      "start": 78.42,
+      "end": 89.18,
+      "timeline_duration": 10.760000000000005,
+      "duration": 10.733333333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "A unos 100 metros, una figura alta y delgada permanecía inmóvil sobre una duna."
+    },
+    {
+      "scene": 14,
+      "scene_type": "stick",
+      "shot": {
+        "target": "arms",
+        "character": "creature"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "hands_up",
+          "position": 4,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🫳",
+          "x": 0.75,
+          "y": 0.5,
+          "size": 120
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "ghost-horror-sound",
+          "time": 0.4,
+          "volume": 0.7
+        }
+      ],
+      "start": 89.18,
+      "end": 92.18,
+      "timeline_duration": 3.0,
+      "duration": 3.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Sus brazos eran demasiado largos."
+    },
+    {
+      "scene": 15,
+      "scene_type": "stick",
+      "shot": {
+        "target": "head",
+        "character": "creature"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "look_back",
+          "position": 4,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🫨",
+          "x": 0.77,
+          "y": 0.32,
+          "size": 115
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "error-glitch",
+          "time": 1.5,
+          "volume": 0.6
+        }
+      ],
+      "start": 92.18,
+      "end": 100.18,
+      "timeline_duration": 8.0,
+      "duration": 8.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Su cabeza, cubierta por una piel reseca y agrietada, estaba inclinada hacia un lado."
+    },
+    {
+      "scene": 16,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "investigate",
+          "position": 2,
+          "emotion": "doubt"
+        },
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "idle",
+          "position": 5,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🔭",
+          "x": 0.36,
+          "y": 0.4,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "👁️",
+          "x": 0.78,
+          "y": 0.34,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "horror-sci-fi-wind-tunnel",
+          "time": 2.1,
+          "volume": 0.65
+        }
+      ],
+      "start": 100.18,
+      "end": 107.18,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Miller levantó sus binoculares. La criatura no tenía ojos."
+    },
+    {
+      "scene": 17,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "hands_up",
+          "position": 2,
+          "emotion": "angry"
+        },
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "look_back",
+          "position": 5,
+          "emotion": null
+        },
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "think",
+          "position": 1,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🗣️",
+          "x": 0.43,
+          "y": 0.28,
+          "size": 95
+        },
+        {
+          "type": "emoji",
+          "value": "🔥",
+          "x": 0.76,
+          "y": 0.58,
+          "size": 120
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "police-radio-beep",
+          "time": 1.3,
+          "volume": 0.7
+        }
+      ],
+      "start": 107.18,
+      "end": 114.18,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Pero estaba mirándolo. No, fuego, ordenó."
+    },
+    {
+      "scene": 18,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "point",
+          "position": 2,
+          "emotion": "angry"
+        },
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "fall",
+          "position": 5,
+          "emotion": null
+        },
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "hands_up",
+          "position": 1,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🔫",
+          "x": 0.35,
+          "y": 0.47,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "💥",
+          "x": 0.67,
+          "y": 0.45,
+          "size": 120
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "gun_bang",
+          "time": 0.5,
+          "volume": 0.8
+        }
+      ],
+      "start": 114.18,
+      "end": 118.18,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Las balas atravesaron su cuerpo."
+    },
+    {
+      "scene": 19,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "fall",
+          "position": 5,
+          "emotion": null
+        },
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 2,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🏜️",
+          "x": 0.79,
+          "y": 0.32,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "💀",
+          "x": 0.9,
+          "y": 0.61,
+          "size": 85
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "bodyfall",
+          "time": 0.6,
+          "volume": 0.75
+        }
+      ],
+      "start": 118.18,
+      "end": 123.18,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "La figura se desplomó detrás de la duna."
+    },
+    {
+      "scene": 20,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "miller"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "think",
+          "position": 2,
+          "emotion": "doubt"
+        },
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "look_back",
+          "position": 5,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🤫",
+          "x": 0.8,
+          "y": 0.35,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🌙",
+          "x": 0.18,
+          "y": 0.22,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "misterius_wind",
+          "time": 1.5,
+          "volume": 0.45
+        }
+      ],
+      "start": 123.18,
+      "end": 127.18,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Durante unos segundos, sólo hubo silencio."
+    },
+    {
+      "scene": 21,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "point",
+          "position": 2,
+          "emotion": "scared"
+        },
+        {
+          "id": "driver",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 4,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚙",
+          "x": 0.72,
+          "y": 0.58,
+          "size": 140
+        },
+        {
+          "type": "emoji",
+          "value": "⚠️",
+          "x": 0.84,
+          "y": 0.3,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "sonido-de-golpeee",
+          "time": 2.1,
+          "volume": 0.8
+        }
+      ],
+      "start": 127.18,
+      "end": 134.18,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Entonces, algo golpeó desde abajo el suelo del segundo vehículo."
+    },
+    {
+      "scene": 22,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "hands_up",
+          "position": 1,
+          "emotion": "scared"
+        },
+        {
+          "id": "driver",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 5,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚙",
+          "x": 0.51,
+          "y": 0.58,
+          "size": 145
+        },
+        {
+          "type": "emoji",
+          "value": "✊",
+          "x": 0.65,
+          "y": 0.76,
+          "size": 95
+        },
+        {
+          "type": "emoji",
+          "value": "2️⃣",
+          "x": 0.85,
+          "y": 0.3,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "sonido-de-golpeee",
+          "time": 2.4,
+          "volume": 0.82
+        }
+      ],
+      "start": 134.18,
+      "end": 140.72,
+      "timeline_duration": 6.539999999999992,
+      "duration": 6.566666666666666,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Dos veces."
+    },
+    {
+      "scene": 23,
+      "scene_type": "stick",
+      "shot": {
+        "target": "legs",
+        "character": "soldier-2"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "fall",
+          "position": 3,
+          "emotion": "scared"
+        },
+        {
+          "id": "soldier-3",
+          "type": "young_man_3",
+          "action": "look_back",
+          "position": 5
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "👢",
+          "x": 0.53,
+          "y": 0.68,
+          "size": 115
+        },
+        {
+          "type": "emoji",
+          "value": "⬇️",
+          "x": 0.75,
+          "y": 0.45,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "crunchy-footsteps-loop",
+          "time": 0.7,
+          "volume": 0.68
+        }
+      ],
+      "start": 140.72,
+      "end": 144.72,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "La arena comenzó a hundirse bajo sus botas."
+    },
+    {
+      "scene": 24,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "soldier-3",
+          "type": "young_man_3",
+          "action": "fall",
+          "position": 3,
+          "emotion": "scared"
+        },
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "hands_up",
+          "position": 2,
+          "emotion": "scared"
+        },
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "point",
+          "position": 5,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🕳️",
+          "x": 0.5,
+          "y": 0.69,
+          "size": 135
+        },
+        {
+          "type": "emoji",
+          "value": "🤝",
+          "x": 0.77,
+          "y": 0.4,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "man-screaming-aaaah",
+          "time": 2.2,
+          "volume": 0.78
+        }
+      ],
+      "start": 144.72,
+      "end": 150.72,
+      "timeline_duration": 6.0,
+      "duration": 6.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Un soldado desapareció hasta la cintura antes de que sus compañeros pudieran agarrarlo."
+    },
+    {
+      "scene": 25,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 3,
+          "emotion": "scared"
+        },
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "point",
+          "position": 1,
+          "emotion": "scared"
+        },
+        {
+          "id": "soldier-3",
+          "type": "young_man_3",
+          "action": "look_back",
+          "position": 5,
+          "emotion": "scared"
+        },
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "hands_up",
+          "position": 2,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🌪️",
+          "x": 0.78,
+          "y": 0.45,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "⚠️",
+          "x": 0.22,
+          "y": 0.38,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "horror-sci-fi-wind-tunnel",
+          "time": 1.5,
+          "volume": 0.72
+        }
+      ],
+      "start": 150.72,
+      "end": 158.72,
+      "timeline_duration": 8.0,
+      "duration": 8.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Lo que lo arrastraba no estaba debajo de la arena. Estaba rodeándolos."
+    },
+    {
+      "scene": 26,
+      "scene_type": "stick",
+      "shot": {
+        "target": "torso",
+        "character": "miller"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "surprised",
+          "position": 3,
+          "emotion": "scared"
+        },
+        {
+          "id": "driver",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 5,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🌑",
+          "x": 0.78,
+          "y": 0.3,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "🔦",
+          "x": 0.24,
+          "y": 0.66,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "electricidad",
+          "time": 0.4,
+          "volume": 0.75
+        }
+      ],
+      "start": 158.72,
+      "end": 161.72,
+      "timeline_duration": 3.0,
+      "duration": 3.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Las luces se apagaron."
+    },
+    {
+      "scene": 27,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 3,
+          "emotion": "scared"
+        },
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "hands_up",
+          "position": 1,
+          "emotion": "scared"
+        },
+        {
+          "id": "soldier-3",
+          "type": "young_man_3",
+          "action": "think",
+          "position": 5,
+          "emotion": "scared"
+        },
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "talk",
+          "position": 2,
+          "emotion": "talk"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🗣️",
+          "x": 0.75,
+          "y": 0.42,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "📍",
+          "x": 0.2,
+          "y": 0.62,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "ghost-whisper",
+          "time": 2.1,
+          "volume": 0.72
+        }
+      ],
+      "start": 161.72,
+      "end": 169.72,
+      "timeline_duration": 8.0,
+      "duration": 8.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "En la oscuridad escucharon las voces de sus compañeros pidiendo ayuda desde lugares donde ya no había nadie."
+    },
+    {
+      "scene": 28,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "talk",
+          "position": 3,
+          "emotion": "angry"
+        },
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "look_back",
+          "position": 1,
+          "emotion": "scared"
+        },
+        {
+          "id": "driver",
+          "type": "young_man",
+          "action": "think",
+          "position": 5,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📢",
+          "x": 0.77,
+          "y": 0.36,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🤫",
+          "x": 0.22,
+          "y": 0.48,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "man-screaming-aaaah",
+          "time": 0.7,
+          "volume": 0.68
+        }
+      ],
+      "start": 169.72,
+      "end": 174.72,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "No respondan, gritó Miller. No importa qué voz escuchen."
+    },
+    {
+      "scene": 29,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "miller"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 3,
+          "emotion": "scared"
+        },
+        {
+          "id": "miller-daughter",
+          "type": "girl",
+          "action": "talk",
+          "position": 5,
+          "emotion": "sad"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.77,
+          "y": 0.58,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "📡",
+          "x": 0.2,
+          "y": 0.28,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "terror-radio-frequency",
+          "time": 1.4,
+          "volume": 0.76
+        }
+      ],
+      "start": 174.72,
+      "end": 181.72,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Pero entonces, desde la radio se oyó la voz de su hija de seis años."
+    },
+    {
+      "scene": 30,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "fall",
+          "position": 3,
+          "emotion": "sad"
+        },
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "talk",
+          "position": 5,
+          "emotion": "talk"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🔫",
+          "x": 0.42,
+          "y": 0.75,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "🥶",
+          "x": 0.78,
+          "y": 0.35,
+          "size": 110
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "bodyfall",
+          "time": 4.2,
+          "volume": 0.78
+        }
+      ],
+      "start": 181.72,
+      "end": 189.72,
+      "timeline_duration": 8.0,
+      "duration": 8.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Papá, hace frío aquí abajo. Miller dejó caer el arma."
+    },
+    {
+      "scene": 31,
+      "scene_type": "stick",
+      "shot": {
+        "target": "right_arm",
+        "character": "miller"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 3,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.72,
+          "y": 0.48,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🌙",
+          "x": 0.18,
+          "y": 0.2,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "terror-radio-frequency",
+          "time": 0.4,
+          "volume": 0.7
+        }
+      ],
+      "start": 189.72,
+      "end": 193.72,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "La radio volvió a crepitar."
+    },
+    {
+      "scene": 32,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "base-operator",
+          "type": "young_man",
+          "action": "talk",
+          "position": 3,
+          "emotion": "doubt"
+        },
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 5,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.49,
+          "y": 0.5,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "📡",
+          "x": 0.82,
+          "y": 0.22,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "police-radio-beep",
+          "time": 0.8,
+          "volume": 0.65
+        }
+      ],
+      "start": 193.72,
+      "end": 200.72,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Sargento susurró el operador de base. Acabamos de recibir sus coordenadas."
+    },
+    {
+      "scene": 33,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "scared",
+          "position": 3,
+          "emotion": "scared"
+        },
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "think",
+          "position": 5,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚗",
+          "x": 0.22,
+          "y": 0.61,
+          "size": 135
+        },
+        {
+          "type": "emoji",
+          "value": "⚠️",
+          "x": 0.76,
+          "y": 0.3,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "ghost-whisper",
+          "time": 1.3,
+          "volume": 0.7
+        }
+      ],
+      "start": 200.72,
+      "end": 205.72,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Hay algo moviéndose dentro de su vehículo, detrás de usted."
+    },
+    {
+      "scene": 34,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 2,
+          "emotion": "scared"
+        },
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "idle",
+          "position": 5,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚙",
+          "x": 0.2,
+          "y": 0.66,
+          "size": 140
+        },
+        {
+          "type": "emoji",
+          "value": "👁️",
+          "x": 0.78,
+          "y": 0.42,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "scarywind",
+          "time": 2.1,
+          "volume": 0.75
+        }
+      ],
+      "start": 205.72,
+      "end": 212.72,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Miller giró lentamente. La criatura estaba sentada en el asiento trasero."
+    },
+    {
+      "scene": 35,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "creature"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "talk",
+          "position": 4,
+          "emotion": "happy"
+        },
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "scared",
+          "position": 2,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "👧",
+          "x": 0.78,
+          "y": 0.32,
+          "size": 115
+        },
+        {
+          "type": "emoji",
+          "value": "😈",
+          "x": 0.24,
+          "y": 0.65,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "happy-child-laughing",
+          "time": 1.5,
+          "volume": 0.72
+        }
+      ],
+      "start": 212.72,
+      "end": 218.72,
+      "timeline_duration": 6.0,
+      "duration": 6.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Su rostro tenía ahora los ojos de su hija. ¡Y sonreía!"
+    },
+    {
+      "scene": 36,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "investigate",
+          "position": 2,
+          "emotion": "doubt"
+        },
+        {
+          "id": "driver",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 4,
+          "emotion": "doubt"
+        },
+        {
+          "id": "soldier-3",
+          "type": "young_man_3",
+          "action": "think",
+          "position": 5,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚗",
+          "x": 0.2,
+          "y": 0.67,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "☀️",
+          "x": 0.82,
+          "y": 0.2,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "crunchy-footsteps-loop",
+          "time": 1.1,
+          "volume": 0.6
+        }
+      ],
+      "start": 218.72,
+      "end": 225.72,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "A la mañana siguiente, un equipo de rescate encontró los cuatro vehículos intactos."
+    },
+    {
+      "scene": 37,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "investigate",
+          "position": 2,
+          "emotion": "doubt"
+        },
+        {
+          "id": "driver",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 4,
+          "emotion": "doubt"
+        },
+        {
+          "id": "soldier-3",
+          "type": "young_man_3",
+          "action": "think",
+          "position": 5,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚙",
+          "x": 0.77,
+          "y": 0.68,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "👣",
+          "x": 0.3,
+          "y": 0.78,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "misterius_wind",
+          "time": 0.4,
+          "volume": 0.62
+        }
+      ],
+      "start": 225.72,
+      "end": 230.72,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "No había cadáveres, ni casquillos, ni huellas que se alejaran del convoy."
+    },
+    {
+      "scene": 38,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "look_back",
+          "position": 2,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.68,
+          "y": 0.65,
+          "size": 150
+        },
+        {
+          "type": "emoji",
+          "value": "⚡",
+          "x": 0.79,
+          "y": 0.39,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "police-radio-beep",
+          "time": 0.2,
+          "volume": 0.72
+        }
+      ],
+      "start": 230.72,
+      "end": 233.72,
+      "timeline_duration": 3.0,
+      "duration": 3.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Sólo una radio encendida."
+    },
+    {
+      "scene": 39,
+      "scene_type": "stick",
+      "shot": {
+        "target": "torso",
+        "character": "miller"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "talk",
+          "position": 3,
+          "emotion": "talk"
+        },
+        {
+          "id": "base-operator",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 5,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.25,
+          "y": 0.76,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🔊",
+          "x": 0.72,
+          "y": 0.37,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "terror-radio-frequency",
+          "time": 0.6,
+          "volume": 0.68
+        }
+      ],
+      "start": 233.72,
+      "end": 240.72,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Desde ella se escuchaba la voz del sargento Miller, repitiendo una y otra vez."
+    },
+    {
+      "scene": 40,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "miller"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "hands_up",
+          "position": 3,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.72,
+          "y": 0.69,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🙏",
+          "x": 0.28,
+          "y": 0.34,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "ghost-voice",
+          "time": 0.3,
+          "volume": 0.78
+        }
+      ],
+      "start": 240.72,
+      "end": 245.72,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "¡No nos dejen salir! ¡Por favor, no nos dejen salir!"
+    },
+    {
+      "scene": 41,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "base-operator",
+          "type": "young_man",
+          "action": "investigate",
+          "position": 3,
+          "emotion": "doubt"
+        },
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "look_back",
+          "position": 5,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.35,
+          "y": 0.72,
+          "size": 140
+        },
+        {
+          "type": "emoji",
+          "value": "✋",
+          "x": 0.48,
+          "y": 0.57,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "computer_click",
+          "time": 1.1,
+          "volume": 0.64
+        }
+      ],
+      "start": 245.72,
+      "end": 251.72,
+      "timeline_duration": 6.0,
+      "duration": 6.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "El operador se acercó para apagarla. Seguimos tanis."
+    },
+    {
+      "scene": 42,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "base-operator",
+          "type": "young_man",
+          "action": "think",
+          "position": 2,
+          "emotion": "doubt"
+        },
+        {
+          "id": "soldier-3",
+          "type": "young_man_3",
+          "action": "look_back",
+          "position": 5,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.68,
+          "y": 0.7,
+          "size": 135
+        },
+        {
+          "type": "emoji",
+          "value": "❓",
+          "x": 0.75,
+          "y": 0.35,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "error-glitch",
+          "time": 0.4,
+          "volume": 0.65
+        }
+      ],
+      "start": 251.72,
+      "end": 254.72,
+      "timeline_duration": 3.0,
+      "duration": 3.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Tarisampea ponse money for we slot bill."
+    },
+    {
+      "scene": 43,
+      "scene_type": "stick",
+      "shot": {
+        "target": "torso",
+        "character": "miller"
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 3,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.72,
+          "y": 0.47,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "〰️",
+          "x": 0.82,
+          "y": 0.35,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "terror-radio-frequency",
+          "time": 1.1,
+          "volume": 0.68
+        }
+      ],
+      "start": 254.72,
+      "end": 258.72,
+      "timeline_duration": 4.000000000000028,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "And plug because decals matik is a wash."
+    },
+    {
+      "scene": 44,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "soldier-2",
+          "type": "young_man_2",
+          "action": "investigate",
+          "position": 2,
+          "emotion": "doubt"
+        },
+        {
+          "id": "soldier-3",
+          "type": "young_man_3",
+          "action": "look_back",
+          "position": 5,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.5,
+          "y": 0.46,
+          "size": 105
+        },
+        {
+          "type": "emoji",
+          "value": "❓",
+          "x": 0.82,
+          "y": 0.3,
+          "size": 85
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "question-mark",
+          "time": 1.4,
+          "volume": 0.55
+        }
+      ],
+      "start": 258.72,
+      "end": 261.72,
+      "timeline_duration": 3.0,
+      "duration": 3.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "In the self-agidents."
+    },
+    {
+      "scene": 45,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "road",
+      "fallback_background": "road",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "miller",
+          "type": "young_man",
+          "action": "talk",
+          "position": 2,
+          "emotion": "talk"
+        },
+        {
+          "id": "driver",
+          "type": "young_man",
+          "action": "look_back",
+          "position": 5,
+          "emotion": "doubt"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📻",
+          "x": 0.38,
+          "y": 0.42,
+          "size": 100
+        },
+        {
+          "type": "emoji",
+          "value": "🚗",
+          "x": 0.76,
+          "y": 0.62,
+          "size": 125
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "ghost-voice",
+          "time": 2.2,
+          "volume": 0.75
+        }
+      ],
+      "start": 261.72,
+      "end": 268.72,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Una voz profunda, seca, casi humana. Ya salimos."
+    },
+    {
+      "scene": 46,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "desert",
+      "fallback_background": "desert",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "creature",
+          "type": "ghost",
+          "action": "talk",
+          "position": 4,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🏜️",
+          "x": 0.73,
+          "y": 0.24,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "😂",
+          "x": 0.54,
+          "y": 0.68,
+          "size": 105
+        },
+        {
+          "type": "emoji",
+          "value": "🌙",
+          "x": 0.18,
+          "y": 0.2,
+          "size": 80
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "happy-child-laughing",
+          "time": 3.1,
+          "volume": 0.72
+        }
+      ],
+      "start": 268.72,
+      "end": 275.14,
+      "timeline_duration": 6.419999999999959,
+      "duration": 6.4,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Y en algún lugar bajo la arena, algo comenzó a reír."
+    }
+  ],
+  "cast": [
+    {
+      "id": "miller",
+      "name": "Sergeant Miller",
+      "description": "Recurring American sergeant leading the convoy",
+      "type": "young_man"
+    },
+    {
+      "id": "creature",
+      "name": "The Creature",
+      "description": "Tall, eyeless supernatural creature that imitates voices and faces",
+      "type": "ghost"
+    },
+    {
+      "id": "miller-daughter",
+      "name": "Miller’s Daughter",
+      "description": "Miller’s six-year-old daughter, heard through the radio and mimicked by the creature",
+      "type": "girl"
+    },
+    {
+      "id": "base-operator",
+      "name": "Base Operator",
+      "description": "Operator communicating with Miller over the radio",
+      "type": "young_man"
+    },
+    {
+      "id": "narrator",
+      "name": "Narrator",
+      "description": "official presenter of Voces del Más Allá",
+      "type": "narrator"
+    },
+    {
+      "id": "soldier-2",
+      "name": "soldier-2",
+      "description": "Character introduced during storyboard generation.",
+      "type": "young_man_2"
+    },
+    {
+      "id": "driver",
+      "name": "driver",
+      "description": "Character introduced during storyboard generation.",
+      "type": "young_man"
+    },
+    {
+      "id": "soldier-3",
+      "name": "soldier-3",
+      "description": "Character introduced during storyboard generation.",
+      "type": "young_man_3"
+    }
+  ],
+  "sync_mode": "whisper",
+  "audio_duration": 275.14,
+  "llm_provider": "openai",
+  "llm_model": "gpt-6-luna",
+  "batch_size": 6
+}

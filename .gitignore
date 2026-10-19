@@ -1,7 +1,12 @@
 # Mini Clip Maker
-# Ignora la carpeta de efectos de sonido del proyecto.
-# En tu PC corresponde a: C:\Users\mlagu\OneDrive\Documentos\GitHub\mini-clip-maker\sound_efects
+# Ignora la carpeta local de efectos de sonido.
 /sound_efects/
+
+# Qwen: entorno y pruebas locales (no son parte del proyecto)
+/.venv-qwen/
+/probar_qwen.py
+/.cache/huggingface/
+/models--Qwen*/
 
 # Archivos temporales y resultados generados
 /output/
@@ -27,6 +32,7 @@ venv/
 env/
 .env
 .env.*
+!.env.example
 
 # Logs y archivos del sistema
 *.log

@@ -1,0 +1,51 @@
+[TITULO]
+flujo de caja
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+alegre.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[ESTILO_VISUAL]
+Ilustración cinematográfica de suspenso, siluetas sin rasgos faciales, casa familiar de noche, iluminación tenue y realista, tensión contenida, composición sencilla, sin gore ni texto.
+
+[NEGATIVE_PROMPT]
+rostros detallados, ojos, nariz, boca, caricatura, anime, estilo infantil, gore explícito, monstruos, texto, letras, marcas de agua, anatomía deformada
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+6
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.35
+
+[MAX_EFECTOS_SONIDO]
+26
+
+[GUION]
+Don Julián tenía una pequeña tienda de barrio. Cada mañana abría temprano, acomodaba los productos y atendía a sus clientes. Al terminar el mes, revisó su cuaderno y sonrió: había vendido bastante. Sobre el papel, parecía que el negocio iba muy bien.
+Pero había un problema: cuando llegó el día de pagar la electricidad y a sus proveedores, Julián descubrió que no tenía suficiente dinero en la caja.
+¿Cómo podía ser? Había vendido más que el mes anterior.
+Al revisar sus cuentas, encontró la respuesta. Muchos clientes le habían comprado fiado. Las ventas estaban anotadas, pero varios todavía no le habían pagado. Julián contaba ese dinero como parte de lo que esperaba recibir, aunque aún no podía usarlo. Mientras tanto, los gastos sí tenían fecha: el proveedor esperaba su pago esa semana y la factura de electricidad no podía esperar.
+Julián comprendió que vender mucho no siempre significa tener dinero disponible. Una tienda puede tener buenas ventas y aun así quedarse sin efectivo si cobra tarde, paga pronto o no separa dinero para sus compromisos.
+Entonces hizo algunos cambios. Anotó por separado el dinero que ya había cobrado y el que todavía le debían. También apuntó cuánto debía pagar y en qué fecha. A los clientes que compraban fiado, les dio plazos claros, y cada semana revisó cuánto dinero entraba y cuánto salía. Además, reservó una parte de sus cobros para pagar gastos importantes.
+Poco a poco, dejó de llevarse sorpresas al final del mes. No necesariamente vendía más; simplemente entendía mejor cuándo tendría el dinero en sus manos.
+Eso es el flujo de caja: registrar y planificar las entradas y salidas de dinero durante un periodo. Sirve para saber si un negocio podrá pagar sus gastos a tiempo. Porque una venta puede verse bien en el cuaderno, pero las cuentas se pagan con dinero disponible.

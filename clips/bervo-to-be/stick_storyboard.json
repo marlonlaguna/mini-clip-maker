@@ -1,0 +1,171 @@
+{
+  "storyboard": [
+    {
+      "scene": 1,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "classroom",
+      "fallback_background": "classroom",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "narrator",
+          "type": "narrator",
+          "action": "talk",
+          "position": 3,
+          "emotion": null
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📖",
+          "x": 0.78,
+          "y": 0.46,
+          "size": 130
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "keyboard-click",
+          "time": 1.2,
+          "volume": 0.65
+        }
+      ],
+      "start": 0.0,
+      "end": 7.14,
+      "timeline_duration": 7.14,
+      "duration": 7.133333333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Hola, hoy vamos a ver el pasado simple siempre que hables en pasado simple en inglés."
+    },
+    {
+      "scene": 2,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "office",
+      "fallback_background": "office",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "narrator",
+          "type": "narrator",
+          "action": "point",
+          "position": 2,
+          "emotion": "talk"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💻",
+          "x": 0.77,
+          "y": 0.52,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "✍️",
+          "x": 0.25,
+          "y": 0.4,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "computer_click",
+          "time": 2.1,
+          "volume": 0.65
+        }
+      ],
+      "start": 7.14,
+      "end": 18.78,
+      "timeline_duration": 11.64,
+      "duration": 11.633333333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Debes usar al final también recuerda usar de y blab, le e esta, es una prueba de video"
+    },
+    {
+      "scene": 3,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "anita",
+          "type": "young_woman",
+          "action": "hands_up",
+          "position": 3,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🍆",
+          "x": 0.73,
+          "y": 0.47,
+          "size": 140
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "audience-sorpresa-woow",
+          "time": 1.4,
+          "volume": 0.7
+        }
+      ],
+      "start": 18.78,
+      "end": 27.64,
+      "timeline_duration": 8.86,
+      "duration": 8.866666666666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Anitta subió las manos y le te encanta la berenjena."
+    }
+  ],
+  "cast": [
+    {
+      "id": "anita",
+      "name": "Anita",
+      "description": "woman mentioned in the video test",
+      "type": "young_woman"
+    },
+    {
+      "id": "narrator",
+      "name": "Narrator",
+      "description": "official presenter of Voces del Más Allá",
+      "type": "narrator"
+    }
+  ],
+  "sync_mode": "whisper",
+  "audio_duration": 27.64,
+  "llm_provider": "openai",
+  "llm_model": "gpt-6-luna",
+  "batch_size": 6
+}
