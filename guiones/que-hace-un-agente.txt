@@ -1,0 +1,51 @@
+[TITULO]
+What Does a Call Center Agent Actually Do?
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+alegre.mp3
+
+[VOLUMEN_MUSICA]
+0.04
+
+[ESTILO_VISUAL]
+Professional and friendly educational illustration in a modern call center. Bright blue and teal color palette, warm office lighting, computers, headsets and simple visual examples of customer service. Keep the same character designs throughout the video. Clear compositions, expressive body language, no readable text in generated images.
+
+[NEGATIVE_PROMPT]
+horror, dark atmosphere, gore, detailed realistic faces, anime, childish proportions, unreadable text, letters, watermarks, logos, distorted anatomy, inconsistent character designs
+
+[IMAGEN_FINAL]
+call-center.png
+
+[DURACION_IMAGEN_FINAL]
+6
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.25
+
+[MAX_EFECTOS_SONIDO]
+20
+
+[PERSONAJE:MUJER JOVEN]
+Call center agent wearing a professional blue outfit and a headset. Friendly and confident. Keep the same appearance throughout the video.
+
+[GUION]
+[NARRADOR | VOZ=Ryan | INSTRUCCION=curious and energetic | PAUSA=0.3]
+Think call center agents just read scripts all day? Not quite. They listen, solve problems, and guide customers to solutions.
+
+[MUJER JOVEN | VOZ=Serena | INSTRUCCION=warm and inviting]
+Want to see what the job is really like? Watch the full beginner’s guide on The Call Center Guide, right here on our channel.

@@ -1,0 +1,6 @@
+[GUION]
+[NARRADOR | VOZ=Ryan | INSTRUCCION=curious and energetic | PAUSA=0.3]
+Think call center agents just read scripts all day? Not quite. They listen, solve problems, and guide customers to solutions.
+
+[MUJER JOVEN | VOZ=Serena | INSTRUCCION=warm and inviting]
+Want to see what the job is really like? Watch the full beginner’s guide on The Call Center Guide, right here on our channel.

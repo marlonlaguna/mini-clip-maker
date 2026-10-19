@@ -5,18 +5,18 @@
     {
       "time": 0.0,
       "right_upper_arm": -90,
-      "right_forearm": 90
+      "right_forearm": 0
     },
     {
       "time": 0.5,
-      "right_upper_arm": -92,
-      "right_forearm": 92,
+      "right_upper_arm": -94,
+      "right_forearm": 0,
       "torso": -2
     },
     {
       "time": 1.0,
       "right_upper_arm": -90,
-      "right_forearm": 90
+      "right_forearm": 0
     }
   ]
 }

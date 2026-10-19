@@ -1,0 +1,1000 @@
+{
+  "storyboard": [
+    {
+      "scene": 1,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "bedroom_house",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "point",
+          "emotion": "angry",
+          "x": 0.32,
+          "y": 0.68,
+          "position": 1
+        },
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "look_back",
+          "emotion": "doubt",
+          "x": 0.68,
+          "y": 0.68,
+          "position": 2
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💔",
+          "x": 0.5,
+          "y": 0.35,
+          "size": 120
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "vine-dramatic-boom-sound-effect",
+          "time": 0.4,
+          "volume": 0.75
+        }
+      ],
+      "start": 0.0,
+      "end": 4.0,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "¿Cómo me pudiste hacer esto?"
+    },
+    {
+      "scene": 2,
+      "scene_type": "stick",
+      "shot": {
+        "target": "torso",
+        "character": "esposo"
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "bedroom_house",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "talk",
+          "emotion": "sad",
+          "x": 0.62,
+          "y": 0.68,
+          "position": 1
+        },
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "look_back",
+          "emotion": "doubt",
+          "x": 0.28,
+          "y": 0.68,
+          "position": 2
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📱",
+          "x": 0.78,
+          "y": 0.44,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "woman-cry-of-pain",
+          "time": 2.2,
+          "volume": 0.55
+        }
+      ],
+      "start": 4.0,
+      "end": 9.0,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "No quería que te enteraras así y va a contártelo."
+    },
+    {
+      "scene": 3,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "esposa"
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "bedroom_house",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "talk",
+          "emotion": "angry",
+          "x": 0.36,
+          "y": 0.68,
+          "position": 1
+        },
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "look_back",
+          "emotion": "sad",
+          "x": 0.72,
+          "y": 0.68,
+          "position": 2
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🕐",
+          "x": 0.7,
+          "y": 0.3,
+          "size": 105
+        },
+        {
+          "type": "emoji",
+          "value": "💔",
+          "x": 0.2,
+          "y": 0.38,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "scary-violin",
+          "time": 3.5,
+          "volume": 0.7
+        }
+      ],
+      "start": 9.0,
+      "end": 16.0,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Contármelo cuando? Después de otra cita? Después de volver a mentirme mirándome a los ojos?"
+    },
+    {
+      "scene": 4,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "bedroom_house",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "hands_up",
+          "emotion": "doubt",
+          "x": 0.65,
+          "y": 0.68,
+          "position": 1
+        },
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "think",
+          "emotion": "angry",
+          "x": 0.27,
+          "y": 0.68,
+          "position": 2
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🤷",
+          "x": 0.52,
+          "y": 0.36,
+          "size": 115
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "question-mark",
+          "time": 1.1,
+          "volume": 0.6
+        }
+      ],
+      "start": 16.0,
+      "end": 20.0,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Fue un error. No significa nada."
+    },
+    {
+      "scene": 5,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "bedroom_house",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "walk",
+          "emotion": "sad",
+          "x": 0.23,
+          "y": 0.68,
+          "position": 1
+        },
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "hands_up",
+          "emotion": "doubt",
+          "x": 0.71,
+          "y": 0.68,
+          "position": 2
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🪞",
+          "x": 0.5,
+          "y": 0.35,
+          "size": 110
+        },
+        {
+          "type": "emoji",
+          "value": "💔",
+          "x": 0.3,
+          "y": 0.4,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "door_close",
+          "time": 4.8,
+          "volume": 0.65
+        }
+      ],
+      "start": 20.0,
+      "end": 26.0,
+      "timeline_duration": 6.0,
+      "duration": 6.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Para ti, tal vez, no significa nada. Para mí significa que ya no sé quién eres."
+    },
+    {
+      "scene": 6,
+      "scene_type": "stick",
+      "shot": {
+        "target": "torso",
+        "character": "esposo"
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "bedroom_house",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "talk",
+          "emotion": "sad",
+          "x": 0.67,
+          "y": 0.68,
+          "position": 1
+        },
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "look_back",
+          "emotion": "sad",
+          "x": 0.27,
+          "y": 0.68,
+          "position": 2
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🙏",
+          "x": 0.5,
+          "y": 0.38,
+          "size": 115
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "woman-cry-of-pain",
+          "time": 2.7,
+          "volume": 0.55
+        }
+      ],
+      "start": 26.0,
+      "end": 31.0,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Por favor. No hagas esto más difícil."
+    },
+    {
+      "scene": 7,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "cuarto_pareja",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "point",
+          "position": 1
+        },
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "scared",
+          "position": 2
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚪",
+          "x": 0.78,
+          "y": 0.46,
+          "size": 130
+        },
+        {
+          "type": "emoji",
+          "value": "⚠️",
+          "x": 0.63,
+          "y": 0.3,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "scarywind",
+          "time": 1.2,
+          "volume": 0.65
+        }
+      ],
+      "start": 31.0,
+      "end": 38.0,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Más difícil? ¿Qué escondes en el armario? No lo abras."
+    },
+    {
+      "scene": 8,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "esposa"
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "cuarto_pareja",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "point",
+          "position": 1
+        },
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "look_back",
+          "position": 2
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "❓",
+          "x": 0.76,
+          "y": 0.25,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "🚪",
+          "x": 0.85,
+          "y": 0.68,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "question-mark",
+          "time": 0.6,
+          "volume": 0.65
+        }
+      ],
+      "start": 38.0,
+      "end": 42.0,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "¿Está ahí ella? ¿Metiste a tu amante nuestro armario?"
+    },
+    {
+      "scene": 9,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "cuarto_pareja",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "hands_up",
+          "position": 1
+        },
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "walk",
+          "position": 2
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "✋",
+          "x": 0.56,
+          "y": 0.38,
+          "size": 105
+        },
+        {
+          "type": "emoji",
+          "value": "🚪",
+          "x": 0.84,
+          "y": 0.54,
+          "size": 115
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "shoe-steps",
+          "time": 1.1,
+          "volume": 0.6
+        }
+      ],
+      "start": 42.0,
+      "end": 47.0,
+      "timeline_duration": 5.0,
+      "duration": 5.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "No. Escúchame. Aléjate de ahí."
+    },
+    {
+      "scene": 10,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "cuarto_pareja",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "open_door",
+          "position": 1
+        },
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "scared",
+          "position": 2
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚪",
+          "x": 0.78,
+          "y": 0.47,
+          "size": 135
+        },
+        {
+          "type": "emoji",
+          "value": "😱",
+          "x": 0.48,
+          "y": 0.28,
+          "size": 100
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "door_open",
+          "time": 4.3,
+          "volume": 0.8
+        }
+      ],
+      "start": 47.0,
+      "end": 54.0,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Estoy harta de que me digas qué hacer. Voy a abrirlo. ¡No!"
+    },
+    {
+      "scene": 11,
+      "scene_type": "stick",
+      "shot": {
+        "target": "torso",
+        "character": "esposo"
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "cuarto_pareja",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "look_back",
+          "position": 1
+        },
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "point",
+          "position": 2
+        },
+        {
+          "id": "zombi",
+          "type": "zombie",
+          "action": "idle",
+          "position": 3
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚪",
+          "x": 0.79,
+          "y": 0.48,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "💀",
+          "x": 0.88,
+          "y": 0.3,
+          "size": 95
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "ghost-horror-sound",
+          "time": 1.5,
+          "volume": 0.7
+        }
+      ],
+      "start": 54.0,
+      "end": 60.0,
+      "timeline_duration": 6.0,
+      "duration": 6.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "¿Qué es eso? Cierra el armario. No lo mires."
+    },
+    {
+      "scene": 12,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "cuarto_pareja",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "scared",
+          "position": 1
+        },
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "look_back",
+          "position": 2
+        },
+        {
+          "id": "zombi",
+          "type": "zombie",
+          "action": "hands_up",
+          "position": 3
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "💀",
+          "x": 0.79,
+          "y": 0.36,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "❓",
+          "x": 0.55,
+          "y": 0.25,
+          "size": 90
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "angry-monster-scream",
+          "time": 2.3,
+          "volume": 0.75
+        }
+      ],
+      "start": 60.0,
+      "end": 67.0,
+      "timeline_duration": 7.0,
+      "duration": 7.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Está muerto. ¿Qué es esa cosa? No sé. Yo no sabía que estaba ahí."
+    },
+    {
+      "scene": 13,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "cuarto_pareja",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "point",
+          "position": 1,
+          "emotion": "doubt"
+        },
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "talk",
+          "position": 2,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🚪",
+          "x": 0.75,
+          "y": 0.42,
+          "size": 120
+        },
+        {
+          "type": "emoji",
+          "value": "❓",
+          "x": 0.35,
+          "y": 0.28,
+          "size": 110
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "question-mark",
+          "time": 0.5,
+          "volume": 0.65
+        }
+      ],
+      "start": 67.0,
+      "end": 71.0,
+      "timeline_duration": 4.0,
+      "duration": 4.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Entonces, ¿por qué me pediste que no lo abriera?"
+    },
+    {
+      "scene": 14,
+      "scene_type": "stick",
+      "shot": {
+        "target": "face",
+        "character": "esposo"
+      },
+      "background_mode": "asset",
+      "background": "cuarto_pareja",
+      "fallback_background": "cuarto_pareja",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "look_back",
+          "position": 1,
+          "emotion": "scared"
+        },
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "look_back",
+          "position": 2,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🌙",
+          "x": 0.18,
+          "y": 0.2,
+          "size": 105
+        },
+        {
+          "type": "emoji",
+          "value": "😱",
+          "x": 0.8,
+          "y": 0.34,
+          "size": 115
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "ghost-voice",
+          "time": 2.4,
+          "volume": 0.8
+        }
+      ],
+      "start": 71.0,
+      "end": 79.0,
+      "timeline_duration": 8.0,
+      "duration": 8.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Porque escuché ese grito anoche y venía de nuestro dormitorio."
+    },
+    {
+      "scene": 15,
+      "scene_type": "stick",
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "background_mode": "asset",
+      "background": "pasillo_escaleras_casa",
+      "fallback_background": "pasillo_escaleras_casa",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "esposa",
+          "type": "young_woman_ana",
+          "action": "point",
+          "position": 1,
+          "emotion": "doubt"
+        },
+        {
+          "id": "esposo",
+          "type": "young_man_jose",
+          "action": "run",
+          "position": 2,
+          "emotion": "scared"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "🏃",
+          "x": 0.76,
+          "y": 0.34,
+          "size": 125
+        },
+        {
+          "type": "emoji",
+          "value": "❓",
+          "x": 0.25,
+          "y": 0.27,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "shoe-steps",
+          "time": 1.1,
+          "volume": 0.75
+        }
+      ],
+      "start": 79.0,
+      "end": 85.0,
+      "timeline_duration": 6.0,
+      "duration": 6.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Pero anoche tú no estabas aquí. ¿Estás saliendo? ¡Corre!"
+    },
+    {
+      "scene": 16,
+      "scene_type": "stick",
+      "shot": {
+        "target": "torso",
+        "character": "narrator"
+      },
+      "background_mode": "asset",
+      "background": "narrator_house",
+      "fallback_background": "narrator_house",
+      "background_prompt": null,
+      "illustration_prompt": null,
+      "illustration_priority": 0,
+      "characters": [
+        {
+          "id": "narrator",
+          "type": "narrator",
+          "action": "point",
+          "position": 1,
+          "emotion": "happy"
+        }
+      ],
+      "objects": [
+        {
+          "type": "emoji",
+          "value": "📖",
+          "x": 0.72,
+          "y": 0.35,
+          "size": 115
+        },
+        {
+          "type": "emoji",
+          "value": "🔔",
+          "x": 0.28,
+          "y": 0.28,
+          "size": 105
+        }
+      ],
+      "sound_effects": [
+        {
+          "name": "audience-sorpresa-woow",
+          "time": 1.0,
+          "volume": 0.6
+        }
+      ],
+      "start": 85.0,
+      "end": 88.58,
+      "timeline_duration": 3.5799999999999983,
+      "duration": 3.566666666666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "narration": "Si quieres más historias de terror, suscríbete."
+    }
+  ],
+  "cast": [
+    {
+      "id": "esposa",
+      "name": "ESPOSA",
+      "description": "Mujer adulta con ropa sencilla de casa. Postura dolida y decepcionada. Mantener la misma apariencia en todas las escenas.",
+      "type": "young_woman_ana"
+    },
+    {
+      "id": "esposo",
+      "name": "ESPOSO",
+      "description": "Hombre adulto con ropa sencilla de casa. Postura nerviosa y defensiva. Mantener la misma apariencia en todas las escenas.",
+      "type": "young_man_jose"
+    },
+    {
+      "id": "zombi",
+      "name": "ZOMBI",
+      "description": "Figura muerta y deteriorada que aparece dentro del armario. Movimiento lento, aspecto aterrador, sin mostrar detalles gráficos. Solo emite un grito fantasmal.",
+      "type": "zombie"
+    },
+    {
+      "id": "narrator",
+      "name": "Narrator",
+      "description": "optional visual presenter; narration may stay off-screen",
+      "type": "narrator"
+    }
+  ],
+  "sync_mode": "whisper",
+  "audio_duration": 88.58,
+  "llm_provider": "openai",
+  "llm_model": "gpt-6-luna",
+  "batch_size": 6
+}

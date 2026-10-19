@@ -2685,68 +2685,18 @@ Use ONLY AVAILABLE BACKGROUNDS.
 """
 
     # ========================================================
-    # NARRATOR
+    # OPTIONAL VISUAL NARRATOR
     # ========================================================
 
-    if (
-        lote
-        and int(
-            lote[0].get(
-                "scene",
-                0,
-            )
-        ) == 1
-    ):
-
-        regla_narrator = """
+    regla_narrator = """
 ==================================================
-NARRATOR — ABSOLUTE FIRST SCENE RULE
+OPTIONAL VISUAL NARRATOR
 ==================================================
 
-THIS BATCH CONTAINS SCENE 1 OF THE COMPLETE VIDEO.
-
-SCENE 1 MUST BE A STICK SCENE.
-
-SCENE 1 MUST INCLUDE THE OFFICIAL CHANNEL NARRATOR.
-
-Use EXACTLY this narrator identity:
-
-{
-  "id": "narrator",
-  "type": "narrator",
-  "action": "talk",
-  "position": 3,
-  "emotion": null
-}
-
-ABSOLUTE RULES:
-
-- Scene 1 MUST contain narrator.
-- narrator is the official presenter of Voces del Más Allá.
-- narrator MUST use type "narrator".
-- narrator MUST NOT be replaced by young_man, old_man, stickman or another asset.
-- narrator appears even if the narration does not explicitly mention him.
-- Scene 1 MUST NOT be an illustration.
-- Scene 1 MUST use scene_type = "stick".
-- Prefer action "talk".
-- Place narrator near the center.
-- Other characters may appear only when useful.
-- Never add a color field.
-"""
-
-    else:
-
-        regla_narrator = """
-==================================================
-NARRATOR
-==================================================
-
-This batch does NOT contain scene 1.
-
-Do not force narrator into these scenes.
-
-Use narrator only if the narration genuinely requires
-the official channel presenter.
+The narration may be voice-over without showing a narrator character.
+The visual narrator is optional in every scene, including scene 1.
+Choose whether showing the narrator improves the scene.
+If used, keep id="narrator" and type="narrator".
 """
 
     return f"""
@@ -2990,15 +2940,7 @@ Return:
       "background_prompt": null,
       "illustration_prompt": null,
       "illustration_priority": 0,
-      "characters": [
-        {{
-          "id": "narrator",
-          "type": "narrator",
-          "action": "talk",
-          "position": 3,
-          "emotion": null
-        }}
-      ],
+      "characters": [],
       "objects": [
         {{
           "type": "emoji",
@@ -3029,7 +2971,7 @@ FINAL CHECK:
 6. Only valid actions are used.
 7. Character ids/types remain consistent.
 8. No color fields.
-9. Scene 1 uses narrator if this is the first batch.
+9. The visual narrator is optional in every scene.
 10. Generated stick backgrounds contain no humans.
 11. Illustration scenes have characters=[] and objects=[].
 12. JSON only.
@@ -3155,7 +3097,8 @@ def generar_storyboard_stick(
             f"{acciones}"
         )
 
-    # Narrator debe existir
+    # El personaje visual narrator es opcional; el audio puede seguir usando
+    # narración en off aunque no exista este asset.
     characters_catalog = (
         catalogo.get(
             "characters",
@@ -3163,21 +3106,16 @@ def generar_storyboard_stick(
         )
     )
 
-    if (
-        "narrator"
-        not in characters_catalog
-    ):
-
-        raise RuntimeError(
-            "[STICK] No se encontró "
-            "el personaje 'narrator' "
-            "en assets/characters."
+    if "narrator" in characters_catalog:
+        print(
+            "[CAST] narrator disponible como personaje opcional: "
+            f"{characters_catalog['narrator']}"
         )
-
-    print(
-        "[CAST] narrator detectado: "
-        f"{characters_catalog['narrator']}"
-    )
+    else:
+        print(
+            "[CAST] No hay asset visual narrator; "
+            "se mantiene la narración en off."
+        )
 
     print(
         "[STICK] Emociones disponibles:"
@@ -3279,18 +3217,16 @@ def generar_storyboard_stick(
         ),
     )
 
-    # Reservamos narrator desde Python.
-    cast[
-        "narrator"
-    ] = {
-        "id": "narrator",
-        "name": "Narrator",
-        "description": (
-            "official presenter of "
-            "Voces del Más Allá"
-        ),
-        "type": "narrator",
-    }
+    # Se ofrece como personaje visual, pero no se fuerza en ninguna escena.
+    if "narrator" in characters_catalog:
+        cast["narrator"] = {
+            "id": "narrator",
+            "name": "Narrator",
+            "description": (
+                "optional visual presenter; narration may stay off-screen"
+            ),
+            "type": "narrator",
+        }
 
     escenas_totales = []
     efectos_usados = 0
@@ -3397,8 +3333,9 @@ Do not explain anything.
                                 "Maintain character "
                                 "identity by id and "
                                 "asset type. "
-                                "The official narrator "
-                                "must appear in scene 1. "
+                                "The visual narrator is optional "
+                                "in every scene; narration may "
+                                "remain voice-over. "
                                 "Never assign colors. "
                                 "Every stick scene must "
                                 "contain a meaningful "
@@ -3458,135 +3395,6 @@ Do not explain anything.
                     catalogo,
                 )
 
-                # ==================================================
-                # NARRATOR: GARANTÍA EN PYTHON
-                # ==================================================
-
-                if (
-                    inicio == 0
-                    and escenas_lote
-                ):
-
-                    primera = (
-                        escenas_lote[0]
-                    )
-
-                    narrator_actions = (
-                        characters_catalog.get(
-                            "narrator",
-                            [],
-                        )
-                    )
-
-                    if (
-                        "talk"
-                        in narrator_actions
-                    ):
-
-                        narrator_action = (
-                            "talk"
-                        )
-
-                    elif (
-                        "idle"
-                        in narrator_actions
-                    ):
-
-                        narrator_action = (
-                            "idle"
-                        )
-
-                    elif narrator_actions:
-
-                        narrator_action = (
-                            narrator_actions[0]
-                        )
-
-                    else:
-
-                        raise RuntimeError(
-                            "[STICK] narrator "
-                            "no tiene acciones."
-                        )
-
-                    # Siempre STICK
-                    primera[
-                        "scene_type"
-                    ] = "stick"
-
-                    primera[
-                        "illustration_prompt"
-                    ] = None
-
-                    primera[
-                        "illustration_priority"
-                    ] = 0
-
-                    personajes = (
-                        primera.get(
-                            "characters",
-                            [],
-                        )
-                    )
-
-                    if not isinstance(
-                        personajes,
-                        list,
-                    ):
-                        personajes = []
-
-                    # Eliminar narrator duplicado
-                    personajes = [
-                        personaje
-                        for personaje
-                        in personajes
-                        if not (
-                            isinstance(
-                                personaje,
-                                dict,
-                            )
-                            and
-                            _slug_personaje(
-                                personaje.get(
-                                    "id"
-                                )
-                                or personaje.get(
-                                    "name"
-                                )
-                                or ""
-                            )
-                            == "narrator"
-                        )
-                    ]
-
-                    narrator = {
-                        "id": "narrator",
-                        "type": "narrator",
-                        "action": (
-                            narrator_action
-                        ),
-                        "position": 3,
-                        "emotion": None,
-                    }
-
-                    personajes.insert(
-                        0,
-                        narrator,
-                    )
-
-                    primera[
-                        "characters"
-                    ] = personajes[
-                        :5
-                    ]
-
-                    print(
-                        "[CAST] Narrator "
-                        "FORZADO en escena 1 "
-                        f"con acción "
-                        f"'{narrator_action}'."
-                    )
-
                 data_lote[
                     "storyboard"
                 ] = escenas_lote
@@ -3611,45 +3419,6 @@ Do not explain anything.
                         ),
                     )
                 )
-
-                # Verificación extra:
-                # narrator no puede desaparecer
-                # después de validar la escena.
-                if (
-                    inicio == 0
-                    and escenas_lote
-                ):
-
-                    primera = (
-                        escenas_lote[0]
-                    )
-
-                    tiene_narrator = any(
-                        isinstance(
-                            personaje,
-                            dict,
-                        )
-                        and personaje.get(
-                            "id"
-                        ) == "narrator"
-                        and personaje.get(
-                            "type"
-                        ) == "narrator"
-                        for personaje
-                        in primera.get(
-                            "characters",
-                            [],
-                        )
-                    )
-
-                    if not tiene_narrator:
-
-                        raise RuntimeError(
-                            "[STICK] ERROR: "
-                            "narrator desapareció "
-                            "durante la validación "
-                            "de la escena 1."
-                        )
 
                 for offset, escena in enumerate(
                     escenas_lote
@@ -4057,48 +3826,6 @@ Do not explain anything.
                     "easing",
                     "smooth",
                 )
-
-    # ========================================================
-    # VERIFICACIÓN FINAL NARRATOR
-    # ========================================================
-
-    if escenas:
-
-        primera = escenas[
-            0
-        ]
-
-        narrator_final = [
-            personaje
-            for personaje
-            in primera.get(
-                "characters",
-                [],
-            )
-            if isinstance(
-                personaje,
-                dict,
-            )
-            and personaje.get(
-                "id"
-            ) == "narrator"
-            and personaje.get(
-                "type"
-            ) == "narrator"
-        ]
-
-        if not narrator_final:
-
-            raise RuntimeError(
-                "[STICK] ERROR FINAL: "
-                "la escena 1 no contiene "
-                "al personaje narrator."
-            )
-
-        print(
-            "[CAST] Narrator confirmado "
-            "en escena 1."
-        )
 
     data = {
         "storyboard": escenas,

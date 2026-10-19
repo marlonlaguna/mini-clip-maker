@@ -1,0 +1,63 @@
+[TITULO]
+Los golpes de la pared
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[ESTILO_VISUAL]
+Ilustración cinematográfica de terror, apartamento antiguo de madrugada, habitación estrecha con armario de madera, iluminación tenue y sombras profundas, tensión contenida, sin gore ni texto.
+
+[NEGATIVE_PROMPT]
+rostros detallados, caricatura, anime, estilo infantil, gore explícito, monstruos visibles, texto, letras, marcas de agua, anatomía deformada
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+6
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.35
+
+[MAX_EFECTOS_SONIDO]
+100
+
+[PERSONAJE:MUJER JOVEN]
+Mujer joven que vive sola, ropa sencilla para dormir. Mantener la misma apariencia en todas las escenas.
+
+[PERSONAJE:VOZ DEL ARMARIO]
+Presencia invisible dentro del armario. No mostrar su rostro ni revelar qué es.
+
+[GUION]
+[NARRADOR | VOZ=Ryan | INSTRUCCION=voz baja y misteriosa | PAUSA=0.4]
+Me mudé sola a un apartamento antiguo. En mi habitación, el armario siempre quedaba entreabierto.
+
+[NARRADOR | VOZ=Ryan | INSTRUCCION=tenso y pausado | PAUSA=0.4]
+Una noche, tres golpes sonaron desde dentro. Entonces, una voz idéntica a la mía susurró:
+
+[VOZ DEL ARMARIO | VOZ=Serena | INSTRUCCION=susurro inquietante]
+Déjame salir.
+
+[NARRADOR | VOZ=Ryan | INSTRUCCION=voz asustada y contenida | PAUSA=0.4]
+Hui y regresé al amanecer. El armario estaba abierto; la caja había desaparecido. En la pared decía: «La próxima vez no escaparás».
+
+[NARRADOR | VOZ=Ryan | INSTRUCCION=tenso, con pausa antes del final | PAUSA=0.5]
+Me mudé. Semanas después, oí tres golpes en mi nueva habitación. No había armario. Venían de dentro de la pared. suscribete

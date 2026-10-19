@@ -5,6 +5,7 @@ import unicodedata
 import subprocess
 import inspect
 import tempfile
+from contextvars import ContextVar
 from pathlib import Path
 
 from generar_guion import generar_guion
@@ -15,9 +16,11 @@ from generar_video import generar_video
 
 from stick_engine import generar_stick_scenes
 from guion_audio import formatear_guion_audio, limpiar_guion_audio
+from clip_logger import ClipRunLogger
 
 
 BASE_DIR = Path(__file__).resolve().parent
+_ACTIVE_CLIP_LOGGER = ContextVar("active_clip_logger", default=None)
 
 CLIPS_DIR = BASE_DIR / "clips"
 MUSICA_DIR = BASE_DIR / "musica"
@@ -712,7 +715,7 @@ def resolver_archivo_guion(
     )
 
 
-def crear_clip(
+def _crear_clip_sin_log(
     modo: str,
     titulo: str,
     contenido: str,
@@ -863,6 +866,32 @@ def crear_clip(
         parents=True,
         exist_ok=True
     )
+
+    bitacora = _ACTIVE_CLIP_LOGGER.get()
+    try:
+        if (
+            bitacora is None
+            or bitacora.clip_dir.resolve() != ruta_clip.resolve()
+        ):
+            if bitacora is not None:
+                bitacora.finish("relocated")
+            bitacora = ClipRunLogger(
+                ruta_clip,
+                title=config.get("titulo", slug),
+                mode=modo,
+                input_value=contenido,
+                duration_target=(
+                    int(duracion_prompt)
+                    if duracion_prompt is not None
+                    else None
+                ),
+            )
+            _ACTIVE_CLIP_LOGGER.set(bitacora)
+        print(f"[LOG] Registro de generación: {bitacora.path.resolve()}")
+    except Exception as log_exc:
+        bitacora = None
+        _ACTIVE_CLIP_LOGGER.set(None)
+        print(f"[LOG] ERROR: no pude iniciar log.json: {log_exc}")
 
     ruta_guion = (
         ruta_clip
@@ -1193,6 +1222,66 @@ def crear_clip(
     )
 
     return ruta_video
+
+
+def crear_clip(
+    modo: str,
+    titulo: str,
+    contenido: str,
+    duracion_prompt=None,
+):
+    """Run clip generation and retain a per-folder snapshot for analysis."""
+    token = _ACTIVE_CLIP_LOGGER.set(None)
+    bitacora = None
+
+    # Abrir la bitácora desde el punto de entrada. Así queda registrada
+    # incluso una falla al generar el guion antes de preparar el clip.
+    titulo_log = titulo.strip() or Path(str(contenido)).stem or "clip"
+    ruta_log = CLIPS_DIR / slugify(titulo_log)
+
+    try:
+        bitacora = ClipRunLogger(
+            ruta_log,
+            title=titulo_log,
+            mode=modo,
+            input_value=contenido,
+            duration_target=(
+                int(duracion_prompt)
+                if duracion_prompt is not None
+                else None
+            ),
+        )
+        _ACTIVE_CLIP_LOGGER.set(bitacora)
+        print(f"[LOG] Registro de generación: {bitacora.path.resolve()}")
+
+        resultado = _crear_clip_sin_log(
+            modo=modo,
+            titulo=titulo,
+            contenido=contenido,
+            duracion_prompt=duracion_prompt,
+        )
+    except BaseException as exc:
+        bitacora = _ACTIVE_CLIP_LOGGER.get()
+        try:
+            if bitacora is not None:
+                bitacora.finish("failed", error=exc)
+                print(f"[LOG] Artefactos del fallo guardados en: {bitacora.path.resolve()}")
+        except Exception as log_exc:
+            print(f"[LOG] No pude completar log.json: {log_exc}")
+        raise
+    else:
+        bitacora = _ACTIVE_CLIP_LOGGER.get()
+        try:
+            if bitacora is not None:
+                bitacora.finish("completed")
+        except Exception as log_exc:
+            print(f"[LOG] No pude completar log.json: {log_exc}")
+        else:
+            if bitacora is not None:
+                print(f"[LOG] Artefactos guardados en: {bitacora.path.resolve()}")
+        return resultado
+    finally:
+        _ACTIVE_CLIP_LOGGER.reset(token)
 
 
 def mostrar_uso():

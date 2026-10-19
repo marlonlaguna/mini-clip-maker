@@ -1,0 +1,34 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:04.00,TikTok,,0,0,0,,¿Cómo me pudiste hacer esto?
+Dialogue: 0,0:00:04.00,0:00:09.00,TikTok,,0,0,0,,No quería que te enteraras así y va a contártelo.
+Dialogue: 0,0:00:09.00,0:00:16.00,TikTok,,0,0,0,,Contármelo cuando? Después de otra cita? Después de volver a mentirme mirándome a los ojos?
+Dialogue: 0,0:00:16.00,0:00:20.00,TikTok,,0,0,0,,Fue un error. No significa nada.
+Dialogue: 0,0:00:20.00,0:00:26.00,TikTok,,0,0,0,,Para ti, tal vez, no significa nada. Para mí significa que ya no sé quién eres.
+Dialogue: 0,0:00:26.00,0:00:31.00,TikTok,,0,0,0,,Por favor. No hagas esto más difícil.
+Dialogue: 0,0:00:31.00,0:00:35.00,TikTok,,0,0,0,,Más difícil? ¿Qué escondes en el armario?
+Dialogue: 0,0:00:35.00,0:00:38.00,TikTok,,0,0,0,,No lo abras.
+Dialogue: 0,0:00:38.00,0:00:42.00,TikTok,,0,0,0,,¿Está ahí ella? ¿Metiste a tu amante nuestro armario?
+Dialogue: 0,0:00:42.00,0:00:47.00,TikTok,,0,0,0,,No. Escúchame. Aléjate de ahí.
+Dialogue: 0,0:00:47.00,0:00:52.00,TikTok,,0,0,0,,Estoy harta de que me digas qué hacer. Voy a abrirlo.
+Dialogue: 0,0:00:52.00,0:00:54.00,TikTok,,0,0,0,,¡No!
+Dialogue: 0,0:00:54.00,0:00:56.00,TikTok,,0,0,0,,¿Qué es eso?
+Dialogue: 0,0:00:56.00,0:01:00.00,TikTok,,0,0,0,,Cierra el armario. No lo mires.
+Dialogue: 0,0:01:00.00,0:01:03.00,TikTok,,0,0,0,,Está muerto. ¿Qué es esa cosa?
+Dialogue: 0,0:01:03.00,0:01:07.00,TikTok,,0,0,0,,No sé. Yo no sabía que estaba ahí.
+Dialogue: 0,0:01:07.00,0:01:11.00,TikTok,,0,0,0,,Entonces, ¿por qué me pediste que no lo abriera?
+Dialogue: 0,0:01:11.00,0:01:19.00,TikTok,,0,0,0,,Porque escuché ese grito anoche y venía de nuestro dormitorio.
+Dialogue: 0,0:01:19.00,0:01:22.00,TikTok,,0,0,0,,Pero anoche tú no estabas aquí.
+Dialogue: 0,0:01:22.00,0:01:25.00,TikTok,,0,0,0,,¿Estás saliendo? ¡Corre!
+Dialogue: 0,0:01:25.00,0:01:29.00,TikTok,,0,0,0,,Si quieres más historias de terror, suscríbete.
