@@ -11,62 +11,12 @@ Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
-Dialogue: 0,0:00:00.05,0:00:05.04,TikTok,,0,0,0,,El desierto de Afganistán, 02-17 de la madrugada.
-Dialogue: 0,0:00:05.04,0:00:12.05,TikTok,,0,0,0,,Un convoy de cuatro vehículos militares estadounidenses avanzaba por una carretera abandonada.
-Dialogue: 0,0:00:12.05,0:00:14.05,TikTok,,0,0,0,,No había luna.
-Dialogue: 0,0:00:14.05,0:00:21.05,TikTok,,0,0,0,,Sólo el rugido de los motores y el viento golpeando las ventanas blindadas.
-Dialogue: 0,0:00:21.05,0:00:25.05,TikTok,,0,0,0,,De pronto la radio comenzó a emitir estática.
-Dialogue: 0,0:00:25.05,0:00:33.25,TikTok,,0,0,0,,Bravo, uno. Aquí veis. Detectamos movimiento detrás de ustedes.
-Dialogue: 0,0:00:33.25,0:00:36.25,TikTok,,0,0,0,,Confirman contacto visual?
-Dialogue: 0,0:00:36.25,0:00:39.25,TikTok,,0,0,0,,El sargento Miller miró por el retrovisor.
-Dialogue: 0,0:00:39.25,0:00:43.25,TikTok,,0,0,0,,Nada. Sólo kilómetros de arena negra.
-Dialogue: 0,0:00:43.25,0:00:48.25,TikTok,,0,0,0,,Entonces, el último vehículo frenó bruscamente.
-Dialogue: 0,0:00:48.25,0:00:52.25,TikTok,,0,0,0,,Los soldados bajaron con sus rifles apuntando hacia la oscuridad.
-Dialogue: 0,0:00:52.25,0:00:58.25,TikTok,,0,0,0,,El conductor estaba muerto. Tenía los ojos abiertos y la boca llena de arena húmeda.
-Dialogue: 0,0:00:58.25,0:01:05.26,TikTok,,0,0,0,,En su pecho había cuatro profundas marcas, como si algo hubiera intentado abrirlo desde dentro.
-Dialogue: 0,0:01:05.26,0:01:18.42,TikTok,,0,0,0,,Los soldados gritó.
-Dialogue: 0,0:01:18.42,0:01:29.18,TikTok,,0,0,0,,A unos 100 metros, una figura alta y delgada permanecía inmóvil sobre una duna.
-Dialogue: 0,0:01:29.18,0:01:32.18,TikTok,,0,0,0,,Sus brazos eran demasiado largos.
-Dialogue: 0,0:01:32.18,0:01:40.18,TikTok,,0,0,0,,Su cabeza, cubierta por una piel reseca y agrietada, estaba inclinada hacia un lado.
-Dialogue: 0,0:01:40.18,0:01:44.18,TikTok,,0,0,0,,Miller levantó sus binoculares.
-Dialogue: 0,0:01:44.18,0:01:47.18,TikTok,,0,0,0,,La criatura no tenía ojos.
-Dialogue: 0,0:01:47.18,0:01:51.18,TikTok,,0,0,0,,Pero estaba mirándolo.
-Dialogue: 0,0:01:51.18,0:01:54.18,TikTok,,0,0,0,,No, fuego, ordenó.
-Dialogue: 0,0:01:54.18,0:01:58.18,TikTok,,0,0,0,,Las balas atravesaron su cuerpo.
-Dialogue: 0,0:01:58.18,0:02:03.18,TikTok,,0,0,0,,La figura se desplomó detrás de la duna.
-Dialogue: 0,0:02:03.18,0:02:07.18,TikTok,,0,0,0,,Durante unos segundos, sólo hubo silencio.
-Dialogue: 0,0:02:07.18,0:02:14.18,TikTok,,0,0,0,,Entonces, algo golpeó desde abajo el suelo del segundo vehículo.
-Dialogue: 0,0:02:14.18,0:02:20.71,TikTok,,0,0,0,,Dos veces.
-Dialogue: 0,0:02:20.71,0:02:24.71,TikTok,,0,0,0,,La arena comenzó a hundirse bajo sus botas.
-Dialogue: 0,0:02:24.71,0:02:30.71,TikTok,,0,0,0,,Un soldado desapareció hasta la cintura antes de que sus compañeros pudieran agarrarlo.
-Dialogue: 0,0:02:31.71,0:02:35.71,TikTok,,0,0,0,,Lo que lo arrastraba no estaba debajo de la arena.
-Dialogue: 0,0:02:35.71,0:02:38.71,TikTok,,0,0,0,,Estaba rodeándolos.
-Dialogue: 0,0:02:38.71,0:02:41.71,TikTok,,0,0,0,,Las luces se apagaron.
-Dialogue: 0,0:02:41.71,0:02:49.71,TikTok,,0,0,0,,En la oscuridad escucharon las voces de sus compañeros pidiendo ayuda desde lugares donde ya no había nadie.
-Dialogue: 0,0:02:49.71,0:02:52.71,TikTok,,0,0,0,,No respondan, gritó Miller.
-Dialogue: 0,0:02:52.71,0:02:54.71,TikTok,,0,0,0,,No importa qué voz escuchen.
-Dialogue: 0,0:02:55.71,0:03:01.71,TikTok,,0,0,0,,Pero entonces, desde la radio se oyó la voz de su hija de seis años.
-Dialogue: 0,0:03:03.71,0:03:06.71,TikTok,,0,0,0,,Papá, hace frío aquí abajo.
-Dialogue: 0,0:03:06.71,0:03:09.71,TikTok,,0,0,0,,Miller dejó caer el arma.
-Dialogue: 0,0:03:09.71,0:03:13.71,TikTok,,0,0,0,,La radio volvió a crepitar.
-Dialogue: 0,0:03:13.71,0:03:17.71,TikTok,,0,0,0,,Sargento susurró el operador de base.
-Dialogue: 0,0:03:17.71,0:03:20.71,TikTok,,0,0,0,,Acabamos de recibir sus coordenadas.
-Dialogue: 0,0:03:20.71,0:03:25.71,TikTok,,0,0,0,,Hay algo moviéndose dentro de su vehículo, detrás de usted.
-Dialogue: 0,0:03:25.71,0:03:28.71,TikTok,,0,0,0,,Miller giró lentamente.
-Dialogue: 0,0:03:28.71,0:03:32.71,TikTok,,0,0,0,,La criatura estaba sentada en el asiento trasero.
-Dialogue: 0,0:03:32.71,0:03:36.71,TikTok,,0,0,0,,Su rostro tenía ahora los ojos de su hija.
-Dialogue: 0,0:03:36.71,0:03:38.71,TikTok,,0,0,0,,¡Y sonreía!
-Dialogue: 0,0:03:38.71,0:03:45.71,TikTok,,0,0,0,,A la mañana siguiente, un equipo de rescate encontró los cuatro vehículos intactos.
-Dialogue: 0,0:03:45.71,0:03:50.71,TikTok,,0,0,0,,No había cadáveres, ni casquillos, ni huellas que se alejaran del convoy.
-Dialogue: 0,0:03:50.71,0:03:53.71,TikTok,,0,0,0,,Sólo una radio encendida.
-Dialogue: 0,0:03:53.71,0:04:00.71,TikTok,,0,0,0,,Desde ella se escuchaba la voz del sargento Miller, repitiendo una y otra vez.
-Dialogue: 0,0:04:00.71,0:04:02.71,TikTok,,0,0,0,,¡No nos dejen salir!
-Dialogue: 0,0:04:02.71,0:04:05.71,TikTok,,0,0,0,,¡Por favor, no nos dejen salir!
-Dialogue: 0,0:04:05.71,0:04:09.71,TikTok,,0,0,0,,El operador se acercó para apagarla.
-Dialogue: 0,0:04:09.71,0:04:11.71,TikTok,,0,0,0,,Seguimos tanis.
-Dialogue: 0,0:04:11.71,0:04:14.71,TikTok,,0,0,0,,Tarisampea ponse money for we slot bill.
-Dialogue: 0,0:04:14.71,0:04:18.72,TikTok,,0,0,0,,And plug because decals matik is a wash.
-Dialogue: 0,0:04:18.72,0:04:21.72,TikTok,,0,0,0,,In the self-agidents.
-Dialogue: 0,0:04:21.72,0:04:26.72,TikTok,,0,0,0,,Una voz profunda, seca, casi humana.
-Dialogue: 0,0:04:26.72,0:04:28.72,TikTok,,0,0,0,,Ya salimos.
-Dialogue: 0,0:04:28.72,0:04:34.72,TikTok,,0,0,0,,Y en algún lugar bajo la arena, algo comenzó a reír.
+Dialogue: 0,0:00:00.27,0:00:05.26,TikTok,,0,0,0,,El desierto de Afganistán, 2 y 17 de la madrugada.
+Dialogue: 0,0:00:05.26,0:00:10.26,TikTok,,0,0,0,,Un convoy militar avanzaba por una carretera abandonada.
+Dialogue: 0,0:00:10.26,0:00:17.26,TikTok,,0,0,0,,No había Luna, sólo el rugido de los motores y el viento contra las ventanas blindadas.
+Dialogue: 0,0:00:17.26,0:00:22.26,TikTok,,0,0,0,,Luna, ¿viste eso junto a la carretera?
+Dialogue: 0,0:00:22.26,0:00:26.26,TikTok,,0,0,0,,No vi nada, mi sargento. ¿Qué fue lo que vio?
+Dialogue: 0,0:00:26.26,0:00:31.26,TikTok,,0,0,0,,Había alguien parado bajo ese poste, pero ya no está.
+Dialogue: 0,0:00:31.26,0:00:40.27,TikTok,,0,0,0,,Luna miró por la ventana. A unos metros del convoy, una figura caminaba al mismo ritmo que los vehículos.
+Dialogue: 0,0:00:40.27,0:00:45.27,TikTok,,0,0,0,,Mi sargento, esa cosa está mirando hacia nosotros.
+Dialogue: 0,0:00:45.27,0:00:49.27,TikTok,,0,0,0,,¡No le quites la vista! ¡Que nadie abra las puertas!

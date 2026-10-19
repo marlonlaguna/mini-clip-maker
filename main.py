@@ -4,6 +4,7 @@ import json
 import unicodedata
 import subprocess
 import inspect
+import tempfile
 from pathlib import Path
 
 from generar_guion import generar_guion
@@ -13,6 +14,7 @@ from generar_imagenes import generar_imagenes
 from generar_video import generar_video
 
 from stick_engine import generar_stick_scenes
+from guion_audio import formatear_guion_audio, limpiar_guion_audio
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -137,10 +139,21 @@ def parsear_guion_configurado(
     texto: str
 ) -> dict:
 
+    # Acepta tanto [GUION] en su propia línea como [GUION] seguido de
+    # contenido en la misma línea.
+    texto = re.sub(
+        r"(?mi)^\[GUION\][ \t]+",
+        "[GUION]\n",
+        texto,
+        count=1,
+    )
+
+    # Las cabeceras de voz tienen un separador "|" y pertenecen al cuerpo
+    # de [GUION], no son secciones de configuración como [TITULO].
     patron = re.compile(
-        r"(?ms)^\[([^\]]+)\]\s*\n"
+        r"(?ms)^\[([^\]]+)\][ \t]*\n"
         r"(.*?)"
-        r"(?=^\[[^\]]+\]\s*$|\Z)"
+        r"(?=^\[(?![^\]\n]*\|)[^\]]+\][ \t]*$|\Z)"
     )
 
     secciones = {}
@@ -567,6 +580,35 @@ def _generar_guion_prompt(
     duracion: int
 ) -> str:
 
+    # La implementación actual escribe el texto limpio en un archivo.
+    # Las etiquetas de voz se agregan localmente después de esa respuesta.
+    try:
+        parametros = inspect.signature(generar_guion).parameters
+    except (TypeError, ValueError):
+        parametros = {}
+
+    if "ruta_salida" in parametros:
+        with tempfile.TemporaryDirectory(prefix="mini-clip-guion-") as temporal:
+            ruta_temporal = Path(temporal) / "guion.txt"
+            resultado = generar_guion(
+                prompt_video=f"Título: {titulo}\n\n{prompt}",
+                duracion_segundos=duracion,
+                ruta_salida=ruta_temporal,
+            )
+            if isinstance(resultado, Path):
+                return resultado.read_text(encoding="utf-8").strip()
+            if isinstance(resultado, str):
+                try:
+                    ruta_generada = Path(resultado)
+                    if ruta_generada.is_file():
+                        return ruta_generada.read_text(encoding="utf-8").strip()
+                except OSError:
+                    pass
+                if ruta_temporal.is_file():
+                    return ruta_temporal.read_text(encoding="utf-8").strip()
+                return resultado.strip()
+            return ruta_temporal.read_text(encoding="utf-8").strip()
+
     intentos = [
 
         lambda: generar_guion(
@@ -827,6 +869,11 @@ def crear_clip(
         / "guion.txt"
     )
 
+    ruta_guion_limpio = (
+        ruta_clip
+        / "guion_limpio.txt"
+    )
+
     ruta_config = (
         ruta_clip
         / "config.json"
@@ -857,8 +904,21 @@ def crear_clip(
         / "video.mp4"
     )
 
+    guion_limpio = limpiar_guion_audio(guion)
+    guion_audio = formatear_guion_audio(
+        guion,
+        voz_default=config.get("voz_qwen", "Ryan"),
+    )
+    config["guion"] = guion_limpio
+
+    # El archivo editable para locución lleva las etiquetas; las herramientas
+    # visuales reciben un archivo limpio para no ver instrucciones de audio.
     ruta_guion.write_text(
-        guion.strip(),
+        guion_audio,
+        encoding="utf-8"
+    )
+    ruta_guion_limpio.write_text(
+        guion_limpio,
         encoding="utf-8"
     )
 
@@ -971,7 +1031,7 @@ def crear_clip(
         clips_stick = (
             generar_stick_scenes(
 
-                guion=guion,
+                guion=guion_limpio,
 
                 duracion_segundos=(
                     duracion_real
@@ -1068,7 +1128,7 @@ def crear_clip(
 
         generar_imagenes(
             ruta_guion=(
-                ruta_guion
+                ruta_guion_limpio
             ),
 
             duracion_segundos=(

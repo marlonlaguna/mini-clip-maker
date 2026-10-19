@@ -10,6 +10,7 @@ import numpy as np
 import soundfile as sf
 import torch
 from qwen_tts import Qwen3TTSModel
+from guion_audio import parsear_bloques_audio
 
 
 MODEL_ID = "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice"
@@ -87,9 +88,9 @@ def main() -> int:
             "Comprueba torch.cuda.is_available() dentro de .venv-qwen."
         )
 
-    text = script_path.read_text(encoding="utf-8-sig").strip()
-    chunks = split_text(text)
-    if not chunks:
+    script = script_path.read_text(encoding="utf-8-sig").strip()
+    blocks = parsear_bloques_audio(script)
+    if not blocks:
         raise ValueError("El guion no contiene texto para sintetizar.")
 
     print(f"[QWEN] Cargando {MODEL_ID} en la GPU...")
@@ -100,33 +101,76 @@ def main() -> int:
         dtype=torch.float32,
     )
 
+    # La variante CustomVoice 0.6B no acepta instrucciones de estilo.
+    # Conservamos la metadata para que el formato sea editable y compatible
+    # con una variante que sí admita instruct, sin fingir que aquí se aplica.
+    model_size = getattr(getattr(model, "model", None), "tts_model_size", "")
+    supports_instruct = model_size != "0b6" and "0.6b" not in MODEL_ID.lower()
+    if not supports_instruct and any(b.get("instruction") for b in blocks):
+        print(
+            "[QWEN] Aviso: INSTRUCCION se conserva en el guion, pero "
+            "el modelo 0.6B no controla emociones por instrucción."
+        )
+
     pieces: list[np.ndarray] = []
     sample_rate: int | None = None
     pause = np.zeros(int(PAUSE_SECONDS * 24000), dtype=np.float32)
 
-    for index, chunk in enumerate(chunks, start=1):
-        print(f"[QWEN] Generando fragmento {index}/{len(chunks)}...")
-        wavs, current_sample_rate = model.generate_custom_voice(
-            text=chunk,
-            language=LANGUAGE,
-            speaker=speaker,
-        )
+    total_chunks = sum(len(split_text(block["text"])) for block in blocks)
+    chunk_index = 0
+    for block_index, block in enumerate(blocks):
+        block_chunks = split_text(block["text"])
+        block_speaker = (block.get("voice") or speaker).strip()
+        instruction = block.get("instruction", "").strip()
 
-        if sample_rate is None:
-            sample_rate = int(current_sample_rate)
-            pause = np.zeros(
-                int(PAUSE_SECONDS * sample_rate),
-                dtype=np.float32,
+        for local_index, chunk in enumerate(block_chunks):
+            chunk_index += 1
+            print(
+                f"[QWEN] Generando fragmento {chunk_index}/{total_chunks} "
+                f"({block.get('speaker', 'NARRADOR')} / {block_speaker})..."
             )
-        elif sample_rate != int(current_sample_rate):
-            raise RuntimeError("Qwen devolvió frecuencias de muestreo distintas.")
+            kwargs = {}
+            if supports_instruct and instruction:
+                kwargs["instruct"] = instruction
 
-        audio = np.asarray(wavs[0], dtype=np.float32).reshape(-1)
-        if audio.size == 0:
-            raise RuntimeError(f"Qwen devolvió audio vacío en el fragmento {index}.")
-        pieces.append(audio)
-        if index < len(chunks):
-            pieces.append(pause)
+            wavs, current_sample_rate = model.generate_custom_voice(
+                text=chunk,
+                language=LANGUAGE,
+                speaker=block_speaker,
+                **kwargs,
+            )
+
+            if sample_rate is None:
+                sample_rate = int(current_sample_rate)
+                pause = np.zeros(
+                    int(PAUSE_SECONDS * sample_rate),
+                    dtype=np.float32,
+                )
+            elif sample_rate != int(current_sample_rate):
+                raise RuntimeError("Qwen devolvió frecuencias de muestreo distintas.")
+
+            audio = np.asarray(wavs[0], dtype=np.float32).reshape(-1)
+            if audio.size == 0:
+                raise RuntimeError(f"Qwen devolvió audio vacío en el fragmento {chunk_index}.")
+            pieces.append(audio)
+            if local_index < len(block_chunks) - 1:
+                pieces.append(pause)
+
+        if block_index < len(blocks) - 1:
+            pause_seconds = PAUSE_SECONDS
+            if block.get("pause"):
+                try:
+                    pause_seconds = float(block["pause"])
+                except ValueError as exc:
+                    raise ValueError(
+                        f"PAUSA inválida en el bloque {block_index + 1}: "
+                        f"{block['pause']!r}"
+                    ) from exc
+                if not 0 <= pause_seconds <= 10:
+                    raise ValueError("PAUSA debe estar entre 0 y 10 segundos.")
+            pieces.append(
+                np.zeros(int(pause_seconds * sample_rate), dtype=np.float32)
+            )
 
     final_audio = np.concatenate(pieces)
     output_path.parent.mkdir(parents=True, exist_ok=True)
