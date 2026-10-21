@@ -2,7 +2,7 @@ from pathlib import Path
 from difflib import SequenceMatcher
 import re
 
-from ollama_client import OLLAMA_MODEL, ollama_chat
+from openai_client import OPENAI_MODEL, openai_chat
 
 import os
 import requests
@@ -642,7 +642,7 @@ def limpiar_json_respuesta(
 
 
 # =========================
-# OLLAMA Y ESCENAS UNICAS
+# OpenAI Y ESCENAS UNICAS
 # =========================
 
 def _texto_visual_escena(escena: dict) -> str:
@@ -686,10 +686,10 @@ def generar_storyboard(
     config: dict
 ) -> list[dict]:
     print("\n========================================")
-    print("[IMAGENES] GENERANDO STORYBOARD CON OLLAMA")
+    print("[IMAGENES] GENERANDO STORYBOARD CON OpenAI")
     print("========================================")
     print(f"[IMAGENES] Escenas solicitadas: {cantidad}")
-    print(f"[IMAGENES] Modelo local: {OLLAMA_MODEL}")
+    print(f"[IMAGENES] Modelo: {OPENAI_MODEL}")
 
     prompt_base = construir_prompt_storyboard(
         guion=guion,
@@ -702,7 +702,7 @@ def generar_storyboard(
     for intento in range(1, 4):
         try:
             print(f"[IMAGENES] Intento {intento}/3...")
-            contenido = ollama_chat(
+            contenido = openai_chat(
                 [
                     {
                         "role": "system",
@@ -761,7 +761,7 @@ def generar_storyboard(
             print(f"[IMAGENES] Error en intento {intento}: {exc}")
 
     raise RuntimeError(
-        f"[IMAGENES] Ollama no generó un storyboard válido y sin repeticiones: {ultimo_error}"
+        f"[IMAGENES] OpenAI no generó un storyboard válido y sin repeticiones: {ultimo_error}"
     )
 
 # =========================

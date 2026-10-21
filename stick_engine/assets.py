@@ -1,531 +1,258 @@
+"""Catálogo de sprites por acción. Los personajes articulados ya no se cargan."""
+from __future__ import annotations
+
 import json
+import math
 import re
 import unicodedata
 from pathlib import Path
-
-from PIL import Image, ImageDraw
-
+from PIL import Image
 from .utils import ASSETS_DIR
 
-
+CATEGORIES = ("humanoids", "non-humanoids", "objects")
 ALIASES = {
-    "none": "idle",
-    "stand": "idle",
-    "hello": "wave",
+    "none": "idle", "stand": "idle", "walk_front": "front_walk",
+    "walk_back": "back_walk", "walk_left": "walk", "walk_right": "walk",
+    "side_walk": "walk", "speak": "speak_front", "talk": "speak_front",
+    "speaking": "speak_front", "turn_around": "turn_arround",
+    "shoot": "shooting_a_gun", "point": "side_point", "muerto": "dying",
+    "scared": "afraid",
 }
 
 
 class AssetLibrary:
-    """
-    Librería de assets con caché en memoria.
-
-    El objetivo es evitar abrir/decodificar los mismos PNG y JSON miles de
-    veces durante el render de un video.
-    """
-
-    def __init__(self):
-        self.root = ASSETS_DIR
-
-        self._background_cache = {}
-        self._rig_cache = {}
-        self._action_cache = {}
-        self._sprite_cache = {}
-        self._emotion_cache = {}
-        self._sheet_cache = {}
-        self._sheet_frame_cache = {}
-        self._sheet_type_cache = {}
-
-        self._catalog_cache = None
-
-    # ============================================================
-    # HELPERS
-    # ============================================================
-
-    @staticmethod
-    def _read_json(path: Path):
-        return json.loads(
-            path.read_text(
-                encoding="utf-8"
-            )
-        )
+    def __init__(self, root=None):
+        self.root = Path(root) if root is not None else ASSETS_DIR
+        self.clear_cache()
 
     @staticmethod
     def _type_key(value):
-        value = unicodedata.normalize("NFKD", str(value or ""))
-        value = "".join(
-            char for char in value
-            if not unicodedata.combining(char)
-        ).lower()
-        return re.sub(r"[^a-z0-9]+", "_", value).strip("_")
-
-    def _character_dir(self, character_type):
-        characters_dir = self.root / "characters"
-        direct = characters_dir / str(character_type)
-        if direct.is_dir():
-            return direct
-
-        wanted = self._type_key(character_type)
-        if characters_dir.exists():
-            for candidate in characters_dir.iterdir():
-                if candidate.is_dir() and self._type_key(candidate.name) == wanted:
-                    return candidate
-        return direct
+        text = unicodedata.normalize("NFKD", str(value or ""))
+        text = "".join(c for c in text if not unicodedata.combining(c)).lower()
+        return re.sub(r"[^a-z0-9]+", "_", text).strip("_")
 
     @staticmethod
-    def _sheet_image_path(character_dir, config):
-        declared = str(config.get("spriteSheet", "") or "").strip()
-        candidates = []
-        if declared:
-            candidates.append(character_dir / declared)
-        candidates.extend((character_dir / "charset.png", character_dir / "charset.PNG"))
-
-        for path in candidates:
-            if path.is_file():
-                return path
-
-        pngs = sorted(character_dir.glob("*.png"))
-        return pngs[0] if pngs else None
-
-    def is_sprite_sheet(self, character_type):
-        key = self._type_key(character_type)
-        if key in self._sheet_type_cache:
-            return self._sheet_type_cache[key]
-        character_dir = self._character_dir(character_type)
-        actions_path = character_dir / "actions.json"
-        if not actions_path.is_file():
-            self._sheet_type_cache[key] = False
-            return False
-        try:
-            config = self._read_json(actions_path)
-        except (OSError, ValueError, json.JSONDecodeError):
-            self._sheet_type_cache[key] = False
-            return False
-        result = self._sheet_image_path(character_dir, config) is not None
-        self._sheet_type_cache[key] = result
-        return result
-
-    def _sheet_data(self, character_type):
-        character_dir = self._character_dir(character_type)
-        key = self._type_key(character_dir.name)
-        if key in self._sheet_cache:
-            return self._sheet_cache[key]
-
-        config_path = character_dir / "actions.json"
-        if not config_path.is_file():
-            raise FileNotFoundError(
-                f"No existe actions.json para '{character_type}'"
-            )
-
-        config = self._read_json(config_path)
-        image_path = self._sheet_image_path(character_dir, config)
-        if image_path is None:
-            raise FileNotFoundError(
-                f"No se encontró charset PNG para '{character_type}'"
-            )
-
-        with Image.open(image_path) as source:
-            source_mode = source.mode
-            image = source.convert("RGBA")
-        # Los charsets actuales usan fondo blanco. Solo se elimina el blanco
-        # conectado al borde para conservar detalles blancos dentro del sprite.
-        if source_mode != "RGBA":
-            marked = image.convert("RGB")
-            marker = (1, 2, 3)
-            for seed in ((0, 0), (marked.width - 1, 0), (0, marked.height - 1), (marked.width - 1, marked.height - 1)):
-                ImageDraw.floodfill(marked, seed, marker, thresh=24)
-            alpha = Image.new("L", marked.size, 255)
-            alpha_pixels = alpha.load()
-            marker_pixels = marked.load()
-            for y in range(marked.height):
-                for x in range(marked.width):
-                    if marker_pixels[x, y] == marker:
-                        alpha_pixels[x, y] = 0
-            image.putalpha(alpha)
-
-        animations = config.get("animations", [])
-        if isinstance(animations, dict):
-            animations = [
-                dict(value, name=name)
-                for name, value in animations.items()
-                if isinstance(value, dict)
-            ]
-        animation_map = {
-            str(item.get("name", "")).strip(): item
-            for item in animations
-            if isinstance(item, dict) and str(item.get("name", "")).strip()
-        }
-        if not animation_map:
-            raise ValueError(
-                f"actions.json de '{character_type}' no contiene animaciones"
-            )
-
-        frame_size = config.get("frameSize", {})
-        data = {
-            "config": config,
-            "image": image,
-            "animations": animation_map,
-            "frame_width": int(frame_size.get("width", 100)),
-            "frame_height": int(frame_size.get("height", 100)),
-            "default_fps": float(config.get("frameRate", 8.0)),
-        }
-        if data["frame_width"] <= 0 or data["frame_height"] <= 0:
-            raise ValueError(
-                f"frameSize inválido en {config_path}"
-            )
-
-        self._sheet_cache[key] = data
+    def _read_json(path):
+        data = json.loads(Path(path).read_text(encoding="utf-8-sig"))
+        if not isinstance(data, dict):
+            raise ValueError(f"La configuración debe ser un objeto: {path}")
         return data
 
-    # ============================================================
-    # BACKGROUNDS
-    # ============================================================
+    def _directories(self):
+        if self._directory_cache is None:
+            self._directory_cache = {}
+            for category in CATEGORIES:
+                folder = self.root / "characters" / category
+                if folder.is_dir():
+                    for path in sorted(folder.iterdir()):
+                        if path.is_dir() and not path.name.startswith("."):
+                            self._directory_cache[f"{category}/{path.name}"] = path
+        return self._directory_cache
 
-    def background(self, name):
-        if name in self._background_cache:
-            return self._background_cache[name]
+    def resolve_character(self, name):
+        requested = str(name).strip().replace("\\", "/")
+        if requested in self._directories():
+            return requested
+        matches = [key for key, path in self._directories().items()
+                   if self._type_key(path.name) == self._type_key(requested)
+                   or self._type_key(key) == self._type_key(requested)]
+        if len(matches) != 1:
+            raise ValueError(f"Character {'ambiguo' if matches else 'inexistente'}: {name!r}. "
+                             f"Usa categoría/nombre. Disponibles: {self.character_types()}")
+        return matches[0]
 
-        path = (
-            self.root
-            / "backgrounds"
-            / f"{name}.png"
-        )
-
-        if not path.exists():
-            available = self.backgrounds()
-
-            raise FileNotFoundError(
-                f"Background '{name}' no existe. "
-                f"Disponibles: {available}"
-            )
-
-        image = Image.open(path).convert("RGBA")
-        self._background_cache[name] = image
-
-        return image
-
-    # ============================================================
-    # RIGS
-    # ============================================================
-
-    def rig(self, character_type):
-        if character_type in self._rig_cache:
-            return self._rig_cache[character_type]
-
-        path = (
-            self._character_dir(character_type)
-            / "rig.json"
-        )
-
-        if not path.exists():
-            available = self.character_types()
-
-            raise FileNotFoundError(
-                f"Tipo de personaje '{character_type}' no existe. "
-                f"Disponibles: {available}"
-            )
-
-        data = self._read_json(path)
-        self._rig_cache[character_type] = data
-
-        return data
-
-    # ============================================================
-    # ACTIONS
-    # ============================================================
-
-    def action(
-        self,
-        character_type,
-        action_name
-    ):
-        if self.is_sprite_sheet(character_type):
-            data = self._sheet_data(character_type)
-            actions = data["animations"]
-            requested = str(action_name or "none").strip()
-            if requested not in actions:
-                aliases = {
-                    "idle": ("none",),
-                    "stand": ("none",),
-                    "walk": ("walk_front",),
-                    "run": ("walk_front",),
-                    "talk": ("speak",),
-                    "speaking": ("speak",),
-                    "look_back": ("turn_around",),
-                    "turn": ("turn_around",),
-                    "scared": ("afraid",),
-                    "fear": ("afraid",),
-                    "crying": ("cry",),
-                    "pointing": ("point",),
-                }
-                requested = next(
-                    (candidate for candidate in aliases.get(requested, ()) if candidate in actions),
-                    "none" if "none" in actions else next(iter(actions)),
-                )
-            key = (self._type_key(character_type), requested)
-            if key not in self._action_cache:
-                self._action_cache[key] = actions[requested]
-            return self._action_cache[key]
-
-        action_name = ALIASES.get(action_name, action_name)
-
-        key = (
-            character_type,
-            action_name
-        )
-
-        if key in self._action_cache:
-            return self._action_cache[key]
-
-        path = (
-            self._character_dir(character_type)
-            / "actions"
-            / f"{action_name}.json"
-        )
-
-        if not path.exists():
-            available = self.actions_for(
-                character_type
-            )
-
-            raise FileNotFoundError(
-                f"Acción '{action_name}' no existe para "
-                f"'{character_type}'. Disponibles: {available}"
-            )
-
-        data = self._read_json(path)
-        self._action_cache[key] = data
-
-        return data
-
-    def sprite_frame(self, character_type, action_name, t, fps=None):
-        data = self._sheet_data(character_type)
-        action = self.action(character_type, action_name)
-        frames = action.get("frames", [])
-        if not isinstance(frames, list) or not frames:
-            raise ValueError(
-                f"La acción '{action_name}' no contiene frames"
-            )
-
-        frame_count = min(
-            len(frames),
-            max(1, int(action.get("frameCount", len(frames)))),
-        )
-        rate = float(fps or action.get("frameRate") or data["default_fps"] or 8.0)
-        elapsed_frame = int(max(0.0, float(t)) * rate)
-        if frame_count == 1:
-            frame_index = 0
-        elif action.get("loop", True):
-            frame_index = elapsed_frame % frame_count
-        else:
-            # Las acciones de una sola ejecución terminan en su último frame.
-            frame_index = min(elapsed_frame, frame_count - 1)
-        frame_spec = frames[frame_index]
-        x = int(frame_spec.get("x", 0))
-        y = int(frame_spec.get("y", 0))
-        frame_width = data["frame_width"]
-        frame_height = data["frame_height"]
-        cache_key = (self._type_key(character_type), str(action.get("name", action_name)), frame_index)
-
-        if cache_key not in self._sheet_frame_cache:
-            image = data["image"]
-            if x < 0 or y < 0 or x + frame_width > image.width or y + frame_height > image.height:
-                raise ValueError(
-                    f"Frame fuera del charset en acción '{action_name}': ({x}, {y})"
-                )
-            self._sheet_frame_cache[cache_key] = image.crop(
-                (x, y, x + frame_width, y + frame_height)
-            )
-        return self._sheet_frame_cache[cache_key]
-
-    def sprite_frame_size(self, character_type):
-        data = self._sheet_data(character_type)
-        return data["frame_width"], data["frame_height"]
-
-    # ============================================================
-    # SPRITES
-    # ============================================================
-
-    def sprite(
-        self,
-        character_type,
-        sprite_name
-    ):
-        key = (
-            character_type,
-            sprite_name
-        )
-
-        if key in self._sprite_cache:
-            return self._sprite_cache[key]
-
-        path = (
-            self._character_dir(character_type)
-            / sprite_name
-        )
-
-        if not path.exists():
-            raise FileNotFoundError(
-                f"Sprite '{sprite_name}' no existe para "
-                f"'{character_type}'"
-            )
-
-        image = Image.open(path).convert("RGBA")
-        self._sprite_cache[key] = image
-
-        return image
-
-    # ============================================================
-    # EMOTIONS
-    # ============================================================
-
-    def emotion(
-        self,
-        emotion_name
-    ):
-        if emotion_name in self._emotion_cache:
-            return self._emotion_cache[emotion_name]
-
-        path = (
-            self.root
-            / "ui"
-            / "emotions"
-            / f"{emotion_name}.png"
-        )
-
-        if not path.exists():
-            available = self.emotions()
-
-            raise FileNotFoundError(
-                f"Emoción '{emotion_name}' no existe. "
-                f"Disponibles: {available}"
-            )
-
-        image = Image.open(path).convert("RGBA")
-        self._emotion_cache[emotion_name] = image
-
-        return image
-
-    # ============================================================
-    # CATÁLOGO DINÁMICO
-    # ============================================================
-
-    def backgrounds(self):
-        backgrounds_dir = (
-            self.root
-            / "backgrounds"
-        )
-
-        if not backgrounds_dir.exists():
-            return []
-
-        return sorted(
-            p.stem
-            for p in backgrounds_dir.glob("*.png")
-        )
-
-    def emotions(self):
-        emotions_dir = (
-            self.root
-            / "ui"
-            / "emotions"
-        )
-
-        if not emotions_dir.exists():
-            return []
-
-        return sorted(
-            p.stem
-            for p in emotions_dir.glob("*.png")
-        )
+    def _character_dir(self, name):
+        return self._directories()[self.resolve_character(name)]
 
     def character_types(self):
-        characters_dir = (
-            self.root
-            / "characters"
-        )
+        return sorted(self._directories())
 
-        if not characters_dir.exists():
-            return []
+    @staticmethod
+    def _animation_map(config):
+        raw = config.get("actions", config.get("animations", {}))
+        if isinstance(raw, list):
+            raw = {a["name"]: a for a in raw if isinstance(a, dict) and "name" in a}
+        if not isinstance(raw, dict):
+            raise ValueError("actions debe ser un objeto")
+        return raw
 
-        return sorted(
-            p.name
-            for p in characters_dir.iterdir()
-            if p.is_dir()
-            and (
-                (p / "rig.json").exists()
-                or (
-                    (p / "actions.json").is_file()
-                    and self._sheet_image_path(
-                        p,
-                        self._read_json(p / "actions.json"),
-                    ) is not None
-                )
-            )
-        )
+    def _character_data(self, name):
+        key = self.resolve_character(name)
+        if key in self._character_cache:
+            return self._character_cache[key]
+        category = key.split("/", 1)[0]
+        folder = self._directories()[key]
+        common = {}
+        if category == "humanoids":
+            common_path = folder.parent / "actions.json"
+            if not common_path.is_file():
+                raise FileNotFoundError(f"Falta la configuración común: {common_path}")
+            common = self._read_json(common_path)
+        specific = {}
+        if category != "objects" and (folder / "actions.json").is_file():
+            specific = self._read_json(folder / "actions.json")
+        if category == "non-humanoids" and not specific:
+            raise FileNotFoundError(f"Falta actions.json para {key}")
+        defaults = {"fps": 13, "mode": "loop"}
+        defaults.update(common.get("defaults", {}))
+        defaults.update(specific.get("defaults", {}))
+        declarations = {n: dict(v) for n, v in self._animation_map(common).items()}
+        for action, value in self._animation_map(specific).items():
+            if not isinstance(value, dict):
+                raise ValueError(f"Configuración inválida: {key}/{action}")
+            declarations[action] = {**declarations.get(action, {}), **value}
+        files = {p.stem: p for p in folder.iterdir()
+                 if p.is_file() and p.suffix.lower() == ".png"
+                 and (category == "objects" or p.stem.lower() not in {"modelo", "model", "preview", "reference"})}
+        if category == "objects":
+            if len(files) != 1:
+                raise ValueError(f"{key}: debe contener un único PNG, estático o tira horizontal")
+            declarations = {"idle": {"file": next(iter(files.values())).name}}
+        animations = {}
+        for action, declaration in declarations.items():
+            spec = {**defaults, **declaration}
+            filename = spec.get("file", f"{action}.png")
+            if Path(filename).name != filename:
+                raise ValueError(f"file debe estar en la carpeta del character: {filename}")
+            path = folder / filename
+            if not path.is_file():
+                continue
+            with Image.open(path) as im:
+                width, height = im.size
+            if category == "objects" and (height != 200 or width % 200):
+                fw, fh, count = width, height, 1
+            else:
+                if height != 200 or width < 200 or width % 200:
+                    raise ValueError(f"{path}: esperado N×200 de ancho y 200 de alto; recibido {width}×{height}")
+                fw, fh, count = 200, 200, width // 200
+            rate = float(spec.get("fps", 13))
+            mode = spec.get("mode", "loop")
+            if not math.isfinite(rate) or rate <= 0 or mode not in {"loop", "hold", "once"}:
+                raise ValueError(f"FPS o mode inválidos en {key}/{action}")
+            animations[action] = {
+                **spec, "name": action, "file": path, "fps": rate, "mode": mode,
+                "loop": mode == "loop", "frameCount": count,
+                "frame_width": fw, "frame_height": fh, "duration": count / rate,
+            }
+        if not animations:
+            raise ValueError(f"No hay acciones configuradas con PNG válido en {folder}")
+        declared_files = {str(a.get("file", f"{n}.png")) for n, a in declarations.items()}
+        extras = [p.name for p in files.values() if p.name not in declared_files]
+        if extras:
+            raise ValueError(f"{key}: configura estas acciones específicas en actions.json: {extras}")
+        self._character_cache[key] = {"category": category, "actions": animations}
+        return self._character_cache[key]
 
-    def actions_for(
-        self,
-        character_type
-    ):
-        if self.is_sprite_sheet(character_type):
-            return list(
-                self._sheet_data(character_type)["animations"].keys()
-            )
+    def is_sprite_sheet(self, character_type):
+        self._character_data(character_type)
+        return True
 
-        actions_dir = self._character_dir(character_type) / "actions"
+    def actions_for(self, character_type):
+        return sorted(self._character_data(character_type)["actions"])
 
-        if not actions_dir.exists():
-            return []
+    def action(self, character_type, action_name):
+        actions = self._character_data(character_type)["actions"]
+        requested = str(action_name or "idle").strip()
+        if requested not in actions:
+            requested = ALIASES.get(requested, requested)
+        if requested not in actions:
+            raise ValueError(f"Acción {action_name!r} no disponible para {character_type}. Disponibles: {sorted(actions)}")
+        return actions[requested]
 
-        return sorted(
-            p.stem
-            for p in actions_dir.glob("*.json")
-        )
+    def default_action(self, character_type):
+        actions = self.actions_for(character_type)
+        return "idle" if "idle" in actions else actions[0]
+
+    def sprite_frame(self, character_type, action_name, t, fps=None, facing="right"):
+        key = self.resolve_character(character_type)
+        action = self.action(key, action_name)
+        elapsed = max(0.0, float(t))
+        rate = action["fps"] if fps is None else float(fps)
+        if not math.isfinite(rate) or rate <= 0:
+            raise ValueError("Los FPS de animación deben ser positivos y finitos")
+        index = int(elapsed * rate + 1e-8)
+        count = action["frameCount"]
+        if action["mode"] == "once" and index >= count:
+            default = self.default_action(key)
+            if default != action["name"]:
+                return self.sprite_frame(key, default, elapsed - count / rate, facing=facing)
+            index = 0
+        elif action["mode"] == "loop":
+            index %= count
+        else:
+            index = min(index, count - 1)
+        cache_key = (key, action["name"], index, facing == "left")
+        if cache_key not in self._frame_cache:
+            path = action["file"]
+            if path not in self._image_cache:
+                with Image.open(path) as im:
+                    self._image_cache[path] = im.convert("RGBA")
+            w, h = action["frame_width"], action["frame_height"]
+            frame = self._image_cache[path].crop((index * w, 0, (index + 1) * w, h))
+            if facing == "left":
+                frame = frame.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
+            self._frame_cache[cache_key] = frame
+        return self._frame_cache[cache_key]
+
+    def sprite_frame_size(self, character_type, action_name=None):
+        action = self.action(character_type, action_name or self.default_action(character_type))
+        return action["frame_width"], action["frame_height"]
+
+    def background(self, name):
+        if name not in self.backgrounds():
+            raise FileNotFoundError(f"Background {name!r} no existe. Disponibles: {self.backgrounds()}")
+        if name not in self._background_cache:
+            with Image.open(self.root / "backgrounds" / f"{name}.png") as im:
+                self._background_cache[name] = im.convert("RGBA")
+        return self._background_cache[name]
+
+    def emotion(self, name):
+        if name not in self.emotions():
+            raise FileNotFoundError(f"Emoción no disponible: {name}")
+        if name not in self._emotion_cache:
+            with Image.open(self.root / "ui" / "emotions" / f"{name}.png") as im:
+                self._emotion_cache[name] = im.convert("RGBA")
+        return self._emotion_cache[name]
+
+    def backgrounds(self):
+        return sorted(p.stem for p in (self.root / "backgrounds").glob("*.png"))
+
+    def emotions(self):
+        return sorted(p.stem for p in (self.root / "ui" / "emotions").glob("*.png"))
 
     def catalog(self):
-        # El catálogo cambia solo cuando agregas/quitas assets. Durante una
-        # ejecución de Mini Clip Maker no necesitamos reconstruirlo.
-        if self._catalog_cache is not None:
-            return self._catalog_cache
-
-        characters = {}
-        character_parts = {}
-
-        for character_type in self.character_types():
-            characters[character_type] = self.actions_for(
-                character_type
-            )
-            character_parts[character_type] = (
-                []
-                if self.is_sprite_sheet(character_type)
-                else [
-                    part.get("name", "")
-                    for part in self.rig(character_type).get("parts", [])
-                    if part.get("name")
-                ]
-            )
-
-        self._catalog_cache = {
-            "backgrounds": self.backgrounds(),
-            "characters": characters,
-            "character_parts": character_parts,
-            "emotions": self.emotions(),
-        }
-
+        if self._catalog_cache is None:
+            characters = {name: self.actions_for(name) for name in self.character_types()}
+            self._catalog_cache = {
+                "backgrounds": self.backgrounds(), "characters": characters,
+                "character_parts": {name: [] for name in characters}, "emotions": self.emotions(),
+            }
         return self._catalog_cache
 
-    # ============================================================
-    # CACHE CONTROL
-    # ============================================================
+    def compact_catalog(self, character_types=None):
+        """Acciones humanoides comunes una vez; extras por character del cast."""
+        selected = [self.resolve_character(n) for n in character_types] if character_types is not None else self.character_types()
+        selected = list(dict.fromkeys(selected))
+        common_path = self.root / "characters" / "humanoids" / "actions.json"
+        common = sorted(self._animation_map(self._read_json(common_path))) if common_path.is_file() else []
+        result = {"humanoid_actions": common, "characters": {}}
+        for name in selected:
+            data = self._character_data(name)
+            actions = set(data["actions"])
+            if data["category"] == "humanoids":
+                result["characters"][name] = {"category": "humanoids", "extra_actions": sorted(actions - set(common))}
+                missing = sorted(set(common) - actions)
+                if missing:
+                    result["characters"][name]["missing_actions"] = missing
+            else:
+                result["characters"][name] = {"category": data["category"], "actions": sorted(actions)}
+        return result
 
     def clear_cache(self):
-        """Útil solo si cambias assets mientras el proceso sigue abierto."""
-        self._background_cache.clear()
-        self._rig_cache.clear()
-        self._action_cache.clear()
-        self._sprite_cache.clear()
-        self._emotion_cache.clear()
-        self._sheet_cache.clear()
-        self._sheet_frame_cache.clear()
-        self._sheet_type_cache.clear()
+        self._directory_cache = None
+        self._character_cache = {}
+        self._image_cache = {}
+        self._frame_cache = {}
+        self._background_cache = {}
+        self._emotion_cache = {}
         self._catalog_cache = None

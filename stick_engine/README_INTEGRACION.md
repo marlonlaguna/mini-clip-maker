@@ -1,35 +1,10 @@
-# stick_engine para Mini Clip Maker
+# Motor de sprites de Mini Clip Maker
 
-Copia esta carpeta completa dentro de:
+La guía completa y los ejemplos están en `../ACTUALIZACION_SPRITES.md` (desde la raíz del proyecto).
 
-C:\mini clip maker\stick_engine\
-
-## Dependencia
-
-El storyboard stick usa el mismo paquete Groq que Mini Clip Maker ya tiene instalado.
-
-## Punto de entrada
-
-```python
-from stick_engine import generar_stick_scenes
-```
-
-Uso:
-
-```python
-clips_stick = generar_stick_scenes(
-    guion=guion,
-    duracion_segundos=duracion_real,
-    ruta_clip=ruta_clip,
-    resolucion=config.get("resolucion", "1080x1920"),
-    fps=30
-)
-```
-
-Esto:
-1. pregunta a Groq por un storyboard stick,
-2. guarda `stick_storyboard.json`,
-3. renderiza las escenas,
-4. devuelve una lista de Path hacia `scene_001.mp4`, etc.
-
-No necesita API ni instalarse como paquete separado.
+Se conserva `from stick_engine import generar_stick_scenes` y su firma anterior,
+con `audio_timeline` opcional para tiempos exactos. `main.py` adapta el guion
+con OpenAI antes de generar voz y después entrega escenas validadas al motor.
+Los personajes usan únicamente tiras PNG horizontales de celdas de 200×200;
+el cast se declara en el guion. GPU y CPU comparten las reglas de orientación
+y desplazamiento.

@@ -1,6 +1,10 @@
 from pathlib import Path
 import os
 import subprocess
+import json
+import wave
+from guion_audio import parsear_bloques_audio
+from guion_escenas import number
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -35,6 +39,25 @@ def generar_audio(
         raise FileNotFoundError(f"No existe el guion: {ruta_guion}")
     if ruta_guion.stat().st_size == 0:
         raise ValueError("El archivo del guion está vacío.")
+    blocks = parsear_bloques_audio(ruta_guion.read_text(encoding="utf-8-sig"))
+    if blocks and not any(b["text"].strip() for b in blocks):
+        # Las acciones mudas conservan audio de silencio para música/SFX y montaje,
+        # pero no requieren iniciar Qwen ni disponer de CUDA.
+        rate, cursor, scenes = 24000, 0, []
+        for block in blocks:
+            length = round(number(block.get("scene_duration"), "DURACION", 0.01) * rate)
+            scenes.append({"id": block["scene"], "start": cursor / rate, "end": (cursor + length) / rate})
+            cursor += length
+        ruta_audio.parent.mkdir(parents=True, exist_ok=True)
+        with wave.open(str(ruta_audio), "wb") as output:
+            output.setnchannels(1)
+            output.setsampwidth(2)
+            output.setframerate(rate)
+            output.writeframes(bytes(cursor * 2))
+        timeline = {"schema_version": 1, "sample_rate": rate, "duration": cursor / rate, "scenes": scenes, "blocks": []}
+        ruta_audio.with_suffix(".timeline.json").write_text(json.dumps(timeline, indent=2), encoding="utf-8")
+        print(f"[AUDIO] Escenas sin diálogo: {cursor / rate:.2f}s; no se carga el motor de voz.")
+        return ruta_audio
     if not python_qwen.is_file():
         raise FileNotFoundError(
             f"No encuentro el Python de Qwen: {python_qwen}. "

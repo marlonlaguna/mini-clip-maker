@@ -85,23 +85,24 @@ def generar_stick_scenes(
     efectos_disponibles=None,
     max_efectos_sonido=8,
     personajes_config=None,
+    audio_timeline=None,
 ):
     """
     Genera escenas STICK o MIXED.
 
     STICK:
-    - Mantiene el comportamiento tradicional.
+    - Reproduce el cast y las acciones declarados en el guion.
 
     MIXED:
-    - Ollama local decide por escena entre stick e ilustración completa.
+    - El guion puede combinar sprites e ilustraciones completas.
     - El porcentaje mínimo de stick se fuerza por código.
-    - Si una escena stick necesita un fondo inexistente, puede generarse.
+    - Las escenas de sprites usan fondos existentes del catálogo.
     - Nunca se superponen ilustraciones completas sobre personajes stick.
       Si hay stick + imagen generada, esa imagen es únicamente el fondo.
 
     Sincronización:
-    - Si 'segmentos' viene informado, usa timestamps reales de Whisper.
-    - Si 'segmentos' es None, conserva el comportamiento por duración.
+    - 'audio_timeline' conserva tiempos reales, pausas y escenas sin diálogo.
+    - Sin esa línea de tiempo se mantiene el cálculo por duración.
     """
 
     modo_video = str(modo_video or "stick").lower()
@@ -149,6 +150,7 @@ def generar_stick_scenes(
         ),
         max_efectos_sonido=max_efectos_sonido,
         personajes_config=personajes_config or {},
+        audio_timeline=audio_timeline,
     )
 
     ruta_storyboard = (

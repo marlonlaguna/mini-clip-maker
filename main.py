@@ -17,9 +17,13 @@ from generar_video import generar_video
 from stick_engine import generar_stick_scenes
 from guion_audio import formatear_guion_audio, limpiar_guion_audio
 from clip_logger import ClipRunLogger
+from guion_escenas import parse_cast, preparar_guion_visual
+from stick_engine.assets import AssetLibrary
+from instalar_actualizacion import retirar_archivos_obsoletos
 
 
 BASE_DIR = Path(__file__).resolve().parent
+retirar_archivos_obsoletos(BASE_DIR)
 _ACTIVE_CLIP_LOGGER = ContextVar("active_clip_logger", default=None)
 
 CLIPS_DIR = BASE_DIR / "clips"
@@ -159,10 +163,16 @@ def parsear_guion_configurado(
         r"(?=^\[(?![^\]\n]*\|)[^\]]+\][ \t]*$|\Z)"
     )
 
-    secciones = {}
+    guion_match = re.search(r"(?mi)^\[GUION\][ \t]*(?:\r?\n|$)", texto)
+    if guion_match is None:
+        raise ValueError("El archivo no contiene la sección [GUION].")
+    # Solo la cabecera global se interpreta como configuración. ESCENA y
+    # [peter] dentro de GUION pertenecen al guion, incluso sin separador '|'.
+    cabecera = texto[:guion_match.start()]
+    secciones = {"GUION": texto[guion_match.end():].strip()}
     personajes = {}
 
-    for match in patron.finditer(texto):
+    for match in patron.finditer(cabecera):
 
         clave_original = (
             match.group(1).strip()
@@ -410,6 +420,7 @@ def parsear_guion_configurado(
         "seed": seed,
         "negative_prompt": negative_prompt,
         "personajes": personajes,
+        "cast": _valor_simple(secciones, "CAST", ""),
         "modo_video": modo_video,
         "voz_qwen": voz_qwen,
         "porcentaje_minimo_stick": porcentaje_minimo_stick,
@@ -469,6 +480,8 @@ def guardar_config(
             "negative_prompt",
             ""
         ),
+
+        "cast": config.get("cast", {}),
 
         "personajes": config.get(
             "personajes",
@@ -933,6 +946,30 @@ def _crear_clip_sin_log(
         / "video.mp4"
     )
 
+    efectos_sonido = listar_efectos_sonido()
+    if config["modo_video"] in {"stick", "mixed"}:
+        assets = AssetLibrary()
+        cast = parse_cast(config.get("cast") or config.get("personajes", {}), assets)
+        if not cast:
+            raise ValueError("Los modos stick/mixed requieren [CAST], por ejemplo: peter = jhon")
+        config["personajes"] = cast
+        config["cast"] = cast
+        original = guion
+        guion, cambios = preparar_guion_visual(
+            guion, cast, assets,
+            list(efectos_sonido) if config.get("usar_efectos_sonido", True) else [],
+            config.get("max_efectos_sonido", 8),
+            modo_video=config["modo_video"],
+            porcentaje_minimo_stick=config.get("porcentaje_minimo_stick", 70),
+        )
+        ruta_clip.joinpath("guion_original.txt").write_text(original, encoding="utf-8")
+        if modo == "guion":
+            prefijo = re.split(r"(?mi)^\[GUION\]", texto, maxsplit=1)[0]
+        else:
+            prefijo = f"[TITULO]\n{config['titulo']}\n\n[MODO_VIDEO]\n{config['modo_video']}\n\n"
+        ruta_clip.joinpath("guion_adaptado.txt").write_text(prefijo + "[GUION]\n" + guion, encoding="utf-8")
+        ruta_clip.joinpath("cambios_recursos.json").write_text(json.dumps(cambios, ensure_ascii=False, indent=2), encoding="utf-8")
+
     guion_limpio = limpiar_guion_audio(guion)
     guion_audio = formatear_guion_audio(
         guion,
@@ -970,11 +1007,15 @@ def _crear_clip_sin_log(
         "[MAIN] Generando audio..."
     )
 
+    ruta_audio.with_suffix(".timeline.json").unlink(missing_ok=True)
     _llamar_generar_audio(
         ruta_guion=ruta_guion,
         ruta_audio=ruta_audio,
         voz_qwen=config.get("voz_qwen", "Ryan"),
     )
+
+    timeline_path = ruta_audio.with_suffix(".timeline.json")
+    audio_timeline = json.loads(timeline_path.read_text(encoding="utf-8")) if timeline_path.is_file() else None
 
     duracion_real = (
         obtener_duracion_audio(
@@ -1060,7 +1101,7 @@ def _crear_clip_sin_log(
         clips_stick = (
             generar_stick_scenes(
 
-                guion=guion_limpio,
+                guion=guion,
 
                 duracion_segundos=(
                     duracion_real
@@ -1140,6 +1181,7 @@ def _crear_clip_sin_log(
                 personajes_config=(
                     config.get("personajes", {})
                 ),
+                audio_timeline=audio_timeline,
             )
         )
 

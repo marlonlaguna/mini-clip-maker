@@ -1,6 +1,5 @@
 import json
 from pathlib import Path
-from faster_whisper import WhisperModel
 
 
 # =========================
@@ -116,82 +115,92 @@ def generar_subtitulos(
         exist_ok=True
     )
 
-    # =========================
-    # CARGAR WHISPER
-    # =========================
-
-    print("")
-    print(
-        "[SUBTITULOS] Cargando Whisper en CPU..."
-    )
-
-    try:
-
-        whisper = WhisperModel(
-            modelo,
-            device="cpu",
-            compute_type="int8"
-        )
-
-    except Exception as e:
+    timeline_path = ruta_audio.with_suffix(".timeline.json")
+    timeline = json.loads(timeline_path.read_text(encoding="utf-8")) if timeline_path.is_file() else None
+    intentional_silence = timeline is not None and not timeline.get("blocks")
+    segmentos = []
+    if intentional_silence:
+        print("[SUBTITULOS] Guion sin diálogo: ASS vacío; se conservan las escenas y sus silencios.")
+    else:
+        # =========================
+        # CARGAR WHISPER
+        # =========================
 
         print("")
         print(
-            "[SUBTITULOS] ERROR cargando Whisper."
+            "[SUBTITULOS] Cargando Whisper en CPU..."
         )
+
+        try:
+
+            from faster_whisper import WhisperModel
+
+            whisper = WhisperModel(
+                modelo,
+                device="cpu",
+                compute_type="int8"
+            )
+
+        except Exception as e:
+
+            print("")
+            print(
+                "[SUBTITULOS] ERROR cargando Whisper."
+            )
+
+            print(
+                f"[SUBTITULOS] Detalle: {e}"
+            )
+
+            raise
 
         print(
-            f"[SUBTITULOS] Detalle: {e}"
+            "[SUBTITULOS] Modelo cargado correctamente."
         )
 
-        raise
-
-    print(
-        "[SUBTITULOS] Modelo cargado correctamente."
-    )
-
-    # =========================
-    # TRANSCRIBIR
-    # =========================
-
-    print("")
-    print(
-        "[SUBTITULOS] Analizando audio..."
-    )
-
-    try:
-
-        segmentos, info = whisper.transcribe(
-            str(ruta_audio),
-            language=IDIOMA,
-            beam_size=5,
-            vad_filter=True
-        )
-
-        segmentos = list(segmentos)
-
-    except Exception as e:
+        # =========================
+        # TRANSCRIBIR
+        # =========================
 
         print("")
         print(
-            "[SUBTITULOS] ERROR transcribiendo audio."
+            "[SUBTITULOS] Analizando audio..."
         )
+
+        try:
+
+            segmentos, info = whisper.transcribe(
+                str(ruta_audio),
+                language=IDIOMA,
+                beam_size=5,
+                vad_filter=True
+            )
+
+            segmentos = list(segmentos)
+
+        except Exception as e:
+
+            print("")
+            print(
+                "[SUBTITULOS] ERROR transcribiendo audio."
+            )
+
+            print(
+                f"[SUBTITULOS] Detalle: {e}"
+            )
+
+            raise
+
+        if not segmentos:
+            raise RuntimeError(
+                "[SUBTITULOS] Whisper no detectó texto."
+            )
 
         print(
-            f"[SUBTITULOS] Detalle: {e}"
+            f"[SUBTITULOS] Segmentos detectados: "
+            f"{len(segmentos)}"
         )
 
-        raise
-
-    if not segmentos:
-        raise RuntimeError(
-            "[SUBTITULOS] Whisper no detectó texto."
-        )
-
-    print(
-        f"[SUBTITULOS] Segmentos detectados: "
-        f"{len(segmentos)}"
-    )
 
     # =========================
     # CABECERA ASS
@@ -271,7 +280,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             linea
         )
 
-    if not eventos:
+    if not eventos and not intentional_silence:
         raise RuntimeError(
             "[SUBTITULOS] ERROR: "
             "No se generaron eventos de subtítulos."

@@ -1,0 +1,145 @@
+{
+  "formatVersion": 2,
+  "frameSize": {
+    "width": 200,
+    "height": 200
+  },
+  "defaults": {
+    "fps": 13,
+    "mode": "loop"
+  },
+  "actions": {
+    "afraid": {
+      "mode": "hold"
+    },
+    "back_walk": {
+      "mode": "loop",
+      "movement": {
+        "direction": "away",
+        "speed": 26,
+        "depth_rate": 0.035
+      }
+    },
+    "block": {
+      "mode": "hold"
+    },
+    "cooking": {
+      "mode": "hold"
+    },
+    "cry": {
+      "mode": "hold"
+    },
+    "dancing": {
+      "mode": "hold"
+    },
+    "diving": {
+      "mode": "hold"
+    },
+    "drink": {
+      "mode": "hold"
+    },
+    "dying": {
+      "mode": "hold"
+    },
+    "eat": {
+      "mode": "hold"
+    },
+    "fall": {
+      "mode": "hold"
+    },
+    "fight": {
+      "mode": "hold"
+    },
+    "front_point": {
+      "mode": "once"
+    },
+    "front_walk": {
+      "mode": "loop",
+      "movement": {
+        "direction": "toward",
+        "speed": 26,
+        "depth_rate": 0.035
+      }
+    },
+    "hiding": {
+      "mode": "hold"
+    },
+    "idle": {
+      "mode": "loop"
+    },
+    "kissing_a_man": {
+      "mode": "hold"
+    },
+    "kissing_a_woman": {
+      "mode": "hold"
+    },
+    "knock_knock": {
+      "mode": "hold"
+    },
+    "open_door": {
+      "mode": "once"
+    },
+    "run": {
+      "mode": "loop",
+      "movement": {
+        "direction": "facing",
+        "speed": 64
+      }
+    },
+    "shooting_a_gun": {
+      "mode": "hold"
+    },
+    "shooting_a_machine_gun": {
+      "mode": "hold"
+    },
+    "side_point": {
+      "mode": "once"
+    },
+    "sleep": {
+      "mode": "hold"
+    },
+    "smoke": {
+      "mode": "hold"
+    },
+    "sneaking": {
+      "mode": "loop",
+      "movement": {
+        "direction": "facing",
+        "speed": 12
+      }
+    },
+    "speak_front": {
+      "mode": "loop"
+    },
+    "speak_side": {
+      "mode": "loop"
+    },
+    "take_a_shower": {
+      "mode": "hold"
+    },
+    "turn_arround": {
+      "mode": "once"
+    },
+    "use_phone": {
+      "mode": "hold"
+    },
+    "using_laptop": {
+      "mode": "hold"
+    },
+    "walk": {
+      "mode": "loop",
+      "movement": {
+        "direction": "facing",
+        "speed": 26
+      }
+    },
+    "side_walk": {
+      "mode": "loop",
+      "movement": {
+        "direction": "facing",
+        "speed": 26
+      },
+      "file": "walk.png"
+    }
+  }
+}

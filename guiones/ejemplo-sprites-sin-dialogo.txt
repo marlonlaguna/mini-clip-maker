@@ -1,0 +1,28 @@
+[TITULO]
+Jhon sin diálogo
+
+[MODO_VIDEO]
+stick
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+ninguna
+
+[CAST]
+peter = jhon
+lucas = jhon
+
+[GUION]
+[ESCENA entrada | FONDO=house | DURACION=2]
+[peter | ACCION=walk]
+[lucas | ACCION=idle]
+
+[ESCENA profundidad | FONDO=house | DURACION=2]
+[peter | ACCION=front_walk]
+[lucas | ACCION=back_walk]
+
+[ESCENA reaccion | FONDO=house | DURACION=2 | PLANO=face:lucas]
+[peter | ACCION=speak_side]
+[lucas | ACCION=afraid]

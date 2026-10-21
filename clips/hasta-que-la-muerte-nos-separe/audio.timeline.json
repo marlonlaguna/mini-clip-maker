@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "sample_rate": 24000,
+  "duration": 79.66,
+  "scenes": [
+    {
+      "id": "llegada",
+      "start": 0.0,
+      "end": 1.8
+    },
+    {
+      "id": "maleta",
+      "start": 1.8,
+      "end": 5.16
+    },
+    {
+      "id": "excusa",
+      "start": 5.16,
+      "end": 9.7
+    },
+    {
+      "id": "rostro_esposa",
+      "start": 9.7,
+      "end": 14.34
+    },
+    {
+      "id": "documento",
+      "start": 14.34,
+      "end": 21.4
+    },
+    {
+      "id": "mirar_salida",
+      "start": 21.4,
+      "end": 22.9
+    },
+    {
+      "id": "precio",
+      "start": 22.9,
+      "end": 30.92
+    },
+    {
+      "id": "negacion",
+      "start": 30.92,
+      "end": 36.36
+    },
+    {
+      "id": "acercamiento",
+      "start": 36.36,
+      "end": 38.16
+    },
+    {
+      "id": "firma",
+      "start": 38.16,
+      "end": 45.62
+    },
+    {
+      "id": "advertencia",
+      "start": 45.62,
+      "end": 47.42
+    },
+    {
+      "id": "arma",
+      "start": 47.42,
+      "end": 55.58
+    },
+    {
+      "id": "suplica",
+      "start": 55.58,
+      "end": 62.0
+    },
+    {
+      "id": "decision",
+      "start": 62.0,
+      "end": 66.2
+    },
+    {
+      "id": "disparo",
+      "start": 66.2,
+      "end": 66.8
+    },
+    {
+      "id": "muerte",
+      "start": 66.8,
+      "end": 70.8
+    },
+    {
+      "id": "juramento",
+      "start": 70.8,
+      "end": 73.84
+    },
+    {
+      "id": "suscribirse",
+      "start": 73.84,
+      "end": 79.66
+    }
+  ],
+  "blocks": [
+    {
+      "speaker": "ESPOSA",
+      "scene": "maleta",
+      "start": 1.8,
+      "end": 4.76,
+      "text": "¿Pensabas marcharte mientras yo dormía?"
+    },
+    {
+      "speaker": "ESPOSO",
+      "scene": "excusa",
+      "start": 5.16,
+      "end": 9.4,
+      "text": "Solo necesito unos días. Podemos hablar de esto mañana."
+    },
+    {
+      "speaker": "ESPOSO",
+      "scene": "rostro_esposa",
+      "start": 9.7,
+      "end": 13.94,
+      "text": "Ana, por favor. Todavía podemos arreglar nuestro matrimonio."
+    },
+    {
+      "speaker": "ESPOSA",
+      "scene": "documento",
+      "start": 14.34,
+      "end": 20.9,
+      "text": "¿También podemos arreglar el seguro de vida que contrataste a mi nombre? Encontré los papeles."
+    },
+    {
+      "speaker": "ESPOSA",
+      "scene": "precio",
+      "start": 22.9,
+      "end": 30.42,
+      "text": "Para ti, mi muerte valía más que nuestra vida juntos. ¿Ibas a contármelo mañana también?"
+    },
+    {
+      "speaker": "ESPOSO",
+      "scene": "negacion",
+      "start": 30.92,
+      "end": 35.96,
+      "text": "No sabes lo que estás diciendo. Firmaste tú misma. Fue por seguridad."
+    },
+    {
+      "speaker": "ESPOSA",
+      "scene": "firma",
+      "start": 38.16,
+      "end": 45.12,
+      "text": "Esa no es mi firma. Igual que tampoco era casualidad que me preguntaras si esta noche estaría sola."
+    },
+    {
+      "speaker": "ESPOSA",
+      "scene": "arma",
+      "start": 47.42,
+      "end": 55.18,
+      "text": "Busqué mi pasaporte para irme. En su lugar encontré tu arma. Ahora dime: ¿para qué la necesitabas esta noche?"
+    },
+    {
+      "speaker": "ESPOSO",
+      "scene": "suplica",
+      "start": 55.58,
+      "end": 61.5,
+      "text": "Ana, escúchame. Deja eso. Te juro que nunca te haría daño."
+    },
+    {
+      "speaker": "ESPOSA",
+      "scene": "decision",
+      "start": 62.0,
+      "end": 65.6,
+      "text": "Eso mismo me prometiste el día de nuestra boda."
+    },
+    {
+      "speaker": "ESPOSO",
+      "scene": "muerte",
+      "start": 66.8,
+      "end": 69.44,
+      "text": "Ana... tú también prometiste..."
+    },
+    {
+      "speaker": "ESPOSA",
+      "scene": "juramento",
+      "start": 70.8,
+      "end": 73.04,
+      "text": "Hasta que la muerte nos separe."
+    },
+    {
+      "speaker": "ESPOSA",
+      "scene": "suscribirse",
+      "start": 73.84,
+      "end": 79.36,
+      "text": "Si quieres más historias con finales oscuros, suscríbete a Voces del Más Allá."
+    }
+  ]
+}

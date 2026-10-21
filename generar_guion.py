@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from ollama_client import OLLAMA_MODEL, ollama_chat
+from openai_client import OPENAI_MODEL, openai_chat
 
 
 def generar_guion(
@@ -8,9 +8,9 @@ def generar_guion(
     duracion_segundos: int,
     ruta_salida: str | Path,
 ) -> Path:
-    """Genera un guion en español con el modelo local de Ollama."""
+    """Genera un guion en español con el modelo de OpenAI."""
     print("\n========================================")
-    print("[GUION] INICIANDO GENERACION CON OLLAMA")
+    print("[GUION] INICIANDO GENERACION CON OpenAI")
     print("========================================")
 
     if not prompt_video or not prompt_video.strip():
@@ -24,7 +24,7 @@ def generar_guion(
     ruta_salida.parent.mkdir(parents=True, exist_ok=True)
     palabras_objetivo = int((duracion_segundos / 60) * 130)
 
-    print(f"[GUION] Modelo local: {OLLAMA_MODEL}")
+    print(f"[GUION] Modelo: {OPENAI_MODEL}")
     print(f"[GUION] Duración objetivo: {duracion_segundos} segundos")
     print(f"[GUION] Longitud estimada: {palabras_objetivo} palabras")
     print(f"[GUION] Archivo de salida: {ruta_salida}")
@@ -52,8 +52,8 @@ Reglas obligatorias:
     guion = ""
     for intento in range(1, 4):
         try:
-            print(f"[GUION] Intento {intento}/3 con {OLLAMA_MODEL}...")
-            guion = ollama_chat(
+            print(f"[GUION] Intento {intento}/3 con {OPENAI_MODEL}...")
+            guion = openai_chat(
                 [
                     {
                         "role": "system",
@@ -74,7 +74,7 @@ Reglas obligatorias:
 
     if not guion:
         raise RuntimeError(
-            f"No se pudo generar el guion con Ollama. Último error: {ultimo_error}"
+            f"No se pudo generar el guion con OpenAI. Último error: {ultimo_error}"
         )
 
     ruta_salida.write_text(guion.strip(), encoding="utf-8")

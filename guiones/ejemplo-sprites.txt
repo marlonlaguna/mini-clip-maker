@@ -1,0 +1,38 @@
+[TITULO]
+Demo sprites Jhon
+
+[MODO_VIDEO]
+stick
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+ninguna
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[CAST]
+peter = humanoids/jhon
+lucas = humanoids/jhon
+
+[GUION]
+[ESCENA llegada | FONDO=house | SFX=none]
+[peter | ACCION=walk | MIRA=right | VOZ=Aiden]
+Lucas, creo que alguien nos está esperando dentro.
+[lucas | ACCION=idle]
+
+[ESCENA pausa | FONDO=house | DURACION=2 | SFX=none]
+[peter | ACCION=idle]
+[lucas | ACCION=afraid]
+
+[ESCENA reaccion | FONDO=house | PLANO=face:lucas | SFX=none]
+[peter | ACCION=speak_side | VOZ=Aiden]
+¿Estás bien? Te has quedado muy pálido.
+[lucas | ACCION=afraid]
+
+[ESCENA respuesta | FONDO=house | SFX=none]
+[peter | ACCION=idle]
+[lucas | ACCION=speak_side | VOZ=Ryan]
+Creo que escuché algo. Será mejor irnos.

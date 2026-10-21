@@ -5,9 +5,9 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 from .assets import AssetLibrary
-from .animation import sample_action, sprite_focus_bounds, sprite_sheet_scale
+from .animation import actor_layout, resolve_facings, sprite_focus_bounds, sprite_sheet_scale
 from .utils import parse_color, clamp, smoothstep
-from .shots import normalize_shot, parts_for_target
+from .shots import normalize_shot
 
 
 # ============================================================
@@ -38,7 +38,6 @@ class StickRenderer:
 
         self._emoji_font_cache = {}
         self._tint_cache = {}
-        self._rig_structure_cache = {}
         self._encoder_cache = None
 
     # ============================================================
@@ -102,12 +101,15 @@ class StickRenderer:
         # RESOLUCIÓN INTERNA
         # --------------------------------------------------------
 
+        # En un detalle se conserva resolución nativa para no degradar dos
+        # veces los 200 px del sprite antes de ampliar el rostro.
+        render_scale = 1.0 if normalize_shot(scene.get("shot"))["target"] != "full_body" else INTERNAL_RENDER_SCALE
         width = self._even(
             max(
                 2,
                 int(
                     output_width
-                    * INTERNAL_RENDER_SCALE
+                    * render_scale
                 )
             )
         )
@@ -117,7 +119,7 @@ class StickRenderer:
                 2,
                 int(
                     output_height
-                    * INTERNAL_RENDER_SCALE
+                    * render_scale
                 )
             )
         )
@@ -145,6 +147,7 @@ class StickRenderer:
         self._validate_positions(
             characters
         )
+        characters = resolve_facings(characters)
 
         # --------------------------------------------------------
         # BACKGROUND
@@ -186,7 +189,7 @@ class StickRenderer:
         # --------------------------------------------------------
         # PREPARAR PERSONAJES
         # --------------------------------------------------------
-        # Cargamos action/rig una sola vez por personaje/escena.
+        # Cargamos cada action una sola vez por personaje/escena.
 
         prepared_characters = []
 
@@ -327,128 +330,29 @@ class StickRenderer:
                 # -----------------------------------------------
 
                 for prepared in prepared_characters:
-                    index = prepared[
-                        "index"
-                    ]
-
-                    spec = prepared[
-                        "spec"
-                    ]
-
-                    char_type = prepared[
-                        "char_type"
-                    ]
-
-                    action_name = prepared[
-                        "action_name"
-                    ]
-
-                    action = prepared[
-                        "action"
-                    ]
-
-                    color = prepared[
-                        "color"
-                    ]
-
-                    detail_shot = (
-                        shot["target"] != "full_body"
-                        and prepared["spec"].get("id") == shot_character
+                    index, spec = prepared["index"], prepared["spec"]
+                    char_type, action = prepared["char_type"], prepared["action"]
+                    detail_shot = shot["target"] != "full_body" and spec.get("id") == shot_character
+                    frame_size = self.assets.sprite_frame_size(char_type, prepared["action_name"])
+                    x, y, aw, ah, actor_scale = actor_layout(
+                        spec, action, t, width, height, duration, slots[index], ground_y, scale, frame_size,
                     )
-
-                    focus_parts = None
-                    if detail_shot:
-                        if self.assets.is_sprite_sheet(char_type):
-                            focus_parts = shot["target"]
-                        else:
-                            rig = self.assets.rig(char_type)
-                            focus_parts = parts_for_target(
-                                shot["target"],
-                                [part["name"] for part in rig.get("parts", [])],
-                            )
-                            if focus_parts is None:
-                                detail_shot = False
-
-                    # Se calcula una sola vez y se reutiliza para
-                    # root_x/root_y y para el render del personaje.
-                    pose = sample_action(
-                        action,
-                        t
+                    actor, focus_bounds = self._render_character(
+                        char_type, prepared["action_name"], prepared["color"], t, actor_scale,
+                        action=action, facing=spec["facing"],
+                        focus_parts=shot["target"] if detail_shot else None,
+                        return_focus_bounds=True,
                     )
-
-                    actor_result = self._render_character(
-                        char_type=char_type,
-                        action_name=action_name,
-                        color=color,
-                        t=t,
-                        scale=scale,
-                        action=action,
-                        pose=pose,
-                        focus_parts=focus_parts,
-                        return_focus_bounds=detail_shot,
-                    )
-
-                    if detail_shot:
-                        actor, focus_bounds = actor_result
-                    else:
-                        actor = actor_result
-
-                    movement_x = self._movement_x(
-                        movement=spec.get("movement"),
-                        t=t,
-                        width=width,
-                        scene_duration=duration,
-                    )
-                    root_x = float(pose.get("root_x", 0.0)) * scale
-                    root_y = float(pose.get("root_y", 0.0)) * scale
-                    x = int(slots[index] + movement_x + root_x - actor.width / 2)
-                    y = int(ground_y + root_y - actor.height)
-
+                    x, y = round(x), round(y)
                     if detail_shot and focus_bounds:
-                        focus_left, focus_top, focus_right, focus_bottom = focus_bounds
-                        focus_width = max(1.0, focus_right - focus_left)
-                        focus_height = max(1.0, focus_bottom - focus_top)
-                        zoom = clamp(
-                            min(
-                                (width * 0.78) / focus_width,
-                                (height * 0.58) / focus_height,
-                            ),
-                            1.0,
-                            5.0,
-                        )
-                        camera_focus = (
-                            x + (focus_left + focus_right) / 2.0,
-                            y + (focus_top + focus_bottom) / 2.0,
-                            zoom,
-                        )
-
-                    frame.alpha_composite(
-                        actor,
-                        (
-                            x,
-                            y
-                        )
-                    )
-
-                    # -------------------------------------------
-                    # EMOTION BUBBLE
-                    # -------------------------------------------
-
-                    emotion = spec.get(
-                        "emotion"
-                    )
-
-                    if emotion:
+                        left, top, right, bottom = focus_bounds
+                        zoom = clamp(min(width * 0.78 / max(1, right-left), height * 0.58 / max(1, bottom-top)), 1, 5)
+                        camera_focus = (x + (left+right)/2, y + (top+bottom)/2, zoom)
+                    frame.alpha_composite(actor, (x, y))
+                    if spec.get("emotion"):
                         self._draw_emotion(
-                            frame=frame,
-                            emotion_name=str(
-                                emotion
-                            ),
-                            actor_x=x,
-                            actor_y=y,
-                            actor_width=actor.width,
-                            actor_scale=scale,
-                            frame_width=width
+                            frame=frame, emotion_name=str(spec["emotion"]), actor_x=x, actor_y=y,
+                            actor_width=actor.width, actor_scale=actor_scale, frame_width=width,
                         )
 
                 # -----------------------------------------------
@@ -1145,7 +1049,7 @@ class StickRenderer:
             / count
         )
 
-        # El rig base era pensado para 360x620. Como ahora el frame
+        # La escala de composición usa una referencia de 360x620. Como el frame
         # interno es menor, este cálculo reduce el personaje también.
         return clamp(
             min(
@@ -1165,488 +1069,15 @@ class StickRenderer:
     # PERSONAJE
     # ============================================================
 
-    def _rig_structure(
-        self,
-        char_type
-    ):
-        if char_type in self._rig_structure_cache:
-            return self._rig_structure_cache[
-                char_type
-            ]
 
-        rig = self.assets.rig(
-            char_type
-        )
-
-        parts = {
-            part["name"]: part
-            for part in rig["parts"]
-        }
-
-        children = {}
-
-        for part in rig["parts"]:
-            children.setdefault(
-                part.get(
-                    "parent"
-                ),
-                []
-            ).append(
-                part["name"]
-            )
-
-        result = (
-            rig,
-            parts,
-            children
-        )
-
-        self._rig_structure_cache[
-            char_type
-        ] = result
-
-        return result
-
-    def _render_character(
-        self,
-        char_type,
-        action_name,
-        color,
-        t,
-        scale,
-        action=None,
-        pose=None,
-        focus_parts=None,
-        return_focus_bounds=False,
-    ):
-        if self.assets.is_sprite_sheet(char_type):
-            sprite = self.assets.sprite_frame(
-                char_type,
-                action_name,
-                t,
-            )
-            frame_width, frame_height = sprite.size
-            sheet_scale = sprite_sheet_scale(scale, frame_height)
-            sprite = sprite.resize(
-                (
-                    max(1, int(round(frame_width * sheet_scale))),
-                    max(1, int(round(frame_height * sheet_scale))),
-                ),
-                Image.Resampling.LANCZOS,
-            )
-            focus_bounds = None
-            if focus_parts:
-                focus_bounds = sprite_focus_bounds(
-                    focus_parts,
-                    sprite.width,
-                    sprite.height,
-                )
-            if return_focus_bounds:
-                return sprite, focus_bounds
-            return sprite
-
-        rig, parts, children = (
-            self._rig_structure(
-                char_type
-            )
-        )
-
-        if action is None:
-            action = self.assets.action(
-                char_type,
-                action_name
-            )
-
-        if pose is None:
-            pose = sample_action(
-                action,
-                t
-            )
-
-        canvas_width, canvas_height = rig.get(
-            "canvas",
-            [
-                360,
-                620
-            ]
-        )
-
-        canvas = Image.new(
-            "RGBA",
-            (
-                canvas_width,
-                canvas_height
-            ),
-            (
-                0,
-                0,
-                0,
-                0
-            )
-        )
-        focus_points = []
-
-        def render_node(
-            name,
-            parent_world=None
-        ):
-            part = parts[
-                name
-            ]
-
-            local_angle = (
-                float(
-                    part.get(
-                        "angle",
-                        0
-                    )
-                )
-                +
-                float(
-                    pose.get(
-                        name,
-                        0
-                    )
-                )
-            )
-
-            local_x = (
-                float(
-                    part.get(
-                        "x",
-                        0
-                    )
-                )
-                +
-                float(
-                    pose.get(
-                        f"{name}_x",
-                        0
-                    )
-                )
-            )
-
-            local_y = (
-                float(
-                    part.get(
-                        "y",
-                        0
-                    )
-                )
-                +
-                float(
-                    pose.get(
-                        f"{name}_y",
-                        0
-                    )
-                )
-            )
-
-            if parent_world is None:
-                world_x = local_x
-                world_y = local_y
-                world_angle = local_angle
-
-            else:
-                (
-                    parent_x,
-                    parent_y,
-                    parent_angle
-                ) = parent_world
-
-                radians = math.radians(
-                    parent_angle
-                )
-
-                rotated_x = (
-                    local_x
-                    * math.cos(
-                        radians
-                    )
-                    -
-                    local_y
-                    * math.sin(
-                        radians
-                    )
-                )
-
-                rotated_y = (
-                    local_x
-                    * math.sin(
-                        radians
-                    )
-                    +
-                    local_y
-                    * math.cos(
-                        radians
-                    )
-                )
-
-                world_x = (
-                    parent_x
-                    + rotated_x
-                )
-
-                world_y = (
-                    parent_y
-                    + rotated_y
-                )
-
-                world_angle = (
-                    parent_angle
-                    + local_angle
-                )
-
-            sprite = self.assets.sprite(
-                char_type,
-                part["sprite"]
-            )
-
-            pivot = part.get(
-                "pivot",
-                [
-                    sprite.width / 2,
-                    sprite.height / 2
-                ]
-            )
-
-            if focus_parts and name in focus_parts:
-                radians = math.radians(world_angle)
-                cos_a = math.cos(radians)
-                sin_a = math.sin(radians)
-                for corner_x, corner_y in (
-                    (-pivot[0], -pivot[1]),
-                    (sprite.width - pivot[0], -pivot[1]),
-                    (sprite.width - pivot[0], sprite.height - pivot[1]),
-                    (-pivot[0], sprite.height - pivot[1]),
-                ):
-                    focus_points.append((
-                        world_x + corner_x * cos_a - corner_y * sin_a,
-                        world_y + corner_x * sin_a + corner_y * cos_a,
-                    ))
-
-            if not part.get("embedded_color", False):
-                sprite = self._tint(
-                    sprite,
-                    color
-                )
-
-            # Cutout rigs often need hips to sit behind the torso. Drawing those
-            # complete child subtrees first lets the torso cover the waist seam,
-            # which prevents visible gaps and underwear-like cut lines.
-            child_world = (
-                world_x,
-                world_y,
-                world_angle
-            )
-
-            children_of_part = children.get(name, [])
-            behind_children = [
-                child_name
-                for child_name in children_of_part
-                if parts[child_name].get("draw_behind_parent", False)
-            ]
-            front_children = [
-                child_name
-                for child_name in children_of_part
-                if child_name not in behind_children
-            ]
-
-            for child_name in behind_children:
-                render_node(child_name, child_world)
-
-            self._paste_at_joint(
-                canvas=canvas,
-                sprite=sprite,
-                joint_x=world_x,
-                joint_y=world_y,
-                angle=world_angle,
-                pivot_x=float(
-                    pivot[0]
-                ),
-                pivot_y=float(
-                    pivot[1]
-                )
-            )
-
-            for child_name in front_children:
-                render_node(
-                    child_name,
-                    child_world
-                )
-
-        for root_name in children.get(
-            None,
-            []
-        ):
-            render_node(
-                root_name
-            )
-
-        bbox = canvas.getbbox()
-        focus_bounds = None
-
-        if bbox:
-            canvas = canvas.crop(
-                bbox
-            )
-            if focus_points:
-                focus_bounds = (
-                    min(point[0] for point in focus_points) - bbox[0],
-                    min(point[1] for point in focus_points) - bbox[1],
-                    max(point[0] for point in focus_points) - bbox[0],
-                    max(point[1] for point in focus_points) - bbox[1],
-                )
-
-        if scale != 1.0:
-            canvas = canvas.resize(
-                (
-                    max(
-                        1,
-                        int(
-                            canvas.width
-                            * scale
-                        )
-                    ),
-                    max(
-                        1,
-                        int(
-                            canvas.height
-                            * scale
-                        )
-                    )
-                ),
-                Image.Resampling.LANCZOS
-            )
-
-        if return_focus_bounds:
-            if focus_bounds is not None and scale != 1.0:
-                focus_bounds = tuple(value * scale for value in focus_bounds)
-            return canvas, focus_bounds
-
-        return canvas
+    def _render_character(self, char_type, action_name, color, t, scale, action=None,
+                          pose=None, focus_parts=None, return_focus_bounds=False, facing="right"):
+        sprite = self.assets.sprite_frame(char_type, action_name, t, facing=facing)
+        factor = sprite_sheet_scale(scale, sprite.height)
+        sprite = sprite.resize((max(1, round(sprite.width * factor)), max(1, round(sprite.height * factor))), Image.Resampling.LANCZOS)
+        focus = sprite_focus_bounds(focus_parts, sprite.width, sprite.height, image=sprite) if focus_parts else None
+        return (sprite, focus) if return_focus_bounds else sprite
 
     # ============================================================
     # TINT CACHE
     # ============================================================
-
-    def _tint(
-        self,
-        image,
-        color
-    ):
-        if not isinstance(
-            color,
-            tuple
-        ):
-            color = tuple(
-                color
-            )
-
-        key = (
-            id(image),
-            color
-        )
-
-        if key in self._tint_cache:
-            return self._tint_cache[
-                key
-            ]
-
-        alpha = image.getchannel(
-            "A"
-        )
-
-        result = Image.new(
-            "RGBA",
-            image.size,
-            color
-        )
-
-        result.putalpha(
-            alpha
-        )
-
-        self._tint_cache[
-            key
-        ] = result
-
-        return result
-
-    def _paste_at_joint(
-        self,
-        canvas,
-        sprite,
-        joint_x,
-        joint_y,
-        angle,
-        pivot_x,
-        pivot_y
-    ):
-        pad = int(
-            max(
-                sprite.width,
-                sprite.height
-            )
-            * 3
-        )
-
-        stage = Image.new(
-            "RGBA",
-            (
-                pad,
-                pad
-            ),
-            (
-                0,
-                0,
-                0,
-                0
-            )
-        )
-
-        center_x = (
-            pad // 2
-        )
-
-        center_y = (
-            pad // 2
-        )
-
-        stage.alpha_composite(
-            sprite,
-            (
-                int(
-                    center_x
-                    - pivot_x
-                ),
-                int(
-                    center_y
-                    - pivot_y
-                )
-            )
-        )
-
-        rotated = stage.rotate(
-            -angle,
-            resample=Image.Resampling.BICUBIC,
-            center=(
-                center_x,
-                center_y
-            ),
-            expand=False
-        )
-
-        canvas.alpha_composite(
-            rotated,
-            (
-                int(
-                    joint_x
-                    - center_x
-                ),
-                int(
-                    joint_y
-                    - center_y
-                )
-            )
-        )

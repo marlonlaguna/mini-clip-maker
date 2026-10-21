@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+from guion_escenas import SCENE, parse_scenes, serialize_scenes
 
 
 _AUDIO_HEADER = re.compile(r"^\[(?P<header>[^\]\n]*\|[^\]\n]*)\]\s*(?P<inline>.*)$")
@@ -36,6 +37,19 @@ def _header_parts(line: str):
 
 def parsear_bloques_audio(texto: str) -> list[dict[str, str]]:
     """Parse tagged speech blocks; plain legacy text is returned as one block."""
+    if SCENE.search(texto):
+        result = []
+        for scene in parse_scenes(texto):
+            spoken = [e for e in scene["entries"] if e["text"]]
+            for entry in spoken or [{"speaker": "NARRADOR", "fields": {}, "text": ""}]:
+                fields = entry["fields"]
+                result.append({
+                    "speaker": entry["speaker"], "text": entry["text"],
+                    "voice": fields.get("VOZ", ""), "instruction": fields.get("INSTRUCCION", ""),
+                    "pause": fields.get("PAUSA", ""), "scene": scene["id"],
+                    "scene_duration": scene["fields"].get("DURACION", ""),
+                })
+        return result
     texto = texto.lstrip("\ufeff").strip()
     texto = re.sub(r"^\[GUION\]\s*", "", texto, count=1, flags=re.IGNORECASE)
 
@@ -95,6 +109,13 @@ def limpiar_guion_audio(texto: str) -> str:
 
 def formatear_guion_audio(texto: str, voz_default: str = "Ryan") -> str:
     """Add local TTS metadata after clean script generation; keep old scripts valid."""
+    if SCENE.search(texto):
+        scenes = parse_scenes(texto)
+        for scene in scenes:
+            for entry in scene["entries"]:
+                if entry["text"]:
+                    entry["fields"].setdefault("VOZ", voz_default or "Ryan")
+        return "[GUION]\n" + serialize_scenes(scenes)
     bloques = parsear_bloques_audio(texto)
     salida = ["[GUION]"]
 

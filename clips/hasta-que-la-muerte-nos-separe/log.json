@@ -1,0 +1,1237 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {
+      "run_id": "c1499141-1397-482b-b999-115b88abbf15",
+      "started_at": "2026-10-21T02:04:13-06:00",
+      "finished_at": "2026-10-21T02:09:47-06:00",
+      "status": "completed",
+      "title": "Hasta que la muerte nos separe",
+      "mode": "guion",
+      "input": "hasta-que-la-muerte-nos-separe.txt",
+      "duration_target_seconds": null,
+      "events": [
+        {
+          "at": "2026-10-21T02:04:13-06:00",
+          "event": "generation_started"
+        },
+        {
+          "at": "2026-10-21T02:09:47-06:00",
+          "event": "generation_completed"
+        }
+      ],
+      "error": null,
+      "artifacts": [
+        {
+          "path": "audio.timeline.json",
+          "size_bytes": 4184,
+          "sha256": "4176d985155fa7b815815368e560a6ed5124d3c375301ce8182b40813a77dd77",
+          "type": "json",
+          "content": {
+            "schema_version": 1,
+            "sample_rate": 24000,
+            "duration": 79.66,
+            "scenes": [
+              {
+                "id": "llegada",
+                "start": 0.0,
+                "end": 1.8
+              },
+              {
+                "id": "maleta",
+                "start": 1.8,
+                "end": 5.16
+              },
+              {
+                "id": "excusa",
+                "start": 5.16,
+                "end": 9.7
+              },
+              {
+                "id": "rostro_esposa",
+                "start": 9.7,
+                "end": 14.34
+              },
+              {
+                "id": "documento",
+                "start": 14.34,
+                "end": 21.4
+              },
+              {
+                "id": "mirar_salida",
+                "start": 21.4,
+                "end": 22.9
+              },
+              {
+                "id": "precio",
+                "start": 22.9,
+                "end": 30.92
+              },
+              {
+                "id": "negacion",
+                "start": 30.92,
+                "end": 36.36
+              },
+              {
+                "id": "acercamiento",
+                "start": 36.36,
+                "end": 38.16
+              },
+              {
+                "id": "firma",
+                "start": 38.16,
+                "end": 45.62
+              },
+              {
+                "id": "advertencia",
+                "start": 45.62,
+                "end": 47.42
+              },
+              {
+                "id": "arma",
+                "start": 47.42,
+                "end": 55.58
+              },
+              {
+                "id": "suplica",
+                "start": 55.58,
+                "end": 62.0
+              },
+              {
+                "id": "decision",
+                "start": 62.0,
+                "end": 66.2
+              },
+              {
+                "id": "disparo",
+                "start": 66.2,
+                "end": 66.8
+              },
+              {
+                "id": "muerte",
+                "start": 66.8,
+                "end": 70.8
+              },
+              {
+                "id": "juramento",
+                "start": 70.8,
+                "end": 73.84
+              },
+              {
+                "id": "suscribirse",
+                "start": 73.84,
+                "end": 79.66
+              }
+            ],
+            "blocks": [
+              {
+                "speaker": "ESPOSA",
+                "scene": "maleta",
+                "start": 1.8,
+                "end": 4.76,
+                "text": "¿Pensabas marcharte mientras yo dormía?"
+              },
+              {
+                "speaker": "ESPOSO",
+                "scene": "excusa",
+                "start": 5.16,
+                "end": 9.4,
+                "text": "Solo necesito unos días. Podemos hablar de esto mañana."
+              },
+              {
+                "speaker": "ESPOSO",
+                "scene": "rostro_esposa",
+                "start": 9.7,
+                "end": 13.94,
+                "text": "Ana, por favor. Todavía podemos arreglar nuestro matrimonio."
+              },
+              {
+                "speaker": "ESPOSA",
+                "scene": "documento",
+                "start": 14.34,
+                "end": 20.9,
+                "text": "¿También podemos arreglar el seguro de vida que contrataste a mi nombre? Encontré los papeles."
+              },
+              {
+                "speaker": "ESPOSA",
+                "scene": "precio",
+                "start": 22.9,
+                "end": 30.42,
+                "text": "Para ti, mi muerte valía más que nuestra vida juntos. ¿Ibas a contármelo mañana también?"
+              },
+              {
+                "speaker": "ESPOSO",
+                "scene": "negacion",
+                "start": 30.92,
+                "end": 35.96,
+                "text": "No sabes lo que estás diciendo. Firmaste tú misma. Fue por seguridad."
+              },
+              {
+                "speaker": "ESPOSA",
+                "scene": "firma",
+                "start": 38.16,
+                "end": 45.12,
+                "text": "Esa no es mi firma. Igual que tampoco era casualidad que me preguntaras si esta noche estaría sola."
+              },
+              {
+                "speaker": "ESPOSA",
+                "scene": "arma",
+                "start": 47.42,
+                "end": 55.18,
+                "text": "Busqué mi pasaporte para irme. En su lugar encontré tu arma. Ahora dime: ¿para qué la necesitabas esta noche?"
+              },
+              {
+                "speaker": "ESPOSO",
+                "scene": "suplica",
+                "start": 55.58,
+                "end": 61.5,
+                "text": "Ana, escúchame. Deja eso. Te juro que nunca te haría daño."
+              },
+              {
+                "speaker": "ESPOSA",
+                "scene": "decision",
+                "start": 62.0,
+                "end": 65.6,
+                "text": "Eso mismo me prometiste el día de nuestra boda."
+              },
+              {
+                "speaker": "ESPOSO",
+                "scene": "muerte",
+                "start": 66.8,
+                "end": 69.44,
+                "text": "Ana... tú también prometiste..."
+              },
+              {
+                "speaker": "ESPOSA",
+                "scene": "juramento",
+                "start": 70.8,
+                "end": 73.04,
+                "text": "Hasta que la muerte nos separe."
+              },
+              {
+                "speaker": "ESPOSA",
+                "scene": "suscribirse",
+                "start": 73.84,
+                "end": 79.36,
+                "text": "Si quieres más historias con finales oscuros, suscríbete a Voces del Más Allá."
+              }
+            ]
+          }
+        },
+        {
+          "path": "audio.wav",
+          "size_bytes": 3823724,
+          "sha256": "346c4419686c10746b48a88a5b118c25e46be58f6abe42561f79acd6e1d4bd6e",
+          "type": "wav"
+        },
+        {
+          "path": "cambios_recursos.json",
+          "size_bytes": 974,
+          "sha256": "f705d4edafde414060806689301f5fd896e6b390a16dbef9192d3e8be6c05115",
+          "type": "json",
+          "content": [
+            "Escena llegada: SFX '(automático)' -> 'none'",
+            "Escena maleta: SFX '(automático)' -> 'none'",
+            "Escena excusa: SFX '(automático)' -> 'none'",
+            "Escena rostro_esposa: SFX '(automático)' -> 'none'",
+            "Escena documento: SFX '(automático)' -> 'none'",
+            "Escena mirar_salida: SFX '(automático)' -> 'none'",
+            "Escena precio: SFX '(automático)' -> 'none'",
+            "Escena negacion: SFX '(automático)' -> 'none'",
+            "Escena acercamiento: SFX '(automático)' -> 'none'",
+            "Escena firma: SFX '(automático)' -> 'none'",
+            "Escena advertencia: SFX '(automático)' -> 'none'",
+            "Escena arma: SFX '(automático)' -> 'none'",
+            "Escena suplica: SFX '(automático)' -> 'none'",
+            "Escena decision: SFX '(automático)' -> 'none'",
+            "Escena disparo: SFX '(automático)' -> 'gun_bang@0'",
+            "Escena muerte: SFX '(automático)' -> 'bodyfall@1.2'",
+            "Escena juramento: SFX '(automático)' -> 'none'",
+            "Escena suscribirse: SFX '(automático)' -> 'none'"
+          ]
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 979,
+          "sha256": "fd5c487917569f700cf00bd8d307c1bb2c4062bbd7a2971db351c09c5c54c02a",
+          "type": "json",
+          "content": {
+            "titulo": "Hasta que la muerte nos separe",
+            "resolucion": "1080x1920",
+            "musica": "misterius.mp3",
+            "volumen_musica": 0.09,
+            "estilo_visual": "Suspenso cinematográfico en el dormitorio de una pareja de madrugada. Iluminación tenue y tensión creciente. Conservar los personajes de los sprites, sin rediseñarlos. Sin sangre ni violencia gráfica.",
+            "paleta": "",
+            "seed": null,
+            "negative_prompt": "gore explícito, sangre, texto, letras, marcas de agua, anatomía deformada, personajes adicionales",
+            "cast": {
+              "ESPOSA": "humanoids/ana",
+              "ESPOSO": "humanoids/jhon"
+            },
+            "personajes": {
+              "ESPOSA": "humanoids/ana",
+              "ESPOSO": "humanoids/jhon"
+            },
+            "modo_video": "stick",
+            "voz_qwen": "Ryan",
+            "porcentaje_minimo_stick": 100.0,
+            "permitir_fondos_automaticos": false,
+            "usar_efectos_sonido": true,
+            "volumen_efectos": 0.35,
+            "max_efectos_sonido": 100,
+            "imagen_final": "voces.png",
+            "duracion_imagen_final": 6.0
+          }
+        },
+        {
+          "path": "guion.txt",
+          "size_bytes": 4259,
+          "sha256": "64f82d17869cca7e01175aee223fdf91806b5a37130297845a883751eb9b5b80",
+          "type": "txt",
+          "content_text": "[GUION]\n[ESCENA llegada | FONDO=bedroom_house | DURACION=1.8]\n[ESPOSA | ACCION=walk | POSICION=1]\n[ESPOSO | ACCION=idle | POSICION=2]\n\n[ESCENA maleta | FONDO=bedroom_house]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=serena, conteniendo el enojo | PAUSA=0.4]\n¿Pensabas marcharte mientras yo dormía?\n[ESPOSO | ACCION=idle | POSICION=2]\n\n[ESCENA excusa | FONDO=bedroom_house]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=nervioso, intentando parecer tranquilo | PAUSA=0.3]\nSolo necesito unos días. Podemos hablar de esto mañana.\n\n[ESCENA rostro_esposa | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=conciliador, con tensión en la voz | PAUSA=0.4]\nAna, por favor. Todavía podemos arreglar nuestro matrimonio.\n\n[ESCENA documento | FONDO=bedroom_house]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=fría y decepcionada | PAUSA=0.5]\n¿También podemos arreglar el seguro de vida que contrataste a mi nombre? Encontré los papeles.\n[ESPOSO | ACCION=idle | POSICION=2]\n\n[ESCENA mirar_salida | FONDO=bedroom_house | DURACION=1.5]\n[ESPOSA | ACCION=idle | POSICION=1 | MIRA=right]\n[ESPOSO | ACCION=idle | POSICION=2 | MIRA=right]\n\n[ESCENA precio | FONDO=bedroom_house | PLANO=face:ESPOSO]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=contenida, pronunciando cada frase con calma | PAUSA=0.5]\nPara ti, mi muerte valía más que nuestra vida juntos. ¿Ibas a contármelo mañana también?\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA negacion | FONDO=bedroom_house]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=apurado y a la defensiva | PAUSA=0.4]\nNo sabes lo que estás diciendo. Firmaste tú misma. Fue por seguridad.\n\n[ESCENA acercamiento | FONDO=bedroom_house | DURACION=1.8]\n[ESPOSA | ACCION=front_walk | POSICION=1]\n[ESPOSO | ACCION=back_walk | POSICION=2]\n\n[ESCENA firma | FONDO=bedroom_house]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=dolida, sin levantar la voz | PAUSA=0.5]\nEsa no es mi firma. Igual que tampoco era casualidad que me preguntaras si esta noche estaría sola.\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA advertencia | FONDO=bedroom_house | DURACION=1.8]\n[ESPOSA | ACCION=side_point | POSICION=1 | MIRA=right]\n[ESPOSO | ACCION=afraid | POSICION=2 | MIRA=left]\n\n[ESCENA arma | FONDO=bedroom_house | PLANO=face:ESPOSO]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=fría, con tristeza contenida | PAUSA=0.4]\nBusqué mi pasaporte para irme. En su lugar encontré tu arma. Ahora dime: ¿para qué la necesitabas esta noche?\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA suplica | FONDO=bedroom_house]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=asustado, suplicando | PAUSA=0.5]\nAna, escúchame. Deja eso. Te juro que nunca te haría daño.\n\n[ESCENA decision | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=voz baja y quebrada | PAUSA=0.6]\nEso mismo me prometiste el día de nuestra boda.\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA disparo | FONDO=bedroom_house | DURACION=0.6 | SFX=gun_bang@0]\n[ESPOSA | ACCION=shooting_a_gun | POSICION=1 | MIRA=right]\n[ESPOSO | ACCION=afraid | POSICION=2 | MIRA=left]\n\n[ESCENA muerte | FONDO=bedroom_house | DURACION=4 | SFX=bodyfall@1.2]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=dying | POSICION=2 | VOZ=Eric | INSTRUCCION=voz débil, entrecortada | PAUSA=0.5]\nAna... tú también prometiste...\n\n[ESCENA juramento | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=speak_front | POSICION=1 | VOZ=Serena | INSTRUCCION=triste, hablando casi en un susurro | PAUSA=0.8]\nHasta que la muerte nos separe.\n\n[ESCENA suscribirse | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=speak_front | POSICION=1 | VOZ=Serena | INSTRUCCION=clara y pausada | PAUSA=0.3]\nSi quieres más historias con finales oscuros, suscríbete a Voces del Más Allá.\n"
+        },
+        {
+          "path": "guion_adaptado.txt",
+          "size_bytes": 5028,
+          "sha256": "7678d1d01f5435c659903d6a72f24d0e94c1fec8de7795663506d16864cd13f8",
+          "type": "txt",
+          "content_text": "[TITULO]\nHasta que la muerte nos separe\n\n[MODO_VIDEO]\nstick\n\n[PORCENTAJE_MINIMO_STICK]\n100\n\n[PERMITIR_FONDOS_AUTOMATICOS]\nno\n\n[RESOLUCION]\n1080x1920\n\n[MUSICA]\nmisterius.mp3\n\n[VOLUMEN_MUSICA]\n0.09\n\n[ESTILO_VISUAL]\nSuspenso cinematográfico en el dormitorio de una pareja de madrugada. Iluminación tenue y tensión creciente. Conservar los personajes de los sprites, sin rediseñarlos. Sin sangre ni violencia gráfica.\n\n[NEGATIVE_PROMPT]\ngore explícito, sangre, texto, letras, marcas de agua, anatomía deformada, personajes adicionales\n\n[IMAGEN_FINAL]\nvoces.png\n\n[DURACION_IMAGEN_FINAL]\n6\n\n[USAR_EFECTOS_SONIDO]\nsi\n\n[VOLUMEN_EFECTOS]\n0.35\n\n[MAX_EFECTOS_SONIDO]\n100\n\n[CAST]\nESPOSA = humanoids/ana\nESPOSO = humanoids/jhon\n\n[GUION]\n[ESCENA llegada | FONDO=bedroom_house | DURACION=1.8]\n[ESPOSA | ACCION=walk | POSICION=1]\n[ESPOSO | ACCION=idle | POSICION=2]\n\n[ESCENA maleta | FONDO=bedroom_house]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=serena, conteniendo el enojo | PAUSA=0.4]\n¿Pensabas marcharte mientras yo dormía?\n[ESPOSO | ACCION=idle | POSICION=2]\n\n[ESCENA excusa | FONDO=bedroom_house]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=nervioso, intentando parecer tranquilo | PAUSA=0.3]\nSolo necesito unos días. Podemos hablar de esto mañana.\n\n[ESCENA rostro_esposa | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=conciliador, con tensión en la voz | PAUSA=0.4]\nAna, por favor. Todavía podemos arreglar nuestro matrimonio.\n\n[ESCENA documento | FONDO=bedroom_house]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=fría y decepcionada | PAUSA=0.5]\n¿También podemos arreglar el seguro de vida que contrataste a mi nombre? Encontré los papeles.\n[ESPOSO | ACCION=idle | POSICION=2]\n\n[ESCENA mirar_salida | FONDO=bedroom_house | DURACION=1.5]\n[ESPOSA | ACCION=idle | POSICION=1 | MIRA=right]\n[ESPOSO | ACCION=idle | POSICION=2 | MIRA=right]\n\n[ESCENA precio | FONDO=bedroom_house | PLANO=face:ESPOSO]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=contenida, pronunciando cada frase con calma | PAUSA=0.5]\nPara ti, mi muerte valía más que nuestra vida juntos. ¿Ibas a contármelo mañana también?\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA negacion | FONDO=bedroom_house]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=apurado y a la defensiva | PAUSA=0.4]\nNo sabes lo que estás diciendo. Firmaste tú misma. Fue por seguridad.\n\n[ESCENA acercamiento | FONDO=bedroom_house | DURACION=1.8]\n[ESPOSA | ACCION=front_walk | POSICION=1]\n[ESPOSO | ACCION=back_walk | POSICION=2]\n\n[ESCENA firma | FONDO=bedroom_house]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=dolida, sin levantar la voz | PAUSA=0.5]\nEsa no es mi firma. Igual que tampoco era casualidad que me preguntaras si esta noche estaría sola.\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA advertencia | FONDO=bedroom_house | DURACION=1.8]\n[ESPOSA | ACCION=side_point | POSICION=1 | MIRA=right]\n[ESPOSO | ACCION=afraid | POSICION=2 | MIRA=left]\n\n[ESCENA arma | FONDO=bedroom_house | PLANO=face:ESPOSO]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=fría, con tristeza contenida | PAUSA=0.4]\nBusqué mi pasaporte para irme. En su lugar encontré tu arma. Ahora dime: ¿para qué la necesitabas esta noche?\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA suplica | FONDO=bedroom_house]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=asustado, suplicando | PAUSA=0.5]\nAna, escúchame. Deja eso. Te juro que nunca te haría daño.\n\n[ESCENA decision | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=voz baja y quebrada | PAUSA=0.6]\nEso mismo me prometiste el día de nuestra boda.\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA disparo | FONDO=bedroom_house | DURACION=0.6 | SFX=gun_bang@0]\n[ESPOSA | ACCION=shooting_a_gun | POSICION=1 | MIRA=right]\n[ESPOSO | ACCION=afraid | POSICION=2 | MIRA=left]\n\n[ESCENA muerte | FONDO=bedroom_house | DURACION=4 | SFX=bodyfall@1.2]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=dying | POSICION=2 | VOZ=Eric | INSTRUCCION=voz débil, entrecortada | PAUSA=0.5]\nAna... tú también prometiste...\n\n[ESCENA juramento | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=speak_front | POSICION=1 | VOZ=Serena | INSTRUCCION=triste, hablando casi en un susurro | PAUSA=0.8]\nHasta que la muerte nos separe.\n\n[ESCENA suscribirse | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=speak_front | POSICION=1 | VOZ=Serena | INSTRUCCION=clara y pausada | PAUSA=0.3]\nSi quieres más historias con finales oscuros, suscríbete a Voces del Más Allá.\n"
+        },
+        {
+          "path": "guion_limpio.txt",
+          "size_bytes": 953,
+          "sha256": "2e311fa079165ea28da025f19c2a45b6abfd96cd956db94289e358ea0be50c95",
+          "type": "txt",
+          "content_text": "¿Pensabas marcharte mientras yo dormía?\n\nSolo necesito unos días. Podemos hablar de esto mañana.\n\nAna, por favor. Todavía podemos arreglar nuestro matrimonio.\n\n¿También podemos arreglar el seguro de vida que contrataste a mi nombre? Encontré los papeles.\n\n\n\nPara ti, mi muerte valía más que nuestra vida juntos. ¿Ibas a contármelo mañana también?\n\nNo sabes lo que estás diciendo. Firmaste tú misma. Fue por seguridad.\n\n\n\nEsa no es mi firma. Igual que tampoco era casualidad que me preguntaras si esta noche estaría sola.\n\n\n\nBusqué mi pasaporte para irme. En su lugar encontré tu arma. Ahora dime: ¿para qué la necesitabas esta noche?\n\nAna, escúchame. Deja eso. Te juro que nunca te haría daño.\n\nEso mismo me prometiste el día de nuestra boda.\n\n\n\nAna... tú también prometiste...\n\nHasta que la muerte nos separe.\n\nSi quieres más historias con finales oscuros, suscríbete a Voces del Más Allá."
+        },
+        {
+          "path": "guion_original.txt",
+          "size_bytes": 4212,
+          "sha256": "596c071333c0bfdbf8c9125f03929a728fc858386ba9e88b42965901536a6ab0",
+          "type": "txt",
+          "content_text": "[ESCENA llegada | FONDO=bedroom_house | DURACION=1.8]\n[ESPOSA | ACCION=walk | POSICION=1]\n[ESPOSO | ACCION=idle | POSICION=2]\n\n[ESCENA maleta | FONDO=bedroom_house]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=serena, conteniendo el enojo | PAUSA=0.4]\n¿Pensabas marcharte mientras yo dormía?\n[ESPOSO | ACCION=idle | POSICION=2]\n\n[ESCENA excusa | FONDO=bedroom_house]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=nervioso, intentando parecer tranquilo | PAUSA=0.3]\nSolo necesito unos días. Podemos hablar de esto mañana.\n\n[ESCENA rostro_esposa | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=conciliador, con tensión en la voz | PAUSA=0.4]\nAna, por favor. Todavía podemos arreglar nuestro matrimonio.\n\n[ESCENA documento | FONDO=bedroom_house]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=fría y decepcionada | PAUSA=0.5]\n¿También podemos arreglar el seguro de vida que contrataste a mi nombre? Encontré los papeles.\n[ESPOSO | ACCION=idle | POSICION=2]\n\n[ESCENA mirar_salida | FONDO=bedroom_house | DURACION=1.5]\n[ESPOSA | ACCION=idle | POSICION=1 | MIRA=right]\n[ESPOSO | ACCION=idle | POSICION=2 | MIRA=right]\n\n[ESCENA precio | FONDO=bedroom_house | PLANO=face:ESPOSO]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=contenida, pronunciando cada frase con calma | PAUSA=0.5]\nPara ti, mi muerte valía más que nuestra vida juntos. ¿Ibas a contármelo mañana también?\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA negacion | FONDO=bedroom_house]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=apurado y a la defensiva | PAUSA=0.4]\nNo sabes lo que estás diciendo. Firmaste tú misma. Fue por seguridad.\n\n[ESCENA acercamiento | FONDO=bedroom_house | DURACION=1.8]\n[ESPOSA | ACCION=front_walk | POSICION=1]\n[ESPOSO | ACCION=back_walk | POSICION=2]\n\n[ESCENA firma | FONDO=bedroom_house]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=dolida, sin levantar la voz | PAUSA=0.5]\nEsa no es mi firma. Igual que tampoco era casualidad que me preguntaras si esta noche estaría sola.\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA advertencia | FONDO=bedroom_house | DURACION=1.8]\n[ESPOSA | ACCION=side_point | POSICION=1 | MIRA=right]\n[ESPOSO | ACCION=afraid | POSICION=2 | MIRA=left]\n\n[ESCENA arma | FONDO=bedroom_house | PLANO=face:ESPOSO]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=fría, con tristeza contenida | PAUSA=0.4]\nBusqué mi pasaporte para irme. En su lugar encontré tu arma. Ahora dime: ¿para qué la necesitabas esta noche?\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA suplica | FONDO=bedroom_house]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Eric | INSTRUCCION=asustado, suplicando | PAUSA=0.5]\nAna, escúchame. Deja eso. Te juro que nunca te haría daño.\n\n[ESCENA decision | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena | INSTRUCCION=voz baja y quebrada | PAUSA=0.6]\nEso mismo me prometiste el día de nuestra boda.\n[ESPOSO | ACCION=afraid | POSICION=2]\n\n[ESCENA disparo | FONDO=bedroom_house | DURACION=0.6]\n[ESPOSA | ACCION=shooting_a_gun | POSICION=1 | MIRA=right]\n[ESPOSO | ACCION=afraid | POSICION=2 | MIRA=left]\n\n[ESCENA muerte | FONDO=bedroom_house | DURACION=4]\n[ESPOSA | ACCION=idle | POSICION=1]\n[ESPOSO | ACCION=dying | POSICION=2 | VOZ=Eric | INSTRUCCION=voz débil, entrecortada | PAUSA=0.5]\nAna... tú también prometiste...\n\n[ESCENA juramento | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=speak_front | POSICION=1 | VOZ=Serena | INSTRUCCION=triste, hablando casi en un susurro | PAUSA=0.8]\nHasta que la muerte nos separe.\n\n[ESCENA suscribirse | FONDO=bedroom_house | PLANO=face:ESPOSA]\n[ESPOSA | ACCION=speak_front | POSICION=1 | VOZ=Serena | INSTRUCCION=clara y pausada | PAUSA=0.3]\nSi quieres más historias con finales oscuros, suscríbete a Voces del Más Allá."
+        },
+        {
+          "path": "segmentos.json",
+          "size_bytes": 1753,
+          "sha256": "cd2d8d82f8eff993c7938f370373e6d913b8b41a704d75caf22f0bc16aafc955",
+          "type": "json",
+          "content": [
+            {
+              "start": 1.65,
+              "end": 4.65,
+              "text": "¿Tensabas marcharte mientras yo dormía?"
+            },
+            {
+              "start": 4.65,
+              "end": 9.65,
+              "text": "Sólo necesito unos días. Podemos hablar de esto mañana."
+            },
+            {
+              "start": 9.65,
+              "end": 13.65,
+              "text": "Ana, por favor. Todavía podemos arreglar nuestro matrimonio."
+            },
+            {
+              "start": 13.65,
+              "end": 20.65,
+              "text": "Ah, también podemos arreglar el seguro de vida que contrataste a mi nombre. Encontré los papeles."
+            },
+            {
+              "start": 20.65,
+              "end": 30.38,
+              "text": "Para ti, mi muerte valía más que nuestra vida juntos. ¿Ibas a contármelo mañana también?"
+            },
+            {
+              "start": 30.38,
+              "end": 38.1,
+              "text": "No sabes lo que estás diciendo. Firmaste tú misma. Fue por seguridad."
+            },
+            {
+              "start": 38.1,
+              "end": 45.1,
+              "text": "Esa no es mi firma. Igual que tampoco era casualidad que me preguntaras si esta noche estarías sola."
+            },
+            {
+              "start": 45.1,
+              "end": 56.12,
+              "text": "Busqué mi pasaporte para irme. En su lugar encontré tu arma. Ahora dime para qué la necesitabas esta noche."
+            },
+            {
+              "start": 56.12,
+              "end": 62.12,
+              "text": "Ana, escúchame. Deja eso. Te juro que nunca te haría daño."
+            },
+            {
+              "start": 62.12,
+              "end": 67.12,
+              "text": "Eso mismo me prometiste el día de nuestra boda."
+            },
+            {
+              "start": 67.12,
+              "end": 71.12,
+              "text": "Ana, tú también prometiste..."
+            },
+            {
+              "start": 71.12,
+              "end": 74.12,
+              "text": "Hasta que la muerte no separe."
+            },
+            {
+              "start": 74.12,
+              "end": 80.12,
+              "text": "Si quieres más historias con finales oscuros, suscríbete a Voices del Más Allá."
+            }
+          ]
+        },
+        {
+          "path": "stick/scene_001.mp4",
+          "size_bytes": 732306,
+          "sha256": "be65df7c492f9c20c31e02d0b97f228d23e612702b48b7a043fcc8833a37894a",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_002.mp4",
+          "size_bytes": 743121,
+          "sha256": "f40fb423f61efdbbdb150ec0cb58de0d344bde085d868653debb802f0c702bc5",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_003.mp4",
+          "size_bytes": 1025143,
+          "sha256": "309705dfbf292000fa15ee59aa9e935543b4e90cab52f611bc3c0ac1f899bb98",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_004.mp4",
+          "size_bytes": 1923567,
+          "sha256": "92c45cf1117cb44a28a7eaeec211f0932c4508fbb9f40427051252505e3df53b",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_005.mp4",
+          "size_bytes": 1704775,
+          "sha256": "fd96e9fd78622019d8c4aa811b780c1e2d3c6ade3a8336253ac6455c20ebd362",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_006.mp4",
+          "size_bytes": 473846,
+          "sha256": "514aef8898088857d639a606dc47dd3ec65cf5e9d918f74a70e7e91a767445d4",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_007.mp4",
+          "size_bytes": 1236923,
+          "sha256": "e10c27ad163b48383b96114faac9ac3415758e236586281fd57b7c5093e10237",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_008.mp4",
+          "size_bytes": 1262304,
+          "sha256": "c84dde68b435b001fd0f087a996200a9291461a899a7c3dbf56d08d5d13c9323",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_009.mp4",
+          "size_bytes": 659014,
+          "sha256": "d007bf060718df2186bd921f8226a1eef6f658172e58adf15efd5dc913b0e532",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_010.mp4",
+          "size_bytes": 1322321,
+          "sha256": "5b9a213245002ca0dc47480f200d7855d004a3b1419abcafabbf84510ebbb7dc",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_011.mp4",
+          "size_bytes": 452445,
+          "sha256": "9415bfc66113f9692468d2fbe3cdc974fc36a867e0ede562501e30efc08ce8da",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_012.mp4",
+          "size_bytes": 1251911,
+          "sha256": "7f92985d8cb42ca20589324ed8738f6ecf48dbba8dec3472d60d461f4f859b2d",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_013.mp4",
+          "size_bytes": 1518804,
+          "sha256": "6920631f9ea834c0e22901561b45fc523177b0fc82c46bb991ab064962e19723",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_014.mp4",
+          "size_bytes": 707321,
+          "sha256": "493e99fd64e5690e7a9a17a5d4f6b9e9be9914732c95f92d697aa2246c2d7bb3",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_015.mp4",
+          "size_bytes": 223104,
+          "sha256": "887ac7a3cf825c48fc2ffa84efc688f8004bf12091d4eaf2f5a80a6c4f6cc07c",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_016.mp4",
+          "size_bytes": 889154,
+          "sha256": "fd8d88bed21dbe03a752d767730795b5453a845a8fd7769c70f81716752dee90",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_017.mp4",
+          "size_bytes": 474490,
+          "sha256": "4422e69028b22604ff7b6feebb6e8099cdcc43ad5f68a250203a41466adb6863",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_018.mp4",
+          "size_bytes": 907384,
+          "sha256": "29b1e6f6604bc23584ece101bea2c88025ef194813726a9ffafee905eac89544",
+          "type": "mp4"
+        },
+        {
+          "path": "stick_storyboard.json",
+          "size_bytes": 18643,
+          "sha256": "17465aa147eda8814594cbfaf3deea8efe59836527bd3ae543de11edf83bb6bc",
+          "type": "json",
+          "content": {
+            "storyboard": [
+              {
+                "scene": 1,
+                "script_scene": "llegada",
+                "start": 0.0,
+                "end": 1.8,
+                "duration": 1.8,
+                "timeline_duration": 1.8,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "walk",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "idle",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 2,
+                "script_scene": "maleta",
+                "start": 1.8,
+                "end": 5.16,
+                "duration": 3.3666666666666667,
+                "timeline_duration": 3.3600000000000003,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "speak_side",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "idle",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "¿Pensabas marcharte mientras yo dormía?",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 3,
+                "script_scene": "excusa",
+                "start": 5.16,
+                "end": 9.7,
+                "duration": 4.533333333333333,
+                "timeline_duration": 4.539999999999999,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "idle",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "speak_side",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "Solo necesito unos días. Podemos hablar de esto mañana.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 4,
+                "script_scene": "rostro_esposa",
+                "start": 9.7,
+                "end": 14.34,
+                "duration": 4.633333333333334,
+                "timeline_duration": 4.640000000000001,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "idle",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "speak_side",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ESPOSA"
+                },
+                "narration": "Ana, por favor. Todavía podemos arreglar nuestro matrimonio.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 5,
+                "script_scene": "documento",
+                "start": 14.34,
+                "end": 21.4,
+                "duration": 7.066666666666666,
+                "timeline_duration": 7.059999999999999,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "speak_side",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "idle",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "¿También podemos arreglar el seguro de vida que contrataste a mi nombre? Encontré los papeles.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 6,
+                "script_scene": "mirar_salida",
+                "start": 21.4,
+                "end": 22.9,
+                "duration": 1.5,
+                "timeline_duration": 1.5,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "idle",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "idle",
+                    "position": 2,
+                    "facing": "right"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 7,
+                "script_scene": "precio",
+                "start": 22.9,
+                "end": 30.92,
+                "duration": 8.033333333333333,
+                "timeline_duration": 8.020000000000003,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "speak_side",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "afraid",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ESPOSO"
+                },
+                "narration": "Para ti, mi muerte valía más que nuestra vida juntos. ¿Ibas a contármelo mañana también?",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 8,
+                "script_scene": "negacion",
+                "start": 30.92,
+                "end": 36.36,
+                "duration": 5.433333333333334,
+                "timeline_duration": 5.439999999999998,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "idle",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "speak_side",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "No sabes lo que estás diciendo. Firmaste tú misma. Fue por seguridad.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 9,
+                "script_scene": "acercamiento",
+                "start": 36.36,
+                "end": 38.16,
+                "duration": 1.8,
+                "timeline_duration": 1.7999999999999972,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "front_walk",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "back_walk",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 10,
+                "script_scene": "firma",
+                "start": 38.16,
+                "end": 45.62,
+                "duration": 7.466666666666667,
+                "timeline_duration": 7.460000000000001,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "speak_side",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "afraid",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "Esa no es mi firma. Igual que tampoco era casualidad que me preguntaras si esta noche estaría sola.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 11,
+                "script_scene": "advertencia",
+                "start": 45.62,
+                "end": 47.42,
+                "duration": 1.8,
+                "timeline_duration": 1.8000000000000043,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "side_point",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "afraid",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 12,
+                "script_scene": "arma",
+                "start": 47.42,
+                "end": 55.58,
+                "duration": 8.133333333333333,
+                "timeline_duration": 8.159999999999997,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "speak_side",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "afraid",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ESPOSO"
+                },
+                "narration": "Busqué mi pasaporte para irme. En su lugar encontré tu arma. Ahora dime: ¿para qué la necesitabas esta noche?",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 13,
+                "script_scene": "suplica",
+                "start": 55.58,
+                "end": 62.0,
+                "duration": 6.433333333333334,
+                "timeline_duration": 6.420000000000002,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "idle",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "speak_side",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "Ana, escúchame. Deja eso. Te juro que nunca te haría daño.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 14,
+                "script_scene": "decision",
+                "start": 62.0,
+                "end": 66.2,
+                "duration": 4.2,
+                "timeline_duration": 4.200000000000003,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "speak_side",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "afraid",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ESPOSA"
+                },
+                "narration": "Eso mismo me prometiste el día de nuestra boda.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 15,
+                "script_scene": "disparo",
+                "start": 66.2,
+                "end": 66.8,
+                "duration": 0.6,
+                "timeline_duration": 0.5999999999999943,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "shooting_a_gun",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "afraid",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "gun_bang",
+                    "time": 0.0,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 16,
+                "script_scene": "muerte",
+                "start": 66.8,
+                "end": 70.8,
+                "duration": 4.0,
+                "timeline_duration": 4.0,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "idle",
+                    "position": 1,
+                    "facing": "right"
+                  },
+                  {
+                    "id": "ESPOSO",
+                    "type": "humanoids/jhon",
+                    "action": "dying",
+                    "position": 2,
+                    "facing": "left"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "Ana... tú también prometiste...",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "bodyfall",
+                    "time": 1.2,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 17,
+                "script_scene": "juramento",
+                "start": 70.8,
+                "end": 73.84,
+                "duration": 3.033333333333333,
+                "timeline_duration": 3.0400000000000063,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "speak_front",
+                    "position": 1,
+                    "facing": "right"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ESPOSA"
+                },
+                "narration": "Hasta que la muerte nos separe.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 18,
+                "script_scene": "suscribirse",
+                "start": 73.84,
+                "end": 79.66,
+                "duration": 5.833333333333333,
+                "timeline_duration": 5.819999999999993,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "bedroom_house",
+                "fallback_background": "bedroom_house",
+                "characters": [
+                  {
+                    "id": "ESPOSA",
+                    "type": "humanoids/ana",
+                    "action": "speak_front",
+                    "position": 1,
+                    "facing": "right"
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ESPOSA"
+                },
+                "narration": "Si quieres más historias con finales oscuros, suscríbete a Voces del Más Allá.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              }
+            ],
+            "cast": [
+              {
+                "id": "ESPOSA",
+                "name": "ESPOSA",
+                "type": "humanoids/ana"
+              },
+              {
+                "id": "ESPOSO",
+                "name": "ESPOSO",
+                "type": "humanoids/jhon"
+              }
+            ],
+            "sync_mode": "tts_timeline",
+            "audio_duration": 79.66,
+            "llm_provider": "openai",
+            "batch_size": 0
+          }
+        },
+        {
+          "path": "subtitulos.ass",
+          "size_bytes": 2105,
+          "sha256": "b4c64a4ea4cad66abfcca43d2365475e22588aa1f53bdf0017361ef47d8fee4f",
+          "type": "ass",
+          "content_text": "[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nScaledBorderAndShadow: yes\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n\nDialogue: 0,0:00:01.64,0:00:04.65,TikTok,,0,0,0,,¿Tensabas marcharte mientras yo dormía?\nDialogue: 0,0:00:04.65,0:00:09.65,TikTok,,0,0,0,,Sólo necesito unos días. Podemos hablar de esto mañana.\nDialogue: 0,0:00:09.65,0:00:13.65,TikTok,,0,0,0,,Ana, por favor. Todavía podemos arreglar nuestro matrimonio.\nDialogue: 0,0:00:13.65,0:00:20.64,TikTok,,0,0,0,,Ah, también podemos arreglar el seguro de vida que contrataste a mi nombre. Encontré los papeles.\nDialogue: 0,0:00:20.64,0:00:30.37,TikTok,,0,0,0,,Para ti, mi muerte valía más que nuestra vida juntos. ¿Ibas a contármelo mañana también?\nDialogue: 0,0:00:30.37,0:00:38.10,TikTok,,0,0,0,,No sabes lo que estás diciendo. Firmaste tú misma. Fue por seguridad.\nDialogue: 0,0:00:38.10,0:00:45.10,TikTok,,0,0,0,,Esa no es mi firma. Igual que tampoco era casualidad que me preguntaras si esta noche estarías sola.\nDialogue: 0,0:00:45.10,0:00:56.11,TikTok,,0,0,0,,Busqué mi pasaporte para irme. En su lugar encontré tu arma. Ahora dime para qué la necesitabas esta noche.\nDialogue: 0,0:00:56.11,0:01:02.11,TikTok,,0,0,0,,Ana, escúchame. Deja eso. Te juro que nunca te haría daño.\nDialogue: 0,0:01:02.11,0:01:07.12,TikTok,,0,0,0,,Eso mismo me prometiste el día de nuestra boda.\nDialogue: 0,0:01:07.12,0:01:11.12,TikTok,,0,0,0,,Ana, tú también prometiste...\nDialogue: 0,0:01:11.12,0:01:14.12,TikTok,,0,0,0,,Hasta que la muerte no separe.\nDialogue: 0,0:01:14.12,0:01:20.12,TikTok,,0,0,0,,Si quieres más historias con finales oscuros, suscríbete a Voices del Más Allá.\n"
+        },
+        {
+          "path": "video.mp4",
+          "size_bytes": 10296509,
+          "sha256": "009b2b5872b0f5f7efa9526149d2f8f4cafe7734a15ef8407140a610cabad8ff",
+          "type": "mp4"
+        }
+      ]
+    }
+  ]
+}
