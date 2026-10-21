@@ -1,0 +1,416 @@
+{
+  "formatVersion": 1,
+  "spriteSheet": "plantilla_joven_con_ropa_16_acciones_100px.png",
+  "sheetSize": {
+    "width": 400,
+    "height": 1600
+  },
+  "frameSize": {
+    "width": 100,
+    "height": 100
+  },
+  "grid": {
+    "columns": 4,
+    "rows": 16,
+    "frameOrder": "left-to-right"
+  },
+  "defaultFrameCount": 4,
+  "animations": [
+    {
+      "name": "none",
+      "label": "none",
+      "frameCount": 1,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "loop": false
+    },
+    {
+      "name": "walk_front",
+      "label": "caminar al frente",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 100,
+          "y": 0
+        },
+        {
+          "x": 200,
+          "y": 0
+        },
+        {
+          "x": 300,
+          "y": 0
+        }
+      ],
+      "loop": true
+    },
+    {
+      "name": "walk_left",
+      "label": "caminar a la izquierda",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 100
+        },
+        {
+          "x": 100,
+          "y": 100
+        },
+        {
+          "x": 200,
+          "y": 100
+        },
+        {
+          "x": 300,
+          "y": 100
+        }
+      ],
+      "loop": true
+    },
+    {
+      "name": "walk_right",
+      "label": "caminar a la derecha",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 200
+        },
+        {
+          "x": 100,
+          "y": 200
+        },
+        {
+          "x": 200,
+          "y": 200
+        },
+        {
+          "x": 300,
+          "y": 200
+        }
+      ],
+      "loop": true
+    },
+    {
+      "name": "walk_back",
+      "label": "caminar de espaldas",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 300
+        },
+        {
+          "x": 100,
+          "y": 300
+        },
+        {
+          "x": 200,
+          "y": 300
+        },
+        {
+          "x": 300,
+          "y": 300
+        }
+      ],
+      "loop": true
+    },
+    {
+      "name": "speak",
+      "label": "hablar",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 400
+        },
+        {
+          "x": 100,
+          "y": 400
+        },
+        {
+          "x": 200,
+          "y": 400
+        },
+        {
+          "x": 300,
+          "y": 400
+        }
+      ],
+      "loop": false
+    },
+    {
+      "name": "turn_around",
+      "label": "voltearse",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 500
+        },
+        {
+          "x": 100,
+          "y": 500
+        },
+        {
+          "x": 200,
+          "y": 500
+        },
+        {
+          "x": 300,
+          "y": 500
+        }
+      ],
+      "loop": false
+    },
+    {
+      "name": "surprised",
+      "label": "sorprenderse",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 600
+        },
+        {
+          "x": 100,
+          "y": 600
+        },
+        {
+          "x": 200,
+          "y": 600
+        },
+        {
+          "x": 300,
+          "y": 600
+        }
+      ],
+      "loop": false
+    },
+    {
+      "name": "afraid",
+      "label": "tener miedo",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 700
+        },
+        {
+          "x": 100,
+          "y": 700
+        },
+        {
+          "x": 200,
+          "y": 700
+        },
+        {
+          "x": 300,
+          "y": 700
+        }
+      ],
+      "loop": false
+    },
+    {
+      "name": "cry",
+      "label": "llorar",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 800
+        },
+        {
+          "x": 100,
+          "y": 800
+        },
+        {
+          "x": 200,
+          "y": 800
+        },
+        {
+          "x": 300,
+          "y": 800
+        }
+      ],
+      "loop": false
+    },
+    {
+      "name": "point",
+      "label": "señalar",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 900
+        },
+        {
+          "x": 100,
+          "y": 900
+        },
+        {
+          "x": 200,
+          "y": 900
+        },
+        {
+          "x": 300,
+          "y": 900
+        }
+      ],
+      "loop": false
+    },
+    {
+      "name": "fall",
+      "label": "caerse",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 1000
+        },
+        {
+          "x": 100,
+          "y": 1000
+        },
+        {
+          "x": 200,
+          "y": 1000
+        },
+        {
+          "x": 300,
+          "y": 1000
+        }
+      ],
+      "loop": false
+    },
+    {
+      "name": "eat",
+      "label": "comer",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 1100
+        },
+        {
+          "x": 100,
+          "y": 1100
+        },
+        {
+          "x": 200,
+          "y": 1100
+        },
+        {
+          "x": 300,
+          "y": 1100
+        }
+      ],
+      "loop": true
+    },
+    {
+      "name": "sleep",
+      "label": "dormir",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 1200
+        },
+        {
+          "x": 100,
+          "y": 1200
+        },
+        {
+          "x": 200,
+          "y": 1200
+        },
+        {
+          "x": 300,
+          "y": 1200
+        }
+      ],
+      "loop": false
+    },
+    {
+      "name": "shoot",
+      "label": "disparar",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 1300
+        },
+        {
+          "x": 100,
+          "y": 1300
+        },
+        {
+          "x": 200,
+          "y": 1300
+        },
+        {
+          "x": 300,
+          "y": 1300
+        }
+      ],
+      "loop": false
+    },
+    {
+      "name": "drink",
+      "label": "beber",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 1400
+        },
+        {
+          "x": 100,
+          "y": 1400
+        },
+        {
+          "x": 200,
+          "y": 1400
+        },
+        {
+          "x": 300,
+          "y": 1400
+        }
+      ],
+      "loop": false
+    },
+    {
+      "name": "smoke",
+      "label": "fumar",
+      "frameCount": 4,
+      "frames": [
+        {
+          "x": 0,
+          "y": 1500
+        },
+        {
+          "x": 100,
+          "y": 1500
+        },
+        {
+          "x": 200,
+          "y": 1500
+        },
+        {
+          "x": 300,
+          "y": 1500
+        }
+      ],
+      "loop": false
+    }
+  ]
+}

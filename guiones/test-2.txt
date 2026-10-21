@@ -1,0 +1,93 @@
+[TITULO]
+Prueba de animaciones de Young Man
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.04
+
+[ESTILO_VISUAL]
+Prueba visual de un solo personaje en un escenario sencillo y despejado. En cada intervención, mostrar a Young Man realizando la acción que corresponda a lo que dice, en este orden: quieto, caminar al frente, caminar a la izquierda, caminar a la derecha, caminar de espaldas, hablar, voltearse, sorprenderse, tener miedo, llorar, señalar, caerse, comer, dormir, disparar, beber, fumar y quedar muerto. Cambiar de acción entre intervenciones y mantener constante su apariencia. Sin narrador ni personajes adicionales.
+
+[NEGATIVE_PROMPT]
+personajes adicionales, cambios de ropa o apariencia, fondos recargados, texto, letras, marcas de agua, anatomía deformada, sangre, gore
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.25
+
+[MAX_EFECTOS_SONIDO]
+20
+
+[PERSONAJE:YOUNG MAN]
+Usar el personaje de la carpeta young man. Hombre joven de cabello castaño, camisa azul verdosa, pantalón oscuro y zapatos cafés. Mantener esta misma apariencia en todas las escenas.
+
+[GUION]
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=tranquilo y listo para comenzar | PAUSA=0.2]
+Estoy listo. Empecemos.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=hablando con energía | PAUSA=0.2]
+Camino hacia el frente para acercarme.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=conversacional | PAUSA=0.2]
+Ahora camino hacia la izquierda.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=conversacional | PAUSA=0.2]
+Y regreso caminando hacia la derecha.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=con cautela | PAUSA=0.2]
+Me alejo caminando de espaldas.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=claro y expresivo | PAUSA=0.2]
+Ahora me detengo para hablar contigo.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=intrigado | PAUSA=0.2]
+¿Escuchaste algo detrás de mí?
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=sorprendido | PAUSA=0.2]
+¡No esperaba encontrar esto!
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=asustado | PAUSA=0.2]
+Eso que está ahí me da mucho miedo.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=triste, a punto de llorar | PAUSA=0.2]
+No puedo creer que esto esté pasando.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=decidido | PAUSA=0.2]
+¡Mira! Está justo allá.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=aturdido | PAUSA=0.2]
+¡Ay! Me caí.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=relajado | PAUSA=0.2]
+Voy a comer algo antes de continuar.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=con sueño | PAUSA=0.2]
+Necesito dormir un momento.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=concentrado | PAUSA=0.2]
+Apunto hacia un blanco vacío y disparo.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=aliviado | PAUSA=0.2]
+Ahora voy a beber un poco de agua.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=despreocupado | PAUSA=0.2]
+Me tomaré un descanso y fumaré un cigarro.
+
+[YOUNG MAN | VOZ=Ryan | INSTRUCCION=voz débil, como final de la prueba | PAUSA=0.2]
+Y así termina la prueba.

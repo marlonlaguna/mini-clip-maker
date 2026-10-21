@@ -90,59 +90,113 @@ def _accion_fallback_semantica(
 
     aliases = {
         "listen": [
+            "turn_around",
             "look_back",
             "think",
+            "none",
             "idle",
         ],
         "listening": [
+            "turn_around",
             "look_back",
             "think",
+            "none",
             "idle",
         ],
         "hear": [
+            "turn_around",
             "look_back",
             "think",
+            "none",
             "idle",
         ],
         "hearing": [
+            "turn_around",
             "look_back",
             "think",
+            "none",
             "idle",
         ],
         "observe": [
+            "turn_around",
             "look_back",
             "think",
+            "none",
             "idle",
         ],
         "watch": [
+            "turn_around",
             "look_back",
+            "none",
             "idle",
         ],
         "look": [
+            "turn_around",
             "look_back",
+            "none",
+            "idle",
+        ],
+        "look_back": [
+            "turn_around",
+            "look_back",
+            "none",
             "idle",
         ],
         "speak": [
+            "speak",
             "talk",
+            "none",
             "idle",
         ],
         "talking": [
+            "speak",
             "talk",
+            "none",
+            "idle",
+        ],
+        "talk": [
+            "speak",
+            "talk",
+            "none",
             "idle",
         ],
         "stand": [
+            "none",
             "idle",
         ],
         "standing": [
+            "none",
+            "idle",
+        ],
+        "idle": [
+            "none",
             "idle",
         ],
         "fear": [
+            "afraid",
             "scared",
+            "none",
+            "idle",
+        ],
+        "scared": [
+            "afraid",
+            "scared",
+            "none",
+            "idle",
+        ],
+        "hands_up": [
+            "afraid",
+            "surprised",
+            "hands_up",
+            "none",
             "idle",
         ],
         "panic": [
+            "afraid",
             "scared",
+            "surprised",
             "hands_up",
+            "none",
             "idle",
         ],
         "open": [
@@ -154,20 +208,90 @@ def _accion_fallback_semantica(
             "idle",
         ],
         "walking": [
+            "walk_front",
             "walk",
+            "none",
+            "idle",
+        ],
+        "walk": [
+            "walk_front",
+            "walk",
+            "none",
+            "idle",
+        ],
+        "run": [
+            "walk_front",
+            "walk",
+            "none",
             "idle",
         ],
         "running": [
             "run",
+            "walk_front",
             "walk",
+            "none",
             "idle",
         ],
         "turn": [
+            "turn_around",
             "look_back",
+            "none",
             "idle",
         ],
         "turn_around": [
+            "turn_around",
             "look_back",
+            "none",
+            "idle",
+        ],
+        "surprise": [
+            "surprised",
+            "none",
+            "idle",
+        ],
+        "surprised": [
+            "surprised",
+            "none",
+            "idle",
+        ],
+        "crying": [
+            "cry",
+            "none",
+            "idle",
+        ],
+        "pointing": [
+            "point",
+            "none",
+            "idle",
+        ],
+        "eating": [
+            "eat",
+            "none",
+            "idle",
+        ],
+        "sleeping": [
+            "sleep",
+            "none",
+            "idle",
+        ],
+        "shooting": [
+            "shoot",
+            "none",
+            "idle",
+        ],
+        "drinking": [
+            "drink",
+            "none",
+            "idle",
+        ],
+        "smoking": [
+            "smoke",
+            "none",
+            "idle",
+        ],
+        "falling": [
+            "fall",
+            "none",
             "idle",
         ],
         "investigate": [
@@ -194,6 +318,9 @@ def _accion_fallback_semantica(
 
     if "idle" in acciones_validas:
         return "idle"
+
+    if "none" in acciones_validas:
+        return "none"
 
     return (
         acciones_validas[0]

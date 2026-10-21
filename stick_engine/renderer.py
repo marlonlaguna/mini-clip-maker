@@ -5,7 +5,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 from .assets import AssetLibrary
-from .animation import sample_action
+from .animation import sample_action, sprite_focus_bounds, sprite_sheet_scale
 from .utils import parse_color, clamp, smoothstep
 from .shots import normalize_shot, parts_for_target
 
@@ -358,13 +358,16 @@ class StickRenderer:
 
                     focus_parts = None
                     if detail_shot:
-                        rig = self.assets.rig(char_type)
-                        focus_parts = parts_for_target(
-                            shot["target"],
-                            [part["name"] for part in rig.get("parts", [])],
-                        )
-                        if focus_parts is None:
-                            detail_shot = False
+                        if self.assets.is_sprite_sheet(char_type):
+                            focus_parts = shot["target"]
+                        else:
+                            rig = self.assets.rig(char_type)
+                            focus_parts = parts_for_target(
+                                shot["target"],
+                                [part["name"] for part in rig.get("parts", [])],
+                            )
+                            if focus_parts is None:
+                                detail_shot = False
 
                     # Se calcula una sola vez y se reutiliza para
                     # root_x/root_y y para el render del personaje.
@@ -1216,6 +1219,32 @@ class StickRenderer:
         focus_parts=None,
         return_focus_bounds=False,
     ):
+        if self.assets.is_sprite_sheet(char_type):
+            sprite = self.assets.sprite_frame(
+                char_type,
+                action_name,
+                t,
+            )
+            frame_width, frame_height = sprite.size
+            sheet_scale = sprite_sheet_scale(scale, frame_height)
+            sprite = sprite.resize(
+                (
+                    max(1, int(round(frame_width * sheet_scale))),
+                    max(1, int(round(frame_height * sheet_scale))),
+                ),
+                Image.Resampling.LANCZOS,
+            )
+            focus_bounds = None
+            if focus_parts:
+                focus_bounds = sprite_focus_bounds(
+                    focus_parts,
+                    sprite.width,
+                    sprite.height,
+                )
+            if return_focus_bounds:
+                return sprite, focus_bounds
+            return sprite
+
         rig, parts, children = (
             self._rig_structure(
                 char_type

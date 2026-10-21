@@ -1,5 +1,43 @@
 from .utils import lerp
 
+
+# The legacy character rigs have a 454 px visible idle height after trimming
+# their transparent canvas. Scale sprite-sheet cells to that same reference.
+SPRITE_SHEET_REFERENCE_HEIGHT = 454.0
+
+
+def sprite_sheet_scale(actor_scale, frame_height):
+    return float(actor_scale) * SPRITE_SHEET_REFERENCE_HEIGHT / max(
+        1.0,
+        float(frame_height),
+    )
+
+
+def sprite_focus_bounds(target, width, height):
+    """Approximate legacy close-up targets inside a full-body sprite cell."""
+    target = str(target or "full_body").strip().lower()
+    regions = {
+        "face": (0.18, 0.02, 0.82, 0.34),
+        "head": (0.18, 0.02, 0.82, 0.34),
+        "torso": (0.12, 0.24, 0.88, 0.67),
+        "left_arm": (0.05, 0.20, 0.95, 0.66),
+        "right_arm": (0.05, 0.20, 0.95, 0.66),
+        "arms": (0.05, 0.20, 0.95, 0.66),
+        "left_leg": (0.08, 0.48, 0.92, 0.98),
+        "right_leg": (0.08, 0.48, 0.92, 0.98),
+        "legs": (0.08, 0.48, 0.92, 0.98),
+    }
+    region = regions.get(target)
+    if region is None:
+        return None
+    left, top, right, bottom = region
+    return (
+        left * width,
+        top * height,
+        right * width,
+        bottom * height,
+    )
+
 def sample_action(action, t):
     duration = max(float(action.get("duration", 1.0)), 0.001)
     local_t = t % duration if action.get("loop", True) else min(max(t, 0.0), duration)

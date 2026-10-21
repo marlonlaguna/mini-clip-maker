@@ -7,7 +7,7 @@ import moderngl
 from PIL import Image, ImageDraw, ImageFont
 
 from .assets import AssetLibrary
-from .animation import sample_action
+from .animation import sample_action, sprite_focus_bounds, sprite_sheet_scale
 from .utils import clamp, parse_color, smoothstep
 from .shots import normalize_shot, parts_for_target
 
@@ -561,66 +561,106 @@ class StickRendererGPU:
                             target_prepared["action"],
                             t,
                         )
-                        target_parts, target_bbox = self._character_geometry(
-                            target_prepared["char_type"],
-                            target_pose,
+                        target_type = target_prepared["char_type"]
+                        target_index = target_prepared["index"]
+                        target_spec = target_prepared["spec"]
+                        target_movement = self._movement_x(
+                            movement=target_spec.get("movement"),
+                            t=t,
+                            width=width,
+                            scene_duration=duration,
                         )
-                        target_names = parts_for_target(
-                            shot["target"],
-                            [part["name"] for part in target_parts],
-                        )
-                        if target_names:
-                            target_points = [
-                                point
-                                for part in target_parts
-                                if part["name"] in target_names
-                                for point in part["corners"]
-                            ]
-                            focus_min_x = min(point[0] for point in target_points)
-                            focus_min_y = min(point[1] for point in target_points)
-                            focus_max_x = max(point[0] for point in target_points)
-                            focus_max_y = max(point[1] for point in target_points)
-                            focus_width = max(1.0, focus_max_x - focus_min_x)
-                            focus_height = max(1.0, focus_max_y - focus_min_y)
-                            camera_zoom = clamp(
-                                min(
-                                    width * 0.78 / (focus_width * base_actor_scale),
-                                    height * 0.58 / (focus_height * base_actor_scale),
-                                ),
-                                1.0,
-                                5.0,
-                            )
+                        target_root_x = float(target_pose.get("root_x", 0.0)) * base_actor_scale
+                        target_root_y = float(target_pose.get("root_y", 0.0)) * base_actor_scale
 
-                            target_index = target_prepared["index"]
-                            target_spec = target_prepared["spec"]
-                            target_movement = self._movement_x(
-                                movement=target_spec.get("movement"),
-                                t=t,
-                                width=width,
-                                scene_duration=duration,
+                        if self.assets.is_sprite_sheet(target_type):
+                            frame_width, frame_height = self.assets.sprite_frame_size(target_type)
+                            sheet_scale = sprite_sheet_scale(base_actor_scale, frame_height)
+                            focus = sprite_focus_bounds(
+                                shot["target"],
+                                frame_width,
+                                frame_height,
                             )
-                            target_root_x = float(target_pose.get("root_x", 0.0)) * base_actor_scale
-                            target_root_y = float(target_pose.get("root_y", 0.0)) * base_actor_scale
-                            full_min_x, _, full_max_x, full_max_y = target_bbox
-                            full_center_x = (full_min_x + full_max_x) / 2.0 * base_actor_scale
-                            full_bottom_y = full_max_y * base_actor_scale
-                            target_offset_x = (
-                                slots[target_index]
-                                + target_movement
-                                + target_root_x
-                                - full_center_x
+                            if focus:
+                                focus_min_x, focus_min_y, focus_max_x, focus_max_y = focus
+                                focus_width = max(1.0, focus_max_x - focus_min_x)
+                                focus_height = max(1.0, focus_max_y - focus_min_y)
+                                camera_zoom = clamp(
+                                    min(
+                                        width * 0.78 / (focus_width * sheet_scale),
+                                        height * 0.58 / (focus_height * sheet_scale),
+                                    ),
+                                    1.0,
+                                    5.0,
+                                )
+                                frame_width_scaled = frame_width * sheet_scale
+                                frame_height_scaled = frame_height * sheet_scale
+                                target_offset_x = (
+                                    slots[target_index]
+                                    + target_movement
+                                    + target_root_x
+                                    - frame_width_scaled / 2.0
+                                )
+                                target_offset_y = (
+                                    ground_y
+                                    + target_root_y
+                                    - frame_height_scaled
+                                )
+                                camera_center = (
+                                    target_offset_x + (focus_min_x + focus_max_x) / 2.0 * sheet_scale,
+                                    target_offset_y + (focus_min_y + focus_max_y) / 2.0 * sheet_scale,
+                                )
+                        else:
+                            target_parts, target_bbox = self._character_geometry(
+                                target_type,
+                                target_pose,
                             )
-                            target_offset_y = (
-                                ground_y
-                                + target_root_y
-                                - full_bottom_y
+                            target_names = parts_for_target(
+                                shot["target"],
+                                [part["name"] for part in target_parts],
                             )
-                            camera_center = (
-                                (focus_min_x + focus_max_x) / 2.0 * base_actor_scale
-                                + target_offset_x,
-                                (focus_min_y + focus_max_y) / 2.0 * base_actor_scale
-                                + target_offset_y,
-                            )
+                            if target_names:
+                                target_points = [
+                                    point
+                                    for part in target_parts
+                                    if part["name"] in target_names
+                                    for point in part["corners"]
+                                ]
+                                focus_min_x = min(point[0] for point in target_points)
+                                focus_min_y = min(point[1] for point in target_points)
+                                focus_max_x = max(point[0] for point in target_points)
+                                focus_max_y = max(point[1] for point in target_points)
+                                focus_width = max(1.0, focus_max_x - focus_min_x)
+                                focus_height = max(1.0, focus_max_y - focus_min_y)
+                                camera_zoom = clamp(
+                                    min(
+                                        width * 0.78 / (focus_width * base_actor_scale),
+                                        height * 0.58 / (focus_height * base_actor_scale),
+                                    ),
+                                    1.0,
+                                    5.0,
+                                )
+
+                                full_min_x, _, full_max_x, full_max_y = target_bbox
+                                full_center_x = (full_min_x + full_max_x) / 2.0 * base_actor_scale
+                                full_bottom_y = full_max_y * base_actor_scale
+                                target_offset_x = (
+                                    slots[target_index]
+                                    + target_movement
+                                    + target_root_x
+                                    - full_center_x
+                                )
+                                target_offset_y = (
+                                    ground_y
+                                    + target_root_y
+                                    - full_bottom_y
+                                )
+                                camera_center = (
+                                    (focus_min_x + focus_max_x) / 2.0 * base_actor_scale
+                                    + target_offset_x,
+                                    (focus_min_y + focus_max_y) / 2.0 * base_actor_scale
+                                    + target_offset_y,
+                                )
 
                 self.program["u_camera_center"].value = camera_center
                 self.program["u_camera_zoom"].value = camera_zoom
@@ -705,6 +745,46 @@ class StickRendererGPU:
                             t
                         )
                     )
+
+                    if self.assets.is_sprite_sheet(char_type):
+                        sprite = self.assets.sprite_frame(
+                            char_type,
+                            prepared["action_name"],
+                            t,
+                        )
+                        frame_width, frame_height = sprite.size
+                        sheet_scale = sprite_sheet_scale(actor_scale, frame_height)
+                        actor_width = frame_width * sheet_scale
+                        actor_height = frame_height * sheet_scale
+                        movement_x = self._movement_x(
+                            movement=spec.get("movement"),
+                            t=t,
+                            width=width,
+                            scene_duration=duration,
+                        )
+                        root_x = float(pose.get("root_x", 0.0)) * actor_scale
+                        root_y = float(pose.get("root_y", 0.0)) * actor_scale
+                        actor_x = slots[index] + movement_x + root_x - actor_width / 2.0
+                        actor_y = ground_y + root_y - actor_height
+                        self._draw_texture_rect(
+                            texture=self._sheet_frame_texture(char_type, sprite),
+                            x=actor_x,
+                            y=actor_y,
+                            width=actor_width,
+                            height=actor_height,
+                        )
+
+                        emotion = spec.get("emotion")
+                        if emotion:
+                            self._draw_emotion(
+                                emotion_name=str(emotion),
+                                actor_x=actor_x,
+                                actor_y=actor_y,
+                                actor_width=actor_width,
+                                actor_scale=actor_scale,
+                                frame_width=width,
+                            )
+                        continue
 
                     (
                         parts,
@@ -1749,6 +1829,16 @@ class StickRendererGPU:
                 key
             ]
         )
+
+    def _sheet_frame_texture(self, char_type, image):
+        key = (
+            "sheet_frame",
+            char_type,
+            id(image),
+        )
+        if key not in self._texture_cache:
+            self._texture_cache[key] = self._pil_to_texture(image)
+        return self._texture_cache[key]
 
     def _emotion_texture(
         self,
