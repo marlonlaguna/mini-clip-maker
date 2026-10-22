@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "speech_activity_version": 1,
+  "sample_rate": 24000,
+  "duration": 31.615791666666667,
+  "scenes": [
+    {
+      "id": "las_pistas",
+      "start": 0.0,
+      "end": 9.0
+    },
+    {
+      "id": "cerca_del_hospital",
+      "start": 9.0,
+      "end": 16.169416666666667
+    },
+    {
+      "id": "el_descubrimiento",
+      "start": 16.169416666666667,
+      "end": 25.615791666666667
+    },
+    {
+      "id": "suscribirse",
+      "start": 25.615791666666667,
+      "end": 31.615791666666667
+    }
+  ],
+  "blocks": [
+    {
+      "speaker": "ANA",
+      "scene": "las_pistas",
+      "start": 0.0,
+      "end": 7.34475,
+      "text": "Últimamente, mi marido llega tarde, esconde el teléfono y sale para contestar llamadas. Dice que es por trabajo.",
+      "speech_intervals": [
+        [
+          0.18000000000000002,
+          2.16
+        ],
+        [
+          2.42,
+          5.36
+        ],
+        [
+          5.66,
+          7.08
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "cerca_del_hospital",
+      "start": 9.0,
+      "end": 15.769416666666666,
+      "text": "Pero ayer lo vi cerca del hospital. Caminaba con alguien… y le sujetaba la mano.",
+      "speech_intervals": [
+        [
+          9.18,
+          9.6
+        ],
+        [
+          9.74,
+          11.68
+        ],
+        [
+          12.34,
+          13.719999999999999
+        ],
+        [
+          14.100000000000001,
+          15.48
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "el_descubrimiento",
+      "start": 16.169416666666667,
+      "end": 25.115791666666667,
+      "text": "Me acerqué sin que me vieran. Entonces esa persona se dio la vuelta. No podía creer quién era.",
+      "speech_intervals": [
+        [
+          16.349416666666666,
+          17.209416666666666
+        ],
+        [
+          17.309416666666667,
+          19.129416666666668
+        ],
+        [
+          19.509416666666667,
+          20.289416666666668
+        ],
+        [
+          20.789416666666668,
+          22.529416666666666
+        ],
+        [
+          23.269416666666668,
+          24.769416666666665
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "suscribirse",
+      "start": 25.615791666666667,
+      "end": 29.774958333333334,
+      "text": "Si quieres saber quién era, suscríbete para más historias.",
+      "speech_intervals": [
+        [
+          25.835791666666665,
+          26.735791666666668
+        ],
+        [
+          26.835791666666665,
+          27.415791666666667
+        ],
+        [
+          27.595791666666667,
+          29.575791666666667
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "titulo": "Lo vi cerca del hospital",
+  "resolucion": "1080x1920",
+  "musica": "misterius.mp3",
+  "volumen_musica": 0.05,
+  "estilo_visual": "Suspenso matrimonial. Ana cuenta la historia en primera persona. Mantener los personajes existentes. La persona que acompaña a Jhon permanece fuera de encuadre para no revelar su identidad. Usar únicamente fondos disponibles.",
+  "paleta": "",
+  "seed": null,
+  "negative_prompt": "",
+  "cast": {
+    "ANA": "humanoids/ana_young_woman",
+    "JHON": "humanoids/jhon_young_man"
+  },
+  "personajes": {
+    "ANA": "humanoids/ana_young_woman",
+    "JHON": "humanoids/jhon_young_man"
+  },
+  "modo_video": "stick",
+  "voz_qwen": "Serena",
+  "porcentaje_minimo_stick": 100.0,
+  "permitir_fondos_automaticos": false,
+  "usar_efectos_sonido": false,
+  "volumen_efectos": 0.35,
+  "max_efectos_sonido": 8,
+  "imagen_final": "",
+  "duracion_imagen_final": 0.0
+}

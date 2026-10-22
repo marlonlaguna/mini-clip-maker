@@ -1,0 +1,29 @@
+{
+  "titulo": "La herencia podía esperar",
+  "resolucion": "1080x1920",
+  "musica": "misterius.mp3",
+  "volumen_musica": 0.09,
+  "estilo_visual": "Suspenso familiar en la casa de Paul. Ana es su hija y Jhon es el esposo de Ana. Usar los personajes PNG existentes, únicamente fondos y efectos disponibles. La manzana se menciona en el diálogo; usar la acción disponible de comer sin añadir objetos o personajes nuevos. Mostrar el desenlace sin sangre ni detalles gráficos.",
+  "paleta": "",
+  "seed": null,
+  "negative_prompt": "gore, sangre, heridas explícitas, texto añadido, marcas de agua, personajes adicionales, anatomía deformada",
+  "cast": {
+    "ANA": "humanoids/ana_young_woman",
+    "JHON": "humanoids/jhon_young_man",
+    "PAUL": "humanoids/paul_old_man"
+  },
+  "personajes": {
+    "ANA": "humanoids/ana_young_woman",
+    "JHON": "humanoids/jhon_young_man",
+    "PAUL": "humanoids/paul_old_man"
+  },
+  "modo_video": "stick",
+  "voz_qwen": "Serena",
+  "porcentaje_minimo_stick": 100.0,
+  "permitir_fondos_automaticos": false,
+  "usar_efectos_sonido": true,
+  "volumen_efectos": 0.3,
+  "max_efectos_sonido": 8,
+  "imagen_final": "voces.png",
+  "duracion_imagen_final": 6.0
+}

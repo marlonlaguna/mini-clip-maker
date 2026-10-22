@@ -5,6 +5,8 @@ from __future__ import annotations
 import re
 import json
 import sys
+import io
+import subprocess
 from pathlib import Path
 
 import numpy as np
@@ -17,6 +19,21 @@ MODEL_ID = "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice"
 LANGUAGE = "Spanish"
 MAX_CHARS_PER_CHUNK = 280
 PAUSE_SECONDS = 0.18
+VELOCIDAD_VOZ = 1.10
+
+
+def acelerar_voz(audio, rate):
+    entrada = io.BytesIO()
+    sf.write(entrada, np.asarray(audio), rate, format="WAV", subtype="FLOAT")
+    resultado = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", "pipe:0",
+         "-af", f"atempo={VELOCIDAD_VOZ}", "-f", "wav",
+         "-acodec", "pcm_f32le", "pipe:1"],
+        input=entrada.getvalue(), capture_output=True,
+    )
+    if resultado.returncode:
+        raise RuntimeError(resultado.stderr.decode("utf-8", errors="replace"))
+    return sf.read(io.BytesIO(resultado.stdout), dtype="float32")
 
 
 def split_text(text: str, max_chars: int = MAX_CHARS_PER_CHUNK) -> list[str]:
@@ -92,7 +109,7 @@ def main() -> int:
         print(f"[QWEN] Voz {voice}: {text[:70]}")
         kwargs = {"instruct": instruction} if supports_instruct and instruction else {}
         wavs, rate = model.generate_custom_voice(text=text, language=LANGUAGE, speaker=voice, **kwargs)
-        return wavs[0], rate
+        return acelerar_voz(wavs[0], rate)
 
     audio, timeline = assemble_audio(blocks, synthesize, split_text, speaker)
     output_path.parent.mkdir(parents=True, exist_ok=True)

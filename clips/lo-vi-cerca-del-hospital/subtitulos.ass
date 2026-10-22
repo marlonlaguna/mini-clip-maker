@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:05.50,TikTok,,0,0,0,,Últimamente mi marido llega tarde, esconde el teléfono y sale para contestar llamadas.
+Dialogue: 0,0:00:05.50,0:00:11.83,TikTok,,0,0,0,,Dice que es por trabajo, pero ayer lo vi cerca del hospital.
+Dialogue: 0,0:00:11.83,0:00:15.83,TikTok,,0,0,0,,Caminaba con alguien y le sujetaba la mano.
+Dialogue: 0,0:00:15.83,0:00:19.33,TikTok,,0,0,0,,Me acerqué sin que me vieran.
+Dialogue: 0,0:00:19.33,0:00:22.83,TikTok,,0,0,0,,Entonces esa persona cedió la vuelta.
+Dialogue: 0,0:00:22.83,0:00:25.33,TikTok,,0,0,0,,No podía creer quién era.
+Dialogue: 0,0:00:25.33,0:00:29.83,TikTok,,0,0,0,,Si quieres saber quién era, suscríbete para más historias.
+Dialogue: 0,0:00:31.33,0:00:33.34,TikTok,,0,0,0,,¡Suscríbete!

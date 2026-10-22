@@ -1,0 +1,175 @@
+[TITULO]
+La herencia podía esperar
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[VOZ_QWEN]
+Serena
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[ESTILO_VISUAL]
+Suspenso familiar en la casa de Paul. Ana es su hija y Jhon es el esposo de Ana. Usar los personajes PNG existentes, únicamente fondos y efectos disponibles. La manzana se menciona en el diálogo; usar la acción disponible de comer sin añadir objetos o personajes nuevos. Mostrar el desenlace sin sangre ni detalles gráficos.
+
+[NEGATIVE_PROMPT]
+gore, sangre, heridas explícitas, texto añadido, marcas de agua, personajes adicionales, anatomía deformada
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+6
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.30
+
+[MAX_EFECTOS_SONIDO]
+8
+
+[CAST]
+ANA = humanoids/ana_young_woman
+JHON = humanoids/jhon_young_man
+PAUL = humanoids/paul_old_man
+
+[GUION]
+[ESCENA la_visita | FONDO=house | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.4]
+Fuimos a cenar con mi padre. Él pensaba que queríamos pasar tiempo juntos. Nosotros queríamos su casa.
+
+[ESCENA el_plan | FONDO=house]
+[ANA | ACCION=idle | POSICION=1]
+[JHON | ACCION=speak_front | POSICION=3 | VOZ=Eric | PAUSA=0.3]
+Sonríe y deja que coma. Cuando heredes, vendemos esta casa y desaparecemos.
+
+[ESCENA la_duda | FONDO=house | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.4]
+Sigue siendo mi padre, Jhon.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA demasiado_tarde | FONDO=house | PLANO=face:JHON]
+[ANA | ACCION=idle | POSICION=1]
+[JHON | ACCION=speak_front | POSICION=3 | VOZ=Eric | PAUSA=0.4]
+Debiste pensarlo antes de traer la manzana envenenada.
+
+[ESCENA bienvenida | FONDO=house_interior]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.3]
+Qué sorpresa. Hacía meses que no venían los dos.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA el_regalo | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.4]
+Te trajimos fruta, papá. Elegí una manzana especialmente para ti.
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA su_mirada | FONDO=house_interior | PLANO=face:PAUL]
+[ANA | ACCION=idle | POSICION=1 | VOZ=Serena | PAUSA=0.5]
+Mi padre miró la manzana. Después nos miró a nosotros. No dijo nada, pero dejó de sonreír.
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA a_la_mesa | FONDO=house_interior]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.4]
+Siéntense. Voy a servir el postre. También tengo manzanas para ustedes.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA la_espera | FONDO=house_interior | DURACION=2]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA el_primer_bocado | FONDO=house_interior | DURACION=2]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=eat | POSICION=3]
+
+[ESCENA la_senal | FONDO=house_interior]
+[ANA | ACCION=idle | POSICION=1 | VOZ=Serena | PAUSA=0.4]
+Jhon empezó a comer para disimular. Bajo la mesa me apretó la mano. Creía que todo estaba saliendo como habíamos planeado.
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA no_pruebas | FONDO=house_interior | PLANO=face:JHON]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=speak_front | POSICION=3 | VOZ=Eric | PAUSA=0.4]
+¿No vas a probar la tuya, Paul?
+
+[ESCENA la_pregunta | FONDO=house_interior | PLANO=face:PAUL]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.5]
+Antes quisiera saber cuánto creen que vale esta casa.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA silencio_incomodo | FONDO=house_interior | DURACION=1.5 | SFX=scary-violin@0]
+[ANA | ACCION=afraid | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=afraid | POSICION=3]
+
+[ESCENA nos_escucho | FONDO=house_interior | PLANO=face:PAUL | SFX=misterius_sound@0]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.4]
+La ventana estaba abierta. Los escuché antes de que tocaran la puerta. Hasta oí lo de desaparecer después de venderla.
+[JHON | ACCION=afraid | POSICION=3]
+
+[ESCENA algo_va_mal | FONDO=house_interior | PLANO=face:JHON]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=speak_front | POSICION=3 | VOZ=Eric | PAUSA=0.3]
+Ana... no me siento bien.
+
+[ESCENA el_intercambio | FONDO=house_interior | PLANO=face:PAUL | SFX=scarywind@0]
+[ANA | ACCION=afraid | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.5]
+Cambié las manzanas al servirlas. La que acabas de comerte era la que trajeron para mí.
+[JHON | ACCION=afraid | POSICION=3]
+
+[ESCENA jhon_cae | FONDO=house_interior | DURACION=2 | SFX=bodyfall@1]
+[ANA | ACCION=afraid | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=fall | POSICION=3]
+
+[ESCENA la_suplica | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.4]
+¡Papá, llama a una ambulancia! ¡Por favor!
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=dying | POSICION=3]
+
+[ESCENA delante_de_mi | FONDO=house_interior | SFX=woman-cry-of-pain@0]
+[ANA | ACCION=cry | POSICION=1 | VOZ=Serena | PAUSA=0.5]
+Mi padre no se movió. Jhon murió delante de mí. Cuando intenté acercarme, papá me sujetó del brazo y me obligó a mirarlo.
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=dying | POSICION=3]
+
+[ESCENA la_advertencia | FONDO=house_interior | PLANO=face:PAUL | SFX=door_close@0]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.5]
+Esta vez puedes salir de mi casa, hija. Pero no vuelvas a intentar matarme. No habrá una segunda advertencia.
+[JHON | ACCION=dying | POSICION=3]
+
+[ESCENA la_herencia | FONDO=house | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.5]
+Queríamos quedarnos con su casa. Ahora no puedo pasar frente a ella sin recordar la silla vacía que dejó para mi esposo.
+
+[ESCENA despedida | FONDO=house | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.3]
+Si quieres más historias donde la ambición termina en horror, suscríbete.

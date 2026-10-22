@@ -54,7 +54,7 @@ def generar_audio(
             output.setsampwidth(2)
             output.setframerate(rate)
             output.writeframes(bytes(cursor * 2))
-        timeline = {"schema_version": 1, "sample_rate": rate, "duration": cursor / rate, "scenes": scenes, "blocks": []}
+        timeline = {"schema_version": 1, "speech_activity_version": 1, "sample_rate": rate, "duration": cursor / rate, "scenes": scenes, "blocks": []}
         ruta_audio.with_suffix(".timeline.json").write_text(json.dumps(timeline, indent=2), encoding="utf-8")
         print(f"[AUDIO] Escenas sin diálogo: {cursor / rate:.2f}s; no se carga el motor de voz.")
         return ruta_audio

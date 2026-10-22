@@ -1,0 +1,233 @@
+{
+  "storyboard": [
+    {
+      "scene": 1,
+      "script_scene": "las_pistas",
+      "start": 0.0,
+      "end": 9.0,
+      "duration": 9.0,
+      "timeline_duration": 9.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.18000000000000002,
+              2.16
+            ],
+            [
+              2.42,
+              5.36
+            ],
+            [
+              5.66,
+              7.08
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "Últimamente, mi marido llega tarde, esconde el teléfono y sale para contestar llamadas. Dice que es por trabajo.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 2,
+      "script_scene": "cerca_del_hospital",
+      "start": 9.0,
+      "end": 16.169416666666667,
+      "duration": 7.166666666666667,
+      "timeline_duration": 7.169416666666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "hospital",
+      "fallback_background": "hospital",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.17999999999999972,
+              0.5999999999999996
+            ],
+            [
+              0.7400000000000002,
+              2.6799999999999997
+            ],
+            [
+              3.34,
+              4.719999999999999
+            ],
+            [
+              5.100000000000001,
+              6.48
+            ]
+          ]
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "side_walk",
+          "position": 2,
+          "facing": "right",
+          "movement": {
+            "direction": "right",
+            "speed": 18.0
+          },
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Pero ayer lo vi cerca del hospital. Caminaba con alguien… y le sujetaba la mano.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 3,
+      "script_scene": "el_descubrimiento",
+      "start": 16.169416666666667,
+      "end": 25.615791666666667,
+      "duration": 9.433333333333334,
+      "timeline_duration": 9.446375,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "hospital",
+      "fallback_background": "hospital",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.18274999999999864,
+              1.042749999999998
+            ],
+            [
+              1.1427499999999995,
+              2.9627499999999998
+            ],
+            [
+              3.3427499999999988,
+              4.12275
+            ],
+            [
+              4.62275,
+              6.362749999999998
+            ],
+            [
+              7.10275,
+              8.602749999999997
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "Me acerqué sin que me vieran. Entonces esa persona se dio la vuelta. No podía creer quién era.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 4,
+      "script_scene": "suscribirse",
+      "start": 25.615791666666667,
+      "end": 31.615791666666667,
+      "duration": 6.0,
+      "timeline_duration": 6.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "hospital",
+      "fallback_background": "hospital",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.23579166666666396,
+              1.135791666666666
+            ],
+            [
+              1.235791666666664,
+              1.8157916666666658
+            ],
+            [
+              1.9957916666666655,
+              3.975791666666666
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "Si quieres saber quién era, suscríbete para más historias.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    }
+  ],
+  "cast": [
+    {
+      "id": "ANA",
+      "name": "ANA",
+      "type": "humanoids/ana_young_woman"
+    },
+    {
+      "id": "JHON",
+      "name": "JHON",
+      "type": "humanoids/jhon_young_man"
+    }
+  ],
+  "sync_mode": "tts_timeline",
+  "audio_duration": 31.615792,
+  "llm_provider": "openai",
+  "batch_size": 0
+}

@@ -1,5 +1,7 @@
 # Actualización del motor de sprites
 
+Para tamaños de frame variables y variantes de rostro de alta resolución, consulta `ANIMACIONES_HD.md`. Las dimensiones de 200×200 descritas aquí siguen siendo el formato básico compatible.
+
 Copia el contenido de este ZIP en la raíz de Mini Clip Maker, aceptando los reemplazos. No copies la carpeta del ZIP como un nivel adicional. La actualización parte del commit `efead9d`.
 
 El comando de trabajo se mantiene:

@@ -354,6 +354,21 @@ def storyboard_from_script(guion, cast, assets, duration, width, height, fps, ti
         start, end = float(timing["start"]), float(timing["end"])
         count = max(1, round(end * fps) - round(start * fps))
         chars = resolve_facings(scene_characters(scene, cast, assets))
+        speech = [b for b in (timeline or {}).get("blocks", [])
+                  if str(b.get("scene")) == scene["id"]]
+        # Timelines anteriores sin actividad conservan el comportamiento previo.
+        # Una lista vacía es silencio conocido, no ausencia de información.
+        if (timeline or {}).get("speech_activity_version") == 1 or any("speech_intervals" in b for b in (timeline or {}).get("blocks", [])):
+            render_start = round(start * fps) / float(fps)
+            for char in chars:
+                char["speech_intervals"] = []
+                for block in speech:
+                    if block.get("speaker") != char["id"]:
+                        continue
+                    intervals = block.get("speech_intervals", [[block["start"], block["end"]]])
+                    char["speech_intervals"].extend(
+                        [[max(0.0, float(a) - render_start), min(count / float(fps), float(b) - render_start)]
+                         for a, b in intervals if float(b) > render_start and float(a) < render_start + count / float(fps)])
         target, _, name = fields.get("PLANO", "full_body").partition(":")
         if target not in SHOT_TARGETS:
             raise ValueError(f"PLANO inválido: {target}")

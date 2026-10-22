@@ -1,0 +1,52 @@
+[TITULO]
+Prueba de primeros planos HD
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[MUSICA]
+ninguna
+
+[USAR_EFECTOS_SONIDO]
+no
+
+[CAST]
+ESPOSA = humanoids/ana
+ESPOSO = humanoids/jhon
+
+[GUION]
+[ESCENA cuerpo_completo | FONDO=bedroom_house | DURACION=2]
+[ESPOSA | ACCION=walk | POSICION=1]
+[ESPOSO | ACCION=idle | POSICION=2]
+
+[ESCENA enfocar_a_quien_escucha | FONDO=bedroom_house | PLANO=face:ESPOSA]
+[ESPOSA | ACCION=idle | POSICION=1]
+[ESPOSO | ACCION=speak_side | POSICION=2 | VOZ=Ryan]
+Ana, este plano debe enfocarte a ti, aunque yo esté hablando.
+
+[ESCENA ana_hablando | FONDO=bedroom_house | PLANO=face:ESPOSA]
+[ESPOSA | ACCION=speak_side | POSICION=1 | VOZ=Serena]
+Esta es una prueba del primer plano mientras hablo.
+[ESPOSO | ACCION=idle | POSICION=2]
+
+[ESCENA reaccion_sin_dialogo | FONDO=bedroom_house | PLANO=face:ESPOSA | DURACION=2]
+[ESPOSA | ACCION=afraid | POSICION=1 | MIRA=right]
+[ESPOSO | ACCION=idle | POSICION=2 | MIRA=left]
+
+[ESCENA jhon_hablando_al_frente | FONDO=bedroom_house | PLANO=head:ESPOSO]
+[ESPOSA | ACCION=idle | POSICION=1]
+[ESPOSO | ACCION=speak_front | POSICION=2 | VOZ=Ryan]
+También puedo hablar al frente, conservando el encuadre de mi rostro.
+
+[ESCENA regreso_al_cuerpo | FONDO=bedroom_house | DURACION=2]
+[ESPOSA | ACCION=idle | POSICION=1]
+[ESPOSO | ACCION=back_walk | POSICION=2]

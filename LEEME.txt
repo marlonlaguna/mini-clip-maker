@@ -1,0 +1,41 @@
+POSICIONES Y BOCA SEGUN VOZ/SILENCIO
+
+Extrae el ZIP en la carpeta principal de Mini Clip Maker y reemplaza los
+7 archivos incluidos. Requiere las actualizaciones anteriores de sprites HD.
+No requiere nuevas dependencias ni modificar los guiones.
+
+POSICIONES
+Se conserva el tamano de la ultima propuesta.
+Los extremos ahora bajan el 6% del alto de pantalla, en lugar del 13%.
+Esto los sube respecto a la version anterior, aproximadamente hacia las lineas
+rojas de la captura. GROUP_EDGE_DROP en stick_engine/animation.py permite
+ajustar ese desnivel. Y explicita del guion sigue teniendo prioridad.
+
+VOZ/SILENCIO
+El audio de cada intervencion se analiza en ventanas de 40 ms, despues de la
+sintesis y del cambio de velocidad, antes de anadir musica o efectos.
+La actividad se guarda en el .timeline.json junto con el personaje que habla.
+Las acciones speak* muestran idle durante pausas o mientras habla otro personaje.
+Los closeups utilizan idle_closeup con la boca cerrada y conservan el encuadre.
+Las acciones idle, caminar, morir, etc. conservan su comportamiento: una voz en
+off no obliga al personaje a hablar. Para hablar a camara usa ACCION=speak_front.
+Los guiones anteriores siguen siendo validos.
+
+REQUISITOS DE LOS PERSONAJES
+Conservar idle.png e idle_closeup@1024x1024.png (o su variante HD configurada).
+Los tres personajes ya cuentan con estas acciones. Si falta idle HD, se mantiene
+el primer frame de habla en silencio para evitar sustituirlo por un cuerpo entero;
+ese primer frame no garantiza boca cerrada.
+
+USO
+Vuelve a generar el video con el comando habitual, por ejemplo:
+py -3.12 main.py --guion "No abran si escuchan mi voz" "no-abran-si-escuchan-mi-voz.txt"
+
+La nueva sincronizacion requiere generar el audio y su timeline con esta version.
+Un timeline antiguo sin actividad de voz mantiene la reproduccion anterior.
+No se modifica generar_subtitulos.py ni el motor Qwen ni su velocidad existente.
+
+VALIDACION
+59 pruebas aprobadas, incluidos renders CPU y GPU en cuerpo completo y closeup,
+pausas internas, voces bajas, personaje que escucha, compatibilidad de timelines
+anteriores, posiciones simetricas de 1 a 6 personajes y prioridad de Y explicita.

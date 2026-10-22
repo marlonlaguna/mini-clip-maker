@@ -10,6 +10,8 @@ from PIL import Image
 from .utils import ASSETS_DIR
 
 CATEGORIES = ("humanoids", "non-humanoids", "objects")
+AUTO_FRAME_SIZES = frozenset({200, 400, 512, 1024})
+FRAME_SUFFIX = re.compile(r"^(?P<name>.+)@(?P<w>[1-9]\d*)x(?P<h>[1-9]\d*)$", re.I)
 ALIASES = {
     "none": "idle", "stand": "idle", "walk_front": "front_walk",
     "walk_back": "back_walk", "walk_left": "walk", "walk_right": "walk",
@@ -76,6 +78,61 @@ class AssetLibrary:
             raise ValueError("actions debe ser un objeto")
         return raw
 
+    @staticmethod
+    def _sprite_name(path):
+        """Separa la acción lógica del sufijo opcional @anchoXalto."""
+        stem = Path(path).stem
+        match = FRAME_SUFFIX.fullmatch(stem)
+        if match:
+            return match["name"], (int(match["w"]), int(match["h"]))
+        return stem, None
+
+    @staticmethod
+    def _configured_frame_size(value):
+        if not isinstance(value, dict) or set(value) != {"width", "height"}:
+            raise ValueError("frameSize de la acción debe contener width y height")
+        values = (value["width"], value["height"])
+        if any(isinstance(v, bool) or not isinstance(v, int) or v <= 0 for v in values):
+            raise ValueError("frameSize debe usar enteros positivos")
+        return values
+
+    def _frame_geometry(self, path, category, spec):
+        with Image.open(path) as image:
+            width, height = image.size
+        _, suffix_size = self._sprite_name(path)
+        configured = self._configured_frame_size(spec["frameSize"]) if "frameSize" in spec else None
+        if configured and suffix_size and configured != suffix_size:
+            raise ValueError(f"{path}: frameSize y el sufijo del archivo no coinciden")
+        explicit = configured or suffix_size
+        if explicit:
+            fw, fh = explicit
+        elif category == "objects":
+            # Conserva los objetos estáticos existentes; las tiras grandes de
+            # objetos requieren sufijo para no reinterpretar una imagen vieja.
+            fw, fh = (200, 200) if height == 200 and width % 200 == 0 else (width, height)
+        elif height in AUTO_FRAME_SIZES:
+            fw = fh = height
+        else:
+            raise ValueError(f"{path}: esperado alto 200, 400, 512 o 1024; "
+                             "para otros tamaños usa @ANCHOxALTO o frameSize por acción")
+        if height != fh or width < fw or width % fw:
+            raise ValueError(f"{path}: esperado una tira horizontal de celdas {fw}×{fh}; recibido {width}×{height}")
+        return fw, fh, width // fw
+
+    def _action_path(self, folder, filename, files):
+        if not isinstance(filename, str) or Path(filename).name != filename or "\\" in filename:
+            raise ValueError(f"file debe estar en la carpeta del character: {filename}")
+        path = folder / filename
+        if path.is_file():
+            return path
+        logical, explicit = self._sprite_name(filename)
+        if explicit:
+            return None
+        candidates = [p for p in files.values() if self._sprite_name(p)[0] == logical]
+        if len(candidates) > 1:
+            raise ValueError(f"Acción ambigua {logical!r}: especifica file o conserva una única tira por acción")
+        return candidates[0] if candidates else None
+
     def _character_data(self, name):
         key = self.resolve_character(name)
         if key in self._character_cache:
@@ -103,41 +160,53 @@ class AssetLibrary:
             declarations[action] = {**declarations.get(action, {}), **value}
         files = {p.stem: p for p in folder.iterdir()
                  if p.is_file() and p.suffix.lower() == ".png"
-                 and (category == "objects" or p.stem.lower() not in {"modelo", "model", "preview", "reference"})}
+                 and (category == "objects" or self._sprite_name(p)[0].lower() not in {"modelo", "model", "preview", "reference"})}
         if category == "objects":
             if len(files) != 1:
                 raise ValueError(f"{key}: debe contener un único PNG, estático o tira horizontal")
             declarations = {"idle": {"file": next(iter(files.values())).name}}
+        else:
+            # Las variantes de una acción conocida heredan sus FPS/estado. No
+            # exigen repetir configuración por personaje ni por resolución.
+            for path in files.values():
+                logical, _ = self._sprite_name(path)
+                if logical.endswith("_closeup"):
+                    base = logical[:-len("_closeup")]
+                    source = base if base in declarations else ALIASES.get(base, base)
+                    if source in declarations:
+                        inherited = {k: v for k, v in declarations[source].items()
+                                     if k not in {"file", "frameSize", "movement", "closeup", "view", "forAction"}}
+                        declarations[logical] = {**inherited, "view": "portrait", "forAction": source,
+                                                 **declarations.get(logical, {})}
         animations = {}
+        used_paths = set()
         for action, declaration in declarations.items():
             spec = {**defaults, **declaration}
             filename = spec.get("file", f"{action}.png")
-            if Path(filename).name != filename:
-                raise ValueError(f"file debe estar en la carpeta del character: {filename}")
-            path = folder / filename
-            if not path.is_file():
+            path = self._action_path(folder, filename, files)
+            if path is None:
                 continue
-            with Image.open(path) as im:
-                width, height = im.size
-            if category == "objects" and (height != 200 or width % 200):
-                fw, fh, count = width, height, 1
-            else:
-                if height != 200 or width < 200 or width % 200:
-                    raise ValueError(f"{path}: esperado N×200 de ancho y 200 de alto; recibido {width}×{height}")
-                fw, fh, count = 200, 200, width // 200
+            fw, fh, count = self._frame_geometry(path, category, spec)
             rate = float(spec.get("fps", 13))
             mode = spec.get("mode", "loop")
+            view = spec.get("view", "portrait" if action.endswith("_closeup") else "body")
+            if view not in {"body", "portrait"}:
+                raise ValueError(f"view inválido en {key}/{action}: usa body o portrait")
+            for field in ("closeup", "forAction"):
+                if field in spec and (not isinstance(spec[field], str) or not spec[field]):
+                    raise ValueError(f"{field} debe ser un nombre de acción en {key}/{action}")
             if not math.isfinite(rate) or rate <= 0 or mode not in {"loop", "hold", "once"}:
                 raise ValueError(f"FPS o mode inválidos en {key}/{action}")
             animations[action] = {
                 **spec, "name": action, "file": path, "fps": rate, "mode": mode,
+                "view": view,
                 "loop": mode == "loop", "frameCount": count,
                 "frame_width": fw, "frame_height": fh, "duration": count / rate,
             }
+            used_paths.add(path)
         if not animations:
             raise ValueError(f"No hay acciones configuradas con PNG válido en {folder}")
-        declared_files = {str(a.get("file", f"{n}.png")) for n, a in declarations.items()}
-        extras = [p.name for p in files.values() if p.name not in declared_files]
+        extras = [p.name for p in files.values() if p not in used_paths]
         if extras:
             raise ValueError(f"{key}: configura estas acciones específicas en actions.json: {extras}")
         self._character_cache[key] = {"category": category, "actions": animations}
@@ -160,10 +229,31 @@ class AssetLibrary:
         return actions[requested]
 
     def default_action(self, character_type):
-        actions = self.actions_for(character_type)
+        data = self._character_data(character_type)["actions"]
+        actions = sorted(name for name, action in data.items() if action["view"] == "body") or sorted(data)
         return "idle" if "idle" in actions else actions[0]
 
-    def sprite_frame(self, character_type, action_name, t, fps=None, facing="right"):
+    def closeup_action(self, character_type, action_name):
+        action = self.action(character_type, action_name)
+        actions = self._character_data(character_type)["actions"]
+        if action["view"] == "portrait":
+            return action["name"]
+        candidates = [action.get("closeup"), action["name"] + "_closeup"]
+        source_name, _ = self._sprite_name(action["file"])
+        if source_name != action["name"]:
+            candidates.append(source_name + "_closeup")
+        if action["name"].startswith("speak_"):
+            candidates.append("speak_closeup")
+        for name in candidates:
+            if name in actions and actions[name]["view"] == "portrait":
+                return name
+        custom = [name for name, variant in actions.items()
+                  if variant["view"] == "portrait" and variant.get("forAction") == action["name"]]
+        if len(custom) > 1:
+            raise ValueError(f"Variantes de primer plano ambiguas para {character_type}/{action_name}: {custom}")
+        return custom[0] if custom else None
+
+    def _frame_state(self, character_type, action_name, t, fps=None):
         key = self.resolve_character(character_type)
         action = self.action(key, action_name)
         elapsed = max(0.0, float(t))
@@ -174,13 +264,21 @@ class AssetLibrary:
         count = action["frameCount"]
         if action["mode"] == "once" and index >= count:
             default = self.default_action(key)
+            if action["view"] == "portrait":
+                default = self.closeup_action(key, default) or default
             if default != action["name"]:
-                return self.sprite_frame(key, default, elapsed - count / rate, facing=facing)
+                return self._frame_state(key, default, elapsed - count / rate)
             index = 0
         elif action["mode"] == "loop":
             index %= count
         else:
             index = min(index, count - 1)
+        return action, index
+
+    def sprite_sample(self, character_type, action_name, t, fps=None, facing="right"):
+        """Devuelve imagen y metadata de la acción efectiva, incluido once→idle."""
+        key = self.resolve_character(character_type)
+        action, index = self._frame_state(key, action_name, t, fps)
         cache_key = (key, action["name"], index, facing == "left")
         if cache_key not in self._frame_cache:
             path = action["file"]
@@ -191,8 +289,12 @@ class AssetLibrary:
             frame = self._image_cache[path].crop((index * w, 0, (index + 1) * w, h))
             if facing == "left":
                 frame = frame.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
+            frame.info["sprite_frame_key"] = cache_key
             self._frame_cache[cache_key] = frame
-        return self._frame_cache[cache_key]
+        return self._frame_cache[cache_key], action
+
+    def sprite_frame(self, character_type, action_name, t, fps=None, facing="right"):
+        return self.sprite_sample(character_type, action_name, t, fps, facing)[0]
 
     def sprite_frame_size(self, character_type, action_name=None):
         action = self.action(character_type, action_name or self.default_action(character_type))
@@ -234,11 +336,12 @@ class AssetLibrary:
         selected = [self.resolve_character(n) for n in character_types] if character_types is not None else self.character_types()
         selected = list(dict.fromkeys(selected))
         common_path = self.root / "characters" / "humanoids" / "actions.json"
-        common = sorted(self._animation_map(self._read_json(common_path))) if common_path.is_file() else []
+        common = sorted(name for name, spec in self._animation_map(self._read_json(common_path)).items()
+                        if spec.get("view") != "portrait" and not name.endswith("_closeup")) if common_path.is_file() else []
         result = {"humanoid_actions": common, "characters": {}}
         for name in selected:
             data = self._character_data(name)
-            actions = set(data["actions"])
+            actions = {name for name, action in data["actions"].items() if action["view"] != "portrait"}
             if data["category"] == "humanoids":
                 result["characters"][name] = {"category": "humanoids", "extra_actions": sorted(actions - set(common))}
                 missing = sorted(set(common) - actions)

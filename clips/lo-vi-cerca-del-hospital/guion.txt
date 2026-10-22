@@ -1,0 +1,17 @@
+[GUION]
+[ESCENA las_pistas | FONDO=house_interior | DURACION=9 | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.3]
+Últimamente, mi marido llega tarde, esconde el teléfono y sale para contestar llamadas. Dice que es por trabajo.
+
+[ESCENA cerca_del_hospital | FONDO=hospital | DURACION=7]
+[ANA | ACCION=idle | POSICION=1 | VOZ=Serena | PAUSA=0.4]
+Pero ayer lo vi cerca del hospital. Caminaba con alguien… y le sujetaba la mano.
+[JHON | ACCION=side_walk | POSICION=2 | MIRA=right | MOVIMIENTO=right | VELOCIDAD=18]
+
+[ESCENA el_descubrimiento | FONDO=hospital | DURACION=8 | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.5]
+Me acerqué sin que me vieran. Entonces esa persona se dio la vuelta. No podía creer quién era.
+
+[ESCENA suscribirse | FONDO=hospital | DURACION=6 | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.3]
+Si quieres saber quién era, suscríbete para más historias.

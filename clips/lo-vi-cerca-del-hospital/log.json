@@ -1,0 +1,563 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {
+      "run_id": "6a428f35-3e5a-4d10-847b-29c1a90c1184",
+      "started_at": "2026-10-21T17:27:16-06:00",
+      "finished_at": "2026-10-21T17:29:53-06:00",
+      "status": "completed",
+      "title": "Lo vi cerca del hospital",
+      "mode": "guion",
+      "input": "la-llamada.txt",
+      "duration_target_seconds": null,
+      "events": [
+        {
+          "at": "2026-10-21T17:27:16-06:00",
+          "event": "generation_started"
+        },
+        {
+          "at": "2026-10-21T17:29:53-06:00",
+          "event": "generation_completed"
+        }
+      ],
+      "error": null,
+      "artifacts": [
+        {
+          "path": "audio.timeline.json",
+          "size_bytes": 2797,
+          "sha256": "1dd84dba4f1d75231e7c6ad4c8aea632bf1fecef4e7f06a24654db62c4317d0b",
+          "type": "json",
+          "content": {
+            "schema_version": 1,
+            "speech_activity_version": 1,
+            "sample_rate": 24000,
+            "duration": 31.615791666666667,
+            "scenes": [
+              {
+                "id": "las_pistas",
+                "start": 0.0,
+                "end": 9.0
+              },
+              {
+                "id": "cerca_del_hospital",
+                "start": 9.0,
+                "end": 16.169416666666667
+              },
+              {
+                "id": "el_descubrimiento",
+                "start": 16.169416666666667,
+                "end": 25.615791666666667
+              },
+              {
+                "id": "suscribirse",
+                "start": 25.615791666666667,
+                "end": 31.615791666666667
+              }
+            ],
+            "blocks": [
+              {
+                "speaker": "ANA",
+                "scene": "las_pistas",
+                "start": 0.0,
+                "end": 7.34475,
+                "text": "Últimamente, mi marido llega tarde, esconde el teléfono y sale para contestar llamadas. Dice que es por trabajo.",
+                "speech_intervals": [
+                  [
+                    0.18000000000000002,
+                    2.16
+                  ],
+                  [
+                    2.42,
+                    5.36
+                  ],
+                  [
+                    5.66,
+                    7.08
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "cerca_del_hospital",
+                "start": 9.0,
+                "end": 15.769416666666666,
+                "text": "Pero ayer lo vi cerca del hospital. Caminaba con alguien… y le sujetaba la mano.",
+                "speech_intervals": [
+                  [
+                    9.18,
+                    9.6
+                  ],
+                  [
+                    9.74,
+                    11.68
+                  ],
+                  [
+                    12.34,
+                    13.719999999999999
+                  ],
+                  [
+                    14.100000000000001,
+                    15.48
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "el_descubrimiento",
+                "start": 16.169416666666667,
+                "end": 25.115791666666667,
+                "text": "Me acerqué sin que me vieran. Entonces esa persona se dio la vuelta. No podía creer quién era.",
+                "speech_intervals": [
+                  [
+                    16.349416666666666,
+                    17.209416666666666
+                  ],
+                  [
+                    17.309416666666667,
+                    19.129416666666668
+                  ],
+                  [
+                    19.509416666666667,
+                    20.289416666666668
+                  ],
+                  [
+                    20.789416666666668,
+                    22.529416666666666
+                  ],
+                  [
+                    23.269416666666668,
+                    24.769416666666665
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "suscribirse",
+                "start": 25.615791666666667,
+                "end": 29.774958333333334,
+                "text": "Si quieres saber quién era, suscríbete para más historias.",
+                "speech_intervals": [
+                  [
+                    25.835791666666665,
+                    26.735791666666668
+                  ],
+                  [
+                    26.835791666666665,
+                    27.415791666666667
+                  ],
+                  [
+                    27.595791666666667,
+                    29.575791666666667
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "audio.wav",
+          "size_bytes": 1517602,
+          "sha256": "bfc6b0e67866a27d76fa6483889f438f0b45826ec30a5269b0a6144255069b78",
+          "type": "wav"
+        },
+        {
+          "path": "cambios_recursos.json",
+          "size_bytes": 239,
+          "sha256": "ae6936a1f7fb36d66341087744158bcbaa26f1d0784a1e3adbeaa5b3518df126",
+          "type": "json",
+          "content": [
+            "Escena las_pistas: SFX '(automático)' -> 'none'",
+            "Escena cerca_del_hospital: SFX '(automático)' -> 'none'",
+            "Escena el_descubrimiento: SFX '(automático)' -> 'none'",
+            "Escena suscribirse: SFX '(automático)' -> 'none'"
+          ]
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 922,
+          "sha256": "e7661959ffb2c5adffc127a334f8048899eb051c8f0bf5f154802f9398475bbb",
+          "type": "json",
+          "content": {
+            "titulo": "Lo vi cerca del hospital",
+            "resolucion": "1080x1920",
+            "musica": "misterius.mp3",
+            "volumen_musica": 0.05,
+            "estilo_visual": "Suspenso matrimonial. Ana cuenta la historia en primera persona. Mantener los personajes existentes. La persona que acompaña a Jhon permanece fuera de encuadre para no revelar su identidad. Usar únicamente fondos disponibles.",
+            "paleta": "",
+            "seed": null,
+            "negative_prompt": "",
+            "cast": {
+              "ANA": "humanoids/ana_young_woman",
+              "JHON": "humanoids/jhon_young_man"
+            },
+            "personajes": {
+              "ANA": "humanoids/ana_young_woman",
+              "JHON": "humanoids/jhon_young_man"
+            },
+            "modo_video": "stick",
+            "voz_qwen": "Serena",
+            "porcentaje_minimo_stick": 100.0,
+            "permitir_fondos_automaticos": false,
+            "usar_efectos_sonido": false,
+            "volumen_efectos": 0.35,
+            "max_efectos_sonido": 8,
+            "imagen_final": "",
+            "duracion_imagen_final": 0.0
+          }
+        },
+        {
+          "path": "guion.txt",
+          "size_bytes": 998,
+          "sha256": "fba222d6706f5bcbfb042a5db97f9f9d4c4e032d3dfb562921cd5d5ae16ec866",
+          "type": "txt",
+          "content_text": "[GUION]\n[ESCENA las_pistas | FONDO=house_interior | DURACION=9 | PLANO=face:ANA]\n[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.3]\nÚltimamente, mi marido llega tarde, esconde el teléfono y sale para contestar llamadas. Dice que es por trabajo.\n\n[ESCENA cerca_del_hospital | FONDO=hospital | DURACION=7]\n[ANA | ACCION=idle | POSICION=1 | VOZ=Serena | PAUSA=0.4]\nPero ayer lo vi cerca del hospital. Caminaba con alguien… y le sujetaba la mano.\n[JHON | ACCION=side_walk | POSICION=2 | MIRA=right | MOVIMIENTO=right | VELOCIDAD=18]\n\n[ESCENA el_descubrimiento | FONDO=hospital | DURACION=8 | PLANO=face:ANA]\n[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.5]\nMe acerqué sin que me vieran. Entonces esa persona se dio la vuelta. No podía creer quién era.\n\n[ESCENA suscribirse | FONDO=hospital | DURACION=6 | PLANO=face:ANA]\n[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.3]\nSi quieres saber quién era, suscríbete para más historias.\n"
+        },
+        {
+          "path": "guion_adaptado.txt",
+          "size_bytes": 1615,
+          "sha256": "6980b169a67504a961dfa9d0d1ccecfd3f1f1ec9bbdca6c7b466634e589b4458",
+          "type": "txt",
+          "content_text": "[TITULO]\nLo vi cerca del hospital\n\n[MODO_VIDEO]\nstick\n\n[PORCENTAJE_MINIMO_STICK]\n100\n\n[PERMITIR_FONDOS_AUTOMATICOS]\nno\n\n[RESOLUCION]\n1080x1920\n\n[VOZ_QWEN]\nSerena\n\n[MUSICA]\nmisterius.mp3\n\n[VOLUMEN_MUSICA]\n0.05\n\n[DURACION_IMAGEN_FINAL]\n0\n\n[USAR_EFECTOS_SONIDO]\nno\n\n[ESTILO_VISUAL]\nSuspenso matrimonial. Ana cuenta la historia en primera persona. Mantener los personajes existentes. La persona que acompaña a Jhon permanece fuera de encuadre para no revelar su identidad. Usar únicamente fondos disponibles.\n\n[CAST]\nANA = humanoids/ana_young_woman\nJHON = humanoids/jhon_young_man\n\n[GUION]\n[ESCENA las_pistas | FONDO=house_interior | DURACION=9 | PLANO=face:ANA]\n[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.3]\nÚltimamente, mi marido llega tarde, esconde el teléfono y sale para contestar llamadas. Dice que es por trabajo.\n\n[ESCENA cerca_del_hospital | FONDO=hospital | DURACION=7]\n[ANA | ACCION=idle | POSICION=1 | VOZ=Serena | PAUSA=0.4]\nPero ayer lo vi cerca del hospital. Caminaba con alguien… y le sujetaba la mano.\n[JHON | ACCION=side_walk | POSICION=2 | MIRA=right | MOVIMIENTO=right | VELOCIDAD=18]\n\n[ESCENA el_descubrimiento | FONDO=hospital | DURACION=8 | PLANO=face:ANA]\n[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.5]\nMe acerqué sin que me vieran. Entonces esa persona se dio la vuelta. No podía creer quién era.\n\n[ESCENA suscribirse | FONDO=hospital | DURACION=6 | PLANO=face:ANA]\n[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.3]\nSi quieres saber quién era, suscríbete para más historias.\n"
+        },
+        {
+          "path": "guion_limpio.txt",
+          "size_bytes": 366,
+          "sha256": "f32ed8484b6806616054d2a49b73d9a83968281c9c5d7838863a1df21d2f2066",
+          "type": "txt",
+          "content_text": "Últimamente, mi marido llega tarde, esconde el teléfono y sale para contestar llamadas. Dice que es por trabajo.\n\nPero ayer lo vi cerca del hospital. Caminaba con alguien… y le sujetaba la mano.\n\nMe acerqué sin que me vieran. Entonces esa persona se dio la vuelta. No podía creer quién era.\n\nSi quieres saber quién era, suscríbete para más historias."
+        },
+        {
+          "path": "guion_original.txt",
+          "size_bytes": 987,
+          "sha256": "4dffb57640cbccc5fe9e250db969b12169b4d5dcb475b012d164a6a10528ba1d",
+          "type": "txt",
+          "content_text": "[ESCENA las_pistas | FONDO=house_interior | DURACION=9 | PLANO=face:ANA]\n[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.3]\nÚltimamente, mi marido llega tarde, esconde el teléfono y sale para contestar llamadas. Dice que es por trabajo.\n\n[ESCENA cerca_del_hospital | FONDO=hospital | DURACION=7]\n[ANA | ACCION=idle | POSICION=1 | VOZ=Serena | PAUSA=0.4]\nPero ayer lo vi cerca del hospital. Caminaba con alguien… y le sujetaba la mano.\n[JHON | ACCION=side_walk | POSICION=2 | MIRA=right | MOVIMIENTO=right | VELOCIDAD=18]\n\n[ESCENA el_descubrimiento | FONDO=hospital | DURACION=8 | PLANO=face:ANA]\n[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.5]\nMe acerqué sin que me vieran. Entonces esa persona se dio la vuelta. No podía creer quién era.\n\n[ESCENA suscribirse | FONDO=hospital | DURACION=6 | PLANO=face:ANA]\n[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.3]\nSi quieres saber quién era, suscríbete para más historias."
+        },
+        {
+          "path": "segmentos.json",
+          "size_bytes": 894,
+          "sha256": "328c1abe0f9c23ae6f60da36355c402bb81c0f5afd93c78e1e093e84ac9785d3",
+          "type": "json",
+          "content": [
+            {
+              "start": 0.0,
+              "end": 5.5,
+              "text": "Últimamente mi marido llega tarde, esconde el teléfono y sale para contestar llamadas."
+            },
+            {
+              "start": 5.5,
+              "end": 11.84,
+              "text": "Dice que es por trabajo, pero ayer lo vi cerca del hospital."
+            },
+            {
+              "start": 11.84,
+              "end": 15.84,
+              "text": "Caminaba con alguien y le sujetaba la mano."
+            },
+            {
+              "start": 15.84,
+              "end": 19.34,
+              "text": "Me acerqué sin que me vieran."
+            },
+            {
+              "start": 19.34,
+              "end": 22.84,
+              "text": "Entonces esa persona cedió la vuelta."
+            },
+            {
+              "start": 22.84,
+              "end": 25.34,
+              "text": "No podía creer quién era."
+            },
+            {
+              "start": 25.34,
+              "end": 29.84,
+              "text": "Si quieres saber quién era, suscríbete para más historias."
+            },
+            {
+              "start": 31.34,
+              "end": 33.34,
+              "text": "¡Suscríbete!"
+            }
+          ]
+        },
+        {
+          "path": "stick/scene_001.mp4",
+          "size_bytes": 4066565,
+          "sha256": "58a403becd894fb26d54bce353c3e8d8c6996ffb016cfd791abe7b27fcc68a28",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_002.mp4",
+          "size_bytes": 2849473,
+          "sha256": "8d61f4139e0099a71dcc86050e32c65af926661a447b8494c40e961f40ce0946",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_003.mp4",
+          "size_bytes": 4360792,
+          "sha256": "0aca5f0574c55724bc33709c191a72e100b37ebbbfff6e1dbb4adda25852523e",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_004.mp4",
+          "size_bytes": 2412873,
+          "sha256": "72c040cf8f407e0e939477ab84e65a89321d9ac2c2ab43badd13f199a341e037",
+          "type": "mp4"
+        },
+        {
+          "path": "stick_storyboard.json",
+          "size_bytes": 6011,
+          "sha256": "ab97eae67fe80555a2970982162147659be54b7028928fe6f6107ee8255ebb99",
+          "type": "json",
+          "content": {
+            "storyboard": [
+              {
+                "scene": 1,
+                "script_scene": "las_pistas",
+                "start": 0.0,
+                "end": 9.0,
+                "duration": 9.0,
+                "timeline_duration": 9.0,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front",
+                    "position": 1,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.18000000000000002,
+                        2.16
+                      ],
+                      [
+                        2.42,
+                        5.36
+                      ],
+                      [
+                        5.66,
+                        7.08
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Últimamente, mi marido llega tarde, esconde el teléfono y sale para contestar llamadas. Dice que es por trabajo.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 2,
+                "script_scene": "cerca_del_hospital",
+                "start": 9.0,
+                "end": 16.169416666666667,
+                "duration": 7.166666666666667,
+                "timeline_duration": 7.169416666666667,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "hospital",
+                "fallback_background": "hospital",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "idle",
+                    "position": 1,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.17999999999999972,
+                        0.5999999999999996
+                      ],
+                      [
+                        0.7400000000000002,
+                        2.6799999999999997
+                      ],
+                      [
+                        3.34,
+                        4.719999999999999
+                      ],
+                      [
+                        5.100000000000001,
+                        6.48
+                      ]
+                    ]
+                  },
+                  {
+                    "id": "JHON",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "side_walk",
+                    "position": 2,
+                    "facing": "right",
+                    "movement": {
+                      "direction": "right",
+                      "speed": 18.0
+                    },
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "Pero ayer lo vi cerca del hospital. Caminaba con alguien… y le sujetaba la mano.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 3,
+                "script_scene": "el_descubrimiento",
+                "start": 16.169416666666667,
+                "end": 25.615791666666667,
+                "duration": 9.433333333333334,
+                "timeline_duration": 9.446375,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "hospital",
+                "fallback_background": "hospital",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front",
+                    "position": 1,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.18274999999999864,
+                        1.042749999999998
+                      ],
+                      [
+                        1.1427499999999995,
+                        2.9627499999999998
+                      ],
+                      [
+                        3.3427499999999988,
+                        4.12275
+                      ],
+                      [
+                        4.62275,
+                        6.362749999999998
+                      ],
+                      [
+                        7.10275,
+                        8.602749999999997
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Me acerqué sin que me vieran. Entonces esa persona se dio la vuelta. No podía creer quién era.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 4,
+                "script_scene": "suscribirse",
+                "start": 25.615791666666667,
+                "end": 31.615791666666667,
+                "duration": 6.0,
+                "timeline_duration": 6.0,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "hospital",
+                "fallback_background": "hospital",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front",
+                    "position": 1,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.23579166666666396,
+                        1.135791666666666
+                      ],
+                      [
+                        1.235791666666664,
+                        1.8157916666666658
+                      ],
+                      [
+                        1.9957916666666655,
+                        3.975791666666666
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Si quieres saber quién era, suscríbete para más historias.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              }
+            ],
+            "cast": [
+              {
+                "id": "ANA",
+                "name": "ANA",
+                "type": "humanoids/ana_young_woman"
+              },
+              {
+                "id": "JHON",
+                "name": "JHON",
+                "type": "humanoids/jhon_young_man"
+              }
+            ],
+            "sync_mode": "tts_timeline",
+            "audio_duration": 31.615792,
+            "llm_provider": "openai",
+            "batch_size": 0
+          }
+        },
+        {
+          "path": "subtitulos.ass",
+          "size_bytes": 1323,
+          "sha256": "89808df002a909fd533ba2e72a98d520ae4cae5a94a2fbbdf3976ba108fd1b51",
+          "type": "ass",
+          "content_text": "[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nScaledBorderAndShadow: yes\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n\nDialogue: 0,0:00:00.00,0:00:05.50,TikTok,,0,0,0,,Últimamente mi marido llega tarde, esconde el teléfono y sale para contestar llamadas.\nDialogue: 0,0:00:05.50,0:00:11.83,TikTok,,0,0,0,,Dice que es por trabajo, pero ayer lo vi cerca del hospital.\nDialogue: 0,0:00:11.83,0:00:15.83,TikTok,,0,0,0,,Caminaba con alguien y le sujetaba la mano.\nDialogue: 0,0:00:15.83,0:00:19.33,TikTok,,0,0,0,,Me acerqué sin que me vieran.\nDialogue: 0,0:00:19.33,0:00:22.83,TikTok,,0,0,0,,Entonces esa persona cedió la vuelta.\nDialogue: 0,0:00:22.83,0:00:25.33,TikTok,,0,0,0,,No podía creer quién era.\nDialogue: 0,0:00:25.33,0:00:29.83,TikTok,,0,0,0,,Si quieres saber quién era, suscríbete para más historias.\nDialogue: 0,0:00:31.33,0:00:33.34,TikTok,,0,0,0,,¡Suscríbete!\n"
+        },
+        {
+          "path": "video.mp4",
+          "size_bytes": 8086963,
+          "sha256": "e8fbed366a94627496e87cabd86ad8788100169e47752e1c840b6005da82071b",
+          "type": "mp4"
+        }
+      ]
+    }
+  ]
+}

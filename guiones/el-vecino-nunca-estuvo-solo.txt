@@ -1,0 +1,168 @@
+[TITULO]
+El vecino nunca estuvo solo
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[VOZ_QWEN]
+Serena
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[ESTILO_VISUAL]
+Historia de terror y suspenso con los personajes PNG existentes. Casa de un vecino mayor, ambiente nocturno, tensión creciente, planos generales y primeros planos del rostro. Mantener el diseño de los personajes y usar únicamente fondos y efectos disponibles.
+
+[NEGATIVE_PROMPT]
+gore explícito, sangre explícita, texto añadido, marcas de agua, personajes adicionales, anatomía deformada
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+6
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.35
+
+[MAX_EFECTOS_SONIDO]
+12
+
+[CAST]
+ANA = humanoids/ana_young_woman
+JHON = humanoids/jhon_young_man
+PAUL = humanoids/paul_old_man
+
+[GUION]
+[ESCENA el_ultimo_viernes | FONDO=house | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | INSTRUCCION=narración en primera persona, íntima y pausada | PAUSA=0.4]
+Nuestro vecino nos pedía que lo acompañáramos porque no soportaba estar solo. Jhon y yo tardamos demasiado en entender lo que eso significaba.
+
+[ESCENA llegada | FONDO=house | DURACION=2]
+[ANA | ACCION=front_walk | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=front_walk | POSICION=3]
+
+[ESCENA le_haciamos_compania | FONDO=house_interior]
+[ANA | ACCION=idle | POSICION=1 | VOZ=Serena | INSTRUCCION=narración en primera persona, recordando con calma | PAUSA=0.3]
+Cada viernes le llevábamos la cena. Paul parecía un anciano amable. Siempre nos agradecía que alguien se acordara de él.
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA bienvenida_de_paul | FONDO=house_interior | PLANO=face:PAUL]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | INSTRUCCION=amable, hablando despacio | PAUSA=0.4]
+Pasen, muchachos. Ya preparé la mesa para los tres.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA el_encargo | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | INSTRUCCION=tranquilo y cotidiano | PAUSA=0.3]
+Ana, ¿me traerías el mantel del cuarto? Está junto al armario.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA la_caja | FONDO=oldmanbedroom]
+[ANA | ACCION=front_point | POSICION=1 | VOZ=Serena | INSTRUCCION=narración en primera persona, bajando la voz | PAUSA=0.5]
+Buscando el mantel encontré una caja. Dentro había documentos y fotos de personas desaparecidas. Algunas llevaban años en las noticias.
+[JHON | ACCION=use_phone | POSICION=3 | MIRA=left]
+
+[ESCENA jhon_reconoce_una_foto | FONDO=oldmanbedroom | PLANO=face:JHON]
+[ANA | ACCION=idle | POSICION=1]
+[JHON | ACCION=speak_front | POSICION=3 | VOZ=Eric | INSTRUCCION=voz baja, alarmado | PAUSA=0.4]
+Ana... a esta mujer la encontraron muerta. Y a este hombre también.
+
+[ESCENA nuestros_nombres | FONDO=oldmanbedroom | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | INSTRUCCION=conteniendo el miedo | PAUSA=0.5]
+Hay dos sobres más. Jhon... tienen nuestros nombres.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA paul_escuchaba | FONDO=oldmanbedroom | PLANO=face:PAUL]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | INSTRUCCION=desconfiada, exigiendo una explicación | PAUSA=0.4]
+Paul, ¿por qué tienes las cosas de toda esta gente?
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA la_confesion | FONDO=oldmanbedroom | PLANO=face:PAUL]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | INSTRUCCION=sereno, sin culpa ni sorpresa | PAUSA=0.5]
+Todos vinieron a hacerme compañía. Como ustedes. Ninguno volvió a sentirse solo.
+[JHON | ACCION=afraid | POSICION=3]
+
+[ESCENA intentamos_salir | FONDO=oldmanbedroom]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | INSTRUCCION=urgente y asustada | PAUSA=0.2]
+Jhon, vámonos. Ahora.
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=afraid | POSICION=3]
+
+[ESCENA la_salida_bloqueada | FONDO=house_interior | DURACION=1.8]
+[ANA | ACCION=run | POSICION=1 | MIRA=left | MOVIMIENTO=left | VELOCIDAD=40]
+[PAUL | ACCION=side_point | POSICION=2 | MIRA=left]
+[JHON | ACCION=run | POSICION=3 | MIRA=left | MOVIMIENTO=left | VELOCIDAD=40]
+
+[ESCENA no_era_indefenso | FONDO=house_interior]
+[ANA | ACCION=block | POSICION=1 | MIRA=right | VOZ=Serena | INSTRUCCION=narración en primera persona, tensa | PAUSA=0.4]
+Paul nos cerró el paso. Aquel hombre no era indefenso. Era un asesino en serie, y ya había decidido cómo terminaría nuestra visita.
+[PAUL | ACCION=idle | POSICION=2 | MIRA=left]
+[JHON | ACCION=afraid | POSICION=3 | MIRA=left]
+
+[ESCENA amenaza | FONDO=house_interior | PLANO=face:JHON]
+[ANA | ACCION=block | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | INSTRUCCION=frío y tranquilo | PAUSA=0.4]
+Ustedes mismos dijeron que esta noche nadie los esperaba.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA los_golpes | FONDO=house_interior | DURACION=1.8]
+[ANA | ACCION=block | POSICION=1 | X=0.35 | MIRA=right]
+[PAUL | ACCION=fight | POSICION=2 | X=0.50 | MIRA=left]
+[JHON | ACCION=afraid | POSICION=3 | X=0.80 | MIRA=left]
+
+[ESCENA ana_cae | FONDO=house_interior | DURACION=1.3 | SFX=bodyfall@0.7]
+[ANA | ACCION=fall | POSICION=1 | MIRA=right]
+[PAUL | ACCION=idle | POSICION=2 | MIRA=left]
+[JHON | ACCION=afraid | POSICION=3 | MIRA=left]
+
+[ESCENA quiso_ayudarme | FONDO=house_interior]
+[ANA | ACCION=dying | POSICION=1 | VOZ=Serena | INSTRUCCION=voz en off, narración en primera persona, triste y contenida | PAUSA=0.5]
+Me mató a golpes. Jhon intentó ayudarme, pero Paul sacó un arma.
+[PAUL | ACCION=idle | POSICION=2 | MIRA=right]
+[JHON | ACCION=block | POSICION=3 | MIRA=left]
+
+[ESCENA el_disparo | FONDO=house_interior | DURACION=1.5 | SFX=gun_bang@0.1,bodyfall@0.9]
+[ANA | ACCION=dying | POSICION=1]
+[PAUL | ACCION=shooting_a_gun | POSICION=2 | MIRA=right]
+[JHON | ACCION=fall | POSICION=3 | MIRA=left]
+
+[ESCENA los_dos | FONDO=house_interior]
+[ANA | ACCION=dying | POSICION=1 | VOZ=Serena | INSTRUCCION=voz en off, narración en primera persona, muy pausada | PAUSA=0.6]
+A Jhon le disparó. Cayó a pocos pasos de mí. Después, la casa volvió a quedarse en silencio.
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=dying | POSICION=3]
+
+[ESCENA paul_ya_no_esta_solo | FONDO=house_interior | PLANO=face:PAUL]
+[ANA | ACCION=dying | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | INSTRUCCION=satisfecho, hablando con absoluta calma | PAUSA=0.6]
+Gracias por quedarse. Sabía que podía contar con ustedes.
+[JHON | ACCION=dying | POSICION=3]
+
+[ESCENA el_recuerdo_de_ana | FONDO=house | PLANO=face:ANA]
+[ANA | ACCION=idle | POSICION=1 | VOZ=Serena | INSTRUCCION=voz en off, recuerdo de la protagonista, íntima y sombría | PAUSA=0.6]
+Creíamos que nuestra compañía le alegraba la vida. Ahora acompañamos a todos los que nunca salieron de esa casa.
+
+[ESCENA suscribirse | FONDO=house | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | INSTRUCCION=clara y pausada | PAUSA=0.3]
+Si quieres escuchar más historias de quienes no pudieron escapar, suscribete

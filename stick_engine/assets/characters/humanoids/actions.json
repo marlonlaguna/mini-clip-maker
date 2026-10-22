@@ -67,6 +67,10 @@
     "idle": {
       "mode": "loop"
     },
+    "idle_closeup": {
+      "fps": 13,
+      "mode": "loop"
+    },
     "kissing_a_man": {
       "mode": "hold"
     },
@@ -109,6 +113,10 @@
       }
     },
     "speak_front": {
+      "mode": "loop"
+    },
+    "speak_front_closeup": {
+      "fps": 26,
       "mode": "loop"
     },
     "speak_side": {

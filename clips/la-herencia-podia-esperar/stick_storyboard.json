@@ -1,0 +1,1459 @@
+{
+  "storyboard": [
+    {
+      "scene": 1,
+      "script_scene": "la_visita",
+      "start": 0.0,
+      "end": 7.455958333333333,
+      "duration": 7.466666666666667,
+      "timeline_duration": 7.455958333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house",
+      "fallback_background": "house",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.3,
+              1.8800000000000001
+            ],
+            [
+              2.26,
+              4.96
+            ],
+            [
+              5.340000000000001,
+              6.8
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "Fuimos a cenar con mi padre. Él pensaba que queríamos pasar tiempo juntos. Nosotros queríamos su casa.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 2,
+      "script_scene": "el_plan",
+      "start": 7.455958333333333,
+      "end": 15.036375,
+      "duration": 7.566666666666666,
+      "timeline_duration": 7.580416666666666,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house",
+      "fallback_background": "house",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "speak_front",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.48929166666666646,
+              2.589291666666666
+            ],
+            [
+              2.889291666666667,
+              3.7892916666666654
+            ],
+            [
+              4.209291666666667,
+              5.469291666666667
+            ],
+            [
+              5.649291666666667,
+              6.869291666666667
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Sonríe y deja que coma. Cuando heredes, vendemos esta casa y desaparecemos.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 3,
+      "script_scene": "la_duda",
+      "start": 15.036375,
+      "end": 17.472333333333335,
+      "duration": 2.433333333333333,
+      "timeline_duration": 2.4359583333333354,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house",
+      "fallback_background": "house",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.34304166666666625,
+              1.7230416666666653
+            ]
+          ]
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "idle",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "Sigue siendo mi padre, Jhon.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 4,
+      "script_scene": "demasiado_tarde",
+      "start": 17.472333333333335,
+      "end": 22.751666666666665,
+      "duration": 5.3,
+      "timeline_duration": 5.27933333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house",
+      "fallback_background": "house",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "speak_front",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.3456666666666699,
+              1.6456666666666706
+            ],
+            [
+              1.9056666666666686,
+              4.68566666666667
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "JHON"
+      },
+      "narration": "Debiste pensarlo antes de traer la manzana envenenada.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 5,
+      "script_scene": "bienvenida",
+      "start": 22.751666666666665,
+      "end": 31.051875,
+      "duration": 8.3,
+      "timeline_duration": 8.300208333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "speak_front",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.40500000000000114,
+              0.504999999999999
+            ],
+            [
+              0.6050000000000004,
+              0.9450000000000003
+            ],
+            [
+              1.0449999999999982,
+              1.384999999999998
+            ],
+            [
+              1.4849999999999994,
+              1.6649999999999991
+            ],
+            [
+              2.285,
+              2.785
+            ],
+            [
+              2.9250000000000007,
+              3.1050000000000004
+            ],
+            [
+              3.4849999999999994,
+              4.465
+            ],
+            [
+              4.524999999999999,
+              4.785
+            ],
+            [
+              4.844999999999999,
+              5.024999999999999
+            ],
+            [
+              5.164999999999999,
+              7.664999999999999
+            ]
+          ]
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "idle",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Qué sorpresa. Hacía meses que no venían los dos.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 6,
+      "script_scene": "el_regalo",
+      "start": 31.051875,
+      "end": 36.110375,
+      "duration": 5.033333333333333,
+      "timeline_duration": 5.058499999999999,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": [
+            [
+              0.20520833333333144,
+              1.5852083333333304
+            ],
+            [
+              1.8452083333333356,
+              4.385208333333335
+            ]
+          ]
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "idle",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "Te trajimos fruta, papá. Elegí una manzana especialmente para ti.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 7,
+      "script_scene": "su_mirada",
+      "start": 36.110375,
+      "end": 43.591458333333335,
+      "duration": 7.5,
+      "timeline_duration": 7.481083333333338,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": [
+            [
+              0.35037499999999966,
+              1.8903749999999988
+            ],
+            [
+              2.2703749999999943,
+              4.010374999999996
+            ],
+            [
+              4.390374999999999,
+              5.290374999999997
+            ],
+            [
+              5.470374999999997,
+              5.810374999999993
+            ],
+            [
+              5.870374999999996,
+              6.650374999999997
+            ]
+          ]
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "idle",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "PAUL"
+      },
+      "narration": "Mi padre miró la manzana. Después nos miró a nosotros. No dijo nada, pero dejó de sonreír.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 8,
+      "script_scene": "a_la_mesa",
+      "start": 43.591458333333335,
+      "end": 49.598125,
+      "duration": 6.0,
+      "timeline_duration": 6.006666666666668,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "speak_front",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.6914583333333368,
+              1.5914583333333354
+            ],
+            [
+              1.8914583333333326,
+              3.0714583333333323
+            ],
+            [
+              3.3714583333333366,
+              5.031458333333333
+            ]
+          ]
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "idle",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Siéntense. Voy a servir el postre. También tengo manzanas para ustedes.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 9,
+      "script_scene": "la_espera",
+      "start": 49.598125,
+      "end": 51.598125,
+      "duration": 2.0,
+      "timeline_duration": 2.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "idle",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 10,
+      "script_scene": "el_primer_bocado",
+      "start": 51.598125,
+      "end": 53.598125,
+      "duration": 2.0,
+      "timeline_duration": 2.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "eat",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 11,
+      "script_scene": "la_senal",
+      "start": 53.598125,
+      "end": 62.22345833333333,
+      "duration": 8.633333333333333,
+      "timeline_duration": 8.62533333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": [
+            [
+              0.17812500000000142,
+              2.278125000000003
+            ],
+            [
+              2.6581250000000054,
+              4.598125000000003
+            ],
+            [
+              5.098125000000003,
+              7.998125000000002
+            ]
+          ]
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "idle",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Jhon empezó a comer para disimular. Bajo la mesa me apretó la mano. Creía que todo estaba saliendo como habíamos planeado.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 12,
+      "script_scene": "no_pruebas",
+      "start": 62.22345833333333,
+      "end": 64.73145833333334,
+      "duration": 2.5,
+      "timeline_duration": 2.5080000000000027,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "speak_front",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": [
+            [
+              0.33012500000000244,
+              1.7901250000000033
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "JHON"
+      },
+      "narration": "¿No vas a probar la tuya, Paul?",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 13,
+      "script_scene": "la_pregunta",
+      "start": 64.73145833333334,
+      "end": 70.10445833333333,
+      "duration": 5.366666666666666,
+      "timeline_duration": 5.3729999999999905,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "speak_front",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.2581250000000068,
+              1.8381250000000051
+            ],
+            [
+              2.1781250000000085,
+              4.038125000000008
+            ]
+          ]
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "idle",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "PAUL"
+      },
+      "narration": "Antes quisiera saber cuánto creen que vale esta casa.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 14,
+      "script_scene": "silencio_incomodo",
+      "start": 70.10445833333333,
+      "end": 71.60445833333333,
+      "duration": 1.5,
+      "timeline_duration": 1.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "afraid",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "afraid",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "scary-violin",
+          "time": 0.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 15,
+      "script_scene": "nos_escucho",
+      "start": 71.60445833333333,
+      "end": 84.07291666666667,
+      "duration": 12.466666666666667,
+      "timeline_duration": 12.468458333333345,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "speak_front",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.46445833333332587,
+              2.0844583333333304
+            ],
+            [
+              2.1444583333333327,
+              2.404458333333338
+            ],
+            [
+              2.984458333333336,
+              3.8444583333333355
+            ],
+            [
+              4.184458333333339,
+              6.124458333333337
+            ],
+            [
+              6.984458333333336,
+              7.964458333333326
+            ],
+            [
+              8.264458333333337,
+              9.524458333333328
+            ],
+            [
+              9.904458333333338,
+              10.244458333333327
+            ],
+            [
+              10.30445833333333,
+              11.524458333333328
+            ]
+          ]
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "afraid",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "PAUL"
+      },
+      "narration": "La ventana estaba abierta. Los escuché antes de que tocaran la puerta. Hasta oí lo de desaparecer después de venderla.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "misterius_sound",
+          "time": 0.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 16,
+      "script_scene": "algo_va_mal",
+      "start": 84.07291666666667,
+      "end": 87.43333333333334,
+      "duration": 3.3666666666666667,
+      "timeline_duration": 3.3604166666666657,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "speak_front",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": [
+            [
+              0.3062500000000057,
+              0.886250000000004
+            ],
+            [
+              1.0662500000000108,
+              2.606250000000003
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "JHON"
+      },
+      "narration": "Ana... no me siento bien.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 17,
+      "script_scene": "el_intercambio",
+      "start": 87.43333333333334,
+      "end": 95.27808333333333,
+      "duration": 7.833333333333333,
+      "timeline_duration": 7.844749999999991,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "afraid",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "speak_front",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              1.0999999999999943,
+              2.9200000000000017
+            ],
+            [
+              3.4599999999999937,
+              4.760000000000005
+            ],
+            [
+              4.900000000000006,
+              6.319999999999993
+            ]
+          ]
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "afraid",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "PAUL"
+      },
+      "narration": "Cambié las manzanas al servirlas. La que acabas de comerte era la que trajeron para mí.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "scarywind",
+          "time": 0.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 18,
+      "script_scene": "jhon_cae",
+      "start": 95.27808333333333,
+      "end": 97.27808333333333,
+      "duration": 2.0,
+      "timeline_duration": 2.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "afraid",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "fall",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "bodyfall",
+          "time": 1.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 19,
+      "script_scene": "la_suplica",
+      "start": 97.27808333333333,
+      "end": 101.24075,
+      "duration": 3.966666666666667,
+      "timeline_duration": 3.962666666666678,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": [
+            [
+              0.1914166666666688,
+              0.3714166666666614
+            ],
+            [
+              0.4314166666666637,
+              0.7714166666666671
+            ],
+            [
+              0.9114166666666677,
+              2.251416666666657
+            ],
+            [
+              2.511416666666662,
+              3.291416666666663
+            ]
+          ]
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "dying",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "¡Papá, llama a una ambulancia! ¡Por favor!",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 20,
+      "script_scene": "delante_de_mi",
+      "start": 101.24075,
+      "end": 110.25120833333334,
+      "duration": 9.033333333333333,
+      "timeline_duration": 9.010458333333332,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "cry",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": [
+            [
+              0.427416666666673,
+              1.7674166666666764
+            ],
+            [
+              2.3074166666666684,
+              3.5674166666666736
+            ],
+            [
+              4.267416666666676,
+              6.687416666666664
+            ],
+            [
+              6.947416666666669,
+              8.167416666666668
+            ]
+          ]
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "dying",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Mi padre no se movió. Jhon murió delante de mí. Cuando intenté acercarme, papá me sujetó del brazo y me obligó a mirarlo.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "woman-cry-of-pain",
+          "time": 0.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 21,
+      "script_scene": "la_advertencia",
+      "start": 110.25120833333334,
+      "end": 119.187125,
+      "duration": 8.933333333333334,
+      "timeline_duration": 8.935916666666657,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PAUL",
+          "type": "humanoids/paul_old_man",
+          "action": "speak_front",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.4045416666666739,
+              1.1445416666666688
+            ],
+            [
+              1.204541666666671,
+              2.7445416666666773
+            ],
+            [
+              3.164541666666679,
+              5.224541666666667
+            ],
+            [
+              5.964541666666676,
+              7.904541666666674
+            ]
+          ]
+        },
+        {
+          "id": "JHON",
+          "type": "humanoids/jhon_young_man",
+          "action": "dying",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "PAUL"
+      },
+      "narration": "Esta vez puedes salir de mi casa, hija. Pero no vuelvas a intentar matarme. No habrá una segunda advertencia.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "door_close",
+          "time": 0.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 22,
+      "script_scene": "la_herencia",
+      "start": 119.187125,
+      "end": 126.60379166666667,
+      "duration": 7.4,
+      "timeline_duration": 7.416666666666671,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house",
+      "fallback_background": "house",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.16712499999999864,
+              1.8671249999999873
+            ],
+            [
+              2.1271249999999924,
+              6.667124999999984
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "Queríamos quedarnos con su casa. Ahora no puedo pasar frente a ella sin recordar la silla vacía que dejó para mi esposo.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 23,
+      "script_scene": "despedida",
+      "start": 126.60379166666667,
+      "end": 132.36783333333332,
+      "duration": 5.766666666666667,
+      "timeline_duration": 5.764041666666657,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house",
+      "fallback_background": "house",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.18379166666667857,
+              0.44379166666666947
+            ],
+            [
+              1.063791666666674,
+              4.163791666666668
+            ],
+            [
+              4.46379166666668,
+              5.20379166666666
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "Si quieres más historias donde la ambición termina en horror, suscríbete.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    }
+  ],
+  "cast": [
+    {
+      "id": "ANA",
+      "name": "ANA",
+      "type": "humanoids/ana_young_woman"
+    },
+    {
+      "id": "JHON",
+      "name": "JHON",
+      "type": "humanoids/jhon_young_man"
+    },
+    {
+      "id": "PAUL",
+      "name": "PAUL",
+      "type": "humanoids/paul_old_man"
+    }
+  ],
+  "sync_mode": "tts_timeline",
+  "audio_duration": 132.367833,
+  "llm_provider": "openai",
+  "batch_size": 0
+}

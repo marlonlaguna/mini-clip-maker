@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 from .assets import AssetLibrary
 from .animation import actor_layout, resolve_facings, sprite_focus_bounds, sprite_sheet_scale
 from .utils import parse_color, clamp, smoothstep
-from .shots import normalize_shot
+from .shots import normalize_shot, prepare_closeup, closeup_sample, portrait_layout, speech_sample
 
 
 # ============================================================
@@ -229,6 +229,7 @@ class StickRenderer:
         shot_character = shot["character"]
         if shot["target"] != "full_body" and not shot_character and prepared_characters:
             shot_character = prepared_characters[0]["spec"].get("id")
+        closeup = prepare_closeup(self.assets, prepared_characters, shot, shot_character)
 
         # --------------------------------------------------------
         # OUTPUT
@@ -324,6 +325,7 @@ class StickRenderer:
 
                 frame = background.copy()
                 camera_focus = None
+                portrait = closeup_sample(self.assets, closeup, t)
 
                 # -----------------------------------------------
                 # PERSONAJES
@@ -333,7 +335,8 @@ class StickRenderer:
                     index, spec = prepared["index"], prepared["spec"]
                     char_type, action = prepared["char_type"], prepared["action"]
                     detail_shot = shot["target"] != "full_body" and spec.get("id") == shot_character
-                    frame_size = self.assets.sprite_frame_size(char_type, prepared["action_name"])
+                    sample = speech_sample(self.assets, char_type, prepared["action_name"], spec, t)
+                    frame_size = sample[0].size
                     x, y, aw, ah, actor_scale = actor_layout(
                         spec, action, t, width, height, duration, slots[index], ground_y, scale, frame_size,
                     )
@@ -342,14 +345,17 @@ class StickRenderer:
                         action=action, facing=spec["facing"],
                         focus_parts=shot["target"] if detail_shot else None,
                         return_focus_bounds=True,
+                        sample=sample,
                     )
                     x, y = round(x), round(y)
                     if detail_shot and focus_bounds:
                         left, top, right, bottom = focus_bounds
                         zoom = clamp(min(width * 0.78 / max(1, right-left), height * 0.58 / max(1, bottom-top)), 1, 5)
                         camera_focus = (x + (left+right)/2, y + (top+bottom)/2, zoom)
-                    frame.alpha_composite(actor, (x, y))
-                    if spec.get("emotion"):
+                    replaced = portrait is not None and prepared is closeup["target"]
+                    if not replaced:
+                        frame.alpha_composite(actor, (x, y))
+                    if spec.get("emotion") and not replaced:
                         self._draw_emotion(
                             frame=frame, emotion_name=str(spec["emotion"]), actor_x=x, actor_y=y,
                             actor_width=actor.width, actor_scale=actor_scale, frame_width=width,
@@ -403,6 +409,15 @@ class StickRenderer:
                         (width, height),
                         Image.Resampling.LANCZOS,
                     )
+
+                if portrait is not None:
+                    image, _ = portrait
+                    spec = closeup["target"]["spec"]
+                    x, y, w, h = portrait_layout(image, width, height, spec.get("scale", 1))
+                    image = image.resize((max(1, round(w)), max(1, round(h))), Image.Resampling.LANCZOS)
+                    frame.alpha_composite(image, (round(x), round(y)))
+                    if spec.get("emotion"):
+                        self._draw_emotion(frame, str(spec["emotion"]), x, y, w, w / 454.0, width)
 
                 proc.stdin.write(
                     frame.tobytes()
@@ -1034,36 +1049,11 @@ class StickRenderer:
             )
         ]
 
-    def _auto_scale(
-        self,
-        count,
-        width,
-        height
-    ):
+    def _auto_scale(self, count, width, height):
         if count <= 0:
             return 1.0
-
-        slot_width = (
-            width
-            * 0.84
-            / count
-        )
-
-        # La escala de composición usa una referencia de 360x620. Como el frame
-        # interno es menor, este cálculo reduce el personaje también.
-        return clamp(
-            min(
-                slot_width
-                / 360.0,
-                (
-                    height
-                    * 0.56
-                )
-                / 620.0
-            ),
-            0.18,
-            1.5
-        )
+        # Tamaño común para 1, 2, 3 o más personajes; independiente de los slots.
+        return min(width * 0.84 / 360.0, height * 0.70 / 620.0)
 
     # ============================================================
     # PERSONAJE
@@ -1071,11 +1061,11 @@ class StickRenderer:
 
 
     def _render_character(self, char_type, action_name, color, t, scale, action=None,
-                          pose=None, focus_parts=None, return_focus_bounds=False, facing="right"):
-        sprite = self.assets.sprite_frame(char_type, action_name, t, facing=facing)
+                          pose=None, focus_parts=None, return_focus_bounds=False, facing="right", sample=None):
+        sprite, effective = sample if sample is not None else self.assets.sprite_sample(char_type, action_name, t, facing=facing)
         factor = sprite_sheet_scale(scale, sprite.height)
         sprite = sprite.resize((max(1, round(sprite.width * factor)), max(1, round(sprite.height * factor))), Image.Resampling.LANCZOS)
-        focus = sprite_focus_bounds(focus_parts, sprite.width, sprite.height, image=sprite) if focus_parts else None
+        focus = sprite_focus_bounds(focus_parts, sprite.width, sprite.height, image=sprite, view=effective["view"]) if focus_parts else None
         return (sprite, focus) if return_focus_bounds else sprite
 
     # ============================================================

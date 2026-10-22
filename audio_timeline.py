@@ -4,6 +4,28 @@ import numpy as np
 from guion_escenas import number
 
 
+def voice_intervals(audio, sample_rate):
+    """Actividad de voz por energía, antes de añadir música y efectos."""
+    audio = np.asarray(audio, dtype=np.float32).reshape(-1)
+    step = max(1, round(sample_rate * 0.04))
+    energy = [float(np.sqrt(np.mean(audio[i:i + step].astype(np.float64) ** 2)))
+              for i in range(0, len(audio), step)]
+    if not energy:
+        return []
+    threshold = max(0.003, float(np.percentile(energy, 90)) * 0.12)
+    intervals = []
+    for i, rms in enumerate(energy):
+        if rms < threshold:
+            continue
+        start = max(0.0, i * step / sample_rate - 0.02)
+        end = min(len(audio) / sample_rate, (i + 1) * step / sample_rate + 0.04)
+        if intervals and start - intervals[-1][1] <= 0.04 + 1e-8:
+            intervals[-1][1] = end
+        else:
+            intervals.append([start, end])
+    return intervals
+
+
 def assemble_audio(blocks, synthesize, split_text, default_voice, sample_rate=24000, pause_seconds=0.18):
     pieces, speech_timeline, scene_timeline = [], [], []
     samples = 0
@@ -34,6 +56,7 @@ def assemble_audio(blocks, synthesize, split_text, default_voice, sample_rate=24
             minimum = number(block.get("scene_duration") or 0, "DURACION")
         text = block["text"].strip()
         speech_start = samples
+        activity = []
         chunks = split_text(text)
         for j, chunk in enumerate(chunks):
             audio, rate = synthesize(chunk, block.get("voice") or default_voice, block.get("instruction", ""))
@@ -42,13 +65,16 @@ def assemble_audio(blocks, synthesize, split_text, default_voice, sample_rate=24
             audio = np.asarray(audio, dtype=np.float32).reshape(-1)
             if not len(audio) or not np.isfinite(audio).all():
                 raise RuntimeError("El sintetizador devolvió audio vacío o inválido")
+            activity.extend([[samples / sample_rate + start, samples / sample_rate + end]
+                             for start, end in voice_intervals(audio, sample_rate)])
             pieces.append(audio)
             samples += len(audio)
             if j + 1 < len(chunks):
                 silence(pause_seconds)
         if text:
             speech_timeline.append({"speaker": block["speaker"], "scene": sid, "start": speech_start / sample_rate,
-                                    "end": samples / sample_rate, "text": text})
+                                    "end": samples / sample_rate, "text": text,
+                                    "speech_intervals": activity})
         # PAUSA explícita también se conserva al final de una escena.
         if block.get("pause"):
             seconds = number(block["pause"], "PAUSA")
@@ -60,5 +86,5 @@ def assemble_audio(blocks, synthesize, split_text, default_voice, sample_rate=24
     close_scene()
     if samples <= 0:
         raise ValueError("El guion necesita diálogo o escenas con DURACION positiva")
-    return np.concatenate(pieces), {"schema_version": 1, "sample_rate": sample_rate,
+    return np.concatenate(pieces), {"schema_version": 1, "speech_activity_version": 1, "sample_rate": sample_rate,
         "duration": samples / sample_rate, "scenes": scene_timeline if structured else [], "blocks": speech_timeline}

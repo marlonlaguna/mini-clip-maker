@@ -2,6 +2,9 @@
 from .utils import clamp, smoothstep
 
 SPRITE_SHEET_REFERENCE_HEIGHT = 454.0
+# Sobre el tamaño previo: reducción del 7%, seguida de otro 10%.
+CHARACTER_SIZE_FACTOR = 0.90 * 0.93 * 0.90
+GROUP_EDGE_DROP = 0.06
 
 
 def sprite_sheet_scale(actor_scale, frame_height):
@@ -21,6 +24,13 @@ def resolve_facings(characters):
         if explicit not in {"auto", "left", "right", None, ""}:
             raise ValueError(f"Orientación inválida: {explicit}")
         spec["facing"] = explicit if explicit in {"left", "right"} else ("left" if rank[i] > middle else "right")
+        # Curva simétrica según el orden real en pantalla. Con número par,
+        # los dos del centro comparten altura. Y explícita tiene prioridad.
+        nearest = 0.0 if len(ordered) % 2 else 0.5
+        spec["_ground_offset"] = (
+            GROUP_EDGE_DROP * ((abs(rank[i] - middle) - nearest) / (middle - nearest)) ** 2
+            if len(ordered) >= 3 else 0.0
+        )
         result.append(spec)
     return result
 
@@ -63,12 +73,24 @@ def actor_layout(spec, action, t, width, height, duration, slot, ground, scale, 
     aw, ah = w * sheet_scale, h * sheet_scale
     center = float(spec.get("x", slot / width)) * width + dx
     ground = float(spec.get("y", ground / height)) * height + dy
-    center = clamp(center, min(aw / 2, width / 2), max(width - aw / 2, width / 2))
+    if "y" not in spec:
+        ground += float(spec.get("_ground_offset", 0.0)) * height
+    # Los márgenes transparentes del frame pueden salir del encuadre.
+    # Limitar por el lienzo entero amontonaba los sprites grandes en el centro.
+    if aw > width * 0.84:
+        center = clamp(center, width * 0.08, width * 0.92)
+    else:
+        center = clamp(center, min(aw / 2, width / 2), max(width - aw / 2, width / 2))
     ground = clamp(ground, min(ah, height), height * 0.96)
+    # Reducir después de fijar el centro y el suelo evita cambiar de límites
+    # de posición cuando el tamaño cruza el ancho permitido del encuadre.
+    aw *= CHARACTER_SIZE_FACTOR
+    ah *= CHARACTER_SIZE_FACTOR
+    scale *= CHARACTER_SIZE_FACTOR
     return center - aw / 2, ground - ah, aw, ah, scale
 
 
-def sprite_focus_bounds(target, width, height, image=None):
+def sprite_focus_bounds(target, width, height, image=None, view="body"):
     """Encuadre aproximado sobre la zona ocupada del frame."""
     regions = {
         "face": (0.20, 0.0, 0.80, 0.30), "head": (0.20, 0.0, 0.80, 0.30),
@@ -84,6 +106,8 @@ def sprite_focus_bounds(target, width, height, image=None):
     left, top, right, bottom = (0, 0, width, height)
     if image is not None and image.getbbox():
         left, top, right, bottom = image.getbbox()
+    if view == "portrait" and target in {"face", "head"}:
+        return left, top, right, bottom
     rw, rh = right - left, bottom - top
     a, b, c, d = region
     return left + a * rw, top + b * rh, left + c * rw, top + d * rh

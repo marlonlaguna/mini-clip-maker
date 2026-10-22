@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 from .assets import AssetLibrary
 from .animation import actor_layout, resolve_facings, sprite_focus_bounds, sprite_sheet_scale
 from .utils import clamp, parse_color, smoothstep
-from .shots import normalize_shot
+from .shots import normalize_shot, prepare_closeup, closeup_sample, portrait_layout, speech_sample
 
 
 # 1.0 = resolución nativa.
@@ -363,6 +363,7 @@ class StickRendererGPU:
         shot_character = shot["character"]
         if shot["target"] != "full_body" and not shot_character and prepared_characters:
             shot_character = prepared_characters[0]["spec"].get("id")
+        closeup = prepare_closeup(self.assets, prepared_characters, shot, shot_character)
         base_actor_scale = actor_scale
 
         # --------------------------------------------------------
@@ -547,17 +548,18 @@ class StickRendererGPU:
                     height / 2.0,
                 )
                 camera_zoom = 1.0
+                portrait = closeup_sample(self.assets, closeup, t)
 
                 if shot["target"] != "full_body":
                     target = next((item for item in prepared_characters if item["spec"].get("id") == shot_character), None)
                     if target:
                         spec, action, char_type = target["spec"], target["action"], target["char_type"]
-                        sprite = self.assets.sprite_frame(char_type, target["action_name"], t, facing=spec["facing"])
+                        sprite, effective = speech_sample(self.assets, char_type, target["action_name"], spec, t)
                         x, y, aw, ah, actor_scale = actor_layout(
                             spec, action, t, width, height, duration, slots[target["index"]], ground_y,
                             base_actor_scale, sprite.size,
                         )
-                        focus = sprite_focus_bounds(shot["target"], sprite.width, sprite.height, image=sprite)
+                        focus = sprite_focus_bounds(shot["target"], sprite.width, sprite.height, image=sprite, view=effective["view"])
                         if focus:
                             left, top, right, bottom = focus
                             factor = sprite_sheet_scale(actor_scale, sprite.height)
@@ -609,7 +611,9 @@ class StickRendererGPU:
 
                 for prepared in prepared_characters:
                     spec, action, char_type = prepared["spec"], prepared["action"], prepared["char_type"]
-                    sprite = self.assets.sprite_frame(char_type, prepared["action_name"], t, facing=spec["facing"])
+                    if portrait is not None and prepared is closeup["target"]:
+                        continue
+                    sprite = speech_sample(self.assets, char_type, prepared["action_name"], spec, t)[0]
                     x, y, aw, ah, actor_scale = actor_layout(
                         spec, action, t, width, height, duration, slots[prepared["index"]], ground_y,
                         base_actor_scale, sprite.size,
@@ -653,6 +657,17 @@ class StickRendererGPU:
                                 duration
                             )
                         )
+
+                if portrait is not None:
+                    image, _ = portrait
+                    target = closeup["target"]
+                    spec = target["spec"]
+                    x, y, w, h = portrait_layout(image, width, height, spec.get("scale", 1))
+                    self.program["u_camera_center"].value = (width / 2.0, height / 2.0)
+                    self.program["u_camera_zoom"].value = 1.0
+                    self._draw_texture_rect(self._sheet_frame_texture(target["char_type"], image), x, y, w, h)
+                    if spec.get("emotion"):
+                        self._draw_emotion(str(spec["emotion"]), x, y, w, w / 454.0, width)
 
                 # ------------------------------------------------
                 # GPU -> FFMPEG
@@ -951,7 +966,7 @@ class StickRendererGPU:
         key = (
             "sheet_frame",
             char_type,
-            id(image),
+            image.info.get("sprite_frame_key", id(image)),
         )
         if key not in self._texture_cache:
             self._texture_cache[key] = self._pil_to_texture(image)
@@ -1833,47 +1848,11 @@ class StickRendererGPU:
             )
         ]
 
-    def _auto_scale(
-        self,
-        count,
-        width,
-        height
-    ):
-
+    def _auto_scale(self, count, width, height):
         if count <= 0:
             return 1.0
-
-        slot_width = (
-
-            width
-            *
-            0.84
-
-            /
-            count
-        )
-
-        return clamp(
-
-            min(
-
-                slot_width
-                /
-                360.0,
-
-                (
-                    height
-                    *
-                    0.56
-                )
-                /
-                620.0
-            ),
-
-            0.18,
-
-            1.5
-        )
+        # Tamaño común para 1, 2, 3 o más personajes; independiente de los slots.
+        return min(width * 0.84 / 360.0, height * 0.70 / 620.0)
 
     # ============================================================
     # ENCODER

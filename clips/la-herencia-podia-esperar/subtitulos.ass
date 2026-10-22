@@ -1,0 +1,54 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:02.00,TikTok,,0,0,0,,Fuimos a cenar con mi padre.
+Dialogue: 0,0:00:02.00,0:00:05.00,TikTok,,0,0,0,,Él pensaba que queríamos pasar tiempo juntos.
+Dialogue: 0,0:00:05.00,0:00:07.00,TikTok,,0,0,0,,Nosotros queríamos su casa.
+Dialogue: 0,0:00:08.00,0:00:10.00,TikTok,,0,0,0,,Sonríe y deja que coma.
+Dialogue: 0,0:00:10.00,0:00:15.00,TikTok,,0,0,0,,Cuando heredes, vendemos esta casa y desaparecemos.
+Dialogue: 0,0:00:15.00,0:00:17.00,TikTok,,0,0,0,,Sigue siendo mi padre, John.
+Dialogue: 0,0:00:18.00,0:00:22.00,TikTok,,0,0,0,,Debiste pensarlo antes de traer la manzana envenenada.
+Dialogue: 0,0:00:22.00,0:00:27.00,TikTok,,0,0,0,,¡Qué sorpresa!
+Dialogue: 0,0:00:27.00,0:00:30.00,TikTok,,0,0,0,,Hacía meses que no venían los dos.
+Dialogue: 0,0:00:30.00,0:00:32.00,TikTok,,0,0,0,,Te trajimos fruta, papá.
+Dialogue: 0,0:00:32.00,0:00:35.00,TikTok,,0,0,0,,Elegí una manzana especialmente para ti.
+Dialogue: 0,0:00:35.00,0:00:37.00,TikTok,,0,0,0,,Mi padre miró la manzana.
+Dialogue: 0,0:00:37.00,0:00:39.00,TikTok,,0,0,0,,Después nos miró a nosotros.
+Dialogue: 0,0:00:39.00,0:00:42.00,TikTok,,0,0,0,,No dijo nada, pero dejó de sonreír.
+Dialogue: 0,0:00:43.00,0:00:44.00,TikTok,,0,0,0,,Siéntense.
+Dialogue: 0,0:00:44.00,0:00:46.00,TikTok,,0,0,0,,Voy a servir el postre.
+Dialogue: 0,0:00:46.00,0:00:48.00,TikTok,,0,0,0,,También tengo manzanas para ustedes.
+Dialogue: 0,0:00:48.00,0:00:55.50,TikTok,,0,0,0,,John empezó a comer para disimular.
+Dialogue: 0,0:00:55.50,0:00:58.50,TikTok,,0,0,0,,Bajo la mesa me apretó la mano.
+Dialogue: 0,0:00:58.50,0:01:01.50,TikTok,,0,0,0,,Creía que todo estaba saliendo como habíamos planeado.
+Dialogue: 0,0:01:01.50,0:01:04.51,TikTok,,0,0,0,,¿No vas a probar la tuya, Paul?
+Dialogue: 0,0:01:04.51,0:01:08.51,TikTok,,0,0,0,,Antes quisiera saber cuánto creen que vale esta casa.
+Dialogue: 0,0:01:08.51,0:01:13.98,TikTok,,0,0,0,,La ventana estaba abierta.
+Dialogue: 0,0:01:13.98,0:01:17.98,TikTok,,0,0,0,,Los escuché antes de que tocaran la puerta.
+Dialogue: 0,0:01:17.98,0:01:22.98,TikTok,,0,0,0,,Hasta hoy lo de desaparecer después de venderla.
+Dialogue: 0,0:01:23.98,0:01:26.98,TikTok,,0,0,0,,Ana, no me siento bien.
+Dialogue: 0,0:01:27.98,0:01:29.98,TikTok,,0,0,0,,Cambié las manzanas al servirlas.
+Dialogue: 0,0:01:29.98,0:01:33.98,TikTok,,0,0,0,,La que acabas de comerte era la que trajeron para mí.
+Dialogue: 0,0:01:33.98,0:01:39.62,TikTok,,0,0,0,,Ah, llama una ambulancia.
+Dialogue: 0,0:01:39.62,0:01:40.62,TikTok,,0,0,0,,Por favor.
+Dialogue: 0,0:01:40.62,0:01:42.62,TikTok,,0,0,0,,Mi padre no se movió.
+Dialogue: 0,0:01:42.62,0:01:44.62,TikTok,,0,0,0,,John murió delante de mí.
+Dialogue: 0,0:01:44.62,0:01:47.62,TikTok,,0,0,0,,Cuando intenté acercarme, papá me sujetó del brazo
+Dialogue: 0,0:01:47.62,0:01:49.62,TikTok,,0,0,0,,y me obligó a mirarlo.
+Dialogue: 0,0:01:49.62,0:01:52.62,TikTok,,0,0,0,,Esta vez puedes salir de mi casa, hija,
+Dialogue: 0,0:01:52.62,0:01:55.62,TikTok,,0,0,0,,pero no vuelvas a intentar matarme.
+Dialogue: 0,0:01:55.62,0:01:58.62,TikTok,,0,0,0,,No habrá una segunda advertencia.
+Dialogue: 0,0:01:58.62,0:02:00.62,TikTok,,0,0,0,,Queríamos quedarnos con su casa.
+Dialogue: 0,0:02:00.62,0:02:02.62,TikTok,,0,0,0,,Ahora no puedo pasar frente a ella
+Dialogue: 0,0:02:02.62,0:02:06.62,TikTok,,0,0,0,,sin recordar la silla vacía que dejó para mi esposo.
+Dialogue: 0,0:02:06.62,0:02:11.62,TikTok,,0,0,0,,Si quieres más historias donde la ambición termina en horror, suscríbete.

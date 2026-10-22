@@ -1,0 +1,560 @@
+{
+  "schema_version": 1,
+  "speech_activity_version": 1,
+  "sample_rate": 24000,
+  "duration": 132.36783333333332,
+  "scenes": [
+    {
+      "id": "la_visita",
+      "start": 0.0,
+      "end": 7.455958333333333
+    },
+    {
+      "id": "el_plan",
+      "start": 7.455958333333333,
+      "end": 15.036375
+    },
+    {
+      "id": "la_duda",
+      "start": 15.036375,
+      "end": 17.472333333333335
+    },
+    {
+      "id": "demasiado_tarde",
+      "start": 17.472333333333335,
+      "end": 22.751666666666665
+    },
+    {
+      "id": "bienvenida",
+      "start": 22.751666666666665,
+      "end": 31.051875
+    },
+    {
+      "id": "el_regalo",
+      "start": 31.051875,
+      "end": 36.110375
+    },
+    {
+      "id": "su_mirada",
+      "start": 36.110375,
+      "end": 43.591458333333335
+    },
+    {
+      "id": "a_la_mesa",
+      "start": 43.591458333333335,
+      "end": 49.598125
+    },
+    {
+      "id": "la_espera",
+      "start": 49.598125,
+      "end": 51.598125
+    },
+    {
+      "id": "el_primer_bocado",
+      "start": 51.598125,
+      "end": 53.598125
+    },
+    {
+      "id": "la_senal",
+      "start": 53.598125,
+      "end": 62.22345833333333
+    },
+    {
+      "id": "no_pruebas",
+      "start": 62.22345833333333,
+      "end": 64.73145833333334
+    },
+    {
+      "id": "la_pregunta",
+      "start": 64.73145833333334,
+      "end": 70.10445833333333
+    },
+    {
+      "id": "silencio_incomodo",
+      "start": 70.10445833333333,
+      "end": 71.60445833333333
+    },
+    {
+      "id": "nos_escucho",
+      "start": 71.60445833333333,
+      "end": 84.07291666666667
+    },
+    {
+      "id": "algo_va_mal",
+      "start": 84.07291666666667,
+      "end": 87.43333333333334
+    },
+    {
+      "id": "el_intercambio",
+      "start": 87.43333333333334,
+      "end": 95.27808333333333
+    },
+    {
+      "id": "jhon_cae",
+      "start": 95.27808333333333,
+      "end": 97.27808333333333
+    },
+    {
+      "id": "la_suplica",
+      "start": 97.27808333333333,
+      "end": 101.24075
+    },
+    {
+      "id": "delante_de_mi",
+      "start": 101.24075,
+      "end": 110.25120833333334
+    },
+    {
+      "id": "la_advertencia",
+      "start": 110.25120833333334,
+      "end": 119.187125
+    },
+    {
+      "id": "la_herencia",
+      "start": 119.187125,
+      "end": 126.60379166666667
+    },
+    {
+      "id": "despedida",
+      "start": 126.60379166666667,
+      "end": 132.36783333333332
+    }
+  ],
+  "blocks": [
+    {
+      "speaker": "ANA",
+      "scene": "la_visita",
+      "start": 0.0,
+      "end": 7.055958333333334,
+      "text": "Fuimos a cenar con mi padre. Él pensaba que queríamos pasar tiempo juntos. Nosotros queríamos su casa.",
+      "speech_intervals": [
+        [
+          0.3,
+          1.8800000000000001
+        ],
+        [
+          2.26,
+          4.96
+        ],
+        [
+          5.340000000000001,
+          6.8
+        ]
+      ]
+    },
+    {
+      "speaker": "JHON",
+      "scene": "el_plan",
+      "start": 7.455958333333333,
+      "end": 14.736375,
+      "text": "Sonríe y deja que coma. Cuando heredes, vendemos esta casa y desaparecemos.",
+      "speech_intervals": [
+        [
+          7.955958333333333,
+          10.055958333333333
+        ],
+        [
+          10.355958333333334,
+          11.255958333333332
+        ],
+        [
+          11.675958333333334,
+          12.935958333333334
+        ],
+        [
+          13.115958333333333,
+          14.335958333333334
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "la_duda",
+      "start": 15.036375,
+      "end": 17.072333333333333,
+      "text": "Sigue siendo mi padre, Jhon.",
+      "speech_intervals": [
+        [
+          15.376375,
+          16.756375
+        ]
+      ]
+    },
+    {
+      "speaker": "JHON",
+      "scene": "demasiado_tarde",
+      "start": 17.472333333333335,
+      "end": 22.351666666666667,
+      "text": "Debiste pensarlo antes de traer la manzana envenenada.",
+      "speech_intervals": [
+        [
+          17.812333333333335,
+          19.112333333333336
+        ],
+        [
+          19.372333333333334,
+          22.152333333333335
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "bienvenida",
+      "start": 22.751666666666665,
+      "end": 30.751875,
+      "text": "Qué sorpresa. Hacía meses que no venían los dos.",
+      "speech_intervals": [
+        [
+          23.171666666666667,
+          23.271666666666665
+        ],
+        [
+          23.371666666666666,
+          23.711666666666666
+        ],
+        [
+          23.811666666666664,
+          24.151666666666664
+        ],
+        [
+          24.251666666666665,
+          24.431666666666665
+        ],
+        [
+          25.051666666666666,
+          25.551666666666666
+        ],
+        [
+          25.691666666666666,
+          25.871666666666666
+        ],
+        [
+          26.251666666666665,
+          27.231666666666666
+        ],
+        [
+          27.291666666666664,
+          27.551666666666666
+        ],
+        [
+          27.611666666666665,
+          27.791666666666664
+        ],
+        [
+          27.931666666666665,
+          30.431666666666665
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "el_regalo",
+      "start": 31.051875,
+      "end": 35.710375,
+      "text": "Te trajimos fruta, papá. Elegí una manzana especialmente para ti.",
+      "speech_intervals": [
+        [
+          31.271874999999998,
+          32.651875
+        ],
+        [
+          32.911875,
+          35.451875
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "su_mirada",
+      "start": 36.110375,
+      "end": 43.091458333333335,
+      "text": "Mi padre miró la manzana. Después nos miró a nosotros. No dijo nada, pero dejó de sonreír.",
+      "speech_intervals": [
+        [
+          36.450375,
+          37.990375
+        ],
+        [
+          38.370374999999996,
+          40.110375
+        ],
+        [
+          40.490375,
+          41.390375
+        ],
+        [
+          41.570375,
+          41.910374999999995
+        ],
+        [
+          41.970375,
+          42.750375
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "a_la_mesa",
+      "start": 43.591458333333335,
+      "end": 49.198125,
+      "text": "Siéntense. Voy a servir el postre. También tengo manzanas para ustedes.",
+      "speech_intervals": [
+        [
+          44.29145833333334,
+          45.19145833333334
+        ],
+        [
+          45.491458333333334,
+          46.671458333333334
+        ],
+        [
+          46.97145833333334,
+          48.631458333333335
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "la_senal",
+      "start": 53.598125,
+      "end": 61.823458333333335,
+      "text": "Jhon empezó a comer para disimular. Bajo la mesa me apretó la mano. Creía que todo estaba saliendo como habíamos planeado.",
+      "speech_intervals": [
+        [
+          53.778125,
+          55.878125000000004
+        ],
+        [
+          56.25812500000001,
+          58.198125000000005
+        ],
+        [
+          58.698125000000005,
+          61.598125
+        ]
+      ]
+    },
+    {
+      "speaker": "JHON",
+      "scene": "no_pruebas",
+      "start": 62.22345833333333,
+      "end": 64.33145833333333,
+      "text": "¿No vas a probar la tuya, Paul?",
+      "speech_intervals": [
+        [
+          62.56345833333334,
+          64.02345833333334
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "la_pregunta",
+      "start": 64.73145833333334,
+      "end": 69.60445833333333,
+      "text": "Antes quisiera saber cuánto creen que vale esta casa.",
+      "speech_intervals": [
+        [
+          64.99145833333334,
+          66.57145833333334
+        ],
+        [
+          66.91145833333334,
+          68.77145833333334
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "nos_escucho",
+      "start": 71.60445833333333,
+      "end": 83.67291666666667,
+      "text": "La ventana estaba abierta. Los escuché antes de que tocaran la puerta. Hasta oí lo de desaparecer después de venderla.",
+      "speech_intervals": [
+        [
+          72.06445833333332,
+          73.68445833333332
+        ],
+        [
+          73.74445833333333,
+          74.00445833333333
+        ],
+        [
+          74.58445833333333,
+          75.44445833333333
+        ],
+        [
+          75.78445833333333,
+          77.72445833333333
+        ],
+        [
+          78.58445833333333,
+          79.56445833333332
+        ],
+        [
+          79.86445833333333,
+          81.12445833333332
+        ],
+        [
+          81.50445833333333,
+          81.84445833333332
+        ],
+        [
+          81.90445833333332,
+          83.12445833333332
+        ]
+      ]
+    },
+    {
+      "speaker": "JHON",
+      "scene": "algo_va_mal",
+      "start": 84.07291666666667,
+      "end": 87.13333333333334,
+      "text": "Ana... no me siento bien.",
+      "speech_intervals": [
+        [
+          84.37291666666667,
+          84.95291666666667
+        ],
+        [
+          85.13291666666667,
+          86.67291666666667
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "el_intercambio",
+      "start": 87.43333333333334,
+      "end": 94.77808333333333,
+      "text": "Cambié las manzanas al servirlas. La que acabas de comerte era la que trajeron para mí.",
+      "speech_intervals": [
+        [
+          88.53333333333333,
+          90.35333333333334
+        ],
+        [
+          90.89333333333333,
+          92.19333333333334
+        ],
+        [
+          92.33333333333334,
+          93.75333333333333
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "la_suplica",
+      "start": 97.27808333333333,
+      "end": 100.84075,
+      "text": "¡Papá, llama a una ambulancia! ¡Por favor!",
+      "speech_intervals": [
+        [
+          97.45808333333333,
+          97.63808333333333
+        ],
+        [
+          97.69808333333333,
+          98.03808333333333
+        ],
+        [
+          98.17808333333333,
+          99.51808333333332
+        ],
+        [
+          99.77808333333333,
+          100.55808333333333
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "delante_de_mi",
+      "start": 101.24075,
+      "end": 109.75120833333334,
+      "text": "Mi padre no se movió. Jhon murió delante de mí. Cuando intenté acercarme, papá me sujetó del brazo y me obligó a mirarlo.",
+      "speech_intervals": [
+        [
+          101.66075000000001,
+          103.00075000000001
+        ],
+        [
+          103.54075,
+          104.80075000000001
+        ],
+        [
+          105.50075000000001,
+          107.92075
+        ],
+        [
+          108.18075,
+          109.40075
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "la_advertencia",
+      "start": 110.25120833333334,
+      "end": 118.687125,
+      "text": "Esta vez puedes salir de mi casa, hija. Pero no vuelvas a intentar matarme. No habrá una segunda advertencia.",
+      "speech_intervals": [
+        [
+          110.67120833333334,
+          111.41120833333333
+        ],
+        [
+          111.47120833333334,
+          113.01120833333334
+        ],
+        [
+          113.43120833333334,
+          115.49120833333333
+        ],
+        [
+          116.23120833333334,
+          118.17120833333334
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "la_herencia",
+      "start": 119.187125,
+      "end": 126.10379166666667,
+      "text": "Queríamos quedarnos con su casa. Ahora no puedo pasar frente a ella sin recordar la silla vacía que dejó para mi esposo.",
+      "speech_intervals": [
+        [
+          119.367125,
+          121.06712499999999
+        ],
+        [
+          121.327125,
+          125.86712499999999
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "despedida",
+      "start": 126.60379166666667,
+      "end": 132.06783333333334,
+      "text": "Si quieres más historias donde la ambición termina en horror, suscríbete.",
+      "speech_intervals": [
+        [
+          126.78379166666667,
+          127.04379166666666
+        ],
+        [
+          127.66379166666667,
+          130.76379166666666
+        ],
+        [
+          131.06379166666667,
+          131.80379166666665
+        ]
+      ]
+    }
+  ]
+}

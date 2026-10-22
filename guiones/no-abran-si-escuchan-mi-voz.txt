@@ -1,0 +1,148 @@
+[TITULO]
+No abran si escuchan mi voz
+
+[MODO_VIDEO]
+stick
+
+[PORCENTAJE_MINIMO_STICK]
+100
+
+[PERMITIR_FONDOS_AUTOMATICOS]
+no
+
+[RESOLUCION]
+1080x1920
+
+[VOZ_QWEN]
+Uncle_Fu
+
+[MUSICA]
+misterius.mp3
+
+[VOLUMEN_MUSICA]
+0.09
+
+[ESTILO_VISUAL]
+Terror sobrenatural nocturno con los personajes existentes. Paul cuenta lo sucedido en primera persona. Mantener las apariencias, usar únicamente fondos y sonidos disponibles. Las voces del otro lado de la puerta no representan personajes adicionales visibles.
+
+[NEGATIVE_PROMPT]
+gore, sangre, texto añadido, marcas de agua, personajes adicionales, anatomía deformada
+
+[IMAGEN_FINAL]
+voces.png
+
+[DURACION_IMAGEN_FINAL]
+6
+
+[USAR_EFECTOS_SONIDO]
+si
+
+[VOLUMEN_EFECTOS]
+0.30
+
+[MAX_EFECTOS_SONIDO]
+40
+
+[CAST]
+ANA = humanoids/ana_young_woman
+JHON = humanoids/jhon_young_man
+PAUL = humanoids/paul_old_man
+
+[GUION]
+[ESCENA advertencia | FONDO=house_interior | PLANO=face:PAUL]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.4]
+Si esta noche escuchan mi voz pidiendo ayuda afuera de mi casa, no abran. Yo sigo aquí dentro.
+
+[ESCENA la_visita | FONDO=house_interior]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.3]
+Ana y Jhon vinieron a visitarme durante el apagón. Estábamos los tres en la sala cuando alguien tocó la puerta.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA acercarse | FONDO=house_interior | DURACION=2]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=side_walk | POSICION=3 | MIRA=right | MOVIMIENTO=right | VELOCIDAD=22]
+
+[ESCENA quien_es | FONDO=house_interior | PLANO=face:JHON]
+[PAUL | ACCION=idle | POSICION=1]
+[JHON | ACCION=speak_front | POSICION=2 | VOZ=Eric | PAUSA=0.4]
+¿Quién anda ahí?
+
+[ESCENA mi_voz | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.5]
+La respuesta llegó desde afuera. Era mi voz. Dijo que había olvidado las llaves y que tenía mucho frío.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA no_respondas | FONDO=house_interior]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.3]
+Jhon, aléjate de la puerta. Pase lo que pase, no le respondas.
+[JHON | ACCION=afraid | POSICION=3]
+
+[ESCENA la_pregunta | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.4]
+Paul... ¿por qué sabe que estamos aquí?
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA el_secreto | FONDO=house_interior | PLANO=face:PAUL]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.4]
+Porque lleva años escuchando. Antes imitaba a mi esposa. Pero esta es la primera vez que usa mi voz.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA comprobar | FONDO=house_interior | DURACION=2]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=use_phone | POSICION=3 | MIRA=left]
+
+[ESCENA sin_senal | FONDO=house_interior | PLANO=face:JHON]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=speak_front | POSICION=3 | VOZ=Eric | PAUSA=0.4]
+No tengo señal. Espera... hay un mensaje de Ana. Dice que no va a poder venir.
+
+[ESCENA ella_aqui | FONDO=house_interior]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.5]
+Miré a Ana. Seguía sentada a mi lado. Sonreía. Entonces volvieron a llamar, y esta vez escuchamos su voz desde la calle.
+[JHON | ACCION=afraid | POSICION=3]
+
+[ESCENA ana_contesta | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front | POSICION=1 | VOZ=Serena | PAUSA=0.4]
+No le hagan caso. Ahora también puede imitarme a mí.
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA la_duda | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.5]
+Le pregunté qué habíamos cenado el viernes anterior. Su sonrisa desapareció. Yo nunca les había contado que aquello solo podía repetir lo que oía.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA jhon_entiende | FONDO=house_interior | PLANO=face:JHON]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=speak_front | POSICION=3 | VOZ=Eric | PAUSA=0.5]
+Paul... tú tampoco cenaste con nosotros. Te conocimos hoy.
+
+[ESCENA recuerdo | FONDO=house_interior]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.5]
+Tenía razón. Recordaba sus nombres y sus voces, pero no recordaba haberles abierto la puerta. Ni haber encendido la luz. Ni haber llegado a esta casa.
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA quien_esta_afuera | FONDO=house_interior | PLANO=face:PAUL]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.6]
+Entonces lo entendí. La voz de afuera no me estaba imitando. Era el verdadero Paul, pidiendo que lo dejáramos entrar.
+
+[ESCENA quedarse | FONDO=house_interior | DURACION=2]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA despedida | FONDO=house_interior | PLANO=face:PAUL]
+[PAUL | ACCION=speak_front | POSICION=2 | VOZ=Uncle_Fu | PAUSA=0.4]
+Por eso te lo advierto: si escuchas mi voz, no abras. Y si quieres saber quién te está contando esta historia... suscríbete.
