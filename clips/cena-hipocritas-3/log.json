@@ -1,0 +1,1979 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {
+      "run_id": "3786920d-c258-4183-8b89-46e101d3295b",
+      "started_at": "2026-10-22T16:08:59-06:00",
+      "finished_at": "2026-10-22T16:08:59-06:00",
+      "status": "failed",
+      "title": "cena hipocritas 3",
+      "mode": "guion",
+      "input": "cena-hipocrita-3.txt",
+      "duration_target_seconds": null,
+      "events": [
+        {
+          "at": "2026-10-22T16:08:59-06:00",
+          "event": "generation_started"
+        },
+        {
+          "at": "2026-10-22T16:08:59-06:00",
+          "event": "generation_failed"
+        }
+      ],
+      "error": {
+        "type": "ValueError",
+        "message": "Acción 'surprised' no disponible para humanoids/tomy_teenager. Disponibles: ['afraid', 'back_walk', 'block', 'cooking', 'cry', 'dancing', 'diving', 'drink', 'dying', 'eat', 'fall', 'fight', 'front_point', 'front_walk', 'hiding', 'idle', 'idle_closeup', 'kissing_a_man', 'kissing_a_woman', 'knock_knock', 'open_door', 'run', 'shooting_a_gun', 'shooting_a_machine_gun', 'side_point', 'side_walk', 'sleep', 'smoke', 'sneaking', 'speak_front', 'speak_front_closeup', 'speak_side', 'take_a_shower', 'turn_arround', 'use_phone', 'using_laptop', 'walk']",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\main.py\", line 1299, in crear_clip\n    resultado = _crear_clip_sin_log(\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\main.py\", line 958, in _crear_clip_sin_log\n    guion, cambios = preparar_guion_visual(\n                     ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\guion_escenas.py\", line 282, in preparar_guion_visual\n    validate_scenes(original, cast, assets, validate_resources=False)\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\guion_escenas.py\", line 227, in validate_scenes\n    scene_characters(scene, cast, assets)\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\guion_escenas.py\", line 180, in scene_characters\n    spec = {\"id\": name, \"type\": asset, \"action\": assets.action(asset, fields.get(\"ACCION\", assets.default_action(asset)))[\"name\"],\n                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\stick_engine\\assets.py\", line 228, in action\n    raise ValueError(f\"Acción {action_name!r} no disponible para {character_type}. Disponibles: {sorted(actions)}\")\nValueError: Acción 'surprised' no disponible para humanoids/tomy_teenager. Disponibles: ['afraid', 'back_walk', 'block', 'cooking', 'cry', 'dancing', 'diving', 'drink', 'dying', 'eat', 'fall', 'fight', 'front_point', 'front_walk', 'hiding', 'idle', 'idle_closeup', 'kissing_a_man', 'kissing_a_woman', 'knock_knock', 'open_door', 'run', 'shooting_a_gun', 'shooting_a_machine_gun', 'side_point', 'side_walk', 'sleep', 'smoke', 'sneaking', 'speak_front', 'speak_front_closeup', 'speak_side', 'take_a_shower', 'turn_arround', 'use_phone', 'using_laptop', 'walk']\n"
+      },
+      "artifacts": []
+    },
+    {
+      "run_id": "a66337f9-3a70-4502-8697-43c892922741",
+      "started_at": "2026-10-22T16:10:06-06:00",
+      "finished_at": "2026-10-22T16:21:41-06:00",
+      "status": "completed",
+      "title": "cena hipocritas 3",
+      "mode": "guion",
+      "input": "cena-hipocrita-3.txt",
+      "duration_target_seconds": null,
+      "events": [
+        {
+          "at": "2026-10-22T16:10:06-06:00",
+          "event": "generation_started"
+        },
+        {
+          "at": "2026-10-22T16:21:41-06:00",
+          "event": "generation_completed"
+        }
+      ],
+      "error": null,
+      "artifacts": [
+        {
+          "path": "audio.timeline.json",
+          "size_bytes": 11124,
+          "sha256": "84cd6c195ded67872257e5bdb2aad2596b91aac99c52f421650d7e19a90b9f22",
+          "type": "json",
+          "content": {
+            "schema_version": 1,
+            "speech_activity_version": 1,
+            "sample_rate": 24000,
+            "duration": 104.31195833333334,
+            "scenes": [
+              {
+                "id": "tomas_revelacion",
+                "start": 0.0,
+                "end": 8.00975
+              },
+              {
+                "id": "ana_nerviosa",
+                "start": 8.00975,
+                "end": 9.50975
+              },
+              {
+                "id": "ana_advierte",
+                "start": 9.50975,
+                "end": 13.028333333333334
+              },
+              {
+                "id": "tomas_bomba",
+                "start": 13.028333333333334,
+                "end": 21.039791666666666
+              },
+              {
+                "id": "juan_reaccion",
+                "start": 21.039791666666666,
+                "end": 22.539791666666666
+              },
+              {
+                "id": "juan_incredulo",
+                "start": 22.539791666666666,
+                "end": 28.233791666666665
+              },
+              {
+                "id": "ana_confiesa",
+                "start": 28.233791666666665,
+                "end": 35.913583333333335
+              },
+              {
+                "id": "pablo_interviene",
+                "start": 35.913583333333335,
+                "end": 41.015125
+              },
+              {
+                "id": "tomas_telefono",
+                "start": 41.015125,
+                "end": 42.515125
+              },
+              {
+                "id": "tomas_prueba",
+                "start": 42.515125,
+                "end": 49.00179166666667
+              },
+              {
+                "id": "juan_explota",
+                "start": 49.00179166666667,
+                "end": 53.97208333333333
+              },
+              {
+                "id": "ana_senala",
+                "start": 53.97208333333333,
+                "end": 55.47208333333333
+              },
+              {
+                "id": "ana_contraataca",
+                "start": 55.47208333333333,
+                "end": 61.457208333333334
+              },
+              {
+                "id": "pablo_sospecha",
+                "start": 61.457208333333334,
+                "end": 65.833625
+              },
+              {
+                "id": "tomas_silencio",
+                "start": 65.833625,
+                "end": 67.333625
+              },
+              {
+                "id": "tomas_explicacion",
+                "start": 67.333625,
+                "end": 74.26341666666667
+              },
+              {
+                "id": "juan_confundido",
+                "start": 74.26341666666667,
+                "end": 78.35383333333333
+              },
+              {
+                "id": "ana_confesion",
+                "start": 78.35383333333333,
+                "end": 83.55370833333333
+              },
+              {
+                "id": "pablo_asustado",
+                "start": 83.55370833333333,
+                "end": 85.05370833333333
+              },
+              {
+                "id": "juan_pregunta",
+                "start": 85.05370833333333,
+                "end": 87.48145833333334
+              },
+              {
+                "id": "ana_giro",
+                "start": 87.48145833333334,
+                "end": 92.756875
+              },
+              {
+                "id": "tomas_reacciona",
+                "start": 92.756875,
+                "end": 94.256875
+              },
+              {
+                "id": "tomas_final",
+                "start": 94.256875,
+                "end": 104.31195833333334
+              }
+            ],
+            "blocks": [
+              {
+                "speaker": "TOMAS",
+                "scene": "tomas_revelacion",
+                "start": 0.0,
+                "end": 7.70975,
+                "text": "Bueno, caras de pija. Ya que aquí todos están confesando sus mierdas, ¿quieren saber con quién andaba saliendo Ana?",
+                "speech_intervals": [
+                  [
+                    0.33999999999999997,
+                    1.56
+                  ],
+                  [
+                    2.26,
+                    4.88
+                  ],
+                  [
+                    5.340000000000001,
+                    7.32
+                  ],
+                  [
+                    7.380000000000001,
+                    7.68
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "ana_advierte",
+                "start": 9.50975,
+                "end": 12.728333333333333,
+                "text": "Tomás, no empecés a hablar pendejadas. Cerrá la boca.",
+                "speech_intervals": [
+                  [
+                    9.52975,
+                    11.66975
+                  ],
+                  [
+                    11.84975,
+                    12.42975
+                  ]
+                ]
+              },
+              {
+                "speaker": "TOMAS",
+                "scene": "tomas_bomba",
+                "start": 13.028333333333334,
+                "end": 20.739791666666665,
+                "text": "Tu querida Ana era la sugar baby de don Ernesto. El papá de Juan. ¡Sí, maje, tu propio tata!",
+                "speech_intervals": [
+                  [
+                    13.088333333333335,
+                    14.228333333333333
+                  ],
+                  [
+                    14.488333333333333,
+                    15.508333333333335
+                  ],
+                  [
+                    15.648333333333333,
+                    16.228333333333335
+                  ],
+                  [
+                    16.408333333333335,
+                    17.668333333333333
+                  ],
+                  [
+                    18.008333333333333,
+                    19.068333333333335
+                  ],
+                  [
+                    19.368333333333336,
+                    20.73979166666667
+                  ]
+                ]
+              },
+              {
+                "speaker": "JUAN",
+                "scene": "juan_incredulo",
+                "start": 22.539791666666666,
+                "end": 27.933791666666668,
+                "text": "¡No jodás! ¿Mi papá? ¡Ese viejo tiene setenta años! Ana, decime que este cara de pija está mintiendo.",
+                "speech_intervals": [
+                  [
+                    22.759791666666665,
+                    23.899791666666665
+                  ],
+                  [
+                    23.999791666666667,
+                    25.459791666666668
+                  ],
+                  [
+                    25.679791666666667,
+                    26.059791666666666
+                  ],
+                  [
+                    26.119791666666664,
+                    27.933791666666664
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "ana_confiesa",
+                "start": 28.233791666666665,
+                "end": 35.51358333333334,
+                "text": "Fue antes de casarme con vos, Juan. Don Ernesto me ayudaba con la universidad y me depositaba plata. Yo no sabía que era tu papá.",
+                "speech_intervals": [
+                  [
+                    28.233791666666665,
+                    30.553791666666665
+                  ],
+                  [
+                    30.613791666666664,
+                    33.63379166666667
+                  ],
+                  [
+                    33.73379166666666,
+                    34.15379166666666
+                  ],
+                  [
+                    34.33379166666666,
+                    35.51358333333333
+                  ]
+                ]
+              },
+              {
+                "speaker": "PABLO",
+                "scene": "pablo_interviene",
+                "start": 35.913583333333335,
+                "end": 40.715125,
+                "text": "¡A la gran puta! ¿Y ese viejo qué? ¿Tiene una fundación de becas o qué jodidos?",
+                "speech_intervals": [
+                  [
+                    35.913583333333335,
+                    36.67358333333333
+                  ],
+                  [
+                    36.773583333333335,
+                    37.75358333333334
+                  ],
+                  [
+                    38.29358333333334,
+                    40.593583333333335
+                  ]
+                ]
+              },
+              {
+                "speaker": "TOMAS",
+                "scene": "tomas_prueba",
+                "start": 42.515125,
+                "end": 48.701791666666665,
+                "text": "¿Antes? Miren este depósito de la semana pasada. Treinta mil bolas. Y dice: para mi princesa.",
+                "speech_intervals": [
+                  [
+                    42.575125,
+                    46.395125
+                  ],
+                  [
+                    46.735125,
+                    47.155125
+                  ],
+                  [
+                    47.375125,
+                    48.275124999999996
+                  ]
+                ]
+              },
+              {
+                "speaker": "JUAN",
+                "scene": "juan_explota",
+                "start": 49.00179166666667,
+                "end": 53.67208333333333,
+                "text": "¡Comé mierda vos, Ana! ¡Yo pagando ese pija de carro y mi papá manteniéndote a escondidas!",
+                "speech_intervals": [
+                  [
+                    49.00179166666667,
+                    51.88179166666667
+                  ],
+                  [
+                    51.94179166666667,
+                    53.67208333333333
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "ana_contraataca",
+                "start": 55.47208333333333,
+                "end": 61.15720833333334,
+                "text": "¡No me vengás a reclamar, Juan! Vos te gastaste nuestros ahorros con mi mejor amiga. ¡No tenés cara para decirme nada!",
+                "speech_intervals": [
+                  [
+                    55.49208333333333,
+                    59.39208333333333
+                  ],
+                  [
+                    59.53208333333333,
+                    60.312083333333334
+                  ],
+                  [
+                    60.37208333333333,
+                    61.15208333333333
+                  ]
+                ]
+              },
+              {
+                "speaker": "PABLO",
+                "scene": "pablo_sospecha",
+                "start": 61.457208333333334,
+                "end": 65.533625,
+                "text": "Espérense. ¿Y cómo putas consiguió Tomás los movimientos bancarios de Ana?",
+                "speech_intervals": [
+                  [
+                    61.47720833333334,
+                    62.137208333333334
+                  ],
+                  [
+                    62.35720833333333,
+                    65.25720833333334
+                  ]
+                ]
+              },
+              {
+                "speaker": "TOMAS",
+                "scene": "tomas_explicacion",
+                "start": 67.333625,
+                "end": 73.96341666666666,
+                "text": "Porque don Ernesto me los mandó. Me dijo que tenía que enseñarles algo antes de que firmaran los papeles de la casa.",
+                "speech_intervals": [
+                  [
+                    67.43362499999999,
+                    73.96341666666666
+                  ]
+                ]
+              },
+              {
+                "speaker": "JUAN",
+                "scene": "juan_confundido",
+                "start": 74.26341666666667,
+                "end": 78.05383333333333,
+                "text": "¿Cuáles papeles? Esa casa está a mi nombre. Mi papá no tiene nada que ver.",
+                "speech_intervals": [
+                  [
+                    74.32341666666667,
+                    75.14341666666667
+                  ],
+                  [
+                    75.36341666666667,
+                    76.42341666666667
+                  ],
+                  [
+                    76.52341666666668,
+                    78.05383333333334
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "ana_confesion",
+                "start": 78.35383333333333,
+                "end": 83.15370833333333,
+                "text": "Juan... hay algo que no te he contado. Don Ernesto pagó la prima de esa casa. Pero puso una condición.",
+                "speech_intervals": [
+                  [
+                    78.37383333333332,
+                    78.87383333333332
+                  ],
+                  [
+                    78.93383333333333,
+                    82.07383333333333
+                  ],
+                  [
+                    82.13383333333333,
+                    83.15370833333333
+                  ]
+                ]
+              },
+              {
+                "speaker": "JUAN",
+                "scene": "juan_pregunta",
+                "start": 85.05370833333333,
+                "end": 87.18145833333334,
+                "text": "¿Qué condición, Ana? Hablá de una vez, no jodás.",
+                "speech_intervals": [
+                  [
+                    85.05370833333333,
+                    87.18145833333334
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "ana_giro",
+                "start": 87.48145833333334,
+                "end": 92.356875,
+                "text": "Que el día que nos separáramos, la casa pasaría a nombre de alguien más. Y esa persona está aquí sentada.",
+                "speech_intervals": [
+                  [
+                    87.48145833333334,
+                    88.72145833333333
+                  ],
+                  [
+                    88.86145833333333,
+                    90.80145833333333
+                  ],
+                  [
+                    90.98145833333334,
+                    92.356875
+                  ]
+                ]
+              },
+              {
+                "speaker": "TOMAS",
+                "scene": "tomas_final",
+                "start": 94.256875,
+                "end": 103.91195833333333,
+                "text": "¡A la gran pucha! Y ustedes peleando por cinco mil bolas. ¿Quién se va a quedar con la casa? Suscríbanse para la parte cuatro, porque este vergueo apenas comienza.",
+                "speech_intervals": [
+                  [
+                    94.436875,
+                    97.816875
+                  ],
+                  [
+                    98.19687499999999,
+                    99.50795833333333
+                  ],
+                  [
+                    99.90795833333333,
+                    101.08795833333333
+                  ],
+                  [
+                    101.22795833333333,
+                    103.88795833333333
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "audio.wav",
+          "size_bytes": 5007018,
+          "sha256": "ddaf0998293a37138e21cd5ac73d75a72bcfb08c339a375bb86bdc812305a776",
+          "type": "wav"
+        },
+        {
+          "path": "cambios_recursos.json",
+          "size_bytes": 1479,
+          "sha256": "9d18a5bfcabc066ed4e62fd536231123832cf36234920e012f4c046ddbef3933",
+          "type": "json",
+          "content": [
+            "Escena tomas_revelacion: SFX '(automático)' -> 'vine-dramatic-boom-sound-effect@0.3'",
+            "Escena ana_nerviosa: SFX '(automático)' -> 'none'",
+            "Escena ana_advierte: SFX '(automático)' -> 'none'",
+            "Escena tomas_bomba: SFX '(automático)' -> 'vine-dramatic-boom-sound-effect@0.3'",
+            "Escena juan_reaccion: SFX '(automático)' -> 'scary-violin@0.2'",
+            "Escena juan_incredulo: SFX '(automático)' -> 'none'",
+            "Escena ana_confiesa: SFX '(automático)' -> 'none'",
+            "Escena pablo_interviene: SFX '(automático)' -> 'none'",
+            "Escena tomas_telefono: SFX '(automático)' -> 'whatsapp-notificacion@0.5'",
+            "Escena tomas_prueba: SFX '(automático)' -> 'none'",
+            "Escena juan_explota: SFX '(automático)' -> 'none'",
+            "Escena ana_senala: SFX '(automático)' -> 'none'",
+            "Escena ana_contraataca: SFX '(automático)' -> 'none'",
+            "Escena pablo_sospecha: SFX '(automático)' -> 'none'",
+            "Escena tomas_silencio: SFX '(automático)' -> 'none'",
+            "Escena tomas_explicacion: SFX '(automático)' -> 'none'",
+            "Escena juan_confundido: SFX '(automático)' -> 'none'",
+            "Escena ana_confesion: SFX '(automático)' -> 'none'",
+            "Escena pablo_asustado: SFX '(automático)' -> 'none'",
+            "Escena juan_pregunta: SFX '(automático)' -> 'none'",
+            "Escena ana_giro: SFX '(automático)' -> 'vine-dramatic-boom-sound-effect@0.3'",
+            "Escena tomas_reacciona: SFX '(automático)' -> 'scary-violin@0.2'",
+            "Escena tomas_final: SFX '(automático)' -> 'none'"
+          ]
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 1245,
+          "sha256": "e006e0df1d2630fcc6a6eb1eaa73c26560ce7652c5e0fb1e35afeaeb86452ae4",
+          "type": "json",
+          "content": {
+            "titulo": "cena hipocritas 3",
+            "resolucion": "1080x1920",
+            "musica": "misterius.mp3",
+            "volumen_musica": 0.04,
+            "estilo_visual": "Comedia negra hondureña. Continuación inmediata de la discusión familiar en casa de Pablo, Tegucigalpa. Ana, Juan, Pablo y Tomás siguen en la sala. Juan está furioso, Ana nerviosa, Pablo indignado y Tomás disfruta provocando a todos. Alternar acercamientos de rostro, planos grupales, gestos, señalamientos y uso del celular. Mantener los personajes originales y la continuidad de vestuario.",
+            "paleta": "",
+            "seed": null,
+            "negative_prompt": "",
+            "cast": {
+              "ANA": "humanoids/ana_young_woman",
+              "JUAN": "humanoids/jhon_young_man",
+              "PABLO": "humanoids/paul_old_man",
+              "TOMAS": "humanoids/tomy_teenager"
+            },
+            "personajes": {
+              "ANA": "humanoids/ana_young_woman",
+              "JUAN": "humanoids/jhon_young_man",
+              "PABLO": "humanoids/paul_old_man",
+              "TOMAS": "humanoids/tomy_teenager"
+            },
+            "modo_video": "stick",
+            "voz_qwen": "Ryan",
+            "porcentaje_minimo_stick": 100.0,
+            "permitir_fondos_automaticos": false,
+            "usar_efectos_sonido": true,
+            "volumen_efectos": 0.2,
+            "max_efectos_sonido": 10,
+            "imagen_final": "",
+            "duracion_imagen_final": 4.0
+          }
+        },
+        {
+          "path": "guion.txt",
+          "size_bytes": 5015,
+          "sha256": "7ddfabd0d836648077ce2bfe1b00f50d849edd39556797106143a71c68a27b82",
+          "type": "txt",
+          "content_text": "[GUION]\n[ESCENA tomas_revelacion | FONDO=honduras_house | SFX=vine-dramatic-boom-sound-effect@0.3 | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\nBueno, caras de pija. Ya que aquí todos están confesando sus mierdas, ¿quieren saber con quién andaba saliendo Ana?\n\n[ESCENA ana_nerviosa | FONDO=honduras_house | DURACION=1.5]\n[ANA | ACCION=afraid | POSICION=1]\n[TOMAS | ACCION=front_point | POSICION=2]\n\n[ESCENA ana_advierte | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\nTomás, no empecés a hablar pendejadas. Cerrá la boca.\n\n[ESCENA tomas_bomba | FONDO=honduras_house | SFX=vine-dramatic-boom-sound-effect@0.3 | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\nTu querida Ana era la sugar baby de don Ernesto. El papá de Juan. ¡Sí, maje, tu propio tata!\n\n[ESCENA juan_reaccion | FONDO=honduras_house | SFX=scary-violin@0.2 | DURACION=1.5]\n[JUAN | ACCION=afraid | POSICION=2]\n[PABLO | ACCION=afraid | POSICION=3]\n\n[ESCENA juan_incredulo | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\n¡No jodás! ¿Mi papá? ¡Ese viejo tiene setenta años! Ana, decime que este cara de pija está mintiendo.\n\n[ESCENA ana_confiesa | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]\nFue antes de casarme con vos, Juan. Don Ernesto me ayudaba con la universidad y me depositaba plata. Yo no sabía que era tu papá.\n\n[ESCENA pablo_interviene | FONDO=honduras_house | PLANO=face:PABLO]\n[PABLO | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\n¡A la gran puta! ¿Y ese viejo qué? ¿Tiene una fundación de becas o qué jodidos?\n\n[ESCENA tomas_telefono | FONDO=honduras_house | SFX=whatsapp-notificacion@0.5 | DURACION=1.5]\n[TOMAS | ACCION=use_phone | POSICION=2]\n[JUAN | ACCION=idle | POSICION=3]\n\n[ESCENA tomas_prueba | FONDO=honduras_house | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\n¿Antes? Miren este depósito de la semana pasada. Treinta mil bolas. Y dice: para mi princesa.\n\n[ESCENA juan_explota | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\n¡Comé mierda vos, Ana! ¡Yo pagando ese pija de carro y mi papá manteniéndote a escondidas!\n\n[ESCENA ana_senala | FONDO=honduras_house | DURACION=1.5]\n[ANA | ACCION=front_point | POSICION=1]\n[JUAN | ACCION=afraid | POSICION=3]\n\n[ESCENA ana_contraataca | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\n¡No me vengás a reclamar, Juan! Vos te gastaste nuestros ahorros con mi mejor amiga. ¡No tenés cara para decirme nada!\n\n[ESCENA pablo_sospecha | FONDO=honduras_house | PLANO=face:PABLO]\n[PABLO | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\nEspérense. ¿Y cómo putas consiguió Tomás los movimientos bancarios de Ana?\n\n[ESCENA tomas_silencio | FONDO=honduras_house | DURACION=1.5]\n[TOMAS | ACCION=afraid | POSICION=2]\n\n[ESCENA tomas_explicacion | FONDO=honduras_house | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\nPorque don Ernesto me los mandó. Me dijo que tenía que enseñarles algo antes de que firmaran los papeles de la casa.\n\n[ESCENA juan_confundido | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\n¿Cuáles papeles? Esa casa está a mi nombre. Mi papá no tiene nada que ver.\n\n[ESCENA ana_confesion | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]\nJuan... hay algo que no te he contado. Don Ernesto pagó la prima de esa casa. Pero puso una condición.\n\n[ESCENA pablo_asustado | FONDO=honduras_house | DURACION=1.5]\n[PABLO | ACCION=afraid | POSICION=2]\n[JUAN | ACCION=afraid | POSICION=3]\n\n[ESCENA juan_pregunta | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\n¿Qué condición, Ana? Hablá de una vez, no jodás.\n\n[ESCENA ana_giro | FONDO=honduras_house | SFX=vine-dramatic-boom-sound-effect@0.3 | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]\nQue el día que nos separáramos, la casa pasaría a nombre de alguien más. Y esa persona está aquí sentada.\n\n[ESCENA tomas_reacciona | FONDO=honduras_house | SFX=scary-violin@0.2 | DURACION=1.5]\n[TOMAS | ACCION=afraid | POSICION=2]\n\n[ESCENA tomas_final | FONDO=honduras_house | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]\n¡A la gran pucha! Y ustedes peleando por cinco mil bolas. ¿Quién se va a quedar con la casa? Suscríbanse para la parte cuatro, porque este vergueo apenas comienza.\n"
+        },
+        {
+          "path": "guion_adaptado.txt",
+          "size_bytes": 5718,
+          "sha256": "756df85238bc3ec6d5688b03ef9120be3b30fd105c34c9db67a2f5b91054db6f",
+          "type": "txt",
+          "content_text": "[TITULO]\nLa cena de los hipócritas 3: El secreto de Ana\n\n[MODO_VIDEO]\nstick\n\n[PORCENTAJE_MINIMO_STICK]\n100\n\n[PERMITIR_FONDOS_AUTOMATICOS]\nno\n\n[RESOLUCION]\n1080x1920\n\n[MUSICA]\nmisterius.mp3\n\n[VOLUMEN_MUSICA]\n0.04\n\n[ESTILO_VISUAL]\nComedia negra hondureña. Continuación inmediata de la discusión familiar en casa de Pablo, Tegucigalpa. Ana, Juan, Pablo y Tomás siguen en la sala. Juan está furioso, Ana nerviosa, Pablo indignado y Tomás disfruta provocando a todos. Alternar acercamientos de rostro, planos grupales, gestos, señalamientos y uso del celular. Mantener los personajes originales y la continuidad de vestuario.\n\n[USAR_EFECTOS_SONIDO]\nsi\n\n[VOLUMEN_EFECTOS]\n0.20\n\n[MAX_EFECTOS_SONIDO]\n10\n\n[CAST]\nANA = humanoids/ana_young_woman\nJUAN = humanoids/jhon_young_man\nPABLO = humanoids/paul_old_man\nTOMAS = humanoids/tomy_teenager\n\n[GUION]\n[ESCENA tomas_revelacion | FONDO=honduras_house | SFX=vine-dramatic-boom-sound-effect@0.3 | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nBueno, caras de pija. Ya que aquí todos están confesando sus mierdas, ¿quieren saber con quién andaba saliendo Ana?\n\n[ESCENA ana_nerviosa | FONDO=honduras_house | DURACION=1.5]\n[ANA | ACCION=afraid | POSICION=1]\n[TOMAS | ACCION=front_point | POSICION=2]\n\n[ESCENA ana_advierte | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nTomás, no empecés a hablar pendejadas. Cerrá la boca.\n\n[ESCENA tomas_bomba | FONDO=honduras_house | SFX=vine-dramatic-boom-sound-effect@0.3 | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nTu querida Ana era la sugar baby de don Ernesto. El papá de Juan. ¡Sí, maje, tu propio tata!\n\n[ESCENA juan_reaccion | FONDO=honduras_house | SFX=scary-violin@0.2 | DURACION=1.5]\n[JUAN | ACCION=afraid | POSICION=2]\n[PABLO | ACCION=afraid | POSICION=3]\n\n[ESCENA juan_incredulo | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡No jodás! ¿Mi papá? ¡Ese viejo tiene setenta años! Ana, decime que este cara de pija está mintiendo.\n\n[ESCENA ana_confiesa | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nFue antes de casarme con vos, Juan. Don Ernesto me ayudaba con la universidad y me depositaba plata. Yo no sabía que era tu papá.\n\n[ESCENA pablo_interviene | FONDO=honduras_house | PLANO=face:PABLO]\n[PABLO | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡A la gran puta! ¿Y ese viejo qué? ¿Tiene una fundación de becas o qué jodidos?\n\n[ESCENA tomas_telefono | FONDO=honduras_house | SFX=whatsapp-notificacion@0.5 | DURACION=1.5]\n[TOMAS | ACCION=use_phone | POSICION=2]\n[JUAN | ACCION=idle | POSICION=3]\n\n[ESCENA tomas_prueba | FONDO=honduras_house | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¿Antes? Miren este depósito de la semana pasada. Treinta mil bolas. Y dice: para mi princesa.\n\n[ESCENA juan_explota | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡Comé mierda vos, Ana! ¡Yo pagando ese pija de carro y mi papá manteniéndote a escondidas!\n\n[ESCENA ana_senala | FONDO=honduras_house | DURACION=1.5]\n[ANA | ACCION=front_point | POSICION=1]\n[JUAN | ACCION=afraid | POSICION=3]\n\n[ESCENA ana_contraataca | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡No me vengás a reclamar, Juan! Vos te gastaste nuestros ahorros con mi mejor amiga. ¡No tenés cara para decirme nada!\n\n[ESCENA pablo_sospecha | FONDO=honduras_house | PLANO=face:PABLO]\n[PABLO | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nEspérense. ¿Y cómo putas consiguió Tomás los movimientos bancarios de Ana?\n\n[ESCENA tomas_silencio | FONDO=honduras_house | DURACION=1.5]\n[TOMAS | ACCION=afraid | POSICION=2]\n\n[ESCENA tomas_explicacion | FONDO=honduras_house | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nPorque don Ernesto me los mandó. Me dijo que tenía que enseñarles algo antes de que firmaran los papeles de la casa.\n\n[ESCENA juan_confundido | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¿Cuáles papeles? Esa casa está a mi nombre. Mi papá no tiene nada que ver.\n\n[ESCENA ana_confesion | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nJuan... hay algo que no te he contado. Don Ernesto pagó la prima de esa casa. Pero puso una condición.\n\n[ESCENA pablo_asustado | FONDO=honduras_house | DURACION=1.5]\n[PABLO | ACCION=afraid | POSICION=2]\n[JUAN | ACCION=afraid | POSICION=3]\n\n[ESCENA juan_pregunta | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¿Qué condición, Ana? Hablá de una vez, no jodás.\n\n[ESCENA ana_giro | FONDO=honduras_house | SFX=vine-dramatic-boom-sound-effect@0.3 | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nQue el día que nos separáramos, la casa pasaría a nombre de alguien más. Y esa persona está aquí sentada.\n\n[ESCENA tomas_reacciona | FONDO=honduras_house | SFX=scary-violin@0.2 | DURACION=1.5]\n[TOMAS | ACCION=afraid | POSICION=2]\n\n[ESCENA tomas_final | FONDO=honduras_house | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\n¡A la gran pucha! Y ustedes peleando por cinco mil bolas. ¿Quién se va a quedar con la casa? Suscríbanse para la parte cuatro, porque este vergueo apenas comienza.\n"
+        },
+        {
+          "path": "guion_limpio.txt",
+          "size_bytes": 1705,
+          "sha256": "1a3f413d3890ec19c6f72ae854264806ff82c63919c344d50343df4e46c9950d",
+          "type": "txt",
+          "content_text": "Bueno, caras de pija. Ya que aquí todos están confesando sus mierdas, ¿quieren saber con quién andaba saliendo Ana?\n\n\n\nTomás, no empecés a hablar pendejadas. Cerrá la boca.\n\nTu querida Ana era la sugar baby de don Ernesto. El papá de Juan. ¡Sí, maje, tu propio tata!\n\n\n\n¡No jodás! ¿Mi papá? ¡Ese viejo tiene setenta años! Ana, decime que este cara de pija está mintiendo.\n\nFue antes de casarme con vos, Juan. Don Ernesto me ayudaba con la universidad y me depositaba plata. Yo no sabía que era tu papá.\n\n¡A la gran puta! ¿Y ese viejo qué? ¿Tiene una fundación de becas o qué jodidos?\n\n\n\n¿Antes? Miren este depósito de la semana pasada. Treinta mil bolas. Y dice: para mi princesa.\n\n¡Comé mierda vos, Ana! ¡Yo pagando ese pija de carro y mi papá manteniéndote a escondidas!\n\n\n\n¡No me vengás a reclamar, Juan! Vos te gastaste nuestros ahorros con mi mejor amiga. ¡No tenés cara para decirme nada!\n\nEspérense. ¿Y cómo putas consiguió Tomás los movimientos bancarios de Ana?\n\n\n\nPorque don Ernesto me los mandó. Me dijo que tenía que enseñarles algo antes de que firmaran los papeles de la casa.\n\n¿Cuáles papeles? Esa casa está a mi nombre. Mi papá no tiene nada que ver.\n\nJuan... hay algo que no te he contado. Don Ernesto pagó la prima de esa casa. Pero puso una condición.\n\n\n\n¿Qué condición, Ana? Hablá de una vez, no jodás.\n\nQue el día que nos separáramos, la casa pasaría a nombre de alguien más. Y esa persona está aquí sentada.\n\n\n\n¡A la gran pucha! Y ustedes peleando por cinco mil bolas. ¿Quién se va a quedar con la casa? Suscríbanse para la parte cuatro, porque este vergueo apenas comienza."
+        },
+        {
+          "path": "guion_original.txt",
+          "size_bytes": 4624,
+          "sha256": "648d802709c2b1e5eec65b760fa194ec893ee897fb5634553508c50dc5f364e4",
+          "type": "txt",
+          "content_text": "[ESCENA tomas_revelacion | FONDO=honduras_house | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nBueno, caras de pija. Ya que aquí todos están confesando sus mierdas, ¿quieren saber con quién andaba saliendo Ana?\n\n[ESCENA ana_nerviosa | FONDO=honduras_house | DURACION=1.5]\n[ANA | ACCION=afraid | POSICION=1]\n[TOMAS | ACCION=front_point | POSICION=2]\n\n[ESCENA ana_advierte | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nTomás, no empecés a hablar pendejadas. Cerrá la boca.\n\n[ESCENA tomas_bomba | FONDO=honduras_house | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nTu querida Ana era la sugar baby de don Ernesto. El papá de Juan. ¡Sí, maje, tu propio tata!\n\n[ESCENA juan_reaccion | FONDO=honduras_house | DURACION=1.5]\n[JUAN | ACCION=afraid | POSICION=2]\n[PABLO | ACCION=afraid | POSICION=3]\n\n[ESCENA juan_incredulo | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡No jodás! ¿Mi papá? ¡Ese viejo tiene setenta años! Ana, decime que este cara de pija está mintiendo.\n\n[ESCENA ana_confiesa | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nFue antes de casarme con vos, Juan. Don Ernesto me ayudaba con la universidad y me depositaba plata. Yo no sabía que era tu papá.\n\n[ESCENA pablo_interviene | FONDO=honduras_house | PLANO=face:PABLO]\n[PABLO | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡A la gran puta! ¿Y ese viejo qué? ¿Tiene una fundación de becas o qué jodidos?\n\n[ESCENA tomas_telefono | FONDO=honduras_house | DURACION=1.5]\n[TOMAS | ACCION=use_phone | POSICION=2]\n[JUAN | ACCION=idle | POSICION=3]\n\n[ESCENA tomas_prueba | FONDO=honduras_house | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¿Antes? Miren este depósito de la semana pasada. Treinta mil bolas. Y dice: para mi princesa.\n\n[ESCENA juan_explota | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡Comé mierda vos, Ana! ¡Yo pagando ese pija de carro y mi papá manteniéndote a escondidas!\n\n[ESCENA ana_senala | FONDO=honduras_house | DURACION=1.5]\n[ANA | ACCION=front_point | POSICION=1]\n[JUAN | ACCION=afraid | POSICION=3]\n\n[ESCENA ana_contraataca | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡No me vengás a reclamar, Juan! Vos te gastaste nuestros ahorros con mi mejor amiga. ¡No tenés cara para decirme nada!\n\n[ESCENA pablo_sospecha | FONDO=honduras_house | PLANO=face:PABLO]\n[PABLO | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nEspérense. ¿Y cómo putas consiguió Tomás los movimientos bancarios de Ana?\n\n[ESCENA tomas_silencio | FONDO=honduras_house | DURACION=1.5]\n[TOMAS | ACCION=afraid | POSICION=2]\n\n[ESCENA tomas_explicacion | FONDO=honduras_house | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nPorque don Ernesto me los mandó. Me dijo que tenía que enseñarles algo antes de que firmaran los papeles de la casa.\n\n[ESCENA juan_confundido | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¿Cuáles papeles? Esa casa está a mi nombre. Mi papá no tiene nada que ver.\n\n[ESCENA ana_confesion | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nJuan... hay algo que no te he contado. Don Ernesto pagó la prima de esa casa. Pero puso una condición.\n\n[ESCENA pablo_asustado | FONDO=honduras_house | DURACION=1.5]\n[PABLO | ACCION=afraid | POSICION=2]\n[JUAN | ACCION=afraid | POSICION=3]\n\n[ESCENA juan_pregunta | FONDO=honduras_house | PLANO=face:JUAN]\n[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¿Qué condición, Ana? Hablá de una vez, no jodás.\n\n[ESCENA ana_giro | FONDO=honduras_house | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nQue el día que nos separáramos, la casa pasaría a nombre de alguien más. Y esa persona está aquí sentada.\n\n[ESCENA tomas_reacciona | FONDO=honduras_house | DURACION=1.5]\n[TOMAS | ACCION=afraid | POSICION=2]\n\n[ESCENA tomas_final | FONDO=honduras_house | PLANO=face:TOMAS]\n[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\n¡A la gran pucha! Y ustedes peleando por cinco mil bolas. ¿Quién se va a quedar con la casa? Suscríbanse para la parte cuatro, porque este vergueo apenas comienza."
+        },
+        {
+          "path": "segmentos.json",
+          "size_bytes": 2734,
+          "sha256": "bfe1fea4fd9e034129c6f979c0e3a6075541c140128e5c5b4fa6671f9049eb52",
+          "type": "json",
+          "content": [
+            {
+              "start": 0.0,
+              "end": 6.06,
+              "text": "Bueno, caras de pija, ya que aquí todos están confesando sus mierdas, quieren saber con"
+            },
+            {
+              "start": 6.06,
+              "end": 7.62,
+              "text": "quién andaba saliendo Ana."
+            },
+            {
+              "start": 9.12,
+              "end": 12.5,
+              "text": "Tomás, no empeces a hablar pendejadas, cerrar la boca."
+            },
+            {
+              "start": 12.5,
+              "end": 20.64,
+              "text": "Tu querida, Ana, era la Sugar Baby de Don Ernesto, el papá de Juan, sí maje tu propio tato."
+            },
+            {
+              "start": 20.64,
+              "end": 27.45,
+              "text": "No jodas, mi papá, ese viejo tiene 70 años. Ana, décime que este cara de pija está"
+            },
+            {
+              "start": 28.21,
+              "end": 34.05,
+              "text": "fue antes de casarme con vos, Juan, Don Ernesto me ayudaba con la universidad y me depositaba plata."
+            },
+            {
+              "start": 34.05,
+              "end": 40.45,
+              "text": "Yo no sabía que era tu papá, a la gran puta y ese viejo qué, tiene una fundación de becas o qué jodidos."
+            },
+            {
+              "start": 42.45,
+              "end": 48.17,
+              "text": "Antes, miren este depósito de la semana pasada 30.000 bolas y dice para mi princesa."
+            },
+            {
+              "start": 48.17,
+              "end": 53.53,
+              "text": "Come mierda vos, Ana, yo pagando ese pija de carro y mi papá manteniendote escondidas."
+            },
+            {
+              "start": 54.53,
+              "end": 61.05,
+              "text": "No me vengas a reclamar, Juan, vos te gastaste maestros ahorros con mi mejor amiga. No tenés cara para decirme nada."
+            },
+            {
+              "start": 61.05,
+              "end": 65.25,
+              "text": "Espérense, ¿y cómo putas consiguió tomar los movimientos bancarios de Ana?"
+            },
+            {
+              "start": 65.25,
+              "end": 72.97,
+              "text": "Porque Don Ernesto me los mandó, me dijo que tenía que enseñarles algo antes de que firmaran los"
+            },
+            {
+              "start": 72.97,
+              "end": 77.97,
+              "text": "papeles de la casa. ¿Cuáles papeles? Esa casa está a mi nombre, mi papá no tiene nada que ver."
+            },
+            {
+              "start": 77.97,
+              "end": 83.05,
+              "text": "Juan, hay algo que no te he contado, Don Ernesto pagó la prima de esa casa, pero puso una condición."
+            },
+            {
+              "start": 84.97,
+              "end": 86.97,
+              "text": "¿Qué condición Ana habla de una vez no jodas?"
+            },
+            {
+              "start": 86.97,
+              "end": 91.97,
+              "text": "Que el día que nos separáramos la casa pasaría a nombre de alguien más y esa persona está aquí sentada."
+            },
+            {
+              "start": 91.97,
+              "end": 99.47,
+              "text": "A la gran pucha y ustedes peleando por 5.000 bolas, ¿quién se va a quedar con la casa?"
+            },
+            {
+              "start": 99.47,
+              "end": 103.47,
+              "text": "Suscríbanse para parte 4 porque este vergueo apenas comienza."
+            }
+          ]
+        },
+        {
+          "path": "stick/scene_001.mp4",
+          "size_bytes": 1716777,
+          "sha256": "fba019ce0654372322b87d01a7500c6f210b94b9dbc2df124af1af4b1de96be9",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_002.mp4",
+          "size_bytes": 389596,
+          "sha256": "e073e8c5b83ef92bf48bb923613d53a86281c658bbb9ad020e1fae349bd2f7bf",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_003.mp4",
+          "size_bytes": 1506675,
+          "sha256": "4c17a229a3300d4d001853c6ace3ecb5079307d08503d31de383de4ed47430a9",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_004.mp4",
+          "size_bytes": 1713650,
+          "sha256": "2b099f496a7a612547b0714a69d04c4057b1bbae652142a31496e577ae25279b",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_005.mp4",
+          "size_bytes": 396115,
+          "sha256": "c386af0f509f59ba69c205c6e59a3bba2ad95c173dacdecad64a64975a8d5eb0",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_006.mp4",
+          "size_bytes": 2691157,
+          "sha256": "f5464fb4f7a7364e2b8f08b0cdd2ef79f3579e7af73dcf5887d0e757106db29f",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_007.mp4",
+          "size_bytes": 4165757,
+          "sha256": "c138d92409f4df6cd90748dfbcbfa742f6143f76188872fa06106035bb0b5d5c",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_008.mp4",
+          "size_bytes": 2409104,
+          "sha256": "b2cc51529ce9cf947bbeba287414cc7a5a9f85ccece55857d12c38a591918b71",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_009.mp4",
+          "size_bytes": 471442,
+          "sha256": "a78c4836a7a7331b11c475ad85b793d201b03fe3df48a55103ceb9469dcb6cd3",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_010.mp4",
+          "size_bytes": 1391486,
+          "sha256": "fc7d491db1c270237c074a1a3b064bc214db65e3f263e1a82253c4f8b7c23c3c",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_011.mp4",
+          "size_bytes": 2414536,
+          "sha256": "febcbcbb5b727b8f7951d751c7a25d0a9e481bb63d5a554ddfec097329a64040",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_012.mp4",
+          "size_bytes": 474215,
+          "sha256": "3e95520fc7ebdd558eba8cb48f311bb28555be36288e095075242e496c7b5b46",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_013.mp4",
+          "size_bytes": 3459229,
+          "sha256": "b27a4872c3e272a0066265d1d5cdf42ec85de3ebc816a2273d46fcb4a833a5f5",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_014.mp4",
+          "size_bytes": 2138000,
+          "sha256": "9a2095afb484192df8051c8a4546f63f092b5dbd97575bfde78354bf9b35d423",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_015.mp4",
+          "size_bytes": 333553,
+          "sha256": "adec83eccfadf79128793e09dd122b41f75446ff1053e8dcef7b7010dd7299ef",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_016.mp4",
+          "size_bytes": 1520094,
+          "sha256": "ac2bf41199a20c6276758d944b0f300d238b472b8261bc3298be65c99897c2b2",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_017.mp4",
+          "size_bytes": 1997294,
+          "sha256": "e4898e39243a5dac3cac2718d7454c940d9ec90be02b98b03e103686da4f5076",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_018.mp4",
+          "size_bytes": 2663932,
+          "sha256": "4e032a119d2993bc488f4076eb3e147e63539d4aecd0c1b7541c994cf6318343",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_019.mp4",
+          "size_bytes": 396562,
+          "sha256": "2eb039e1877a00285d20cb252a98878147771dd8ff1f225389ebf2eb6c226c8c",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_020.mp4",
+          "size_bytes": 1112680,
+          "sha256": "56103df6381ef6621c5680840107c6b24dee6b26dd3093826575127828f16ab3",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_021.mp4",
+          "size_bytes": 2787004,
+          "sha256": "b299d04a0cf8886c32018c6425bc41530306752c66c5b49411369a81a6a19602",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_022.mp4",
+          "size_bytes": 333553,
+          "sha256": "adec83eccfadf79128793e09dd122b41f75446ff1053e8dcef7b7010dd7299ef",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_023.mp4",
+          "size_bytes": 2409648,
+          "sha256": "9044bbde1e8dde55fd0c4e3bc7cbefd55364fd5bdb3286ccb3f0e811fd82a549",
+          "type": "mp4"
+        },
+        {
+          "path": "stick_storyboard.json",
+          "size_bytes": 29783,
+          "sha256": "daa9f380fdc4e701df2652ae9b23a19054041da0ec4c439c082064ea39158268",
+          "type": "json",
+          "content": {
+            "storyboard": [
+              {
+                "scene": 1,
+                "script_scene": "tomas_revelacion",
+                "start": 0.0,
+                "end": 8.00975,
+                "duration": 8.0,
+                "timeline_duration": 8.00975,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "TOMAS",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.33999999999999997,
+                        1.56
+                      ],
+                      [
+                        2.26,
+                        4.88
+                      ],
+                      [
+                        5.340000000000001,
+                        7.32
+                      ],
+                      [
+                        7.380000000000001,
+                        7.68
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "TOMAS"
+                },
+                "narration": "Bueno, caras de pija. Ya que aquí todos están confesando sus mierdas, ¿quieren saber con quién andaba saliendo Ana?",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "vine-dramatic-boom-sound-effect",
+                    "time": 0.3,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 2,
+                "script_scene": "ana_nerviosa",
+                "start": 8.00975,
+                "end": 9.50975,
+                "duration": 1.5,
+                "timeline_duration": 1.5,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "afraid",
+                    "position": 1,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  },
+                  {
+                    "id": "TOMAS",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "front_point",
+                    "position": 2,
+                    "facing": "left",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 3,
+                "script_scene": "ana_advierte",
+                "start": 9.50975,
+                "end": 13.028333333333334,
+                "duration": 3.533333333333333,
+                "timeline_duration": 3.518583333333334,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.029749999999999943,
+                        2.1697500000000005
+                      ],
+                      [
+                        2.3497500000000002,
+                        2.9297500000000003
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Tomás, no empecés a hablar pendejadas. Cerrá la boca.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 4,
+                "script_scene": "tomas_bomba",
+                "start": 13.028333333333334,
+                "end": 21.039791666666666,
+                "duration": 8.0,
+                "timeline_duration": 8.011458333333332,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "TOMAS",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.05500000000000149,
+                        1.1950000000000003
+                      ],
+                      [
+                        1.455,
+                        2.4750000000000014
+                      ],
+                      [
+                        2.615,
+                        3.195000000000002
+                      ],
+                      [
+                        3.3750000000000018,
+                        4.635
+                      ],
+                      [
+                        4.975,
+                        6.035000000000002
+                      ],
+                      [
+                        6.335000000000003,
+                        7.706458333333336
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "TOMAS"
+                },
+                "narration": "Tu querida Ana era la sugar baby de don Ernesto. El papá de Juan. ¡Sí, maje, tu propio tata!",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "vine-dramatic-boom-sound-effect",
+                    "time": 0.3,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 5,
+                "script_scene": "juan_reaccion",
+                "start": 21.039791666666666,
+                "end": 22.539791666666666,
+                "duration": 1.5,
+                "timeline_duration": 1.5,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "JUAN",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "afraid",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  },
+                  {
+                    "id": "PABLO",
+                    "type": "humanoids/paul_old_man",
+                    "action": "afraid",
+                    "position": 3,
+                    "facing": "left",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "scary-violin",
+                    "time": 0.2,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 6,
+                "script_scene": "juan_incredulo",
+                "start": 22.539791666666666,
+                "end": 28.233791666666665,
+                "duration": 5.7,
+                "timeline_duration": 5.693999999999999,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "JUAN",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.22645833333332988,
+                        1.3664583333333304
+                      ],
+                      [
+                        1.4664583333333319,
+                        2.9264583333333327
+                      ],
+                      [
+                        3.1464583333333316,
+                        3.5264583333333306
+                      ],
+                      [
+                        3.5864583333333293,
+                        5.400458333333329
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "JUAN"
+                },
+                "narration": "¡No jodás! ¿Mi papá? ¡Ese viejo tiene setenta años! Ana, decime que este cara de pija está mintiendo.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 7,
+                "script_scene": "ana_confiesa",
+                "start": 28.233791666666665,
+                "end": 35.913583333333335,
+                "duration": 7.666666666666667,
+                "timeline_duration": 7.67979166666667,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.00045833333333078485,
+                        2.320458333333331
+                      ],
+                      [
+                        2.38045833333333,
+                        5.400458333333333
+                      ],
+                      [
+                        5.500458333333327,
+                        5.920458333333329
+                      ],
+                      [
+                        6.100458333333329,
+                        7.280249999999995
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Fue antes de casarme con vos, Juan. Don Ernesto me ayudaba con la universidad y me depositaba plata. Yo no sabía que era tu papá.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 8,
+                "script_scene": "pablo_interviene",
+                "start": 35.913583333333335,
+                "end": 41.015125,
+                "duration": 5.1,
+                "timeline_duration": 5.101541666666662,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "PABLO",
+                    "type": "humanoids/paul_old_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.013583333333336611,
+                        0.7735833333333346
+                      ],
+                      [
+                        0.873583333333336,
+                        1.85358333333334
+                      ],
+                      [
+                        2.393583333333339,
+                        4.693583333333336
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "PABLO"
+                },
+                "narration": "¡A la gran puta! ¿Y ese viejo qué? ¿Tiene una fundación de becas o qué jodidos?",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 9,
+                "script_scene": "tomas_telefono",
+                "start": 41.015125,
+                "end": 42.515125,
+                "duration": 1.5,
+                "timeline_duration": 1.5,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "TOMAS",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "use_phone",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  },
+                  {
+                    "id": "JUAN",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "idle",
+                    "position": 3,
+                    "facing": "left",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "whatsapp-notificacion",
+                    "time": 0.5,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 10,
+                "script_scene": "tomas_prueba",
+                "start": 42.515125,
+                "end": 49.00179166666667,
+                "duration": 6.5,
+                "timeline_duration": 6.486666666666672,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "TOMAS",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.07512499999999989,
+                        3.895125
+                      ],
+                      [
+                        4.2351249999999965,
+                        4.655124999999998
+                      ],
+                      [
+                        4.875124999999997,
+                        5.775124999999996
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "TOMAS"
+                },
+                "narration": "¿Antes? Miren este depósito de la semana pasada. Treinta mil bolas. Y dice: para mi princesa.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 11,
+                "script_scene": "juan_explota",
+                "start": 49.00179166666667,
+                "end": 53.97208333333333,
+                "duration": 4.966666666666667,
+                "timeline_duration": 4.970291666666661,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "JUAN",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.0017916666666693004,
+                        2.881791666666672
+                      ],
+                      [
+                        2.941791666666667,
+                        4.672083333333333
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "JUAN"
+                },
+                "narration": "¡Comé mierda vos, Ana! ¡Yo pagando ese pija de carro y mi papá manteniéndote a escondidas!",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 12,
+                "script_scene": "ana_senala",
+                "start": 53.97208333333333,
+                "end": 55.47208333333333,
+                "duration": 1.5,
+                "timeline_duration": 1.5,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "front_point",
+                    "position": 1,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  },
+                  {
+                    "id": "JUAN",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "afraid",
+                    "position": 3,
+                    "facing": "left",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 13,
+                "script_scene": "ana_contraataca",
+                "start": 55.47208333333333,
+                "end": 61.457208333333334,
+                "duration": 6.0,
+                "timeline_duration": 5.985125000000004,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.025416666666664867,
+                        3.9254166666666634
+                      ],
+                      [
+                        4.065416666666664,
+                        4.845416666666665
+                      ],
+                      [
+                        4.90541666666666,
+                        5.6854166666666615
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "¡No me vengás a reclamar, Juan! Vos te gastaste nuestros ahorros con mi mejor amiga. ¡No tenés cara para decirme nada!",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 14,
+                "script_scene": "pablo_sospecha",
+                "start": 61.457208333333334,
+                "end": 65.833625,
+                "duration": 4.366666666666666,
+                "timeline_duration": 4.376416666666664,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "PABLO",
+                    "type": "humanoids/paul_old_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.010541666666668448,
+                        0.670541666666665
+                      ],
+                      [
+                        0.8905416666666639,
+                        3.7905416666666696
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "PABLO"
+                },
+                "narration": "Espérense. ¿Y cómo putas consiguió Tomás los movimientos bancarios de Ana?",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 15,
+                "script_scene": "tomas_silencio",
+                "start": 65.833625,
+                "end": 67.333625,
+                "duration": 1.5,
+                "timeline_duration": 1.5,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "TOMAS",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "afraid",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 16,
+                "script_scene": "tomas_explicacion",
+                "start": 67.333625,
+                "end": 74.26341666666667,
+                "duration": 6.933333333333334,
+                "timeline_duration": 6.929791666666674,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "TOMAS",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.10029166666666356,
+                        6.6300833333333316
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "TOMAS"
+                },
+                "narration": "Porque don Ernesto me los mandó. Me dijo que tenía que enseñarles algo antes de que firmaran los papeles de la casa.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 17,
+                "script_scene": "juan_confundido",
+                "start": 74.26341666666667,
+                "end": 78.35383333333333,
+                "duration": 4.1,
+                "timeline_duration": 4.0904166666666555,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "JUAN",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.05675000000000807,
+                        0.8767500000000013
+                      ],
+                      [
+                        1.0967500000000001,
+                        2.1567500000000024
+                      ],
+                      [
+                        2.256750000000011,
+                        3.7871666666666783
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "JUAN"
+                },
+                "narration": "¿Cuáles papeles? Esa casa está a mi nombre. Mi papá no tiene nada que ver.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 18,
+                "script_scene": "ana_confesion",
+                "start": 78.35383333333333,
+                "end": 83.55370833333333,
+                "duration": 5.2,
+                "timeline_duration": 5.199875000000006,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.007166666666662991,
+                        0.507166666666663
+                      ],
+                      [
+                        0.5671666666666653,
+                        3.707166666666666
+                      ],
+                      [
+                        3.767166666666668,
+                        4.787041666666667
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Juan... hay algo que no te he contado. Don Ernesto pagó la prima de esa casa. Pero puso una condición.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 19,
+                "script_scene": "pablo_asustado",
+                "start": 83.55370833333333,
+                "end": 85.05370833333333,
+                "duration": 1.5,
+                "timeline_duration": 1.5,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "PABLO",
+                    "type": "humanoids/paul_old_man",
+                    "action": "afraid",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  },
+                  {
+                    "id": "JUAN",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "afraid",
+                    "position": 3,
+                    "facing": "left",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 20,
+                "script_scene": "juan_pregunta",
+                "start": 85.05370833333333,
+                "end": 87.48145833333334,
+                "duration": 2.4,
+                "timeline_duration": 2.427750000000003,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "JUAN",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.0,
+                        2.114791666666676
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "JUAN"
+                },
+                "narration": "¿Qué condición, Ana? Hablá de una vez, no jodás.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 21,
+                "script_scene": "ana_giro",
+                "start": 87.48145833333334,
+                "end": 92.756875,
+                "duration": 5.3,
+                "timeline_duration": 5.275416666666658,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.014791666666667425,
+                        1.2547916666666623
+                      ],
+                      [
+                        1.3947916666666629,
+                        3.3347916666666606
+                      ],
+                      [
+                        3.5147916666666674,
+                        4.890208333333334
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Que el día que nos separáramos, la casa pasaría a nombre de alguien más. Y esa persona está aquí sentada.",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "vine-dramatic-boom-sound-effect",
+                    "time": 0.3,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 22,
+                "script_scene": "tomas_reacciona",
+                "start": 92.756875,
+                "end": 94.256875,
+                "duration": 1.5,
+                "timeline_duration": 1.5,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "TOMAS",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "afraid",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "scary-violin",
+                    "time": 0.2,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 23,
+                "script_scene": "tomas_final",
+                "start": 94.256875,
+                "end": 104.31195833333334,
+                "duration": 10.033333333333333,
+                "timeline_duration": 10.055083333333343,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "honduras_house",
+                "fallback_background": "honduras_house",
+                "characters": [
+                  {
+                    "id": "TOMAS",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.17020833333333485,
+                        3.5502083333333303
+                      ],
+                      [
+                        3.9302083333333258,
+                        5.241291666666669
+                      ],
+                      [
+                        5.64129166666666,
+                        6.821291666666667
+                      ],
+                      [
+                        6.961291666666668,
+                        9.621291666666664
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "TOMAS"
+                },
+                "narration": "¡A la gran pucha! Y ustedes peleando por cinco mil bolas. ¿Quién se va a quedar con la casa? Suscríbanse para la parte cuatro, porque este vergueo apenas comienza.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              }
+            ],
+            "cast": [
+              {
+                "id": "ANA",
+                "name": "ANA",
+                "type": "humanoids/ana_young_woman"
+              },
+              {
+                "id": "JUAN",
+                "name": "JUAN",
+                "type": "humanoids/jhon_young_man"
+              },
+              {
+                "id": "PABLO",
+                "name": "PABLO",
+                "type": "humanoids/paul_old_man"
+              },
+              {
+                "id": "TOMAS",
+                "name": "TOMAS",
+                "type": "humanoids/tomy_teenager"
+              }
+            ],
+            "sync_mode": "tts_timeline",
+            "audio_duration": 104.311958,
+            "llm_provider": "openai",
+            "batch_size": 0
+          }
+        },
+        {
+          "path": "subtitulos.ass",
+          "size_bytes": 3004,
+          "sha256": "66770907e552f4fff8c9ce589d7c75d78741bc7068dd50d81e3bad5390c8682b",
+          "type": "ass",
+          "content_text": "[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nScaledBorderAndShadow: yes\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n\nDialogue: 0,0:00:00.00,0:00:06.05,TikTok,,0,0,0,,Bueno, caras de pija, ya que aquí todos están confesando sus mierdas, quieren saber con\nDialogue: 0,0:00:06.05,0:00:07.62,TikTok,,0,0,0,,quién andaba saliendo Ana.\nDialogue: 0,0:00:09.11,0:00:12.50,TikTok,,0,0,0,,Tomás, no empeces a hablar pendejadas, cerrar la boca.\nDialogue: 0,0:00:12.50,0:00:20.64,TikTok,,0,0,0,,Tu querida, Ana, era la Sugar Baby de Don Ernesto, el papá de Juan, sí maje tu propio tato.\nDialogue: 0,0:00:20.64,0:00:27.44,TikTok,,0,0,0,,No jodas, mi papá, ese viejo tiene 70 años. Ana, décime que este cara de pija está\nDialogue: 0,0:00:28.21,0:00:34.04,TikTok,,0,0,0,,fue antes de casarme con vos, Juan, Don Ernesto me ayudaba con la universidad y me depositaba plata.\nDialogue: 0,0:00:34.04,0:00:40.45,TikTok,,0,0,0,,Yo no sabía que era tu papá, a la gran puta y ese viejo qué, tiene una fundación de becas o qué jodidos.\nDialogue: 0,0:00:42.45,0:00:48.17,TikTok,,0,0,0,,Antes, miren este depósito de la semana pasada 30.000 bolas y dice para mi princesa.\nDialogue: 0,0:00:48.17,0:00:53.53,TikTok,,0,0,0,,Come mierda vos, Ana, yo pagando ese pija de carro y mi papá manteniendote escondidas.\nDialogue: 0,0:00:54.53,0:01:01.04,TikTok,,0,0,0,,No me vengas a reclamar, Juan, vos te gastaste maestros ahorros con mi mejor amiga. No tenés cara para decirme nada.\nDialogue: 0,0:01:01.04,0:01:05.25,TikTok,,0,0,0,,Espérense, ¿y cómo putas consiguió tomar los movimientos bancarios de Ana?\nDialogue: 0,0:01:05.25,0:01:12.96,TikTok,,0,0,0,,Porque Don Ernesto me los mandó, me dijo que tenía que enseñarles algo antes de que firmaran los\nDialogue: 0,0:01:12.96,0:01:17.96,TikTok,,0,0,0,,papeles de la casa. ¿Cuáles papeles? Esa casa está a mi nombre, mi papá no tiene nada que ver.\nDialogue: 0,0:01:17.96,0:01:23.04,TikTok,,0,0,0,,Juan, hay algo que no te he contado, Don Ernesto pagó la prima de esa casa, pero puso una condición.\nDialogue: 0,0:01:24.96,0:01:26.96,TikTok,,0,0,0,,¿Qué condición Ana habla de una vez no jodas?\nDialogue: 0,0:01:26.96,0:01:31.96,TikTok,,0,0,0,,Que el día que nos separáramos la casa pasaría a nombre de alguien más y esa persona está aquí sentada.\nDialogue: 0,0:01:31.96,0:01:39.46,TikTok,,0,0,0,,A la gran pucha y ustedes peleando por 5.000 bolas, ¿quién se va a quedar con la casa?\nDialogue: 0,0:01:39.46,0:01:43.46,TikTok,,0,0,0,,Suscríbanse para parte 4 porque este vergueo apenas comienza.\n"
+        },
+        {
+          "path": "video.mp4",
+          "size_bytes": 29920216,
+          "sha256": "3ae9fd1766a8072bf52c2447fb63e56bac2942a3d70f93caf00f89ab9a12a507",
+          "type": "mp4"
+        }
+      ]
+    }
+  ]
+}

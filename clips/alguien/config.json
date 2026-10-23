@@ -1,0 +1,25 @@
+{
+  "titulo": "alguien",
+  "resolucion": "1080x1920",
+  "musica": "misterius.mp3",
+  "volumen_musica": 0.09,
+  "estilo_visual": "Terror psicológico sobrenatural, oscuro y realista. Tomy, un adolescente, cuenta en primera persona una experiencia aterradora ocurrida en su casa. Utilizar exclusivamente el personaje tomy_teenager, sin modificar su aspecto. Ambientes nocturnos, tensión creciente, silencios inquietantes y primeros planos de Tomy. Usar únicamente fondos disponibles. Los ruidos de pasos, puertas, cajones y susurros se representan mediante efectos de sonido disponibles. La hermana y las voces sobrenaturales nunca aparecen como personajes visibles. Mantener continuidad visual y narrativa. Evitar personajes adicionales.",
+  "paleta": "",
+  "seed": null,
+  "negative_prompt": "gore, sangre, violencia gráfica, texto añadido, marcas de agua, personajes adicionales, rostros deformados, anatomía deformada, personajes duplicados, personajes flotando, cambios de vestuario, cambios de apariencia",
+  "cast": {
+    "TOMY": "humanoids/tomy_teenager"
+  },
+  "personajes": {
+    "TOMY": "humanoids/tomy_teenager"
+  },
+  "modo_video": "stick",
+  "voz_qwen": "Eric",
+  "porcentaje_minimo_stick": 100.0,
+  "permitir_fondos_automaticos": false,
+  "usar_efectos_sonido": true,
+  "volumen_efectos": 0.3,
+  "max_efectos_sonido": 40,
+  "imagen_final": "voces.png",
+  "duracion_imagen_final": 6.0
+}

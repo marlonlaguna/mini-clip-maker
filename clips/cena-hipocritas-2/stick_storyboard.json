@@ -1,0 +1,4607 @@
+{
+  "storyboard": [
+    {
+      "scene": 1,
+      "script_scene": "las_cosas_claras",
+      "start": 0.0,
+      "end": 7.6494583333333335,
+      "duration": 7.633333333333334,
+      "timeline_duration": 7.6494583333333335,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.0,
+              1.2
+            ],
+            [
+              1.26,
+              2.84
+            ],
+            [
+              3.02,
+              3.36
+            ],
+            [
+              3.42,
+              7.12
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "Bueno caras de pija, vamos a dejar las cosas claras. Juan, explicame qué putas andabas haciendo con mi mejor amiga en Valle de Ángeles.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 2,
+      "script_scene": "ana_senala",
+      "start": 7.6494583333333335,
+      "end": 9.149458333333333,
+      "duration": 1.5,
+      "timeline_duration": 1.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "front_point",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PABLO",
+          "type": "humanoids/paul_old_man",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JUAN",
+          "type": "humanoids/jhon_young_man",
+          "action": "afraid",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 3,
+      "script_scene": "juan_excusa",
+      "start": 9.149458333333333,
+      "end": 14.688458333333333,
+      "duration": 5.566666666666666,
+      "timeline_duration": 5.539,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "JUAN",
+          "type": "humanoids/jhon_young_man",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.01612500000000061,
+              2.256125000000001
+            ],
+            [
+              2.3961250000000014,
+              3.8961250000000014
+            ],
+            [
+              3.996125000000001,
+              5.255125
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "JUAN"
+      },
+      "narration": "No jodás, Ana. Solo fuimos a comer algo. ¿Ahora resulta que no puedo salir sin que me estés jodiendo?",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 4,
+      "script_scene": "ana_pruebas",
+      "start": 14.688458333333333,
+      "end": 16.188458333333333,
+      "duration": 1.5,
+      "timeline_duration": 1.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "use_phone",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JUAN",
+          "type": "humanoids/jhon_young_man",
+          "action": "afraid",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "whatsapp-notificacion",
+          "time": 0.5,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "script_scene": "ana_fotos",
+      "start": 16.188458333333333,
+      "end": 21.292791666666666,
+      "duration": 5.1,
+      "timeline_duration": 5.104333333333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.0,
+              2.188458333333333
+            ],
+            [
+              2.2484583333333354,
+              3.3884583333333325
+            ],
+            [
+              3.608458333333335,
+              4.788458333333335
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "¿Y esta pija de cabaña donde salen abrazados? ¡Andá a comer mierda vos! ¿Creés que soy pendeja?",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "vine-dramatic-boom-sound-effect",
+          "time": 0.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 6,
+      "script_scene": "tomas_burla",
+      "start": 21.292791666666666,
+      "end": 30.60054166666667,
+      "duration": 9.3,
+      "timeline_duration": 9.307750000000002,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMAS",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.05279166666666413,
+              1.1127916666666664
+            ],
+            [
+              2.172791666666665,
+              2.632791666666666
+            ],
+            [
+              2.972791666666666,
+              4.112791666666666
+            ],
+            [
+              4.372791666666668,
+              6.232791666666667
+            ],
+            [
+              6.5327916666666646,
+              7.792791666666666
+            ],
+            [
+              7.852791666666665,
+              8.952791666666666
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMAS"
+      },
+      "narration": "Puta, Juan. Te agarraron con pruebas y todavía te hacés el santo. Ni los políticos de aquí se atreven a tanto.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 7,
+      "script_scene": "juan_senala",
+      "start": 30.60054166666667,
+      "end": 32.100541666666665,
+      "duration": 1.5,
+      "timeline_duration": 1.4999999999999964,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMAS",
+          "type": "humanoids/tomy_teenager",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JUAN",
+          "type": "humanoids/jhon_young_man",
+          "action": "side_point",
+          "position": 2,
+          "facing": "left",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 8,
+      "script_scene": "juan_tomas",
+      "start": 32.100541666666665,
+      "end": 38.810291666666664,
+      "duration": 6.7,
+      "timeline_duration": 6.70975,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "JUAN",
+          "type": "humanoids/jhon_young_man",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.0005416666666633319,
+              1.3205416666666636
+            ],
+            [
+              1.380541666666666,
+              2.200541666666666
+            ],
+            [
+              2.3405416666666596,
+              4.0405416666666625
+            ],
+            [
+              4.260541666666661,
+              6.160541666666667
+            ],
+            [
+              6.220541666666662,
+              6.400541666666662
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "JUAN"
+      },
+      "narration": "Vos cerrá el hocico, cara de pija. Te robaste cinco mil bolas de la caja fuerte y todavía venís a darme consejos.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 9,
+      "script_scene": "tomas_responde",
+      "start": 38.810291666666664,
+      "end": 45.518875,
+      "duration": 6.733333333333333,
+      "timeline_duration": 6.708583333333337,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMAS",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.8302916666666675,
+              2.2502916666666692
+            ],
+            [
+              2.7902916666666684,
+              6.410291666666666
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMAS"
+      },
+      "narration": "Sí, pero yo acepté que la cagué. Vos te metiste con otra maje y ahora querés que te demos un premio, no jodás.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 10,
+      "script_scene": "pablo_camino",
+      "start": 45.518875,
+      "end": 47.018875,
+      "duration": 1.5,
+      "timeline_duration": 1.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        },
+        {
+          "id": "PABLO",
+          "type": "humanoids/paul_old_man",
+          "action": "front_walk",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JUAN",
+          "type": "humanoids/jhon_young_man",
+          "action": "idle",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.06,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "shoe-steps",
+          "time": 0.3,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 11,
+      "script_scene": "pablo_interviene",
+      "start": 47.018875,
+      "end": 54.60720833333333,
+      "duration": 7.566666666666666,
+      "timeline_duration": 7.588333333333331,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "PABLO",
+          "type": "humanoids/paul_old_man",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.005541666666672995,
+              7.105541666666667
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "PABLO"
+      },
+      "narration": "¡Ya estuvo bueno, joder! Juan, hay que ser bien bruto para llevar a la amante a Valle de Ángeles, donde medio Tegus va los domingos.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 12,
+      "script_scene": "ana_pablo",
+      "start": 54.60720833333333,
+      "end": 60.588375,
+      "duration": 6.0,
+      "timeline_duration": 5.981166666666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.027208333333334167,
+              4.967208333333332
+            ],
+            [
+              5.067208333333333,
+              5.527208333333334
+            ],
+            [
+              5.587208333333329,
+              5.687208333333331
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "Papá, no hablés paja. Vos tenés otra familia en San Pedro Sula. Sos el menos indicado para dar lecciones, cara de pija.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 13,
+      "script_scene": "pablo_asustado",
+      "start": 60.588375,
+      "end": 62.088375,
+      "duration": 1.5,
+      "timeline_duration": 1.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "PABLO",
+          "type": "humanoids/paul_old_man",
+          "action": "afraid",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "PABLO"
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "cartoon-panic-squeak",
+          "time": 0.5,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 14,
+      "script_scene": "pablo_defensa",
+      "start": 62.088375,
+      "end": 68.42783333333334,
+      "duration": 6.333333333333333,
+      "timeline_duration": 6.33945833333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "PABLO",
+          "type": "humanoids/paul_old_man",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.00837500000000091,
+              1.788374999999995
+            ],
+            [
+              2.288374999999995,
+              3.4683750000000018
+            ],
+            [
+              3.568374999999996,
+              5.188375000000001
+            ],
+            [
+              5.648374999999994,
+              6.0278333333333265
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "PABLO"
+      },
+      "narration": "No me vengás con esas mierdas, Ana. Lo mío es complicado. Y estamos hablando de Juan, no de mí.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 15,
+      "script_scene": "ana_dinero",
+      "start": 68.42783333333334,
+      "end": 75.45433333333334,
+      "duration": 7.033333333333333,
+      "timeline_duration": 7.026499999999999,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.09449999999999648,
+              1.3945000000000078
+            ],
+            [
+              1.5745000000000005,
+              3.7545000000000073
+            ],
+            [
+              3.9345,
+              6.554500000000004
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "¿Sabés qué más descubrí, Juan? Sacaste cuarenta mil lempiras de nuestros ahorros. ¡Mientras yo pagaba la cuota de ese pija de carro que compraste!",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 16,
+      "script_scene": "juan_nervioso",
+      "start": 75.45433333333334,
+      "end": 81.559375,
+      "duration": 6.1,
+      "timeline_duration": 6.105041666666665,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "JUAN",
+          "type": "humanoids/jhon_young_man",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.3676666666666648,
+              1.5076666666666654
+            ],
+            [
+              1.6876666666666722,
+              2.867666666666665
+            ],
+            [
+              3.367666666666665,
+              3.8276666666666728
+            ],
+            [
+              3.9676666666666733,
+              5.547666666666672
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "JUAN"
+      },
+      "narration": "Pucha, Ana, no empecés. Esa también es mi plata. Además, no todo me lo gasté en esa salida.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 17,
+      "script_scene": "tomas_remate",
+      "start": 81.559375,
+      "end": 88.69933333333333,
+      "duration": 7.133333333333334,
+      "timeline_duration": 7.139958333333325,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMAS",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.3327083333333434,
+              1.9127083333333417
+            ],
+            [
+              2.252708333333345,
+              6.432708333333338
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMAS"
+      },
+      "narration": "¡Cuarenta mil bolas! No jodás. Con eso pago mis deudas y todavía me queda para la Super Recarga de todo el año.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 18,
+      "script_scene": "juan_explota",
+      "start": 88.69933333333333,
+      "end": 95.51041666666667,
+      "duration": 6.8,
+      "timeline_duration": 6.811083333333343,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "JUAN",
+          "type": "humanoids/jhon_young_man",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.05933333333332769,
+              1.3193333333333186
+            ],
+            [
+              1.4193333333333271,
+              1.7993333333333226
+            ],
+            [
+              1.899333333333331,
+              2.6793333333333322
+            ],
+            [
+              2.8193333333333186,
+              3.3193333333333186
+            ],
+            [
+              3.379333333333321,
+              4.359333333333325
+            ],
+            [
+              4.499333333333325,
+              6.2793333333333266
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "JUAN"
+      },
+      "narration": "¡Me tienen a pija todos! Sí, le fui infiel. La cagué. ¿Ya están contentos? ¡Dejen de estar comiendo mierda conmigo!",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 19,
+      "script_scene": "juan_se_va",
+      "start": 95.51041666666667,
+      "end": 97.01041666666667,
+      "duration": 1.5,
+      "timeline_duration": 1.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "idle",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JUAN",
+          "type": "humanoids/jhon_young_man",
+          "action": "side_walk",
+          "position": 3,
+          "facing": "right",
+          "movement": {
+            "direction": "right",
+            "speed": 22.0
+          },
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "shoe-steps",
+          "time": 0.3,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 20,
+      "script_scene": "ana_detiene",
+      "start": 97.01041666666667,
+      "end": 98.51041666666667,
+      "duration": 1.5,
+      "timeline_duration": 1.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "side_point",
+          "position": 1,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        },
+        {
+          "id": "JUAN",
+          "type": "humanoids/jhon_young_man",
+          "action": "idle",
+          "position": 3,
+          "facing": "left",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 21,
+      "script_scene": "ana_amenaza",
+      "start": 98.51041666666667,
+      "end": 104.8815,
+      "duration": 6.366666666666666,
+      "timeline_duration": 6.371083333333331,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.010416666666671404,
+              1.410416666666677
+            ],
+            [
+              1.5104166666666714,
+              3.930416666666673
+            ],
+            [
+              4.030416666666667,
+              5.890416666666667
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "¡Un momento, cara de pija! Antes de irte vas a devolver hasta el último lempira. Y mañana voy a averiguar cómo separarme de vos.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 22,
+      "script_scene": "juan_suplica",
+      "start": 104.8815,
+      "end": 109.99641666666666,
+      "duration": 5.133333333333334,
+      "timeline_duration": 5.114916666666659,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "JUAN",
+          "type": "humanoids/jhon_young_man",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.01483333333334258,
+              1.3348333333333358
+            ],
+            [
+              1.4748333333333363,
+              2.654833333333343
+            ],
+            [
+              2.7548333333333375,
+              4.574833333333345
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "JUAN"
+      },
+      "narration": "Ana, no jodás. Fueron cuatro años juntos. ¿Vas a mandar todo a la mierda por un error?",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 23,
+      "script_scene": "ana_final",
+      "start": 109.99641666666666,
+      "end": 118.17695833333333,
+      "duration": 8.166666666666666,
+      "timeline_duration": 8.18054166666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "ANA",
+          "type": "humanoids/ana_young_woman",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.0,
+              2.156416666666658
+            ],
+            [
+              2.2164166666666603,
+              3.876416666666657
+            ],
+            [
+              3.936416666666659,
+              5.876416666666657
+            ],
+            [
+              6.056416666666664,
+              7.7564166666666665
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "ANA"
+      },
+      "narration": "Un error es agarrar la calle equivocada, Juan. Vos reservaste hotel, pagaste gasolina, compraste regalos y todavía venís a hacerte la víctima.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 24,
+      "script_scene": "tomas_celular",
+      "start": 118.17695833333333,
+      "end": 119.67695833333333,
+      "duration": 1.5,
+      "timeline_duration": 1.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMAS",
+          "type": "humanoids/tomy_teenager",
+          "action": "use_phone",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": []
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "whatsapp-notificacion",
+          "time": 0.5,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 25,
+      "script_scene": "tomas_recarga",
+      "start": 119.67695833333333,
+      "end": 715.6986666666667,
+      "duration": 596.0333333333333,
+      "timeline_duration": 596.0217083333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMAS",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.010291666666660149,
+              1.3302916666666533
+            ],
+            [
+              1.5102916666666601,
+              9.250291666666655
+            ],
+            [
+              10.830291666666668,
+              10.930291666666662
+            ],
+            [
+              11.670291666666671,
+              11.810291666666657
+            ],
+            [
+              11.950291666666672,
+              12.970291666666654
+            ],
+            [
+              14.470291666666654,
+              14.610291666666669
+            ],
+            [
+              14.670291666666671,
+              15.690291666666653
+            ],
+            [
+              16.63029166666665,
+              19.85029166666665
+            ],
+            [
+              20.35029166666665,
+              20.490291666666664
+            ],
+            [
+              21.270291666666665,
+              21.37029166666666
+            ],
+            [
+              21.550291666666666,
+              21.690291666666653
+            ],
+            [
+              22.15029166666666,
+              22.37029166666666
+            ],
+            [
+              22.67029166666667,
+              22.810291666666657
+            ],
+            [
+              22.91029166666665,
+              23.010291666666674
+            ],
+            [
+              23.230291666666645,
+              23.330291666666668
+            ],
+            [
+              24.230291666666645,
+              24.330291666666668
+            ],
+            [
+              24.59029166666666,
+              24.810291666666657
+            ],
+            [
+              24.91029166666665,
+              25.09029166666666
+            ],
+            [
+              25.15029166666666,
+              25.330291666666668
+            ],
+            [
+              26.550291666666666,
+              26.89029166666667
+            ],
+            [
+              27.230291666666645,
+              27.330291666666668
+            ],
+            [
+              27.63029166666665,
+              27.730291666666645
+            ],
+            [
+              28.270291666666665,
+              28.37029166666666
+            ],
+            [
+              28.750291666666655,
+              28.85029166666665
+            ],
+            [
+              29.030291666666656,
+              29.250291666666655
+            ],
+            [
+              29.35029166666665,
+              29.450291666666672
+            ],
+            [
+              30.310291666666657,
+              30.41029166666665
+            ],
+            [
+              31.470291666666654,
+              31.690291666666653
+            ],
+            [
+              31.91029166666665,
+              32.050291666666666
+            ],
+            [
+              32.19029166666665,
+              32.33029166666667
+            ],
+            [
+              32.39029166666667,
+              32.490291666666664
+            ],
+            [
+              33.67029166666664,
+              33.85029166666665
+            ],
+            [
+              34.15029166666666,
+              34.37029166666666
+            ],
+            [
+              34.470291666666654,
+              34.61029166666667
+            ],
+            [
+              34.87029166666666,
+              34.970291666666654
+            ],
+            [
+              35.43029166666666,
+              35.530291666666656
+            ],
+            [
+              36.470291666666654,
+              36.57029166666668
+            ],
+            [
+              36.990291666666664,
+              37.09029166666666
+            ],
+            [
+              37.990291666666664,
+              38.13029166666665
+            ],
+            [
+              38.35029166666665,
+              38.490291666666664
+            ],
+            [
+              38.59029166666666,
+              38.69029166666665
+            ],
+            [
+              39.07029166666665,
+              39.17029166666664
+            ],
+            [
+              39.95029166666667,
+              40.09029166666666
+            ],
+            [
+              40.39029166666667,
+              40.490291666666664
+            ],
+            [
+              40.550291666666666,
+              40.770291666666665
+            ],
+            [
+              40.95029166666667,
+              41.050291666666666
+            ],
+            [
+              41.510291666666674,
+              41.730291666666645
+            ],
+            [
+              41.79029166666665,
+              41.89029166666667
+            ],
+            [
+              41.990291666666664,
+              42.33029166666667
+            ],
+            [
+              42.39029166666667,
+              42.490291666666664
+            ],
+            [
+              42.79029166666665,
+              42.89029166666667
+            ],
+            [
+              43.11029166666664,
+              43.21029166666666
+            ],
+            [
+              43.750291666666655,
+              43.89029166666667
+            ],
+            [
+              44.15029166666666,
+              44.250291666666655
+            ],
+            [
+              44.470291666666654,
+              44.81029166666666
+            ],
+            [
+              44.95029166666667,
+              45.13029166666665
+            ],
+            [
+              45.550291666666666,
+              45.65029166666666
+            ],
+            [
+              46.35029166666665,
+              46.45029166666667
+            ],
+            [
+              47.510291666666674,
+              47.61029166666667
+            ],
+            [
+              47.79029166666665,
+              47.89029166666667
+            ],
+            [
+              48.11029166666664,
+              48.21029166666666
+            ],
+            [
+              48.43029166666666,
+              48.57029166666668
+            ],
+            [
+              49.470291666666654,
+              49.57029166666668
+            ],
+            [
+              49.990291666666664,
+              50.13029166666665
+            ],
+            [
+              50.43029166666666,
+              50.530291666666656
+            ],
+            [
+              50.71029166666666,
+              50.81029166666666
+            ],
+            [
+              51.470291666666654,
+              51.69029166666665
+            ],
+            [
+              51.79029166666665,
+              51.89029166666667
+            ],
+            [
+              51.95029166666667,
+              52.050291666666666
+            ],
+            [
+              54.19029166666665,
+              54.29029166666665
+            ],
+            [
+              55.39029166666667,
+              55.490291666666664
+            ],
+            [
+              55.750291666666655,
+              55.85029166666665
+            ],
+            [
+              57.470291666666654,
+              57.57029166666668
+            ],
+            [
+              58.39029166666667,
+              58.57029166666668
+            ],
+            [
+              58.71029166666666,
+              58.970291666666654
+            ],
+            [
+              59.230291666666645,
+              59.33029166666667
+            ],
+            [
+              59.550291666666666,
+              59.65029166666666
+            ],
+            [
+              60.63029166666665,
+              60.89029166666667
+            ],
+            [
+              61.15029166666666,
+              61.33029166666667
+            ],
+            [
+              61.63029166666665,
+              61.81029166666666
+            ],
+            [
+              61.87029166666666,
+              62.13029166666665
+            ],
+            [
+              62.230291666666645,
+              62.33029166666667
+            ],
+            [
+              62.59029166666666,
+              62.770291666666665
+            ],
+            [
+              62.87029166666666,
+              63.09029166666666
+            ],
+            [
+              63.31029166666666,
+              63.490291666666664
+            ],
+            [
+              64.43029166666666,
+              64.53029166666666
+            ],
+            [
+              64.63029166666668,
+              64.73029166666667
+            ],
+            [
+              65.11029166666667,
+              65.21029166666666
+            ],
+            [
+              65.27029166666667,
+              65.37029166666666
+            ],
+            [
+              65.47029166666665,
+              65.73029166666667
+            ],
+            [
+              65.79029166666665,
+              65.89029166666667
+            ],
+            [
+              66.35029166666665,
+              66.45029166666667
+            ],
+            [
+              66.71029166666666,
+              66.81029166666669
+            ],
+            [
+              66.95029166666667,
+              67.05029166666667
+            ],
+            [
+              67.11029166666667,
+              67.21029166666666
+            ],
+            [
+              67.39029166666667,
+              67.61029166666667
+            ],
+            [
+              68.47029166666665,
+              68.65029166666666
+            ],
+            [
+              68.71029166666666,
+              68.81029166666669
+            ],
+            [
+              69.31029166666666,
+              69.41029166666665
+            ],
+            [
+              69.67029166666667,
+              69.77029166666667
+            ],
+            [
+              69.91029166666665,
+              70.01029166666667
+            ],
+            [
+              70.15029166666666,
+              70.29029166666665
+            ],
+            [
+              70.35029166666665,
+              70.49029166666666
+            ],
+            [
+              70.91029166666665,
+              71.25029166666668
+            ],
+            [
+              71.55029166666667,
+              71.65029166666666
+            ],
+            [
+              72.07029166666668,
+              72.29029166666665
+            ],
+            [
+              72.35029166666665,
+              72.85029166666665
+            ],
+            [
+              73.07029166666668,
+              73.37029166666666
+            ],
+            [
+              73.67029166666667,
+              73.97029166666665
+            ],
+            [
+              74.47029166666665,
+              75.05029166666667
+            ],
+            [
+              75.43029166666666,
+              75.53029166666666
+            ],
+            [
+              75.99029166666666,
+              76.09029166666666
+            ],
+            [
+              76.23029166666664,
+              76.65029166666666
+            ],
+            [
+              76.83029166666667,
+              76.97029166666665
+            ],
+            [
+              77.03029166666666,
+              77.45029166666667
+            ],
+            [
+              77.59029166666666,
+              77.81029166666669
+            ],
+            [
+              78.07029166666668,
+              78.17029166666667
+            ],
+            [
+              79.19029166666668,
+              79.45029166666667
+            ],
+            [
+              79.99029166666666,
+              80.09029166666666
+            ],
+            [
+              80.15029166666666,
+              80.25029166666668
+            ],
+            [
+              80.59029166666666,
+              80.73029166666667
+            ],
+            [
+              81.19029166666668,
+              81.29029166666665
+            ],
+            [
+              81.55029166666667,
+              81.65029166666666
+            ],
+            [
+              82.07029166666668,
+              82.37029166666666
+            ],
+            [
+              84.11029166666667,
+              84.21029166666666
+            ],
+            [
+              84.31029166666666,
+              84.53029166666666
+            ],
+            [
+              85.15029166666666,
+              85.25029166666668
+            ],
+            [
+              85.31029166666666,
+              85.41029166666665
+            ],
+            [
+              85.51029166666667,
+              85.81029166666669
+            ],
+            [
+              86.47029166666665,
+              86.61029166666667
+            ],
+            [
+              87.79029166666665,
+              87.89029166666667
+            ],
+            [
+              87.99029166666666,
+              88.09029166666666
+            ],
+            [
+              88.67029166666667,
+              88.93029166666666
+            ],
+            [
+              89.11029166666667,
+              89.21029166666666
+            ],
+            [
+              90.11029166666667,
+              90.21029166666666
+            ],
+            [
+              90.83029166666667,
+              90.93029166666666
+            ],
+            [
+              91.03029166666666,
+              91.17029166666667
+            ],
+            [
+              91.31029166666666,
+              91.41029166666665
+            ],
+            [
+              91.51029166666667,
+              91.61029166666667
+            ],
+            [
+              91.71029166666666,
+              91.81029166666669
+            ],
+            [
+              92.47029166666665,
+              92.57029166666668
+            ],
+            [
+              93.19029166666668,
+              93.37029166666666
+            ],
+            [
+              93.55029166666667,
+              93.69029166666668
+            ],
+            [
+              93.83029166666667,
+              94.09029166666666
+            ],
+            [
+              94.15029166666666,
+              94.25029166666668
+            ],
+            [
+              94.47029166666665,
+              94.57029166666668
+            ],
+            [
+              95.67029166666667,
+              95.77029166666667
+            ],
+            [
+              95.91029166666665,
+              96.01029166666667
+            ],
+            [
+              96.39029166666667,
+              96.49029166666666
+            ],
+            [
+              96.63029166666668,
+              96.73029166666667
+            ],
+            [
+              97.31029166666666,
+              97.45029166666667
+            ],
+            [
+              97.63029166666668,
+              97.73029166666667
+            ],
+            [
+              98.15029166666666,
+              98.25029166666668
+            ],
+            [
+              99.55029166666667,
+              99.65029166666666
+            ],
+            [
+              99.71029166666666,
+              99.81029166666669
+            ],
+            [
+              100.95029166666667,
+              101.05029166666667
+            ],
+            [
+              101.59029166666666,
+              101.69029166666668
+            ],
+            [
+              102.75029166666668,
+              102.93029166666666
+            ],
+            [
+              103.11029166666667,
+              103.21029166666666
+            ],
+            [
+              103.31029166666666,
+              103.45029166666667
+            ],
+            [
+              103.67029166666667,
+              103.77029166666667
+            ],
+            [
+              104.83029166666667,
+              104.97029166666665
+            ],
+            [
+              105.55029166666667,
+              105.65029166666666
+            ],
+            [
+              105.83029166666667,
+              105.93029166666666
+            ],
+            [
+              106.03029166666666,
+              106.25029166666668
+            ],
+            [
+              106.43029166666666,
+              106.65029166666666
+            ],
+            [
+              106.87029166666666,
+              106.97029166666665
+            ],
+            [
+              107.15029166666666,
+              107.25029166666668
+            ],
+            [
+              107.39029166666667,
+              107.49029166666666
+            ],
+            [
+              107.67029166666667,
+              107.77029166666667
+            ],
+            [
+              109.07029166666668,
+              109.21029166666666
+            ],
+            [
+              109.31029166666666,
+              109.41029166666665
+            ],
+            [
+              109.59029166666666,
+              109.69029166666668
+            ],
+            [
+              109.79029166666665,
+              109.89029166666667
+            ],
+            [
+              109.95029166666667,
+              110.13029166666668
+            ],
+            [
+              111.91029166666665,
+              112.01029166666667
+            ],
+            [
+              112.99029166666666,
+              113.09029166666666
+            ],
+            [
+              113.27029166666667,
+              113.37029166666666
+            ],
+            [
+              113.99029166666666,
+              114.13029166666668
+            ],
+            [
+              114.87029166666666,
+              114.97029166666665
+            ],
+            [
+              115.11029166666667,
+              115.21029166666666
+            ],
+            [
+              115.39029166666667,
+              115.73029166666667
+            ],
+            [
+              115.99029166666666,
+              116.09029166666666
+            ],
+            [
+              116.63029166666668,
+              116.73029166666667
+            ],
+            [
+              116.99029166666666,
+              117.09029166666666
+            ],
+            [
+              117.27029166666667,
+              117.37029166666666
+            ],
+            [
+              117.51029166666667,
+              117.61029166666667
+            ],
+            [
+              118.03029166666666,
+              118.13029166666668
+            ],
+            [
+              119.11029166666667,
+              119.21029166666666
+            ],
+            [
+              119.95029166666667,
+              120.09029166666666
+            ],
+            [
+              120.79029166666665,
+              120.89029166666667
+            ],
+            [
+              121.59029166666666,
+              121.77029166666667
+            ],
+            [
+              122.23029166666664,
+              122.33029166666667
+            ],
+            [
+              122.71029166666666,
+              122.81029166666669
+            ],
+            [
+              123.71029166666666,
+              123.81029166666669
+            ],
+            [
+              124.59029166666666,
+              124.81029166666669
+            ],
+            [
+              125.19029166666668,
+              125.45029166666667
+            ],
+            [
+              125.67029166666667,
+              125.77029166666667
+            ],
+            [
+              127.79029166666665,
+              127.89029166666667
+            ],
+            [
+              128.11029166666663,
+              128.49029166666662
+            ],
+            [
+              129.03029166666664,
+              129.29029166666663
+            ],
+            [
+              129.55029166666662,
+              129.65029166666665
+            ],
+            [
+              130.39029166666666,
+              130.49029166666662
+            ],
+            [
+              130.79029166666663,
+              130.89029166666666
+            ],
+            [
+              131.27029166666665,
+              131.37029166666662
+            ],
+            [
+              131.51029166666666,
+              131.65029166666665
+            ],
+            [
+              132.07029166666666,
+              132.17029166666663
+            ],
+            [
+              133.51029166666666,
+              133.6902916666666
+            ],
+            [
+              133.87029166666662,
+              133.97029166666664
+            ],
+            [
+              134.07029166666666,
+              134.17029166666663
+            ],
+            [
+              134.23029166666663,
+              134.33029166666665
+            ],
+            [
+              134.7502916666666,
+              134.89029166666666
+            ],
+            [
+              135.23029166666663,
+              135.49029166666662
+            ],
+            [
+              135.83029166666665,
+              136.01029166666666
+            ],
+            [
+              136.99029166666662,
+              137.09029166666664
+            ],
+            [
+              137.31029166666661,
+              137.53029166666664
+            ],
+            [
+              137.95029166666666,
+              138.05029166666662
+            ],
+            [
+              138.1902916666666,
+              138.29029166666663
+            ],
+            [
+              138.39029166666666,
+              138.65029166666665
+            ],
+            [
+              138.7502916666666,
+              138.85029166666664
+            ],
+            [
+              139.03029166666664,
+              139.13029166666666
+            ],
+            [
+              139.59029166666664,
+              139.6902916666666
+            ],
+            [
+              140.11029166666663,
+              140.29029166666663
+            ],
+            [
+              140.35029166666664,
+              140.57029166666666
+            ],
+            [
+              141.43029166666662,
+              141.53029166666664
+            ],
+            [
+              141.6302916666666,
+              141.73029166666663
+            ],
+            [
+              141.91029166666664,
+              142.09029166666664
+            ],
+            [
+              142.1902916666666,
+              142.49029166666662
+            ],
+            [
+              143.31029166666661,
+              143.41029166666664
+            ],
+            [
+              143.79029166666663,
+              143.89029166666666
+            ],
+            [
+              144.03029166666664,
+              144.45029166666666
+            ],
+            [
+              145.11029166666663,
+              145.2502916666666
+            ],
+            [
+              145.79029166666663,
+              146.21029166666665
+            ],
+            [
+              146.55029166666662,
+              146.65029166666665
+            ],
+            [
+              146.91029166666664,
+              147.01029166666666
+            ],
+            [
+              147.43029166666662,
+              147.6902916666666
+            ],
+            [
+              147.87029166666662,
+              148.09029166666664
+            ],
+            [
+              148.1902916666666,
+              148.29029166666663
+            ],
+            [
+              148.35029166666664,
+              148.49029166666662
+            ],
+            [
+              149.07029166666666,
+              149.21029166666665
+            ],
+            [
+              149.71029166666665,
+              149.93029166666662
+            ],
+            [
+              149.99029166666662,
+              150.17029166666663
+            ],
+            [
+              150.31029166666661,
+              150.65029166666665
+            ],
+            [
+              150.79029166666663,
+              150.89029166666666
+            ],
+            [
+              151.03029166666664,
+              151.17029166666663
+            ],
+            [
+              151.27029166666665,
+              151.41029166666664
+            ],
+            [
+              151.59029166666664,
+              151.6902916666666
+            ],
+            [
+              151.87029166666662,
+              151.97029166666664
+            ],
+            [
+              152.03029166666664,
+              152.17029166666663
+            ],
+            [
+              152.23029166666663,
+              152.33029166666665
+            ],
+            [
+              152.43029166666662,
+              152.53029166666664
+            ],
+            [
+              152.91029166666664,
+              153.13029166666666
+            ],
+            [
+              153.35029166666664,
+              153.53029166666664
+            ],
+            [
+              153.79029166666663,
+              153.89029166666666
+            ],
+            [
+              154.27029166666665,
+              154.37029166666662
+            ],
+            [
+              154.47029166666664,
+              154.57029166666666
+            ],
+            [
+              154.91029166666664,
+              155.09029166666664
+            ],
+            [
+              155.87029166666662,
+              156.01029166666666
+            ],
+            [
+              156.27029166666665,
+              156.49029166666662
+            ],
+            [
+              156.67029166666663,
+              156.77029166666665
+            ],
+            [
+              156.95029166666666,
+              157.05029166666662
+            ],
+            [
+              157.11029166666663,
+              157.2502916666666
+            ],
+            [
+              158.11029166666663,
+              158.33029166666665
+            ],
+            [
+              158.6302916666666,
+              158.97029166666664
+            ],
+            [
+              159.11029166666663,
+              159.45029166666666
+            ],
+            [
+              160.71029166666665,
+              160.85029166666664
+            ],
+            [
+              160.99029166666662,
+              161.09029166666664
+            ],
+            [
+              161.67029166666663,
+              161.93029166666662
+            ],
+            [
+              162.15029166666665,
+              162.2502916666666
+            ],
+            [
+              162.35029166666664,
+              162.45029166666666
+            ],
+            [
+              162.51029166666666,
+              162.61029166666663
+            ],
+            [
+              162.71029166666665,
+              162.85029166666664
+            ],
+            [
+              162.91029166666664,
+              163.13029166666666
+            ],
+            [
+              163.23029166666663,
+              163.37029166666662
+            ],
+            [
+              163.71029166666665,
+              163.81029166666661
+            ],
+            [
+              163.87029166666662,
+              164.13029166666666
+            ],
+            [
+              164.35029166666664,
+              164.49029166666662
+            ],
+            [
+              164.7502916666666,
+              164.85029166666664
+            ],
+            [
+              165.07029166666666,
+              165.17029166666663
+            ],
+            [
+              165.27029166666665,
+              165.45029166666666
+            ],
+            [
+              165.51029166666666,
+              165.61029166666663
+            ],
+            [
+              165.83029166666665,
+              165.93029166666662
+            ],
+            [
+              166.07029166666666,
+              166.21029166666665
+            ],
+            [
+              166.43029166666662,
+              166.53029166666664
+            ],
+            [
+              167.15029166666665,
+              167.2502916666666
+            ],
+            [
+              167.39029166666666,
+              167.49029166666662
+            ],
+            [
+              167.91029166666664,
+              168.01029166666666
+            ],
+            [
+              168.59029166666664,
+              168.73029166666663
+            ],
+            [
+              168.83029166666665,
+              168.93029166666662
+            ],
+            [
+              169.67029166666663,
+              169.85029166666664
+            ],
+            [
+              170.11029166666663,
+              170.2502916666666
+            ],
+            [
+              170.39029166666666,
+              170.61029166666663
+            ],
+            [
+              170.71029166666665,
+              170.81029166666661
+            ],
+            [
+              171.23029166666663,
+              171.33029166666665
+            ],
+            [
+              171.7502916666666,
+              171.89029166666666
+            ],
+            [
+              171.95029166666666,
+              172.05029166666662
+            ],
+            [
+              172.43029166666662,
+              172.53029166666664
+            ],
+            [
+              172.67029166666663,
+              172.97029166666664
+            ],
+            [
+              173.03029166666664,
+              173.17029166666663
+            ],
+            [
+              173.35029166666664,
+              173.6902916666666
+            ],
+            [
+              173.7502916666666,
+              173.85029166666664
+            ],
+            [
+              174.03029166666664,
+              174.21029166666665
+            ],
+            [
+              174.47029166666664,
+              174.57029166666666
+            ],
+            [
+              174.95029166666666,
+              175.13029166666666
+            ],
+            [
+              175.87029166666662,
+              176.09029166666664
+            ],
+            [
+              177.35029166666664,
+              177.45029166666666
+            ],
+            [
+              177.59029166666664,
+              177.73029166666663
+            ],
+            [
+              178.15029166666665,
+              178.2502916666666
+            ],
+            [
+              178.43029166666662,
+              178.53029166666664
+            ],
+            [
+              178.59029166666664,
+              178.6902916666666
+            ],
+            [
+              179.07029166666666,
+              179.17029166666663
+            ],
+            [
+              179.35029166666664,
+              179.45029166666666
+            ],
+            [
+              179.59029166666664,
+              179.73029166666663
+            ],
+            [
+              180.07029166666666,
+              180.17029166666663
+            ],
+            [
+              180.47029166666664,
+              180.73029166666663
+            ],
+            [
+              181.99029166666662,
+              182.09029166666664
+            ],
+            [
+              182.15029166666665,
+              182.2502916666666
+            ],
+            [
+              182.35029166666664,
+              182.49029166666662
+            ],
+            [
+              182.91029166666664,
+              183.05029166666662
+            ],
+            [
+              183.47029166666664,
+              183.61029166666663
+            ],
+            [
+              183.7502916666666,
+              184.37029166666662
+            ],
+            [
+              184.55029166666662,
+              184.89029166666666
+            ],
+            [
+              184.99029166666662,
+              185.09029166666664
+            ],
+            [
+              185.79029166666663,
+              186.01029166666666
+            ],
+            [
+              186.47029166666664,
+              186.57029166666666
+            ],
+            [
+              186.95029166666666,
+              187.05029166666662
+            ],
+            [
+              187.7502916666666,
+              187.89029166666666
+            ],
+            [
+              189.51029166666666,
+              189.61029166666663
+            ],
+            [
+              190.43029166666662,
+              190.57029166666666
+            ],
+            [
+              190.99029166666662,
+              191.13029166666666
+            ],
+            [
+              191.1902916666666,
+              191.37029166666662
+            ],
+            [
+              191.87029166666662,
+              191.97029166666664
+            ],
+            [
+              192.31029166666661,
+              192.41029166666664
+            ],
+            [
+              192.55029166666662,
+              192.65029166666665
+            ],
+            [
+              192.7502916666666,
+              192.85029166666664
+            ],
+            [
+              193.15029166666665,
+              193.2502916666666
+            ],
+            [
+              193.39029166666666,
+              193.53029166666664
+            ],
+            [
+              193.7502916666666,
+              193.85029166666664
+            ],
+            [
+              194.31029166666661,
+              194.41029166666664
+            ],
+            [
+              194.83029166666665,
+              194.97029166666664
+            ],
+            [
+              195.35029166666664,
+              195.45029166666666
+            ],
+            [
+              196.43029166666662,
+              196.53029166666664
+            ],
+            [
+              196.6302916666666,
+              196.73029166666663
+            ],
+            [
+              196.95029166666666,
+              197.09029166666664
+            ],
+            [
+              197.43029166666662,
+              197.53029166666664
+            ],
+            [
+              198.1902916666666,
+              198.29029166666663
+            ],
+            [
+              198.67029166666663,
+              198.77029166666665
+            ],
+            [
+              198.87029166666662,
+              198.97029166666664
+            ],
+            [
+              199.15029166666665,
+              199.2502916666666
+            ],
+            [
+              199.67029166666663,
+              199.77029166666665
+            ],
+            [
+              200.1902916666666,
+              200.33029166666665
+            ],
+            [
+              201.27029166666665,
+              201.49029166666662
+            ],
+            [
+              201.59029166666664,
+              201.77029166666665
+            ],
+            [
+              201.95029166666666,
+              202.05029166666662
+            ],
+            [
+              202.91029166666664,
+              203.01029166666666
+            ],
+            [
+              203.87029166666662,
+              203.97029166666664
+            ],
+            [
+              204.15029166666665,
+              204.2502916666666
+            ],
+            [
+              204.47029166666664,
+              204.57029166666666
+            ],
+            [
+              204.71029166666665,
+              204.81029166666661
+            ],
+            [
+              205.27029166666665,
+              205.41029166666664
+            ],
+            [
+              206.99029166666662,
+              207.09029166666664
+            ],
+            [
+              207.95029166666666,
+              208.05029166666662
+            ],
+            [
+              208.23029166666663,
+              208.33029166666665
+            ],
+            [
+              208.83029166666665,
+              208.93029166666662
+            ],
+            [
+              208.99029166666662,
+              209.17029166666663
+            ],
+            [
+              209.55029166666662,
+              209.65029166666665
+            ],
+            [
+              209.87029166666662,
+              209.97029166666664
+            ],
+            [
+              210.15029166666665,
+              210.41029166666664
+            ],
+            [
+              210.47029166666664,
+              210.65029166666665
+            ],
+            [
+              210.79029166666663,
+              210.93029166666662
+            ],
+            [
+              211.07029166666666,
+              211.21029166666665
+            ],
+            [
+              212.55029166666662,
+              212.65029166666665
+            ],
+            [
+              214.07029166666666,
+              214.17029166666663
+            ],
+            [
+              214.31029166666661,
+              214.41029166666664
+            ],
+            [
+              214.91029166666664,
+              215.01029166666666
+            ],
+            [
+              216.51029166666666,
+              216.61029166666663
+            ],
+            [
+              216.67029166666663,
+              216.89029166666666
+            ],
+            [
+              217.11029166666663,
+              217.29029166666663
+            ],
+            [
+              217.6302916666666,
+              217.73029166666663
+            ],
+            [
+              218.79029166666663,
+              219.01029166666666
+            ],
+            [
+              219.31029166666661,
+              219.41029166666664
+            ],
+            [
+              219.47029166666664,
+              219.61029166666663
+            ],
+            [
+              220.11029166666663,
+              220.21029166666665
+            ],
+            [
+              220.67029166666663,
+              220.77029166666665
+            ],
+            [
+              222.03029166666664,
+              222.13029166666666
+            ],
+            [
+              222.1902916666666,
+              222.29029166666663
+            ],
+            [
+              222.95029166666666,
+              223.05029166666662
+            ],
+            [
+              223.15029166666665,
+              223.2502916666666
+            ],
+            [
+              223.67029166666663,
+              223.77029166666665
+            ],
+            [
+              223.83029166666665,
+              223.97029166666664
+            ],
+            [
+              224.07029166666666,
+              224.17029166666663
+            ],
+            [
+              224.43029166666662,
+              224.53029166666664
+            ],
+            [
+              224.87029166666662,
+              224.97029166666664
+            ],
+            [
+              225.1902916666666,
+              225.33029166666665
+            ],
+            [
+              225.51029166666666,
+              225.65029166666665
+            ],
+            [
+              226.07029166666666,
+              226.21029166666665
+            ],
+            [
+              227.59029166666664,
+              227.6902916666666
+            ],
+            [
+              227.79029166666663,
+              227.97029166666664
+            ],
+            [
+              228.03029166666664,
+              228.13029166666666
+            ],
+            [
+              228.43029166666662,
+              228.61029166666663
+            ],
+            [
+              228.79029166666663,
+              228.93029166666662
+            ],
+            [
+              229.67029166666663,
+              229.77029166666665
+            ],
+            [
+              230.11029166666663,
+              230.21029166666665
+            ],
+            [
+              230.51029166666666,
+              230.65029166666665
+            ],
+            [
+              231.23029166666663,
+              231.33029166666665
+            ],
+            [
+              231.55029166666662,
+              231.65029166666665
+            ],
+            [
+              234.7502916666666,
+              234.85029166666664
+            ],
+            [
+              235.79029166666663,
+              236.05029166666662
+            ],
+            [
+              236.15029166666665,
+              236.2502916666666
+            ],
+            [
+              237.11029166666663,
+              237.21029166666665
+            ],
+            [
+              237.43029166666662,
+              237.53029166666664
+            ],
+            [
+              237.83029166666665,
+              237.93029166666662
+            ],
+            [
+              238.31029166666661,
+              238.41029166666664
+            ],
+            [
+              239.15029166666665,
+              239.2502916666666
+            ],
+            [
+              239.51029166666666,
+              239.65029166666665
+            ],
+            [
+              240.07029166666666,
+              240.2502916666666
+            ],
+            [
+              240.59029166666664,
+              240.6902916666666
+            ],
+            [
+              242.07029166666666,
+              242.17029166666663
+            ],
+            [
+              242.35029166666664,
+              242.49029166666662
+            ],
+            [
+              243.31029166666661,
+              243.41029166666664
+            ],
+            [
+              243.67029166666663,
+              243.81029166666661
+            ],
+            [
+              244.07029166666666,
+              244.17029166666663
+            ],
+            [
+              244.51029166666666,
+              244.65029166666665
+            ],
+            [
+              245.07029166666666,
+              245.17029166666663
+            ],
+            [
+              245.27029166666665,
+              245.45029166666666
+            ],
+            [
+              246.47029166666664,
+              246.73029166666663
+            ],
+            [
+              247.1902916666666,
+              247.29029166666663
+            ],
+            [
+              248.43029166666662,
+              248.65029166666665
+            ],
+            [
+              249.23029166666663,
+              249.45029166666666
+            ],
+            [
+              249.67029166666663,
+              249.77029166666665
+            ],
+            [
+              249.87029166666662,
+              250.01029166666666
+            ],
+            [
+              250.11029166666663,
+              250.21029166666665
+            ],
+            [
+              250.43029166666662,
+              250.53029166666664
+            ],
+            [
+              254.23029166666663,
+              254.33029166666665
+            ],
+            [
+              254.39029166666666,
+              254.49029166666662
+            ],
+            [
+              255.83029166666665,
+              255.93029166666662
+            ],
+            [
+              256.2302916666667,
+              256.33029166666665
+            ],
+            [
+              259.27029166666665,
+              259.3702916666667
+            ],
+            [
+              260.39029166666666,
+              260.4902916666667
+            ],
+            [
+              260.63029166666666,
+              260.7302916666667
+            ],
+            [
+              260.95029166666666,
+              261.0502916666667
+            ],
+            [
+              261.83029166666665,
+              261.9302916666667
+            ],
+            [
+              262.31029166666667,
+              262.4102916666667
+            ],
+            [
+              262.51029166666666,
+              262.6102916666667
+            ],
+            [
+              262.7902916666667,
+              262.89029166666666
+            ],
+            [
+              265.5502916666667,
+              265.6502916666667
+            ],
+            [
+              266.7902916666667,
+              266.89029166666666
+            ],
+            [
+              266.95029166666666,
+              267.0502916666667
+            ],
+            [
+              267.27029166666665,
+              267.4102916666667
+            ],
+            [
+              267.9902916666667,
+              268.0902916666667
+            ],
+            [
+              269.07029166666666,
+              269.1702916666667
+            ],
+            [
+              269.6702916666667,
+              269.89029166666666
+            ],
+            [
+              269.95029166666666,
+              270.0502916666667
+            ],
+            [
+              270.27029166666665,
+              270.4902916666667
+            ],
+            [
+              270.83029166666665,
+              270.9302916666667
+            ],
+            [
+              271.0302916666667,
+              271.1702916666667
+            ],
+            [
+              271.51029166666666,
+              271.69029166666667
+            ],
+            [
+              272.07029166666666,
+              272.2102916666667
+            ],
+            [
+              272.6702916666667,
+              272.7702916666667
+            ],
+            [
+              273.5902916666667,
+              273.69029166666667
+            ],
+            [
+              275.0302916666667,
+              275.25029166666667
+            ],
+            [
+              275.39029166666666,
+              275.4902916666667
+            ],
+            [
+              275.75029166666667,
+              275.8502916666667
+            ],
+            [
+              276.27029166666665,
+              276.4102916666667
+            ],
+            [
+              277.27029166666665,
+              277.4102916666667
+            ],
+            [
+              279.3502916666667,
+              279.45029166666666
+            ],
+            [
+              279.51029166666666,
+              279.6102916666667
+            ],
+            [
+              279.75029166666667,
+              279.9702916666667
+            ],
+            [
+              280.6702916666667,
+              280.7702916666667
+            ],
+            [
+              281.1502916666667,
+              281.25029166666667
+            ],
+            [
+              281.51029166666666,
+              281.7302916666667
+            ],
+            [
+              282.0302916666667,
+              282.13029166666666
+            ],
+            [
+              282.27029166666665,
+              282.6102916666667
+            ],
+            [
+              282.75029166666667,
+              282.8502916666667
+            ],
+            [
+              283.6702916666667,
+              283.7702916666667
+            ],
+            [
+              286.5902916666667,
+              286.7302916666667
+            ],
+            [
+              287.0302916666667,
+              287.1702916666667
+            ],
+            [
+              287.2302916666667,
+              287.33029166666665
+            ],
+            [
+              288.3502916666667,
+              288.45029166666666
+            ],
+            [
+              289.0302916666667,
+              289.1702916666667
+            ],
+            [
+              289.9102916666667,
+              290.0902916666667
+            ],
+            [
+              291.7902916666667,
+              291.89029166666666
+            ],
+            [
+              292.95029166666666,
+              293.0502916666667
+            ],
+            [
+              293.2302916666667,
+              293.4102916666667
+            ],
+            [
+              294.3502916666667,
+              294.45029166666666
+            ],
+            [
+              295.0302916666667,
+              295.2102916666667
+            ],
+            [
+              297.9902916666667,
+              298.2102916666667
+            ],
+            [
+              298.5902916666667,
+              298.69029166666667
+            ],
+            [
+              299.1102916666667,
+              299.25029166666667
+            ],
+            [
+              301.19029166666667,
+              301.3702916666667
+            ],
+            [
+              301.75029166666667,
+              301.9302916666667
+            ],
+            [
+              302.07029166666666,
+              302.1702916666667
+            ],
+            [
+              304.7902916666667,
+              304.89029166666666
+            ],
+            [
+              305.5502916666667,
+              305.7702916666667
+            ],
+            [
+              307.07029166666666,
+              307.1702916666667
+            ],
+            [
+              308.51029166666666,
+              308.6102916666667
+            ],
+            [
+              311.27029166666665,
+              311.3702916666667
+            ],
+            [
+              311.6702916666667,
+              311.7702916666667
+            ],
+            [
+              312.75029166666667,
+              312.9302916666667
+            ],
+            [
+              314.7902916666667,
+              314.9702916666667
+            ],
+            [
+              315.75029166666667,
+              315.8502916666667
+            ],
+            [
+              318.3502916666667,
+              318.4902916666667
+            ],
+            [
+              318.9102916666667,
+              319.25029166666667
+            ],
+            [
+              319.8702916666667,
+              319.9702916666667
+            ],
+            [
+              320.0302916666667,
+              320.1702916666667
+            ],
+            [
+              320.51029166666666,
+              320.6102916666667
+            ],
+            [
+              322.8702916666667,
+              322.9702916666667
+            ],
+            [
+              323.07029166666666,
+              323.2902916666667
+            ],
+            [
+              323.39029166666666,
+              323.57029166666666
+            ],
+            [
+              324.31029166666667,
+              324.4902916666667
+            ],
+            [
+              325.1102916666667,
+              325.2102916666667
+            ],
+            [
+              325.39029166666666,
+              325.4902916666667
+            ],
+            [
+              325.6702916666667,
+              325.7702916666667
+            ],
+            [
+              326.0302916666667,
+              326.1702916666667
+            ],
+            [
+              327.31029166666667,
+              327.45029166666666
+            ],
+            [
+              328.8702916666667,
+              328.9702916666667
+            ],
+            [
+              329.31029166666667,
+              329.45029166666666
+            ],
+            [
+              329.83029166666665,
+              329.9702916666667
+            ],
+            [
+              330.4302916666667,
+              330.5302916666667
+            ],
+            [
+              330.8702916666667,
+              330.9702916666667
+            ],
+            [
+              333.1102916666667,
+              333.2102916666667
+            ],
+            [
+              333.83029166666665,
+              333.9302916666667
+            ],
+            [
+              334.27029166666665,
+              334.3702916666667
+            ],
+            [
+              334.8702916666667,
+              334.9702916666667
+            ],
+            [
+              336.31029166666667,
+              336.4102916666667
+            ],
+            [
+              336.6702916666667,
+              336.7702916666667
+            ],
+            [
+              339.4702916666667,
+              339.57029166666666
+            ],
+            [
+              340.5902916666667,
+              340.69029166666667
+            ],
+            [
+              340.75029166666667,
+              340.8502916666667
+            ],
+            [
+              341.7102916666667,
+              341.81029166666667
+            ],
+            [
+              341.9902916666667,
+              342.0902916666667
+            ],
+            [
+              344.2302916666667,
+              344.33029166666665
+            ],
+            [
+              345.0302916666667,
+              345.13029166666666
+            ],
+            [
+              345.75029166666667,
+              345.8502916666667
+            ],
+            [
+              346.39029166666666,
+              346.57029166666666
+            ],
+            [
+              349.83029166666665,
+              349.9302916666667
+            ],
+            [
+              350.7902916666667,
+              350.89029166666666
+            ],
+            [
+              352.19029166666667,
+              352.3702916666667
+            ],
+            [
+              353.39029166666666,
+              353.4902916666667
+            ],
+            [
+              354.7102916666667,
+              354.8502916666667
+            ],
+            [
+              355.0302916666667,
+              355.13029166666666
+            ],
+            [
+              355.27029166666665,
+              355.3702916666667
+            ],
+            [
+              355.63029166666666,
+              355.7302916666667
+            ],
+            [
+              356.51029166666666,
+              356.6102916666667
+            ],
+            [
+              358.19029166666667,
+              358.2902916666667
+            ],
+            [
+              358.39029166666666,
+              358.4902916666667
+            ],
+            [
+              358.9102916666667,
+              359.01029166666666
+            ],
+            [
+              359.7902916666667,
+              360.1702916666667
+            ],
+            [
+              360.9902916666667,
+              361.25029166666667
+            ],
+            [
+              361.39029166666666,
+              361.57029166666666
+            ],
+            [
+              362.19029166666667,
+              362.2902916666667
+            ],
+            [
+              362.95029166666666,
+              363.0502916666667
+            ],
+            [
+              363.3502916666667,
+              363.4902916666667
+            ],
+            [
+              364.07029166666666,
+              364.1702916666667
+            ],
+            [
+              364.95029166666666,
+              365.0502916666667
+            ],
+            [
+              365.19029166666667,
+              365.33029166666665
+            ],
+            [
+              366.27029166666665,
+              366.4102916666667
+            ],
+            [
+              366.6702916666667,
+              366.81029166666667
+            ],
+            [
+              367.39029166666666,
+              367.4902916666667
+            ],
+            [
+              368.07029166666666,
+              368.1702916666667
+            ],
+            [
+              368.5902916666667,
+              368.69029166666667
+            ],
+            [
+              369.2302916666667,
+              369.33029166666665
+            ],
+            [
+              369.6702916666667,
+              369.7702916666667
+            ],
+            [
+              370.19029166666667,
+              370.2902916666667
+            ],
+            [
+              371.27029166666665,
+              371.4102916666667
+            ],
+            [
+              371.7902916666667,
+              371.89029166666666
+            ],
+            [
+              372.4302916666667,
+              372.69029166666667
+            ],
+            [
+              374.2302916666667,
+              374.33029166666665
+            ],
+            [
+              375.07029166666666,
+              375.1702916666667
+            ],
+            [
+              375.8702916666667,
+              375.9702916666667
+            ],
+            [
+              376.83029166666665,
+              376.9302916666667
+            ],
+            [
+              378.39029166666666,
+              378.4902916666667
+            ],
+            [
+              378.7902916666667,
+              379.01029166666666
+            ],
+            [
+              380.7902916666667,
+              380.89029166666666
+            ],
+            [
+              380.9902916666667,
+              381.3702916666667
+            ],
+            [
+              381.4702916666667,
+              381.81029166666667
+            ],
+            [
+              382.07029166666666,
+              382.2102916666667
+            ],
+            [
+              383.5502916666667,
+              383.6502916666667
+            ],
+            [
+              383.7102916666667,
+              383.81029166666667
+            ],
+            [
+              383.9902916666667,
+              384.0902916666667
+            ],
+            [
+              385.07029166666666,
+              385.25029166666667
+            ],
+            [
+              386.83029166666665,
+              386.9302916666667
+            ],
+            [
+              387.3502916666667,
+              387.45029166666666
+            ],
+            [
+              388.5502916666667,
+              388.6502916666667
+            ],
+            [
+              389.4702916666667,
+              389.57029166666666
+            ],
+            [
+              389.75029166666667,
+              389.8502916666667
+            ],
+            [
+              389.9102916666667,
+              390.01029166666666
+            ],
+            [
+              390.8702916666667,
+              390.9702916666667
+            ],
+            [
+              391.07029166666666,
+              391.1702916666667
+            ],
+            [
+              391.5902916666667,
+              391.69029166666667
+            ],
+            [
+              391.95029166666666,
+              392.0502916666667
+            ],
+            [
+              392.1502916666667,
+              392.33029166666665
+            ],
+            [
+              393.1902916666666,
+              393.29029166666663
+            ],
+            [
+              393.4702916666667,
+              393.5702916666666
+            ],
+            [
+              393.91029166666664,
+              394.01029166666666
+            ],
+            [
+              394.8302916666666,
+              394.9702916666667
+            ],
+            [
+              395.15029166666665,
+              395.25029166666667
+            ],
+            [
+              396.4302916666666,
+              396.53029166666664
+            ],
+            [
+              397.03029166666664,
+              397.13029166666666
+            ],
+            [
+              397.5502916666666,
+              397.65029166666665
+            ],
+            [
+              398.9502916666666,
+              399.0902916666667
+            ],
+            [
+              399.79029166666663,
+              399.9302916666666
+            ],
+            [
+              400.1902916666666,
+              400.29029166666663
+            ],
+            [
+              400.4702916666667,
+              400.5702916666666
+            ],
+            [
+              401.2302916666667,
+              401.3302916666666
+            ],
+            [
+              401.6702916666666,
+              401.8502916666667
+            ],
+            [
+              404.6702916666666,
+              404.77029166666665
+            ],
+            [
+              405.3502916666667,
+              405.4902916666667
+            ],
+            [
+              405.6702916666666,
+              405.77029166666665
+            ],
+            [
+              405.8302916666666,
+              405.9302916666666
+            ],
+            [
+              406.1902916666666,
+              406.29029166666663
+            ],
+            [
+              406.9902916666667,
+              407.0902916666667
+            ],
+            [
+              407.3502916666667,
+              407.4502916666666
+            ],
+            [
+              407.9502916666666,
+              408.0902916666667
+            ],
+            [
+              408.3502916666667,
+              408.4902916666667
+            ],
+            [
+              408.75029166666667,
+              408.8502916666667
+            ],
+            [
+              409.1902916666666,
+              409.29029166666663
+            ],
+            [
+              409.75029166666667,
+              409.8502916666667
+            ],
+            [
+              411.3102916666666,
+              411.41029166666664
+            ],
+            [
+              412.51029166666666,
+              412.6102916666667
+            ],
+            [
+              413.15029166666665,
+              413.3302916666666
+            ],
+            [
+              413.5902916666667,
+              413.7302916666667
+            ],
+            [
+              413.79029166666663,
+              413.89029166666666
+            ],
+            [
+              415.4702916666667,
+              415.5702916666666
+            ],
+            [
+              415.6702916666666,
+              415.77029166666665
+            ],
+            [
+              417.15029166666665,
+              417.25029166666667
+            ],
+            [
+              417.4702916666667,
+              417.5702916666666
+            ],
+            [
+              417.7102916666667,
+              417.8102916666666
+            ],
+            [
+              417.9502916666666,
+              418.0502916666666
+            ],
+            [
+              419.3502916666667,
+              419.4502916666666
+            ],
+            [
+              420.75029166666667,
+              420.8502916666667
+            ],
+            [
+              421.2302916666667,
+              421.3302916666666
+            ],
+            [
+              422.79029166666663,
+              422.9302916666666
+            ],
+            [
+              424.3502916666667,
+              424.4902916666667
+            ],
+            [
+              424.8302916666666,
+              424.9302916666666
+            ],
+            [
+              425.15029166666665,
+              425.25029166666667
+            ],
+            [
+              425.8302916666666,
+              426.01029166666666
+            ],
+            [
+              426.4302916666666,
+              426.53029166666664
+            ],
+            [
+              426.63029166666666,
+              426.7302916666667
+            ],
+            [
+              426.9502916666666,
+              427.0902916666667
+            ],
+            [
+              427.2302916666667,
+              427.3702916666667
+            ],
+            [
+              427.51029166666666,
+              427.7302916666667
+            ],
+            [
+              427.9502916666666,
+              428.0502916666666
+            ],
+            [
+              428.1902916666666,
+              428.3302916666666
+            ],
+            [
+              429.8702916666667,
+              429.9702916666667
+            ],
+            [
+              430.03029166666664,
+              430.13029166666666
+            ],
+            [
+              430.1902916666666,
+              430.3302916666666
+            ],
+            [
+              430.5502916666666,
+              430.65029166666665
+            ],
+            [
+              430.79029166666663,
+              430.89029166666666
+            ],
+            [
+              431.1902916666666,
+              431.29029166666663
+            ],
+            [
+              431.79029166666663,
+              431.89029166666666
+            ],
+            [
+              432.1102916666667,
+              432.2102916666667
+            ],
+            [
+              433.3102916666666,
+              433.4502916666666
+            ],
+            [
+              433.8302916666666,
+              434.0902916666667
+            ],
+            [
+              434.4302916666666,
+              434.5702916666666
+            ],
+            [
+              434.7102916666667,
+              434.9302916666666
+            ],
+            [
+              435.15029166666665,
+              435.25029166666667
+            ],
+            [
+              435.4302916666666,
+              435.6102916666667
+            ],
+            [
+              435.79029166666663,
+              435.89029166666666
+            ],
+            [
+              436.27029166666665,
+              436.41029166666664
+            ],
+            [
+              436.51029166666666,
+              436.6102916666667
+            ],
+            [
+              437.3502916666667,
+              437.4502916666666
+            ],
+            [
+              437.5902916666667,
+              437.6902916666666
+            ],
+            [
+              437.91029166666664,
+              438.0502916666666
+            ],
+            [
+              438.1902916666666,
+              438.3302916666666
+            ],
+            [
+              439.27029166666665,
+              439.3702916666667
+            ],
+            [
+              439.79029166666663,
+              439.89029166666666
+            ],
+            [
+              440.1102916666667,
+              440.2102916666667
+            ],
+            [
+              440.5502916666666,
+              440.65029166666665
+            ],
+            [
+              440.8702916666667,
+              440.9702916666667
+            ],
+            [
+              441.5502916666666,
+              441.77029166666665
+            ],
+            [
+              443.0702916666666,
+              443.1702916666666
+            ],
+            [
+              443.2302916666667,
+              443.3302916666666
+            ],
+            [
+              446.3502916666667,
+              446.4502916666666
+            ],
+            [
+              446.8702916666667,
+              446.9702916666667
+            ],
+            [
+              447.39029166666666,
+              447.4902916666667
+            ],
+            [
+              448.63029166666666,
+              448.7302916666667
+            ],
+            [
+              448.79029166666663,
+              448.89029166666666
+            ],
+            [
+              450.7102916666667,
+              450.8102916666666
+            ],
+            [
+              450.9902916666667,
+              451.0902916666667
+            ],
+            [
+              451.4302916666666,
+              451.6102916666667
+            ],
+            [
+              451.6702916666666,
+              451.77029166666665
+            ],
+            [
+              452.2302916666667,
+              452.3302916666666
+            ],
+            [
+              452.9902916666667,
+              453.0902916666667
+            ],
+            [
+              453.51029166666666,
+              453.6102916666667
+            ],
+            [
+              453.6702916666666,
+              453.77029166666665
+            ],
+            [
+              453.8702916666667,
+              454.01029166666666
+            ],
+            [
+              455.5502916666666,
+              455.65029166666665
+            ],
+            [
+              456.9502916666666,
+              457.0502916666666
+            ],
+            [
+              458.7102916666667,
+              458.8102916666666
+            ],
+            [
+              459.51029166666666,
+              459.6102916666667
+            ],
+            [
+              460.03029166666664,
+              460.1702916666666
+            ],
+            [
+              463.03029166666664,
+              463.25029166666667
+            ],
+            [
+              464.1102916666667,
+              464.2102916666667
+            ],
+            [
+              464.4702916666667,
+              464.5702916666666
+            ],
+            [
+              465.4302916666666,
+              465.53029166666664
+            ],
+            [
+              465.75029166666667,
+              465.8502916666667
+            ],
+            [
+              467.39029166666666,
+              467.4902916666667
+            ],
+            [
+              470.7102916666667,
+              470.8502916666667
+            ],
+            [
+              470.9902916666667,
+              471.0902916666667
+            ],
+            [
+              471.91029166666664,
+              472.01029166666666
+            ],
+            [
+              472.5902916666667,
+              472.6902916666666
+            ],
+            [
+              473.1102916666667,
+              473.2102916666667
+            ],
+            [
+              473.27029166666665,
+              473.4902916666667
+            ],
+            [
+              475.0702916666666,
+              475.29029166666663
+            ],
+            [
+              475.4302916666666,
+              475.53029166666664
+            ],
+            [
+              475.75029166666667,
+              475.8502916666667
+            ],
+            [
+              476.8702916666667,
+              476.9702916666667
+            ],
+            [
+              477.2302916666667,
+              477.3302916666666
+            ],
+            [
+              477.39029166666666,
+              477.4902916666667
+            ],
+            [
+              479.1102916666667,
+              479.2102916666667
+            ],
+            [
+              479.3502916666667,
+              479.4902916666667
+            ],
+            [
+              481.51029166666666,
+              481.6102916666667
+            ],
+            [
+              481.9902916666667,
+              482.0902916666667
+            ],
+            [
+              482.15029166666665,
+              482.41029166666664
+            ],
+            [
+              482.9902916666667,
+              483.13029166666666
+            ],
+            [
+              484.2302916666667,
+              484.3302916666666
+            ],
+            [
+              484.63029166666666,
+              484.8102916666666
+            ],
+            [
+              485.3102916666666,
+              485.41029166666664
+            ],
+            [
+              485.4702916666667,
+              485.5702916666666
+            ],
+            [
+              485.8702916666667,
+              485.9702916666667
+            ],
+            [
+              487.15029166666665,
+              487.3702916666667
+            ],
+            [
+              487.4702916666667,
+              487.65029166666665
+            ],
+            [
+              488.03029166666664,
+              488.13029166666666
+            ],
+            [
+              489.03029166666664,
+              489.13029166666666
+            ],
+            [
+              489.39029166666666,
+              489.4902916666667
+            ],
+            [
+              489.8702916666667,
+              489.9702916666667
+            ],
+            [
+              491.5502916666666,
+              491.6902916666666
+            ],
+            [
+              492.27029166666665,
+              492.3702916666667
+            ],
+            [
+              494.3502916666667,
+              494.4902916666667
+            ],
+            [
+              495.15029166666665,
+              495.25029166666667
+            ],
+            [
+              498.3502916666667,
+              498.4502916666666
+            ],
+            [
+              498.79029166666663,
+              498.89029166666666
+            ],
+            [
+              500.79029166666663,
+              500.89029166666666
+            ],
+            [
+              501.39029166666666,
+              501.4902916666667
+            ],
+            [
+              501.7102916666667,
+              501.8102916666666
+            ],
+            [
+              502.0702916666666,
+              502.1702916666666
+            ],
+            [
+              503.4302916666666,
+              503.5702916666666
+            ],
+            [
+              503.63029166666666,
+              503.8102916666666
+            ],
+            [
+              504.4302916666666,
+              504.5702916666666
+            ],
+            [
+              505.39029166666666,
+              505.5702916666666
+            ],
+            [
+              506.1902916666666,
+              506.3302916666666
+            ],
+            [
+              507.4302916666666,
+              507.53029166666664
+            ],
+            [
+              507.5902916666667,
+              507.6902916666666
+            ],
+            [
+              509.03029166666664,
+              509.13029166666666
+            ],
+            [
+              510.4302916666666,
+              510.5702916666666
+            ],
+            [
+              511.3502916666667,
+              511.4502916666666
+            ],
+            [
+              511.5902916666667,
+              511.6902916666666
+            ],
+            [
+              512.9502916666668,
+              513.0502916666667
+            ],
+            [
+              513.1502916666667,
+              513.2502916666667
+            ],
+            [
+              513.9902916666667,
+              514.0902916666666
+            ],
+            [
+              515.7902916666667,
+              515.8902916666667
+            ],
+            [
+              517.3102916666668,
+              517.4902916666667
+            ],
+            [
+              519.0702916666668,
+              519.1702916666667
+            ],
+            [
+              519.3502916666667,
+              519.4502916666667
+            ],
+            [
+              519.9502916666668,
+              520.0502916666667
+            ],
+            [
+              520.8702916666667,
+              521.0102916666667
+            ],
+            [
+              521.1502916666667,
+              521.2502916666667
+            ],
+            [
+              521.3902916666667,
+              521.5302916666667
+            ],
+            [
+              522.8702916666667,
+              522.9702916666666
+            ],
+            [
+              523.7902916666667,
+              524.0902916666666
+            ],
+            [
+              524.1502916666667,
+              524.2502916666667
+            ],
+            [
+              524.7902916666667,
+              524.8902916666667
+            ],
+            [
+              524.9902916666667,
+              525.1302916666667
+            ],
+            [
+              525.2302916666667,
+              525.3302916666667
+            ],
+            [
+              525.3902916666667,
+              525.4902916666667
+            ],
+            [
+              525.7102916666668,
+              525.8502916666666
+            ],
+            [
+              527.0302916666667,
+              527.1302916666667
+            ],
+            [
+              527.9502916666668,
+              528.0502916666667
+            ],
+            [
+              529.1102916666667,
+              529.3302916666667
+            ],
+            [
+              529.7102916666668,
+              529.8102916666667
+            ],
+            [
+              530.5902916666668,
+              530.7302916666666
+            ],
+            [
+              531.1102916666667,
+              531.2102916666666
+            ],
+            [
+              532.6702916666667,
+              532.7702916666667
+            ],
+            [
+              534.4302916666668,
+              534.5302916666667
+            ],
+            [
+              535.4702916666668,
+              535.7302916666666
+            ],
+            [
+              535.9502916666668,
+              536.0502916666667
+            ],
+            [
+              536.3902916666667,
+              536.4902916666667
+            ],
+            [
+              541.3902916666667,
+              541.4902916666667
+            ],
+            [
+              542.1902916666668,
+              542.2902916666667
+            ],
+            [
+              543.7102916666668,
+              543.8502916666666
+            ],
+            [
+              547.5102916666667,
+              547.6102916666666
+            ],
+            [
+              549.3102916666668,
+              549.4102916666667
+            ],
+            [
+              549.7502916666667,
+              549.8502916666666
+            ],
+            [
+              550.5502916666667,
+              550.6502916666667
+            ],
+            [
+              550.7102916666668,
+              550.8502916666666
+            ],
+            [
+              552.1502916666667,
+              552.2502916666667
+            ],
+            [
+              552.7102916666668,
+              552.8502916666666
+            ],
+            [
+              553.9902916666667,
+              554.0902916666666
+            ],
+            [
+              555.4702916666668,
+              555.7302916666666
+            ],
+            [
+              555.8702916666667,
+              555.9702916666666
+            ],
+            [
+              557.0302916666667,
+              557.1302916666667
+            ],
+            [
+              557.3902916666667,
+              557.5702916666667
+            ],
+            [
+              558.3102916666668,
+              558.4502916666667
+            ],
+            [
+              560.1502916666667,
+              560.2502916666667
+            ],
+            [
+              562.1902916666668,
+              562.2902916666667
+            ],
+            [
+              564.2302916666667,
+              564.3302916666667
+            ],
+            [
+              566.3502916666667,
+              566.4502916666667
+            ],
+            [
+              568.4302916666668,
+              568.5302916666667
+            ],
+            [
+              569.1502916666667,
+              569.2502916666667
+            ],
+            [
+              569.6702916666667,
+              569.7702916666667
+            ],
+            [
+              570.8702916666667,
+              570.9702916666666
+            ],
+            [
+              572.3902916666667,
+              572.5302916666667
+            ],
+            [
+              572.7502916666667,
+              572.8502916666666
+            ],
+            [
+              575.5102916666667,
+              575.8102916666667
+            ],
+            [
+              576.2302916666667,
+              576.3302916666667
+            ],
+            [
+              576.9102916666667,
+              577.0502916666667
+            ],
+            [
+              579.3502916666667,
+              579.6102916666666
+            ],
+            [
+              581.5102916666667,
+              581.6102916666666
+            ],
+            [
+              583.9102916666667,
+              584.0502916666667
+            ],
+            [
+              585.6302916666667,
+              585.7302916666666
+            ],
+            [
+              585.9502916666668,
+              586.0902916666666
+            ],
+            [
+              586.9902916666667,
+              587.0902916666666
+            ],
+            [
+              588.3102916666668,
+              588.4102916666667
+            ],
+            [
+              588.5902916666668,
+              588.6902916666667
+            ],
+            [
+              588.7502916666667,
+              588.8502916666666
+            ],
+            [
+              590.7102916666668,
+              590.8102916666667
+            ],
+            [
+              590.8702916666667,
+              591.0102916666667
+            ],
+            [
+              592.3502916666667,
+              592.6102916666666
+            ],
+            [
+              594.3902916666667,
+              594.4902916666667
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMAS"
+      },
+      "narration": "Bueno, caras de pija, ¿alguien me presta cincuenta bolas para ir a la pulpería a comprar una Super Recarga? Ya no tengo internet para ver este vergueo en el grupo familiar.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 26,
+      "script_scene": "pablo_cierre",
+      "start": 715.6986666666667,
+      "end": 722.1853333333333,
+      "duration": 6.5,
+      "timeline_duration": 6.486666666666679,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "PABLO",
+          "type": "humanoids/paul_old_man",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.018666666666604215,
+              2.0786666666666633
+            ],
+            [
+              2.1786666666665724,
+              3.198666666666668
+            ],
+            [
+              3.5786666666666633,
+              5.638666666666609
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "PABLO"
+      },
+      "narration": "¡Andá a comprar tu recarga, cipote! Pero dejá de estar jodiendo. Esta familia ya parece una novela barata.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 27,
+      "script_scene": "tomas_despedida",
+      "start": 722.1853333333333,
+      "end": 731.313125,
+      "duration": 9.1,
+      "timeline_duration": 9.127791666666667,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMAS",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.4453333333333376,
+              2.3853333333332785
+            ],
+            [
+              2.6053333333333057,
+              4.22533333333331
+            ],
+            [
+              4.525333333333265,
+              8.425333333333356
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMAS"
+      },
+      "narration": "Y espérense, que todavía falta contar con quién anda saliendo Ana. Suscríbanse para la tercera parte, porque ahí sí se va a armar un pija de vergueo.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    }
+  ],
+  "cast": [
+    {
+      "id": "ANA",
+      "name": "ANA",
+      "type": "humanoids/ana_young_woman"
+    },
+    {
+      "id": "JUAN",
+      "name": "JUAN",
+      "type": "humanoids/jhon_young_man"
+    },
+    {
+      "id": "PABLO",
+      "name": "PABLO",
+      "type": "humanoids/paul_old_man"
+    },
+    {
+      "id": "TOMAS",
+      "name": "TOMAS",
+      "type": "humanoids/tomy_teenager"
+    }
+  ],
+  "sync_mode": "tts_timeline",
+  "audio_duration": 731.313125,
+  "llm_provider": "openai",
+  "batch_size": 0
+}

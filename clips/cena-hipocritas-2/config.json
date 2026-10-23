@@ -1,0 +1,31 @@
+{
+  "titulo": "cena hipocritas 2",
+  "resolucion": "1080x1920",
+  "musica": "misterius.mp3",
+  "volumen_musica": 0.04,
+  "estilo_visual": "Comedia negra hondureña con discusiones familiares intensas. Ana y Juan pelean por una infidelidad en casa de Pablo, en Tegucigalpa. Pablo intenta imponer autoridad, aunque tiene otra familia en San Pedro Sula. Tomás es sarcástico y provoca a todos. Mostrar gestos, señalamientos, caminatas, reacciones y uso del celular. Mantener vestimenta, proporciones y apariencia original de los cuatro personajes. Utilizar solamente fondos existentes.",
+  "paleta": "",
+  "seed": null,
+  "negative_prompt": "gore, sangre, violencia gráfica, personajes adicionales, texto añadido, marcas de agua, anatomía deformada, personajes duplicados",
+  "cast": {
+    "ANA": "humanoids/ana_young_woman",
+    "JUAN": "humanoids/jhon_young_man",
+    "PABLO": "humanoids/paul_old_man",
+    "TOMAS": "humanoids/tomy_teenager"
+  },
+  "personajes": {
+    "ANA": "humanoids/ana_young_woman",
+    "JUAN": "humanoids/jhon_young_man",
+    "PABLO": "humanoids/paul_old_man",
+    "TOMAS": "humanoids/tomy_teenager"
+  },
+  "modo_video": "stick",
+  "voz_qwen": "Ryan",
+  "porcentaje_minimo_stick": 100.0,
+  "permitir_fondos_automaticos": false,
+  "usar_efectos_sonido": true,
+  "volumen_efectos": 0.2,
+  "max_efectos_sonido": 12,
+  "imagen_final": "",
+  "duracion_imagen_final": 4.0
+}

@@ -87,7 +87,7 @@
       "mode": "loop",
       "movement": {
         "direction": "facing",
-        "speed": 64
+        "speed": 80
       }
     },
     "shooting_a_gun": {
@@ -138,14 +138,14 @@
       "mode": "loop",
       "movement": {
         "direction": "facing",
-        "speed": 26
+        "speed": 39
       }
     },
     "side_walk": {
       "mode": "loop",
       "movement": {
         "direction": "facing",
-        "speed": 26
+        "speed": 39
       },
       "file": "walk.png"
     }

@@ -5,7 +5,7 @@ import shutil
 import subprocess
 import tempfile
 from pathlib import Path
-
+from masterizacion_audio import masterizar_video
 
 BASE_DIR = Path(__file__).resolve().parent
 MUSICA_DIR = BASE_DIR / "musica"
@@ -1049,5 +1049,5 @@ def generar_video(
         f"[VIDEO] Video generado: "
         f"{ruta_video}"
     )
-
+    masterizar_video(ruta_video)
     return ruta_video

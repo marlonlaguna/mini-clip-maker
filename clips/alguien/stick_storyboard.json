@@ -1,0 +1,1370 @@
+{
+  "storyboard": [
+    {
+      "scene": 1,
+      "script_scene": "advertencia",
+      "start": 0.0,
+      "end": 9.482,
+      "duration": 9.466666666666667,
+      "timeline_duration": 9.482,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "bedroom_house",
+      "fallback_background": "bedroom_house",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.45999999999999996,
+              2.68
+            ],
+            [
+              3.02,
+              4.08
+            ],
+            [
+              4.180000000000001,
+              5.28
+            ],
+            [
+              5.420000000000001,
+              6.5200000000000005
+            ],
+            [
+              6.58,
+              7.08
+            ],
+            [
+              7.420000000000001,
+              8.44
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMY"
+      },
+      "narration": "Anoche grabé mi habitación mientras dormía. A las tres de la mañana, escuché mi propia voz discutiendo con alguien. Pero yo vivo solo.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "scary-violin",
+          "time": 0.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "script_scene": "presentacion",
+      "start": 9.482,
+      "end": 20.257583333333333,
+      "duration": 10.8,
+      "timeline_duration": 10.775583333333334,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.43533333333333246,
+              0.9353333333333325
+            ],
+            [
+              1.035333333333332,
+              1.455333333333332
+            ],
+            [
+              1.875333333333332,
+              4.575333333333331
+            ],
+            [
+              5.035333333333332,
+              6.7753333333333305
+            ],
+            [
+              7.275333333333334,
+              8.735333333333331
+            ],
+            [
+              8.795333333333334,
+              10.09533333333333
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Me llamo Tomy. Llevo varios meses viviendo solo en esta casa. Nunca creí en fantasmas, hasta que empecé a escuchar pasos por el pasillo.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 3,
+      "script_scene": "primeros_pasos",
+      "start": 20.257583333333333,
+      "end": 29.676125,
+      "duration": 9.4,
+      "timeline_duration": 9.418541666666666,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "pasillo_escaleras_casa",
+      "fallback_background": "pasillo_escaleras_casa",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "side_walk",
+          "position": 2,
+          "facing": "right",
+          "movement": {
+            "direction": "right",
+            "speed": 12.0
+          },
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.2509166666666687,
+              1.9109166666666653
+            ],
+            [
+              2.370916666666666,
+              5.030916666666666
+            ],
+            [
+              5.410916666666669,
+              6.910916666666665
+            ],
+            [
+              7.010916666666667,
+              8.590916666666665
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Todas las noches era lo mismo. Pasos lentos, como si alguien caminara descalzo. Pensé que eran mis vecinos y traté de ignorarlo.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "crunchy-footsteps-loop",
+          "time": 1.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "script_scene": "dormir",
+      "start": 29.676125,
+      "end": 36.8035,
+      "duration": 7.133333333333334,
+      "timeline_duration": 7.127375000000001,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "bedroom_house",
+      "fallback_background": "bedroom_house",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "sleep",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.42945833333333283,
+              1.0094583333333311
+            ],
+            [
+              1.4294583333333328,
+              2.689458333333331
+            ],
+            [
+              2.8294583333333314,
+              4.369458333333331
+            ],
+            [
+              4.469458333333332,
+              6.329458333333331
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Pero ayer, a las tres de la mañana, me despertó el sonido de una puerta abriéndose en la cocina.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "door_open",
+          "time": 2.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "script_scene": "ruido_cocina",
+      "start": 36.8035,
+      "end": 44.947541666666666,
+      "duration": 8.133333333333333,
+      "timeline_duration": 8.144041666666666,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.18350000000000222,
+              1.4834999999999994
+            ],
+            [
+              1.663499999999999,
+              3.5635000000000048
+            ],
+            [
+              3.663499999999999,
+              5.1235
+            ],
+            [
+              5.463500000000003,
+              7.203500000000005
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Después escuché pasos, el ruido de un vaso sobre una mesa y un cajón cerrándose. Había alguien dentro de mi casa.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "shoe-steps",
+          "time": 1.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 6,
+      "script_scene": "levantarme",
+      "start": 44.947541666666666,
+      "end": 55.02291666666667,
+      "duration": 10.1,
+      "timeline_duration": 10.075375000000001,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "bedroom_house",
+      "fallback_background": "bedroom_house",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "afraid",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.4742083333333369,
+              2.534208333333339
+            ],
+            [
+              2.9542083333333338,
+              4.454208333333334
+            ],
+            [
+              4.514208333333336,
+              5.054208333333335
+            ],
+            [
+              5.1142083333333375,
+              5.574208333333338
+            ],
+            [
+              5.8742083333333355,
+              8.294208333333337
+            ],
+            [
+              8.394208333333339,
+              9.414208333333335
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Me quedé inmóvil unos segundos. Recordé que había cerrado todas las puertas. Y que absolutamente nadie más tenía llaves.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "ghost-horror-sound",
+          "time": 1.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 7,
+      "script_scene": "revisar",
+      "start": 55.02291666666667,
+      "end": 65.28808333333333,
+      "duration": 10.266666666666667,
+      "timeline_duration": 10.265166666666666,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "sneaking",
+          "position": 1,
+          "facing": "right",
+          "movement": {
+            "direction": "right",
+            "speed": 12.0
+          },
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.44958333333333655,
+              2.509583333333339
+            ],
+            [
+              2.609583333333333,
+              3.509583333333339
+            ],
+            [
+              4.209583333333335,
+              5.309583333333336
+            ],
+            [
+              5.649583333333339,
+              7.229583333333338
+            ],
+            [
+              7.489583333333336,
+              8.669583333333335
+            ],
+            [
+              8.769583333333337,
+              9.709583333333342
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Salí de mi habitación y revisé toda la casa. No había nadie. Las ventanas estaban cerradas y la puerta principal seguía con llave.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "crunchy-footsteps-loop",
+          "time": 1.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 8,
+      "script_scene": "el_vaso",
+      "start": 65.28808333333333,
+      "end": 75.09645833333333,
+      "duration": 9.8,
+      "timeline_duration": 9.808374999999998,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.08808333333332996,
+              1.548083333333338
+            ],
+            [
+              1.6080833333333402,
+              2.308083333333329
+            ],
+            [
+              2.768083333333337,
+              5.628083333333336
+            ],
+            [
+              6.248083333333341,
+              8.908083333333337
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMY"
+      },
+      "narration": "Pero había algo extraño. Un vaso lleno de agua sobre la mesa. Estaba seguro de no haberlo dejado ahí.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 9,
+      "script_scene": "llamada_hermana",
+      "start": 75.09645833333333,
+      "end": 85.24225,
+      "duration": 10.133333333333333,
+      "timeline_duration": 10.145791666666668,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house",
+      "fallback_background": "house",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "use_phone",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              1.2964583333333337,
+              3.9964583333333366
+            ],
+            [
+              4.33645833333334,
+              5.236458333333331
+            ],
+            [
+              5.576458333333335,
+              8.916458333333338
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "A la mañana siguiente llamé a mi hermana y le conté todo. Se quedó callada. Después me preguntó algo que me hizo sentir un escalofrío.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 10,
+      "script_scene": "pregunta_hermana",
+      "start": 85.24225,
+      "end": 96.872875,
+      "duration": 11.633333333333333,
+      "timeline_duration": 11.630624999999995,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.18891666666667106,
+              3.448916666666662
+            ],
+            [
+              4.02891666666666,
+              4.928916666666666
+            ],
+            [
+              4.988916666666668,
+              6.0489166666666705
+            ],
+            [
+              6.508916666666664,
+              8.568916666666667
+            ],
+            [
+              8.868916666666664,
+              9.568916666666667
+            ],
+            [
+              9.628916666666669,
+              10.808916666666661
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMY"
+      },
+      "narration": "Me preguntó si también escuchaba pasos en el pasillo. No entendía cómo podía saberlo. Entonces me contó algo que llevaba años ocultándome.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "scary-violin",
+          "time": 1.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 11,
+      "script_scene": "secreto_hermana",
+      "start": 96.872875,
+      "end": 113.95816666666667,
+      "duration": 17.1,
+      "timeline_duration": 17.085291666666677,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "pasillo_escaleras_casa",
+      "fallback_background": "pasillo_escaleras_casa",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "idle",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.66620833333333,
+              2.7662083333333385
+            ],
+            [
+              3.466208333333327,
+              3.886208333333329
+            ],
+            [
+              3.9862083333333374,
+              5.646208333333334
+            ],
+            [
+              5.706208333333336,
+              6.446208333333331
+            ],
+            [
+              7.426208333333335,
+              8.206208333333336
+            ],
+            [
+              8.586208333333332,
+              9.126208333333338
+            ],
+            [
+              9.346208333333337,
+              10.126208333333338
+            ],
+            [
+              10.18620833333334,
+              12.68620833333334
+            ],
+            [
+              13.426208333333335,
+              14.726208333333332
+            ],
+            [
+              14.786208333333335,
+              15.006208333333333
+            ],
+            [
+              15.066208333333336,
+              16.52620833333333
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Cuando vivíamos juntos, ella también escuchaba esos pasos. Una noche oyó mi voz llamándola desde la cocina, aunque yo estaba profundamente dormido.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "ghost-whisper",
+          "time": 2.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 12,
+      "script_scene": "decidir_grabar",
+      "start": 113.95816666666667,
+      "end": 123.74466666666666,
+      "duration": 9.766666666666667,
+      "timeline_duration": 9.78649999999999,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "bedroom_house",
+      "fallback_background": "bedroom_house",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "use_phone",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.8114999999999952,
+              1.5914999999999964
+            ],
+            [
+              1.8114999999999952,
+              3.991500000000002
+            ],
+            [
+              4.3714999999999975,
+              5.4315
+            ],
+            [
+              5.491500000000002,
+              6.8714999999999975
+            ],
+            [
+              7.131500000000003,
+              8.831500000000005
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Esa noche decidí dejar mi teléfono grabando audio. Quería demostrarme que todo tenía una explicación. Ojalá nunca lo hubiera hecho.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 13,
+      "script_scene": "grabacion_noche",
+      "start": 123.74466666666666,
+      "end": 133.41545833333333,
+      "duration": 9.666666666666666,
+      "timeline_duration": 9.670791666666673,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "room_child_nigth",
+      "fallback_background": "room_child_nigth",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "sleep",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.15133333333332644,
+              2.4113333333333316
+            ],
+            [
+              2.831333333333319,
+              4.971333333333334
+            ],
+            [
+              5.191333333333333,
+              6.13133333333333
+            ],
+            [
+              6.6713333333333225,
+              7.13133333333333
+            ],
+            [
+              7.351333333333329,
+              7.931333333333313
+            ],
+            [
+              8.031333333333336,
+              8.85133333333333
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "La grabación estuvo en silencio durante horas. Pero exactamente a las tres y siete, se escucharon pasos. Después, un cajón abriéndose.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "crunchy-footsteps-loop",
+          "time": 3.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 14,
+      "script_scene": "revisar_audio",
+      "start": 133.41545833333333,
+      "end": 144.31516666666667,
+      "duration": 10.9,
+      "timeline_duration": 10.899708333333336,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "bedroom_house",
+      "fallback_background": "bedroom_house",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "use_phone",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.2754583333333187,
+              1.57545833333333
+            ],
+            [
+              2.155458333333314,
+              4.495458333333318
+            ],
+            [
+              4.55545833333332,
+              4.975458333333336
+            ],
+            [
+              5.275458333333319,
+              6.4554583333333255
+            ],
+            [
+              7.035458333333338,
+              7.655458333333314
+            ],
+            [
+              7.875458333333341,
+              9.455458333333326
+            ],
+            [
+              9.515458333333328,
+              10.095458333333312
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Cuando revisé el audio, escuché una voz que murmuraba algo incomprensible. Subí el volumen. A las tres y diecinueve ocurrió lo imposible.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "terror-radio-frequency",
+          "time": 1.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 15,
+      "script_scene": "mi_propia_voz",
+      "start": 144.31516666666667,
+      "end": 151.152125,
+      "duration": 6.866666666666666,
+      "timeline_duration": 6.836958333333342,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "bedroom_house",
+      "fallback_background": "bedroom_house",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.43516666666664605,
+              1.5351666666666688
+            ],
+            [
+              2.155166666666645,
+              3.175166666666655
+            ],
+            [
+              3.715166666666647,
+              5.615166666666653
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMY"
+      },
+      "narration": "Era mi propia voz. Decía claramente: ¡Ya te dije que no entres a mi habitación!",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "ghost-whisper",
+          "time": 2.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 16,
+      "script_scene": "la_respuesta",
+      "start": 151.152125,
+      "end": 159.90554166666666,
+      "duration": 8.733333333333333,
+      "timeline_duration": 8.753416666666652,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "pasillo_escaleras_casa",
+      "fallback_background": "pasillo_escaleras_casa",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "afraid",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.20545833333335395,
+              0.5054583333333653
+            ],
+            [
+              0.5654583333333676,
+              0.9854583333333551
+            ],
+            [
+              1.0454583333333574,
+              1.705458333333354
+            ],
+            [
+              2.1254583333333414,
+              3.6254583333333414
+            ],
+            [
+              3.6854583333333437,
+              5.065458333333368
+            ],
+            [
+              5.3254583333333585,
+              5.7854583333333665
+            ],
+            [
+              5.925458333333353,
+              7.225458333333364
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Me quedé helado. Porque inmediatamente después, otra voz respondió: Pero si tú me abriste.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "ghost-voice",
+          "time": 2.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 17,
+      "script_scene": "dos_vasos",
+      "start": 159.90554166666666,
+      "end": 172.623375,
+      "duration": 12.733333333333333,
+      "timeline_duration": 12.717833333333346,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.46554166666666674,
+              3.325541666666652
+            ],
+            [
+              3.8655416666666724,
+              5.205541666666647
+            ],
+            [
+              6.025541666666669,
+              7.005541666666659
+            ],
+            [
+              7.105541666666653,
+              8.365541666666644
+            ],
+            [
+              8.865541666666672,
+              10.325541666666652
+            ],
+            [
+              10.385541666666654,
+              11.845541666666662
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Esta mañana encontré dos vasos sobre la mesa. Yo solamente uso uno. El otro estaba mojado por fuera, como si alguien acabara de sacarlo del refrigerador.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    },
+    {
+      "scene": 18,
+      "script_scene": "hermana_reconoce",
+      "start": 172.623375,
+      "end": 187.740625,
+      "duration": 15.1,
+      "timeline_duration": 15.117249999999984,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "house_interior",
+      "fallback_background": "house_interior",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "use_phone",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.49004166666668425,
+              3.6300416666666706
+            ],
+            [
+              4.250041666666675,
+              4.790041666666696
+            ],
+            [
+              4.89004166666669,
+              6.950041666666692
+            ],
+            [
+              7.170041666666691,
+              8.350041666666698
+            ],
+            [
+              8.530041666666676,
+              9.550041666666687
+            ],
+            [
+              9.730041666666693,
+              10.990041666666684
+            ],
+            [
+              11.170041666666691,
+              11.670041666666691
+            ],
+            [
+              11.730041666666693,
+              12.190041666666673
+            ],
+            [
+              12.250041666666675,
+              14.110041666666689
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Le envié la grabación a mi hermana. Me llamó inmediatamente. Estaba llorando. Me preguntó por qué la segunda voz sonaba exactamente igual a la suya.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "woman-cry-of-pain",
+          "time": 2.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 19,
+      "script_scene": "vive_lejos",
+      "start": 187.740625,
+      "end": 198.35933333333332,
+      "duration": 10.633333333333333,
+      "timeline_duration": 10.61870833333333,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "bedroom_house",
+      "fallback_background": "bedroom_house",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.3072916666666856,
+              2.167291666666671
+            ],
+            [
+              2.4272916666666617,
+              3.767291666666665
+            ],
+            [
+              4.147291666666689,
+              4.487291666666664
+            ],
+            [
+              4.547291666666666,
+              6.40729166666668
+            ],
+            [
+              6.90729166666668,
+              9.40729166666668
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMY"
+      },
+      "narration": "Mi hermana vive en otra ciudad, a cientos de kilómetros. Pero todavía no le he contado lo peor. Hay algo más al final de la grabación.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "scary-violin",
+          "time": 1.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 20,
+      "script_scene": "ultimo_susurro",
+      "start": 198.35933333333332,
+      "end": 208.25208333333333,
+      "duration": 9.9,
+      "timeline_duration": 9.892750000000007,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "bedroom_house",
+      "fallback_background": "bedroom_house",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "afraid",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.45266666666665856,
+              2.592666666666645
+            ],
+            [
+              3.012666666666661,
+              5.512666666666661
+            ],
+            [
+              6.2126666666666495,
+              8.872666666666646
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "full_body",
+        "character": null
+      },
+      "narration": "Después de que las dos voces dejan de hablar, se escucha una puerta muy cerca del teléfono. Y alguien comienza a susurrar mi nombre.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "door_open",
+          "time": 2.0,
+          "volume": 0.7
+        },
+        {
+          "name": "ghost-whisper",
+          "time": 4.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 21,
+      "script_scene": "dentro_armario",
+      "start": 208.25208333333333,
+      "end": 219.45729166666666,
+      "duration": 11.2,
+      "timeline_duration": 11.205208333333331,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "bedroom_house",
+      "fallback_background": "bedroom_house",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.405416666666639,
+              3.9454166666666595
+            ],
+            [
+              4.20541666666665,
+              5.0254166666666436
+            ],
+            [
+              5.605416666666656,
+              7.065416666666664
+            ],
+            [
+              7.125416666666666,
+              9.865416666666647
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMY"
+      },
+      "narration": "Lo peor es que el sonido venía desde dentro de mi armario. Y esa noche, antes de acostarme, yo mismo había revisado que estuviera vacío.",
+      "illustration_prompt": "",
+      "sound_effects": [
+        {
+          "name": "ghost-horror-sound",
+          "time": 2.0,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "scene": 22,
+      "script_scene": "despedida",
+      "start": 219.45729166666666,
+      "end": 230.50204166666666,
+      "duration": 11.033333333333333,
+      "timeline_duration": 11.044749999999993,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "scene_type": "stick",
+      "background_mode": "asset",
+      "background": "bedroom_house",
+      "fallback_background": "bedroom_house",
+      "characters": [
+        {
+          "id": "TOMY",
+          "type": "humanoids/tomy_teenager",
+          "action": "speak_front_closeup",
+          "position": 2,
+          "facing": "right",
+          "_ground_offset": 0.0,
+          "speech_intervals": [
+            [
+              0.37062499999998977,
+              2.190624999999983
+            ],
+            [
+              2.4506250000000023,
+              5.3106249999999875
+            ],
+            [
+              5.650624999999991,
+              6.470624999999984
+            ],
+            [
+              7.210624999999993,
+              9.990624999999994
+            ]
+          ]
+        }
+      ],
+      "objects": [],
+      "shot": {
+        "target": "face",
+        "character": "TOMY"
+      },
+      "narration": "No he vuelto a dormir en esa casa. Pero si esta noche escuchas que alguien te llama con tu propia voz, no respondas. Y suscríbete para escuchar más historias de terror.",
+      "illustration_prompt": "",
+      "sound_effects": []
+    }
+  ],
+  "cast": [
+    {
+      "id": "TOMY",
+      "name": "TOMY",
+      "type": "humanoids/tomy_teenager"
+    }
+  ],
+  "sync_mode": "tts_timeline",
+  "audio_duration": 230.502042,
+  "llm_provider": "openai",
+  "batch_size": 0
+}

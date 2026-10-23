@@ -1,0 +1,90 @@
+[GUION]
+[ESCENA tomas_revelacion | FONDO=honduras_house | SFX=vine-dramatic-boom-sound-effect@0.3 | PLANO=face:TOMAS]
+[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+Bueno, caras de pija. Ya que aquí todos están confesando sus mierdas, ¿quieren saber con quién andaba saliendo Ana?
+
+[ESCENA ana_nerviosa | FONDO=honduras_house | DURACION=1.5]
+[ANA | ACCION=afraid | POSICION=1]
+[TOMAS | ACCION=front_point | POSICION=2]
+
+[ESCENA ana_advierte | FONDO=honduras_house | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+Tomás, no empecés a hablar pendejadas. Cerrá la boca.
+
+[ESCENA tomas_bomba | FONDO=honduras_house | SFX=vine-dramatic-boom-sound-effect@0.3 | PLANO=face:TOMAS]
+[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+Tu querida Ana era la sugar baby de don Ernesto. El papá de Juan. ¡Sí, maje, tu propio tata!
+
+[ESCENA juan_reaccion | FONDO=honduras_house | SFX=scary-violin@0.2 | DURACION=1.5]
+[JUAN | ACCION=afraid | POSICION=2]
+[PABLO | ACCION=afraid | POSICION=3]
+
+[ESCENA juan_incredulo | FONDO=honduras_house | PLANO=face:JUAN]
+[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+¡No jodás! ¿Mi papá? ¡Ese viejo tiene setenta años! Ana, decime que este cara de pija está mintiendo.
+
+[ESCENA ana_confiesa | FONDO=honduras_house | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]
+Fue antes de casarme con vos, Juan. Don Ernesto me ayudaba con la universidad y me depositaba plata. Yo no sabía que era tu papá.
+
+[ESCENA pablo_interviene | FONDO=honduras_house | PLANO=face:PABLO]
+[PABLO | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+¡A la gran puta! ¿Y ese viejo qué? ¿Tiene una fundación de becas o qué jodidos?
+
+[ESCENA tomas_telefono | FONDO=honduras_house | SFX=whatsapp-notificacion@0.5 | DURACION=1.5]
+[TOMAS | ACCION=use_phone | POSICION=2]
+[JUAN | ACCION=idle | POSICION=3]
+
+[ESCENA tomas_prueba | FONDO=honduras_house | PLANO=face:TOMAS]
+[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+¿Antes? Miren este depósito de la semana pasada. Treinta mil bolas. Y dice: para mi princesa.
+
+[ESCENA juan_explota | FONDO=honduras_house | PLANO=face:JUAN]
+[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+¡Comé mierda vos, Ana! ¡Yo pagando ese pija de carro y mi papá manteniéndote a escondidas!
+
+[ESCENA ana_senala | FONDO=honduras_house | DURACION=1.5]
+[ANA | ACCION=front_point | POSICION=1]
+[JUAN | ACCION=afraid | POSICION=3]
+
+[ESCENA ana_contraataca | FONDO=honduras_house | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+¡No me vengás a reclamar, Juan! Vos te gastaste nuestros ahorros con mi mejor amiga. ¡No tenés cara para decirme nada!
+
+[ESCENA pablo_sospecha | FONDO=honduras_house | PLANO=face:PABLO]
+[PABLO | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+Espérense. ¿Y cómo putas consiguió Tomás los movimientos bancarios de Ana?
+
+[ESCENA tomas_silencio | FONDO=honduras_house | DURACION=1.5]
+[TOMAS | ACCION=afraid | POSICION=2]
+
+[ESCENA tomas_explicacion | FONDO=honduras_house | PLANO=face:TOMAS]
+[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+Porque don Ernesto me los mandó. Me dijo que tenía que enseñarles algo antes de que firmaran los papeles de la casa.
+
+[ESCENA juan_confundido | FONDO=honduras_house | PLANO=face:JUAN]
+[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+¿Cuáles papeles? Esa casa está a mi nombre. Mi papá no tiene nada que ver.
+
+[ESCENA ana_confesion | FONDO=honduras_house | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]
+Juan... hay algo que no te he contado. Don Ernesto pagó la prima de esa casa. Pero puso una condición.
+
+[ESCENA pablo_asustado | FONDO=honduras_house | DURACION=1.5]
+[PABLO | ACCION=afraid | POSICION=2]
+[JUAN | ACCION=afraid | POSICION=3]
+
+[ESCENA juan_pregunta | FONDO=honduras_house | PLANO=face:JUAN]
+[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+¿Qué condición, Ana? Hablá de una vez, no jodás.
+
+[ESCENA ana_giro | FONDO=honduras_house | SFX=vine-dramatic-boom-sound-effect@0.3 | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]
+Que el día que nos separáramos, la casa pasaría a nombre de alguien más. Y esa persona está aquí sentada.
+
+[ESCENA tomas_reacciona | FONDO=honduras_house | SFX=scary-violin@0.2 | DURACION=1.5]
+[TOMAS | ACCION=afraid | POSICION=2]
+
+[ESCENA tomas_final | FONDO=honduras_house | PLANO=face:TOMAS]
+[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]
+¡A la gran pucha! Y ustedes peleando por cinco mil bolas. ¿Quién se va a quedar con la casa? Suscríbanse para la parte cuatro, porque este vergueo apenas comienza.

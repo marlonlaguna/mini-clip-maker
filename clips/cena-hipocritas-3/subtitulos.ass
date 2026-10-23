@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:06.05,TikTok,,0,0,0,,Bueno, caras de pija, ya que aquí todos están confesando sus mierdas, quieren saber con
+Dialogue: 0,0:00:06.05,0:00:07.62,TikTok,,0,0,0,,quién andaba saliendo Ana.
+Dialogue: 0,0:00:09.11,0:00:12.50,TikTok,,0,0,0,,Tomás, no empeces a hablar pendejadas, cerrar la boca.
+Dialogue: 0,0:00:12.50,0:00:20.64,TikTok,,0,0,0,,Tu querida, Ana, era la Sugar Baby de Don Ernesto, el papá de Juan, sí maje tu propio tato.
+Dialogue: 0,0:00:20.64,0:00:27.44,TikTok,,0,0,0,,No jodas, mi papá, ese viejo tiene 70 años. Ana, décime que este cara de pija está
+Dialogue: 0,0:00:28.21,0:00:34.04,TikTok,,0,0,0,,fue antes de casarme con vos, Juan, Don Ernesto me ayudaba con la universidad y me depositaba plata.
+Dialogue: 0,0:00:34.04,0:00:40.45,TikTok,,0,0,0,,Yo no sabía que era tu papá, a la gran puta y ese viejo qué, tiene una fundación de becas o qué jodidos.
+Dialogue: 0,0:00:42.45,0:00:48.17,TikTok,,0,0,0,,Antes, miren este depósito de la semana pasada 30.000 bolas y dice para mi princesa.
+Dialogue: 0,0:00:48.17,0:00:53.53,TikTok,,0,0,0,,Come mierda vos, Ana, yo pagando ese pija de carro y mi papá manteniendote escondidas.
+Dialogue: 0,0:00:54.53,0:01:01.04,TikTok,,0,0,0,,No me vengas a reclamar, Juan, vos te gastaste maestros ahorros con mi mejor amiga. No tenés cara para decirme nada.
+Dialogue: 0,0:01:01.04,0:01:05.25,TikTok,,0,0,0,,Espérense, ¿y cómo putas consiguió tomar los movimientos bancarios de Ana?
+Dialogue: 0,0:01:05.25,0:01:12.96,TikTok,,0,0,0,,Porque Don Ernesto me los mandó, me dijo que tenía que enseñarles algo antes de que firmaran los
+Dialogue: 0,0:01:12.96,0:01:17.96,TikTok,,0,0,0,,papeles de la casa. ¿Cuáles papeles? Esa casa está a mi nombre, mi papá no tiene nada que ver.
+Dialogue: 0,0:01:17.96,0:01:23.04,TikTok,,0,0,0,,Juan, hay algo que no te he contado, Don Ernesto pagó la prima de esa casa, pero puso una condición.
+Dialogue: 0,0:01:24.96,0:01:26.96,TikTok,,0,0,0,,¿Qué condición Ana habla de una vez no jodas?
+Dialogue: 0,0:01:26.96,0:01:31.96,TikTok,,0,0,0,,Que el día que nos separáramos la casa pasaría a nombre de alguien más y esa persona está aquí sentada.
+Dialogue: 0,0:01:31.96,0:01:39.46,TikTok,,0,0,0,,A la gran pucha y ustedes peleando por 5.000 bolas, ¿quién se va a quedar con la casa?
+Dialogue: 0,0:01:39.46,0:01:43.46,TikTok,,0,0,0,,Suscríbanse para parte 4 porque este vergueo apenas comienza.

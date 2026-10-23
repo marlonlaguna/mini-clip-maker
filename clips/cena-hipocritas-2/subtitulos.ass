@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:05.04,TikTok,,0,0,0,,Bueno, caras de pija, vamos a dejar las cosas claras. Juan, explícame que putas andabas
+Dialogue: 0,0:00:05.04,0:00:07.24,TikTok,,0,0,0,,haciendo con mi mejor amiga en Valle de Ángeles.
+Dialogue: 0,0:00:07.24,0:00:13.48,TikTok,,0,0,0,,No jodas, Ana. Sólo fuimos a comer algo. Ahora resulta que no puedo salir sin que
+Dialogue: 0,0:00:13.48,0:00:14.48,TikTok,,0,0,0,,me estés jodiendo.
+Dialogue: 0,0:00:14.48,0:00:20.39,TikTok,,0,0,0,,Y esta pija de cabaña donde salen abrazados anda a comer mierda a vos. ¿Crees que soy
+Dialogue: 0,0:00:20.39,0:00:21.39,TikTok,,0,0,0,,pendeja?
+Dialogue: 0,0:00:21.39,0:00:28.64,TikTok,,0,0,0,,Putas, putas. Juan, te agarraron con pruebas y todavía te haces el santo. Ni los políticos
+Dialogue: 0,0:00:28.64,0:00:30.28,TikTok,,0,0,0,,de aquí se atreven a tanto.
+Dialogue: 0,0:00:30.28,0:00:37.56,TikTok,,0,0,0,,Vos cerré el lozico, cara de pija. Te robaste 5.000 bolas de la caja, fuerte y todavía venís
+Dialogue: 0,0:00:37.56,0:00:38.56,TikTok,,0,0,0,,a darme consejos.
+Dialogue: 0,0:00:38.56,0:00:44.20,TikTok,,0,0,0,,Pero yo acepté que la caí. Vos te metiste con otra maje y ahora querés que te demos
+Dialogue: 0,0:00:44.20,0:00:45.20,TikTok,,0,0,0,,un premio, no jodas.
+Dialogue: 0,0:00:45.20,0:00:51.52,TikTok,,0,0,0,,Ya estuvo bueno joder, Juan. Hay que ser bien bruto para llevar a la amante a Valle
+Dialogue: 0,0:00:51.52,0:00:54.28,TikTok,,0,0,0,,de Ángeles, donde Mediotegus va los domingos.
+Dialogue: 0,0:00:54.64,0:00:58.88,TikTok,,0,0,0,,A papá no hables paja. Vos tenés otra familia en San Pedro Sula, sos el menos indicado para
+Dialogue: 0,0:00:58.88,0:01:00.32,TikTok,,0,0,0,,dar lecciones, cara de pija.
+Dialogue: 0,0:01:08.31,0:01:12.64,TikTok,,0,0,0,,¿Sabes qué más descubrí, Juan? Sacaste 40.000 lempiras de nuestros ahorros. Mientras
+Dialogue: 0,0:01:12.64,0:01:15.00,TikTok,,0,0,0,,yo pagaba la cota de ese pija de carro que compraste.
+Dialogue: 0,0:01:25.15,0:01:33.71,TikTok,,0,0,0,,Me tienen a pija todos? Sí, le fui infiel. La cague. Ya están contentos? Dejen de estar
+Dialogue: 0,0:01:33.71,0:01:38.54,TikTok,,0,0,0,,comiendo mierda conmigo.
+Dialogue: 0,0:01:38.54,0:01:42.87,TikTok,,0,0,0,,Un momento, cara de pija. Antes de irte vas a devolver hasta el último lempira. Y mañana
+Dialogue: 0,0:01:42.87,0:01:44.95,TikTok,,0,0,0,,voy a averiguar cómo separarme de vos.
+Dialogue: 0,0:01:44.95,0:01:50.15,TikTok,,0,0,0,,Jana, no jodas. Fueron 4 años juntos. ¿Vas a mandar todo a la mierda por un error?
+Dialogue: 0,0:01:50.15,0:01:55.10,TikTok,,0,0,0,,Una un error es agarrar la calle equivocada. Juan, vos reservaste hotel, pagaste gasolina,
+Dialogue: 0,0:01:55.18,0:01:57.75,TikTok,,0,0,0,,compraste regalos y todavía venís a hacerte la víctima.
+Dialogue: 0,0:01:59.75,0:02:04.79,TikTok,,0,0,0,,Bueno, caras de pija. Alguien me presta 50 bolas para ir a la pulpería a comprar una
+Dialogue: 0,0:02:04.79,0:02:08.83,TikTok,,0,0,0,,súper recarga. Ya no tengo internet para ver este vergueo en el grupo familiar.
+Dialogue: 0,0:02:08.83,0:12:00.25,TikTok,,0,0,0,,Anda a comprar tus recargas hipótesis, pero deja de estar jodiendo. Esta familia ya parece
+Dialogue: 0,0:12:00.25,0:12:01.29,TikTok,,0,0,0,,una novela barata.
+Dialogue: 0,0:12:01.29,0:12:08.17,TikTok,,0,0,0,,Que todavía falta contar con quién anda saliendo Ana. Suscríbanse para la tercera
+Dialogue: 0,0:12:08.17,0:12:10.58,TikTok,,0,0,0,,parte porque ahí sí se va a armar un pija de vergueo.

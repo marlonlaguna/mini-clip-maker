@@ -1,0 +1,105 @@
+[GUION]
+[ESCENA la_reunion | FONDO=house_interior]
+[ANA | ACCION=idle | POSICION=1]
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=speak_front | POSICION=3 | PAUSA=0.3 | VOZ=Ryan]
+Bueno, ¿para qué carajos nos reuniste, Paul? Tengo cosas mejores que hacer que escuchar tus sermones.
+
+[ESCENA paul_responde | FONDO=house_interior | PLANO=face:PAUL]
+[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]
+Siéntate y cierra la boca, Jhon. Llevo treinta años aguantando tus estupideces y hoy se termina esta mierda.
+
+[ESCENA ana_protesta | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+Papá, no empieces con tus dramas. Siempre haces lo mismo cuando tomas dos cervezas.
+
+[ESCENA primera_bomba | FONDO=house_interior | PLANO=face:PAUL | SFX=vine-dramatic-boom-sound-effect@0]
+[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]
+Ana, encontré los mensajes de Jhon con tu mejor amiga. Y no precisamente estaban hablando del clima.
+
+[ESCENA jhon_se_defiende | FONDO=house_interior | PLANO=face:JHON]
+[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+¡Eso fue hace seis meses, viejo metido! ¡Deja de revisar mis cosas!
+
+[ESCENA ana_explota | FONDO=house_interior]
+[ANA | ACCION=speak_front | POSICION=1 | PAUSA=0.4 | VOZ=Ryan]
+¡Hijo de puta! ¡Me juraste que no había pasado nada con ella! ¡Y yo como idiota defendiéndote!
+[PAUL | ACCION=idle | POSICION=2]
+[JHON | ACCION=afraid | POSICION=3]
+
+[ESCENA tomy_interrumpe | FONDO=house_interior | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+Pues ya que estamos contando secretos, yo también tengo uno. Y créanme que les va a encantar.
+
+[ESCENA paul_pregunta | FONDO=house_interior | PLANO=face:PAUL]
+[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+Habla, Tomy. A estas alturas ya nada puede sorprenderme.
+
+[ESCENA tomy_confiesa | FONDO=house_interior | PLANO=face:TOMY | SFX=vine-dramatic-boom-sound-effect@0]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]
+¿Se acuerdan de los cinco mil dólares que desaparecieron de la caja fuerte? Bueno... no fue un ladrón. Fui yo.
+
+[ESCENA paul_furioso | FONDO=house_interior | PLANO=face:PAUL | SFX=question-mark@0]
+[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]
+¡¿Qué?! ¡Pedazo de cabrón! ¡Yo acusé al jardinero y lo despedí por tu culpa!
+
+[ESCENA tomy_contesta | FONDO=house_interior | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+Sí, bueno, tampoco es que fueras a darle un aumento. Le pagabas una miseria.
+
+[ESCENA ana_pregunta | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+Espera un momento. ¿Y qué demonios hiciste con cinco mil dólares?
+
+[ESCENA tomy_revela | FONDO=house_interior | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]
+Los perdí apostando por internet. Pero tranquilos, aprendí la lección: nunca vuelvan a darme acceso a una caja fuerte.
+
+[ESCENA jhon_se_burla | FONDO=house_interior | PLANO=face:JHON]
+[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]
+¡Ja! ¡Y tú me llamabas irresponsable! Este mocoso es un delincuente con conexión a internet.
+
+[ESCENA tomy_contraataca | FONDO=house_interior | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]
+Al menos yo no tengo dos novias y una deuda de veinte mil dólares que escondo debajo del colchón.
+
+[ESCENA jhon_amenaza | FONDO=house_interior | PLANO=face:JHON]
+[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]
+Tomy, te juro que como sigas hablando, te voy a sacar de aquí a patadas.
+
+[ESCENA paul_detiene | FONDO=house_interior]
+[ANA | ACCION=afraid | POSICION=1]
+[PAUL | ACCION=speak_front | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]
+¡Nadie va a golpear a nadie en mi casa! ¡Bastante vergüenza me dan los tres!
+[JHON | ACCION=idle | POSICION=3]
+
+[ESCENA ana_secretos | FONDO=house_interior | PLANO=face:ANA | SFX=vine-dramatic-boom-sound-effect@0]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]
+Qué curioso que hables de vergüenza, papá. ¿Ya les contaste que tienes otra familia en San Pedro Sula?
+
+[ESCENA silencio_paul | FONDO=house_interior | PLANO=face:PAUL | DURACION=2 | SFX=misterius_sound@0]
+[PAUL | ACCION=afraid | POSICION=2]
+
+[ESCENA paul_reacciona | FONDO=house_interior | PLANO=face:PAUL]
+[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]
+Ana... no sé de qué demonios estás hablando.
+
+[ESCENA ana_remata | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]
+Claro que sí. Se llama Patricia. Tiene dos hijos. Y el mayor se parece muchísimo a ti.
+
+[ESCENA jhon_sorprendido | FONDO=house_interior | PLANO=face:JHON | SFX=audience-sorpresa-woow@0]
+[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]
+¡No jodas! ¿El viejo tiene una familia secreta? ¡Y todavía venía a darnos lecciones de moral!
+
+[ESCENA paul_explota | FONDO=house_interior | PLANO=face:PAUL]
+[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]
+¡Sí! ¡Tengo otra familia! ¿Contentos? ¡Y por lo menos ellos no me roban dinero ni me arruinan la cena!
+
+[ESCENA tomy_final | FONDO=house_interior | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]
+Bueno, familia... creo que esta ha sido nuestra mejor reunión en años. La próxima traigo palomitas.
+
+[ESCENA ana_despedida | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]
+Y tú que estás viendo este desastre, suscríbete. Porque esta familia todavía tiene muchos trapos sucios que sacar.

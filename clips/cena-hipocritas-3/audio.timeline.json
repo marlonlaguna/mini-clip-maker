@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "speech_activity_version": 1,
+  "sample_rate": 24000,
+  "duration": 104.31195833333334,
+  "scenes": [
+    {
+      "id": "tomas_revelacion",
+      "start": 0.0,
+      "end": 8.00975
+    },
+    {
+      "id": "ana_nerviosa",
+      "start": 8.00975,
+      "end": 9.50975
+    },
+    {
+      "id": "ana_advierte",
+      "start": 9.50975,
+      "end": 13.028333333333334
+    },
+    {
+      "id": "tomas_bomba",
+      "start": 13.028333333333334,
+      "end": 21.039791666666666
+    },
+    {
+      "id": "juan_reaccion",
+      "start": 21.039791666666666,
+      "end": 22.539791666666666
+    },
+    {
+      "id": "juan_incredulo",
+      "start": 22.539791666666666,
+      "end": 28.233791666666665
+    },
+    {
+      "id": "ana_confiesa",
+      "start": 28.233791666666665,
+      "end": 35.913583333333335
+    },
+    {
+      "id": "pablo_interviene",
+      "start": 35.913583333333335,
+      "end": 41.015125
+    },
+    {
+      "id": "tomas_telefono",
+      "start": 41.015125,
+      "end": 42.515125
+    },
+    {
+      "id": "tomas_prueba",
+      "start": 42.515125,
+      "end": 49.00179166666667
+    },
+    {
+      "id": "juan_explota",
+      "start": 49.00179166666667,
+      "end": 53.97208333333333
+    },
+    {
+      "id": "ana_senala",
+      "start": 53.97208333333333,
+      "end": 55.47208333333333
+    },
+    {
+      "id": "ana_contraataca",
+      "start": 55.47208333333333,
+      "end": 61.457208333333334
+    },
+    {
+      "id": "pablo_sospecha",
+      "start": 61.457208333333334,
+      "end": 65.833625
+    },
+    {
+      "id": "tomas_silencio",
+      "start": 65.833625,
+      "end": 67.333625
+    },
+    {
+      "id": "tomas_explicacion",
+      "start": 67.333625,
+      "end": 74.26341666666667
+    },
+    {
+      "id": "juan_confundido",
+      "start": 74.26341666666667,
+      "end": 78.35383333333333
+    },
+    {
+      "id": "ana_confesion",
+      "start": 78.35383333333333,
+      "end": 83.55370833333333
+    },
+    {
+      "id": "pablo_asustado",
+      "start": 83.55370833333333,
+      "end": 85.05370833333333
+    },
+    {
+      "id": "juan_pregunta",
+      "start": 85.05370833333333,
+      "end": 87.48145833333334
+    },
+    {
+      "id": "ana_giro",
+      "start": 87.48145833333334,
+      "end": 92.756875
+    },
+    {
+      "id": "tomas_reacciona",
+      "start": 92.756875,
+      "end": 94.256875
+    },
+    {
+      "id": "tomas_final",
+      "start": 94.256875,
+      "end": 104.31195833333334
+    }
+  ],
+  "blocks": [
+    {
+      "speaker": "TOMAS",
+      "scene": "tomas_revelacion",
+      "start": 0.0,
+      "end": 7.70975,
+      "text": "Bueno, caras de pija. Ya que aquí todos están confesando sus mierdas, ¿quieren saber con quién andaba saliendo Ana?",
+      "speech_intervals": [
+        [
+          0.33999999999999997,
+          1.56
+        ],
+        [
+          2.26,
+          4.88
+        ],
+        [
+          5.340000000000001,
+          7.32
+        ],
+        [
+          7.380000000000001,
+          7.68
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "ana_advierte",
+      "start": 9.50975,
+      "end": 12.728333333333333,
+      "text": "Tomás, no empecés a hablar pendejadas. Cerrá la boca.",
+      "speech_intervals": [
+        [
+          9.52975,
+          11.66975
+        ],
+        [
+          11.84975,
+          12.42975
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMAS",
+      "scene": "tomas_bomba",
+      "start": 13.028333333333334,
+      "end": 20.739791666666665,
+      "text": "Tu querida Ana era la sugar baby de don Ernesto. El papá de Juan. ¡Sí, maje, tu propio tata!",
+      "speech_intervals": [
+        [
+          13.088333333333335,
+          14.228333333333333
+        ],
+        [
+          14.488333333333333,
+          15.508333333333335
+        ],
+        [
+          15.648333333333333,
+          16.228333333333335
+        ],
+        [
+          16.408333333333335,
+          17.668333333333333
+        ],
+        [
+          18.008333333333333,
+          19.068333333333335
+        ],
+        [
+          19.368333333333336,
+          20.73979166666667
+        ]
+      ]
+    },
+    {
+      "speaker": "JUAN",
+      "scene": "juan_incredulo",
+      "start": 22.539791666666666,
+      "end": 27.933791666666668,
+      "text": "¡No jodás! ¿Mi papá? ¡Ese viejo tiene setenta años! Ana, decime que este cara de pija está mintiendo.",
+      "speech_intervals": [
+        [
+          22.759791666666665,
+          23.899791666666665
+        ],
+        [
+          23.999791666666667,
+          25.459791666666668
+        ],
+        [
+          25.679791666666667,
+          26.059791666666666
+        ],
+        [
+          26.119791666666664,
+          27.933791666666664
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "ana_confiesa",
+      "start": 28.233791666666665,
+      "end": 35.51358333333334,
+      "text": "Fue antes de casarme con vos, Juan. Don Ernesto me ayudaba con la universidad y me depositaba plata. Yo no sabía que era tu papá.",
+      "speech_intervals": [
+        [
+          28.233791666666665,
+          30.553791666666665
+        ],
+        [
+          30.613791666666664,
+          33.63379166666667
+        ],
+        [
+          33.73379166666666,
+          34.15379166666666
+        ],
+        [
+          34.33379166666666,
+          35.51358333333333
+        ]
+      ]
+    },
+    {
+      "speaker": "PABLO",
+      "scene": "pablo_interviene",
+      "start": 35.913583333333335,
+      "end": 40.715125,
+      "text": "¡A la gran puta! ¿Y ese viejo qué? ¿Tiene una fundación de becas o qué jodidos?",
+      "speech_intervals": [
+        [
+          35.913583333333335,
+          36.67358333333333
+        ],
+        [
+          36.773583333333335,
+          37.75358333333334
+        ],
+        [
+          38.29358333333334,
+          40.593583333333335
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMAS",
+      "scene": "tomas_prueba",
+      "start": 42.515125,
+      "end": 48.701791666666665,
+      "text": "¿Antes? Miren este depósito de la semana pasada. Treinta mil bolas. Y dice: para mi princesa.",
+      "speech_intervals": [
+        [
+          42.575125,
+          46.395125
+        ],
+        [
+          46.735125,
+          47.155125
+        ],
+        [
+          47.375125,
+          48.275124999999996
+        ]
+      ]
+    },
+    {
+      "speaker": "JUAN",
+      "scene": "juan_explota",
+      "start": 49.00179166666667,
+      "end": 53.67208333333333,
+      "text": "¡Comé mierda vos, Ana! ¡Yo pagando ese pija de carro y mi papá manteniéndote a escondidas!",
+      "speech_intervals": [
+        [
+          49.00179166666667,
+          51.88179166666667
+        ],
+        [
+          51.94179166666667,
+          53.67208333333333
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "ana_contraataca",
+      "start": 55.47208333333333,
+      "end": 61.15720833333334,
+      "text": "¡No me vengás a reclamar, Juan! Vos te gastaste nuestros ahorros con mi mejor amiga. ¡No tenés cara para decirme nada!",
+      "speech_intervals": [
+        [
+          55.49208333333333,
+          59.39208333333333
+        ],
+        [
+          59.53208333333333,
+          60.312083333333334
+        ],
+        [
+          60.37208333333333,
+          61.15208333333333
+        ]
+      ]
+    },
+    {
+      "speaker": "PABLO",
+      "scene": "pablo_sospecha",
+      "start": 61.457208333333334,
+      "end": 65.533625,
+      "text": "Espérense. ¿Y cómo putas consiguió Tomás los movimientos bancarios de Ana?",
+      "speech_intervals": [
+        [
+          61.47720833333334,
+          62.137208333333334
+        ],
+        [
+          62.35720833333333,
+          65.25720833333334
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMAS",
+      "scene": "tomas_explicacion",
+      "start": 67.333625,
+      "end": 73.96341666666666,
+      "text": "Porque don Ernesto me los mandó. Me dijo que tenía que enseñarles algo antes de que firmaran los papeles de la casa.",
+      "speech_intervals": [
+        [
+          67.43362499999999,
+          73.96341666666666
+        ]
+      ]
+    },
+    {
+      "speaker": "JUAN",
+      "scene": "juan_confundido",
+      "start": 74.26341666666667,
+      "end": 78.05383333333333,
+      "text": "¿Cuáles papeles? Esa casa está a mi nombre. Mi papá no tiene nada que ver.",
+      "speech_intervals": [
+        [
+          74.32341666666667,
+          75.14341666666667
+        ],
+        [
+          75.36341666666667,
+          76.42341666666667
+        ],
+        [
+          76.52341666666668,
+          78.05383333333334
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "ana_confesion",
+      "start": 78.35383333333333,
+      "end": 83.15370833333333,
+      "text": "Juan... hay algo que no te he contado. Don Ernesto pagó la prima de esa casa. Pero puso una condición.",
+      "speech_intervals": [
+        [
+          78.37383333333332,
+          78.87383333333332
+        ],
+        [
+          78.93383333333333,
+          82.07383333333333
+        ],
+        [
+          82.13383333333333,
+          83.15370833333333
+        ]
+      ]
+    },
+    {
+      "speaker": "JUAN",
+      "scene": "juan_pregunta",
+      "start": 85.05370833333333,
+      "end": 87.18145833333334,
+      "text": "¿Qué condición, Ana? Hablá de una vez, no jodás.",
+      "speech_intervals": [
+        [
+          85.05370833333333,
+          87.18145833333334
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "ana_giro",
+      "start": 87.48145833333334,
+      "end": 92.356875,
+      "text": "Que el día que nos separáramos, la casa pasaría a nombre de alguien más. Y esa persona está aquí sentada.",
+      "speech_intervals": [
+        [
+          87.48145833333334,
+          88.72145833333333
+        ],
+        [
+          88.86145833333333,
+          90.80145833333333
+        ],
+        [
+          90.98145833333334,
+          92.356875
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMAS",
+      "scene": "tomas_final",
+      "start": 94.256875,
+      "end": 103.91195833333333,
+      "text": "¡A la gran pucha! Y ustedes peleando por cinco mil bolas. ¿Quién se va a quedar con la casa? Suscríbanse para la parte cuatro, porque este vergueo apenas comienza.",
+      "speech_intervals": [
+        [
+          94.436875,
+          97.816875
+        ],
+        [
+          98.19687499999999,
+          99.50795833333333
+        ],
+        [
+          99.90795833333333,
+          101.08795833333333
+        ],
+        [
+          101.22795833333333,
+          103.88795833333333
+        ]
+      ]
+    }
+  ]
+}

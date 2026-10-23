@@ -1,0 +1,31 @@
+{
+  "titulo": "test-voces",
+  "resolucion": "1080x1920",
+  "musica": "misterius.mp3",
+  "volumen_musica": 0.04,
+  "estilo_visual": "Drama familiar oscuro con humor negro. Cuatro familiares discuten en una casa durante una reunión nocturna. La conversación se vuelve cada vez más agresiva y revela secretos incómodos. Mantener la apariencia original de los cuatro personajes. Utilizar únicamente fondos disponibles. Dar prioridad a los diálogos, primeros planos y reacciones de los personajes. Ningún personaje adicional.",
+  "paleta": "",
+  "seed": null,
+  "negative_prompt": "gore, sangre, violencia gráfica, personajes adicionales, texto añadido, marcas de agua, anatomía deformada",
+  "cast": {
+    "ANA": "humanoids/ana_young_woman",
+    "JHON": "humanoids/jhon_young_man",
+    "PAUL": "humanoids/paul_old_man",
+    "TOMY": "humanoids/tomy_teenager"
+  },
+  "personajes": {
+    "ANA": "humanoids/ana_young_woman",
+    "JHON": "humanoids/jhon_young_man",
+    "PAUL": "humanoids/paul_old_man",
+    "TOMY": "humanoids/tomy_teenager"
+  },
+  "modo_video": "stick",
+  "voz_qwen": "Ryan",
+  "porcentaje_minimo_stick": 100.0,
+  "permitir_fondos_automaticos": false,
+  "usar_efectos_sonido": true,
+  "volumen_efectos": 0.2,
+  "max_efectos_sonido": 10,
+  "imagen_final": "",
+  "duracion_imagen_final": 4.0
+}

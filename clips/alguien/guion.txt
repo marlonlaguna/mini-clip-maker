@@ -1,0 +1,88 @@
+[GUION]
+[ESCENA advertencia | FONDO=bedroom_house | SFX=scary-violin@0 | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | VOZ=Eric | PAUSA=0.6]
+Anoche grabé mi habitación mientras dormía. A las tres de la mañana, escuché mi propia voz discutiendo con alguien. Pero yo vivo solo.
+
+[ESCENA presentacion | FONDO=house_interior | SFX=none]
+[TOMY | ACCION=speak_front | POSICION=2 | VOZ=Eric | PAUSA=0.3]
+Me llamo Tomy. Llevo varios meses viviendo solo en esta casa. Nunca creí en fantasmas, hasta que empecé a escuchar pasos por el pasillo.
+
+[ESCENA primeros_pasos | FONDO=pasillo_escaleras_casa | SFX=crunchy-footsteps-loop@1]
+[TOMY | ACCION=side_walk | POSICION=2 | MIRA=right | MOVIMIENTO=right | VELOCIDAD=12 | VOZ=Eric | PAUSA=0.4]
+Todas las noches era lo mismo. Pasos lentos, como si alguien caminara descalzo. Pensé que eran mis vecinos y traté de ignorarlo.
+
+[ESCENA dormir | FONDO=bedroom_house | SFX=door_open@2]
+[TOMY | ACCION=sleep | POSICION=2 | VOZ=Eric | PAUSA=0.5]
+Pero ayer, a las tres de la mañana, me despertó el sonido de una puerta abriéndose en la cocina.
+
+[ESCENA ruido_cocina | FONDO=house_interior | SFX=shoe-steps@1]
+[TOMY | ACCION=idle | POSICION=2 | VOZ=Eric | PAUSA=0.5]
+Después escuché pasos, el ruido de un vaso sobre una mesa y un cajón cerrándose. Había alguien dentro de mi casa.
+
+[ESCENA levantarme | FONDO=bedroom_house | SFX=ghost-horror-sound@1]
+[TOMY | ACCION=afraid | POSICION=2 | VOZ=Eric | PAUSA=0.4]
+Me quedé inmóvil unos segundos. Recordé que había cerrado todas las puertas. Y que absolutamente nadie más tenía llaves.
+
+[ESCENA revisar | FONDO=house_interior | SFX=crunchy-footsteps-loop@1]
+[TOMY | ACCION=sneaking | POSICION=1 | MIRA=right | MOVIMIENTO=right | VELOCIDAD=12 | VOZ=Eric | PAUSA=0.3]
+Salí de mi habitación y revisé toda la casa. No había nadie. Las ventanas estaban cerradas y la puerta principal seguía con llave.
+
+[ESCENA el_vaso | FONDO=house_interior | SFX=none | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | VOZ=Eric | PAUSA=0.5]
+Pero había algo extraño. Un vaso lleno de agua sobre la mesa. Estaba seguro de no haberlo dejado ahí.
+
+[ESCENA llamada_hermana | FONDO=house | SFX=none]
+[TOMY | ACCION=use_phone | POSICION=2 | VOZ=Eric | PAUSA=0.4]
+A la mañana siguiente llamé a mi hermana y le conté todo. Se quedó callada. Después me preguntó algo que me hizo sentir un escalofrío.
+
+[ESCENA pregunta_hermana | FONDO=house_interior | SFX=scary-violin@1 | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | VOZ=Eric | PAUSA=0.5]
+Me preguntó si también escuchaba pasos en el pasillo. No entendía cómo podía saberlo. Entonces me contó algo que llevaba años ocultándome.
+
+[ESCENA secreto_hermana | FONDO=pasillo_escaleras_casa | SFX=ghost-whisper@2]
+[TOMY | ACCION=idle | POSICION=2 | VOZ=Eric | PAUSA=0.5]
+Cuando vivíamos juntos, ella también escuchaba esos pasos. Una noche oyó mi voz llamándola desde la cocina, aunque yo estaba profundamente dormido.
+
+[ESCENA decidir_grabar | FONDO=bedroom_house | SFX=none]
+[TOMY | ACCION=use_phone | POSICION=2 | VOZ=Eric | PAUSA=0.4]
+Esa noche decidí dejar mi teléfono grabando audio. Quería demostrarme que todo tenía una explicación. Ojalá nunca lo hubiera hecho.
+
+[ESCENA grabacion_noche | FONDO=room_child_nigth | SFX=crunchy-footsteps-loop@3]
+[TOMY | ACCION=sleep | POSICION=2 | VOZ=Eric | PAUSA=0.5]
+La grabación estuvo en silencio durante horas. Pero exactamente a las tres y siete, se escucharon pasos. Después, un cajón abriéndose.
+
+[ESCENA revisar_audio | FONDO=bedroom_house | SFX=terror-radio-frequency@1]
+[TOMY | ACCION=use_phone | POSICION=2 | VOZ=Eric | PAUSA=0.5]
+Cuando revisé el audio, escuché una voz que murmuraba algo incomprensible. Subí el volumen. A las tres y diecinueve ocurrió lo imposible.
+
+[ESCENA mi_propia_voz | FONDO=bedroom_house | SFX=ghost-whisper@2 | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | VOZ=Eric | PAUSA=0.8]
+Era mi propia voz. Decía claramente: ¡Ya te dije que no entres a mi habitación!
+
+[ESCENA la_respuesta | FONDO=pasillo_escaleras_casa | SFX=ghost-voice@2]
+[TOMY | ACCION=afraid | POSICION=2 | VOZ=Eric | PAUSA=0.9]
+Me quedé helado. Porque inmediatamente después, otra voz respondió: Pero si tú me abriste.
+
+[ESCENA dos_vasos | FONDO=house_interior | SFX=none]
+[TOMY | ACCION=speak_front | POSICION=2 | VOZ=Eric | PAUSA=0.5]
+Esta mañana encontré dos vasos sobre la mesa. Yo solamente uso uno. El otro estaba mojado por fuera, como si alguien acabara de sacarlo del refrigerador.
+
+[ESCENA hermana_reconoce | FONDO=house_interior | SFX=woman-cry-of-pain@2]
+[TOMY | ACCION=use_phone | POSICION=2 | VOZ=Eric | PAUSA=0.5]
+Le envié la grabación a mi hermana. Me llamó inmediatamente. Estaba llorando. Me preguntó por qué la segunda voz sonaba exactamente igual a la suya.
+
+[ESCENA vive_lejos | FONDO=bedroom_house | SFX=scary-violin@1 | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | VOZ=Eric | PAUSA=0.8]
+Mi hermana vive en otra ciudad, a cientos de kilómetros. Pero todavía no le he contado lo peor. Hay algo más al final de la grabación.
+
+[ESCENA ultimo_susurro | FONDO=bedroom_house | SFX=door_open@2,ghost-whisper@4]
+[TOMY | ACCION=afraid | POSICION=2 | VOZ=Eric | PAUSA=0.8]
+Después de que las dos voces dejan de hablar, se escucha una puerta muy cerca del teléfono. Y alguien comienza a susurrar mi nombre.
+
+[ESCENA dentro_armario | FONDO=bedroom_house | SFX=ghost-horror-sound@2 | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | VOZ=Eric | PAUSA=0.8]
+Lo peor es que el sonido venía desde dentro de mi armario. Y esa noche, antes de acostarme, yo mismo había revisado que estuviera vacío.
+
+[ESCENA despedida | FONDO=bedroom_house | SFX=none | PLANO=face:TOMY]
+[TOMY | ACCION=speak_front_closeup | POSICION=2 | VOZ=Eric | PAUSA=0.5]
+No he vuelto a dormir en esa casa. Pero si esta noche escuchas que alguien te llama con tu propia voz, no respondas. Y suscríbete para escuchar más historias de terror.

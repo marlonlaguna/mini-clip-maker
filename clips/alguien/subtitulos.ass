@@ -1,0 +1,51 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.08,0:00:05.37,TikTok,,0,0,0,,A noche grabé mi habitación mientras dormía. A las 3 de la mañana escuché mi propia voz
+Dialogue: 0,0:00:05.37,0:00:09.98,TikTok,,0,0,0,,discutiendo con alguien, pero yo vivo solo.
+Dialogue: 0,0:00:09.98,0:00:16.73,TikTok,,0,0,0,,Me llamo Tommy. Llevo varios meses viviendo solo en esta casa. Nunca creí en fantasmas
+Dialogue: 0,0:00:16.73,0:00:20.83,TikTok,,0,0,0,,hasta que empecé a escuchar pasos por el pasillo.
+Dialogue: 0,0:00:20.83,0:00:25.98,TikTok,,0,0,0,,Todas las noches era lo mismo. Pasos lentos como si alguien caminara descalzo. Pensé
+Dialogue: 0,0:00:25.98,0:00:32.64,TikTok,,0,0,0,,que eran mis vecinos y traté de ignorarlo. Pero ayer, a las 3 de la mañana, me
+Dialogue: 0,0:00:32.64,0:00:37.71,TikTok,,0,0,0,,despertó el sonido de una puerta abriéndose en la cocina. Después escuché
+Dialogue: 0,0:00:37.71,0:00:43.06,TikTok,,0,0,0,,pasos, el ruido de un vaso sobre una mesa y un cajón cerrándose. Había alguien
+Dialogue: 0,0:00:43.06,0:00:49.32,TikTok,,0,0,0,,dentro de mi casa. Me quedé inmóvil unos segundos. Recorde que había cerrado
+Dialogue: 0,0:00:49.32,0:00:56.03,TikTok,,0,0,0,,todas las puertas y que absolutamente nadie más tenía llaves. Salí de mi
+Dialogue: 0,0:00:56.03,0:01:02.56,TikTok,,0,0,0,,habitación y revisé toda la casa. No había nadie. Las ventanas estaban cerradas y
+Dialogue: 0,0:01:02.56,0:01:09.31,TikTok,,0,0,0,,la puerta principal seguía con llave. Pero había algo extraño. Un vaso lleno de
+Dialogue: 0,0:01:09.31,0:01:16.92,TikTok,,0,0,0,,agua sobre la mesa. Estaba seguro de no haberlo dejado ahí. A la mañana
+Dialogue: 0,0:01:16.92,0:01:21.28,TikTok,,0,0,0,,siguiente llamé a mi hermana y le conté todo. Se quedó callada. Después me
+Dialogue: 0,0:01:21.28,0:01:26.79,TikTok,,0,0,0,,preguntó algo que me hizo sentir un escalofrío. Me preguntó si también
+Dialogue: 0,0:01:26.79,0:01:32.45,TikTok,,0,0,0,,escuchaba pasos en el pasillo. No entendía cómo podía saberlo. Entonces me
+Dialogue: 0,0:01:32.45,0:01:40.00,TikTok,,0,0,0,,contó algo que llevaba años ocultándome. Cuando vivíamos juntos,
+Dialogue: 0,0:01:40.00,0:01:48.71,TikTok,,0,0,0,,ella también escuchaba esos pasos. Una noche oyó vivos llamándola desde la
+Dialogue: 0,0:01:48.71,0:01:54.28,TikTok,,0,0,0,,cocina. Aunque yo estaba profundamente dormido.
+Dialogue: 0,0:01:54.28,0:01:59.31,TikTok,,0,0,0,,Esa noche decidí dejar mi teléfono grabando audio. Quería demostrarme que
+Dialogue: 0,0:01:59.31,0:02:04.48,TikTok,,0,0,0,,todo tenía una explicación. Ojalá nunca lo hubiera hecho. La grabación
+Dialogue: 0,0:02:04.48,0:02:09.03,TikTok,,0,0,0,,estuvo en silencio durante horas. Pero exactamente a las tres y siete se
+Dialogue: 0,0:02:09.03,0:02:14.80,TikTok,,0,0,0,,escucharon pasos. Después un cajón abriéndose. Cuando revisé el audio,
+Dialogue: 0,0:02:14.80,0:02:20.68,TikTok,,0,0,0,,escuché una voz que murmuraba algo incomprensible. Subí el volumen. A las
+Dialogue: 0,0:02:20.68,0:02:27.40,TikTok,,0,0,0,,tres y 19 ocurrió lo imposible. Era mi propia voz. Decía claramente.
+Dialogue: 0,0:02:27.40,0:02:33.52,TikTok,,0,0,0,,Ya te dice que no entres a mi habitación. Me quedé helado. Porque
+Dialogue: 0,0:02:33.52,0:02:38.03,TikTok,,0,0,0,,inmediatamente después otra voz respondió. Pero si tú me abriste.
+Dialogue: 0,0:02:39.91,0:02:46.75,TikTok,,0,0,0,,Esta mañana encontré dos vasos sobre la mesa. Yo solamente uso uno. El otro estaba
+Dialogue: 0,0:02:46.75,0:02:51.52,TikTok,,0,0,0,,mojado por fuera. Como si alguien acabara de sacarlo del refrigerador.
+Dialogue: 0,0:02:52.71,0:03:00.63,TikTok,,0,0,0,,Le envíe la grabación a mi hermana. Me llamó inmediatamente. Estaba llorando.
+Dialogue: 0,0:03:00.75,0:03:06.59,TikTok,,0,0,0,,Me preguntó por qué la segunda voz sonaba exactamente igual a la suya.
+Dialogue: 0,0:03:07.59,0:03:14.00,TikTok,,0,0,0,,Mi hermana vive en otra ciudad a cientos de kilómetros. Pero todavía no le he contado lo peor.
+Dialogue: 0,0:03:14.00,0:03:20.84,TikTok,,0,0,0,,Hay algo más al final de la grabación. Después de que las dos voces dejan de hablar,
+Dialogue: 0,0:03:20.84,0:03:27.19,TikTok,,0,0,0,,se escucha una puerta muy cerca del teléfono. Y alguien comienza a susurrar mi nombre.
+Dialogue: 0,0:03:28.15,0:03:33.15,TikTok,,0,0,0,,Lo peor es que el sonido venía desde dentro de mi armario. Y esa noche,
+Dialogue: 0,0:03:33.15,0:03:38.00,TikTok,,0,0,0,,antes de acostarme, yo mismo había revisado que estuviera vacío.
+Dialogue: 0,0:03:39.36,0:03:43.84,TikTok,,0,0,0,,No he vuelto a dormir en esa casa. Pero si esta noche escuchas que alguien te llama
+Dialogue: 0,0:03:43.84,0:03:49.28,TikTok,,0,0,0,,con tu propia voz, no respondas. Y suscríbete para escuchar más historias de terror.

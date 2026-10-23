@@ -1,0 +1,31 @@
+{
+  "titulo": "cena hipocritas 3",
+  "resolucion": "1080x1920",
+  "musica": "misterius.mp3",
+  "volumen_musica": 0.04,
+  "estilo_visual": "Comedia negra hondureña. Continuación inmediata de la discusión familiar en casa de Pablo, Tegucigalpa. Ana, Juan, Pablo y Tomás siguen en la sala. Juan está furioso, Ana nerviosa, Pablo indignado y Tomás disfruta provocando a todos. Alternar acercamientos de rostro, planos grupales, gestos, señalamientos y uso del celular. Mantener los personajes originales y la continuidad de vestuario.",
+  "paleta": "",
+  "seed": null,
+  "negative_prompt": "",
+  "cast": {
+    "ANA": "humanoids/ana_young_woman",
+    "JUAN": "humanoids/jhon_young_man",
+    "PABLO": "humanoids/paul_old_man",
+    "TOMAS": "humanoids/tomy_teenager"
+  },
+  "personajes": {
+    "ANA": "humanoids/ana_young_woman",
+    "JUAN": "humanoids/jhon_young_man",
+    "PABLO": "humanoids/paul_old_man",
+    "TOMAS": "humanoids/tomy_teenager"
+  },
+  "modo_video": "stick",
+  "voz_qwen": "Ryan",
+  "porcentaje_minimo_stick": 100.0,
+  "permitir_fondos_automaticos": false,
+  "usar_efectos_sonido": true,
+  "volumen_efectos": 0.2,
+  "max_efectos_sonido": 10,
+  "imagen_final": "",
+  "duracion_imagen_final": 4.0
+}

@@ -1,0 +1,794 @@
+{
+  "schema_version": 1,
+  "speech_activity_version": 1,
+  "sample_rate": 24000,
+  "duration": 230.50204166666666,
+  "scenes": [
+    {
+      "id": "advertencia",
+      "start": 0.0,
+      "end": 9.482
+    },
+    {
+      "id": "presentacion",
+      "start": 9.482,
+      "end": 20.257583333333333
+    },
+    {
+      "id": "primeros_pasos",
+      "start": 20.257583333333333,
+      "end": 29.676125
+    },
+    {
+      "id": "dormir",
+      "start": 29.676125,
+      "end": 36.8035
+    },
+    {
+      "id": "ruido_cocina",
+      "start": 36.8035,
+      "end": 44.947541666666666
+    },
+    {
+      "id": "levantarme",
+      "start": 44.947541666666666,
+      "end": 55.02291666666667
+    },
+    {
+      "id": "revisar",
+      "start": 55.02291666666667,
+      "end": 65.28808333333333
+    },
+    {
+      "id": "el_vaso",
+      "start": 65.28808333333333,
+      "end": 75.09645833333333
+    },
+    {
+      "id": "llamada_hermana",
+      "start": 75.09645833333333,
+      "end": 85.24225
+    },
+    {
+      "id": "pregunta_hermana",
+      "start": 85.24225,
+      "end": 96.872875
+    },
+    {
+      "id": "secreto_hermana",
+      "start": 96.872875,
+      "end": 113.95816666666667
+    },
+    {
+      "id": "decidir_grabar",
+      "start": 113.95816666666667,
+      "end": 123.74466666666666
+    },
+    {
+      "id": "grabacion_noche",
+      "start": 123.74466666666666,
+      "end": 133.41545833333333
+    },
+    {
+      "id": "revisar_audio",
+      "start": 133.41545833333333,
+      "end": 144.31516666666667
+    },
+    {
+      "id": "mi_propia_voz",
+      "start": 144.31516666666667,
+      "end": 151.152125
+    },
+    {
+      "id": "la_respuesta",
+      "start": 151.152125,
+      "end": 159.90554166666666
+    },
+    {
+      "id": "dos_vasos",
+      "start": 159.90554166666666,
+      "end": 172.623375
+    },
+    {
+      "id": "hermana_reconoce",
+      "start": 172.623375,
+      "end": 187.740625
+    },
+    {
+      "id": "vive_lejos",
+      "start": 187.740625,
+      "end": 198.35933333333332
+    },
+    {
+      "id": "ultimo_susurro",
+      "start": 198.35933333333332,
+      "end": 208.25208333333333
+    },
+    {
+      "id": "dentro_armario",
+      "start": 208.25208333333333,
+      "end": 219.45729166666666
+    },
+    {
+      "id": "despedida",
+      "start": 219.45729166666666,
+      "end": 230.50204166666666
+    }
+  ],
+  "blocks": [
+    {
+      "speaker": "TOMY",
+      "scene": "advertencia",
+      "start": 0.0,
+      "end": 8.882,
+      "text": "Anoche grabé mi habitación mientras dormía. A las tres de la mañana, escuché mi propia voz discutiendo con alguien. Pero yo vivo solo.",
+      "speech_intervals": [
+        [
+          0.45999999999999996,
+          2.68
+        ],
+        [
+          3.02,
+          4.08
+        ],
+        [
+          4.180000000000001,
+          5.28
+        ],
+        [
+          5.420000000000001,
+          6.5200000000000005
+        ],
+        [
+          6.58,
+          7.08
+        ],
+        [
+          7.420000000000001,
+          8.44
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "presentacion",
+      "start": 9.482,
+      "end": 19.957583333333332,
+      "text": "Me llamo Tomy. Llevo varios meses viviendo solo en esta casa. Nunca creí en fantasmas, hasta que empecé a escuchar pasos por el pasillo.",
+      "speech_intervals": [
+        [
+          9.902,
+          10.402
+        ],
+        [
+          10.501999999999999,
+          10.921999999999999
+        ],
+        [
+          11.341999999999999,
+          14.041999999999998
+        ],
+        [
+          14.501999999999999,
+          16.241999999999997
+        ],
+        [
+          16.742,
+          18.201999999999998
+        ],
+        [
+          18.262,
+          19.561999999999998
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "primeros_pasos",
+      "start": 20.257583333333333,
+      "end": 29.276125,
+      "text": "Todas las noches era lo mismo. Pasos lentos, como si alguien caminara descalzo. Pensé que eran mis vecinos y traté de ignorarlo.",
+      "speech_intervals": [
+        [
+          20.517583333333334,
+          22.17758333333333
+        ],
+        [
+          22.637583333333332,
+          25.297583333333332
+        ],
+        [
+          25.677583333333335,
+          27.17758333333333
+        ],
+        [
+          27.277583333333332,
+          28.85758333333333
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "dormir",
+      "start": 29.676125,
+      "end": 36.3035,
+      "text": "Pero ayer, a las tres de la mañana, me despertó el sonido de una puerta abriéndose en la cocina.",
+      "speech_intervals": [
+        [
+          30.096125,
+          30.676125
+        ],
+        [
+          31.096125,
+          32.356125
+        ],
+        [
+          32.496125,
+          34.036125
+        ],
+        [
+          34.136125,
+          35.996125
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "ruido_cocina",
+      "start": 36.8035,
+      "end": 44.447541666666666,
+      "text": "Después escuché pasos, el ruido de un vaso sobre una mesa y un cajón cerrándose. Había alguien dentro de mi casa.",
+      "speech_intervals": [
+        [
+          36.9835,
+          38.2835
+        ],
+        [
+          38.463499999999996,
+          40.3635
+        ],
+        [
+          40.463499999999996,
+          41.9235
+        ],
+        [
+          42.2635,
+          44.0035
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "levantarme",
+      "start": 44.947541666666666,
+      "end": 54.62291666666667,
+      "text": "Me quedé inmóvil unos segundos. Recordé que había cerrado todas las puertas. Y que absolutamente nadie más tenía llaves.",
+      "speech_intervals": [
+        [
+          45.40754166666667,
+          47.46754166666667
+        ],
+        [
+          47.887541666666664,
+          49.387541666666664
+        ],
+        [
+          49.447541666666666,
+          49.987541666666665
+        ],
+        [
+          50.04754166666667,
+          50.50754166666667
+        ],
+        [
+          50.807541666666665,
+          53.22754166666667
+        ],
+        [
+          53.32754166666667,
+          54.347541666666665
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "revisar",
+      "start": 55.02291666666667,
+      "end": 64.98808333333334,
+      "text": "Salí de mi habitación y revisé toda la casa. No había nadie. Las ventanas estaban cerradas y la puerta principal seguía con llave.",
+      "speech_intervals": [
+        [
+          55.48291666666667,
+          57.54291666666667
+        ],
+        [
+          57.642916666666665,
+          58.54291666666667
+        ],
+        [
+          59.242916666666666,
+          60.34291666666667
+        ],
+        [
+          60.68291666666667,
+          62.26291666666667
+        ],
+        [
+          62.52291666666667,
+          63.70291666666667
+        ],
+        [
+          63.80291666666667,
+          64.74291666666667
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "el_vaso",
+      "start": 65.28808333333333,
+      "end": 74.59645833333333,
+      "text": "Pero había algo extraño. Un vaso lleno de agua sobre la mesa. Estaba seguro de no haberlo dejado ahí.",
+      "speech_intervals": [
+        [
+          65.38808333333333,
+          66.84808333333334
+        ],
+        [
+          66.90808333333334,
+          67.60808333333333
+        ],
+        [
+          68.06808333333333,
+          70.92808333333333
+        ],
+        [
+          71.54808333333334,
+          74.20808333333333
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "llamada_hermana",
+      "start": 75.09645833333333,
+      "end": 84.84225,
+      "text": "A la mañana siguiente llamé a mi hermana y le conté todo. Se quedó callada. Después me preguntó algo que me hizo sentir un escalofrío.",
+      "speech_intervals": [
+        [
+          76.39645833333333,
+          79.09645833333333
+        ],
+        [
+          79.43645833333333,
+          80.33645833333333
+        ],
+        [
+          80.67645833333333,
+          84.01645833333333
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "pregunta_hermana",
+      "start": 85.24225,
+      "end": 96.372875,
+      "text": "Me preguntó si también escuchaba pasos en el pasillo. No entendía cómo podía saberlo. Entonces me contó algo que llevaba años ocultándome.",
+      "speech_intervals": [
+        [
+          85.42225,
+          88.68225
+        ],
+        [
+          89.26225,
+          90.16225
+        ],
+        [
+          90.22225,
+          91.28225
+        ],
+        [
+          91.74225,
+          93.80225
+        ],
+        [
+          94.10225,
+          94.80225
+        ],
+        [
+          94.86225,
+          96.04225
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "secreto_hermana",
+      "start": 96.872875,
+      "end": 113.45816666666667,
+      "text": "Cuando vivíamos juntos, ella también escuchaba esos pasos. Una noche oyó mi voz llamándola desde la cocina, aunque yo estaba profundamente dormido.",
+      "speech_intervals": [
+        [
+          97.53287499999999,
+          99.632875
+        ],
+        [
+          100.33287499999999,
+          100.75287499999999
+        ],
+        [
+          100.852875,
+          102.512875
+        ],
+        [
+          102.572875,
+          103.31287499999999
+        ],
+        [
+          104.292875,
+          105.072875
+        ],
+        [
+          105.45287499999999,
+          105.992875
+        ],
+        [
+          106.212875,
+          106.992875
+        ],
+        [
+          107.052875,
+          109.552875
+        ],
+        [
+          110.292875,
+          111.59287499999999
+        ],
+        [
+          111.652875,
+          111.872875
+        ],
+        [
+          111.932875,
+          113.39287499999999
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "decidir_grabar",
+      "start": 113.95816666666667,
+      "end": 123.34466666666667,
+      "text": "Esa noche decidí dejar mi teléfono grabando audio. Quería demostrarme que todo tenía una explicación. Ojalá nunca lo hubiera hecho.",
+      "speech_intervals": [
+        [
+          114.77816666666666,
+          115.55816666666666
+        ],
+        [
+          115.77816666666666,
+          117.95816666666667
+        ],
+        [
+          118.33816666666667,
+          119.39816666666667
+        ],
+        [
+          119.45816666666667,
+          120.83816666666667
+        ],
+        [
+          121.09816666666667,
+          122.79816666666667
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "grabacion_noche",
+      "start": 123.74466666666666,
+      "end": 132.91545833333333,
+      "text": "La grabación estuvo en silencio durante horas. Pero exactamente a las tres y siete, se escucharon pasos. Después, un cajón abriéndose.",
+      "speech_intervals": [
+        [
+          123.88466666666666,
+          126.14466666666667
+        ],
+        [
+          126.56466666666665,
+          128.70466666666667
+        ],
+        [
+          128.92466666666667,
+          129.86466666666666
+        ],
+        [
+          130.40466666666666,
+          130.86466666666666
+        ],
+        [
+          131.08466666666666,
+          131.66466666666665
+        ],
+        [
+          131.76466666666667,
+          132.58466666666666
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "revisar_audio",
+      "start": 133.41545833333333,
+      "end": 143.81516666666667,
+      "text": "Cuando revisé el audio, escuché una voz que murmuraba algo incomprensible. Subí el volumen. A las tres y diecinueve ocurrió lo imposible.",
+      "speech_intervals": [
+        [
+          133.67545833333332,
+          134.97545833333334
+        ],
+        [
+          135.55545833333332,
+          137.89545833333332
+        ],
+        [
+          137.95545833333333,
+          138.37545833333334
+        ],
+        [
+          138.67545833333332,
+          139.85545833333333
+        ],
+        [
+          140.43545833333334,
+          141.05545833333332
+        ],
+        [
+          141.27545833333335,
+          142.85545833333333
+        ],
+        [
+          142.91545833333333,
+          143.49545833333332
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "mi_propia_voz",
+      "start": 144.31516666666667,
+      "end": 150.352125,
+      "text": "Era mi propia voz. Decía claramente: ¡Ya te dije que no entres a mi habitación!",
+      "speech_intervals": [
+        [
+          144.73516666666666,
+          145.83516666666668
+        ],
+        [
+          146.45516666666666,
+          147.47516666666667
+        ],
+        [
+          148.01516666666666,
+          149.91516666666666
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "la_respuesta",
+      "start": 151.152125,
+      "end": 159.00554166666666,
+      "text": "Me quedé helado. Porque inmediatamente después, otra voz respondió: Pero si tú me abriste.",
+      "speech_intervals": [
+        [
+          151.372125,
+          151.67212500000002
+        ],
+        [
+          151.73212500000002,
+          152.152125
+        ],
+        [
+          152.21212500000001,
+          152.872125
+        ],
+        [
+          153.292125,
+          154.792125
+        ],
+        [
+          154.852125,
+          156.23212500000002
+        ],
+        [
+          156.49212500000002,
+          156.95212500000002
+        ],
+        [
+          157.092125,
+          158.39212500000002
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "dos_vasos",
+      "start": 159.90554166666666,
+      "end": 172.123375,
+      "text": "Esta mañana encontré dos vasos sobre la mesa. Yo solamente uso uno. El otro estaba mojado por fuera, como si alguien acabara de sacarlo del refrigerador.",
+      "speech_intervals": [
+        [
+          160.36554166666667,
+          163.22554166666666
+        ],
+        [
+          163.76554166666668,
+          165.10554166666665
+        ],
+        [
+          165.92554166666667,
+          166.90554166666666
+        ],
+        [
+          167.00554166666666,
+          168.26554166666665
+        ],
+        [
+          168.76554166666668,
+          170.22554166666666
+        ],
+        [
+          170.28554166666666,
+          171.74554166666667
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "hermana_reconoce",
+      "start": 172.623375,
+      "end": 187.240625,
+      "text": "Le envié la grabación a mi hermana. Me llamó inmediatamente. Estaba llorando. Me preguntó por qué la segunda voz sonaba exactamente igual a la suya.",
+      "speech_intervals": [
+        [
+          173.123375,
+          176.263375
+        ],
+        [
+          176.883375,
+          177.42337500000002
+        ],
+        [
+          177.52337500000002,
+          179.58337500000002
+        ],
+        [
+          179.80337500000002,
+          180.98337500000002
+        ],
+        [
+          181.163375,
+          182.183375
+        ],
+        [
+          182.36337500000002,
+          183.623375
+        ],
+        [
+          183.80337500000002,
+          184.30337500000002
+        ],
+        [
+          184.36337500000002,
+          184.823375
+        ],
+        [
+          184.883375,
+          186.74337500000001
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "vive_lejos",
+      "start": 187.740625,
+      "end": 197.55933333333334,
+      "text": "Mi hermana vive en otra ciudad, a cientos de kilómetros. Pero todavía no le he contado lo peor. Hay algo más al final de la grabación.",
+      "speech_intervals": [
+        [
+          188.040625,
+          189.900625
+        ],
+        [
+          190.16062499999998,
+          191.50062499999999
+        ],
+        [
+          191.880625,
+          192.22062499999998
+        ],
+        [
+          192.280625,
+          194.140625
+        ],
+        [
+          194.640625,
+          197.140625
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "ultimo_susurro",
+      "start": 198.35933333333332,
+      "end": 207.45208333333332,
+      "text": "Después de que las dos voces dejan de hablar, se escucha una puerta muy cerca del teléfono. Y alguien comienza a susurrar mi nombre.",
+      "speech_intervals": [
+        [
+          198.81933333333333,
+          200.95933333333332
+        ],
+        [
+          201.37933333333334,
+          203.87933333333334
+        ],
+        [
+          204.57933333333332,
+          207.23933333333332
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "dentro_armario",
+      "start": 208.25208333333333,
+      "end": 218.65729166666668,
+      "text": "Lo peor es que el sonido venía desde dentro de mi armario. Y esa noche, antes de acostarme, yo mismo había revisado que estuviera vacío.",
+      "speech_intervals": [
+        [
+          208.67208333333332,
+          212.21208333333334
+        ],
+        [
+          212.47208333333333,
+          213.29208333333332
+        ],
+        [
+          213.87208333333334,
+          215.33208333333334
+        ],
+        [
+          215.39208333333335,
+          218.13208333333333
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "despedida",
+      "start": 219.45729166666666,
+      "end": 230.00204166666666,
+      "text": "No he vuelto a dormir en esa casa. Pero si esta noche escuchas que alguien te llama con tu propia voz, no respondas. Y suscríbete para escuchar más historias de terror.",
+      "speech_intervals": [
+        [
+          219.83729166666666,
+          221.65729166666665
+        ],
+        [
+          221.91729166666667,
+          224.77729166666666
+        ],
+        [
+          225.11729166666666,
+          225.93729166666665
+        ],
+        [
+          226.67729166666666,
+          229.45729166666666
+        ]
+      ]
+    }
+  ]
+}

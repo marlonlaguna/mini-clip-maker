@@ -1,0 +1,63 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.00,0:00:02.27,TikTok,,0,0,0,,Bueno, ¿para qué carajos nos reuniste, Paul?
+Dialogue: 0,0:00:02.27,0:00:05.00,TikTok,,0,0,0,,Tengo cosas mejores que hacer que escuchar tus sermones.
+Dialogue: 0,0:00:05.00,0:00:06.79,TikTok,,0,0,0,,Siéntate y cierra la boca, Joño.
+Dialogue: 0,0:00:06.79,0:00:11.00,TikTok,,0,0,0,,Llevo 30 años aguantando tus estupideces y hoy se termina esta mierda.
+Dialogue: 0,0:00:11.00,0:00:12.75,TikTok,,0,0,0,,Papá, no empieces con tus dramas.
+Dialogue: 0,0:00:12.75,0:00:15.75,TikTok,,0,0,0,,Siempre haces lo mismo cuando tomas dos cervezas.
+Dialogue: 0,0:00:15.75,0:00:19.51,TikTok,,0,0,0,,Joana, encontré los mensajes de John con tu mejor amiga
+Dialogue: 0,0:00:19.51,0:00:22.60,TikTok,,0,0,0,,y no precisamente estaban hablando del clima.
+Dialogue: 0,0:00:22.60,0:00:24.64,TikTok,,0,0,0,,Eso fue hace seis meses viejo metido.
+Dialogue: 0,0:00:24.64,0:00:26.23,TikTok,,0,0,0,,Deja de revisar mis cosas.
+Dialogue: 0,0:00:26.23,0:00:29.07,TikTok,,0,0,0,,Hijo de puta, me juraste que no había pasado nada con ella
+Dialogue: 0,0:00:29.07,0:00:31.19,TikTok,,0,0,0,,y yo como idiota defendiéndote.
+Dialogue: 0,0:00:31.19,0:00:33.24,TikTok,,0,0,0,,Pues ya que estamos contando secretos,
+Dialogue: 0,0:00:33.24,0:00:36.84,TikTok,,0,0,0,,yo también tengo uno y créanme que les va a encantar.
+Dialogue: 0,0:00:36.84,0:00:37.88,TikTok,,0,0,0,,Yo habla tommy.
+Dialogue: 0,0:00:37.88,0:00:40.71,TikTok,,0,0,0,,A estas alturas ya nada puede sorprenderme.
+Dialogue: 0,0:00:40.71,0:00:45.92,TikTok,,0,0,0,,Si acuerdan de los $5,000 que desaparecieron de la caja, fuerte.
+Dialogue: 0,0:00:45.92,0:00:50.00,TikTok,,0,0,0,,Bueno, no fue un ladrón, fui yo.
+Dialogue: 0,0:00:50.00,0:00:50.64,TikTok,,0,0,0,,¿Qué?
+Dialogue: 0,0:00:50.64,0:00:51.67,TikTok,,0,0,0,,Pedazo de cabrón.
+Dialogue: 0,0:00:51.67,0:00:55.24,TikTok,,0,0,0,,Yo acuse al jardinero y lo despedí por tu culpa.
+Dialogue: 0,0:00:55.24,0:00:57.84,TikTok,,0,0,0,,Bueno, tampoco es que fueras a darle un aumento.
+Dialogue: 0,0:00:57.84,0:00:59.75,TikTok,,0,0,0,,Le pagabas una miseria.
+Dialogue: 0,0:00:59.75,0:01:00.71,TikTok,,0,0,0,,Espera un momento.
+Dialogue: 0,0:01:00.71,0:01:03.67,TikTok,,0,0,0,,¿Y qué demonios hiciste con $5,000?
+Dialogue: 0,0:01:03.67,0:01:05.76,TikTok,,0,0,0,,Los perdí apostando por internet.
+Dialogue: 0,0:01:05.76,0:01:08.28,TikTok,,0,0,0,,Pero tranquilos, aprendí la lección.
+Dialogue: 0,0:01:08.28,0:01:11.56,TikTok,,0,0,0,,Nunca vuelvan a darme acceso a una caja fuerte.
+Dialogue: 0,0:01:11.56,0:01:12.15,TikTok,,0,0,0,,Ha.
+Dialogue: 0,0:01:12.15,0:01:13.95,TikTok,,0,0,0,,Y tú me llamabas irresponsable.
+Dialogue: 0,0:01:13.95,0:01:17.20,TikTok,,0,0,0,,Este mocoso es un delincuente con conexión a internet.
+Dialogue: 0,0:01:17.20,0:01:23.51,TikTok,,0,0,0,,Almo… las más adultas, al menos, yo no tengo dos novias
+Dialogue: 0,0:01:23.51,0:01:27.59,TikTok,,0,0,0,,y una deuda de $20,000 que escondo debajo del colchón.
+Dialogue: 0,0:01:27.59,0:01:29.64,TikTok,,0,0,0,,Tommy, te juro que como sigas hablando,
+Dialogue: 0,0:01:29.64,0:01:31.71,TikTok,,0,0,0,,te voy a sacar de aquí apatadas.
+Dialogue: 0,0:01:31.71,0:01:34.31,TikTok,,0,0,0,,Nadie va a golpear a nadie en mi casa.
+Dialogue: 0,0:01:34.31,0:01:37.28,TikTok,,0,0,0,,Bastante vergüenza me dan los tres.
+Dialogue: 0,0:01:37.28,0:01:38.87,TikTok,,0,0,0,,Qué curioso que hables de vergüenza.
+Dialogue: 0,0:01:38.87,0:01:44.57,TikTok,,0,0,0,,Papá, ya les contaste que tienes otra familia en San Pedro Sula.
+Dialogue: 0,0:01:44.57,0:01:48.45,TikTok,,0,0,0,,Ana, no sé de qué demonios estás hablando.
+Dialogue: 0,0:01:48.45,0:01:51.06,TikTok,,0,0,0,,Claro que sí, se llama Patricia, tiene dos hijos.
+Dialogue: 0,0:01:51.06,0:01:53.50,TikTok,,0,0,0,,El mayor se parece muchísimo a ti.
+Dialogue: 0,0:01:53.50,0:01:56.37,TikTok,,0,0,0,,No jodas, el viejo tiene una familia secreta
+Dialogue: 0,0:01:56.37,0:01:59.62,TikTok,,0,0,0,,y todavía venía a darnos lecciones de moral.
+Dialogue: 0,0:01:59.62,0:02:02.01,TikTok,,0,0,0,,Sí, tengo otra familia, contentos.
+Dialogue: 0,0:02:02.01,0:02:05.93,TikTok,,0,0,0,,Y por lo menos ellos no me roban dinero ni me arruinan la cena.
+Dialogue: 0,0:02:05.93,0:02:11.13,TikTok,,0,0,0,,Bueno, familia, creo que esta ha sido nuestra mejor reunión en años.
+Dialogue: 0,0:02:11.13,0:02:13.34,TikTok,,0,0,0,,La próxima traigo palomitas.
+Dialogue: 0,0:02:13.34,0:02:15.06,TikTok,,0,0,0,,¿Tuitas viendo este desastre?
+Dialogue: 0,0:02:15.06,0:02:18.65,TikTok,,0,0,0,,Suscríbete porque esta familia todavía tiene muchos trapos sucios que sacar.

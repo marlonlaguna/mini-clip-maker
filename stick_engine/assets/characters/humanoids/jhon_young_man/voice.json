@@ -1,0 +1,5 @@
+{
+  "engine": "qwen_clone",
+  "language": "Spanish",
+  "prompt": "voice.pt"
+}

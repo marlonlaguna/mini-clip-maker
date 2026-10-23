@@ -1,0 +1,2554 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {
+      "run_id": "7a20fd31-3851-4281-921b-c0218f6b561b",
+      "started_at": "2026-10-22T10:17:55-06:00",
+      "finished_at": "2026-10-22T10:17:55-06:00",
+      "status": "failed",
+      "title": "test-voces",
+      "mode": "guion",
+      "input": "test-voces.txt",
+      "duration_target_seconds": null,
+      "events": [
+        {
+          "at": "2026-10-22T10:17:55-06:00",
+          "event": "generation_started"
+        },
+        {
+          "at": "2026-10-22T10:17:55-06:00",
+          "event": "generation_failed"
+        }
+      ],
+      "error": {
+        "type": "ValueError",
+        "message": "ANA: para cambiar de acción u orientación, empieza otra escena",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\main.py\", line 1299, in crear_clip\n    resultado = _crear_clip_sin_log(\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\main.py\", line 958, in _crear_clip_sin_log\n    guion, cambios = preparar_guion_visual(\n                     ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\guion_escenas.py\", line 282, in preparar_guion_visual\n    validate_scenes(original, cast, assets, validate_resources=False)\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\guion_escenas.py\", line 227, in validate_scenes\n    scene_characters(scene, cast, assets)\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\guion_escenas.py\", line 212, in scene_characters\n    raise ValueError(f\"{name}: para cambiar de acción u orientación, empieza otra escena\")\nValueError: ANA: para cambiar de acción u orientación, empieza otra escena\n"
+      },
+      "artifacts": []
+    },
+    {
+      "run_id": "281acfb8-02ce-470b-9a90-009561abb310",
+      "started_at": "2026-10-22T10:20:22-06:00",
+      "finished_at": "2026-10-22T10:20:22-06:00",
+      "status": "failed",
+      "title": "test-voces",
+      "mode": "guion",
+      "input": "test-voces.txt",
+      "duration_target_seconds": null,
+      "events": [
+        {
+          "at": "2026-10-22T10:20:22-06:00",
+          "event": "generation_started"
+        },
+        {
+          "at": "2026-10-22T10:20:22-06:00",
+          "event": "generation_failed"
+        }
+      ],
+      "error": {
+        "type": "ValueError",
+        "message": "Escena silencio_paul: una escena sin diálogo requiere DURACION en segundos",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\main.py\", line 1299, in crear_clip\n    resultado = _crear_clip_sin_log(\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\main.py\", line 958, in _crear_clip_sin_log\n    guion, cambios = preparar_guion_visual(\n                     ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\guion_escenas.py\", line 282, in preparar_guion_visual\n    validate_scenes(original, cast, assets, validate_resources=False)\n  File \"C:\\Users\\mlagu\\OneDrive\\Documentos\\GitHub\\mini-clip-maker\\guion_escenas.py\", line 236, in validate_scenes\n    raise ValueError(f\"Escena {scene['id']}: una escena sin diálogo requiere DURACION en segundos\")\nValueError: Escena silencio_paul: una escena sin diálogo requiere DURACION en segundos\n"
+      },
+      "artifacts": []
+    },
+    {
+      "run_id": "99938d4b-f9a2-43ae-9828-bc6e41a9e6f5",
+      "started_at": "2026-10-22T10:21:13-06:00",
+      "finished_at": "2026-10-22T10:32:37-06:00",
+      "status": "completed",
+      "title": "test-voces",
+      "mode": "guion",
+      "input": "test-voces.txt",
+      "duration_target_seconds": null,
+      "events": [
+        {
+          "at": "2026-10-22T10:21:13-06:00",
+          "event": "generation_started"
+        },
+        {
+          "at": "2026-10-22T10:32:37-06:00",
+          "event": "generation_completed"
+        }
+      ],
+      "error": null,
+      "artifacts": [
+        {
+          "path": "audio.timeline.json",
+          "size_bytes": 15372,
+          "sha256": "43ca449ede60cea1aa4698e5557001a40e67f1610aafa8df2c7b2389c24cbd40",
+          "type": "json",
+          "content": {
+            "schema_version": 1,
+            "speech_activity_version": 1,
+            "sample_rate": 24000,
+            "duration": 139.06091666666666,
+            "scenes": [
+              {
+                "id": "la_reunion",
+                "start": 0.0,
+                "end": 5.029458333333333
+              },
+              {
+                "id": "paul_responde",
+                "start": 5.029458333333333,
+                "end": 10.970625
+              },
+              {
+                "id": "ana_protesta",
+                "start": 10.970625,
+                "end": 15.50525
+              },
+              {
+                "id": "primera_bomba",
+                "start": 15.50525,
+                "end": 22.333833333333335
+              },
+              {
+                "id": "jhon_se_defiende",
+                "start": 22.333833333333335,
+                "end": 26.216083333333334
+              },
+              {
+                "id": "ana_explota",
+                "start": 26.216083333333334,
+                "end": 31.130458333333333
+              },
+              {
+                "id": "tomy_interrumpe",
+                "start": 31.130458333333333,
+                "end": 36.74075
+              },
+              {
+                "id": "paul_pregunta",
+                "start": 36.74075,
+                "end": 40.394666666666666
+              },
+              {
+                "id": "tomy_confiesa",
+                "start": 40.394666666666666,
+                "end": 49.84404166666667
+              },
+              {
+                "id": "paul_furioso",
+                "start": 49.84404166666667,
+                "end": 55.063
+              },
+              {
+                "id": "tomy_contesta",
+                "start": 55.063,
+                "end": 59.779041666666664
+              },
+              {
+                "id": "ana_pregunta",
+                "start": 59.779041666666664,
+                "end": 63.28783333333333
+              },
+              {
+                "id": "tomy_revela",
+                "start": 63.28783333333333,
+                "end": 71.57025
+              },
+              {
+                "id": "jhon_se_burla",
+                "start": 71.57025,
+                "end": 77.04133333333333
+              },
+              {
+                "id": "tomy_contraataca",
+                "start": 77.04133333333333,
+                "end": 87.62708333333333
+              },
+              {
+                "id": "jhon_amenaza",
+                "start": 87.62708333333333,
+                "end": 91.604125
+              },
+              {
+                "id": "paul_detiene",
+                "start": 91.604125,
+                "end": 97.26679166666666
+              },
+              {
+                "id": "ana_secretos",
+                "start": 97.26679166666666,
+                "end": 102.5665
+              },
+              {
+                "id": "silencio_paul",
+                "start": 102.5665,
+                "end": 104.5665
+              },
+              {
+                "id": "paul_reacciona",
+                "start": 104.5665,
+                "end": 108.49479166666667
+              },
+              {
+                "id": "ana_remata",
+                "start": 108.49479166666667,
+                "end": 113.50533333333334
+              },
+              {
+                "id": "jhon_sorprendido",
+                "start": 113.50533333333334,
+                "end": 119.42691666666667
+              },
+              {
+                "id": "paul_explota",
+                "start": 119.42691666666667,
+                "end": 125.233875
+              },
+              {
+                "id": "tomy_final",
+                "start": 125.233875,
+                "end": 133.35216666666668
+              },
+              {
+                "id": "ana_despedida",
+                "start": 133.35216666666668,
+                "end": 139.06091666666666
+              }
+            ],
+            "blocks": [
+              {
+                "speaker": "JHON",
+                "scene": "la_reunion",
+                "start": 0.0,
+                "end": 4.7294583333333335,
+                "text": "Bueno, ¿para qué carajos nos reuniste, Paul? Tengo cosas mejores que hacer que escuchar tus sermones.",
+                "speech_intervals": [
+                  [
+                    0.0,
+                    0.39999999999999997
+                  ],
+                  [
+                    0.58,
+                    2.12
+                  ],
+                  [
+                    2.26,
+                    4.72
+                  ]
+                ]
+              },
+              {
+                "speaker": "PAUL",
+                "scene": "paul_responde",
+                "start": 5.029458333333333,
+                "end": 10.570625,
+                "text": "Siéntate y cierra la boca, Jhon. Llevo treinta años aguantando tus estupideces y hoy se termina esta mierda.",
+                "speech_intervals": [
+                  [
+                    5.129458333333333,
+                    6.669458333333333
+                  ],
+                  [
+                    6.769458333333334,
+                    10.389458333333334
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "ana_protesta",
+                "start": 10.970625,
+                "end": 15.20525,
+                "text": "Papá, no empieces con tus dramas. Siempre haces lo mismo cuando tomas dos cervezas.",
+                "speech_intervals": [
+                  [
+                    10.970625,
+                    11.450625
+                  ],
+                  [
+                    11.550625,
+                    12.650625
+                  ],
+                  [
+                    12.790625,
+                    15.170625000000001
+                  ]
+                ]
+              },
+              {
+                "speaker": "PAUL",
+                "scene": "primera_bomba",
+                "start": 15.50525,
+                "end": 21.833833333333335,
+                "text": "Ana, encontré los mensajes de Jhon con tu mejor amiga. Y no precisamente estaban hablando del clima.",
+                "speech_intervals": [
+                  [
+                    15.52525,
+                    17.70525
+                  ],
+                  [
+                    18.04525,
+                    19.38525
+                  ],
+                  [
+                    19.48525,
+                    21.70525
+                  ]
+                ]
+              },
+              {
+                "speaker": "JHON",
+                "scene": "jhon_se_defiende",
+                "start": 22.333833333333335,
+                "end": 25.916083333333333,
+                "text": "¡Eso fue hace seis meses, viejo metido! ¡Deja de revisar mis cosas!",
+                "speech_intervals": [
+                  [
+                    22.553833333333333,
+                    24.453833333333336
+                  ],
+                  [
+                    24.593833333333336,
+                    25.916083333333333
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "ana_explota",
+                "start": 26.216083333333334,
+                "end": 30.730458333333335,
+                "text": "¡Hijo de puta! ¡Me juraste que no había pasado nada con ella! ¡Y yo como idiota defendiéndote!",
+                "speech_intervals": [
+                  [
+                    26.216083333333334,
+                    26.976083333333335
+                  ],
+                  [
+                    27.076083333333333,
+                    28.976083333333335
+                  ],
+                  [
+                    29.036083333333334,
+                    30.536083333333334
+                  ]
+                ]
+              },
+              {
+                "speaker": "TOMY",
+                "scene": "tomy_interrumpe",
+                "start": 31.130458333333333,
+                "end": 36.44075,
+                "text": "Pues ya que estamos contando secretos, yo también tengo uno. Y créanme que les va a encantar.",
+                "speech_intervals": [
+                  [
+                    31.190458333333332,
+                    34.530458333333335
+                  ],
+                  [
+                    34.750458333333334,
+                    36.250458333333334
+                  ]
+                ]
+              },
+              {
+                "speaker": "PAUL",
+                "scene": "paul_pregunta",
+                "start": 36.74075,
+                "end": 40.09466666666667,
+                "text": "Habla, Tomy. A estas alturas ya nada puede sorprenderme.",
+                "speech_intervals": [
+                  [
+                    36.84075,
+                    37.62075
+                  ],
+                  [
+                    37.88075,
+                    40.09466666666667
+                  ]
+                ]
+              },
+              {
+                "speaker": "TOMY",
+                "scene": "tomy_confiesa",
+                "start": 40.394666666666666,
+                "end": 49.34404166666667,
+                "text": "¿Se acuerdan de los cinco mil dólares que desaparecieron de la caja fuerte? Bueno... no fue un ladrón. Fui yo.",
+                "speech_intervals": [
+                  [
+                    40.73466666666667,
+                    42.754666666666665
+                  ],
+                  [
+                    42.81466666666667,
+                    44.55466666666666
+                  ],
+                  [
+                    44.85466666666667,
+                    45.35466666666667
+                  ],
+                  [
+                    45.894666666666666,
+                    46.31466666666667
+                  ],
+                  [
+                    46.69466666666666,
+                    47.63466666666667
+                  ],
+                  [
+                    47.81466666666667,
+                    48.23466666666667
+                  ]
+                ]
+              },
+              {
+                "speaker": "PAUL",
+                "scene": "paul_furioso",
+                "start": 49.84404166666667,
+                "end": 54.663,
+                "text": "¡¿Qué?! ¡Pedazo de cabrón! ¡Yo acusé al jardinero y lo despedí por tu culpa!",
+                "speech_intervals": [
+                  [
+                    50.02404166666667,
+                    50.28404166666667
+                  ],
+                  [
+                    50.66404166666667,
+                    54.12404166666667
+                  ]
+                ]
+              },
+              {
+                "speaker": "TOMY",
+                "scene": "tomy_contesta",
+                "start": 55.063,
+                "end": 59.47904166666667,
+                "text": "Sí, bueno, tampoco es que fueras a darle un aumento. Le pagabas una miseria.",
+                "speech_intervals": [
+                  [
+                    55.203,
+                    57.423
+                  ],
+                  [
+                    57.843,
+                    59.47904166666667
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "ana_pregunta",
+                "start": 59.779041666666664,
+                "end": 62.987833333333334,
+                "text": "Espera un momento. ¿Y qué demonios hiciste con cinco mil dólares?",
+                "speech_intervals": [
+                  [
+                    59.779041666666664,
+                    62.97904166666667
+                  ]
+                ]
+              },
+              {
+                "speaker": "TOMY",
+                "scene": "tomy_revela",
+                "start": 63.28783333333333,
+                "end": 71.07025,
+                "text": "Los perdí apostando por internet. Pero tranquilos, aprendí la lección: nunca vuelvan a darme acceso a una caja fuerte.",
+                "speech_intervals": [
+                  [
+                    63.667833333333334,
+                    65.28783333333334
+                  ],
+                  [
+                    65.78783333333334,
+                    67.96783333333333
+                  ],
+                  [
+                    68.26783333333333,
+                    71.04783333333333
+                  ]
+                ]
+              },
+              {
+                "speaker": "JHON",
+                "scene": "jhon_se_burla",
+                "start": 71.57025,
+                "end": 76.74133333333333,
+                "text": "¡Ja! ¡Y tú me llamabas irresponsable! Este mocoso es un delincuente con conexión a internet.",
+                "speech_intervals": [
+                  [
+                    71.59025,
+                    72.01025
+                  ],
+                  [
+                    72.15025,
+                    73.85025
+                  ],
+                  [
+                    73.95025,
+                    76.69025
+                  ]
+                ]
+              },
+              {
+                "speaker": "TOMY",
+                "scene": "tomy_contraataca",
+                "start": 77.04133333333333,
+                "end": 87.22708333333334,
+                "text": "Al menos yo no tengo dos novias y una deuda de veinte mil dólares que escondo debajo del colchón.",
+                "speech_intervals": [
+                  [
+                    77.18133333333333,
+                    77.64133333333332
+                  ],
+                  [
+                    78.10133333333333,
+                    78.32133333333333
+                  ],
+                  [
+                    78.46133333333333,
+                    78.72133333333333
+                  ],
+                  [
+                    79.02133333333333,
+                    79.32133333333333
+                  ],
+                  [
+                    79.38133333333333,
+                    81.40133333333333
+                  ],
+                  [
+                    81.46133333333333,
+                    82.36133333333333
+                  ],
+                  [
+                    82.42133333333332,
+                    83.24133333333333
+                  ],
+                  [
+                    83.54133333333333,
+                    85.48133333333332
+                  ],
+                  [
+                    85.54133333333333,
+                    87.22708333333333
+                  ]
+                ]
+              },
+              {
+                "speaker": "JHON",
+                "scene": "jhon_amenaza",
+                "start": 87.62708333333333,
+                "end": 91.204125,
+                "text": "Tomy, te juro que como sigas hablando, te voy a sacar de aquí a patadas.",
+                "speech_intervals": [
+                  [
+                    87.62708333333333,
+                    89.58708333333333
+                  ],
+                  [
+                    89.64708333333333,
+                    91.204125
+                  ]
+                ]
+              },
+              {
+                "speaker": "PAUL",
+                "scene": "paul_detiene",
+                "start": 91.604125,
+                "end": 96.76679166666666,
+                "text": "¡Nadie va a golpear a nadie en mi casa! ¡Bastante vergüenza me dan los tres!",
+                "speech_intervals": [
+                  [
+                    91.70412499999999,
+                    94.12412499999999
+                  ],
+                  [
+                    94.26412499999999,
+                    96.244125
+                  ],
+                  [
+                    96.384125,
+                    96.56412499999999
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "ana_secretos",
+                "start": 97.26679166666666,
+                "end": 102.0665,
+                "text": "Qué curioso que hables de vergüenza, papá. ¿Ya les contaste que tienes otra familia en San Pedro Sula?",
+                "speech_intervals": [
+                  [
+                    97.28679166666666,
+                    98.86679166666666
+                  ],
+                  [
+                    98.92679166666666,
+                    100.50679166666666
+                  ],
+                  [
+                    100.56679166666666,
+                    102.02679166666667
+                  ]
+                ]
+              },
+              {
+                "speaker": "PAUL",
+                "scene": "paul_reacciona",
+                "start": 104.5665,
+                "end": 107.99479166666667,
+                "text": "Ana... no sé de qué demonios estás hablando.",
+                "speech_intervals": [
+                  [
+                    104.62650000000001,
+                    104.96650000000001
+                  ],
+                  [
+                    105.8665,
+                    107.68650000000001
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "ana_remata",
+                "start": 108.49479166666667,
+                "end": 113.00533333333334,
+                "text": "Claro que sí. Se llama Patricia. Tiene dos hijos. Y el mayor se parece muchísimo a ti.",
+                "speech_intervals": [
+                  [
+                    108.49479166666667,
+                    110.81479166666666
+                  ],
+                  [
+                    111.07479166666667,
+                    112.81479166666668
+                  ]
+                ]
+              },
+              {
+                "speaker": "JHON",
+                "scene": "jhon_sorprendido",
+                "start": 113.50533333333334,
+                "end": 119.02691666666666,
+                "text": "¡No jodas! ¿El viejo tiene una familia secreta? ¡Y todavía venía a darnos lecciones de moral!",
+                "speech_intervals": [
+                  [
+                    113.50533333333334,
+                    114.18533333333335
+                  ],
+                  [
+                    114.24533333333333,
+                    114.34533333333334
+                  ],
+                  [
+                    114.44533333333334,
+                    116.26533333333334
+                  ],
+                  [
+                    116.36533333333334,
+                    118.50533333333334
+                  ]
+                ]
+              },
+              {
+                "speaker": "PAUL",
+                "scene": "paul_explota",
+                "start": 119.42691666666667,
+                "end": 124.733875,
+                "text": "¡Sí! ¡Tengo otra familia! ¿Contentos? ¡Y por lo menos ellos no me roban dinero ni me arruinan la cena!",
+                "speech_intervals": [
+                  [
+                    119.44691666666667,
+                    119.54691666666668
+                  ],
+                  [
+                    119.64691666666667,
+                    119.94691666666667
+                  ],
+                  [
+                    120.28691666666667,
+                    121.66691666666667
+                  ],
+                  [
+                    122.04691666666668,
+                    124.46691666666668
+                  ]
+                ]
+              },
+              {
+                "speaker": "TOMY",
+                "scene": "tomy_final",
+                "start": 125.233875,
+                "end": 132.95216666666667,
+                "text": "Bueno, familia... creo que esta ha sido nuestra mejor reunión en años. La próxima traigo palomitas.",
+                "speech_intervals": [
+                  [
+                    125.933875,
+                    126.433875
+                  ],
+                  [
+                    127.33387499999999,
+                    127.913875
+                  ],
+                  [
+                    128.093875,
+                    130.79387499999999
+                  ],
+                  [
+                    131.133875,
+                    132.673875
+                  ]
+                ]
+              },
+              {
+                "speaker": "ANA",
+                "scene": "ana_despedida",
+                "start": 133.35216666666668,
+                "end": 138.66091666666668,
+                "text": "Y tú que estás viendo este desastre, suscríbete. Porque esta familia todavía tiene muchos trapos sucios que sacar.",
+                "speech_intervals": [
+                  [
+                    133.35216666666668,
+                    133.51216666666667
+                  ],
+                  [
+                    133.61216666666667,
+                    135.03216666666668
+                  ],
+                  [
+                    135.09216666666669,
+                    138.19216666666668
+                  ],
+                  [
+                    138.29216666666667,
+                    138.63216666666668
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "audio.wav",
+          "size_bytes": 6674968,
+          "sha256": "5a42c9076294dce7b74313ac9e77a3b1cab48a2e83f19e9a5fa8df8733824427",
+          "type": "wav"
+        },
+        {
+          "path": "cambios_recursos.json",
+          "size_bytes": 1576,
+          "sha256": "c1b29e99a9f1ebc1201411ff3ddf3556a5a585e7eeb936d9ea32737a85e4b28b",
+          "type": "json",
+          "content": [
+            "Escena la_reunion: SFX '(automático)' -> 'none'",
+            "Escena paul_responde: SFX '(automático)' -> 'none'",
+            "Escena ana_protesta: SFX '(automático)' -> 'none'",
+            "Escena primera_bomba: SFX '(automático)' -> 'vine-dramatic-boom-sound-effect@0'",
+            "Escena jhon_se_defiende: SFX '(automático)' -> 'none'",
+            "Escena ana_explota: SFX '(automático)' -> 'none'",
+            "Escena tomy_interrumpe: SFX '(automático)' -> 'none'",
+            "Escena paul_pregunta: SFX '(automático)' -> 'none'",
+            "Escena tomy_confiesa: SFX '(automático)' -> 'vine-dramatic-boom-sound-effect@0'",
+            "Escena paul_furioso: SFX '(automático)' -> 'question-mark@0'",
+            "Escena tomy_contesta: SFX '(automático)' -> 'none'",
+            "Escena ana_pregunta: SFX '(automático)' -> 'none'",
+            "Escena tomy_revela: SFX '(automático)' -> 'none'",
+            "Escena jhon_se_burla: SFX '(automático)' -> 'none'",
+            "Escena tomy_contraataca: SFX '(automático)' -> 'none'",
+            "Escena jhon_amenaza: SFX '(automático)' -> 'none'",
+            "Escena paul_detiene: SFX '(automático)' -> 'none'",
+            "Escena ana_secretos: SFX '(automático)' -> 'vine-dramatic-boom-sound-effect@0'",
+            "Escena silencio_paul: SFX '(automático)' -> 'misterius_sound@0'",
+            "Escena paul_reacciona: SFX '(automático)' -> 'none'",
+            "Escena ana_remata: SFX '(automático)' -> 'none'",
+            "Escena jhon_sorprendido: SFX '(automático)' -> 'audience-sorpresa-woow@0'",
+            "Escena paul_explota: SFX '(automático)' -> 'none'",
+            "Escena tomy_final: SFX '(automático)' -> 'none'",
+            "Escena ana_despedida: SFX '(automático)' -> 'none'"
+          ]
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 1340,
+          "sha256": "0219a228a820d86ac33d4eddfac99dc4e00f58d49afcbe1e602fc72a24e863a0",
+          "type": "json",
+          "content": {
+            "titulo": "test-voces",
+            "resolucion": "1080x1920",
+            "musica": "misterius.mp3",
+            "volumen_musica": 0.04,
+            "estilo_visual": "Drama familiar oscuro con humor negro. Cuatro familiares discuten en una casa durante una reunión nocturna. La conversación se vuelve cada vez más agresiva y revela secretos incómodos. Mantener la apariencia original de los cuatro personajes. Utilizar únicamente fondos disponibles. Dar prioridad a los diálogos, primeros planos y reacciones de los personajes. Ningún personaje adicional.",
+            "paleta": "",
+            "seed": null,
+            "negative_prompt": "gore, sangre, violencia gráfica, personajes adicionales, texto añadido, marcas de agua, anatomía deformada",
+            "cast": {
+              "ANA": "humanoids/ana_young_woman",
+              "JHON": "humanoids/jhon_young_man",
+              "PAUL": "humanoids/paul_old_man",
+              "TOMY": "humanoids/tomy_teenager"
+            },
+            "personajes": {
+              "ANA": "humanoids/ana_young_woman",
+              "JHON": "humanoids/jhon_young_man",
+              "PAUL": "humanoids/paul_old_man",
+              "TOMY": "humanoids/tomy_teenager"
+            },
+            "modo_video": "stick",
+            "voz_qwen": "Ryan",
+            "porcentaje_minimo_stick": 100.0,
+            "permitir_fondos_automaticos": false,
+            "usar_efectos_sonido": true,
+            "volumen_efectos": 0.2,
+            "max_efectos_sonido": 10,
+            "imagen_final": "",
+            "duracion_imagen_final": 4.0
+          }
+        },
+        {
+          "path": "guion.txt",
+          "size_bytes": 6037,
+          "sha256": "a91852ee0f2527c68fedab05d771abcf4052fa20e8487ac805ea1587eeb35eff",
+          "type": "txt",
+          "content_text": "[GUION]\n[ESCENA la_reunion | FONDO=house_interior]\n[ANA | ACCION=idle | POSICION=1]\n[PAUL | ACCION=idle | POSICION=2]\n[JHON | ACCION=speak_front | POSICION=3 | PAUSA=0.3 | VOZ=Ryan]\nBueno, ¿para qué carajos nos reuniste, Paul? Tengo cosas mejores que hacer que escuchar tus sermones.\n\n[ESCENA paul_responde | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]\nSiéntate y cierra la boca, Jhon. Llevo treinta años aguantando tus estupideces y hoy se termina esta mierda.\n\n[ESCENA ana_protesta | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\nPapá, no empieces con tus dramas. Siempre haces lo mismo cuando tomas dos cervezas.\n\n[ESCENA primera_bomba | FONDO=house_interior | PLANO=face:PAUL | SFX=vine-dramatic-boom-sound-effect@0]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]\nAna, encontré los mensajes de Jhon con tu mejor amiga. Y no precisamente estaban hablando del clima.\n\n[ESCENA jhon_se_defiende | FONDO=house_interior | PLANO=face:JHON]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\n¡Eso fue hace seis meses, viejo metido! ¡Deja de revisar mis cosas!\n\n[ESCENA ana_explota | FONDO=house_interior]\n[ANA | ACCION=speak_front | POSICION=1 | PAUSA=0.4 | VOZ=Ryan]\n¡Hijo de puta! ¡Me juraste que no había pasado nada con ella! ¡Y yo como idiota defendiéndote!\n[PAUL | ACCION=idle | POSICION=2]\n[JHON | ACCION=afraid | POSICION=3]\n\n[ESCENA tomy_interrumpe | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\nPues ya que estamos contando secretos, yo también tengo uno. Y créanme que les va a encantar.\n\n[ESCENA paul_pregunta | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\nHabla, Tomy. A estas alturas ya nada puede sorprenderme.\n\n[ESCENA tomy_confiesa | FONDO=house_interior | PLANO=face:TOMY | SFX=vine-dramatic-boom-sound-effect@0]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]\n¿Se acuerdan de los cinco mil dólares que desaparecieron de la caja fuerte? Bueno... no fue un ladrón. Fui yo.\n\n[ESCENA paul_furioso | FONDO=house_interior | PLANO=face:PAUL | SFX=question-mark@0]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]\n¡¿Qué?! ¡Pedazo de cabrón! ¡Yo acusé al jardinero y lo despedí por tu culpa!\n\n[ESCENA tomy_contesta | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\nSí, bueno, tampoco es que fueras a darle un aumento. Le pagabas una miseria.\n\n[ESCENA ana_pregunta | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\nEspera un momento. ¿Y qué demonios hiciste con cinco mil dólares?\n\n[ESCENA tomy_revela | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]\nLos perdí apostando por internet. Pero tranquilos, aprendí la lección: nunca vuelvan a darme acceso a una caja fuerte.\n\n[ESCENA jhon_se_burla | FONDO=house_interior | PLANO=face:JHON]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3 | VOZ=Ryan]\n¡Ja! ¡Y tú me llamabas irresponsable! Este mocoso es un delincuente con conexión a internet.\n\n[ESCENA tomy_contraataca | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]\nAl menos yo no tengo dos novias y una deuda de veinte mil dólares que escondo debajo del colchón.\n\n[ESCENA jhon_amenaza | FONDO=house_interior | PLANO=face:JHON]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]\nTomy, te juro que como sigas hablando, te voy a sacar de aquí a patadas.\n\n[ESCENA paul_detiene | FONDO=house_interior]\n[ANA | ACCION=afraid | POSICION=1]\n[PAUL | ACCION=speak_front | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]\n¡Nadie va a golpear a nadie en mi casa! ¡Bastante vergüenza me dan los tres!\n[JHON | ACCION=idle | POSICION=3]\n\n[ESCENA ana_secretos | FONDO=house_interior | PLANO=face:ANA | SFX=vine-dramatic-boom-sound-effect@0]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]\nQué curioso que hables de vergüenza, papá. ¿Ya les contaste que tienes otra familia en San Pedro Sula?\n\n[ESCENA silencio_paul | FONDO=house_interior | PLANO=face:PAUL | DURACION=2 | SFX=misterius_sound@0]\n[PAUL | ACCION=afraid | POSICION=2]\n\n[ESCENA paul_reacciona | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]\nAna... no sé de qué demonios estás hablando.\n\n[ESCENA ana_remata | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]\nClaro que sí. Se llama Patricia. Tiene dos hijos. Y el mayor se parece muchísimo a ti.\n\n[ESCENA jhon_sorprendido | FONDO=house_interior | PLANO=face:JHON | SFX=audience-sorpresa-woow@0]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]\n¡No jodas! ¿El viejo tiene una familia secreta? ¡Y todavía venía a darnos lecciones de moral!\n\n[ESCENA paul_explota | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5 | VOZ=Ryan]\n¡Sí! ¡Tengo otra familia! ¿Contentos? ¡Y por lo menos ellos no me roban dinero ni me arruinan la cena!\n\n[ESCENA tomy_final | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]\nBueno, familia... creo que esta ha sido nuestra mejor reunión en años. La próxima traigo palomitas.\n\n[ESCENA ana_despedida | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4 | VOZ=Ryan]\nY tú que estás viendo este desastre, suscríbete. Porque esta familia todavía tiene muchos trapos sucios que sacar.\n"
+        },
+        {
+          "path": "guion_adaptado.txt",
+          "size_bytes": 6758,
+          "sha256": "537ab20697cd9de9e0e121cc5a0c3290e3405d6fa0dac3dadaf1714f5f69bb9d",
+          "type": "txt",
+          "content_text": "[TITULO]\nLa cena de los hipócritas\n\n[MODO_VIDEO]\nstick\n\n[PORCENTAJE_MINIMO_STICK]\n100\n\n[PERMITIR_FONDOS_AUTOMATICOS]\nno\n\n[RESOLUCION]\n1080x1920\n\n[MUSICA]\nmisterius.mp3\n\n[VOLUMEN_MUSICA]\n0.04\n\n[ESTILO_VISUAL]\nDrama familiar oscuro con humor negro. Cuatro familiares discuten en una casa durante una reunión nocturna. La conversación se vuelve cada vez más agresiva y revela secretos incómodos. Mantener la apariencia original de los cuatro personajes. Utilizar únicamente fondos disponibles. Dar prioridad a los diálogos, primeros planos y reacciones de los personajes. Ningún personaje adicional.\n\n[NEGATIVE_PROMPT]\ngore, sangre, violencia gráfica, personajes adicionales, texto añadido, marcas de agua, anatomía deformada\n\n[USAR_EFECTOS_SONIDO]\nsi\n\n[VOLUMEN_EFECTOS]\n0.20\n\n[MAX_EFECTOS_SONIDO]\n10\n\n[CAST]\nANA = humanoids/ana_young_woman\nJHON = humanoids/jhon_young_man\nPAUL = humanoids/paul_old_man\nTOMY = humanoids/tomy_teenager\n\n[GUION]\n[ESCENA la_reunion | FONDO=house_interior]\n[ANA | ACCION=idle | POSICION=1]\n[PAUL | ACCION=idle | POSICION=2]\n[JHON | ACCION=speak_front | POSICION=3 | PAUSA=0.3]\nBueno, ¿para qué carajos nos reuniste, Paul? Tengo cosas mejores que hacer que escuchar tus sermones.\n\n[ESCENA paul_responde | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nSiéntate y cierra la boca, Jhon. Llevo treinta años aguantando tus estupideces y hoy se termina esta mierda.\n\n[ESCENA ana_protesta | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nPapá, no empieces con tus dramas. Siempre haces lo mismo cuando tomas dos cervezas.\n\n[ESCENA primera_bomba | FONDO=house_interior | PLANO=face:PAUL | SFX=vine-dramatic-boom-sound-effect@0]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\nAna, encontré los mensajes de Jhon con tu mejor amiga. Y no precisamente estaban hablando del clima.\n\n[ESCENA jhon_se_defiende | FONDO=house_interior | PLANO=face:JHON]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡Eso fue hace seis meses, viejo metido! ¡Deja de revisar mis cosas!\n\n[ESCENA ana_explota | FONDO=house_interior]\n[ANA | ACCION=speak_front | POSICION=1 | PAUSA=0.4]\n¡Hijo de puta! ¡Me juraste que no había pasado nada con ella! ¡Y yo como idiota defendiéndote!\n[PAUL | ACCION=idle | POSICION=2]\n[JHON | ACCION=afraid | POSICION=3]\n\n[ESCENA tomy_interrumpe | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nPues ya que estamos contando secretos, yo también tengo uno. Y créanme que les va a encantar.\n\n[ESCENA paul_pregunta | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nHabla, Tomy. A estas alturas ya nada puede sorprenderme.\n\n[ESCENA tomy_confiesa | FONDO=house_interior | PLANO=face:TOMY | SFX=vine-dramatic-boom-sound-effect@0]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\n¿Se acuerdan de los cinco mil dólares que desaparecieron de la caja fuerte? Bueno... no fue un ladrón. Fui yo.\n\n[ESCENA paul_furioso | FONDO=house_interior | PLANO=face:PAUL | SFX=question-mark@0]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\n¡¿Qué?! ¡Pedazo de cabrón! ¡Yo acusé al jardinero y lo despedí por tu culpa!\n\n[ESCENA tomy_contesta | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nSí, bueno, tampoco es que fueras a darle un aumento. Le pagabas una miseria.\n\n[ESCENA ana_pregunta | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nEspera un momento. ¿Y qué demonios hiciste con cinco mil dólares?\n\n[ESCENA tomy_revela | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\nLos perdí apostando por internet. Pero tranquilos, aprendí la lección: nunca vuelvan a darme acceso a una caja fuerte.\n\n[ESCENA jhon_se_burla | FONDO=house_interior | PLANO=face:JHON]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡Ja! ¡Y tú me llamabas irresponsable! Este mocoso es un delincuente con conexión a internet.\n\n[ESCENA tomy_contraataca | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nAl menos yo no tengo dos novias y una deuda de veinte mil dólares que escondo debajo del colchón.\n\n[ESCENA jhon_amenaza | FONDO=house_interior | PLANO=face:JHON]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nTomy, te juro que como sigas hablando, te voy a sacar de aquí a patadas.\n\n[ESCENA paul_detiene | FONDO=house_interior]\n[ANA | ACCION=afraid | POSICION=1]\n[PAUL | ACCION=speak_front | POSICION=2 | PAUSA=0.5]\n¡Nadie va a golpear a nadie en mi casa! ¡Bastante vergüenza me dan los tres!\n[JHON | ACCION=idle | POSICION=3]\n\n[ESCENA ana_secretos | FONDO=house_interior | PLANO=face:ANA | SFX=vine-dramatic-boom-sound-effect@0]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\nQué curioso que hables de vergüenza, papá. ¿Ya les contaste que tienes otra familia en San Pedro Sula?\n\n[ESCENA silencio_paul | FONDO=house_interior | PLANO=face:PAUL | DURACION=2 | SFX=misterius_sound@0]\n[PAUL | ACCION=afraid | POSICION=2]\n\n[ESCENA paul_reacciona | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\nAna... no sé de qué demonios estás hablando.\n\n[ESCENA ana_remata | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\nClaro que sí. Se llama Patricia. Tiene dos hijos. Y el mayor se parece muchísimo a ti.\n\n[ESCENA jhon_sorprendido | FONDO=house_interior | PLANO=face:JHON | SFX=audience-sorpresa-woow@0]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\n¡No jodas! ¿El viejo tiene una familia secreta? ¡Y todavía venía a darnos lecciones de moral!\n\n[ESCENA paul_explota | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\n¡Sí! ¡Tengo otra familia! ¿Contentos? ¡Y por lo menos ellos no me roban dinero ni me arruinan la cena!\n\n[ESCENA tomy_final | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nBueno, familia... creo que esta ha sido nuestra mejor reunión en años. La próxima traigo palomitas.\n\n[ESCENA ana_despedida | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nY tú que estás viendo este desastre, suscríbete. Porque esta familia todavía tiene muchos trapos sucios que sacar.\n"
+        },
+        {
+          "path": "guion_limpio.txt",
+          "size_bytes": 2289,
+          "sha256": "c00f0c0d23a0ff0d57ef0cb4e5248d97cc09147d903aabd909e04f87603ba864",
+          "type": "txt",
+          "content_text": "Bueno, ¿para qué carajos nos reuniste, Paul? Tengo cosas mejores que hacer que escuchar tus sermones.\n\nSiéntate y cierra la boca, Jhon. Llevo treinta años aguantando tus estupideces y hoy se termina esta mierda.\n\nPapá, no empieces con tus dramas. Siempre haces lo mismo cuando tomas dos cervezas.\n\nAna, encontré los mensajes de Jhon con tu mejor amiga. Y no precisamente estaban hablando del clima.\n\n¡Eso fue hace seis meses, viejo metido! ¡Deja de revisar mis cosas!\n\n¡Hijo de puta! ¡Me juraste que no había pasado nada con ella! ¡Y yo como idiota defendiéndote!\n\nPues ya que estamos contando secretos, yo también tengo uno. Y créanme que les va a encantar.\n\nHabla, Tomy. A estas alturas ya nada puede sorprenderme.\n\n¿Se acuerdan de los cinco mil dólares que desaparecieron de la caja fuerte? Bueno... no fue un ladrón. Fui yo.\n\n¡¿Qué?! ¡Pedazo de cabrón! ¡Yo acusé al jardinero y lo despedí por tu culpa!\n\nSí, bueno, tampoco es que fueras a darle un aumento. Le pagabas una miseria.\n\nEspera un momento. ¿Y qué demonios hiciste con cinco mil dólares?\n\nLos perdí apostando por internet. Pero tranquilos, aprendí la lección: nunca vuelvan a darme acceso a una caja fuerte.\n\n¡Ja! ¡Y tú me llamabas irresponsable! Este mocoso es un delincuente con conexión a internet.\n\nAl menos yo no tengo dos novias y una deuda de veinte mil dólares que escondo debajo del colchón.\n\nTomy, te juro que como sigas hablando, te voy a sacar de aquí a patadas.\n\n¡Nadie va a golpear a nadie en mi casa! ¡Bastante vergüenza me dan los tres!\n\nQué curioso que hables de vergüenza, papá. ¿Ya les contaste que tienes otra familia en San Pedro Sula?\n\n\n\nAna... no sé de qué demonios estás hablando.\n\nClaro que sí. Se llama Patricia. Tiene dos hijos. Y el mayor se parece muchísimo a ti.\n\n¡No jodas! ¿El viejo tiene una familia secreta? ¡Y todavía venía a darnos lecciones de moral!\n\n¡Sí! ¡Tengo otra familia! ¿Contentos? ¡Y por lo menos ellos no me roban dinero ni me arruinan la cena!\n\nBueno, familia... creo que esta ha sido nuestra mejor reunión en años. La próxima traigo palomitas.\n\nY tú que estás viendo este desastre, suscríbete. Porque esta familia todavía tiene muchos trapos sucios que sacar."
+        },
+        {
+          "path": "guion_original.txt",
+          "size_bytes": 5565,
+          "sha256": "994bca16aa111ae0ca1c583a45258ba706e77cd03afef06173a3807439a8abfe",
+          "type": "txt",
+          "content_text": "[ESCENA la_reunion | FONDO=house_interior]\n[ANA | ACCION=idle | POSICION=1]\n[PAUL | ACCION=idle | POSICION=2]\n[JHON | ACCION=speak_front | POSICION=3 | PAUSA=0.3]\nBueno, ¿para qué carajos nos reuniste, Paul? Tengo cosas mejores que hacer que escuchar tus sermones.\n\n[ESCENA paul_responde | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nSiéntate y cierra la boca, Jhon. Llevo treinta años aguantando tus estupideces y hoy se termina esta mierda.\n\n[ESCENA ana_protesta | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nPapá, no empieces con tus dramas. Siempre haces lo mismo cuando tomas dos cervezas.\n\n[ESCENA primera_bomba | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\nAna, encontré los mensajes de Jhon con tu mejor amiga. Y no precisamente estaban hablando del clima.\n\n[ESCENA jhon_se_defiende | FONDO=house_interior | PLANO=face:JHON]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡Eso fue hace seis meses, viejo metido! ¡Deja de revisar mis cosas!\n\n[ESCENA ana_explota | FONDO=house_interior]\n[ANA | ACCION=speak_front | POSICION=1 | PAUSA=0.4]\n¡Hijo de puta! ¡Me juraste que no había pasado nada con ella! ¡Y yo como idiota defendiéndote!\n[PAUL | ACCION=idle | POSICION=2]\n[JHON | ACCION=afraid | POSICION=3]\n\n[ESCENA tomy_interrumpe | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nPues ya que estamos contando secretos, yo también tengo uno. Y créanme que les va a encantar.\n\n[ESCENA paul_pregunta | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nHabla, Tomy. A estas alturas ya nada puede sorprenderme.\n\n[ESCENA tomy_confiesa | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\n¿Se acuerdan de los cinco mil dólares que desaparecieron de la caja fuerte? Bueno... no fue un ladrón. Fui yo.\n\n[ESCENA paul_furioso | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\n¡¿Qué?! ¡Pedazo de cabrón! ¡Yo acusé al jardinero y lo despedí por tu culpa!\n\n[ESCENA tomy_contesta | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nSí, bueno, tampoco es que fueras a darle un aumento. Le pagabas una miseria.\n\n[ESCENA ana_pregunta | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\nEspera un momento. ¿Y qué demonios hiciste con cinco mil dólares?\n\n[ESCENA tomy_revela | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\nLos perdí apostando por internet. Pero tranquilos, aprendí la lección: nunca vuelvan a darme acceso a una caja fuerte.\n\n[ESCENA jhon_se_burla | FONDO=house_interior | PLANO=face:JHON]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]\n¡Ja! ¡Y tú me llamabas irresponsable! Este mocoso es un delincuente con conexión a internet.\n\n[ESCENA tomy_contraataca | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nAl menos yo no tengo dos novias y una deuda de veinte mil dólares que escondo debajo del colchón.\n\n[ESCENA jhon_amenaza | FONDO=house_interior | PLANO=face:JHON]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nTomy, te juro que como sigas hablando, te voy a sacar de aquí a patadas.\n\n[ESCENA paul_detiene | FONDO=house_interior]\n[ANA | ACCION=afraid | POSICION=1]\n[PAUL | ACCION=speak_front | POSICION=2 | PAUSA=0.5]\n¡Nadie va a golpear a nadie en mi casa! ¡Bastante vergüenza me dan los tres!\n[JHON | ACCION=idle | POSICION=3]\n\n[ESCENA ana_secretos | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\nQué curioso que hables de vergüenza, papá. ¿Ya les contaste que tienes otra familia en San Pedro Sula?\n\n[ESCENA silencio_paul | FONDO=house_interior | PLANO=face:PAUL | DURACION=2]\n[PAUL | ACCION=afraid | POSICION=2]\n\n[ESCENA paul_reacciona | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\nAna... no sé de qué demonios estás hablando.\n\n[ESCENA ana_remata | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\nClaro que sí. Se llama Patricia. Tiene dos hijos. Y el mayor se parece muchísimo a ti.\n\n[ESCENA jhon_sorprendido | FONDO=house_interior | PLANO=face:JHON]\n[JHON | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\n¡No jodas! ¿El viejo tiene una familia secreta? ¡Y todavía venía a darnos lecciones de moral!\n\n[ESCENA paul_explota | FONDO=house_interior | PLANO=face:PAUL]\n[PAUL | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.5]\n¡Sí! ¡Tengo otra familia! ¿Contentos? ¡Y por lo menos ellos no me roban dinero ni me arruinan la cena!\n\n[ESCENA tomy_final | FONDO=house_interior | PLANO=face:TOMY]\n[TOMY | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nBueno, familia... creo que esta ha sido nuestra mejor reunión en años. La próxima traigo palomitas.\n\n[ESCENA ana_despedida | FONDO=house_interior | PLANO=face:ANA]\n[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]\nY tú que estás viendo este desastre, suscríbete. Porque esta familia todavía tiene muchos trapos sucios que sacar."
+        },
+        {
+          "path": "segmentos.json",
+          "size_bytes": 5439,
+          "sha256": "f7ee7689cf6e83c2384796aec7b596013a5bf4e5f8aa3f65f7f7a5748ed43ee2",
+          "type": "json",
+          "content": [
+            {
+              "start": 0.0,
+              "end": 2.28,
+              "text": "Bueno, ¿para qué carajos nos reuniste, Paul?"
+            },
+            {
+              "start": 2.28,
+              "end": 5.0,
+              "text": "Tengo cosas mejores que hacer que escuchar tus sermones."
+            },
+            {
+              "start": 5.0,
+              "end": 6.8,
+              "text": "Siéntate y cierra la boca, Joño."
+            },
+            {
+              "start": 6.8,
+              "end": 11.0,
+              "text": "Llevo 30 años aguantando tus estupideces y hoy se termina esta mierda."
+            },
+            {
+              "start": 11.0,
+              "end": 12.76,
+              "text": "Papá, no empieces con tus dramas."
+            },
+            {
+              "start": 12.76,
+              "end": 15.76,
+              "text": "Siempre haces lo mismo cuando tomas dos cervezas."
+            },
+            {
+              "start": 15.76,
+              "end": 19.52,
+              "text": "Joana, encontré los mensajes de John con tu mejor amiga"
+            },
+            {
+              "start": 19.52,
+              "end": 22.6,
+              "text": "y no precisamente estaban hablando del clima."
+            },
+            {
+              "start": 22.6,
+              "end": 24.64,
+              "text": "Eso fue hace seis meses viejo metido."
+            },
+            {
+              "start": 24.64,
+              "end": 26.24,
+              "text": "Deja de revisar mis cosas."
+            },
+            {
+              "start": 26.24,
+              "end": 29.08,
+              "text": "Hijo de puta, me juraste que no había pasado nada con ella"
+            },
+            {
+              "start": 29.08,
+              "end": 31.2,
+              "text": "y yo como idiota defendiéndote."
+            },
+            {
+              "start": 31.2,
+              "end": 33.24,
+              "text": "Pues ya que estamos contando secretos,"
+            },
+            {
+              "start": 33.24,
+              "end": 36.84,
+              "text": "yo también tengo uno y créanme que les va a encantar."
+            },
+            {
+              "start": 36.84,
+              "end": 37.88,
+              "text": "Yo habla tommy."
+            },
+            {
+              "start": 37.88,
+              "end": 40.72,
+              "text": "A estas alturas ya nada puede sorprenderme."
+            },
+            {
+              "start": 40.72,
+              "end": 45.92,
+              "text": "Si acuerdan de los $5,000 que desaparecieron de la caja, fuerte."
+            },
+            {
+              "start": 45.92,
+              "end": 50.0,
+              "text": "Bueno, no fue un ladrón, fui yo."
+            },
+            {
+              "start": 50.0,
+              "end": 50.64,
+              "text": "¿Qué?"
+            },
+            {
+              "start": 50.64,
+              "end": 51.68,
+              "text": "Pedazo de cabrón."
+            },
+            {
+              "start": 51.68,
+              "end": 55.24,
+              "text": "Yo acuse al jardinero y lo despedí por tu culpa."
+            },
+            {
+              "start": 55.24,
+              "end": 57.84,
+              "text": "Bueno, tampoco es que fueras a darle un aumento."
+            },
+            {
+              "start": 57.84,
+              "end": 59.76,
+              "text": "Le pagabas una miseria."
+            },
+            {
+              "start": 59.76,
+              "end": 60.72,
+              "text": "Espera un momento."
+            },
+            {
+              "start": 60.72,
+              "end": 63.68,
+              "text": "¿Y qué demonios hiciste con $5,000?"
+            },
+            {
+              "start": 63.68,
+              "end": 65.76,
+              "text": "Los perdí apostando por internet."
+            },
+            {
+              "start": 65.76,
+              "end": 68.28,
+              "text": "Pero tranquilos, aprendí la lección."
+            },
+            {
+              "start": 68.28,
+              "end": 71.56,
+              "text": "Nunca vuelvan a darme acceso a una caja fuerte."
+            },
+            {
+              "start": 71.56,
+              "end": 72.16,
+              "text": "Ha."
+            },
+            {
+              "start": 72.16,
+              "end": 73.96,
+              "text": "Y tú me llamabas irresponsable."
+            },
+            {
+              "start": 73.96,
+              "end": 77.2,
+              "text": "Este mocoso es un delincuente con conexión a internet."
+            },
+            {
+              "start": 77.2,
+              "end": 83.52,
+              "text": "Almo… las más adultas, al menos, yo no tengo dos novias"
+            },
+            {
+              "start": 83.52,
+              "end": 87.6,
+              "text": "y una deuda de $20,000 que escondo debajo del colchón."
+            },
+            {
+              "start": 87.6,
+              "end": 89.64,
+              "text": "Tommy, te juro que como sigas hablando,"
+            },
+            {
+              "start": 89.64,
+              "end": 91.72,
+              "text": "te voy a sacar de aquí apatadas."
+            },
+            {
+              "start": 91.72,
+              "end": 94.32,
+              "text": "Nadie va a golpear a nadie en mi casa."
+            },
+            {
+              "start": 94.32,
+              "end": 97.28,
+              "text": "Bastante vergüenza me dan los tres."
+            },
+            {
+              "start": 97.28,
+              "end": 98.88,
+              "text": "Qué curioso que hables de vergüenza."
+            },
+            {
+              "start": 98.88,
+              "end": 104.58,
+              "text": "Papá, ya les contaste que tienes otra familia en San Pedro Sula."
+            },
+            {
+              "start": 104.58,
+              "end": 108.46,
+              "text": "Ana, no sé de qué demonios estás hablando."
+            },
+            {
+              "start": 108.46,
+              "end": 111.06,
+              "text": "Claro que sí, se llama Patricia, tiene dos hijos."
+            },
+            {
+              "start": 111.06,
+              "end": 113.5,
+              "text": "El mayor se parece muchísimo a ti."
+            },
+            {
+              "start": 113.5,
+              "end": 116.38,
+              "text": "No jodas, el viejo tiene una familia secreta"
+            },
+            {
+              "start": 116.38,
+              "end": 119.62,
+              "text": "y todavía venía a darnos lecciones de moral."
+            },
+            {
+              "start": 119.62,
+              "end": 122.02,
+              "text": "Sí, tengo otra familia, contentos."
+            },
+            {
+              "start": 122.02,
+              "end": 125.94,
+              "text": "Y por lo menos ellos no me roban dinero ni me arruinan la cena."
+            },
+            {
+              "start": 125.94,
+              "end": 131.14,
+              "text": "Bueno, familia, creo que esta ha sido nuestra mejor reunión en años."
+            },
+            {
+              "start": 131.14,
+              "end": 133.34,
+              "text": "La próxima traigo palomitas."
+            },
+            {
+              "start": 133.34,
+              "end": 135.06,
+              "text": "¿Tuitas viendo este desastre?"
+            },
+            {
+              "start": 135.06,
+              "end": 138.66,
+              "text": "Suscríbete porque esta familia todavía tiene muchos trapos sucios que sacar."
+            }
+          ]
+        },
+        {
+          "path": "stick/scene_001.mp4",
+          "size_bytes": 2021990,
+          "sha256": "9b18953af1a52e27e571960ec4627165e97db1b611345ff33fb4f8c539b045ee",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_002.mp4",
+          "size_bytes": 2886419,
+          "sha256": "cd906ca95f66f3d67ccf5ae8cda67221175e9f399f69492ec87333e1f0b10c3d",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_003.mp4",
+          "size_bytes": 2649538,
+          "sha256": "b2996c2aa03100496fa4ce7b3b9497668e06151f91062e8fb3edaf99d2636f64",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_004.mp4",
+          "size_bytes": 3225764,
+          "sha256": "61c5139d47d261fb660ad5b3ce1c38a1a241a13843922b5d4629281049322ccf",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_005.mp4",
+          "size_bytes": 1924818,
+          "sha256": "4c0020bb3ba7b131b80db4d0286cd2b1e7af80496f7c26f5101a09435df8ebb8",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_006.mp4",
+          "size_bytes": 1641959,
+          "sha256": "9124c88c7f8b5f15fb5a75e426112dece4ceec6c55aad31016ae145b1a2d617e",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_007.mp4",
+          "size_bytes": 1073913,
+          "sha256": "31aa333d2f6eb5e54e3daccb722750328fd588d7cddaf3698c2809bf220a78ae",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_008.mp4",
+          "size_bytes": 1831733,
+          "sha256": "0c10bf4959398a9beba7a5cec0fd16ed68bacf1faa1c7b7eba8ba02c5c208ba0",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_009.mp4",
+          "size_bytes": 2152403,
+          "sha256": "825fb1be328c403758aadfea6c65078140b6291b8ed2c047c1ac94704feb4fda",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_010.mp4",
+          "size_bytes": 2448043,
+          "sha256": "2a72145334200751543e497fb585f8d02b52e43727ca472c2dd4a903cc1d77ad",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_011.mp4",
+          "size_bytes": 900421,
+          "sha256": "21e7308b50a97fbc1ec63bf347a5072edbbbd68d7e7e6d9029944401942e73aa",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_012.mp4",
+          "size_bytes": 1849023,
+          "sha256": "53eeefc40b25901556217714ad46a2fd9c2a183e0b204c5af1d076bedbb82c11",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_013.mp4",
+          "size_bytes": 1760446,
+          "sha256": "32ef26fc159f98e24ad064ea3458748e208fe8e261819a7bed85a082ae6c08b6",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_014.mp4",
+          "size_bytes": 2659702,
+          "sha256": "be7a0113d4eee0725e5a6c4ff3e976c27f0439ccc13450acb132a184f10774d9",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_015.mp4",
+          "size_bytes": 2382643,
+          "sha256": "670f17ced7138e7997d741d0ecc6740aeab663a38045440b1564a634c0876348",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_016.mp4",
+          "size_bytes": 1940508,
+          "sha256": "ad47eee935a018b676e44b11786aa7e23e78113bf32c38f66043134bcb1523f9",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_017.mp4",
+          "size_bytes": 1924294,
+          "sha256": "cb5d38bed4438f5f803a965e3d98628cacf34d46c0badd9b7aebb59688d732c8",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_018.mp4",
+          "size_bytes": 2842836,
+          "sha256": "a55594779ea0510f82d46576a579ae4eaf2320e94f578cd850c083ff2312ba9b",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_019.mp4",
+          "size_bytes": 333205,
+          "sha256": "531d8c741c21685bba9343735b16283fba594040d509ddf230e5da3f216fc641",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_020.mp4",
+          "size_bytes": 1682475,
+          "sha256": "33672554a7c9b975230fddbd22fca84f2771ac6ce1affd724137ced17676cd6b",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_021.mp4",
+          "size_bytes": 2425827,
+          "sha256": "f24797d2ace24ad49399ebdc43c1e44e995496030f73a2902182a7b3cb0b79f1",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_022.mp4",
+          "size_bytes": 2628914,
+          "sha256": "69a1e10e54bb64e722860c8ece5529cd27f0a5a187f70201dd5e064c3237bbfb",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_023.mp4",
+          "size_bytes": 2692957,
+          "sha256": "5be1aa50047f63461909177b5ed0119de732595e68de2bc5806d0ad266b62460",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_024.mp4",
+          "size_bytes": 1728870,
+          "sha256": "8e5cb1554c209b1d7f24a8a018ae5c766a49659153b844e3a19b9c20469a2b2b",
+          "type": "mp4"
+        },
+        {
+          "path": "stick/scene_025.mp4",
+          "size_bytes": 3008102,
+          "sha256": "be1d74bf9b00281ce836f7e991e95f47da263deb6b7141b626cd2cc1501c2a43",
+          "type": "mp4"
+        },
+        {
+          "path": "stick_storyboard.json",
+          "size_bytes": 35361,
+          "sha256": "56123b3063907fa32afb7ef63b773afdebfcb3c9e7914a844356ec0866df85ad",
+          "type": "json",
+          "content": {
+            "storyboard": [
+              {
+                "scene": 1,
+                "script_scene": "la_reunion",
+                "start": 0.0,
+                "end": 5.029458333333333,
+                "duration": 5.033333333333333,
+                "timeline_duration": 5.029458333333333,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "idle",
+                    "position": 1,
+                    "facing": "right",
+                    "_ground_offset": 0.06,
+                    "speech_intervals": []
+                  },
+                  {
+                    "id": "PAUL",
+                    "type": "humanoids/paul_old_man",
+                    "action": "idle",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  },
+                  {
+                    "id": "JHON",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "speak_front",
+                    "position": 3,
+                    "facing": "left",
+                    "_ground_offset": 0.06,
+                    "speech_intervals": [
+                      [
+                        0.0,
+                        0.39999999999999997
+                      ],
+                      [
+                        0.58,
+                        2.12
+                      ],
+                      [
+                        2.26,
+                        4.72
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "Bueno, ¿para qué carajos nos reuniste, Paul? Tengo cosas mejores que hacer que escuchar tus sermones.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 2,
+                "script_scene": "paul_responde",
+                "start": 5.029458333333333,
+                "end": 10.970625,
+                "duration": 5.933333333333334,
+                "timeline_duration": 5.941166666666667,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "PAUL",
+                    "type": "humanoids/paul_old_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.0961249999999998,
+                        1.6361249999999998
+                      ],
+                      [
+                        1.7361250000000004,
+                        5.3561250000000005
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "PAUL"
+                },
+                "narration": "Siéntate y cierra la boca, Jhon. Llevo treinta años aguantando tus estupideces y hoy se termina esta mierda.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 3,
+                "script_scene": "ana_protesta",
+                "start": 10.970625,
+                "end": 15.50525,
+                "duration": 4.533333333333333,
+                "timeline_duration": 4.534625,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.003958333333333286,
+                        0.4839583333333337
+                      ],
+                      [
+                        0.5839583333333334,
+                        1.683958333333333
+                      ],
+                      [
+                        1.8239583333333336,
+                        4.203958333333334
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Papá, no empieces con tus dramas. Siempre haces lo mismo cuando tomas dos cervezas.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 4,
+                "script_scene": "primera_bomba",
+                "start": 15.50525,
+                "end": 22.333833333333335,
+                "duration": 6.833333333333333,
+                "timeline_duration": 6.828583333333334,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "PAUL",
+                    "type": "humanoids/paul_old_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.025249999999999773,
+                        2.2052499999999995
+                      ],
+                      [
+                        2.5452499999999993,
+                        3.885249999999999
+                      ],
+                      [
+                        3.9852500000000006,
+                        6.2052499999999995
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "PAUL"
+                },
+                "narration": "Ana, encontré los mensajes de Jhon con tu mejor amiga. Y no precisamente estaban hablando del clima.",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "vine-dramatic-boom-sound-effect",
+                    "time": 0.0,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 5,
+                "script_scene": "jhon_se_defiende",
+                "start": 22.333833333333335,
+                "end": 26.216083333333334,
+                "duration": 3.8666666666666667,
+                "timeline_duration": 3.882249999999999,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "JHON",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.22050000000000125,
+                        2.1205000000000034
+                      ],
+                      [
+                        2.260500000000004,
+                        3.5827500000000008
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "JHON"
+                },
+                "narration": "¡Eso fue hace seis meses, viejo metido! ¡Deja de revisar mis cosas!",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 6,
+                "script_scene": "ana_explota",
+                "start": 26.216083333333334,
+                "end": 31.130458333333333,
+                "duration": 4.933333333333334,
+                "timeline_duration": 4.914375,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front",
+                    "position": 1,
+                    "facing": "right",
+                    "_ground_offset": 0.06,
+                    "speech_intervals": [
+                      [
+                        0.016083333333334338,
+                        0.7760833333333359
+                      ],
+                      [
+                        0.8760833333333338,
+                        2.776083333333336
+                      ],
+                      [
+                        2.8360833333333346,
+                        4.336083333333335
+                      ]
+                    ]
+                  },
+                  {
+                    "id": "PAUL",
+                    "type": "humanoids/paul_old_man",
+                    "action": "idle",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  },
+                  {
+                    "id": "JHON",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "afraid",
+                    "position": 3,
+                    "facing": "left",
+                    "_ground_offset": 0.06,
+                    "speech_intervals": []
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "¡Hijo de puta! ¡Me juraste que no había pasado nada con ella! ¡Y yo como idiota defendiéndote!",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 7,
+                "script_scene": "tomy_interrumpe",
+                "start": 31.130458333333333,
+                "end": 36.74075,
+                "duration": 5.6,
+                "timeline_duration": 5.610291666666665,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "TOMY",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.057124999999999204,
+                        3.3971250000000026
+                      ],
+                      [
+                        3.6171250000000015,
+                        5.1171250000000015
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "TOMY"
+                },
+                "narration": "Pues ya que estamos contando secretos, yo también tengo uno. Y créanme que les va a encantar.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 8,
+                "script_scene": "paul_pregunta",
+                "start": 36.74075,
+                "end": 40.394666666666666,
+                "duration": 3.6666666666666665,
+                "timeline_duration": 3.6539166666666674,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "PAUL",
+                    "type": "humanoids/paul_old_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.1074166666666656,
+                        0.8874166666666667
+                      ],
+                      [
+                        1.1474166666666648,
+                        3.3613333333333344
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "PAUL"
+                },
+                "narration": "Habla, Tomy. A estas alturas ya nada puede sorprenderme.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 9,
+                "script_scene": "tomy_confiesa",
+                "start": 40.394666666666666,
+                "end": 49.84404166666667,
+                "duration": 9.433333333333334,
+                "timeline_duration": 9.449375000000003,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "TOMY",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.33466666666667066,
+                        2.3546666666666667
+                      ],
+                      [
+                        2.414666666666669,
+                        4.154666666666664
+                      ],
+                      [
+                        4.454666666666668,
+                        4.954666666666668
+                      ],
+                      [
+                        5.494666666666667,
+                        5.914666666666669
+                      ],
+                      [
+                        6.294666666666664,
+                        7.234666666666669
+                      ],
+                      [
+                        7.414666666666669,
+                        7.834666666666671
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "TOMY"
+                },
+                "narration": "¿Se acuerdan de los cinco mil dólares que desaparecieron de la caja fuerte? Bueno... no fue un ladrón. Fui yo.",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "vine-dramatic-boom-sound-effect",
+                    "time": 0.0,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 10,
+                "script_scene": "paul_furioso",
+                "start": 49.84404166666667,
+                "end": 55.063,
+                "duration": 5.233333333333333,
+                "timeline_duration": 5.218958333333333,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "PAUL",
+                    "type": "humanoids/paul_old_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.19070833333333326,
+                        0.45070833333333127
+                      ],
+                      [
+                        0.8307083333333338,
+                        4.290708333333335
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "PAUL"
+                },
+                "narration": "¡¿Qué?! ¡Pedazo de cabrón! ¡Yo acusé al jardinero y lo despedí por tu culpa!",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "question-mark",
+                    "time": 0.0,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 11,
+                "script_scene": "tomy_contesta",
+                "start": 55.063,
+                "end": 59.779041666666664,
+                "duration": 4.7,
+                "timeline_duration": 4.716041666666662,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "TOMY",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.13633333333333297,
+                        2.356333333333332
+                      ],
+                      [
+                        2.7763333333333335,
+                        4.412374999999997
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "TOMY"
+                },
+                "narration": "Sí, bueno, tampoco es que fueras a darle un aumento. Le pagabas una miseria.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 12,
+                "script_scene": "ana_pregunta",
+                "start": 59.779041666666664,
+                "end": 63.28783333333333,
+                "duration": 3.533333333333333,
+                "timeline_duration": 3.508791666666667,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.012374999999998693,
+                        3.2123750000000015
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Espera un momento. ¿Y qué demonios hiciste con cinco mil dólares?",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 13,
+                "script_scene": "tomy_revela",
+                "start": 63.28783333333333,
+                "end": 71.57025,
+                "duration": 8.266666666666667,
+                "timeline_duration": 8.28241666666667,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "TOMY",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.367833333333337,
+                        1.9878333333333416
+                      ],
+                      [
+                        2.4878333333333416,
+                        4.667833333333334
+                      ],
+                      [
+                        4.967833333333331,
+                        7.7478333333333325
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "TOMY"
+                },
+                "narration": "Los perdí apostando por internet. Pero tranquilos, aprendí la lección: nunca vuelvan a darme acceso a una caja fuerte.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 14,
+                "script_scene": "jhon_se_burla",
+                "start": 71.57025,
+                "end": 77.04133333333333,
+                "duration": 5.466666666666667,
+                "timeline_duration": 5.4710833333333255,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "JHON",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.023583333333334622,
+                        0.4435833333333363
+                      ],
+                      [
+                        0.5835833333333369,
+                        2.2835833333333397
+                      ],
+                      [
+                        2.383583333333334,
+                        5.123583333333343
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "JHON"
+                },
+                "narration": "¡Ja! ¡Y tú me llamabas irresponsable! Este mocoso es un delincuente con conexión a internet.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 15,
+                "script_scene": "tomy_contraataca",
+                "start": 77.04133333333333,
+                "end": 87.62708333333333,
+                "duration": 10.6,
+                "timeline_duration": 10.585750000000004,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "TOMY",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.14799999999999613,
+                        0.6079999999999899
+                      ],
+                      [
+                        1.0679999999999978,
+                        1.2879999999999967
+                      ],
+                      [
+                        1.4279999999999973,
+                        1.6880000000000024
+                      ],
+                      [
+                        1.9879999999999995,
+                        2.2879999999999967
+                      ],
+                      [
+                        2.347999999999999,
+                        4.367999999999995
+                      ],
+                      [
+                        4.427999999999997,
+                        5.328000000000003
+                      ],
+                      [
+                        5.387999999999991,
+                        6.207999999999998
+                      ],
+                      [
+                        6.507999999999996,
+                        8.447999999999993
+                      ],
+                      [
+                        8.507999999999996,
+                        10.193749999999994
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "TOMY"
+                },
+                "narration": "Al menos yo no tengo dos novias y una deuda de veinte mil dólares que escondo debajo del colchón.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 16,
+                "script_scene": "jhon_amenaza",
+                "start": 87.62708333333333,
+                "end": 91.604125,
+                "duration": 3.966666666666667,
+                "timeline_duration": 3.977041666666665,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "JHON",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.0,
+                        1.9537499999999852
+                      ],
+                      [
+                        2.0137499999999875,
+                        3.570791666666665
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "JHON"
+                },
+                "narration": "Tomy, te juro que como sigas hablando, te voy a sacar de aquí a patadas.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 17,
+                "script_scene": "paul_detiene",
+                "start": 91.604125,
+                "end": 97.26679166666666,
+                "duration": 5.666666666666667,
+                "timeline_duration": 5.6626666666666665,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "afraid",
+                    "position": 1,
+                    "facing": "right",
+                    "_ground_offset": 0.06,
+                    "speech_intervals": []
+                  },
+                  {
+                    "id": "PAUL",
+                    "type": "humanoids/paul_old_man",
+                    "action": "speak_front",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.10412499999999625,
+                        2.524124999999998
+                      ],
+                      [
+                        2.6641249999999985,
+                        4.6441250000000025
+                      ],
+                      [
+                        4.784125000000003,
+                        4.964124999999996
+                      ]
+                    ]
+                  },
+                  {
+                    "id": "JHON",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "idle",
+                    "position": 3,
+                    "facing": "left",
+                    "_ground_offset": 0.06,
+                    "speech_intervals": []
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "full_body",
+                  "character": null
+                },
+                "narration": "¡Nadie va a golpear a nadie en mi casa! ¡Bastante vergüenza me dan los tres!",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 18,
+                "script_scene": "ana_secretos",
+                "start": 97.26679166666666,
+                "end": 102.5665,
+                "duration": 5.3,
+                "timeline_duration": 5.299708333333342,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.020124999999993065,
+                        1.6001249999999914
+                      ],
+                      [
+                        1.6601249999999936,
+                        3.240124999999992
+                      ],
+                      [
+                        3.300124999999994,
+                        4.760125000000002
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Qué curioso que hables de vergüenza, papá. ¿Ya les contaste que tienes otra familia en San Pedro Sula?",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "vine-dramatic-boom-sound-effect",
+                    "time": 0.0,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 19,
+                "script_scene": "silencio_paul",
+                "start": 102.5665,
+                "end": 104.5665,
+                "duration": 2.0,
+                "timeline_duration": 2.0,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "PAUL",
+                    "type": "humanoids/paul_old_man",
+                    "action": "afraid",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": []
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "PAUL"
+                },
+                "narration": "",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "misterius_sound",
+                    "time": 0.0,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 20,
+                "script_scene": "paul_reacciona",
+                "start": 104.5665,
+                "end": 108.49479166666667,
+                "duration": 3.933333333333333,
+                "timeline_duration": 3.9282916666666665,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "PAUL",
+                    "type": "humanoids/paul_old_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.059833333333344285,
+                        0.3998333333333477
+                      ],
+                      [
+                        1.2998333333333392,
+                        3.1198333333333466
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "PAUL"
+                },
+                "narration": "Ana... no sé de qué demonios estás hablando.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 21,
+                "script_scene": "ana_remata",
+                "start": 108.49479166666667,
+                "end": 113.50533333333334,
+                "duration": 5.0,
+                "timeline_duration": 5.0105416666666684,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.0,
+                        2.3147916666666646
+                      ],
+                      [
+                        2.5747916666666697,
+                        4.314791666666679
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Claro que sí. Se llama Patricia. Tiene dos hijos. Y el mayor se parece muchísimo a ti.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 22,
+                "script_scene": "jhon_sorprendido",
+                "start": 113.50533333333334,
+                "end": 119.42691666666667,
+                "duration": 5.933333333333334,
+                "timeline_duration": 5.921583333333331,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "JHON",
+                    "type": "humanoids/jhon_young_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.005333333333339851,
+                        0.6853333333333467
+                      ],
+                      [
+                        0.7453333333333347,
+                        0.8453333333333433
+                      ],
+                      [
+                        0.9453333333333376,
+                        2.765333333333345
+                      ],
+                      [
+                        2.8653333333333393,
+                        5.00533333333334
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "JHON"
+                },
+                "narration": "¡No jodas! ¿El viejo tiene una familia secreta? ¡Y todavía venía a darnos lecciones de moral!",
+                "illustration_prompt": "",
+                "sound_effects": [
+                  {
+                    "name": "audience-sorpresa-woow",
+                    "time": 0.0,
+                    "volume": 0.7
+                  }
+                ]
+              },
+              {
+                "scene": 23,
+                "script_scene": "paul_explota",
+                "start": 119.42691666666667,
+                "end": 125.233875,
+                "duration": 5.8,
+                "timeline_duration": 5.806958333333327,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "PAUL",
+                    "type": "humanoids/paul_old_man",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.013583333333329506,
+                        0.11358333333333803
+                      ],
+                      [
+                        0.21358333333333235,
+                        0.5135833333333295
+                      ],
+                      [
+                        0.8535833333333329,
+                        2.2335833333333284
+                      ],
+                      [
+                        2.613583333333338,
+                        5.03358333333334
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "PAUL"
+                },
+                "narration": "¡Sí! ¡Tengo otra familia! ¿Contentos? ¡Y por lo menos ellos no me roban dinero ni me arruinan la cena!",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 24,
+                "script_scene": "tomy_final",
+                "start": 125.233875,
+                "end": 133.35216666666668,
+                "duration": 8.133333333333333,
+                "timeline_duration": 8.118291666666678,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "TOMY",
+                    "type": "humanoids/tomy_teenager",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.7005416666666662,
+                        1.2005416666666662
+                      ],
+                      [
+                        2.1005416666666576,
+                        2.68054166666667
+                      ],
+                      [
+                        2.8605416666666628,
+                        5.560541666666651
+                      ],
+                      [
+                        5.900541666666655,
+                        7.440541666666675
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "TOMY"
+                },
+                "narration": "Bueno, familia... creo que esta ha sido nuestra mejor reunión en años. La próxima traigo palomitas.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              },
+              {
+                "scene": 25,
+                "script_scene": "ana_despedida",
+                "start": 133.35216666666668,
+                "end": 139.06091666666666,
+                "duration": 5.7,
+                "timeline_duration": 5.708749999999981,
+                "width": 1080,
+                "height": 1920,
+                "fps": 30,
+                "scene_type": "stick",
+                "background_mode": "asset",
+                "background": "house_interior",
+                "fallback_background": "house_interior",
+                "characters": [
+                  {
+                    "id": "ANA",
+                    "type": "humanoids/ana_young_woman",
+                    "action": "speak_front_closeup",
+                    "position": 2,
+                    "facing": "right",
+                    "_ground_offset": 0.0,
+                    "speech_intervals": [
+                      [
+                        0.0,
+                        0.1454999999999984
+                      ],
+                      [
+                        0.24549999999999272,
+                        1.6655000000000086
+                      ],
+                      [
+                        1.725500000000011,
+                        4.825500000000005
+                      ],
+                      [
+                        4.9254999999999995,
+                        5.265500000000003
+                      ]
+                    ]
+                  }
+                ],
+                "objects": [],
+                "shot": {
+                  "target": "face",
+                  "character": "ANA"
+                },
+                "narration": "Y tú que estás viendo este desastre, suscríbete. Porque esta familia todavía tiene muchos trapos sucios que sacar.",
+                "illustration_prompt": "",
+                "sound_effects": []
+              }
+            ],
+            "cast": [
+              {
+                "id": "ANA",
+                "name": "ANA",
+                "type": "humanoids/ana_young_woman"
+              },
+              {
+                "id": "JHON",
+                "name": "JHON",
+                "type": "humanoids/jhon_young_man"
+              },
+              {
+                "id": "PAUL",
+                "name": "PAUL",
+                "type": "humanoids/paul_old_man"
+              },
+              {
+                "id": "TOMY",
+                "name": "TOMY",
+                "type": "humanoids/tomy_teenager"
+              }
+            ],
+            "sync_mode": "tts_timeline",
+            "audio_duration": 139.060917,
+            "llm_provider": "openai",
+            "batch_size": 0
+          }
+        },
+        {
+          "path": "subtitulos.ass",
+          "size_bytes": 5193,
+          "sha256": "fc3bb8ed7cfe080a4b9d860a0fb77c8e279c259c77a035c941e55cc97463474c",
+          "type": "ass",
+          "content_text": "[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nScaledBorderAndShadow: yes\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: TikTok,Arial,64,&H00FFFFFF,&H0000FFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,5,1,2,70,70,180,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n\nDialogue: 0,0:00:00.00,0:00:02.27,TikTok,,0,0,0,,Bueno, ¿para qué carajos nos reuniste, Paul?\nDialogue: 0,0:00:02.27,0:00:05.00,TikTok,,0,0,0,,Tengo cosas mejores que hacer que escuchar tus sermones.\nDialogue: 0,0:00:05.00,0:00:06.79,TikTok,,0,0,0,,Siéntate y cierra la boca, Joño.\nDialogue: 0,0:00:06.79,0:00:11.00,TikTok,,0,0,0,,Llevo 30 años aguantando tus estupideces y hoy se termina esta mierda.\nDialogue: 0,0:00:11.00,0:00:12.75,TikTok,,0,0,0,,Papá, no empieces con tus dramas.\nDialogue: 0,0:00:12.75,0:00:15.75,TikTok,,0,0,0,,Siempre haces lo mismo cuando tomas dos cervezas.\nDialogue: 0,0:00:15.75,0:00:19.51,TikTok,,0,0,0,,Joana, encontré los mensajes de John con tu mejor amiga\nDialogue: 0,0:00:19.51,0:00:22.60,TikTok,,0,0,0,,y no precisamente estaban hablando del clima.\nDialogue: 0,0:00:22.60,0:00:24.64,TikTok,,0,0,0,,Eso fue hace seis meses viejo metido.\nDialogue: 0,0:00:24.64,0:00:26.23,TikTok,,0,0,0,,Deja de revisar mis cosas.\nDialogue: 0,0:00:26.23,0:00:29.07,TikTok,,0,0,0,,Hijo de puta, me juraste que no había pasado nada con ella\nDialogue: 0,0:00:29.07,0:00:31.19,TikTok,,0,0,0,,y yo como idiota defendiéndote.\nDialogue: 0,0:00:31.19,0:00:33.24,TikTok,,0,0,0,,Pues ya que estamos contando secretos,\nDialogue: 0,0:00:33.24,0:00:36.84,TikTok,,0,0,0,,yo también tengo uno y créanme que les va a encantar.\nDialogue: 0,0:00:36.84,0:00:37.88,TikTok,,0,0,0,,Yo habla tommy.\nDialogue: 0,0:00:37.88,0:00:40.71,TikTok,,0,0,0,,A estas alturas ya nada puede sorprenderme.\nDialogue: 0,0:00:40.71,0:00:45.92,TikTok,,0,0,0,,Si acuerdan de los $5,000 que desaparecieron de la caja, fuerte.\nDialogue: 0,0:00:45.92,0:00:50.00,TikTok,,0,0,0,,Bueno, no fue un ladrón, fui yo.\nDialogue: 0,0:00:50.00,0:00:50.64,TikTok,,0,0,0,,¿Qué?\nDialogue: 0,0:00:50.64,0:00:51.67,TikTok,,0,0,0,,Pedazo de cabrón.\nDialogue: 0,0:00:51.67,0:00:55.24,TikTok,,0,0,0,,Yo acuse al jardinero y lo despedí por tu culpa.\nDialogue: 0,0:00:55.24,0:00:57.84,TikTok,,0,0,0,,Bueno, tampoco es que fueras a darle un aumento.\nDialogue: 0,0:00:57.84,0:00:59.75,TikTok,,0,0,0,,Le pagabas una miseria.\nDialogue: 0,0:00:59.75,0:01:00.71,TikTok,,0,0,0,,Espera un momento.\nDialogue: 0,0:01:00.71,0:01:03.67,TikTok,,0,0,0,,¿Y qué demonios hiciste con $5,000?\nDialogue: 0,0:01:03.67,0:01:05.76,TikTok,,0,0,0,,Los perdí apostando por internet.\nDialogue: 0,0:01:05.76,0:01:08.28,TikTok,,0,0,0,,Pero tranquilos, aprendí la lección.\nDialogue: 0,0:01:08.28,0:01:11.56,TikTok,,0,0,0,,Nunca vuelvan a darme acceso a una caja fuerte.\nDialogue: 0,0:01:11.56,0:01:12.15,TikTok,,0,0,0,,Ha.\nDialogue: 0,0:01:12.15,0:01:13.95,TikTok,,0,0,0,,Y tú me llamabas irresponsable.\nDialogue: 0,0:01:13.95,0:01:17.20,TikTok,,0,0,0,,Este mocoso es un delincuente con conexión a internet.\nDialogue: 0,0:01:17.20,0:01:23.51,TikTok,,0,0,0,,Almo… las más adultas, al menos, yo no tengo dos novias\nDialogue: 0,0:01:23.51,0:01:27.59,TikTok,,0,0,0,,y una deuda de $20,000 que escondo debajo del colchón.\nDialogue: 0,0:01:27.59,0:01:29.64,TikTok,,0,0,0,,Tommy, te juro que como sigas hablando,\nDialogue: 0,0:01:29.64,0:01:31.71,TikTok,,0,0,0,,te voy a sacar de aquí apatadas.\nDialogue: 0,0:01:31.71,0:01:34.31,TikTok,,0,0,0,,Nadie va a golpear a nadie en mi casa.\nDialogue: 0,0:01:34.31,0:01:37.28,TikTok,,0,0,0,,Bastante vergüenza me dan los tres.\nDialogue: 0,0:01:37.28,0:01:38.87,TikTok,,0,0,0,,Qué curioso que hables de vergüenza.\nDialogue: 0,0:01:38.87,0:01:44.57,TikTok,,0,0,0,,Papá, ya les contaste que tienes otra familia en San Pedro Sula.\nDialogue: 0,0:01:44.57,0:01:48.45,TikTok,,0,0,0,,Ana, no sé de qué demonios estás hablando.\nDialogue: 0,0:01:48.45,0:01:51.06,TikTok,,0,0,0,,Claro que sí, se llama Patricia, tiene dos hijos.\nDialogue: 0,0:01:51.06,0:01:53.50,TikTok,,0,0,0,,El mayor se parece muchísimo a ti.\nDialogue: 0,0:01:53.50,0:01:56.37,TikTok,,0,0,0,,No jodas, el viejo tiene una familia secreta\nDialogue: 0,0:01:56.37,0:01:59.62,TikTok,,0,0,0,,y todavía venía a darnos lecciones de moral.\nDialogue: 0,0:01:59.62,0:02:02.01,TikTok,,0,0,0,,Sí, tengo otra familia, contentos.\nDialogue: 0,0:02:02.01,0:02:05.93,TikTok,,0,0,0,,Y por lo menos ellos no me roban dinero ni me arruinan la cena.\nDialogue: 0,0:02:05.93,0:02:11.13,TikTok,,0,0,0,,Bueno, familia, creo que esta ha sido nuestra mejor reunión en años.\nDialogue: 0,0:02:11.13,0:02:13.34,TikTok,,0,0,0,,La próxima traigo palomitas.\nDialogue: 0,0:02:13.34,0:02:15.06,TikTok,,0,0,0,,¿Tuitas viendo este desastre?\nDialogue: 0,0:02:15.06,0:02:18.65,TikTok,,0,0,0,,Suscríbete porque esta familia todavía tiene muchos trapos sucios que sacar.\n"
+        },
+        {
+          "path": "video.mp4",
+          "size_bytes": 28267533,
+          "sha256": "e436dd35c0761a3276b7e74735e53819b6df1fab5b75dc9385ad79436898e967",
+          "type": "mp4"
+        }
+      ]
+    }
+  ]
+}

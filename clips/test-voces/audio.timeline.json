@@ -1,0 +1,647 @@
+{
+  "schema_version": 1,
+  "speech_activity_version": 1,
+  "sample_rate": 24000,
+  "duration": 139.06091666666666,
+  "scenes": [
+    {
+      "id": "la_reunion",
+      "start": 0.0,
+      "end": 5.029458333333333
+    },
+    {
+      "id": "paul_responde",
+      "start": 5.029458333333333,
+      "end": 10.970625
+    },
+    {
+      "id": "ana_protesta",
+      "start": 10.970625,
+      "end": 15.50525
+    },
+    {
+      "id": "primera_bomba",
+      "start": 15.50525,
+      "end": 22.333833333333335
+    },
+    {
+      "id": "jhon_se_defiende",
+      "start": 22.333833333333335,
+      "end": 26.216083333333334
+    },
+    {
+      "id": "ana_explota",
+      "start": 26.216083333333334,
+      "end": 31.130458333333333
+    },
+    {
+      "id": "tomy_interrumpe",
+      "start": 31.130458333333333,
+      "end": 36.74075
+    },
+    {
+      "id": "paul_pregunta",
+      "start": 36.74075,
+      "end": 40.394666666666666
+    },
+    {
+      "id": "tomy_confiesa",
+      "start": 40.394666666666666,
+      "end": 49.84404166666667
+    },
+    {
+      "id": "paul_furioso",
+      "start": 49.84404166666667,
+      "end": 55.063
+    },
+    {
+      "id": "tomy_contesta",
+      "start": 55.063,
+      "end": 59.779041666666664
+    },
+    {
+      "id": "ana_pregunta",
+      "start": 59.779041666666664,
+      "end": 63.28783333333333
+    },
+    {
+      "id": "tomy_revela",
+      "start": 63.28783333333333,
+      "end": 71.57025
+    },
+    {
+      "id": "jhon_se_burla",
+      "start": 71.57025,
+      "end": 77.04133333333333
+    },
+    {
+      "id": "tomy_contraataca",
+      "start": 77.04133333333333,
+      "end": 87.62708333333333
+    },
+    {
+      "id": "jhon_amenaza",
+      "start": 87.62708333333333,
+      "end": 91.604125
+    },
+    {
+      "id": "paul_detiene",
+      "start": 91.604125,
+      "end": 97.26679166666666
+    },
+    {
+      "id": "ana_secretos",
+      "start": 97.26679166666666,
+      "end": 102.5665
+    },
+    {
+      "id": "silencio_paul",
+      "start": 102.5665,
+      "end": 104.5665
+    },
+    {
+      "id": "paul_reacciona",
+      "start": 104.5665,
+      "end": 108.49479166666667
+    },
+    {
+      "id": "ana_remata",
+      "start": 108.49479166666667,
+      "end": 113.50533333333334
+    },
+    {
+      "id": "jhon_sorprendido",
+      "start": 113.50533333333334,
+      "end": 119.42691666666667
+    },
+    {
+      "id": "paul_explota",
+      "start": 119.42691666666667,
+      "end": 125.233875
+    },
+    {
+      "id": "tomy_final",
+      "start": 125.233875,
+      "end": 133.35216666666668
+    },
+    {
+      "id": "ana_despedida",
+      "start": 133.35216666666668,
+      "end": 139.06091666666666
+    }
+  ],
+  "blocks": [
+    {
+      "speaker": "JHON",
+      "scene": "la_reunion",
+      "start": 0.0,
+      "end": 4.7294583333333335,
+      "text": "Bueno, ¿para qué carajos nos reuniste, Paul? Tengo cosas mejores que hacer que escuchar tus sermones.",
+      "speech_intervals": [
+        [
+          0.0,
+          0.39999999999999997
+        ],
+        [
+          0.58,
+          2.12
+        ],
+        [
+          2.26,
+          4.72
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "paul_responde",
+      "start": 5.029458333333333,
+      "end": 10.570625,
+      "text": "Siéntate y cierra la boca, Jhon. Llevo treinta años aguantando tus estupideces y hoy se termina esta mierda.",
+      "speech_intervals": [
+        [
+          5.129458333333333,
+          6.669458333333333
+        ],
+        [
+          6.769458333333334,
+          10.389458333333334
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "ana_protesta",
+      "start": 10.970625,
+      "end": 15.20525,
+      "text": "Papá, no empieces con tus dramas. Siempre haces lo mismo cuando tomas dos cervezas.",
+      "speech_intervals": [
+        [
+          10.970625,
+          11.450625
+        ],
+        [
+          11.550625,
+          12.650625
+        ],
+        [
+          12.790625,
+          15.170625000000001
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "primera_bomba",
+      "start": 15.50525,
+      "end": 21.833833333333335,
+      "text": "Ana, encontré los mensajes de Jhon con tu mejor amiga. Y no precisamente estaban hablando del clima.",
+      "speech_intervals": [
+        [
+          15.52525,
+          17.70525
+        ],
+        [
+          18.04525,
+          19.38525
+        ],
+        [
+          19.48525,
+          21.70525
+        ]
+      ]
+    },
+    {
+      "speaker": "JHON",
+      "scene": "jhon_se_defiende",
+      "start": 22.333833333333335,
+      "end": 25.916083333333333,
+      "text": "¡Eso fue hace seis meses, viejo metido! ¡Deja de revisar mis cosas!",
+      "speech_intervals": [
+        [
+          22.553833333333333,
+          24.453833333333336
+        ],
+        [
+          24.593833333333336,
+          25.916083333333333
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "ana_explota",
+      "start": 26.216083333333334,
+      "end": 30.730458333333335,
+      "text": "¡Hijo de puta! ¡Me juraste que no había pasado nada con ella! ¡Y yo como idiota defendiéndote!",
+      "speech_intervals": [
+        [
+          26.216083333333334,
+          26.976083333333335
+        ],
+        [
+          27.076083333333333,
+          28.976083333333335
+        ],
+        [
+          29.036083333333334,
+          30.536083333333334
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "tomy_interrumpe",
+      "start": 31.130458333333333,
+      "end": 36.44075,
+      "text": "Pues ya que estamos contando secretos, yo también tengo uno. Y créanme que les va a encantar.",
+      "speech_intervals": [
+        [
+          31.190458333333332,
+          34.530458333333335
+        ],
+        [
+          34.750458333333334,
+          36.250458333333334
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "paul_pregunta",
+      "start": 36.74075,
+      "end": 40.09466666666667,
+      "text": "Habla, Tomy. A estas alturas ya nada puede sorprenderme.",
+      "speech_intervals": [
+        [
+          36.84075,
+          37.62075
+        ],
+        [
+          37.88075,
+          40.09466666666667
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "tomy_confiesa",
+      "start": 40.394666666666666,
+      "end": 49.34404166666667,
+      "text": "¿Se acuerdan de los cinco mil dólares que desaparecieron de la caja fuerte? Bueno... no fue un ladrón. Fui yo.",
+      "speech_intervals": [
+        [
+          40.73466666666667,
+          42.754666666666665
+        ],
+        [
+          42.81466666666667,
+          44.55466666666666
+        ],
+        [
+          44.85466666666667,
+          45.35466666666667
+        ],
+        [
+          45.894666666666666,
+          46.31466666666667
+        ],
+        [
+          46.69466666666666,
+          47.63466666666667
+        ],
+        [
+          47.81466666666667,
+          48.23466666666667
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "paul_furioso",
+      "start": 49.84404166666667,
+      "end": 54.663,
+      "text": "¡¿Qué?! ¡Pedazo de cabrón! ¡Yo acusé al jardinero y lo despedí por tu culpa!",
+      "speech_intervals": [
+        [
+          50.02404166666667,
+          50.28404166666667
+        ],
+        [
+          50.66404166666667,
+          54.12404166666667
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "tomy_contesta",
+      "start": 55.063,
+      "end": 59.47904166666667,
+      "text": "Sí, bueno, tampoco es que fueras a darle un aumento. Le pagabas una miseria.",
+      "speech_intervals": [
+        [
+          55.203,
+          57.423
+        ],
+        [
+          57.843,
+          59.47904166666667
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "ana_pregunta",
+      "start": 59.779041666666664,
+      "end": 62.987833333333334,
+      "text": "Espera un momento. ¿Y qué demonios hiciste con cinco mil dólares?",
+      "speech_intervals": [
+        [
+          59.779041666666664,
+          62.97904166666667
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "tomy_revela",
+      "start": 63.28783333333333,
+      "end": 71.07025,
+      "text": "Los perdí apostando por internet. Pero tranquilos, aprendí la lección: nunca vuelvan a darme acceso a una caja fuerte.",
+      "speech_intervals": [
+        [
+          63.667833333333334,
+          65.28783333333334
+        ],
+        [
+          65.78783333333334,
+          67.96783333333333
+        ],
+        [
+          68.26783333333333,
+          71.04783333333333
+        ]
+      ]
+    },
+    {
+      "speaker": "JHON",
+      "scene": "jhon_se_burla",
+      "start": 71.57025,
+      "end": 76.74133333333333,
+      "text": "¡Ja! ¡Y tú me llamabas irresponsable! Este mocoso es un delincuente con conexión a internet.",
+      "speech_intervals": [
+        [
+          71.59025,
+          72.01025
+        ],
+        [
+          72.15025,
+          73.85025
+        ],
+        [
+          73.95025,
+          76.69025
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "tomy_contraataca",
+      "start": 77.04133333333333,
+      "end": 87.22708333333334,
+      "text": "Al menos yo no tengo dos novias y una deuda de veinte mil dólares que escondo debajo del colchón.",
+      "speech_intervals": [
+        [
+          77.18133333333333,
+          77.64133333333332
+        ],
+        [
+          78.10133333333333,
+          78.32133333333333
+        ],
+        [
+          78.46133333333333,
+          78.72133333333333
+        ],
+        [
+          79.02133333333333,
+          79.32133333333333
+        ],
+        [
+          79.38133333333333,
+          81.40133333333333
+        ],
+        [
+          81.46133333333333,
+          82.36133333333333
+        ],
+        [
+          82.42133333333332,
+          83.24133333333333
+        ],
+        [
+          83.54133333333333,
+          85.48133333333332
+        ],
+        [
+          85.54133333333333,
+          87.22708333333333
+        ]
+      ]
+    },
+    {
+      "speaker": "JHON",
+      "scene": "jhon_amenaza",
+      "start": 87.62708333333333,
+      "end": 91.204125,
+      "text": "Tomy, te juro que como sigas hablando, te voy a sacar de aquí a patadas.",
+      "speech_intervals": [
+        [
+          87.62708333333333,
+          89.58708333333333
+        ],
+        [
+          89.64708333333333,
+          91.204125
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "paul_detiene",
+      "start": 91.604125,
+      "end": 96.76679166666666,
+      "text": "¡Nadie va a golpear a nadie en mi casa! ¡Bastante vergüenza me dan los tres!",
+      "speech_intervals": [
+        [
+          91.70412499999999,
+          94.12412499999999
+        ],
+        [
+          94.26412499999999,
+          96.244125
+        ],
+        [
+          96.384125,
+          96.56412499999999
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "ana_secretos",
+      "start": 97.26679166666666,
+      "end": 102.0665,
+      "text": "Qué curioso que hables de vergüenza, papá. ¿Ya les contaste que tienes otra familia en San Pedro Sula?",
+      "speech_intervals": [
+        [
+          97.28679166666666,
+          98.86679166666666
+        ],
+        [
+          98.92679166666666,
+          100.50679166666666
+        ],
+        [
+          100.56679166666666,
+          102.02679166666667
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "paul_reacciona",
+      "start": 104.5665,
+      "end": 107.99479166666667,
+      "text": "Ana... no sé de qué demonios estás hablando.",
+      "speech_intervals": [
+        [
+          104.62650000000001,
+          104.96650000000001
+        ],
+        [
+          105.8665,
+          107.68650000000001
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "ana_remata",
+      "start": 108.49479166666667,
+      "end": 113.00533333333334,
+      "text": "Claro que sí. Se llama Patricia. Tiene dos hijos. Y el mayor se parece muchísimo a ti.",
+      "speech_intervals": [
+        [
+          108.49479166666667,
+          110.81479166666666
+        ],
+        [
+          111.07479166666667,
+          112.81479166666668
+        ]
+      ]
+    },
+    {
+      "speaker": "JHON",
+      "scene": "jhon_sorprendido",
+      "start": 113.50533333333334,
+      "end": 119.02691666666666,
+      "text": "¡No jodas! ¿El viejo tiene una familia secreta? ¡Y todavía venía a darnos lecciones de moral!",
+      "speech_intervals": [
+        [
+          113.50533333333334,
+          114.18533333333335
+        ],
+        [
+          114.24533333333333,
+          114.34533333333334
+        ],
+        [
+          114.44533333333334,
+          116.26533333333334
+        ],
+        [
+          116.36533333333334,
+          118.50533333333334
+        ]
+      ]
+    },
+    {
+      "speaker": "PAUL",
+      "scene": "paul_explota",
+      "start": 119.42691666666667,
+      "end": 124.733875,
+      "text": "¡Sí! ¡Tengo otra familia! ¿Contentos? ¡Y por lo menos ellos no me roban dinero ni me arruinan la cena!",
+      "speech_intervals": [
+        [
+          119.44691666666667,
+          119.54691666666668
+        ],
+        [
+          119.64691666666667,
+          119.94691666666667
+        ],
+        [
+          120.28691666666667,
+          121.66691666666667
+        ],
+        [
+          122.04691666666668,
+          124.46691666666668
+        ]
+      ]
+    },
+    {
+      "speaker": "TOMY",
+      "scene": "tomy_final",
+      "start": 125.233875,
+      "end": 132.95216666666667,
+      "text": "Bueno, familia... creo que esta ha sido nuestra mejor reunión en años. La próxima traigo palomitas.",
+      "speech_intervals": [
+        [
+          125.933875,
+          126.433875
+        ],
+        [
+          127.33387499999999,
+          127.913875
+        ],
+        [
+          128.093875,
+          130.79387499999999
+        ],
+        [
+          131.133875,
+          132.673875
+        ]
+      ]
+    },
+    {
+      "speaker": "ANA",
+      "scene": "ana_despedida",
+      "start": 133.35216666666668,
+      "end": 138.66091666666668,
+      "text": "Y tú que estás viendo este desastre, suscríbete. Porque esta familia todavía tiene muchos trapos sucios que sacar.",
+      "speech_intervals": [
+        [
+          133.35216666666668,
+          133.51216666666667
+        ],
+        [
+          133.61216666666667,
+          135.03216666666668
+        ],
+        [
+          135.09216666666669,
+          138.19216666666668
+        ],
+        [
+          138.29216666666667,
+          138.63216666666668
+        ]
+      ]
+    }
+  ]
+}

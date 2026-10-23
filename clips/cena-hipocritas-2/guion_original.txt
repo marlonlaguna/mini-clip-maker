@@ -1,0 +1,107 @@
+[ESCENA las_cosas_claras | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+Bueno caras de pija, vamos a dejar las cosas claras. Juan, explicame qué putas andabas haciendo con mi mejor amiga en Valle de Ángeles.
+
+[ESCENA ana_senala | FONDO=house_interior | DURACION=1.5]
+[ANA | ACCION=front_point | POSICION=1]
+[PABLO | ACCION=idle | POSICION=2]
+[JUAN | ACCION=afraid | POSICION=3]
+
+[ESCENA juan_excusa | FONDO=house_interior | PLANO=face:JUAN]
+[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+No jodás, Ana. Solo fuimos a comer algo. ¿Ahora resulta que no puedo salir sin que me estés jodiendo?
+
+[ESCENA ana_pruebas | FONDO=house_interior | DURACION=1.5]
+[ANA | ACCION=use_phone | POSICION=1]
+[JUAN | ACCION=afraid | POSICION=3]
+
+[ESCENA ana_fotos | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+¿Y esta pija de cabaña donde salen abrazados? ¡Andá a comer mierda vos! ¿Creés que soy pendeja?
+
+[ESCENA tomas_burla | FONDO=house_interior | PLANO=face:TOMAS]
+[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+Puta, Juan. Te agarraron con pruebas y todavía te hacés el santo. Ni los políticos de aquí se atreven a tanto.
+
+[ESCENA juan_senala | FONDO=house_interior | DURACION=1.5]
+[JUAN | ACCION=side_point | POSICION=2 | MIRA=left]
+[TOMAS | ACCION=idle | POSICION=1]
+
+[ESCENA juan_tomas | FONDO=house_interior | PLANO=face:JUAN]
+[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+Vos cerrá el hocico, cara de pija. Te robaste cinco mil bolas de la caja fuerte y todavía venís a darme consejos.
+
+[ESCENA tomas_responde | FONDO=house_interior | PLANO=face:TOMAS]
+[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+Sí, pero yo acepté que la cagué. Vos te metiste con otra maje y ahora querés que te demos un premio, no jodás.
+
+[ESCENA pablo_camino | FONDO=house_interior | DURACION=1.5]
+[PABLO | ACCION=front_walk | POSICION=2]
+[ANA | ACCION=idle | POSICION=1]
+[JUAN | ACCION=idle | POSICION=3]
+
+[ESCENA pablo_interviene | FONDO=house_interior | PLANO=face:PABLO]
+[PABLO | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+¡Ya estuvo bueno, joder! Juan, hay que ser bien bruto para llevar a la amante a Valle de Ángeles, donde medio Tegus va los domingos.
+
+[ESCENA ana_pablo | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+Papá, no hablés paja. Vos tenés otra familia en San Pedro Sula. Sos el menos indicado para dar lecciones, cara de pija.
+
+[ESCENA pablo_asustado | FONDO=house_interior | PLANO=face:PABLO | DURACION=1.5]
+[PABLO | ACCION=afraid | POSICION=2]
+
+[ESCENA pablo_defensa | FONDO=house_interior | PLANO=face:PABLO]
+[PABLO | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+No me vengás con esas mierdas, Ana. Lo mío es complicado. Y estamos hablando de Juan, no de mí.
+
+[ESCENA ana_dinero | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]
+¿Sabés qué más descubrí, Juan? Sacaste cuarenta mil lempiras de nuestros ahorros. ¡Mientras yo pagaba la cuota de ese pija de carro que compraste!
+
+[ESCENA juan_nervioso | FONDO=house_interior | PLANO=face:JUAN]
+[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+Pucha, Ana, no empecés. Esa también es mi plata. Además, no todo me lo gasté en esa salida.
+
+[ESCENA tomas_remate | FONDO=house_interior | PLANO=face:TOMAS]
+[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+¡Cuarenta mil bolas! No jodás. Con eso pago mis deudas y todavía me queda para la Super Recarga de todo el año.
+
+[ESCENA juan_explota | FONDO=house_interior | PLANO=face:JUAN]
+[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]
+¡Me tienen a pija todos! Sí, le fui infiel. La cagué. ¿Ya están contentos? ¡Dejen de estar comiendo mierda conmigo!
+
+[ESCENA juan_se_va | FONDO=house_interior | DURACION=1.5]
+[JUAN | ACCION=side_walk | POSICION=3 | MIRA=right | MOVIMIENTO=right | VELOCIDAD=22]
+[ANA | ACCION=idle | POSICION=1]
+
+[ESCENA ana_detiene | FONDO=house_interior | DURACION=1.5]
+[ANA | ACCION=side_point | POSICION=1 | MIRA=right]
+[JUAN | ACCION=idle | POSICION=3]
+
+[ESCENA ana_amenaza | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]
+¡Un momento, cara de pija! Antes de irte vas a devolver hasta el último lempira. Y mañana voy a averiguar cómo separarme de vos.
+
+[ESCENA juan_suplica | FONDO=house_interior | PLANO=face:JUAN]
+[JUAN | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+Ana, no jodás. Fueron cuatro años juntos. ¿Vas a mandar todo a la mierda por un error?
+
+[ESCENA ana_final | FONDO=house_interior | PLANO=face:ANA]
+[ANA | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]
+Un error es agarrar la calle equivocada, Juan. Vos reservaste hotel, pagaste gasolina, compraste regalos y todavía venís a hacerte la víctima.
+
+[ESCENA tomas_celular | FONDO=house_interior | DURACION=1.5]
+[TOMAS | ACCION=use_phone | POSICION=2]
+
+[ESCENA tomas_recarga | FONDO=house_interior | PLANO=face:TOMAS]
+[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+Bueno, caras de pija, ¿alguien me presta cincuenta bolas para ir a la pulpería a comprar una Super Recarga? Ya no tengo internet para ver este vergueo en el grupo familiar.
+
+[ESCENA pablo_cierre | FONDO=house_interior | PLANO=face:PABLO]
+[PABLO | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.3]
+¡Andá a comprar tu recarga, cipote! Pero dejá de estar jodiendo. Esta familia ya parece una novela barata.
+
+[ESCENA tomas_despedida | FONDO=house_interior | PLANO=face:TOMAS]
+[TOMAS | ACCION=speak_front_closeup | POSICION=2 | PAUSA=0.4]
+Y espérense, que todavía falta contar con quién anda saliendo Ana. Suscríbanse para la tercera parte, porque ahí sí se va a armar un pija de vergueo.
